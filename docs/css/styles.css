@@ -1,0 +1,38 @@
+:root{
+  --bg:#0f1117; --card:#171a22; --line:#262b36; --fg:#e6e9ef;
+  --mut:#8b93a3; --acc:#4ea1ff; --pos:#48c774; --neg:#f2554d;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+header{padding:28px 24px 16px; border-bottom:1px solid var(--line)}
+h1{margin:0 0 6px; font-size:24px}
+h2{font-size:16px; color:var(--mut); font-weight:600; margin:28px 24px 12px}
+.sub{margin:0; color:var(--mut); font-size:13px}
+main{max-width:1000px; margin:0 auto; padding-bottom:40px}
+.hidden{display:none}
+
+.empty-card{
+  margin:48px 24px; padding:40px; text-align:center;
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+}
+.empty-card h2{color:var(--fg); margin:0 0 8px}
+.empty-card p{color:var(--mut); margin:0}
+
+.chart-wrap{margin:0 24px; height:420px; position:relative}
+
+.table-wrap{margin:0 24px; overflow-x:auto}
+table{border-collapse:collapse; width:100%}
+th,td{padding:10px 12px; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap}
+th{color:var(--mut); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.03em}
+th.left,td.left{text-align:left}
+#standings-table tbody tr:hover td{background:#1b1f29}
+td.team{font-weight:600}
+td.mgr{color:var(--mut)}
+td.norm.pos{color:var(--pos)}
+td.norm.neg{color:var(--neg)}
+tr.cutoff td{border-bottom:2px dashed var(--acc)}
+
+footer{padding:20px 24px; color:var(--mut); font-size:12px; text-align:center}
