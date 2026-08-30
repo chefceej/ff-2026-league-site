@@ -1,38 +1,72 @@
+/* Fantasy football league site — cream & field-green theme */
 :root{
-  --bg:#0f1117; --card:#171a22; --line:#262b36; --fg:#e6e9ef;
-  --mut:#8b93a3; --acc:#4ea1ff; --pos:#48c774; --neg:#f2554d;
+  --cream:#f6f1e4;      /* page background (warm paper) */
+  --paper:#fffdf7;      /* cards / table surface */
+  --ink:#20302a;        /* primary text (deep green-black) */
+  --mut:#7c7862;        /* muted text */
+  --line:#e6dcc4;       /* warm hairline borders */
+  --field:#2f7d4f;      /* primary field green */
+  --field-dk:#1e5e39;   /* darker green for headers */
+  --field-lt:#e7f1e6;   /* faint green tint (hover/fill) */
+  --gold:#c8a23c;       /* chalk/pigskin gold accent */
+  --pos:#2f7d4f;        /* in the playoff picture */
+  --neg:#b0402f;        /* below the cutoff (brick red) */
+  --chalk:#ffffff;
 }
 *{box-sizing:border-box}
 body{
-  margin:0; background:var(--bg); color:var(--fg);
-  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  margin:0; background:var(--cream); color:var(--ink);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,sans-serif;
 }
-header{padding:28px 24px 16px; border-bottom:1px solid var(--line)}
-h1{margin:0 0 6px; font-size:24px}
-h2{font-size:16px; color:var(--mut); font-weight:600; margin:28px 24px 12px}
-.sub{margin:0; color:var(--mut); font-size:13px}
-main{max-width:1000px; margin:0 auto; padding-bottom:40px}
+
+/* Header: a green "field" band with a chalk baseline */
+header{
+  padding:26px 24px 18px;
+  background:linear-gradient(180deg,var(--field-dk),var(--field));
+  color:var(--chalk);
+  border-bottom:3px solid var(--gold);
+}
+h1{margin:0 0 4px; font-size:24px; letter-spacing:-.01em; font-weight:800}
+h1 .ball{margin-right:8px}
+.sub{margin:0; color:rgba(255,255,255,.82); font-size:13px}
+h2{font-size:14px; color:var(--field-dk); font-weight:700; text-transform:uppercase;
+   letter-spacing:.06em; margin:28px 24px 12px}
+
+main{max-width:1000px; margin:0 auto; padding-bottom:44px}
 .hidden{display:none}
 
+/* Empty state */
 .empty-card{
-  margin:48px 24px; padding:40px; text-align:center;
-  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  margin:48px 24px; padding:44px; text-align:center;
+  background:var(--paper); border:1px solid var(--line); border-radius:14px;
+  box-shadow:0 1px 0 rgba(0,0,0,.02);
 }
-.empty-card h2{color:var(--fg); margin:0 0 8px}
+.empty-card h2{color:var(--ink); margin:0 0 8px; text-transform:none; letter-spacing:0; font-size:20px}
 .empty-card p{color:var(--mut); margin:0}
 
-.chart-wrap{margin:0 24px; height:420px; position:relative}
+/* Chart card */
+.chart-wrap{
+  margin:0 24px; height:420px; position:relative;
+  background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:16px;
+}
 
-.table-wrap{margin:0 24px; overflow-x:auto}
+/* Standings table */
+.table-wrap{
+  margin:0 24px; overflow-x:auto;
+  background:var(--paper); border:1px solid var(--line); border-radius:14px;
+}
 table{border-collapse:collapse; width:100%}
-th,td{padding:10px 12px; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap}
-th{color:var(--mut); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.03em}
+th,td{padding:11px 14px; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap}
+th{color:var(--field-dk); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+   background:var(--field-lt)}
 th.left,td.left{text-align:left}
-#standings-table tbody tr:hover td{background:#1b1f29}
-td.team{font-weight:600}
+tbody tr:last-child td{border-bottom:none}
+#standings-table tbody tr:hover td{background:var(--field-lt)}
+td.team{font-weight:700}
 td.mgr{color:var(--mut)}
-td.norm.pos{color:var(--pos)}
-td.norm.neg{color:var(--neg)}
-tr.cutoff td{border-bottom:2px dashed var(--acc)}
+td.norm.pos{color:var(--pos); font-weight:700}
+td.norm.neg{color:var(--neg); font-weight:700}
+/* the playoff cutoff line — a gold chalk stripe */
+tr.cutoff td{border-bottom:2px dashed var(--gold)}
 
-footer{padding:20px 24px; color:var(--mut); font-size:12px; text-align:center}
+footer{padding:22px 24px; color:var(--mut); font-size:12px; text-align:center}

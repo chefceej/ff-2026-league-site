@@ -1,8 +1,10 @@
 // Render the league standings + playoff-position chart from league_data.json.
+// Medium-dark, distinct hues that read cleanly on a cream background.
 const PALETTE = [
-  "#4ea1ff", "#48c774", "#f2554d", "#f5a623", "#b06cf0", "#22c1c3",
-  "#ff7ab6", "#9fd356", "#e8814a", "#6f8bff", "#c0c74a", "#4ad6a8",
+  "#2f7d4f", "#2b5c8a", "#b0402f", "#d1791f", "#1f8a86", "#7a4fa3",
+  "#b8892b", "#566270", "#a8324a", "#6b7a2f", "#8a5a3c", "#a0498f",
 ];
+const AXIS = "#7c7862", GRID = "#e6dcc4", LEG = "#20302a";
 
 async function main() {
   let data;
@@ -58,14 +60,14 @@ function renderChart(teams, meta) {
       responsive: true, maintainAspectRatio: false,
       interaction: { mode: "nearest", intersect: false },
       plugins: {
-        legend: { labels: { color: "#8b93a3", boxWidth: 12, font: { size: 11 } } },
+        legend: { labels: { color: LEG, boxWidth: 12, font: { size: 11 } } },
         tooltip: { callbacks: { label: c => `${c.dataset.label}: ${c.parsed.y > 0 ? "+" : ""}${c.parsed.y}` } },
       },
       scales: {
-        x: { ticks: { color: "#8b93a3" }, grid: { color: "#262b36" } },
+        x: { ticks: { color: AXIS }, grid: { color: GRID } },
         y: {
-          ticks: { color: "#8b93a3" }, grid: { color: "#262b36" },
-          title: { display: true, text: "Points vs. playoff cutoff", color: "#8b93a3" },
+          ticks: { color: AXIS }, grid: { color: GRID },
+          title: { display: true, text: "Points vs. playoff cutoff", color: AXIS },
         },
       },
     },
