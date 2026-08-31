@@ -60,25 +60,72 @@ def assign_ranking_points(scores_by_team_id, num_teams):
 
 
 def week_scores(league, week):
-    """Return {team_id: score} for a week, or None if the week hasn't been played."""
+    """Deprecated single-purpose helper; see fetch_week."""
+    res = fetch_week(league, week)
+    return res[0] if res else None
+
+
+# Lineup slot -> position bucket for the position-score pivot. Bench/IR skipped.
+SLOT_MAP = {
+    "QB": "QB", "RB": "RB", "WR": "WR", "TE": "TE",
+    "RB/WR/TE": "FLEX", "WR/TE": "FLEX", "FLEX": "FLEX",
+    "OP": "OP", "QB/RB/WR/TE": "OP",
+    "D/ST": "D/ST", "K": "K",
+}
+SKIP_SLOTS = {"BE", "IR", "BENCH"}
+POS_TABS = ["QB", "RB", "WR", "TE"]   # player-type tabs for Top Scorers
+TOP_N = 25
+
+
+def fetch_week(league, week):
+    """Return (scores_by_team_id, top_players, position_scores) for a played
+    week, else None.
+
+      scores_by_team_id : {team_id: team score}
+      top_players       : {"all": [...], "QB": [...], ...} of starter scores
+      position_scores   : {team_abbrev: {slot_bucket: points}}
+    """
     try:
         boxes = league.box_scores(week)
     except Exception as e:
         print(f"  week {week}: box_scores failed ({e})")
         return None
-    scores = {}
+
+    scores, all_players = {}, []
+    position_scores = {}
     for b in boxes:
-        for team, score in ((b.home_team, b.home_score), (b.away_team, b.away_score)):
-            # bye weeks / empty slots show up as 0-point placeholders or None teams
+        for team, score, lineup in (
+                (b.home_team, b.home_score, b.home_lineup),
+                (b.away_team, b.away_score, b.away_lineup)):
             if team is None or team == 0:
                 continue
             scores[team.team_id] = score
-    if not scores:
+            abbrev = getattr(team, "team_abbrev", "") or team.team_name
+            slots = position_scores.setdefault(abbrev, {})
+            for pl in lineup or []:
+                slot = getattr(pl, "slot_position", "")
+                if slot in SKIP_SLOTS:
+                    continue
+                bucket = SLOT_MAP.get(slot)
+                pts = float(getattr(pl, "points", 0) or 0)
+                if bucket:
+                    slots[bucket] = round(slots.get(bucket, 0) + pts, 2)
+                all_players.append({
+                    "name": pl.name,
+                    "pro_team": getattr(pl, "proTeam", ""),
+                    "fantasy_team": team.team_name,
+                    "position": getattr(pl, "position", ""),
+                    "score": round(pts, 2),
+                })
+
+    if not scores or all(s == 0 for s in scores.values()):
         return None
-    # a week with every score at 0 hasn't happened yet
-    if all(s == 0 for s in scores.values()):
-        return None
-    return scores
+
+    all_players.sort(key=lambda p: p["score"], reverse=True)
+    top_players = {"all": all_players[:TOP_N]}
+    for pos in POS_TABS:
+        top_players[pos] = [p for p in all_players if p["position"] == pos][:TOP_N]
+    return scores, top_players, position_scores
 
 
 def main():
@@ -106,9 +153,10 @@ def main():
         team_meta[t.team_id] = {
             "team_id": t.team_id,
             "team_name": t.team_name,
+            "team_abbrev": getattr(t, "team_abbrev", ""),
             "abbrev": getattr(t, "team_abbrev", ""),
             "owner": owner,
-            "week_scores": [],
+            "scores_by_week": [],
             "ranking_points_by_week": [],
             "cumulative_points_by_week": [],
             "normalized_by_week": [],
@@ -116,17 +164,22 @@ def main():
 
     cumulative = {tid: 0.0 for tid in team_meta}
     completed_weeks = 0
+    top_players_by_week = []
+    position_scores_by_week = []
     for week in range(1, reg_weeks + 1):
-        scores = week_scores(league, week)
-        if scores is None:
+        res = fetch_week(league, week)
+        if res is None:
             continue
+        scores, top_players, pos_scores = res
         completed_weeks += 1
+        top_players_by_week.append(top_players)
+        position_scores_by_week.append(pos_scores)
         rp = assign_ranking_points(scores, num_teams)
         for tid in team_meta:
             cumulative[tid] += rp.get(tid, 0)
         cutoff_val = sorted(cumulative.values(), reverse=True)[PLAYOFF_CUTOFF - 1]
         for tid, meta in team_meta.items():
-            meta["week_scores"].append(round(scores.get(tid, 0), 2))
+            meta["scores_by_week"].append(round(scores.get(tid, 0), 2))
             meta["ranking_points_by_week"].append(rp.get(tid, 0))
             meta["cumulative_points_by_week"].append(round(cumulative[tid], 2))
             meta["normalized_by_week"].append(
@@ -140,6 +193,7 @@ def main():
         m["total_ranking_points"] = (m["cumulative_points_by_week"][-1]
                                      if m["cumulative_points_by_week"] else 0)
 
+    now_utc = datetime.now(timezone.utc)
     out = {
         "metadata": {
             "league_id": int(LEAGUE_ID),
@@ -147,10 +201,16 @@ def main():
             "num_teams": num_teams,
             "regular_season_weeks": reg_weeks,
             "completed_weeks": completed_weeks,
+            # aliases matching the baseball site's shape (used by the shared JS):
+            "current_matchup_week": completed_weeks,
+            "total_matchup_weeks": reg_weeks,
             "playoff_cutoff": PLAYOFF_CUTOFF,
-            "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
+            "updated_at": now_utc.strftime("%Y-%m-%d %H:%M:%S UTC"),
+            "last_updated": now_utc.isoformat(),
         },
         "teams": teams_out,
+        "top_players_by_week": top_players_by_week,
+        "position_scores_by_week": position_scores_by_week,
     }
     # Don't clobber existing standings with an empty preseason board: if no
     # weeks are done yet but a data file already exists, leave it in place so

@@ -10,6 +10,10 @@
 <header>
   <h1><span class="ball">🏈</span>League Standings</h1>
   <p class="sub" id="subtitle">Cumulative ranking points, normalized so the playoff cutoff = 0.</p>
+  <nav class="header-nav">
+    <a href="index.html" class="nav-link active">Standings</a>
+    <a href="position.html" class="nav-link">Position &amp; Score Analysis</a>
+  </nav>
 </header>
 
 <main>
@@ -37,11 +41,52 @@
       </table>
     </div>
   </section>
+
+  <section id="topscorers-section" class="hidden">
+    <h2>Top Scorers by Week</h2>
+    <div class="week-nav">
+      <button id="prev-week-btn" class="week-nav-btn">&lsaquo;</button>
+      <span id="week-nav-label" class="week-nav-label">Week 1</span>
+      <button id="next-week-btn" class="week-nav-btn">&rsaquo;</button>
+    </div>
+    <div class="tabs" id="top-scorers-tabs">
+      <button class="tab-btn active" data-tab="all">All</button>
+      <button class="tab-btn" data-tab="QB">QB</button>
+      <button class="tab-btn" data-tab="RB">RB</button>
+      <button class="tab-btn" data-tab="WR">WR</button>
+      <button class="tab-btn" data-tab="TE">TE</button>
+    </div>
+    <div class="table-wrap">
+      <table id="top-scorers-table">
+        <thead><tr><th>#</th><th class="left">Player</th><th>Team</th>
+          <th class="left">Fantasy Team</th><th>Pts</th></tr></thead>
+        <tbody id="top-scorers-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="ranking-section" class="hidden">
+    <h2>Weekly Ranking Points</h2>
+    <div class="table-wrap wide">
+      <table id="ranking-points-table" class="heat">
+        <thead id="ranking-points-head"></thead>
+        <tbody id="ranking-points-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="actual-section" class="hidden">
+    <h2>Weekly Actual Points</h2>
+    <div class="table-wrap wide">
+      <table id="actual-points-table" class="heat">
+        <thead id="actual-points-head"></thead>
+        <tbody id="actual-points-body"></tbody>
+      </table>
+    </div>
+  </section>
 </main>
 
-<footer>
-  <span id="updated"></span>
-</footer>
+<footer><span id="updated"></span></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="js/charts.js"></script>

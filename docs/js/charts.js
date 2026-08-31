@@ -35,6 +35,143 @@ async function main() {
   show("table-section");
   renderChart(teams, meta);
   renderTable(teams, meta);
+
+  const cmw = meta.current_matchup_week || meta.completed_weeks;
+  if (data.top_players_by_week?.length) {
+    show("topscorers-section");
+    buildTopScorersTable(data.top_players_by_week, cmw);
+  }
+  show("ranking-section");
+  buildWeeklyTable(
+    document.getElementById("ranking-points-head"),
+    document.getElementById("ranking-points-body"),
+    teams, cmw, "ranking_points_by_week", heatGreen);
+  show("actual-section");
+  buildWeeklyTable(
+    document.getElementById("actual-points-head"),
+    document.getElementById("actual-points-body"),
+    teams, cmw, "scores_by_week", heatGreen, null, { perColumn: true });
+}
+
+// Cream-friendly heat map: pale green (low) -> deep field green (high).
+function heatGreen(val, min, max) {
+  const t = max === min ? 0.5 : (val - min) / (max - min);
+  const L = 95 - t * 33;   // 95% -> 62% lightness
+  const S = 30 + t * 32;   // 30% -> 62% saturation
+  return `hsl(132, ${S}%, ${L}%)`;
+}
+
+// ── Top Scorers by Week (prev/next nav + position tabs) ──
+function buildTopScorersTable(weeklyData, currentWeek) {
+  let displayWeek = currentWeek - 1;
+  let activeTab = "all";
+  const label = document.getElementById("week-nav-label");
+  const tbody = document.getElementById("top-scorers-body");
+  const prevBtn = document.getElementById("prev-week-btn");
+  const nextBtn = document.getElementById("next-week-btn");
+  const tabsEl = document.getElementById("top-scorers-tabs");
+
+  function players() {
+    const wk = weeklyData[displayWeek];
+    if (!wk) return [];
+    return Array.isArray(wk) ? (activeTab === "all" ? wk : []) : (wk[activeTab] || []);
+  }
+  function render() {
+    label.textContent = `Week ${displayWeek + 1} of ${currentWeek}`;
+    prevBtn.disabled = displayWeek === 0;
+    nextBtn.disabled = displayWeek === currentWeek - 1;
+    const ps = players();
+    tbody.innerHTML = "";
+    if (!ps.length) {
+      tbody.innerHTML = `<tr><td colspan="5" class="nodata">No data</td></tr>`;
+      return;
+    }
+    ps.forEach((p, i) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML =
+        `<td class="rk">${i + 1}</td><td class="left player">${p.name}</td>` +
+        `<td class="mut">${p.pro_team}</td><td class="left">${p.fantasy_team}</td>` +
+        `<td class="pts">${p.score.toFixed(1)}</td>`;
+      tbody.appendChild(tr);
+    });
+  }
+  prevBtn.onclick = () => { if (displayWeek > 0) { displayWeek--; render(); } };
+  nextBtn.onclick = () => { if (displayWeek < currentWeek - 1) { displayWeek++; render(); } };
+  tabsEl.querySelectorAll(".tab-btn").forEach(btn => btn.addEventListener("click", () => {
+    tabsEl.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeTab = btn.dataset.tab;
+    render();
+  }));
+  render();
+}
+
+// ── Weekly heat-map table with click-to-sort columns ──
+function buildWeeklyTable(headEl, bodyEl, teams, currentWeek, key, colorFn, formatFn, opts) {
+  const fmt = formatFn || (v => v.toFixed(1));
+  const perColumn = opts?.perColumn || false;
+  const weekMin = {}, weekMax = {};
+  let gMin = Infinity, gMax = -Infinity;
+  for (let w = 1; w <= currentWeek; w++) {
+    let lo = Infinity, hi = -Infinity;
+    teams.forEach(t => { const v = t[key][w - 1]; if (v != null) {
+      lo = Math.min(lo, v); hi = Math.max(hi, v); gMin = Math.min(gMin, v); gMax = Math.max(gMax, v);
+    }});
+    weekMin[w] = lo; weekMax[w] = hi;
+  }
+  const total = t => t[key].slice(0, currentWeek).reduce((s, v) => s + (v ?? 0), 0);
+  let sortWeek = "total", sortDir = -1;
+
+  const headerRow = document.createElement("tr");
+  const th0 = document.createElement("th"); th0.textContent = "Team"; th0.className = "sticky-col";
+  headerRow.appendChild(th0);
+  for (let w = 1; w <= currentWeek; w++) {
+    const th = document.createElement("th"); th.textContent = `Wk ${w}`; th.dataset.week = w;
+    headerRow.appendChild(th);
+  }
+  const tht = document.createElement("th"); tht.textContent = "Total"; tht.dataset.week = "total";
+  tht.className = "total-col"; headerRow.appendChild(tht);
+  headEl.innerHTML = ""; headEl.appendChild(headerRow);
+
+  function indicators() {
+    headEl.querySelectorAll("th[data-week]").forEach(th => {
+      const w = th.dataset.week === "total" ? "total" : parseInt(th.dataset.week);
+      const base = th.dataset.week === "total" ? "Total" : `Wk ${th.dataset.week}`;
+      th.textContent = w === sortWeek ? `${base} ${sortDir === -1 ? "▼" : "▲"}` : base;
+    });
+  }
+  function render() {
+    indicators();
+    const sorted = [...teams].sort((a, b) => {
+      const av = sortWeek === "total" ? total(a) : (a[key][sortWeek - 1] ?? -Infinity);
+      const bv = sortWeek === "total" ? total(b) : (b[key][sortWeek - 1] ?? -Infinity);
+      return sortDir === -1 ? bv - av : av - bv;
+    });
+    bodyEl.innerHTML = "";
+    sorted.forEach(team => {
+      const tr = document.createElement("tr");
+      const nm = document.createElement("td");
+      nm.textContent = team.team_abbrev || team.team_name; nm.className = "sticky-col";
+      tr.appendChild(nm);
+      for (let w = 1; w <= currentWeek; w++) {
+        const v = team[key][w - 1]; const td = document.createElement("td");
+        if (v != null) {
+          td.textContent = fmt(v);
+          td.style.background = colorFn(v, perColumn ? weekMin[w] : gMin, perColumn ? weekMax[w] : gMax);
+        } else td.textContent = "—";
+        tr.appendChild(td);
+      }
+      const tt = document.createElement("td"); tt.textContent = fmt(total(team));
+      tt.className = "total-col"; tr.appendChild(tt);
+      bodyEl.appendChild(tr);
+    });
+  }
+  headEl.querySelectorAll("th[data-week]").forEach(th => th.addEventListener("click", () => {
+    const w = th.dataset.week === "total" ? "total" : parseInt(th.dataset.week);
+    if (sortWeek === w) sortDir *= -1; else { sortWeek = w; sortDir = -1; }
+    render();
+  }));
+  render();
 }
 
 function showEmpty(msg) {

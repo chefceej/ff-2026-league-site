@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Position &amp; Score Analysis — Fantasy Football</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <h1><span class="ball">🏈</span>Position &amp; Score Analysis</h1>
+  <p class="sub" id="last-updated">Points by position, by team, by week.</p>
+  <nav class="header-nav">
+    <a href="index.html" class="nav-link">Standings</a>
+    <a href="position.html" class="nav-link active">Position &amp; Score Analysis</a>
+  </nav>
+</header>
+
+<main>
+  <section id="empty-state" class="hidden">
+    <div class="empty-card">
+      <h2>The season hasn't started yet 🏈</h2>
+      <p>Position scoring will populate once Week&nbsp;1 games are final.</p>
+    </div>
+  </section>
+
+  <section id="pivot-section" class="hidden">
+    <div class="pivot-controls">
+      <div class="pivot-control-group">
+        <label class="control-label">View</label>
+        <div id="view-toggle" class="pivot-toggle">
+          <button class="pivot-toggle-btn active" data-value="byTeam">By Team</button>
+          <button class="pivot-toggle-btn" data-value="byPosition">By Position</button>
+        </div>
+      </div>
+      <div class="pivot-control-group">
+        <label class="control-label">Time</label>
+        <div id="time-toggle" class="pivot-toggle">
+          <button class="pivot-toggle-btn active" data-value="byWeek">By Week</button>
+          <button class="pivot-toggle-btn" data-value="total">Season Total</button>
+        </div>
+      </div>
+      <div class="pivot-control-group">
+        <label class="control-label">Weeks</label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="all-weeks-cb" checked /> All weeks to date
+        </label>
+        <div id="week-range" class="week-range-row" style="display:none">
+          <select id="start-week" class="pivot-select"></select>
+          <span class="week-range-sep">to</span>
+          <select id="end-week" class="pivot-select"></select>
+        </div>
+      </div>
+      <div class="pivot-control-group">
+        <div class="control-label-row">
+          <label class="control-label">Positions</label>
+          <button class="mini-btn" id="pos-all">All</button>
+          <button class="mini-btn" id="pos-none">None</button>
+        </div>
+        <div class="checkbox-group" id="position-checkboxes"></div>
+      </div>
+      <div class="pivot-control-group">
+        <div class="control-label-row">
+          <label class="control-label">Teams</label>
+          <button class="mini-btn" id="team-all">All</button>
+          <button class="mini-btn" id="team-none">None</button>
+        </div>
+        <div class="checkbox-group" id="team-checkboxes"></div>
+      </div>
+      <div class="pivot-control-group">
+        <label class="control-label">Totals</label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="show-team-totals" checked /> Team subtotals
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="show-league-total" /> League total
+        </label>
+      </div>
+    </div>
+
+    <div class="wide-table-wrapper" id="pivot-wrapper">
+      <table id="pivot-table" class="heat">
+        <thead id="pivot-head"></thead>
+        <tbody id="pivot-body"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer><span>Data from ESPN Fantasy Football · updated daily via GitHub Actions</span></footer>
+
+<script src="js/position.js"></script>
+</body>
+</html>

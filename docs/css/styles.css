@@ -69,4 +69,86 @@ td.norm.neg{color:var(--neg); font-weight:700}
 /* the playoff cutoff line — a gold chalk stripe */
 tr.cutoff td{border-bottom:2px dashed var(--gold)}
 
+/* Header nav (chalk links on the green band) */
+.header-nav{display:flex; gap:20px; margin-top:14px; flex-wrap:wrap}
+.nav-link{color:rgba(255,255,255,.78); text-decoration:none; font-size:13px; font-weight:600;
+  padding-bottom:4px; border-bottom:2px solid transparent}
+.nav-link:hover{color:#fff}
+.nav-link.active{color:#fff; border-bottom-color:var(--gold)}
+
+/* Week navigation + player-type tabs */
+.week-nav{display:flex; align-items:center; gap:14px; margin:0 24px 10px}
+.week-nav-btn{width:32px; height:32px; border-radius:8px; border:1px solid var(--line);
+  background:var(--paper); color:var(--field-dk); font-size:18px; cursor:pointer; line-height:1}
+.week-nav-btn:hover:not(:disabled){background:var(--field-lt)}
+.week-nav-btn:disabled{opacity:.4; cursor:default}
+.week-nav-label{font-weight:700; color:var(--ink); font-size:14px}
+.tabs{display:flex; gap:6px; margin:0 24px 12px; flex-wrap:wrap}
+.tab-btn{padding:5px 14px; border-radius:999px; border:1px solid var(--line);
+  background:var(--paper); color:var(--mut); font-size:13px; font-weight:600; cursor:pointer}
+.tab-btn:hover{color:var(--ink)}
+.tab-btn.active{background:var(--field); border-color:var(--field); color:#fff}
+
+/* Top scorers table cells */
+#top-scorers-table td.rk{color:var(--mut)}
+#top-scorers-table td.mut{color:var(--mut); text-align:center}
+#top-scorers-table td.player{font-weight:600}
+#top-scorers-table td.pts{font-weight:700; text-align:center; color:var(--field-dk)}
+td.nodata{text-align:center; color:var(--mut); padding:24px}
+
+/* Heat-map weekly tables */
+.table-wrap.wide{max-width:100%}
+table.heat{border-collapse:collapse; width:auto; min-width:100%; font-size:13px}
+table.heat th,table.heat td{padding:7px 10px; text-align:right; border-bottom:1px solid var(--line);
+  border-right:1px solid var(--line); white-space:nowrap}
+table.heat th{cursor:pointer; user-select:none; background:var(--field-lt); color:var(--field-dk);
+  position:sticky; top:0}
+table.heat th:hover{color:var(--ink)}
+table.heat .sticky-col{position:sticky; left:0; z-index:2; text-align:left; font-weight:700;
+  background:var(--paper); color:var(--ink)}
+table.heat th.sticky-col{background:var(--field-lt); z-index:3}
+table.heat .total-col{font-weight:800; background:var(--cream)!important; color:var(--ink)}
+table.heat td{color:#20302a}
+
+/* ── Position & Score Analysis pivot ── */
+.pivot-controls{display:flex; flex-wrap:wrap; gap:18px 26px; margin:8px 24px 18px;
+  padding:16px 18px; background:var(--paper); border:1px solid var(--line); border-radius:12px}
+.pivot-control-group{display:flex; flex-direction:column; gap:8px}
+.control-label{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--field-dk)}
+.control-label-row{display:flex; align-items:center; gap:8px}
+.pivot-toggle{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden}
+.pivot-toggle-btn{padding:6px 14px; border:none; background:var(--paper); color:var(--mut);
+  font-size:13px; font-weight:600; cursor:pointer}
+.pivot-toggle-btn:hover{color:var(--ink)}
+.pivot-toggle-btn.active{background:var(--field); color:#fff}
+.mini-btn{padding:2px 9px; border:1px solid var(--line); border-radius:6px; background:var(--cream);
+  color:var(--field-dk); font-size:11px; font-weight:600; cursor:pointer}
+.mini-btn:hover{background:var(--field-lt)}
+.pivot-select{padding:5px 8px; border:1px solid var(--line); border-radius:6px; background:var(--paper);
+  color:var(--ink); font-size:13px}
+.week-range-row{display:flex; align-items:center; gap:8px}
+.week-range-sep{color:var(--mut); font-size:12px}
+.checkbox-group{display:flex; flex-wrap:wrap; gap:6px 14px; max-width:340px}
+.checkbox-label{display:inline-flex; align-items:center; gap:5px; font-size:13px; color:var(--ink); cursor:pointer}
+.checkbox-label input{accent-color:var(--field)}
+
+.wide-table-wrapper{margin:0 24px; overflow-x:auto; border:1px solid var(--line);
+  border-radius:12px; background:var(--paper)}
+#pivot-table{font-size:12.5px}
+#pivot-table .sticky-col2{position:sticky; left:0; z-index:1; background:var(--paper);
+  text-align:left; color:var(--mut); font-weight:600}
+#pivot-table .team-col{min-width:70px}
+#pivot-table .pos-col{min-width:52px}
+#pivot-table .team-cell{font-weight:800; color:var(--ink); vertical-align:top;
+  border-right:2px solid var(--line)}
+#pivot-table .team-first-row td{border-top:2px solid var(--line)}
+#pivot-table .team-total-row td,#pivot-table .league-total-row td{
+  font-weight:700; background:var(--cream); color:var(--ink)}
+#pivot-table .pos-total{color:var(--field-dk)}
+#pivot-table th.sort-active{color:var(--ink)}
+#pivot-table .sort-arrow{color:var(--gold)}
+/* sticky-col2 sits to the right of the sticky team column */
+#pivot-table td.team-cell.sticky-col{left:0}
+#pivot-table .sticky-col2.pos-col{left:70px}
+
 footer{padding:22px 24px; color:var(--mut); font-size:12px; text-align:center}
