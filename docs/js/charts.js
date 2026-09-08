@@ -235,6 +235,10 @@ function movementCell(move) {
 function renderTable(teams, meta) {
   const tbody = document.querySelector("#standings-table tbody");
   const prev = previousRanks(teams, meta.completed_weeks);
+  const week = meta.completed_weeks;
+  const lastWkHead = document.querySelector("#standings-table th.lastwk");
+  lastWkHead.textContent = `Wk ${week}`;
+  lastWkHead.title = `Ranking points earned in week ${week}`;
   tbody.innerHTML = "";
   teams.forEach((t, i) => {
     const norm = t.normalized_by_week[t.normalized_by_week.length - 1];
@@ -247,6 +251,7 @@ function renderTable(teams, meta) {
         `<span class="mv-label sr-only">${mv.words}</span></span></td>` +
       `<td class="left team">${t.team_name}</td>` +
       `<td class="left mgr">${t.owner || ""}</td>` +
+      `<td class="lastwk">${(t.ranking_points_by_week[week - 1] ?? 0).toFixed(1)}</td>` +
       `<td class="pts">${t.total_ranking_points}</td>` +
       `<td class="norm ${norm >= 0 ? "pos" : "neg"}">${norm > 0 ? "+" : ""}${norm}</td>`;
     tbody.appendChild(tr);

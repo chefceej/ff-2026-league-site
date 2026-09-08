@@ -64,6 +64,7 @@ tbody tr:last-child td{border-bottom:none}
 #standings-table tbody tr:hover td{background:var(--field-lt)}
 td.team{font-weight:700}
 td.mgr{color:var(--mut)}
+#standings-table .lastwk{color:var(--field-dk); font-variant-numeric:tabular-nums}
 td.norm.pos{color:var(--pos); font-weight:700}
 td.norm.neg{color:var(--neg); font-weight:700}
 /* Rank movement: up in playoff green, down in brick red, held in muted */

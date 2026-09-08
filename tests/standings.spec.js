@@ -116,3 +116,50 @@ test.describe("Rank movement indicator", () => {
     await expect(labels.nth(TIED_AT + 1)).toHaveText("no change");
   });
 });
+
+test.describe("Last Wk column", () => {
+  test("shows each team's ranking points for the latest completed week", async ({ page }) => {
+    const data = await useFixture(page);
+    await page.goto("/index.html");
+
+    const week = data.metadata.completed_weeks;
+    await expect(page.locator("#standings-table th.lastwk")).toHaveText(`Wk ${week}`);
+    await expect(page.locator("#standings-table th.lastwk"))
+      .toHaveAttribute("title", new RegExp(`week ${week}\\b`, "i"));
+    await expect(page.locator("#standings-table tbody td.lastwk")).toHaveText(
+      data.teams.map(t => t.ranking_points_by_week[week - 1].toFixed(1))
+    );
+  });
+
+  test("grows the table by exactly one column", async ({ page }) => {
+    const data = await useFixture(page);
+    await page.goto("/index.html");
+
+    const COLUMNS_BEFORE = 5; // #, Team, Manager, Points, Norm
+    await expect(page.locator("#standings-table thead th")).toHaveCount(COLUMNS_BEFORE + 1);
+    for (let i = 0; i < data.teams.length; i++) {
+      await expect(rows(page).nth(i).locator("td")).toHaveCount(COLUMNS_BEFORE + 1);
+    }
+  });
+
+  test("shows week-1 points when only one week is complete", async ({ page }) => {
+    const data = await useFixture(page, d => truncateToWeeks(d, 1));
+    await page.goto("/index.html");
+
+    await expect(page.locator("#standings-table th.lastwk")).toHaveText("Wk 1");
+    await expect(page.locator("#standings-table tbody td.lastwk")).toHaveText(
+      data.teams.map(t => t.ranking_points_by_week[0].toFixed(1))
+    );
+  });
+
+  test("scrolls inside the table wrapper on a narrow viewport", async ({ page }) => {
+    await useFixture(page);
+    await page.setViewportSize({ width: 375, height: 800 });
+    await page.goto("/index.html");
+
+    await expect(page.locator("#standings-table th.lastwk")).toBeVisible();
+    const pageOverflow = await page.evaluate(() =>
+      document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(pageOverflow).toBeLessThanOrEqual(0);
+  });
+});
