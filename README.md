@@ -25,4 +25,18 @@ FF_LEAGUE_ID=xxxxx FF_SEASON_YEAR=2026 FF_PLAYOFF_CUTOFF=6 \
 python3 -m http.server 8080 --directory docs/   # http://localhost:8080
 ```
 
+## Tests
+
+A Playwright suite loads the site in Chromium against a frozen copy of the
+league data (`tests/fixtures/league_data.json`), so it never depends on the
+daily data commit and needs no credentials:
+
+```bash
+npm install
+npx playwright install chromium
+npm test
+```
+
+It also runs in GitHub Actions on every push and pull request.
+
 Deployed via GitHub Pages from the `docs/` folder on `main`.

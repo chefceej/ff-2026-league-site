@@ -64,8 +64,17 @@ tbody tr:last-child td{border-bottom:none}
 #standings-table tbody tr:hover td{background:var(--field-lt)}
 td.team{font-weight:700}
 td.mgr{color:var(--mut)}
+#standings-table .lastwk{font-variant-numeric:tabular-nums}
 td.norm.pos{color:var(--pos); font-weight:700}
 td.norm.neg{color:var(--neg); font-weight:700}
+/* Rank movement: up in playoff green, down in brick red, held in muted */
+#standings-table td.rk .mv{margin-left:7px; font-size:12px; font-weight:700}
+#standings-table td.rk .mv.up{color:var(--pos)}
+#standings-table td.rk .mv.down{color:var(--neg)}
+#standings-table td.rk .mv.flat{color:var(--mut); font-weight:600}
+/* Announced to screen readers, hidden from sight */
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
 /* the playoff cutoff line — a gold chalk stripe */
 tr.cutoff td{border-bottom:2px dashed var(--gold)}
 

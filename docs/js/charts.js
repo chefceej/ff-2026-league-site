@@ -211,18 +211,54 @@ function renderChart(teams, meta) {
   });
 }
 
+// Where each team stood after the previous completed week: its 1-based position
+// in a stable descending sort of cumulative points over the delivered order, so
+// a tie at week N-1 resolves in current order and manufactures no movement.
+function previousRanks(teams, completedWeeks) {
+  if (completedWeeks < 2) return teams.map((_, i) => i + 1);
+  const prev = [];
+  teams
+    .map((t, i) => ({ i, pts: t.cumulative_points_by_week[completedWeeks - 2] ?? 0 }))
+    .sort((a, b) => b.pts - a.pts || a.i - b.i)
+    .forEach((e, idx) => { prev[e.i] = idx + 1; });
+  return prev;
+}
+
+// Movement is announced in words as well as drawn, so the glyph and its color
+// are never the only signal.
+function describeMovement(move) {
+  if (move > 0) return { cls: "up", glyph: `\u25b2${move}`, words: `up ${move}` };
+  if (move < 0) return { cls: "down", glyph: `\u25bc${-move}`, words: `down ${-move}` };
+  return { cls: "flat", glyph: "\u2013", words: "no change" };
+}
+
+// An absent week reads as a dash, not as a genuine zero.
+function lastWeekPoints(team, week) {
+  const v = team.ranking_points_by_week[week - 1];
+  return v == null ? "\u2014" : v.toFixed(1);
+}
+
 function renderTable(teams, meta) {
   const tbody = document.querySelector("#standings-table tbody");
+  const prev = previousRanks(teams, meta.completed_weeks);
+  const week = meta.completed_weeks;
+  const lastWkHead = document.querySelector("#standings-table th.lastwk");
+  lastWkHead.textContent = `Wk ${week}`;
+  lastWkHead.title = "Ranking points earned in the most recent completed week";
   tbody.innerHTML = "";
   teams.forEach((t, i) => {
     const norm = t.normalized_by_week[t.normalized_by_week.length - 1];
+    const mv = describeMovement(prev[i] - (i + 1));
     const tr = document.createElement("tr");
     if (i + 1 === meta.playoff_cutoff) tr.classList.add("cutoff");
     tr.innerHTML =
-      `<td>${t.rank}</td>` +
+      `<td class="rk"><span class="rk-num">${t.rank}</span>` +
+        `<span class="mv ${mv.cls}"><span class="mv-glyph" aria-hidden="true">${mv.glyph}</span>` +
+        `<span class="mv-label sr-only">${mv.words}</span></span></td>` +
       `<td class="left team">${t.team_name}</td>` +
       `<td class="left mgr">${t.owner || ""}</td>` +
-      `<td>${t.total_ranking_points}</td>` +
+      `<td class="lastwk">${lastWeekPoints(t, week)}</td>` +
+      `<td class="pts">${t.total_ranking_points}</td>` +
       `<td class="norm ${norm >= 0 ? "pos" : "neg"}">${norm > 0 ? "+" : ""}${norm}</td>`;
     tbody.appendChild(tr);
   });

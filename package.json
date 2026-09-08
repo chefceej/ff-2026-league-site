@@ -1,0 +1,12 @@
+{
+  "name": "ff-2026-league-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site showing cumulative ranking-point standings for our ESPN fantasy football league.",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
