@@ -13,14 +13,14 @@ function loadFixture() {
 
 /**
  * Answer every request for the league data with the fixture.
- * `mutate` receives the parsed copy and may edit it in place or return a
- * replacement, which is how edge cases (Week 1, ties) are produced without
- * touching production code.
+ * `mutate` receives the parsed copy and returns the data to serve, which is how
+ * edge cases (Week 1, ties, absent cells) are produced without touching
+ * production code.
  * Returns the data the page will actually receive.
  */
 async function useFixture(page, mutate) {
   const data = loadFixture();
-  const served = (mutate ? mutate(data) : undefined) || data;
+  const served = mutate ? mutate(data) : data;
   await page.route("**/data/league_data.json*", route =>
     route.fulfill({
       status: 200,
@@ -64,4 +64,4 @@ function truncateToWeeks(data, weeks) {
   return data;
 }
 
-module.exports = { FIXTURE_PATH, loadFixture, useFixture, truncateToWeeks };
+module.exports = { useFixture, truncateToWeeks };

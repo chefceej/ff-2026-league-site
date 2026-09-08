@@ -32,14 +32,15 @@ test.describe("Standings table", () => {
     const data = await useFixture(page);
     await page.goto("/index.html");
 
-    const row = rows(page).first();
-    const first = data.teams[0];
-    await expect(row.locator("td.rk .rk-num")).toHaveText(String(first.rank));
-    await expect(row.locator("td.mgr")).toHaveText(first.owner);
-    await expect(row.locator("td.pts")).toHaveText(String(first.total_ranking_points));
-    await expect(row.locator("td.norm")).toHaveText(
-      (n => (n > 0 ? "+" : "") + n)(first.normalized_by_week.at(-1))
-    );
+    const signed = n => (n > 0 ? "+" : "") + n;
+    await expect(page.locator("#standings-table tbody td.rk .rk-num"))
+      .toHaveText(data.teams.map(t => String(t.rank)));
+    await expect(page.locator("#standings-table tbody td.mgr"))
+      .toHaveText(data.teams.map(t => t.owner));
+    await expect(page.locator("#standings-table tbody td.pts"))
+      .toHaveText(data.teams.map(t => String(t.total_ranking_points)));
+    await expect(page.locator("#standings-table tbody td.norm"))
+      .toHaveText(data.teams.map(t => signed(t.normalized_by_week.at(-1))));
 
     const cutoff = data.metadata.playoff_cutoff;
     await expect(rows(page).nth(cutoff - 1)).toHaveClass(/cutoff/);
@@ -157,9 +158,32 @@ test.describe("Last Wk column", () => {
     await page.setViewportSize({ width: 375, height: 800 });
     await page.goto("/index.html");
 
-    await expect(page.locator("#standings-table th.lastwk")).toBeVisible();
+    // The overflow the extra column creates belongs to the wrapper, not the page.
+    const wrapper = page.locator("#table-section .table-wrap");
+    const overflow = await wrapper.evaluate(el => ({
+      scrolls: el.scrollWidth > el.clientWidth,
+      style: getComputedStyle(el).overflowX,
+    }));
+    expect(overflow.scrolls).toBe(true);
+    expect(overflow.style).toBe("auto");
+
     const pageOverflow = await page.evaluate(() =>
       document.documentElement.scrollWidth - document.documentElement.clientWidth);
     expect(pageOverflow).toBeLessThanOrEqual(0);
+  });
+
+  test("shows a dash, not a zero, when the week's points are absent", async ({ page }) => {
+    const data = await useFixture(page, d => {
+      const n = d.metadata.completed_weeks;
+      d.teams[3].ranking_points_by_week[n - 1] = null;
+      return d;
+    });
+    await page.goto("/index.html");
+
+    const cells = page.locator("#standings-table tbody td.lastwk");
+    await expect(cells.nth(3)).toHaveText("\u2014");
+    // A genuine zero still reads as a number, so the dash means "absent".
+    await expect(cells.nth(0)).toHaveText(
+      data.teams[0].ranking_points_by_week.at(-1).toFixed(1));
   });
 });

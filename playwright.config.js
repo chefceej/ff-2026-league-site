@@ -2,6 +2,8 @@
 // documents, so the tests exercise the site exactly as GitHub Pages serves it.
 const { defineConfig, devices } = require("@playwright/test");
 
+// Same server the README documents, one port over so a dev server already
+// running on 8080 is never mistaken for the one under test.
 const PORT = 8081;
 
 module.exports = defineConfig({
