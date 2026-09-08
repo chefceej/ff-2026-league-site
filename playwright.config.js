@@ -24,5 +24,6 @@ module.exports = defineConfig({
     url: `http://127.0.0.1:${PORT}/index.html`,
     reuseExistingServer: !process.env.CI,
     stdout: "ignore",
+    stderr: "ignore",
   },
 });

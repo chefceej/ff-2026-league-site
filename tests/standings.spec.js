@@ -53,6 +53,7 @@ test.describe("Rank movement indicator", () => {
     const data = await useFixture(page);
     await page.goto("/index.html");
 
+    expect(data.teams.map((t, i) => t.rank === i + 1)).not.toContain(false);
     const expected = expectedMovement(data.teams, data.metadata.completed_weeks);
     await expect(page.locator("#standings-table tbody td.rk .mv-label"))
       .toHaveText(expected);
@@ -70,11 +71,19 @@ test.describe("Rank movement indicator", () => {
       const key = label.startsWith("up") ? "up" : label.startsWith("down") ? "down" : label;
       await expect(rows(page).nth(i).locator("td.rk .mv")).toHaveClass(cls[key]);
     }
-    const colorOf = name => page.evaluate(
+    // Read the color off the indicator itself: deleting the CSS rules must
+    // fail this test, which asserting the :root palette would not.
+    const rendered = sel => page.locator(sel).first()
+      .evaluate(el => getComputedStyle(el).color);
+    const resolved = name => page.evaluate(
       n => getComputedStyle(document.documentElement).getPropertyValue(n).trim(), name);
-    const [pos, neg, mut] = await Promise.all(
-      ["--pos", "--neg", "--mut"].map(colorOf));
-    expect(new Set([pos, neg, mut]).size).toBe(3);
+    const toRgb = hex => `rgb(${[1, 3, 5]
+      .map(i => parseInt(hex.slice(i, i + 2), 16)).join(", ")})`;
+    for (const [sel, token] of [["td.rk .mv.up", "--pos"],
+                                ["td.rk .mv.down", "--neg"],
+                                ["td.rk .mv.flat", "--mut"]]) {
+      expect(await rendered(sel)).toBe(toRgb(await resolved(token)));
+    }
   });
 
   test("shows a glyph and a magnitude alongside the words", async ({ page }) => {
@@ -126,7 +135,7 @@ test.describe("Last Wk column", () => {
     const week = data.metadata.completed_weeks;
     await expect(page.locator("#standings-table th.lastwk")).toHaveText(`Wk ${week}`);
     await expect(page.locator("#standings-table th.lastwk"))
-      .toHaveAttribute("title", new RegExp(`week ${week}\\b`, "i"));
+      .toHaveAttribute("title", /most recent completed week/i);
     await expect(page.locator("#standings-table tbody td.lastwk")).toHaveText(
       data.teams.map(t => t.ranking_points_by_week[week - 1].toFixed(1))
     );

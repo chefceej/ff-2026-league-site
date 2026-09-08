@@ -37,6 +37,10 @@ each linking to its issue file. Refresh it only when tickets are published, when
 `/triage` changes a `Status`, or once after each merge in `/implement-spec`.
 Never refresh it from a concurrent worker context.
 
+Wayfinder efforts are excluded: their index is `map.md`, and their
+`claimed`/`resolved` tickets never appear in `tickets.md` — the two
+vocabularies are disjoint, so don't mix them.
+
 The manifest is an entry point, never the source of truth. If `tickets.md` and
 an issue file's `Status:` line disagree, the issue file wins; refresh the manifest.
 

@@ -244,7 +244,7 @@ function renderTable(teams, meta) {
   const week = meta.completed_weeks;
   const lastWkHead = document.querySelector("#standings-table th.lastwk");
   lastWkHead.textContent = `Wk ${week}`;
-  lastWkHead.title = `Ranking points earned in week ${week}`;
+  lastWkHead.title = "Ranking points earned in the most recent completed week";
   tbody.innerHTML = "";
   teams.forEach((t, i) => {
     const norm = t.normalized_by_week[t.normalized_by_week.length - 1];
