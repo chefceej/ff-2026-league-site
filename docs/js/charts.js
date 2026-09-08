@@ -5,6 +5,15 @@ const PALETTE = [
   "#b8892b", "#566270", "#a8324a", "#6b7a2f", "#8a5a3c", "#a0498f",
 ];
 const AXIS = "#7c7862", GRID = "#e6dcc4", LEG = "#20302a";
+// Zero is the playoff cutoff, so its gridline is drawn in the same gold chalk
+// as the Standings table's cutoff stripe. Keep in step with --gold in styles.css.
+const CUTOFF = "#c8a23c", CUTOFF_WIDTH = 2;
+
+// Chart.js resolves grid color and width per tick, so the cutoff line needs no
+// plugin. Tick values are rounded to the step's precision, so zero is exact.
+// (4.4.1 offers no per-gridline dash — the dash lives on the axis border — so
+// the stripe is matched by color and weight alone.)
+const atCutoff = ctx => ctx.tick && ctx.tick.value === 0;
 
 async function main() {
   let data;
@@ -27,8 +36,11 @@ async function main() {
     return;
   }
 
+  // The season leads the subtitle: in the preseason the site still serves last
+  // season's data, and that is the first thing a visitor needs to know.
+  const season = meta.season ? `${meta.season} season · ` : "";
   document.getElementById("subtitle").textContent =
-    `${meta.num_teams}-team league · normalized so #${meta.playoff_cutoff} = 0 ` +
+    `${season}${meta.num_teams}-team league · normalized so #${meta.playoff_cutoff} = 0 ` +
     `· ${meta.completed_weeks} week${meta.completed_weeks > 1 ? "s" : ""} played`;
 
   show("chart-section");
@@ -203,7 +215,11 @@ function renderChart(teams, meta) {
       scales: {
         x: { ticks: { color: AXIS }, grid: { color: GRID } },
         y: {
-          ticks: { color: AXIS }, grid: { color: GRID },
+          ticks: { color: AXIS },
+          grid: {
+            color: ctx => (atCutoff(ctx) ? CUTOFF : GRID),
+            lineWidth: ctx => (atCutoff(ctx) ? CUTOFF_WIDTH : 1),
+          },
           title: { display: true, text: "Points vs. playoff cutoff", color: AXIS },
         },
       },

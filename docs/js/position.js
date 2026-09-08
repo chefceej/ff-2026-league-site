@@ -367,8 +367,13 @@ fetch("data/league_data.json", { cache: "no-store" })
       return;
     }
     state.data = data;
+    // Season first, then what the page shows, then the timestamp where it was.
     const lu = document.getElementById("last-updated");
-    if (data.metadata?.updated_at) lu.textContent = "Points by position · updated " + data.metadata.updated_at;
+    const parts = [];
+    if (data.metadata?.season) parts.push(`${data.metadata.season} season`);
+    parts.push("Points by position");
+    if (data.metadata?.updated_at) parts.push("updated " + data.metadata.updated_at);
+    lu.textContent = parts.join(" · ");
     document.getElementById("pivot-section").classList.remove("hidden");
     setupControls(data);
     render();
