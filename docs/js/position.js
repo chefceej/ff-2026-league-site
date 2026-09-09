@@ -38,15 +38,16 @@ function hasVal(team, pos, w) { return state.data.position_scores_by_week[w]?.[t
 function hasAgg(team, pos, weeks) { return weeks.some(w => hasVal(team, pos, w)); }
 
 // Present -> the number, sign and all; absent -> the em dash, which now means
-// only "no such lineup slot". Heat stays positive-only and is skipped entirely
-// when no range is given; negatives go brick red.
+// only "no such lineup slot". Heat is untouched: still gated on the raw value
+// being positive, still skipped when no range is given. Only the brick-red
+// class reads the rounded value, so a float-error -0.004 prints "0.0" plain
+// rather than a red "-0.0".
 function fillCell(td, val, present, range) {
-  if (!present) { td.textContent = "—"; return td; }
-  const shown = Math.round(val * 10) / 10;   // judge the sign on what's displayed
+  if (!present) { td.textContent = "—"; return; }
+  const shown = Math.round(val * 10) / 10;
   td.textContent = shown.toFixed(1);
-  if (shown > 0 && range) td.style.background = cellColor(shown, range[0], range[1]);
+  if (val > 0) { if (range) td.style.background = cellColor(val, range[0], range[1]); }
   else if (shown < 0) td.classList.add("neg");
-  return td;
 }
 
 function render() {
@@ -169,6 +170,7 @@ function renderTeamTotal(headEl, bodyEl, teams, positions, weeks) {
       fillCell(td, v, hasAgg(team, pos, weeks), colRange[pos]); row.appendChild(td);
     }
     const totalTd = document.createElement("td"); totalTd.className = "total-col";
+    // No range: the team total spans positions, so it carries no heat scale.
     fillCell(totalTd, teamTotal, positions.some(p => hasAgg(team, p, weeks)));
     row.appendChild(totalTd);
     bodyEl.appendChild(row);

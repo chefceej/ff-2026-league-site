@@ -89,19 +89,52 @@ const negColor = page => page.evaluate(() => {
   return c;
 });
 
-test.describe("Non-positive pivot cells", () => {
-  test("By Team / By Week shows the negative value in red, not a dash", async ({ page }) => {
-    const data = await useFixture(page);
-    const neg = findNegative(data);
-    await page.goto("/position.html");
-    await setView(page, "byTeam", "byWeek");
+// The four views, and where a given (team, position) cell lands in each. The
+// Season Total views are pinned to the cell's own week, so the aggregate under
+// test is that one value.
+const VIEWS = [
+  { name: "By Team / By Week", view: "byTeam", time: "byWeek",
+    labels: c => [c.team, c.pos], column: c => `Wk ${c.w + 1}` },
+  { name: "By Position / By Week", view: "byPosition", time: "byWeek",
+    labels: c => [c.pos, c.team], column: c => `Wk ${c.w + 1}` },
+  { name: "By Team / Season Total", view: "byTeam", time: "total", oneWeek: true,
+    labels: c => [c.team], column: c => c.pos },
+  { name: "By Position / Season Total", view: "byPosition", time: "total", oneWeek: true,
+    labels: c => [c.pos], column: c => c.team },
+];
 
-    const c = cell(await readPivot(page), [neg.team, neg.pos], `Wk ${neg.w + 1}`);
-    expect(c.text).toBe(neg.val.toFixed(1));
-    expect(c.text).not.toBe(DASH);
-    expect(c.neg).toBe(true);
-    expect(c.color).toBe(await negColor(page));
-  });
+/** Open the pivot in `spec`'s view, showing the week `target` lives in. */
+async function openAt(page, spec, target) {
+  await page.goto("/position.html");
+  await setView(page, spec.view, spec.time);
+  if (spec.oneWeek) await setWeekRange(page, target.w);
+  return cell(await readPivot(page), spec.labels(target), spec.column(target));
+}
+
+test.describe("Non-positive pivot cells", () => {
+  for (const spec of VIEWS) {
+    test(`${spec.name} shows the negative value in red, not a dash`, async ({ page }) => {
+      const data = await useFixture(page);
+      const neg = findNegative(data);
+
+      const c = await openAt(page, spec, neg);
+      expect(c.text).toBe(neg.val.toFixed(1));
+      expect(c.text).not.toBe(DASH);
+      expect(c.neg).toBe(true);
+      expect(c.color).toBe(await negColor(page));
+      expect(c.inlineBg).toBe("");
+    });
+
+    test(`${spec.name} shows a goose egg as 0.0, unstyled`, async ({ page }) => {
+      const data = await useFixture(page);
+      const zero = findZero(data);
+
+      const c = await openAt(page, spec, zero);
+      expect(c.text).toBe("0.0");
+      expect(c.neg).toBe(false);
+      expect(c.inlineBg).toBe("");
+    });
+  }
 
   test("a row total that is negative over the chosen weeks is red, not a dash",
     async ({ page }) => {
@@ -116,92 +149,8 @@ test.describe("Non-positive pivot cells", () => {
       expect(c.text).toBe(neg.val.toFixed(1));
       expect(c.neg).toBe(true);
       expect(c.color).toBe(await negColor(page));
+      expect(c.inlineBg).toBe("");
     });
-
-  test("By Position / By Week shows the negative value in red, not a dash", async ({ page }) => {
-    const data = await useFixture(page);
-    const neg = findNegative(data);
-    await page.goto("/position.html");
-    await setView(page, "byPosition", "byWeek");
-
-    const c = cell(await readPivot(page), [neg.pos, neg.team], `Wk ${neg.w + 1}`);
-    expect(c.text).toBe(neg.val.toFixed(1));
-    expect(c.neg).toBe(true);
-  });
-
-  test("By Team / Season Total shows the negative total in red, not a dash", async ({ page }) => {
-    const data = await useFixture(page);
-    const neg = findNegative(data);
-    await page.goto("/position.html");
-    await setView(page, "byTeam", "total");
-    await setWeekRange(page, neg.w);
-
-    const c = cell(await readPivot(page), [neg.team], neg.pos);
-    expect(c.text).toBe(neg.val.toFixed(1));
-    expect(c.neg).toBe(true);
-  });
-
-  test("By Position / Season Total shows the negative total in red, not a dash", async ({ page }) => {
-    const data = await useFixture(page);
-    const neg = findNegative(data);
-    await page.goto("/position.html");
-    await setView(page, "byPosition", "total");
-    await setWeekRange(page, neg.w);
-
-    const c = cell(await readPivot(page), [neg.pos], neg.team);
-    expect(c.text).toBe(neg.val.toFixed(1));
-    expect(c.neg).toBe(true);
-  });
-
-  test("By Team / By Week shows a goose egg as 0.0, unstyled", async ({ page }) => {
-    const data = await useFixture(page);
-    const zero = findZero(data);
-    await page.goto("/position.html");
-    await setView(page, "byTeam", "byWeek");
-
-    const c = cell(await readPivot(page), [zero.team, zero.pos], `Wk ${zero.w + 1}`);
-    expect(c.text).toBe("0.0");
-    expect(c.neg).toBe(false);
-    expect(c.inlineBg).toBe("");
-  });
-
-  test("By Position / By Week shows a goose egg as 0.0, unstyled", async ({ page }) => {
-    const data = await useFixture(page);
-    const zero = findZero(data);
-    await page.goto("/position.html");
-    await setView(page, "byPosition", "byWeek");
-
-    const c = cell(await readPivot(page), [zero.pos, zero.team], `Wk ${zero.w + 1}`);
-    expect(c.text).toBe("0.0");
-    expect(c.neg).toBe(false);
-    expect(c.inlineBg).toBe("");
-  });
-
-  test("By Team / Season Total shows a goose egg as 0.0, unstyled", async ({ page }) => {
-    const data = await useFixture(page);
-    const zero = findZero(data);
-    await page.goto("/position.html");
-    await setView(page, "byTeam", "total");
-    await setWeekRange(page, zero.w);
-
-    const c = cell(await readPivot(page), [zero.team], zero.pos);
-    expect(c.text).toBe("0.0");
-    expect(c.neg).toBe(false);
-    expect(c.inlineBg).toBe("");
-  });
-
-  test("By Position / Season Total shows a goose egg as 0.0, unstyled", async ({ page }) => {
-    const data = await useFixture(page);
-    const zero = findZero(data);
-    await page.goto("/position.html");
-    await setView(page, "byPosition", "total");
-    await setWeekRange(page, zero.w);
-
-    const c = cell(await readPivot(page), [zero.pos], zero.team);
-    expect(c.text).toBe("0.0");
-    expect(c.neg).toBe(false);
-    expect(c.inlineBg).toBe("");
-  });
 });
 
 test.describe("Absent pivot cells", () => {
@@ -259,23 +208,45 @@ test.describe("Absent pivot cells", () => {
 });
 
 test.describe("Sorting", () => {
+  /** Every team's total for `pos` over `weeks`, the way the page sums it. */
+  const totalsFor = (data, pos, weeks) =>
+    [...new Set(data.position_scores_by_week.flatMap(w => Object.keys(w)))]
+      .map(team => [team, weeks.reduce(
+        (s, w) => s + (data.position_scores_by_week[w][team]?.[pos] ?? 0), 0)]);
+
+  const lowestOf = totals => totals.reduce((a, b) => (b[1] < a[1] ? b : a));
+
   test("Team / Season Total sorted by a position puts the lowest total last",
     async ({ page }) => {
       const data = await useFixture(page);
       const neg = findNegative(data);
       await page.goto("/position.html");
       await setView(page, "byTeam", "total");
-      await setWeekRange(page, neg.w);
       await page.click(`#pivot-head th:has-text("${neg.pos}")`);
 
-      const week = data.position_scores_by_week[neg.w];
-      const totals = Object.keys(week).map(team => [team, week[team][neg.pos] ?? 0]);
-      const lowest = totals.reduce((a, b) => (b[1] < a[1] ? b : a));
+      const allWeeks = data.position_scores_by_week.map((_, i) => i);
+      const lowest = lowestOf(totalsFor(data, neg.pos, allWeeks));
 
       const pivot = await readPivot(page);
       const last = pivot.rows[pivot.rows.length - 1];
       expect(last.labels[0]).toBe(lowest[0]);
       expect(cell(pivot, last.labels, neg.pos).text).toBe(lowest[1].toFixed(1));
-      expect(lowest[1]).toBeLessThan(0);
     });
+
+  test("a negative total sorts below every positive one", async ({ page }) => {
+    const data = await useFixture(page);
+    const neg = findNegative(data);
+    await page.goto("/position.html");
+    await setView(page, "byTeam", "total");
+    await setWeekRange(page, neg.w);   // a range where the lowest total is negative
+    await page.click(`#pivot-head th:has-text("${neg.pos}")`);
+
+    const lowest = lowestOf(totalsFor(data, neg.pos, [neg.w]));
+    expect(lowest[1]).toBeLessThan(0);
+
+    const pivot = await readPivot(page);
+    const last = pivot.rows[pivot.rows.length - 1];
+    expect(last.labels[0]).toBe(lowest[0]);
+    expect(cell(pivot, last.labels, neg.pos).text).toBe(lowest[1].toFixed(1));
+  });
 });
