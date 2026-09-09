@@ -35,6 +35,21 @@ POSITION_ALIASES = {TEAM_QB: "QB"}
 FULLY_PLAYED = 100
 
 
+def weeks_to_fetch(reg_weeks, current_week):
+    """The regular-season weeks ESPN can actually answer for, in order.
+
+    espn_api's box_scores(week) has no else branch for a week beyond
+    league.current_week: it silently serves the current week's box scores
+    instead of the week asked for. Asking for weeks the league has not reached
+    therefore hands back the same week over and over, and once that week goes
+    final it would be counted once per remaining week of the season. Asking
+    only for weeks that exist is what prevents it.
+    """
+    if current_week is None:          # a season ESPN reports nothing about
+        current_week = reg_weeks
+    return list(range(1, min(reg_weeks, current_week) + 1))
+
+
 def normalize_position(position):
     return POSITION_ALIASES.get(position, position)
 
@@ -75,9 +90,10 @@ def week_status(boxes):
     return "in-progress"
 
 
-def build_week(boxes):
+def build_week(boxes, week):
     """One week's box scores -> the week structure the site is built from.
 
+      week            : the week number these box scores were asked for
       status          : "upcoming" | "in-progress" | "final"
       scores          : {team_id: team score}
       top_players     : {"all": [...], "QB": [...], ...} of starter scores
@@ -115,6 +131,7 @@ def build_week(boxes):
         top_players[pos] = [p for p in all_players
                             if p["position"] == pos][:TOP_N]
     return {
+        "week": week,
         "status": week_status(boxes),
         "scores": scores,
         "top_players": top_players,
@@ -149,6 +166,13 @@ def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     Only final weeks count: an upcoming or in-progress week contributes no
     scores, ranking points, top scorers or position scores.
 
+    Position in the returned arrays is what the site reads as the week number,
+    so the final weeks have to be weeks 1..N with nothing missing and nothing
+    repeated. A gap -- one week's fetch failed, or an unfinished week sits
+    between two final ones -- would publish every later week under the wrong
+    label for the rest of the season, and a repeat would count one week twice,
+    so both raise instead of quietly shifting the arrays.
+
       final_weeks             : how many weeks fed the standings
       teams                   : {team_id: {four per-week arrays}}
       top_players_by_week     : one entry per final week
@@ -166,6 +190,12 @@ def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     for wk in weeks:
         if wk["status"] != "final":
             continue
+        expected = len(top_players_by_week) + 1
+        if wk["week"] != expected:
+            raise ValueError(
+                f"final week {wk['week']} arrived where week {expected} was "
+                f"expected: the standings are written one week per slot, so a "
+                f"missing or repeated week would relabel every later week")
         top_players_by_week.append(wk["top_players"])
         position_scores_by_week.append(wk["position_scores"])
         rp = assign_ranking_points(wk["scores"], num_teams)

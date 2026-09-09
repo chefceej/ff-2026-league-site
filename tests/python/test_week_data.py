@@ -4,8 +4,10 @@ Stand-ins mimic the espn_api box-score objects the fetcher actually sees:
 a BoxScore with home/away team, score and lineup, and BoxPlayers carrying
 slot_position, position, points, game_played (0-100) and on_bye_week.
 """
+import pytest
+
 from week_data import (accumulate_weeks, assign_ranking_points,
-                       build_week, week_status)
+                       build_week, week_status, weeks_to_fetch)
 
 
 class FakePlayer:
@@ -76,7 +78,7 @@ def test_build_week_reports_scores_and_status():
     boxes = [box([FakePlayer(name="Played", game_played=100, points=20.0)],
                  [FakePlayer(name="Also played", game_played=100, points=11.5)],
                  home_score=20.0, away_score=11.5)]
-    wk = build_week(boxes)
+    wk = build_week(boxes, week=1)
     assert wk["status"] == "final"
     assert wk["scores"] == {1: 20.0, 2: 11.5}
 
@@ -87,7 +89,7 @@ def test_build_week_buckets_starter_points_by_position_per_team():
                   FakePlayer(name="Flexed", slot="RB/WR/TE", points=5.0),
                   FakePlayer(name="Benched", slot="BE", points=99.0)],
                  [FakePlayer(name="Other passer", slot="QB", points=13.0)])]
-    wk = build_week(boxes)
+    wk = build_week(boxes, week=1)
     assert wk["position_scores"]["T1"] == {"QB": 20.0, "RB": 8.0, "FLEX": 5.0}
     assert wk["position_scores"]["T2"] == {"QB": 13.0}
 
@@ -97,7 +99,7 @@ def test_build_week_ranks_starters_into_all_and_position_tabs():
                   FakePlayer(name="Runner", slot="RB", position="RB", points=8.0)],
                  [FakePlayer(name="Other passer", slot="QB", position="QB",
                              points=13.0)])]
-    wk = build_week(boxes)
+    wk = build_week(boxes, week=1)
     assert [p["name"] for p in wk["top_players"]["all"]] == [
         "Passer", "Other passer", "Runner"]
     assert [p["name"] for p in wk["top_players"]["QB"]] == [
@@ -112,7 +114,7 @@ def test_team_qb_points_land_in_the_qb_position_bucket():
                              points=24.5, pro_team="KC")],
                  [FakePlayer(name="Passer", slot="QB", position="QB",
                              points=13.0)])]
-    wk = build_week(boxes)
+    wk = build_week(boxes, week=1)
     assert wk["position_scores"]["T1"] == {"QB": 24.5}
 
 
@@ -121,7 +123,7 @@ def test_team_qb_players_appear_in_the_qb_top_scorers_tab():
                              points=24.5, pro_team="KC")],
                  [FakePlayer(name="Passer", slot="QB", position="QB",
                              points=13.0)])]
-    wk = build_week(boxes)
+    wk = build_week(boxes, week=1)
     assert [p["name"] for p in wk["top_players"]["QB"]] == [
         "Chiefs QB", "Passer"]
     assert wk["top_players"]["QB"][0]["position"] == "QB"
@@ -138,14 +140,14 @@ def test_tied_scores_share_the_average_of_the_ranks_they_occupy():
     assert points == {1: 2.5, 2: 2.5, 3: 1}
 
 
-def week(status, scores):
-    return {"status": status, "scores": scores,
+def week(number, status, scores):
+    return {"week": number, "status": status, "scores": scores,
             "top_players": {"all": []}, "position_scores": {}}
 
 
 def test_an_in_progress_week_is_absent_from_the_standings_arrays():
-    weeks = [week("final", {1: 100.0, 2: 90.0}),
-             week("in-progress", {1: 40.0, 2: 10.0})]
+    weeks = [week(1, "final", {1: 100.0, 2: 90.0}),
+             week(2, "in-progress", {1: 40.0, 2: 10.0})]
     standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
     assert standings["final_weeks"] == 1
     assert standings["teams"][1]["scores_by_week"] == [100.0]
@@ -154,10 +156,10 @@ def test_an_in_progress_week_is_absent_from_the_standings_arrays():
 
 
 def test_upcoming_and_in_progress_weeks_contribute_no_top_scorers_or_positions():
-    final = week("final", {1: 100.0, 2: 90.0})
+    final = week(1, "final", {1: 100.0, 2: 90.0})
     final["top_players"] = {"all": [{"name": "Passer"}]}
     final["position_scores"] = {"T1": {"QB": 20.0}}
-    in_progress = week("in-progress", {1: 40.0, 2: 10.0})
+    in_progress = week(2, "in-progress", {1: 40.0, 2: 10.0})
     in_progress["top_players"] = {"all": [{"name": "Half a game"}]}
     in_progress["position_scores"] = {"T1": {"QB": 8.0}}
     standings = accumulate_weeks([final, in_progress], team_ids=[1, 2],
@@ -167,8 +169,8 @@ def test_upcoming_and_in_progress_weeks_contribute_no_top_scorers_or_positions()
 
 
 def test_cumulative_points_are_normalized_against_the_cutoff_team():
-    weeks = [week("final", {1: 100.0, 2: 90.0, 3: 80.0}),
-             week("final", {1: 100.0, 2: 95.0, 3: 99.0})]
+    weeks = [week(1, "final", {1: 100.0, 2: 90.0, 3: 80.0}),
+             week(2, "final", {1: 100.0, 2: 95.0, 3: 99.0})]
     standings = accumulate_weeks(weeks, team_ids=[1, 2, 3],
                                  playoff_cutoff=2)
     # Cumulative after two weeks: team 1 = 6, team 3 = 3, team 2 = 3.
@@ -192,6 +194,69 @@ def test_a_slot_that_scores_for_nobody_is_left_out_of_the_top_scorers():
     boxes = [box([FakePlayer(name="Passer", slot="QB", points=20.0),
                   FakePlayer(name="Stray", slot="FA", points=99.0)],
                  [FakePlayer(name="Other passer", slot="QB", points=13.0)])]
-    wk = build_week(boxes)
+    wk = build_week(boxes, week=1)
     assert [p["name"] for p in wk["top_players"]["all"]] == [
         "Passer", "Other passer"]
+
+
+# ── The week number: what keeps one week from being counted as several ──
+
+def test_the_fetcher_asks_only_for_weeks_the_league_has_reached():
+    # espn_api's box_scores(week) has no else branch for a week past
+    # league.current_week: it quietly serves the CURRENT week instead. Asking
+    # for weeks 2..14 during week 1 would hand back week 1 thirteen more times.
+    assert weeks_to_fetch(reg_weeks=14, current_week=1) == [1]
+    assert weeks_to_fetch(reg_weeks=14, current_week=5) == [1, 2, 3, 4, 5]
+    assert weeks_to_fetch(reg_weeks=14, current_week=14) == list(range(1, 15))
+
+
+def test_the_fetcher_stops_at_the_last_regular_season_week():
+    # Playoff weeks run past reg_season_count; the standings end there.
+    assert weeks_to_fetch(reg_weeks=14, current_week=17) == list(range(1, 15))
+
+
+def test_the_fetcher_asks_for_nothing_before_the_season_starts():
+    assert weeks_to_fetch(reg_weeks=14, current_week=0) == []
+
+
+def test_build_week_carries_the_week_it_was_asked_for():
+    wk = build_week([box([FakePlayer()], [FakePlayer()])], week=7)
+    assert wk["week"] == 7
+
+
+def test_the_same_week_twice_is_counted_once_or_not_at_all():
+    # The shape espn_api's future-week fallback produces: one real week handed
+    # back under two different requests. Counting it twice would double every
+    # team's ranking points.
+    duplicated = [week(1, "final", {1: 100.0, 2: 90.0}),
+                  week(1, "final", {1: 100.0, 2: 90.0})]
+    with pytest.raises(ValueError, match="week 1"):
+        accumulate_weeks(duplicated, team_ids=[1, 2], playoff_cutoff=1)
+
+
+def test_a_missing_week_is_refused_rather_than_silently_closed():
+    # Week 2's fetch failed. Accumulating weeks 1 and 3 positionally would
+    # publish week 3's scores under the label W2 for the rest of the season.
+    with_gap = [week(1, "final", {1: 100.0, 2: 90.0}),
+                week(3, "final", {1: 80.0, 2: 95.0})]
+    with pytest.raises(ValueError, match="week 3"):
+        accumulate_weeks(with_gap, team_ids=[1, 2], playoff_cutoff=1)
+
+
+def test_an_unfinished_week_between_final_ones_is_refused_too():
+    # Week 2 unfinished but week 3 final means week 3 would land in week 2's
+    # slot — the same relabelling, arrived at a different way.
+    out_of_order = [week(1, "final", {1: 100.0, 2: 90.0}),
+                    week(2, "in-progress", {1: 40.0, 2: 10.0}),
+                    week(3, "final", {1: 80.0, 2: 95.0})]
+    with pytest.raises(ValueError, match="week 3"):
+        accumulate_weeks(out_of_order, team_ids=[1, 2], playoff_cutoff=1)
+
+
+def test_an_unfinished_week_after_the_last_final_one_is_fine():
+    weeks = [week(1, "final", {1: 100.0, 2: 90.0}),
+             week(2, "final", {1: 80.0, 2: 95.0}),
+             week(3, "in-progress", {1: 40.0, 2: 10.0}),
+             week(4, "upcoming", {1: 0.0, 2: 0.0})]
+    standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
+    assert standings["final_weeks"] == 2

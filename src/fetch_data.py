@@ -25,7 +25,7 @@ _espn_req.FANTASY_BASE_ENDPOINT = (
 
 from espn_api.football import League
 
-from week_data import accumulate_weeks, build_week
+from week_data import accumulate_weeks, build_week, weeks_to_fetch
 
 # ---------------------------------------------------------------------------
 # Config (env-driven; no secrets in source)
@@ -47,7 +47,7 @@ def fetch_week(league, week):
     except Exception as e:
         print(f"  week {week}: box_scores failed ({e})")
         return None
-    return build_week(boxes)
+    return build_week(boxes, week)
 
 
 def main():
@@ -81,7 +81,7 @@ def main():
         }
 
     weeks = []
-    for week in range(1, reg_weeks + 1):
+    for week in weeks_to_fetch(reg_weeks, getattr(league, "current_week", None)):
         wk = fetch_week(league, week)
         if wk is None:
             continue
