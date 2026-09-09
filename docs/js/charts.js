@@ -8,6 +8,13 @@ const AXIS = "#7c7862", GRID = "#e6dcc4", LEG = "#20302a";
 // Zero is the playoff cutoff, so its gridline is drawn in the same gold chalk
 // as the Standings table's cutoff stripe. Keep in step with --gold in styles.css.
 const CUTOFF = "#c8a23c", CUTOFF_WIDTH = 2;
+// Highlight: the chosen line is drawn heavier with bigger points; the rest keep
+// their hue at an alpha low enough to recede but still legible on the cream.
+const DIM_ALPHA = 0.22;
+const BASE_WIDTH = 2, BASE_POINT = 2;
+const LIT_WIDTH = 3.5, LIT_POINT = 4;
+// One key, one query parameter, both holding a team abbreviation.
+const HIGHLIGHT_KEY = "ff-highlight-team", HIGHLIGHT_PARAM = "team";
 
 // Chart.js resolves grid color and width per tick, so the cutoff line needs no
 // plugin. Tick values are rounded to the step's precision, so zero is exact.
@@ -45,8 +52,9 @@ async function main() {
 
   show("chart-section");
   show("table-section");
-  renderChart(teams, meta);
+  const chart = renderChart(teams, meta);
   renderTable(teams, meta);
+  setupHighlight(chart, teams);
 
   const cmw = meta.current_matchup_week || meta.completed_weeks;
   if (data.top_players_by_week?.length) {
@@ -195,14 +203,22 @@ function show(id) { document.getElementById(id).classList.remove("hidden"); }
 function renderChart(teams, meta) {
   const weeks = meta.completed_weeks;
   const labels = Array.from({ length: weeks }, (_, i) => `W${i + 1}`);
-  const datasets = teams.map((t, i) => ({
-    label: t.team_name,
-    data: t.normalized_by_week,
-    borderColor: PALETTE[i % PALETTE.length],
-    backgroundColor: PALETTE[i % PALETTE.length],
-    tension: 0.25, borderWidth: 2, pointRadius: 2,
-  }));
-  new Chart(document.getElementById("positionChart"), {
+  // backgroundColor is the legend swatch's fill and is deliberately left at full
+  // strength: the highlight dims lines, not the legend. Everything else is the
+  // highlight's to own, so it comes from the one styling routine, unhighlighted.
+  const datasets = teams.map((t, i) => {
+    const ds = {
+      label: t.team_name,
+      data: t.normalized_by_week,
+      backgroundColor: PALETTE[i % PALETTE.length],
+      tension: 0.25,
+    };
+    styleDataset(ds, i, NONE);
+    return ds;
+  });
+  // The instance is returned, not discarded: the highlight routine restyles
+  // these datasets in place, which is what keeps the legend's hidden state.
+  return new Chart(document.getElementById("positionChart"), {
     type: "line",
     data: { labels, datasets },
     options: {
@@ -225,6 +241,111 @@ function renderChart(teams, meta) {
       },
     },
   });
+}
+
+// ── Highlight one team across the chart and the Standings table ──
+
+/** No team highlighted: the index that matches no dataset and no table row. */
+const NONE = -1;
+
+/** A palette hex at `alpha`, so a faded line keeps its team's hue. */
+function fade(hex, alpha) {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+}
+
+/**
+ * Style line `i` for a highlight on dataset `lit` (NONE for no highlight).
+ * The single source of truth for a line's look: renderChart builds every
+ * dataset through it, and the highlight routine rewrites them through it.
+ */
+function styleDataset(ds, i, lit) {
+  const hue = PALETTE[i % PALETTE.length];
+  const dimmed = lit !== NONE && i !== lit;
+  ds.borderColor = ds.pointBackgroundColor = ds.pointBorderColor =
+    dimmed ? fade(hue, DIM_ALPHA) : hue;
+  ds.borderWidth = i === lit ? LIT_WIDTH : BASE_WIDTH;
+  ds.pointRadius = i === lit ? LIT_POINT : BASE_POINT;
+  // A point strokes over its own fill, so a faded one would otherwise read at
+  // roughly twice its line's alpha and pull the eye off the chosen team.
+  ds.pointBorderWidth = dimmed ? 0 : 1;
+}
+
+// Local storage is unavailable in some privacy modes, where merely touching it
+// throws. The highlight is a convenience: losing it must never take down the
+// sections main() renders after this one.
+function readRemembered() {
+  try { return localStorage.getItem(HIGHLIGHT_KEY); } catch (e) { return null; }
+}
+function writeRemembered(abbrev) {
+  try {
+    if (abbrev) localStorage.setItem(HIGHLIGHT_KEY, abbrev);
+    else localStorage.removeItem(HIGHLIGHT_KEY);
+  } catch (e) { /* the link still carries the choice; only the memory is lost */ }
+}
+
+/**
+ * The abbreviation to highlight on load: the link's team if it names one we
+ * know, else the remembered one if it does, else nothing. An unknown value is
+ * ignored rather than corrected, and load never writes back — neither a stale
+ * link nor someone else's shared one may overwrite what this device remembers.
+ */
+function resolveHighlight(abbrevs) {
+  const known = a => (abbrevs.includes(a) ? a : "");
+  const linked = new URLSearchParams(location.search).get(HIGHLIGHT_PARAM);
+  return known(linked) || known(readRemembered());
+}
+
+/** Record the choice on this device and in the link, without navigating. */
+function rememberHighlight(abbrev) {
+  const url = new URL(location.href);
+  if (abbrev) url.searchParams.set(HIGHLIGHT_PARAM, abbrev);
+  else url.searchParams.delete(HIGHLIGHT_PARAM);
+  history.replaceState(null, "", url);
+  writeRemembered(abbrev);
+}
+
+// The abbreviation a team is keyed by. The fetch script defaults team_abbrev to
+// the empty string (src/fetch_data.py) and this feature already spends "" as its
+// "no highlight" token, so an unfallen-back key would name None and light a team
+// nobody chose. Falling back to the name is what the fetch script's own position
+// bucketing and renderTable already do.
+const teamKey = t => t.team_abbrev || t.team_name;
+
+function setupHighlight(chart, teams) {
+  // Datasets and Standings rows are both built from the delivered team order,
+  // so one index addresses a team's line and its row alike.
+  const abbrevs = teams.map(teamKey);
+  const select = document.getElementById("highlight-team");
+  const rows = document.querySelectorAll("#standings-table tbody tr");
+
+  teams.forEach(t => {
+    const option = document.createElement("option");
+    option.value = teamKey(t);
+    option.textContent = t.team_name;
+    select.appendChild(option);
+  });
+
+  /**
+   * Draw `abbrev` as the foreground of both views, or clear the highlight when
+   * it is empty. `persist` is false on load, where the state came from storage
+   * or the URL and writing it back would only echo.
+   */
+  function apply(abbrev, persist) {
+    // teamKey guarantees no team is keyed by "", so the empty selection finds
+    // nothing and lands on NONE by itself.
+    const lit = abbrevs.indexOf(abbrev);
+    select.value = abbrev;
+    chart.data.datasets.forEach((ds, i) => styleDataset(ds, i, lit));
+    // "none" skips the animation and, with it, any chance of a half-drawn
+    // frame; dataset visibility lives in the chart's metadata either way.
+    chart.update("none");
+    rows.forEach((tr, i) => tr.classList.toggle("highlight", i === lit));
+    if (persist) rememberHighlight(abbrev);
+  }
+
+  select.addEventListener("change", () => apply(select.value, true));
+  apply(resolveHighlight(abbrevs), false);
 }
 
 // Where each team stood after the previous completed week: its 1-based position

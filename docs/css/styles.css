@@ -8,6 +8,7 @@
   --field:#2f7d4f;      /* primary field green */
   --field-dk:#1e5e39;   /* darker green for headers */
   --field-lt:#e7f1e6;   /* faint green tint (hover/fill) */
+  --field-hl:#d6ead0;   /* the highlighted team's row — deeper than the hover tint */
   --gold:#c8a23c;       /* chalk/pigskin gold accent */
   --pos:#2f7d4f;        /* in the playoff picture */
   --neg:#b0402f;        /* below the cutoff (brick red) */
@@ -50,6 +51,14 @@ main{max-width:1000px; margin:0 auto; padding-bottom:44px}
   background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:16px;
 }
 
+/* Highlight control above the chart — quiet, so the chart stays the focus */
+.chart-control{display:flex; align-items:center; gap:10px; margin:0 24px 10px}
+.chart-control .pivot-select{min-width:220px}
+@media (max-width:600px){
+  .chart-control{flex-direction:column; align-items:stretch; gap:6px}
+  .chart-control .pivot-select{width:100%}
+}
+
 /* Standings table */
 .table-wrap{
   margin:0 24px; overflow-x:auto;
@@ -75,6 +84,9 @@ td.norm.neg{color:var(--neg); font-weight:700}
 /* Announced to screen readers, hidden from sight */
 .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px;
   overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
+/* The highlighted team's row, keyed to the chart's Highlight control. Placed
+   after the hover rule, at equal specificity, so the wash survives the cursor. */
+#standings-table tbody tr.highlight td{background:var(--field-hl)}
 /* the playoff cutoff line — a gold chalk stripe */
 tr.cutoff td{border-bottom:2px dashed var(--gold)}
 
