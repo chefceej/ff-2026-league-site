@@ -32,7 +32,7 @@ async function useFixture(page, mutate) {
 }
 
 /**
- * The frozen week files: one week before it is final, one after, and a bracket
+ * The frozen week files: one week before it is final, one after, and a playoff
  * week -- which carries two byes and no projected standings block.
  */
 const WEEK_FIXTURES = {

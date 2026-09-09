@@ -53,6 +53,17 @@ _Avoid_: future week, next week
 A week in which at least one game has started and the week is not yet final.
 _Avoid_: live week, partial week
 
+**Regular-season week**:
+A week up to and including the league's last regular-season week, where ranking
+points are earned. Only these weeks feed the standings.
+_Avoid_: normal week, season week
+
+**Playoff week**:
+A week past the last regular-season one, where ESPN runs the bracket. The
+Scoreboard shows its matchups labeled as playoffs; it earns no ranking points,
+so it never reaches the standings and carries no projected standings.
+_Avoid_: bracket week, postseason week, playoff round
+
 **Season rollover**:
 The moment the site starts describing the new season instead of the last one:
 the first run whose fetched week is at or near kickoff, which is kickoff week

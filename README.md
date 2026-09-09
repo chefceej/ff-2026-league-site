@@ -58,10 +58,10 @@ npm test
 ```
 
 A pytest suite covers the pure per-week transforms in `src/week_data.py` —
-week finality, position buckets, top scorers, the standings accumulation, and
-the week file's matchups, projected totals, leaders and projected standings —
-against hand-built
-stand-ins, so it needs neither ESPN nor `espn_api`:
+week finality, position buckets, top scorers, the standings accumulation over
+regular-season weeks only, the walk through the playoff weeks, and the week
+file's matchups, byes, projected totals, leaders and projected standings —
+against hand-built stand-ins, so it needs neither ESPN nor `espn_api`:
 
 ```bash
 pip install pytest

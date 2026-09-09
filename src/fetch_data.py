@@ -121,16 +121,16 @@ def main():
             # empty one would overwrite a week already on the site.
             print(f"  week {week}: no box scores served; leaving it as it is")
             continue
-        # Every week past the last regular-season one is a bracket week. It
-        # gets a week file like any other, but hands out no ranking points, so
-        # accumulate_weeks leaves the marked week out of the standings.
+        # Every week past the last regular-season one is a playoff week. It
+        # gets a week file like any other, but never reaches the standings:
+        # accumulate_weeks skips the weeks marked here, and says why.
         is_playoff = week > reg_weeks
         wk = build_week(boxes, week, is_playoff=is_playoff)
         kickoff_in_sight = kickoff_in_sight or near_kickoff(boxes, now_utc)
         print(f"  week {week}: {wk['status']}"
               f"{' (playoffs)' if is_playoff else ''}")
         weeks.append(wk)
-        boxes_by_week.append((week, boxes, is_playoff))
+        boxes_by_week.append((wk, boxes))
 
     standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
     # The week files are built after the standings because each one's projected
@@ -138,12 +138,12 @@ def main():
     # whatever the week's status, because a preview of an unfinished week is the
     # point; written further down, once the run knows it is publishing this
     # season at all.
-    week_files = [build_week_file(boxes, week, SEASON_YEAR,
-                                  is_playoff=is_playoff,
+    week_files = [build_week_file(boxes, wk["week"], SEASON_YEAR,
+                                  is_playoff=wk["is_playoff"],
                                   fetched_at=fetched_at,
                                   standings=standings,
                                   playoff_cutoff=PLAYOFF_CUTOFF)
-                  for week, boxes, is_playoff in boxes_by_week]
+                  for wk, boxes in boxes_by_week]
     final_weeks = standings["final_weeks"]
     if standings["stopped_at_week"]:
         # Loud on purpose: the run still publishes, so a red X is not the

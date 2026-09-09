@@ -111,7 +111,7 @@ tr.cutoff td{border-bottom:2px dashed var(--gold)}
 .week-nav-btn:hover:not(:disabled){background:var(--field-lt)}
 .week-nav-btn:disabled{opacity:.4; cursor:default}
 .week-nav-label{font-weight:700; color:var(--ink); font-size:14px}
-/* Beside the week label on a bracket week, so the missing projected standings
+/* Beside the week label on a playoff week, so the missing projected standings
    below read as deliberate rather than as a week that failed to load. */
 .playoff-tag{padding:3px 10px; border-radius:999px; background:var(--field);
   color:#fff; font-size:11px; font-weight:800; text-transform:uppercase;

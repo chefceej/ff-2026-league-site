@@ -160,8 +160,10 @@ def test_tied_scores_share_the_average_of_the_ranks_they_occupy():
     assert points == {1: 2.5, 2: 2.5, 3: 1}
 
 
-def week(number, status, scores):
+def week(number, status, scores, is_playoff=False):
+    """A week structure of the shape build_week returns."""
     return {"week": number, "status": status, "scores": scores,
+            "is_playoff": is_playoff,
             "top_players": {"all": []}, "position_scores": {}}
 
 
@@ -231,7 +233,7 @@ def test_the_fetcher_asks_only_for_weeks_the_league_has_reached():
 
 
 def test_the_fetcher_walks_past_the_regular_season_into_the_playoffs():
-    # The bracket weeks run past reg_season_count and ESPN serves them, so the
+    # The playoff weeks run past reg_season_count and ESPN serves them, so the
     # Scoreboard gets a file for each of them. Stopping at reg_weeks would leave
     # the page on week 14 for the rest of the season.
     assert weeks_to_fetch(reg_weeks=14, current_week=17) == list(range(1, 18))
@@ -270,7 +272,7 @@ def test_a_final_playoff_week_hands_out_no_ranking_points():
     # games are played, and counting it would award another week of ranking
     # points to teams that are no longer racing for them.
     weeks = [week(1, "final", {1: 100.0, 2: 90.0}),
-             dict(week(2, "final", {1: 40.0, 2: 10.0}), is_playoff=True)]
+             week(2, "final", {1: 40.0, 2: 10.0}, is_playoff=True)]
     standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
 
     assert standings["final_weeks"] == 1
@@ -279,12 +281,12 @@ def test_a_final_playoff_week_hands_out_no_ranking_points():
 
 
 def test_a_playoff_week_is_not_the_gap_the_standings_stop_before():
-    # A two-week regular season followed by the bracket. Week 15 sits far past
+    # A two-week regular season followed by the playoffs. Week 15 sits far past
     # the slot after week 2, so a playoff week the standings merely declined to
     # count would otherwise read as a hole where weeks 3..14 should be.
     weeks = [week(1, "final", {1: 100.0, 2: 90.0}),
              week(2, "final", {1: 80.0, 2: 95.0}),
-             dict(week(15, "final", {1: 40.0, 2: 10.0}), is_playoff=True)]
+             week(15, "final", {1: 40.0, 2: 10.0}, is_playoff=True)]
     standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
 
     assert (standings["final_weeks"], standings["stopped_at_week"]) == (2, None)

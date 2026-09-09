@@ -108,13 +108,10 @@ function renderCards(weekFile, highlight) {
         isFinal, winner: best != null && side.score === best,
       }));
     }
-    // The empty half of the bracket, where the opponent would be. Marked in
-    // the card's own shape rather than left blank, so a bye reads as a round
-    // the team sat out and not as a card that failed to render.
-    if (isBye) {
-      card.classList.add("bye");
-      card.appendChild(el("div", "matchup-side bye-side", "Bye"));
-    }
+    // The half where the opponent would be. Filled with the word rather than
+    // left blank, so a bye reads as a week the team sat out and not as a card
+    // that failed to render.
+    if (isBye) card.appendChild(el("div", "matchup-side bye-side", "Bye"));
     holder.appendChild(card);
   }
 }
@@ -214,7 +211,7 @@ async function main() {
     const mine = ++latestRender;
     const week = weeks[index];
     label.textContent = `Week ${week}`;
-    // Only the week file says whether the week is a bracket week, and that is
+    // Only the week file says whether the week is a playoff week, and that is
     // a round trip away -- so the tag comes off now and goes back on with the
     // cards. A week that turns out to be missing keeps it off.
     playoffTag.classList.add("hidden");
