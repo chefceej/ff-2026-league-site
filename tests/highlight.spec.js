@@ -7,7 +7,7 @@ const rows = page => page.locator("#standings-table tbody tr");
 const options = page => page.locator(`${SELECT} option`);
 
 /** Wait until the chart exists and its legend has been laid out. */
-async function settleChart(page) {
+async function settleLegend(page) {
   await page.waitForFunction(() => {
     const chart = window.Chart?.getChart("positionChart");
     return !!chart && (chart.legend?.legendHitBoxes || []).length > 0;
@@ -73,7 +73,7 @@ test.describe("Highlight control", () => {
   test("draws the chosen line heaviest and fades the rest, then restores on None", async ({ page }) => {
     const data = await useFixture(page);
     await page.goto("/index.html");
-    await settleChart(page);
+    await settleLegend(page);
 
     const pick = 3;
     await page.selectOption(SELECT, data.teams[pick].team_abbrev);
@@ -93,7 +93,7 @@ test.describe("Highlight control", () => {
   test("leaves legend visibility alone — clicks still toggle, and survive a highlight change", async ({ page }) => {
     const data = await useFixture(page);
     await page.goto("/index.html");
-    await settleChart(page);
+    await settleLegend(page);
 
     await page.selectOption(SELECT, data.teams[3].team_abbrev);
     const visible = i => page.evaluate(
@@ -121,7 +121,6 @@ test.describe("Remembered and shareable selection", () => {
     expect(await stored(page)).toBe(abbrev);
     expect(teamParam(page)).toBe(abbrev);
 
-    await useFixture(page);
     await page.reload();
     await expect(page.locator(SELECT)).toHaveValue(abbrev);
     await expect(rows(page).nth(4)).toHaveClass(/highlight/);
@@ -150,29 +149,62 @@ test.describe("Remembered and shareable selection", () => {
     const linked = data.teams[7].team_abbrev;
     await page.evaluate(([k, v]) => localStorage.setItem(k, v), [STORAGE_KEY, remembered]);
 
-    await useFixture(page);
     await page.goto(`/index.html?team=${encodeURIComponent(linked)}`);
     await expect(page.locator(SELECT)).toHaveValue(linked);
     await expect(rows(page).nth(7)).toHaveClass(/highlight/);
   });
 
   test("ignores unknown teams in the link and in storage, and writes nothing", async ({ page }) => {
-    await useFixture(page);
     await page.goto("/index.html");
     await page.evaluate(k => localStorage.setItem(k, "GONE"), STORAGE_KEY);
 
-    await useFixture(page);
     await page.goto("/index.html?team=NOPE");
     await expect(page.locator(SELECT)).toHaveValue("");
     await expect(page.locator("#standings-table tbody tr.highlight")).toHaveCount(0);
     expect(await stored(page)).toBe("GONE");
   });
 
-  test("round-trips an abbreviation containing a URL-significant character", async ({ page }) => {
+  test("still renders, and still takes a link, where site data is blocked", async ({ page }) => {
     const data = await useFixture(page);
-    const index = data.teams.findIndex(t => /[$]/.test(t.team_abbrev));
-    expect(index).toBeGreaterThanOrEqual(0);
-    const abbrev = data.teams[index].team_abbrev;
+    // Nothing the page does may raise: a blocked write happens last, so only an
+    // uncaught error would give it away.
+    const errors = [];
+    page.on("pageerror", e => errors.push(e.message));
+    // Some privacy modes throw on the mere act of touching local storage.
+    await page.addInitScript(() => {
+      Object.defineProperty(window, "localStorage", {
+        configurable: true,
+        get() { throw new DOMException("blocked", "SecurityError"); },
+      });
+    });
+    const abbrev = data.teams[2].team_abbrev;
+
+    // A plain load is the one that actually reads storage: with no team in the
+    // link there is nothing to short-circuit the lookup.
+    await page.goto("/index.html");
+    await expect(page.locator(SELECT)).toHaveValue("");
+    // The sections main() renders after the highlight must survive it.
+    await expect(page.locator("#ranking-section")).not.toHaveClass(/hidden/);
+    await expect(page.locator("#topscorers-section")).not.toHaveClass(/hidden/);
+
+    // The write path must not throw either; the link keeps carrying the choice.
+    await page.selectOption(SELECT, abbrev);
+    expect(teamParam(page)).toBe(abbrev);
+    await expect(rows(page).nth(2)).toHaveClass(/highlight/);
+
+    // And a shared link still resolves with no storage to fall back on.
+    await page.goto(`/index.html?team=${encodeURIComponent(abbrev)}`);
+    await expect(page.locator(SELECT)).toHaveValue(abbrev);
+    await expect(page.locator("#ranking-section")).not.toHaveClass(/hidden/);
+
+    expect(errors).toEqual([]);
+  });
+
+  test("round-trips an abbreviation containing a URL-significant character", async ({ page }) => {
+    // Real abbreviations carry characters like "$"; pin one through the fixture
+    // seam so the test does not depend on the frozen data still having one.
+    const index = 2, abbrev = "A&B$C";
+    await useFixture(page, d => { d.teams[index].team_abbrev = abbrev; return d; });
 
     await page.goto("/index.html");
     await page.selectOption(SELECT, abbrev);
@@ -180,7 +212,6 @@ test.describe("Remembered and shareable selection", () => {
     expect(new URL(page.url()).search).toContain(encodeURIComponent(abbrev));
     expect(teamParam(page)).toBe(abbrev);
 
-    await useFixture(page);
     await page.reload();
     await expect(page.locator(SELECT)).toHaveValue(abbrev);
     await expect(rows(page).nth(index)).toHaveClass(/highlight/);

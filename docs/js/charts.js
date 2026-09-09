@@ -22,12 +22,6 @@ const HIGHLIGHT_KEY = "ff-highlight-team", HIGHLIGHT_PARAM = "team";
 // the stripe is matched by color and weight alone.)
 const atCutoff = ctx => ctx.tick && ctx.tick.value === 0;
 
-// Retained by renderChart so the highlight routine can reach the datasets.
-let positionChart = null;
-// Dataset index -> team abbreviation. Datasets are built from the delivered
-// team order, so this is also the Standings row order.
-let chartAbbrevs = [];
-
 async function main() {
   let data;
   try {
@@ -58,9 +52,9 @@ async function main() {
 
   show("chart-section");
   show("table-section");
-  renderChart(teams, meta);
+  const chart = renderChart(teams, meta);
   renderTable(teams, meta);
-  setupHighlight(teams);
+  setupHighlight(chart, teams);
 
   const cmw = meta.current_matchup_week || meta.completed_weeks;
   if (data.top_players_by_week?.length) {
@@ -209,18 +203,22 @@ function show(id) { document.getElementById(id).classList.remove("hidden"); }
 function renderChart(teams, meta) {
   const weeks = meta.completed_weeks;
   const labels = Array.from({ length: weeks }, (_, i) => `W${i + 1}`);
-  const datasets = teams.map((t, i) => ({
-    label: t.team_name,
-    data: t.normalized_by_week,
-    borderColor: PALETTE[i % PALETTE.length],
-    backgroundColor: PALETTE[i % PALETTE.length],
-    pointBackgroundColor: PALETTE[i % PALETTE.length],
-    pointBorderColor: PALETTE[i % PALETTE.length],
-    tension: 0.25, borderWidth: BASE_WIDTH, pointRadius: BASE_POINT,
-  }));
-  // The chart is retained: the highlight routine restyles these datasets in
-  // place, which is also what keeps the legend's own hidden state intact.
-  positionChart = new Chart(document.getElementById("positionChart"), {
+  // backgroundColor is the legend swatch's fill and is deliberately left at full
+  // strength: the highlight dims lines, not the legend. Everything else is the
+  // highlight's to own, so it comes from the one styling routine, unhighlighted.
+  const datasets = teams.map((t, i) => {
+    const ds = {
+      label: t.team_name,
+      data: t.normalized_by_week,
+      backgroundColor: PALETTE[i % PALETTE.length],
+      tension: 0.25,
+    };
+    styleDataset(ds, i, NONE);
+    return ds;
+  });
+  // The instance is returned, not discarded: the highlight routine restyles
+  // these datasets in place, which is what keeps the legend's hidden state.
+  return new Chart(document.getElementById("positionChart"), {
     type: "line",
     data: { labels, datasets },
     options: {
@@ -247,6 +245,9 @@ function renderChart(teams, meta) {
 
 // ── Highlight one team across the chart and the Standings table ──
 
+/** No team highlighted: the index that matches no dataset and no table row. */
+const NONE = -1;
+
 /** A palette hex at `alpha`, so a faded line keeps its team's hue. */
 function fade(hex, alpha) {
   const n = parseInt(hex.slice(1), 16);
@@ -254,70 +255,88 @@ function fade(hex, alpha) {
 }
 
 /**
+ * Style line `i` for a highlight on dataset `lit` (NONE for no highlight).
+ * The single source of truth for a line's look: renderChart builds every
+ * dataset through it, and the highlight routine rewrites them through it.
+ */
+function styleDataset(ds, i, lit) {
+  const hue = PALETTE[i % PALETTE.length];
+  const dimmed = lit !== NONE && i !== lit;
+  ds.borderColor = ds.pointBackgroundColor = ds.pointBorderColor =
+    dimmed ? fade(hue, DIM_ALPHA) : hue;
+  ds.borderWidth = i === lit ? LIT_WIDTH : BASE_WIDTH;
+  ds.pointRadius = i === lit ? LIT_POINT : BASE_POINT;
+  // A point strokes over its own fill, so a faded one would otherwise read at
+  // roughly twice its line's alpha and pull the eye off the chosen team.
+  ds.pointBorderWidth = dimmed ? 0 : 1;
+}
+
+// Local storage is unavailable in some privacy modes, where merely touching it
+// throws. The highlight is a convenience: losing it must never take down the
+// sections main() renders after this one.
+function readRemembered() {
+  try { return localStorage.getItem(HIGHLIGHT_KEY); } catch (e) { return null; }
+}
+function writeRemembered(abbrev) {
+  try {
+    if (abbrev) localStorage.setItem(HIGHLIGHT_KEY, abbrev);
+    else localStorage.removeItem(HIGHLIGHT_KEY);
+  } catch (e) { /* the link still carries the choice; only the memory is lost */ }
+}
+
+/**
  * The abbreviation to highlight on load: the link's team if it names one we
  * know, else the remembered one if it does, else nothing. An unknown value is
- * ignored rather than corrected, and load never writes storage — a stale link
- * must not overwrite what this device remembers.
+ * ignored rather than corrected, and load never writes back — neither a stale
+ * link nor someone else's shared one may overwrite what this device remembers.
  */
 function resolveHighlight(abbrevs) {
   const known = a => (abbrevs.includes(a) ? a : "");
   const linked = new URLSearchParams(location.search).get(HIGHLIGHT_PARAM);
-  return known(linked) || known(localStorage.getItem(HIGHLIGHT_KEY));
+  return known(linked) || known(readRemembered());
 }
 
-function setupHighlight(teams) {
-  chartAbbrevs = teams.map(t => t.team_abbrev);
+/** Record the choice on this device and in the link, without navigating. */
+function rememberHighlight(abbrev) {
+  const url = new URL(location.href);
+  if (abbrev) url.searchParams.set(HIGHLIGHT_PARAM, abbrev);
+  else url.searchParams.delete(HIGHLIGHT_PARAM);
+  history.replaceState(null, "", url);
+  writeRemembered(abbrev);
+}
+
+function setupHighlight(chart, teams) {
+  // Datasets and Standings rows are both built from the delivered team order,
+  // so one index addresses a team's line and its row alike.
+  const abbrevs = teams.map(t => t.team_abbrev);
   const select = document.getElementById("highlight-team");
+  const rows = document.querySelectorAll("#standings-table tbody tr");
+
   teams.forEach(t => {
     const option = document.createElement("option");
     option.value = t.team_abbrev;
     option.textContent = t.team_name;
     select.appendChild(option);
   });
-  select.addEventListener("change", () => applyHighlight(select.value, true));
-  applyHighlight(resolveHighlight(chartAbbrevs), false);
-}
 
-/**
- * Draw `abbrev` as the foreground of both views, or clear the highlight when it
- * is empty. `persist` is false on load, where the state came from storage or
- * the URL and writing it back would only echo.
- */
-function applyHighlight(abbrev, persist) {
-  const lit = chartAbbrevs.indexOf(abbrev);
-  document.getElementById("highlight-team").value = abbrev;
-
-  positionChart.data.datasets.forEach((ds, i) => {
-    const hue = PALETTE[i % PALETTE.length];
-    const color = lit !== -1 && i !== lit ? fade(hue, DIM_ALPHA) : hue;
-    ds.borderColor = ds.pointBackgroundColor = ds.pointBorderColor = color;
-    ds.borderWidth = i === lit ? LIT_WIDTH : BASE_WIDTH;
-    ds.pointRadius = i === lit ? LIT_POINT : BASE_POINT;
-    // A point strokes over its own fill, so a faded one would otherwise read at
-    // roughly twice its line's alpha and pull the eye off the chosen team.
-    ds.pointBorderWidth = color === hue ? 1 : 0;
-  });
-  // "none" skips the animation and, with it, any chance of a half-drawn frame;
-  // dataset visibility lives in the chart's metadata and is untouched either way.
-  positionChart.update("none");
-
-  document.querySelectorAll("#standings-table tbody tr")
-    .forEach((tr, i) => tr.classList.toggle("highlight", i === lit));
-
-  if (persist) rememberHighlight(abbrev);
-}
-
-/** Record the choice on this device and in the link, without navigating. */
-function rememberHighlight(abbrev) {
-  const url = new URL(location.href);
-  if (abbrev) {
-    localStorage.setItem(HIGHLIGHT_KEY, abbrev);
-    url.searchParams.set(HIGHLIGHT_PARAM, abbrev);
-  } else {
-    localStorage.removeItem(HIGHLIGHT_KEY);
-    url.searchParams.delete(HIGHLIGHT_PARAM);
+  /**
+   * Draw `abbrev` as the foreground of both views, or clear the highlight when
+   * it is empty. `persist` is false on load, where the state came from storage
+   * or the URL and writing it back would only echo.
+   */
+  function apply(abbrev, persist) {
+    const lit = abbrevs.indexOf(abbrev);
+    select.value = abbrev;
+    chart.data.datasets.forEach((ds, i) => styleDataset(ds, i, lit));
+    // "none" skips the animation and, with it, any chance of a half-drawn
+    // frame; dataset visibility lives in the chart's metadata either way.
+    chart.update("none");
+    rows.forEach((tr, i) => tr.classList.toggle("highlight", i === lit));
+    if (persist) rememberHighlight(abbrev);
   }
-  history.replaceState(null, "", url);
+
+  select.addEventListener("change", () => apply(select.value, true));
+  apply(resolveHighlight(abbrevs), false);
 }
 
 // Where each team stood after the previous completed week: its 1-based position
