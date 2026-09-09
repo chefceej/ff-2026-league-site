@@ -37,8 +37,8 @@ A Playwright suite loads the site in Chromium against a frozen copy of the
 league data (`tests/fixtures/league_data.json`) and two hand-built week files,
 one week in progress and one final, so it never depends on the daily data
 commit and needs no credentials. The week fixtures are written to the week
-file's full shape from the spec, including the lineups the matchup page will
-need, which runs ahead of what `build_week_file` emits today:
+file's full shape from the spec, lineups and benches included, which is what
+`build_week_file` emits:
 
 ```bash
 npm install
@@ -48,7 +48,7 @@ npm test
 
 A pytest suite covers the pure per-week transforms in `src/week_data.py` —
 week finality, position buckets, top scorers, the standings accumulation, and
-the week file's matchups, projected totals and leaders — against hand-built
+the week file's matchups, projected totals, leaders and lineups — against hand-built
 stand-ins, so it needs neither ESPN nor `espn_api`:
 
 ```bash

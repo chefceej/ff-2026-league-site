@@ -292,6 +292,11 @@ def injury_tag(status):
 
 def _player(pl):
     """One roster player, as both pages read them."""
+    # ESPN leaves last week's opponent and game time on a player whose team is
+    # off this week, and a page cannot tell that from a real game. A bye row is
+    # marked as a bye and carries nothing else, so its zero is never read as a
+    # kickoff that has come and gone (spec 05, user story 28).
+    on_bye = bool(getattr(pl, "on_bye_week", False))
     return {
         "player_id": getattr(pl, "playerId", None),
         "name": pl.name,
@@ -299,9 +304,9 @@ def _player(pl):
         "position": normalize_position(getattr(pl, "position", "") or ""),
         "slot": getattr(pl, "slot_position", "") or "",
         "injury": injury_tag(getattr(pl, "injuryStatus", None)),
-        "opponent": getattr(pl, "pro_opponent", "") or "",
-        "kickoff": iso_utc(getattr(pl, "game_date", None)),
-        "on_bye": bool(getattr(pl, "on_bye_week", False)),
+        "opponent": "" if on_bye else (getattr(pl, "pro_opponent", "") or ""),
+        "kickoff": None if on_bye else iso_utc(getattr(pl, "game_date", None)),
+        "on_bye": on_bye,
         "played": _has_played(pl),
         "projected": _projected(pl),
         "actual": _actual(pl),
@@ -359,6 +364,12 @@ def _side(team, score, lineup, week):
         "leaders": [_player(pl) for pl in
                     sorted(starters, key=_live_points,
                            reverse=True)[:LEADERS_PER_TEAM]],
+        # ESPN's own lineup order, untouched: the matchup page pairs the two
+        # sides by index, so re-sorting either one here would put a team's
+        # kicker opposite the other team's quarterback. Everything that does
+        # not score for the team -- bench and IR alike -- is the bench.
+        "lineup": [_player(pl) for pl in starters],
+        "bench": [_player(pl) for pl in lineup or [] if not is_starter(pl)],
     }
 
 
