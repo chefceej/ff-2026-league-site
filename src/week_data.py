@@ -362,12 +362,97 @@ def _side(team, score, lineup, week):
     }
 
 
-def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None):
+def _entering_cumulative(standings, week, team_ids):
+    """Each team's cumulative ranking points as the week kicked off.
+
+    accumulate_weeks writes one slot per FINAL week, contiguous from week 1, so
+    slot `week - 2` is the cumulative through week `week - 1`. Reading the last
+    slot instead would count a final week twice: the standings have already
+    counted it, and this block adds the week's ranking points itself.
+
+    A week no slot reaches -- week 1, or a week past the one the standings
+    stopped at -- falls back to the last slot there is, which is the most the
+    standings know. With no standings at all every team starts from nothing,
+    which is week 1's own situation.
+    """
+    teams = (standings or {}).get("teams") or {}
+    entering = {}
+    for tid in team_ids:
+        arrays = teams.get(tid) or {}
+        cumulative = arrays.get("cumulative_points_by_week") or []
+        index = min(week - 2, len(cumulative) - 1)
+        entering[tid] = cumulative[index] if index >= 0 else 0.0
+    return entering
+
+
+def _ranks(points_by_team, order):
+    """1-based rank by points, best first, ties settled by `order`.
+
+    `order` is how the standings file delivers its teams, so a tie here breaks
+    the same way the Standings table's own rank column breaks it -- rather than
+    by team id, or by whatever this one week happened to score.
+    """
+    ranked = sorted(order, key=lambda tid: -points_by_team[tid])
+    return {tid: i + 1 for i, tid in enumerate(ranked)}
+
+
+def _projected_standings(sides, standings, week, playoff_cutoff):
+    """Where the week would leave the standings, one row per team.
+
+    Ranks the teams by projected total, hands out ranking points with the same
+    function the settled standings use, adds them to what each team entered the
+    week with, and normalizes against the cutoff team -- so a row reads exactly
+    like a Standings row, only a week early. On a final week the projected
+    totals are the scores, so the block is the week's actual result.
+
+    Rows come back ordered by projected total, which is the order the
+    Scoreboard renders them in.
+    """
+    totals = {s["team_id"]: s["projected_total"] for s in sides}
+    # The standings' delivery order settles ties; a team the standings have
+    # never heard of (an expansion team's first week) follows in the week's own
+    # order rather than being dropped.
+    order = [tid for tid in ((standings or {}).get("teams") or {})
+             if tid in totals]
+    order += [tid for tid in totals if tid not in order]
+
+    entering = _entering_cumulative(standings, week, order)
+    earned = assign_ranking_points(totals, len(totals))
+    projected = {tid: round(entering[tid] + earned[tid], 2) for tid in order}
+    # A league with fewer teams than the cutoff normalizes against its last
+    # team; the real league always has more, but the transform is handed
+    # whatever the boxes hold.
+    cutoff_index = min(playoff_cutoff, len(projected)) - 1
+    cutoff_value = sorted(projected.values(), reverse=True)[cutoff_index]
+
+    current_rank = _ranks(entering, order)
+    projected_rank = _ranks(projected, order)
+    by_id = {s["team_id"]: s for s in sides}
+    return [{
+        "team_id": tid,
+        "team_name": by_id[tid]["team_name"],
+        "abbrev": by_id[tid]["abbrev"],
+        "projected_total": totals[tid],
+        "projected_ranking_points": earned[tid],
+        "projected_cumulative": projected[tid],
+        "projected_normalized": round(projected[tid] - cutoff_value, 4),
+        "current_rank": current_rank[tid],
+        "projected_rank": projected_rank[tid],
+    } for tid in sorted(order, key=lambda t: -totals[t])]
+
+
+def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None,
+                    standings=None, playoff_cutoff=6):
     """One week's box scores -> the week file the Scoreboard reads.
 
     Separate from build_week because the two answer different questions from
     the same boxes: build_week feeds the season's standings, this feeds one
     week's page. Both are pure, so neither knows how the other is published.
+
+    `standings` is accumulate_weeks' return through the last final week -- the
+    season state the projected standings block is measured from. A playoff week
+    gets no block at all: the bracket does not hand out ranking points, so a
+    projection of them would be fiction.
 
     Returns None when ESPN answered with no matchups at all. That is not an
     empty week, it is a week ESPN would not talk about, and a file built from
@@ -376,14 +461,20 @@ def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None):
     """
     if not boxes:
         return None
-    return {
+    matchups = [
+        {"home": _side(b.home_team, b.home_score, b.home_lineup, week),
+         "away": _side(b.away_team, b.away_score, b.away_lineup, week)}
+        for b in boxes]
+    week_file = {
         "week": week,
         "season": season,
         "is_playoff": is_playoff,
         "status": week_status(boxes),
         "fetched_at": fetched_at,
-        "matchups": [
-            {"home": _side(b.home_team, b.home_score, b.home_lineup, week),
-             "away": _side(b.away_team, b.away_score, b.away_lineup, week)}
-            for b in boxes],
+        "matchups": matchups,
     }
+    if not is_playoff:
+        sides = [s for m in matchups for s in (m["home"], m["away"]) if s]
+        week_file["projected_standings"] = _projected_standings(
+            sides, standings, week, playoff_cutoff)
+    return week_file
