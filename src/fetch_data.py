@@ -25,6 +25,8 @@ _espn_req.FANTASY_BASE_ENDPOINT = (
 
 from espn_api.football import League
 
+from week_data import accumulate_weeks, build_week, weeks_to_fetch
+
 # ---------------------------------------------------------------------------
 # Config (env-driven; no secrets in source)
 # ---------------------------------------------------------------------------
@@ -38,94 +40,14 @@ OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..",
                            "docs", "data", "league_data.json")
 
 
-def assign_ranking_points(scores_by_team_id, num_teams):
-    """{team_id: score} -> {team_id: ranking_points}. Ties share the average rank.
-
-    Best score gets num_teams points, worst gets 1.
-    """
-    ordered = sorted(scores_by_team_id.items(), key=lambda x: x[1], reverse=True)
-    points = {}
-    i = 0
-    while i < len(ordered):
-        j = i
-        while j < len(ordered) - 1 and ordered[j][1] == ordered[j + 1][1]:
-            j += 1
-        # ranks occupied by the tie group: (num_teams - i) .. (num_teams - j)
-        rank_sum = sum(num_teams - k for k in range(i, j + 1))
-        avg = rank_sum / (j - i + 1)
-        for k in range(i, j + 1):
-            points[ordered[k][0]] = avg
-        i = j + 1
-    return points
-
-
-def week_scores(league, week):
-    """Deprecated single-purpose helper; see fetch_week."""
-    res = fetch_week(league, week)
-    return res[0] if res else None
-
-
-# Lineup slot -> position bucket for the position-score pivot. Bench/IR skipped.
-SLOT_MAP = {
-    "QB": "QB", "RB": "RB", "WR": "WR", "TE": "TE",
-    "RB/WR/TE": "FLEX", "WR/TE": "FLEX", "FLEX": "FLEX",
-    "OP": "OP", "QB/RB/WR/TE": "OP",
-    "D/ST": "D/ST", "K": "K",
-}
-SKIP_SLOTS = {"BE", "IR", "BENCH"}
-POS_TABS = ["QB", "RB", "WR", "TE"]   # player-type tabs for Top Scorers
-TOP_N = 25
-
-
 def fetch_week(league, week):
-    """Return (scores_by_team_id, top_players, position_scores) for a played
-    week, else None.
-
-      scores_by_team_id : {team_id: team score}
-      top_players       : {"all": [...], "QB": [...], ...} of starter scores
-      position_scores   : {team_abbrev: {slot_bucket: points}}
-    """
+    """The week structure for one week, or None if ESPN would not serve it."""
     try:
         boxes = league.box_scores(week)
     except Exception as e:
         print(f"  week {week}: box_scores failed ({e})")
         return None
-
-    scores, all_players = {}, []
-    position_scores = {}
-    for b in boxes:
-        for team, score, lineup in (
-                (b.home_team, b.home_score, b.home_lineup),
-                (b.away_team, b.away_score, b.away_lineup)):
-            if team is None or team == 0:
-                continue
-            scores[team.team_id] = score
-            abbrev = getattr(team, "team_abbrev", "") or team.team_name
-            slots = position_scores.setdefault(abbrev, {})
-            for pl in lineup or []:
-                slot = getattr(pl, "slot_position", "")
-                if slot in SKIP_SLOTS:
-                    continue
-                bucket = SLOT_MAP.get(slot)
-                pts = float(getattr(pl, "points", 0) or 0)
-                if bucket:
-                    slots[bucket] = round(slots.get(bucket, 0) + pts, 2)
-                all_players.append({
-                    "name": pl.name,
-                    "pro_team": getattr(pl, "proTeam", ""),
-                    "fantasy_team": team.team_name,
-                    "position": getattr(pl, "position", ""),
-                    "score": round(pts, 2),
-                })
-
-    if not scores or all(s == 0 for s in scores.values()):
-        return None
-
-    all_players.sort(key=lambda p: p["score"], reverse=True)
-    top_players = {"all": all_players[:TOP_N]}
-    for pos in POS_TABS:
-        top_players[pos] = [p for p in all_players if p["position"] == pos][:TOP_N]
-    return scores, top_players, position_scores
+    return build_week(boxes, week)
 
 
 def main():
@@ -156,34 +78,28 @@ def main():
             "team_abbrev": getattr(t, "team_abbrev", ""),
             "abbrev": getattr(t, "team_abbrev", ""),
             "owner": owner,
-            "scores_by_week": [],
-            "ranking_points_by_week": [],
-            "cumulative_points_by_week": [],
-            "normalized_by_week": [],
         }
 
-    cumulative = {tid: 0.0 for tid in team_meta}
-    completed_weeks = 0
-    top_players_by_week = []
-    position_scores_by_week = []
-    for week in range(1, reg_weeks + 1):
-        res = fetch_week(league, week)
-        if res is None:
+    weeks = []
+    for week in weeks_to_fetch(reg_weeks, getattr(league, "current_week", None)):
+        wk = fetch_week(league, week)
+        if wk is None:
             continue
-        scores, top_players, pos_scores = res
-        completed_weeks += 1
-        top_players_by_week.append(top_players)
-        position_scores_by_week.append(pos_scores)
-        rp = assign_ranking_points(scores, num_teams)
-        for tid in team_meta:
-            cumulative[tid] += rp.get(tid, 0)
-        cutoff_val = sorted(cumulative.values(), reverse=True)[PLAYOFF_CUTOFF - 1]
-        for tid, meta in team_meta.items():
-            meta["scores_by_week"].append(round(scores.get(tid, 0), 2))
-            meta["ranking_points_by_week"].append(rp.get(tid, 0))
-            meta["cumulative_points_by_week"].append(round(cumulative[tid], 2))
-            meta["normalized_by_week"].append(
-                round(cumulative[tid] - cutoff_val, 4))
+        print(f"  week {week}: {wk['status']}")
+        weeks.append(wk)
+
+    standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
+    final_weeks = standings["final_weeks"]
+    if standings["stopped_at_week"]:
+        # Loud on purpose: the run still publishes, so a red X is not the
+        # signal. Weeks after the gap wait for a run that can number them.
+        print(f"!! week {standings['stopped_at_week']} is missing or unfinished"
+              f"; standings stop after week {final_weeks}. Later weeks are "
+              f"held back until it lands.")
+    top_players_by_week = standings["top_players_by_week"]
+    position_scores_by_week = standings["position_scores_by_week"]
+    for tid, meta in team_meta.items():
+        meta.update(standings["teams"][tid])
 
     teams_out = sorted(team_meta.values(),
                        key=lambda m: m["cumulative_points_by_week"][-1]
@@ -200,9 +116,9 @@ def main():
             "season": SEASON_YEAR,
             "num_teams": num_teams,
             "regular_season_weeks": reg_weeks,
-            "completed_weeks": completed_weeks,
+            "completed_weeks": final_weeks,
             # aliases matching the baseball site's shape (used by the shared JS):
-            "current_matchup_week": completed_weeks,
+            "current_matchup_week": final_weeks,
             "total_matchup_weeks": reg_weeks,
             "playoff_cutoff": PLAYOFF_CUTOFF,
             "updated_at": now_utc.strftime("%Y-%m-%d %H:%M:%S UTC"),
@@ -215,15 +131,15 @@ def main():
     # Don't clobber existing standings with an empty preseason board: if no
     # weeks are done yet but a data file already exists, leave it in place so
     # the site keeps showing the most recent completed season until kickoff.
-    if completed_weeks == 0 and os.path.exists(OUTPUT_PATH):
-        print(f"0 completed weeks for {SEASON_YEAR}; keeping existing "
+    if final_weeks == 0 and os.path.exists(OUTPUT_PATH):
+        print(f"0 final weeks for {SEASON_YEAR}; keeping existing "
               f"{OUTPUT_PATH} untouched.")
         return
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w") as f:
         json.dump(out, f, indent=1)
-    print(f"Wrote {OUTPUT_PATH} ({completed_weeks} completed weeks)")
+    print(f"Wrote {OUTPUT_PATH} ({final_weeks} final weeks)")
 
 
 if __name__ == "__main__":

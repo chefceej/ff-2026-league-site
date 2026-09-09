@@ -12,6 +12,9 @@ averaged); those points accumulate all season, then the total is shifted so
 - `src/fetch_data.py` — pulls the league from ESPN (`espn_api`) and writes
   `docs/data/league_data.json`. Reads `FF_LEAGUE_ID`, `FF_SEASON_YEAR`,
   `FF_PLAYOFF_CUTOFF`, and `ESPN_S2` / `SWID` from the environment.
+- `src/week_data.py` — the pure per-week transform the fetcher runs on each
+  week's box scores: week status (upcoming / in-progress / final), position
+  buckets, top scorers, and the standings accumulation over final weeks only.
 - `docs/` — the static site (Chart.js playoff-position chart + standings table).
 - `.github/workflows/update_data.yml` — refreshes the data daily (7 AM UTC) and
   commits it. Once the 2026 season kicks off it populates automatically; until
@@ -37,7 +40,16 @@ npx playwright install chromium
 npm test
 ```
 
-It also runs in GitHub Actions on every push and pull request.
+A pytest suite covers the pure per-week transform in `src/week_data.py` —
+week finality, position buckets, top scorers, and the standings accumulation —
+against hand-built stand-ins, so it needs neither ESPN nor `espn_api`:
+
+```bash
+pip install pytest
+pytest tests/python
+```
+
+Both run in GitHub Actions on every push and pull request.
 
 Deployed via GitHub Pages from the `docs/` folder on `main`.
 

@@ -17,3 +17,14 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm test
+
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      # The week transform is pure, so these tests need pytest and nothing else.
+      - run: pip install pytest
+      - run: pytest tests/python
