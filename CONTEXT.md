@@ -45,6 +45,10 @@ A week in which every rostered starter has played or is on bye. Only final
 weeks count toward standings.
 _Avoid_: completed week, done week
 
+**Upcoming week**:
+A week in which no game has started yet.
+_Avoid_: future week, next week
+
 **In-progress week**:
 A week in which at least one game has started and the week is not yet final.
 _Avoid_: live week, partial week
