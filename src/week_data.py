@@ -310,18 +310,36 @@ def injury_tag(status):
     return INJURY_TAGS.get(str(status or "").upper(), "")
 
 
+# espn_api does not leave an unknown NFL team or opponent empty: BoxPlayer sets
+# pro_opponent to the string "None" and only overwrites it when two lookups
+# both land, and PRO_TEAM_MAP[0] is 'None' as well. A falsy guard cannot catch a
+# non-empty string, so the site would print the word where a team belongs.
+ESPN_ABSENT = "None"
+
+
+def _espn_str(value):
+    """One of espn_api's string fields, with its sentinel read as absent."""
+    text = str(value or "").strip()
+    return "" if text == ESPN_ABSENT else text
+
+
 def _player(pl):
     """One roster player, as both pages read them."""
+    # ESPN leaves last week's opponent and game time on a player whose team is
+    # off this week, and a page cannot tell that from a real game. A bye row is
+    # marked as a bye and carries nothing else, so its zero is never read as a
+    # kickoff that has come and gone (spec 05, user story 28).
+    on_bye = bool(getattr(pl, "on_bye_week", False))
     return {
         "player_id": getattr(pl, "playerId", None),
         "name": pl.name,
-        "pro_team": getattr(pl, "proTeam", "") or "",
+        "pro_team": _espn_str(getattr(pl, "proTeam", "")),
         "position": normalize_position(getattr(pl, "position", "") or ""),
         "slot": getattr(pl, "slot_position", "") or "",
         "injury": injury_tag(getattr(pl, "injuryStatus", None)),
-        "opponent": getattr(pl, "pro_opponent", "") or "",
-        "kickoff": iso_utc(getattr(pl, "game_date", None)),
-        "on_bye": bool(getattr(pl, "on_bye_week", False)),
+        "opponent": "" if on_bye else _espn_str(getattr(pl, "pro_opponent", "")),
+        "kickoff": None if on_bye else iso_utc(getattr(pl, "game_date", None)),
+        "on_bye": on_bye,
         "played": _has_played(pl),
         "projected": _projected(pl),
         "actual": _actual(pl),
@@ -360,7 +378,12 @@ def _side(team, score, lineup, week):
     """One team's half of a matchup, as the Scoreboard and matchup page read it."""
     if team is None or team == 0:      # a playoff bye has no opponent
         return None
-    starters = [pl for pl in lineup or [] if is_starter(pl)]
+    # One pass, two lists: a slot either scores for the team this week or it is
+    # the bench (IR included), and asking twice would only invite the two
+    # answers to disagree.
+    starters, benched = [], []
+    for pl in lineup or []:
+        (starters if is_starter(pl) else benched).append(pl)
     # A starter on bye is neither played nor still to play: their week is over
     # without a game, which is the same rule that decides the week's finality.
     return {
@@ -379,6 +402,14 @@ def _side(team, score, lineup, week):
         "leaders": [_player(pl) for pl in
                     sorted(starters, key=_live_points,
                            reverse=True)[:LEADERS_PER_TEAM]],
+        # ESPN's own lineup order, untouched: it is the order the matchup page
+        # draws the rows in, and sorting here would only invent an order ESPN
+        # did not give. The page pairs the two sides on the slot rather than on
+        # the position in this list, so a side missing a slot leaves a gap
+        # instead of shifting every row under it. Everything that does not
+        # score for the team -- bench and IR alike -- is the bench.
+        "lineup": [_player(pl) for pl in starters],
+        "bench": [_player(pl) for pl in benched],
     }
 
 
