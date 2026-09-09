@@ -388,9 +388,8 @@ def _entering_cumulative(standings, week, team_ids):
 def _ranks(points_by_team, order):
     """1-based rank by points, best first, ties settled by `order`.
 
-    `order` is how the standings file delivers its teams, so a tie here breaks
-    the same way the Standings table's own rank column breaks it -- rather than
-    by team id, or by whatever this one week happened to score.
+    Who `order` is decides what a tie means, so the two callers hand in
+    different orders on purpose -- see _projected_standings.
     """
     ranked = sorted(order, key=lambda tid: -points_by_team[tid])
     return {tid: i + 1 for i, tid in enumerate(ranked)}
@@ -425,8 +424,17 @@ def _projected_standings(sides, standings, week, playoff_cutoff):
     cutoff_index = min(playoff_cutoff, len(projected)) - 1
     cutoff_value = sorted(projected.values(), reverse=True)[cutoff_index]
 
-    current_rank = _ranks(entering, order)
+    # The rank the week would leave a team on: a tie there breaks the way the
+    # standings file's own rank column breaks it, which is its delivery order.
     projected_rank = _ranks(projected, order)
+    # The rank the team holds now, which the page draws its arrow FROM. Teams
+    # level entering the week are settled in the order they sit in after it, so
+    # a tie manufactures no movement -- the rule docs/js/charts.js already
+    # states for the Standings table. Without it week 1, where every team
+    # enters on nothing, would draw a full set of arrows away from an order
+    # nobody earned.
+    settled_by_now = sorted(order, key=lambda tid: projected_rank[tid])
+    current_rank = _ranks(entering, settled_by_now)
     by_id = {s["team_id"]: s for s in sides}
     return [{
         "team_id": tid,

@@ -345,13 +345,11 @@ function renderTable(teams, meta) {
   tbody.innerHTML = "";
   teams.forEach((t, i) => {
     const norm = t.normalized_by_week[t.normalized_by_week.length - 1];
-    const mv = describeMovement(prev[i] - (i + 1));
     const tr = document.createElement("tr");
     if (i + 1 === meta.playoff_cutoff) tr.classList.add("cutoff");
     tr.innerHTML =
       `<td class="rk"><span class="rk-num">${t.rank}</span>` +
-        `<span class="mv ${mv.cls}"><span class="mv-glyph" aria-hidden="true">${mv.glyph}</span>` +
-        `<span class="mv-label sr-only">${mv.words}</span></span></td>` +
+        movementCell(prev[i] - (i + 1)) + `</td>` +
       `<td class="left team">${t.team_name}</td>` +
       `<td class="left mgr">${t.owner || ""}</td>` +
       `<td class="lastwk">${lastWeekPoints(t, week)}</td>` +

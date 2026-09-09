@@ -11,3 +11,13 @@ function describeMovement(move) {
   if (move < 0) return { cls: "down", glyph: `▼${-move}`, words: `down ${-move}` };
   return { cls: "flat", glyph: "–", words: "no change" };
 }
+
+// The indicator as both tables draw it: the glyph for the eye, the words for a
+// screen reader. Markup as well as arithmetic lives here, because a movement
+// drawn from the same numbers in two shapes is still two things to keep in step.
+function movementCell(move) {
+  const mv = describeMovement(move);
+  return `<span class="mv ${mv.cls}">` +
+           `<span class="mv-glyph" aria-hidden="true">${mv.glyph}</span>` +
+           `<span class="mv-label sr-only">${mv.words}</span></span>`;
+}

@@ -135,16 +135,14 @@ function renderProjectedStandings(weekFile, week) {
   const tbody = document.querySelector("#projected-table tbody");
   tbody.innerHTML = "";
   for (const r of rows) {
-    const mv = describeMovement(r.current_rank - r.projected_rank);
     const norm = r.projected_normalized;
     const tr = document.createElement("tr");
     tr.innerHTML =
       `<td class="rk"><span class="rk-num">${r.projected_rank}</span>` +
-        `<span class="mv ${mv.cls}"><span class="mv-glyph" aria-hidden="true">${mv.glyph}</span>` +
-        `<span class="mv-label sr-only">${mv.words}</span></span></td>` +
+        movementCell(r.current_rank - r.projected_rank) + `</td>` +
       `<td class="left team"></td>` +
       `<td class="proj">${pts(r.projected_total)}</td>` +
-      `<td class="rp">${r.projected_ranking_points.toFixed(1)}</td>` +
+      `<td class="rp">${pts(r.projected_ranking_points)}</td>` +
       `<td class="norm ${norm >= 0 ? "pos" : "neg"}">${norm > 0 ? "+" : ""}${norm}</td>`;
     // Team names come from ESPN and are league members' own words, so they are
     // written as text rather than parsed as markup.

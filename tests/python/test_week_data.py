@@ -652,10 +652,11 @@ def test_a_big_week_moves_a_team_up_the_projected_rank():
     assert (rows["T4"]["current_rank"], rows["T4"]["projected_rank"]) == (1, 1)
 
 
-def test_teams_level_on_cumulative_rank_in_the_standings_own_order():
-    # T1 and T3 arrive level. The standings file ranks a tie in the order the
-    # fetcher delivers teams, so the block has to settle it the same way rather
-    # than by team id or by this week's score.
+def test_teams_level_entering_the_week_are_not_shown_moving_past_each_other():
+    # T1 and T3 arrive level on 10. Whichever of them the week puts ahead, both
+    # have to read as having held their place: neither passed the other, and an
+    # arrow drawn off an order nobody earned is the Standings table's own
+    # documented mistake to avoid (docs/js/charts.js, previousRanks).
     boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
     standings = {"teams": {tid: {"cumulative_points_by_week": [pts]}
                            for tid, pts in [(3, 10.0), (1, 10.0),
@@ -664,8 +665,27 @@ def test_teams_level_on_cumulative_rank_in_the_standings_own_order():
                          playoff_cutoff=2)
 
     rows = block_by_abbrev(wf)
-    assert rows["T3"]["current_rank"] == 2
-    assert rows["T1"]["current_rank"] == 3
+    # T3 out-earns T1 this week, so it ends ahead -- without being credited a
+    # move it did not make.
+    assert (rows["T3"]["current_rank"], rows["T3"]["projected_rank"]) == (2, 2)
+    assert (rows["T1"]["current_rank"], rows["T1"]["projected_rank"]) == (3, 3)
+
+
+def test_ties_below_still_let_a_real_mover_pass_them():
+    # The tie rule must not swallow genuine movement. T2 enters last on 9, tops
+    # the week for 4 ranking points, and passes the pair level on 10 -- who are
+    # shown moving down, because this time somebody really did go by them.
+    boxes = four_team_boxes({1: 80.0, 2: 120.0, 3: 90.0, 4: 110.0}, played=False)
+    standings = {"teams": {tid: {"cumulative_points_by_week": [pts]}
+                           for tid, pts in [(3, 10.0), (1, 10.0),
+                                            (2, 9.0), (4, 30.0)]}}
+    wf = build_week_file(boxes, week=2, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    assert (rows["T2"]["current_rank"], rows["T2"]["projected_rank"]) == (4, 2)
+    assert (rows["T3"]["current_rank"], rows["T3"]["projected_rank"]) == (2, 3)
+    assert (rows["T1"]["current_rank"], rows["T1"]["projected_rank"]) == (3, 4)
 
 
 def test_on_a_final_week_the_block_is_the_weeks_actual_result():
@@ -715,8 +735,11 @@ def test_week_one_starts_every_team_from_nothing():
     # cumulative and the projected rank is this week's order.
     assert rows["T2"]["projected_cumulative"] == 4.0
     assert [r["projected_rank"] for r in wf["projected_standings"]] == [1, 2, 3, 4]
-    assert sorted(r["current_rank"] for r in wf["projected_standings"]) == \
-        [1, 2, 3, 4]
+    # And nobody has moved: every team entered level on nothing, so the page has
+    # no arrow to draw. Handing out a baseline order by whatever sequence ESPN
+    # listed the teams in would invent twelve of them on day one.
+    for row in wf["projected_standings"]:
+        assert row["current_rank"] == row["projected_rank"]
 
 
 def test_a_playoff_week_has_no_projected_standings_block():
