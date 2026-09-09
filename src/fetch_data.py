@@ -1,5 +1,8 @@
 """
-Fetch ESPN fantasy FOOTBALL league data -> docs/data/league_data.json.
+Fetch ESPN fantasy FOOTBALL league data -> docs/data/.
+
+Writes the season's standings to league_data.json and one matchup file per
+week to week_<N>.json, so the Scoreboard loads only the week on screen.
 
 Mirrors the baseball site's standings model:
   - each week, rank all teams by score -> ranking points (num_teams..1, ties averaged)
@@ -25,7 +28,8 @@ _espn_req.FANTASY_BASE_ENDPOINT = (
 
 from espn_api.football import League
 
-from week_data import accumulate_weeks, build_week, weeks_to_fetch
+from week_data import (accumulate_weeks, build_week, build_week_file,
+                       owner_name, weeks_to_fetch)
 
 # ---------------------------------------------------------------------------
 # Config (env-driven; no secrets in source)
@@ -36,18 +40,29 @@ PLAYOFF_CUTOFF = int(os.environ.get("FF_PLAYOFF_CUTOFF", "6"))  # zero-line rank
 ESPN_S2 = os.environ.get("ESPN_S2")
 SWID = os.environ.get("SWID")
 
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..",
-                           "docs", "data", "league_data.json")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "data")
+OUTPUT_PATH = os.path.join(DATA_DIR, "league_data.json")
 
 
-def fetch_week(league, week):
-    """The week structure for one week, or None if ESPN would not serve it."""
+def week_path(week):
+    """Where one week's matchups are published. One file per week is what lets
+    the Scoreboard load only the week on screen (spec 05, user story 39)."""
+    return os.path.join(DATA_DIR, f"week_{week}.json")
+
+
+def fetch_boxes(league, week):
+    """One week's box scores, or None if ESPN would not serve them."""
     try:
-        boxes = league.box_scores(week)
+        return league.box_scores(week)
     except Exception as e:
         print(f"  week {week}: box_scores failed ({e})")
         return None
-    return build_week(boxes, week)
+
+
+def write_json(path, payload):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(payload, f, indent=1)
 
 
 def main():
@@ -64,14 +79,12 @@ def main():
     print(f"League {LEAGUE_ID} ({SEASON_YEAR}): {num_teams} teams, "
           f"{reg_weeks} regular-season weeks, cutoff at {PLAYOFF_CUTOFF}")
 
+    now_utc = datetime.now(timezone.utc)
+    fetched_at = now_utc.isoformat().replace("+00:00", "Z")
+
     team_meta = {}
     for t in teams:
-        owners = t.owners or []
-        if owners and isinstance(owners[0], dict):
-            owner = (owners[0].get("firstName", "") + " " +
-                     owners[0].get("lastName", "")).strip()
-        else:
-            owner = str(owners[0]) if owners else ""
+        owner = owner_name(t)
         team_meta[t.team_id] = {
             "team_id": t.team_id,
             "team_name": t.team_name,
@@ -81,12 +94,22 @@ def main():
         }
 
     weeks = []
+    week_files = []
     for week in weeks_to_fetch(reg_weeks, getattr(league, "current_week", None)):
-        wk = fetch_week(league, week)
-        if wk is None:
+        boxes = fetch_boxes(league, week)
+        if boxes is None:
             continue
+        wk = build_week(boxes, week)
         print(f"  week {week}: {wk['status']}")
         weeks.append(wk)
+        # The week file is written from the same box scores whatever the week's
+        # status, because a preview of an unfinished week is the point.
+        write_json(week_path(week),
+                   build_week_file(boxes, week, SEASON_YEAR,
+                                   is_playoff=week > reg_weeks,
+                                   fetched_at=fetched_at))
+        week_files.append(week)
+    print(f"Wrote {len(week_files)} week file(s) to {DATA_DIR}")
 
     standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
     final_weeks = standings["final_weeks"]
@@ -109,7 +132,6 @@ def main():
         m["total_ranking_points"] = (m["cumulative_points_by_week"][-1]
                                      if m["cumulative_points_by_week"] else 0)
 
-    now_utc = datetime.now(timezone.utc)
     out = {
         "metadata": {
             "league_id": int(LEAGUE_ID),
@@ -121,6 +143,11 @@ def main():
             "current_matchup_week": final_weeks,
             "total_matchup_weeks": reg_weeks,
             "playoff_cutoff": PLAYOFF_CUTOFF,
+            # The weeks the Scoreboard can open, and the one it opens on. The
+            # current week is the last week with a file rather than ESPN's own
+            # current_week, so the page never opens on a week nobody wrote.
+            "week_files": week_files,
+            "current_week": week_files[-1] if week_files else None,
             "updated_at": now_utc.strftime("%Y-%m-%d %H:%M:%S UTC"),
             "last_updated": now_utc.isoformat(),
         },
@@ -136,9 +163,7 @@ def main():
               f"{OUTPUT_PATH} untouched.")
         return
 
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, "w") as f:
-        json.dump(out, f, indent=1)
+    write_json(OUTPUT_PATH, out)
     print(f"Wrote {OUTPUT_PATH} ({final_weeks} final weeks)")
 
 
