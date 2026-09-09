@@ -88,9 +88,8 @@ def main():
         print(f"  week {week}: {wk['status']}")
         weeks.append(wk)
 
-    standings = accumulate_weeks(weeks, list(team_meta), num_teams,
-                                 PLAYOFF_CUTOFF)
-    completed_weeks = standings["final_weeks"]
+    standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
+    final_weeks = standings["final_weeks"]
     top_players_by_week = standings["top_players_by_week"]
     position_scores_by_week = standings["position_scores_by_week"]
     for tid, meta in team_meta.items():
@@ -111,9 +110,9 @@ def main():
             "season": SEASON_YEAR,
             "num_teams": num_teams,
             "regular_season_weeks": reg_weeks,
-            "completed_weeks": completed_weeks,
+            "completed_weeks": final_weeks,
             # aliases matching the baseball site's shape (used by the shared JS):
-            "current_matchup_week": completed_weeks,
+            "current_matchup_week": final_weeks,
             "total_matchup_weeks": reg_weeks,
             "playoff_cutoff": PLAYOFF_CUTOFF,
             "updated_at": now_utc.strftime("%Y-%m-%d %H:%M:%S UTC"),
@@ -126,15 +125,15 @@ def main():
     # Don't clobber existing standings with an empty preseason board: if no
     # weeks are done yet but a data file already exists, leave it in place so
     # the site keeps showing the most recent completed season until kickoff.
-    if completed_weeks == 0 and os.path.exists(OUTPUT_PATH):
-        print(f"0 completed weeks for {SEASON_YEAR}; keeping existing "
+    if final_weeks == 0 and os.path.exists(OUTPUT_PATH):
+        print(f"0 final weeks for {SEASON_YEAR}; keeping existing "
               f"{OUTPUT_PATH} untouched.")
         return
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w") as f:
         json.dump(out, f, indent=1)
-    print(f"Wrote {OUTPUT_PATH} ({completed_weeks} completed weeks)")
+    print(f"Wrote {OUTPUT_PATH} ({final_weeks} final weeks)")
 
 
 if __name__ == "__main__":

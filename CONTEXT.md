@@ -64,7 +64,8 @@ _Avoid_: matchups page, week page
 
 **Preview**:
 A matchup or week shown before it is final, built from projections.
-_Avoid_: forecast, upcoming
+_Avoid_: forecast, upcoming (as a name for a preview; an upcoming week is its
+own term above)
 
 **Box score**:
 A matchup or week shown after it is final, built from actual scores.

@@ -146,8 +146,7 @@ def week(status, scores):
 def test_an_in_progress_week_is_absent_from_the_standings_arrays():
     weeks = [week("final", {1: 100.0, 2: 90.0}),
              week("in-progress", {1: 40.0, 2: 10.0})]
-    standings = accumulate_weeks(weeks, team_ids=[1, 2], num_teams=2,
-                                 playoff_cutoff=1)
+    standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
     assert standings["final_weeks"] == 1
     assert standings["teams"][1]["scores_by_week"] == [100.0]
     assert standings["teams"][1]["ranking_points_by_week"] == [2]
@@ -158,10 +157,10 @@ def test_upcoming_and_in_progress_weeks_contribute_no_top_scorers_or_positions()
     final = week("final", {1: 100.0, 2: 90.0})
     final["top_players"] = {"all": [{"name": "Passer"}]}
     final["position_scores"] = {"T1": {"QB": 20.0}}
-    live = week("in-progress", {1: 40.0, 2: 10.0})
-    live["top_players"] = {"all": [{"name": "Half a game"}]}
-    live["position_scores"] = {"T1": {"QB": 8.0}}
-    standings = accumulate_weeks([final, live], team_ids=[1, 2], num_teams=2,
+    in_progress = week("in-progress", {1: 40.0, 2: 10.0})
+    in_progress["top_players"] = {"all": [{"name": "Half a game"}]}
+    in_progress["position_scores"] = {"T1": {"QB": 8.0}}
+    standings = accumulate_weeks([final, in_progress], team_ids=[1, 2],
                                  playoff_cutoff=1)
     assert standings["top_players_by_week"] == [{"all": [{"name": "Passer"}]}]
     assert standings["position_scores_by_week"] == [{"T1": {"QB": 20.0}}]
@@ -170,7 +169,7 @@ def test_upcoming_and_in_progress_weeks_contribute_no_top_scorers_or_positions()
 def test_cumulative_points_are_normalized_against_the_cutoff_team():
     weeks = [week("final", {1: 100.0, 2: 90.0, 3: 80.0}),
              week("final", {1: 100.0, 2: 95.0, 3: 99.0})]
-    standings = accumulate_weeks(weeks, team_ids=[1, 2, 3], num_teams=3,
+    standings = accumulate_weeks(weeks, team_ids=[1, 2, 3],
                                  playoff_cutoff=2)
     # Cumulative after two weeks: team 1 = 6, team 3 = 3, team 2 = 3.
     assert standings["teams"][1]["cumulative_points_by_week"] == [3, 6]
@@ -178,3 +177,21 @@ def test_cumulative_points_are_normalized_against_the_cutoff_team():
     # 2nd-best cumulative is 3 both weeks, so it sits at 0 and the leader above.
     assert standings["teams"][1]["normalized_by_week"] == [1, 3]
     assert standings["teams"][2]["normalized_by_week"] == [0, 0]
+
+
+def test_a_slot_that_scores_for_nobody_does_not_hold_a_week_open():
+    # ESPN's BoxPlayer defaults slot_position to "FA", and the slot map has no
+    # bucket for it, so it scores for no team; it must not gate finality either.
+    boxes = [box([FakePlayer(name="Played", game_played=100),
+                  FakePlayer(name="Stray", slot="FA", game_played=0)],
+                 [FakePlayer(name="Also played", game_played=100)])]
+    assert week_status(boxes) == "final"
+
+
+def test_a_slot_that_scores_for_nobody_is_left_out_of_the_top_scorers():
+    boxes = [box([FakePlayer(name="Passer", slot="QB", points=20.0),
+                  FakePlayer(name="Stray", slot="FA", points=99.0)],
+                 [FakePlayer(name="Other passer", slot="QB", points=13.0)])]
+    wk = build_week(boxes)
+    assert [p["name"] for p in wk["top_players"]["all"]] == [
+        "Passer", "Other passer"]

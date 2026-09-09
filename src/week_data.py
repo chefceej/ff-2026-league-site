@@ -1,15 +1,22 @@
-"""Pure per-week transform: box scores in, week structure out.
+"""The site's pure league math: box scores in, week structure and standings out.
 
-Imports nothing from espn_api, so the tests feed hand-built stand-ins for the
-library's box-score objects and never touch the network.
+Two layers, both free of espn_api and of the network, so the tests feed
+hand-built stand-ins for the library's box-score objects:
+
+  - per week   : week_status / build_week
+  - per season : assign_ranking_points / accumulate_weeks
 """
 
-# Lineup slots that are not part of a starting lineup.
-SKIP_SLOTS = {"BE", "IR", "BENCH"}
+# ESPN's Team QB slot: an NFL team's quarterbacks as one unit. The site counts
+# it as QB everywhere it groups by position (see CONTEXT.md, "QB slot").
+TEAM_QB = "TQB"
 
-# Starting slot -> position bucket for the position-score pivot.
+# Starting slot -> position bucket for the position-score pivot. A slot in this
+# map is what makes a player a starter: these are the slots that score for a
+# team, so bench, IR and anything ESPN does not recognize fall out of both the
+# pivot and the week's finality.
 SLOT_MAP = {
-    "QB": "QB", "TQB": "QB", "RB": "RB", "WR": "WR", "TE": "TE",
+    "QB": "QB", TEAM_QB: "QB", "RB": "RB", "WR": "WR", "TE": "TE",
     "RB/WR/TE": "FLEX", "WR/TE": "FLEX", "FLEX": "FLEX",
     "OP": "OP", "QB/RB/WR/TE": "OP",
     "D/ST": "D/ST", "K": "K",
@@ -18,45 +25,50 @@ SLOT_MAP = {
 POS_TABS = ["QB", "RB", "WR", "TE"]   # player-type tabs for Top Scorers
 TOP_N = 25
 
-# ESPN calls the 2026 league's Team QB entities TQB; the site counts them as QB
-# everywhere it groups by position (see CONTEXT.md, "QB slot").
-POSITION_ALIASES = {"TQB": "QB"}
+POSITION_ALIASES = {TEAM_QB: "QB"}
+
+# espn_api reports game_played as a percentage, but only ever 0 or 100: it
+# flips to 100 three hours after kickoff. The nightly run lands hours after the
+# last game, so that is accurate for the standings; a future game-day refresh
+# would see a game in its first three hours as not yet started (spec 05,
+# "Further Notes"), which reads as upcoming rather than in progress.
+FULLY_PLAYED = 100
 
 
 def normalize_position(position):
     return POSITION_ALIASES.get(position, position)
 
 
+def is_starter(player):
+    """True when the player's slot scores for their team this week."""
+    return getattr(player, "slot_position", "") in SLOT_MAP
+
+
 def _starters(boxes):
     """Every starting player on both sides of every matchup in the week."""
-    out = []
-    for b in boxes:
-        for lineup in (b.home_lineup, b.away_lineup):
-            for pl in lineup or []:
-                if getattr(pl, "slot_position", "") in SKIP_SLOTS:
-                    continue
-                out.append(pl)
-    return out
-
-
-def _has_started(player):
-    return float(getattr(player, "game_played", 0) or 0) > 0
+    return [pl
+            for b in boxes
+            for lineup in (b.home_lineup, b.away_lineup)
+            for pl in lineup or []
+            if is_starter(pl)]
 
 
 def _has_played(player):
-    return float(getattr(player, "game_played", 0) or 0) >= 100
+    return float(getattr(player, "game_played", 0) or 0) >= FULLY_PLAYED
 
 
 def week_status(boxes):
     """Classify one week's box scores: upcoming, in-progress, or final.
 
-    A week is final when every starter has played or is on bye; upcoming when
-    no starter's game has started; in progress in between. Players on bye never
-    play, so they are excluded from both counts.
+    A week is final when every starter has played or is on bye, upcoming when
+    no starter has played, and in progress in between. Players on bye never
+    play, so they count as neither. A week ESPN serves with no starters at all
+    reads as upcoming, which keeps a week the fetcher cannot see out of the
+    standings rather than awarding ranking points on it.
     """
     active = [p for p in _starters(boxes)
               if not getattr(p, "on_bye_week", False)]
-    if not any(_has_started(p) for p in active):
+    if not any(_has_played(p) for p in active):
         return "upcoming"
     if all(_has_played(p) for p in active):
         return "final"
@@ -83,13 +95,11 @@ def build_week(boxes):
             abbrev = getattr(team, "team_abbrev", "") or team.team_name
             slots = position_scores.setdefault(abbrev, {})
             for pl in lineup or []:
-                slot = getattr(pl, "slot_position", "")
-                if slot in SKIP_SLOTS:
+                if not is_starter(pl):
                     continue
-                bucket = SLOT_MAP.get(slot)
+                bucket = SLOT_MAP[pl.slot_position]
                 pts = float(getattr(pl, "points", 0) or 0)
-                if bucket:
-                    slots[bucket] = round(slots.get(bucket, 0) + pts, 2)
+                slots[bucket] = round(slots.get(bucket, 0) + pts, 2)
                 all_players.append({
                     "name": pl.name,
                     "pro_team": getattr(pl, "proTeam", ""),
@@ -133,7 +143,7 @@ def assign_ranking_points(scores_by_team_id, num_teams):
     return points
 
 
-def accumulate_weeks(weeks, team_ids, num_teams, playoff_cutoff):
+def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     """Week structures (in week order) -> the season's standings state.
 
     Only final weeks count: an upcoming or in-progress week contributes no
@@ -144,6 +154,8 @@ def accumulate_weeks(weeks, team_ids, num_teams, playoff_cutoff):
       top_players_by_week     : one entry per final week
       position_scores_by_week : one entry per final week
     """
+    team_ids = list(team_ids)
+    num_teams = len(team_ids)
     teams = {tid: {"scores_by_week": [], "ranking_points_by_week": [],
                    "cumulative_points_by_week": [], "normalized_by_week": []}
              for tid in team_ids}
