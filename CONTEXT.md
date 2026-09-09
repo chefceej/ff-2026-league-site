@@ -1,0 +1,72 @@
+# Fantasy Football League Site
+
+A public static site for a private 12-team ESPN fantasy football league. Its
+standings are built on weekly ranking points against the whole field rather than
+on ESPN's head-to-head records.
+
+## Language
+
+### Standings
+
+**Ranking points**:
+The points a team earns in one week from where its score ranks against every
+other team: best score gets 12, worst gets 1, ties share the average.
+_Avoid_: rank points, weekly points, points (on its own)
+
+**Score**:
+A team's actual fantasy points in a week, as ESPN totals them.
+_Avoid_: points, actual points
+
+**Playoff cutoff**:
+The standings rank (6th) that separates the playoff picture from the rest.
+_Avoid_: bubble, the line
+
+**Normalized points**:
+A team's cumulative ranking points minus the cutoff team's, so the cutoff team
+sits at 0 and positive means inside the playoff picture.
+_Avoid_: norm, position, margin
+
+### Lineups
+
+**QB slot**:
+The quarterback starting slot. In 2026 the league fills it with a Team QB
+(an NFL team's quarterbacks as one unit); in 2025 it held an individual
+quarterback. Both count as QB everywhere the site groups by position.
+_Avoid_: TQB (as a separate position bucket), team quarterback
+
+### Weeks and matchups
+
+**Week**:
+One matchup period, numbered the way ESPN numbers NFL weeks.
+_Avoid_: round, scoring period
+
+**Final week**:
+A week in which every rostered starter has played or is on bye. Only final
+weeks count toward standings.
+_Avoid_: completed week, done week
+
+**In-progress week**:
+A week in which at least one game has started and the week is not yet final.
+_Avoid_: live week, partial week
+
+**Matchup**:
+ESPN's head-to-head pairing of two teams for one week.
+_Avoid_: game, contest, H2H
+
+**Scoreboard**:
+The page listing every matchup for one week, with the week's projected
+standings.
+_Avoid_: matchups page, week page
+
+**Preview**:
+A matchup or week shown before it is final, built from projections.
+_Avoid_: forecast, upcoming
+
+**Box score**:
+A matchup or week shown after it is final, built from actual scores.
+_Avoid_: results, recap
+
+**Projected total**:
+A team's expected score for a week: actual points for starters who have
+played plus projected points for those who have not.
+_Avoid_: proj, expected score, live projection
