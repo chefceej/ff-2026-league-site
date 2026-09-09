@@ -265,7 +265,14 @@ def _actual(player):
 def _live_points(player):
     """What a starter is worth right now: the actual score once the game is
     played, the projection until then. This is the one blend the projected
-    total and the leaders both read (CONTEXT.md, "Projected total")."""
+    total and the leaders both read (CONTEXT.md, "Projected total").
+
+    A starter on bye is worth nothing either way. They have no game to wait on,
+    which is why a week can go final around them -- so carrying their
+    projection would push a settled week's projected total above its score.
+    """
+    if getattr(player, "on_bye_week", False):
+        return 0.0
     return _actual(player) if _has_played(player) else _projected(player)
 
 

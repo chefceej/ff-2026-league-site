@@ -2,10 +2,8 @@
 // The standings file says which weeks exist and which one is current; the week
 // file says what happened (or is projected) in the week on screen.
 
-// One key, one query parameter, both holding a team abbreviation. Kept in step
-// with charts.js: the Standings page owns the choice, and this page reads it so
-// your matchup is tinted the same way your Standings row is.
-const HIGHLIGHT_KEY = "ff-highlight-team", HIGHLIGHT_PARAM = "team";
+// HIGHLIGHT_PARAM, teamKey and resolveHighlight come from highlight.js, which
+// this page loads first; the Standings page owns the choice and this one reads it.
 const WEEK_PARAM = "week";
 
 async function loadJSON(url) {
@@ -14,31 +12,9 @@ async function loadJSON(url) {
   return res.json();
 }
 
-// Local storage is unavailable in some privacy modes, where merely touching it
-// throws. The highlight is a convenience; losing it must not take the page down.
-function readRemembered() {
-  try { return localStorage.getItem(HIGHLIGHT_KEY); } catch (e) { return null; }
-}
-
-/**
- * The abbreviation to tint: the link's team if it names one we know, else the
- * remembered one if it does, else nothing. Mirrors the Standings page, and like
- * it never writes back — a stale or shared link may not overwrite this device.
- */
-function resolveHighlight(abbrevs) {
-  const known = a => (abbrevs.includes(a) ? a : "");
-  const linked = new URLSearchParams(location.search).get(HIGHLIGHT_PARAM);
-  return known(linked) || known(readRemembered());
-}
-
-const teamKey = t => t.team_abbrev || t.team_name;
-
-/** The weeks this page can open, oldest first. */
+/** The weeks this page can open, oldest first, as the fetcher listed them. */
 function weekList(meta) {
-  const listed = meta.week_files;
-  if (Array.isArray(listed) && listed.length) return listed.slice();
-  const current = meta.current_week || 0;
-  return Array.from({ length: current }, (_, i) => i + 1);
+  return Array.isArray(meta.week_files) ? meta.week_files.slice() : [];
 }
 
 const pts = n => (Math.round(n * 10) / 10).toFixed(1);
@@ -55,12 +31,13 @@ function el(tag, className, text) {
 /**
  * One team's half of a card. `isFinal` decides whether the big number is a
  * projection or the score it settled at, and `winner` marks the box score.
+ * The tint belongs to the whole card, not to a half of it, so nothing here
+ * knows about the highlight.
  */
-function renderSide(side, { isFinal, winner, highlighted }) {
+function renderSide(side, { isFinal, winner }) {
   const wrap = el("div", "matchup-side");
   wrap.dataset.team = side.abbrev;
   if (winner) wrap.classList.add("winner");
-  if (highlighted) wrap.classList.add("highlight-side");
 
   const main = el("div", "side-main");
   if (side.logo_url) {
@@ -120,15 +97,14 @@ function renderCards(weekFile, highlight) {
     const best = isFinal && sides.length > 1 &&
                  sides[0].score !== sides[1].score
       ? Math.max(...sides.map(s => s.score)) : null;
-    let tinted = false;
+    if (highlight && sides.some(s => s.abbrev === highlight)) {
+      card.classList.add("highlight");
+    }
     for (const side of sides) {
-      const highlighted = !!highlight && side.abbrev === highlight;
-      tinted = tinted || highlighted;
       card.appendChild(renderSide(side, {
-        isFinal, winner: best != null && side.score === best, highlighted,
+        isFinal, winner: best != null && side.score === best,
       }));
     }
-    if (tinted) card.classList.add("highlight");
     holder.appendChild(card);
   }
 }

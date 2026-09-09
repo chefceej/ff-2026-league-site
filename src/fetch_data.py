@@ -102,14 +102,14 @@ def main():
         wk = build_week(boxes, week)
         print(f"  week {week}: {wk['status']}")
         weeks.append(wk)
-        # The week file is written from the same box scores whatever the week's
-        # status, because a preview of an unfinished week is the point.
-        write_json(week_path(week),
-                   build_week_file(boxes, week, SEASON_YEAR,
-                                   is_playoff=week > reg_weeks,
-                                   fetched_at=fetched_at))
-        week_files.append(week)
-    print(f"Wrote {len(week_files)} week file(s) to {DATA_DIR}")
+        # Built from the same box scores whatever the week's status, because a
+        # preview of an unfinished week is the point. Written further down,
+        # once the run knows it is publishing this season at all.
+        # is_playoff is always False while weeks_to_fetch stops at the last
+        # regular-season week; the playoff walk is a later ticket.
+        week_files.append(build_week_file(boxes, week, SEASON_YEAR,
+                                          is_playoff=week > reg_weeks,
+                                          fetched_at=fetched_at))
 
     standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
     final_weeks = standings["final_weeks"]
@@ -143,11 +143,14 @@ def main():
             "current_matchup_week": final_weeks,
             "total_matchup_weeks": reg_weeks,
             "playoff_cutoff": PLAYOFF_CUTOFF,
-            # The weeks the Scoreboard can open, and the one it opens on. The
-            # current week is the last week with a file rather than ESPN's own
+            # The weeks the Scoreboard can open, and the one it opens on.
+            # Distinct from current_matchup_week above, which is an alias for
+            # the count of FINAL weeks that the standings and pivot read; this
+            # is the NFL week the site is currently previewing. The current
+            # week is the last week with a file rather than ESPN's own
             # current_week, so the page never opens on a week nobody wrote.
-            "week_files": week_files,
-            "current_week": week_files[-1] if week_files else None,
+            "week_files": [w["week"] for w in week_files],
+            "current_week": week_files[-1]["week"] if week_files else None,
             "updated_at": now_utc.strftime("%Y-%m-%d %H:%M:%S UTC"),
             "last_updated": now_utc.isoformat(),
         },
@@ -159,10 +162,17 @@ def main():
     # weeks are done yet but a data file already exists, leave it in place so
     # the site keeps showing the most recent completed season until kickoff.
     if final_weeks == 0 and os.path.exists(OUTPUT_PATH):
+        # The week files wait with it. Publishing them now would overwrite last
+        # season's week_1.json while the standings still describe last season,
+        # so the Scoreboard would open a week from the wrong year. Both files
+        # start flowing together when the rollover ticket retires this guard.
         print(f"0 final weeks for {SEASON_YEAR}; keeping existing "
-              f"{OUTPUT_PATH} untouched.")
+              f"{OUTPUT_PATH} and the previous season's week files untouched.")
         return
 
+    for week_file in week_files:
+        write_json(week_path(week_file["week"]), week_file)
+    print(f"Wrote {len(week_files)} week file(s) to {DATA_DIR}")
     write_json(OUTPUT_PATH, out)
     print(f"Wrote {OUTPUT_PATH} ({final_weeks} final weeks)")
 

@@ -33,10 +33,12 @@ python3 -m http.server 8080 --directory docs/   # http://localhost:8080
 
 ## Tests
 
-A Playwright suite loads the site in Chromium against frozen copies of the
-league data (`tests/fixtures/league_data.json`) and of two week files, one week
-in progress and one final, so it never depends on the daily data commit and
-needs no credentials:
+A Playwright suite loads the site in Chromium against a frozen copy of the
+league data (`tests/fixtures/league_data.json`) and two hand-built week files,
+one week in progress and one final, so it never depends on the daily data
+commit and needs no credentials. The week fixtures are written to the week
+file's full shape from the spec, including the lineups the matchup page will
+need, which runs ahead of what `build_week_file` emits today:
 
 ```bash
 npm install

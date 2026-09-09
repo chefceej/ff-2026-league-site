@@ -432,3 +432,27 @@ def test_a_player_with_no_kickoff_carries_none_rather_than_a_made_up_time():
     side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
     assert side["leaders"][0]["kickoff"] is None
     assert side["leaders"][0]["on_bye"] is True
+
+
+def test_a_bye_starter_does_not_inflate_a_final_weeks_projected_total():
+    # The week is final with a starter on bye, because a bye is not a game
+    # anyone is waiting on. That starter can still carry a projection, and
+    # counting it would put the projected total above the score it settled at.
+    home = [FakePlayer(name="Done", game_played=100, points=20.0, projected=15.0),
+            FakePlayer(name="Idle", slot="RB", projected=8.4, on_bye_week=True)]
+    away = [FakePlayer(name="Also done", game_played=100, points=9.0)]
+    boxes = [FakeBox(FakeTeam(1), 20.0, home, FakeTeam(2), 9.0, away)]
+    wf = build_week_file(boxes, week=2, season=2026)
+
+    assert wf["status"] == "final"
+    side = wf["matchups"][0]["home"]
+    assert side["projected_total"] == side["score"] == 20.0
+
+
+def test_a_bye_starter_does_not_crowd_out_a_real_leader():
+    home = [FakePlayer(name="Playing", projected=6.0),
+            FakePlayer(name="Idle", slot="RB", projected=99.0, on_bye_week=True)]
+    boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    assert [p["name"] for p in side["leaders"]] == ["Playing", "Idle"]
