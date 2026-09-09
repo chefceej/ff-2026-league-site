@@ -42,7 +42,7 @@ function weekList(meta) {
   return Array.isArray(meta.week_files) ? meta.week_files.slice() : [];
 }
 
-const pts = n => (Math.round((n || 0) * 10) / 10).toFixed(1);
+const pts = n => (Math.round(n * 10) / 10).toFixed(1);
 const recordText = r =>
   !r ? "" : r.ties ? `${r.wins}-${r.losses}-${r.ties}` : `${r.wins}-${r.losses}`;
 
@@ -58,7 +58,9 @@ function el(tag, className, text) {
 /**
  * The week to open: the one the link names if it was published, else the
  * current one, else the most recent week there is a file for. A link to a week
- * nobody wrote lands on a real week rather than on the empty state.
+ * nobody wrote lands on a real week rather than on the empty state, and the
+ * last fallback is the Scoreboard's own -- the two pages open on the same week
+ * when the metadata names a current week that never got a file.
  */
 function chooseWeek(meta, weeks) {
   const asked = Number(new URLSearchParams(location.search).get(WEEK_PARAM));
@@ -206,8 +208,8 @@ function renderRows(holder, home, away, { compare }) {
   for (let i = 0; i < rows; i++) {
     const h = home[i] || null;
     const a = away[i] || null;
+    const slot = (h || a).slot;
     const row = el("div", "lineup-row");
-    row.dataset.slot = (h || a).slot;
     const homeCell = playerCell(h, "home");
     const awayCell = playerCell(a, "away");
     if (compare) {
@@ -216,7 +218,7 @@ function renderRows(holder, home, away, { compare }) {
       if (winner === "away") markAdvantage(awayCell);
     }
     row.appendChild(homeCell);
-    row.appendChild(el("div", "slot-label", (h || a).slot));
+    row.appendChild(el("div", "slot-label", slot));
     row.appendChild(awayCell);
     holder.appendChild(row);
   }
@@ -280,7 +282,8 @@ const STATUS_WORD = {
   final: "Final", "in-progress": "In progress", upcoming: "Projected",
 };
 
-function wireBench(holder) {
+function wireBench() {
+  const holder = document.getElementById("bench-rows");
   const btn = document.getElementById("bench-toggle");
   btn.onclick = () => {
     const hidden = holder.classList.toggle("hidden");
@@ -327,22 +330,17 @@ async function main() {
   document.getElementById("subtitle").textContent =
     `Week ${weekFile.week}` + (weekFile.is_playoff ? " · Playoffs" : "") +
     ` · ${STATUS_WORD[weekFile.status] || "Projected"}`;
-  const named = [matchup.home, matchup.away].filter(Boolean)
-    .map(s => s.abbrev).join(" vs ");
-  document.title = `${named} — Week ${weekFile.week} — Fantasy Football`;
-
+  // A playoff bye has no opposing side at all, so its half of every row is
+  // simply absent -- the same shape as a team that dressed one starter fewer.
+  const rowsOf = (side, key) => (side && side[key]) || [];
   renderHeader(matchup, isFinal);
-  const empty = [];
   renderRows(document.getElementById("lineup-rows"),
-             matchup.home ? matchup.home.lineup || [] : empty,
-             matchup.away ? matchup.away.lineup || [] : empty,
+             rowsOf(matchup.home, "lineup"), rowsOf(matchup.away, "lineup"),
              { compare: true });
-  const bench = document.getElementById("bench-rows");
-  renderRows(bench,
-             matchup.home ? matchup.home.bench || [] : empty,
-             matchup.away ? matchup.away.bench || [] : empty,
+  renderRows(document.getElementById("bench-rows"),
+             rowsOf(matchup.home, "bench"), rowsOf(matchup.away, "bench"),
              { compare: false });
-  wireBench(bench);
+  wireBench();
   document.getElementById("matchup-section").classList.remove("hidden");
 }
 

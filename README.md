@@ -19,8 +19,9 @@ averaged); those points accumulate all season, then the total is shifted so
   plus the week file the Scoreboard reads (matchups, projected totals, leaders,
   and each team's lineup and bench).
 - `docs/` — the static site: the Chart.js playoff-position chart and standings
-  table, the Scoreboard's per-week matchup cards, the matchup page one of those
-  cards opens (`matchup.html?week=N&team=ABBREV`), and the position pivot.
+  table, the Scoreboard's per-week matchup cards, the matchup page one of
+  those cards opens (`matchup.html?week=N&team=ABBREV`), and the position
+  pivot.
 - `.github/workflows/update_data.yml` — refreshes the data daily (7 AM UTC) and
   commits it. Once the 2026 season kicks off it populates automatically; until
   then it leaves the most recent completed season in place.
@@ -50,8 +51,8 @@ npm test
 
 A pytest suite covers the pure per-week transforms in `src/week_data.py` —
 week finality, position buckets, top scorers, the standings accumulation, and
-the week file's matchups, projected totals, leaders and lineups — against hand-built
-stand-ins, so it needs neither ESPN nor `espn_api`:
+the week file's matchups, projected totals, leaders and lineups — against
+hand-built stand-ins, so it needs neither ESPN nor `espn_api`:
 
 ```bash
 pip install pytest

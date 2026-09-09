@@ -23,11 +23,12 @@ async function breakImages(page) {
  * `remembered` seeds the highlight this device would already carry.
  */
 async function openMatchup(page, {
-  current = 14, weeks = {}, query = "", remembered = null, images = serveImages,
+  current = 14, currentWeek = null, weeks = {}, query = "",
+  remembered = null, images = serveImages,
 } = {}) {
   const data = await useFixture(page, d => {
     d.metadata.week_files = Array.from({ length: current }, (_, i) => i + 1);
-    d.metadata.current_week = current;
+    d.metadata.current_week = currentWeek == null ? current : currentWeek;
     return d;
   });
   const byWeek = {};
@@ -55,14 +56,20 @@ const pairs = (matchup, key = "lineup") => {
 const oneDecimal = n => n.toFixed(1);
 
 test.describe("Which matchup the page opens", () => {
-  test("opens the week and team the link names", async ({ page }) => {
+  test("opens the week and team the link names, not the current week",
+       async ({ page }) => {
+    // Week 14 is current and still running; the link asks for week 13, which is
+    // over. Naming a week the page would have opened anyway proves nothing.
     const live = loadWeekFixture("in-progress");
+    const done = loadWeekFixture("final");
+    done.week = 13;          // a file served as week 13 says week 13
     await openMatchup(page, {
-      weeks: { 14: live }, query: "?week=14&team=BW" });
+      weeks: { 13: done, 14: live }, query: "?week=13&team=BW" });
 
-    await expect(page.locator("#subtitle")).toContainText("Week 14");
+    await expect(page.locator("#subtitle")).toContainText("Week 13");
+    await expect(page.locator("#subtitle")).toContainText("Final");
     await expect(page.locator(".team-head-name")).toHaveText(
-      [live.matchups[2].home.team_name, live.matchups[2].away.team_name]);
+      [done.matchups[2].home.team_name, done.matchups[2].away.team_name]);
   });
 
   test("with no parameters opens the current week and the remembered team",
@@ -118,6 +125,18 @@ test.describe("Which matchup the page opens", () => {
        async ({ page }) => {
     const live = loadWeekFixture("in-progress");
     await openMatchup(page, { weeks: { 14: live }, query: "?week=99&team=CJ" });
+
+    await expect(page.locator("#subtitle")).toContainText("Week 14");
+    await expect(page.locator("#lineup-rows .lineup-row")).toHaveCount(9);
+  });
+
+  test("opens the newest published week when the current one was never written",
+       async ({ page }) => {
+    // The metadata names a current week no run ever wrote a file for. The
+    // Scoreboard opens on the most recent week it has; so does this page.
+    const live = loadWeekFixture("in-progress");
+    await openMatchup(page, {
+      weeks: { 14: live }, currentWeek: 99, query: "?team=CJ" });
 
     await expect(page.locator("#subtitle")).toContainText("Week 14");
     await expect(page.locator("#lineup-rows .lineup-row")).toHaveCount(9);
@@ -395,6 +414,24 @@ test.describe("Headshots", () => {
       `https://a.espncdn.com/i/headshots/nfl/players/full/${home[0].player_id}.png`);
     expect(await shots.nth(dstIndex).getAttribute("src")).toBe(
       `https://a.espncdn.com/i/teamlogos/nfl/500/${home[dstIndex].pro_team.toLowerCase()}.png`);
+  });
+
+  test("gives a Team QB the NFL team's logo, not a face", async ({ page }) => {
+    // A Team QB is a whole team's quarterbacks. build_week_file writes its
+    // position as plain QB, so the slot is the only thing that names it -- and
+    // neither frozen week has one, hence the slot swap here.
+    const live = loadWeekFixture("in-progress");
+    const starter = live.matchups[0].home.lineup[0];
+    starter.slot = "TQB";
+    await openMatchup(page, { weeks: { 14: live }, query: "?week=14&team=CJ" });
+
+    const shot = page.locator("#lineup-rows .lineup-row").first()
+      .locator(".slot-side.home .player-shot");
+    expect(await shot.getAttribute("src")).toBe(
+      `https://a.espncdn.com/i/teamlogos/nfl/500/${starter.pro_team.toLowerCase()}.png`);
+    // The slot column still reads the way ESPN names it.
+    await expect(page.locator("#lineup-rows .slot-label").first())
+      .toHaveText("TQB");
   });
 
   test("swaps in a silhouette when the headshot will not load",

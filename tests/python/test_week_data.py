@@ -564,13 +564,13 @@ def test_a_lineup_row_carries_the_whole_player_the_page_draws():
                        opponent="@NYJ", game_date=kick, projected=18.2)]
     boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
                      [FakePlayer(name="Lonely")])]
-    row = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]["lineup"][0]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
 
-    assert row == {"player_id": 1000, "name": "Marcus Whitfield",
-                   "pro_team": "MIA", "position": "QB", "slot": "TQB",
-                   "injury": "Q", "opponent": "@NYJ",
-                   "kickoff": "2026-09-13T17:00:00Z", "on_bye": False,
-                   "played": False, "projected": 18.2, "actual": 0.0}
+    assert side["lineup"][0] == {
+        "player_id": 1000, "name": "Marcus Whitfield", "pro_team": "MIA",
+        "position": "QB", "slot": "TQB", "injury": "Q", "opponent": "@NYJ",
+        "kickoff": "2026-09-13T17:00:00Z", "on_bye": False,
+        "played": False, "projected": 18.2, "actual": 0.0}
 
 
 def test_a_lineup_row_on_bye_carries_no_opponent_and_no_kickoff():
@@ -582,7 +582,8 @@ def test_a_lineup_row_on_bye_carries_no_opponent_and_no_kickoff():
                        opponent="@NYJ", game_date=stale)]
     boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
                      [FakePlayer(name="Lonely")])]
-    row = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]["lineup"][0]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    row = side["lineup"][0]
 
     assert row["on_bye"] is True
     assert row["opponent"] == ""
@@ -599,7 +600,8 @@ def test_the_played_flag_is_what_tells_an_actual_from_a_projection():
                        projected=14.3)]
     boxes = [FakeBox(FakeTeam(1), 26.4, home, FakeTeam(2), 0.0,
                      [FakePlayer(name="Lonely")])]
-    lineup = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]["lineup"]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    lineup = side["lineup"]
 
     assert [p["played"] for p in lineup] == [True, False]
     assert [p["projected"] for p in lineup] == [18.2, 14.3]

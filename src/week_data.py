@@ -345,7 +345,12 @@ def _side(team, score, lineup, week):
     """One team's half of a matchup, as the Scoreboard and matchup page read it."""
     if team is None or team == 0:      # a playoff bye has no opponent
         return None
-    starters = [pl for pl in lineup or [] if is_starter(pl)]
+    # One pass, two lists: a slot either scores for the team this week or it is
+    # the bench (IR included), and asking twice would only invite the two
+    # answers to disagree.
+    starters, benched = [], []
+    for pl in lineup or []:
+        (starters if is_starter(pl) else benched).append(pl)
     # A starter on bye is neither played nor still to play: their week is over
     # without a game, which is the same rule that decides the week's finality.
     return {
@@ -369,7 +374,7 @@ def _side(team, score, lineup, week):
         # kicker opposite the other team's quarterback. Everything that does
         # not score for the team -- bench and IR alike -- is the bench.
         "lineup": [_player(pl) for pl in starters],
-        "bench": [_player(pl) for pl in lineup or [] if not is_starter(pl)],
+        "bench": [_player(pl) for pl in benched],
     }
 
 
