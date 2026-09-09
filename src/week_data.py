@@ -366,26 +366,57 @@ def _side(team, score, lineup, week):
     }
 
 
+def _standings_slots(standings):
+    """How many final weeks the standings carry.
+
+    accumulate_weeks writes the same number of slots for every team, so the
+    shortest array answers for all of them.
+    """
+    teams = (standings or {}).get("teams") or {}
+    return min((len(arrays.get("cumulative_points_by_week") or [])
+                for arrays in teams.values()), default=0)
+
+
+def standings_reach_week(standings, week):
+    """Whether the standings can say what every team took into `week`.
+
+    Week 1 needs nothing: every team enters it level on nothing. Any later week
+    needs the slot before it, and accumulate_weeks writes one slot per FINAL
+    week contiguous from week 1 -- so `week - 1` of them have to exist.
+
+    A run that stopped at a gap has fewer. The site still fetches and publishes
+    the weeks after the hole, and measuring one of those from the slots that
+    survive would head a table "Standings after Week 5" over totals that
+    quietly leave weeks 3 and 4 out -- contradicting the Standings page, which
+    correctly stops at week 2. The week at the gap is the one the standings
+    could not count, so it is out too; from there on the site says nothing
+    rather than something confident and wrong.
+    """
+    if week <= 1:
+        return True
+    stopped = (standings or {}).get("stopped_at_week")
+    if stopped is not None and week >= stopped:
+        return False
+    return _standings_slots(standings) >= week - 1
+
+
 def _entering_cumulative(standings, week, team_ids):
     """Each team's cumulative ranking points as the week kicked off.
 
-    accumulate_weeks writes one slot per FINAL week, contiguous from week 1, so
-    slot `week - 2` is the cumulative through week `week - 1`. Reading the last
+    Slot `week - 2` is the cumulative through week `week - 1`. Reading the last
     slot instead would count a final week twice: the standings have already
     counted it, and this block adds the week's ranking points itself.
 
-    A week no slot reaches -- week 1, or a week past the one the standings
-    stopped at -- falls back to the last slot there is, which is the most the
-    standings know. With no standings at all every team starts from nothing,
-    which is week 1's own situation.
+    Only reached once standings_reach_week has said that slot is there. Week 1
+    is the one week with none to read, and a team the standings have never
+    heard of enters on nothing.
     """
     teams = (standings or {}).get("teams") or {}
     entering = {}
     for tid in team_ids:
         arrays = teams.get(tid) or {}
         cumulative = arrays.get("cumulative_points_by_week") or []
-        index = min(week - 2, len(cumulative) - 1)
-        entering[tid] = cumulative[index] if index >= 0 else 0.0
+        entering[tid] = cumulative[week - 2] if week >= 2 and cumulative else 0.0
     return entering
 
 
@@ -464,7 +495,8 @@ def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None,
     `standings` is accumulate_weeks' return through the last final week -- the
     season state the projected standings block is measured from. A playoff week
     gets no block at all: the bracket does not hand out ranking points, so a
-    projection of them would be fiction.
+    projection of them would be fiction. Nor does a week the standings cannot
+    reach behind (standings_reach_week); the page hides the section either way.
 
     Returns None when ESPN answered with no matchups at all. That is not an
     empty week, it is a week ESPN would not talk about, and a file built from
@@ -485,7 +517,9 @@ def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None,
         "fetched_at": fetched_at,
         "matchups": matchups,
     }
-    if not is_playoff:
+    # No block on a playoff week -- the bracket hands out no ranking points --
+    # and none on a week the standings cannot reach behind.
+    if not is_playoff and standings_reach_week(standings, week):
         sides = [s for m in matchups for s in (m["home"], m["away"]) if s]
         week_file["projected_standings"] = _projected_standings(
             sides, standings, week, playoff_cutoff)

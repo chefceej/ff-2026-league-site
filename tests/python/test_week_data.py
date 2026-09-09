@@ -763,6 +763,85 @@ def test_a_playoff_bye_is_left_out_of_a_regular_weeks_block():
     assert [r["team_id"] for r in wf["projected_standings"]] == [2, 1, 3]
 
 
+def gapped_season():
+    """Weeks 1, 2, 4 and 5 final; week 3's fetch failed, so it is not there.
+
+    accumulate_weeks numbers the standings one slot per final week from week 1,
+    so it counts weeks 1 and 2 and stops before the hole -- final_weeks 2,
+    stopped_at_week 3. Weeks 4 and 5 are fetched and published all the same,
+    which is what makes them the interesting case: the standings cannot say
+    what either team took into them.
+    """
+    def week(number, scores):
+        boxes = four_team_boxes(scores, played=True)
+        return build_week(boxes, number)
+
+    scores = {1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}
+    weeks = [week(n, scores) for n in (1, 2, 4, 5)]
+    return accumulate_weeks(weeks, team_ids=[1, 2, 3, 4], playoff_cutoff=2)
+
+
+def test_a_gap_in_the_standings_stops_the_block_at_the_gap():
+    # The standings stop before week 3, so weeks 4 and 5 get no block at all.
+    # Measuring them from weeks 1 and 2 would publish a table headed "Standings
+    # after Week 5" whose totals quietly leave weeks 3 and 4 out -- and the
+    # Standings page, which correctly stops at week 2, would contradict it.
+    standings = gapped_season()
+    assert (standings["final_weeks"], standings["stopped_at_week"]) == (2, 3)
+
+    def block_for(week):
+        boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0},
+                                played=True)
+        wf = build_week_file(boxes, week=week, season=2026,
+                             standings=standings, playoff_cutoff=2)
+        return wf.get("projected_standings")
+
+    assert block_for(1) is not None
+    assert block_for(2) is not None
+    assert block_for(4) is None
+    assert block_for(5) is None
+
+
+def test_the_week_the_standings_stopped_before_gets_no_block_either():
+    # Week 3 is the hole itself. Whether it was never fetched or arrived
+    # unfinished, it is the week the standings could not count, so the site
+    # does not project from it.
+    standings = gapped_season()
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    wf = build_week_file(boxes, week=3, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    assert "projected_standings" not in wf
+
+
+def test_a_week_the_standings_have_no_slot_for_gets_no_block():
+    # The same rule without a gap to blame: nothing accumulated, so week 9 has
+    # no baseline to be measured from. It used to fall back to the last slot
+    # there was and publish a plausible-looking fiction.
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    wf = build_week_file(boxes, week=9, season=2026, playoff_cutoff=2)
+
+    assert "projected_standings" not in wf
+
+
+def test_an_unbroken_season_still_blocks_every_week_it_reaches():
+    # The guard must not swallow the ordinary case: weeks 1..4 final, and week
+    # 5 -- the week being previewed -- reads its baseline from week 4.
+    scores = {1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}
+    weeks = [build_week(four_team_boxes(scores, played=True), n)
+             for n in (1, 2, 3, 4)]
+    standings = accumulate_weeks(weeks, team_ids=[1, 2, 3, 4], playoff_cutoff=2)
+    assert standings["stopped_at_week"] is None
+
+    boxes = four_team_boxes(scores, played=False)
+    wf = build_week_file(boxes, week=5, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    # Four final weeks at 4 ranking points each, plus this week's 4.
+    assert rows["T2"]["projected_cumulative"] == 20.0
+
+
 # --- season rollover ---------------------------------------------------------
 # The site becomes the new season's site on kickoff week: the week the games
 # are about to start, the standings file is written even with nothing final in
