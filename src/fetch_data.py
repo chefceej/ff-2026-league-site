@@ -97,7 +97,11 @@ def main():
     week_files = []
     for week in weeks_to_fetch(reg_weeks, getattr(league, "current_week", None)):
         boxes = fetch_boxes(league, week)
-        if boxes is None:
+        if not boxes:
+            # None is a failed request; [] is a successful one ESPN answered
+            # with nothing. Neither is a week worth publishing, and writing the
+            # empty one would overwrite a week already on the site.
+            print(f"  week {week}: no box scores served; leaving it as it is")
             continue
         wk = build_week(boxes, week)
         print(f"  week {week}: {wk['status']}")

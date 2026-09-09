@@ -9,7 +9,7 @@ from datetime import datetime, timedelta, timezone
 import pytest
 
 from week_data import (accumulate_weeks, assign_ranking_points,
-                       build_week, build_week_file, week_status,
+                       build_week, build_week_file, team_record, week_status,
                        weeks_to_fetch)
 
 
@@ -34,7 +34,7 @@ class FakePlayer:
 
 class FakeTeam:
     def __init__(self, team_id, name=None, abbrev=None, owners=None,
-                 wins=0, losses=0, ties=0, logo_url=""):
+                 wins=0, losses=0, ties=0, logo_url="", outcomes=None):
         self.team_id = team_id
         self.team_name = name or f"Team {team_id}"
         self.team_abbrev = abbrev or f"T{team_id}"
@@ -43,6 +43,9 @@ class FakeTeam:
         self.losses = losses
         self.ties = ties
         self.logo_url = logo_url
+        # espn_api's per-week result list: 'W', 'L', 'T', or 'U' while the week
+        # is undecided, one entry per scheduled week with index 0 as week 1.
+        self.outcomes = outcomes if outcomes is not None else []
 
 
 class FakeBox:
@@ -456,3 +459,64 @@ def test_a_bye_starter_does_not_crowd_out_a_real_leader():
                      [FakePlayer(name="Lonely")])]
     side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
     assert [p["name"] for p in side["leaders"]] == ["Playing", "Idle"]
+
+
+# ── The record a card shows: where the team stood entering that week ──
+
+def test_the_record_counts_only_the_weeks_before_the_one_being_written():
+    # One League object builds every week file, so the Team's season-to-date
+    # 10-3 must not be stamped onto week 4's card. Entering week 4 this team
+    # was 2-1.
+    team = FakeTeam(1, wins=10, losses=3,
+                    outcomes=["W", "L", "W", "W", "W", "L", "W", "W", "W",
+                              "W", "W", "L", "W"])
+    assert team_record(team, week=4) == {"wins": 2, "losses": 1, "ties": 0}
+
+
+def test_entering_week_one_every_team_has_played_nobody():
+    team = FakeTeam(1, wins=10, losses=3, outcomes=["W", "L", "W"])
+    assert team_record(team, week=1) == {"wins": 0, "losses": 0, "ties": 0}
+
+
+def test_an_undecided_week_counts_as_neither_a_win_nor_a_loss():
+    # ESPN marks a week it has not settled 'U'; it is in the list from the
+    # moment the schedule exists, so it must not read as a loss.
+    team = FakeTeam(1, outcomes=["W", "U", "U", "U"])
+    assert team_record(team, week=4) == {"wins": 1, "losses": 0, "ties": 0}
+
+
+def test_a_tie_is_counted_as_a_tie():
+    team = FakeTeam(1, outcomes=["W", "T", "L"])
+    assert team_record(team, week=4) == {"wins": 1, "losses": 1, "ties": 1}
+
+
+def test_a_team_with_no_outcome_list_falls_back_to_its_season_record():
+    # Nothing else in the file can be salvaged from a Team that lost its
+    # schedule, and today's record beats no record at all.
+    team = FakeTeam(1, wins=6, losses=7, ties=1, outcomes=[])
+    assert team_record(team, week=9) == {"wins": 6, "losses": 7, "ties": 1}
+
+
+def test_the_week_file_carries_the_record_the_team_took_into_the_week():
+    home = FakeTeam(1, wins=9, losses=1, outcomes=["W", "W", "L", "W"])
+    away = FakeTeam(2, wins=2, losses=8, outcomes=["L", "L", "W", "L"])
+    boxes = [FakeBox(home, 20.0, [FakePlayer(game_played=100, points=20.0)],
+                     away, 9.0, [FakePlayer(game_played=100, points=9.0)])]
+    matchup = build_week_file(boxes, week=3, season=2026)["matchups"][0]
+
+    assert matchup["home"]["record"] == {"wins": 2, "losses": 0, "ties": 0}
+    assert matchup["away"]["record"] == {"wins": 0, "losses": 2, "ties": 0}
+
+
+def test_a_week_espn_answers_with_no_matchups_produces_no_week_file():
+    # An empty-but-successful answer is not an empty week; it is a week ESPN
+    # would not talk about. Building a file from it would publish a week with
+    # zero matchups over a week that already has one, and the Scoreboard would
+    # render a blank under a live week label.
+    assert build_week_file([], week=7, season=2026,
+                           fetched_at="2026-09-09T00:00:00Z") is None
+
+
+def test_a_week_with_matchups_still_produces_a_week_file():
+    boxes = [box([FakePlayer(game_played=100)], [FakePlayer(game_played=100)])]
+    assert build_week_file(boxes, week=7, season=2026)["week"] == 7

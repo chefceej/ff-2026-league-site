@@ -308,7 +308,35 @@ def _player(pl):
     }
 
 
-def _side(team, score, lineup):
+# espn_api's per-week outcome codes. 'U' is a week ESPN has not settled, and it
+# is in the list from the moment the schedule exists, so it counts as nothing.
+OUTCOME_WIN, OUTCOME_LOSS, OUTCOME_TIE = "W", "L", "T"
+
+
+def team_record(team, week):
+    """The record the team took into `week`.
+
+    espn_api's Team carries the season-to-date wins/losses/ties, and one League
+    object builds every week file in a run -- so reading those would stamp
+    December's record onto September's box score, and rewrite it again every
+    night. outcomes is the per-week result list, index 0 being week 1, so the
+    weeks before this one are the record entering it.
+
+    A team whose schedule never loaded has no per-week list to slice; today's
+    record beats no record at all, so that is what it falls back to.
+    """
+    outcomes = getattr(team, "outcomes", None)
+    if not outcomes:
+        return {"wins": getattr(team, "wins", 0),
+                "losses": getattr(team, "losses", 0),
+                "ties": getattr(team, "ties", 0)}
+    before = [str(o).upper() for o in outcomes[:max(week - 1, 0)]]
+    return {"wins": before.count(OUTCOME_WIN),
+            "losses": before.count(OUTCOME_LOSS),
+            "ties": before.count(OUTCOME_TIE)}
+
+
+def _side(team, score, lineup, week):
     """One team's half of a matchup, as the Scoreboard and matchup page read it."""
     if team is None or team == 0:      # a playoff bye has no opponent
         return None
@@ -321,9 +349,7 @@ def _side(team, score, lineup):
         "abbrev": getattr(team, "team_abbrev", "") or team.team_name,
         "owner": owner_name(team),
         "logo_url": getattr(team, "logo_url", "") or "",
-        "record": {"wins": getattr(team, "wins", 0),
-                   "losses": getattr(team, "losses", 0),
-                   "ties": getattr(team, "ties", 0)},
+        "record": team_record(team, week),
         "score": round(float(score or 0), 2),
         "projected_total": round(sum(_live_points(pl) for pl in starters), 2),
         "played": sum(1 for pl in starters if _has_played(pl)),
@@ -342,14 +368,22 @@ def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None):
     Separate from build_week because the two answer different questions from
     the same boxes: build_week feeds the season's standings, this feeds one
     week's page. Both are pure, so neither knows how the other is published.
+
+    Returns None when ESPN answered with no matchups at all. That is not an
+    empty week, it is a week ESPN would not talk about, and a file built from
+    it would replace a published week with zero matchups -- which the page has
+    no way to tell from a week that simply has no games.
     """
+    if not boxes:
+        return None
     return {
         "week": week,
         "season": season,
         "is_playoff": is_playoff,
         "status": week_status(boxes),
         "fetched_at": fetched_at,
-        "matchups": [{"home": _side(b.home_team, b.home_score, b.home_lineup),
-                      "away": _side(b.away_team, b.away_score, b.away_lineup)}
-                     for b in boxes],
+        "matchups": [
+            {"home": _side(b.home_team, b.home_score, b.home_lineup, week),
+             "away": _side(b.away_team, b.away_score, b.away_lineup, week)}
+            for b in boxes],
     }

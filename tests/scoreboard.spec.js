@@ -265,3 +265,52 @@ test.describe("Week fixtures", () => {
     }
   });
 });
+
+test.describe("Overlapping week changes", () => {
+  /** Answer week `week` after `ms`, taking precedence over the fixture route. */
+  async function delayWeek(page, week, ms, served) {
+    await page.route(`**/data/week_${week}.json*`, async route => {
+      await new Promise(r => setTimeout(r, ms));
+      if (!served) return route.fulfill({ status: 404, body: "" });
+      await route.fulfill({
+        status: 200,
+        contentType: "application/json",
+        body: JSON.stringify(served),
+      });
+    });
+  }
+
+  test("a slow week that lands late does not paint under a later week's label",
+       async ({ page }) => {
+    await openScoreboard(page, { weeks: { 14: loadWeekFixture("in-progress") } });
+    // Week 13 answers slowly with an in-progress week; week 12 answers at once
+    // with a final one, so the two renders are told apart by the card status.
+    await delayWeek(page, 13, 600, loadWeekFixture("in-progress"));
+
+    await page.locator("#prev-week-btn").click();   // -> 13, still in flight
+    await page.locator("#prev-week-btn").click();   // -> 12, answers first
+    await expect(page.locator("#week-nav-label")).toHaveText("Week 12");
+    await expect(page.locator(".matchup-card .card-status").first())
+      .toHaveText("Final");
+
+    // Give week 13's answer time to arrive and try to take the DOM.
+    await page.waitForTimeout(900);
+    await expect(page.locator("#week-nav-label")).toHaveText("Week 12");
+    await expect(page.locator(".matchup-card .card-status").first())
+      .toHaveText("Final");
+  });
+
+  test("a slow week that turns out to be missing does not wipe the week on screen",
+       async ({ page }) => {
+    await openScoreboard(page, { weeks: { 14: loadWeekFixture("in-progress") } });
+    await delayWeek(page, 13, 600, null);           // 404, but slowly
+
+    await page.locator("#prev-week-btn").click();   // -> 13, will 404 late
+    await page.locator("#next-week-btn").click();   // -> back to 14, answers now
+    await expect(page.locator("#week-nav-label")).toHaveText("Week 14");
+
+    await page.waitForTimeout(900);
+    await expect(page.locator("#empty-state")).toBeHidden();
+    await expect(page.locator(".matchup-card")).toHaveCount(6);
+  });
+});

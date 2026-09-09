@@ -148,16 +148,26 @@ async function main() {
   const nextBtn = document.getElementById("next-week-btn");
   show("week-section");
 
+  // Which render owns the DOM. The label and the arrows move the moment you
+  // click; the cards can only arrive a round trip later. Two clicks inside one
+  // round trip start two fetches, and without this the slower one would win --
+  // painting one week's cards under another week's label, or reporting a week
+  // that is published as missing because its neighbour's 404 landed last.
+  let latestRender = 0;
+
   async function render() {
+    const mine = ++latestRender;
     const week = weeks[index];
     label.textContent = `Week ${week}`;
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === weeks.length - 1;
     try {
       const weekFile = await loadJSON(`data/week_${week}.json`);
+      if (mine !== latestRender) return;
       hideEmpty();
       renderCards(weekFile, highlight);
     } catch (e) {
+      if (mine !== latestRender) return;
       showEmpty(`Week ${week} hasn't been published yet.`);
     }
   }
