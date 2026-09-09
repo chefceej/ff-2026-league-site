@@ -54,19 +54,49 @@ def iso_utc(when):
     return None if when is None else when.isoformat().replace("+00:00", "Z")
 
 
-def weeks_to_fetch(reg_weeks, current_week):
-    """The regular-season weeks ESPN can actually answer for, in order.
+def weeks_to_fetch(reg_weeks, current_week, matchup_periods=None):
+    """The weeks ESPN can actually answer for: (week, scoring period) pairs.
 
-    espn_api's box_scores(week) has no else branch for a week beyond
-    league.current_week: it silently serves the current week's box scores
-    instead of the week asked for. Asking for weeks the league has not reached
-    therefore hands back the same week over and over, and once that week goes
-    final it would be counted once per remaining week of the season. Asking
-    only for weeks that exist is what prevents it.
+    espn_api's box_scores(week) takes a SCORING period and looks up the matchup
+    period holding it, with no else branch either side of the league's range:
+    a week past league.current_week silently serves the current week's box
+    scores, and a scoring period belonging to no matchup period silently serves
+    the current matchup period's. Both hand back a week the run already has,
+    under a second week number -- and once that week goes final it would be
+    counted twice. Asking only for weeks that exist is what prevents it.
+
+    The two units are why this returns pairs. The site's week is a matchup
+    period (CONTEXT.md, "Week"), which is what the file is named for and what
+    reg_weeks counts; ESPN wants the scoring period the week starts in. They
+    are the same number in a league whose rounds are one week each, and part
+    company the moment one is not -- a two-week championship is ONE week of the
+    site, so its second scoring period is not a week at all.
+
+    A week is in reach when the scoring period it starts in is: that is what
+    puts a round the league has only half played on the Scoreboard as a
+    preview, and what stops the walk at the last week the league actually has,
+    however far ESPN's own scoring periods run past it. A multi-week round is
+    read from the scoring period it starts in, so a round still under way is
+    previewed from its first week rather than from nothing.
+
+    `matchup_periods` is ESPN's mapping of matchup period -> its scoring
+    periods (league.settings.matchup_periods; its keys arrive as strings).
+    Without it there is no telling the two units apart, so the walk keeps to
+    the regular season, where a league has one week per week.
     """
     if current_week is None:          # a season ESPN reports nothing about
         current_week = reg_weeks
-    return list(range(1, min(reg_weeks, current_week) + 1))
+    if not matchup_periods:
+        return [(week, week)
+                for week in range(1, min(reg_weeks, current_week) + 1)]
+    weeks = []
+    for week, scoring_periods in matchup_periods.items():
+        if not scoring_periods:
+            continue
+        starts_at = min(int(period) for period in scoring_periods)
+        if starts_at <= current_week:
+            weeks.append((int(week), starts_at))
+    return sorted(weeks)
 
 
 def normalize_position(position):
@@ -109,10 +139,13 @@ def week_status(boxes):
     return "in-progress"
 
 
-def build_week(boxes, week):
+def build_week(boxes, week, is_playoff=False):
     """One week's box scores -> the week structure the site is built from.
 
       week            : the week number these box scores were asked for
+      is_playoff      : whether the week is a playoff week rather than a
+                        regular-season one, which is what keeps it out of the
+                        standings (accumulate_weeks, which says why)
       status          : "upcoming" | "in-progress" | "final"
       scores          : {team_id: team score}
       top_players     : {"all": [...], "QB": [...], ...} of starter scores
@@ -151,6 +184,7 @@ def build_week(boxes, week):
                             if p["position"] == pos][:TOP_N]
     return {
         "week": week,
+        "is_playoff": is_playoff,
         "status": week_status(boxes),
         "scores": scores,
         "top_players": top_players,
@@ -182,8 +216,13 @@ def assign_ranking_points(scores_by_team_id, num_teams):
 def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     """Week structures (in week order) -> the season's standings state.
 
-    Only final weeks count: an upcoming or in-progress week contributes no
-    scores, ranking points, top scorers or position scores.
+    Only final regular-season weeks count: an upcoming or in-progress week
+    contributes no scores, ranking points, top scorers or position scores, and
+    neither does a playoff week. The bracket hands out no ranking points, and a
+    playoff week goes final the moment its games are played -- so counting one
+    would award another week of the season's currency to teams that are no
+    longer racing for it, and stamp its number on a standings slot that belongs
+    to a regular-season week. This is the rule the rest of the module points at.
 
     Position in the returned arrays is what the site reads as the week number,
     so the final weeks accumulated have to be weeks 1..N with nothing missing.
@@ -211,7 +250,7 @@ def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     stopped_at_week = None
 
     for wk in weeks:
-        if wk["status"] != "final":
+        if wk["status"] != "final" or wk["is_playoff"]:
             continue
         expected = len(top_players_by_week) + 1
         if wk["week"] < expected:

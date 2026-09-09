@@ -31,10 +31,14 @@ async function useFixture(page, mutate) {
   return served;
 }
 
-/** The two frozen week files: one week before it is final, and after. */
+/**
+ * The frozen week files: one week before it is final, one after, and a playoff
+ * week -- which carries two byes and no projected standings block.
+ */
 const WEEK_FIXTURES = {
   "in-progress": "week_in_progress.json",
   final: "week_final.json",
+  playoff: "week_playoff.json",
 };
 
 /** A fresh parsed copy of one week fixture, safe for a test to mutate. */

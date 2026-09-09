@@ -10,15 +10,20 @@ averaged); those points accumulate all season, then the total is shifted so
 ## How it works
 
 - `src/fetch_data.py` — pulls the league from ESPN (`espn_api`) and writes
-  `docs/data/league_data.json` plus one `docs/data/week_<N>.json` per week.
+  `docs/data/league_data.json` plus one `docs/data/week_<N>.json` per week,
+  walking from week 1 through every week the league has reached, the playoff
+  weeks included. A week is one of ESPN's matchup periods, which is not always
+  one of its scoring periods — a two-week playoff round is a single week here.
   Reads `FF_LEAGUE_ID`, `FF_SEASON_YEAR`, `FF_PLAYOFF_CUTOFF`, and
   `ESPN_S2` / `SWID` from the environment.
 - `src/week_data.py` — the pure per-week transforms the fetcher runs on each
   week's box scores: week status (upcoming / in-progress / final), position
-  buckets, top scorers and the standings accumulation over final weeks only,
-  plus the week file the Scoreboard reads (matchups, projected totals, leaders,
-  each team's lineup and bench, and the week's projected standings) and the
-  rule deciding whether a run publishes what it fetched at all.
+  buckets, top scorers and the standings accumulation over final regular-season
+  weeks only — the bracket hands out no ranking points, so a playoff week is
+  marked and left out — plus the week file the Scoreboard reads (matchups,
+  projected totals, leaders, each team's lineup and bench, and the week's
+  projected standings) and the rule deciding whether a run publishes what it
+  fetched at all.
 - `docs/` — the static site: the Chart.js playoff-position chart and standings
   table, the Scoreboard's per-week matchup cards and projected standings, the
   matchup page one of those cards opens (`matchup.html?week=N&team=ABBREV`),
@@ -43,10 +48,11 @@ python3 -m http.server 8080 --directory docs/   # http://localhost:8080
 ## Tests
 
 A Playwright suite loads the site in Chromium against a frozen copy of the
-league data (`tests/fixtures/league_data.json`) and two hand-built week files,
-one week in progress and one final, so it never depends on the daily data
-commit and needs no credentials. The week fixtures are written to the week
-file's full shape from the spec, lineups and benches included, which is what
+league data (`tests/fixtures/league_data.json`) and three hand-built week
+files — one week in progress, one final, and one playoff week with two byes
+and no projected standings — so it never depends on the daily data commit and
+needs no credentials. The week fixtures are written to the week file's full
+shape from the spec, lineups and benches included, which is what
 `build_week_file` emits:
 
 ```bash
@@ -56,8 +62,9 @@ npm test
 ```
 
 A pytest suite covers the pure per-week transforms in `src/week_data.py` —
-week finality, position buckets, top scorers, the standings accumulation, and
-the week file's matchups, projected totals, leaders, lineups and projected
+week finality, position buckets, top scorers, the standings accumulation over
+regular-season weeks only, the walk through the playoff weeks, and the week
+file's matchups, byes, projected totals, leaders, lineups and projected
 standings — against hand-built stand-ins, so it needs neither ESPN nor
 `espn_api`:
 

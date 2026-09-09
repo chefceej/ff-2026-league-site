@@ -22,6 +22,10 @@
     <div class="week-nav">
       <button id="prev-week-btn" class="week-nav-btn" aria-label="Previous week">&lsaquo;</button>
       <span id="week-nav-label" class="week-nav-label"></span>
+      <!-- Beside the week label, and set by the week file, which is the only
+           thing that knows a week is a playoff week -- so it starts hidden
+           rather than guessing. -->
+      <span id="week-playoff-label" class="playoff-tag hidden">Playoffs</span>
       <button id="next-week-btn" class="week-nav-btn" aria-label="Next week">&rsaquo;</button>
     </div>
     <div id="matchup-cards" class="matchup-cards"></div>

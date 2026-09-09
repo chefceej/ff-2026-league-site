@@ -160,8 +160,10 @@ def test_tied_scores_share_the_average_of_the_ranks_they_occupy():
     assert points == {1: 2.5, 2: 2.5, 3: 1}
 
 
-def week(number, status, scores):
+def week(number, status, scores, is_playoff=False):
+    """A week structure of the shape build_week returns."""
     return {"week": number, "status": status, "scores": scores,
+            "is_playoff": is_playoff,
             "top_players": {"all": []}, "position_scores": {}}
 
 
@@ -221,27 +223,138 @@ def test_a_slot_that_scores_for_nobody_is_left_out_of_the_top_scorers():
 
 # ── The week number: what keeps one week from being counted as several ──
 
+def one_period_each(last):
+    """ESPN's matchup_periods for a league whose weeks are one week each.
+
+    Keys arrive from ESPN's JSON as strings, which is how the real mapping
+    reads, so the transform has to cope with them.
+    """
+    return {str(week): [week] for week in range(1, last + 1)}
+
+
+def fetched(*args, **kwargs):
+    """Just the week numbers weeks_to_fetch would walk."""
+    return [week for week, _ in weeks_to_fetch(*args, **kwargs)]
+
+
 def test_the_fetcher_asks_only_for_weeks_the_league_has_reached():
     # espn_api's box_scores(week) has no else branch for a week past
     # league.current_week: it quietly serves the CURRENT week instead. Asking
     # for weeks 2..14 during week 1 would hand back week 1 thirteen more times.
-    assert weeks_to_fetch(reg_weeks=14, current_week=1) == [1]
-    assert weeks_to_fetch(reg_weeks=14, current_week=5) == [1, 2, 3, 4, 5]
-    assert weeks_to_fetch(reg_weeks=14, current_week=14) == list(range(1, 15))
+    periods = one_period_each(17)
+    assert fetched(14, 1, periods) == [1]
+    assert fetched(14, 5, periods) == [1, 2, 3, 4, 5]
+    assert fetched(14, 14, periods) == list(range(1, 15))
 
 
-def test_the_fetcher_stops_at_the_last_regular_season_week():
-    # Playoff weeks run past reg_season_count; the standings end there.
-    assert weeks_to_fetch(reg_weeks=14, current_week=17) == list(range(1, 15))
+def test_the_fetcher_walks_past_the_regular_season_into_the_playoffs():
+    # The playoff weeks run past reg_season_count and ESPN serves them, so the
+    # Scoreboard gets a file for each of them. Stopping at reg_weeks would leave
+    # the page on week 14 for the rest of the season.
+    assert fetched(14, 17, one_period_each(17)) == list(range(1, 18))
+
+
+def test_the_fetcher_asks_no_further_than_the_playoffs_have_reached():
+    # Same reason as the regular season: box_scores(week) past current_week
+    # quietly serves the current week again, so a week 16 that has not arrived
+    # would be week 15 wearing week 16's number.
+    assert fetched(14, 15, one_period_each(17)) == list(range(1, 16))
+
+
+def test_the_fetcher_stops_at_the_last_week_the_league_actually_has():
+    # ESPN's current week is a scoring period and can run past the league's
+    # last matchup period -- the NFL plays an eighteenth week whether or not
+    # the league does. A week with no matchup period of its own falls through
+    # box_scores' lookup to the CURRENT matchup period, so asking for it would
+    # publish the last week's games again under a number nobody played.
+    assert fetched(14, 20, one_period_each(16)) == list(range(1, 17))
+
+
+def test_a_two_week_championship_round_is_one_week_of_the_site():
+    # A league with playoffMatchupPeriodLength 2 runs its final round over two
+    # scoring periods, which ESPN reports as ONE matchup period. The site's
+    # week is the matchup period, so the round is week 16 and there is no week
+    # 17: asking for scoring period 17 would serve the same championship game
+    # a second time, as its own navigable week.
+    periods = one_period_each(15)
+    periods["16"] = [16, 17]
+    assert fetched(14, 17, periods) == list(range(1, 17))
+
+
+def test_a_week_is_asked_for_by_the_scoring_period_it_starts_in():
+    # box_scores takes a SCORING period and looks the matchup period up from
+    # it, so the number handed to ESPN is not always the number the site files
+    # the week under. They part company exactly where a matchup period spans
+    # more than one scoring period.
+    periods = one_period_each(14)
+    periods["15"] = [15, 16]
+    periods["16"] = [17, 18]
+    assert weeks_to_fetch(14, 18, periods)[-2:] == [(15, 15), (16, 17)]
+
+
+def test_a_round_the_league_has_only_started_is_still_previewed():
+    # Half of a two-week round is played. The week exists and its first scoring
+    # period is in reach, so the Scoreboard previews it rather than waiting for
+    # the round to end.
+    periods = one_period_each(15)
+    periods["16"] = [16, 17]
+    assert fetched(14, 16, periods) == list(range(1, 17))
+
+
+def test_without_espn_s_matchup_periods_the_walk_stops_at_the_regular_season():
+    # No mapping, no way to tell a matchup period from a scoring period -- so
+    # the walk keeps to the ground it has always been safe on.
+    assert fetched(14, 17, None) == list(range(1, 15))
+    assert fetched(14, 17, {}) == list(range(1, 15))
+    assert fetched(14, 5, None) == [1, 2, 3, 4, 5]
+
+
+def test_a_season_espn_reports_no_current_week_for_stops_at_the_regular_season():
+    # Nothing says how far the bracket has got, so the last week the league is
+    # known to have is the last regular-season one.
+    assert fetched(14, None, one_period_each(17)) == list(range(1, 15))
+    assert fetched(14, None, None) == list(range(1, 15))
 
 
 def test_the_fetcher_asks_for_nothing_before_the_season_starts():
-    assert weeks_to_fetch(reg_weeks=14, current_week=0) == []
+    assert fetched(14, 0, one_period_each(17)) == []
+    assert fetched(14, 0, None) == []
 
 
 def test_build_week_carries_the_week_it_was_asked_for():
     wk = build_week([box([FakePlayer()], [FakePlayer()])], week=7)
     assert wk["week"] == 7
+
+
+def test_build_week_marks_a_playoff_week():
+    boxes = [box([FakePlayer(game_played=100)], [FakePlayer(game_played=100)])]
+    assert build_week(boxes, week=15, is_playoff=True)["is_playoff"] is True
+    assert build_week(boxes, week=14)["is_playoff"] is False
+
+
+def test_a_final_playoff_week_hands_out_no_ranking_points():
+    # The bracket is not the standings: a playoff week is final the moment its
+    # games are played, and counting it would award another week of ranking
+    # points to teams that are no longer racing for them.
+    weeks = [week(1, "final", {1: 100.0, 2: 90.0}),
+             week(2, "final", {1: 40.0, 2: 10.0}, is_playoff=True)]
+    standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
+
+    assert standings["final_weeks"] == 1
+    assert standings["teams"][1]["ranking_points_by_week"] == [2]
+    assert standings["teams"][2]["scores_by_week"] == [90.0]
+
+
+def test_a_playoff_week_is_not_the_gap_the_standings_stop_before():
+    # A two-week regular season followed by the playoffs. Week 15 sits far past
+    # the slot after week 2, so a playoff week the standings merely declined to
+    # count would otherwise read as a hole where weeks 3..14 should be.
+    weeks = [week(1, "final", {1: 100.0, 2: 90.0}),
+             week(2, "final", {1: 80.0, 2: 95.0}),
+             week(15, "final", {1: 40.0, 2: 10.0}, is_playoff=True)]
+    standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
+
+    assert (standings["final_weeks"], standings["stopped_at_week"]) == (2, None)
 
 
 def test_the_same_week_twice_is_refused():
@@ -834,6 +947,35 @@ def test_week_one_starts_every_team_from_nothing():
     # listed the teams in would invent twelve of them on day one.
     for row in wf["projected_standings"]:
         assert row["current_rank"] == row["projected_rank"]
+
+
+def test_a_playoff_bye_is_written_as_a_matchup_with_no_away_side():
+    # ESPN serves the bye as a box score with no opponent, and the Scoreboard
+    # reads a null away side as the single-team bye card. A team on a bye is
+    # still a matchup, so the card keeps its place in the bracket.
+    boxes = four_team_boxes({1: 90.0, 2: 120.0}, played=False)
+    boxes.append(FakeBox(FakeTeam(3), 0.0, [FakePlayer(projected=50.0)],
+                         None, 0.0, []))
+    wf = build_week_file(boxes, week=15, season=2026, is_playoff=True)
+
+    assert wf["matchups"][-1]["away"] is None
+    assert wf["matchups"][-1]["home"]["team_id"] == 3
+
+
+def test_espn_s_zero_for_a_missing_opponent_is_a_bye_too():
+    # espn_api fills the empty side of a bye box score with 0 rather than None.
+    boxes = [FakeBox(FakeTeam(1), 0.0, [FakePlayer(projected=50.0)],
+                     0, 0.0, [])]
+    wf = build_week_file(boxes, week=15, season=2026, is_playoff=True)
+
+    assert wf["matchups"][0]["away"] is None
+
+
+def test_a_playoff_week_is_marked_as_one_on_the_week_file():
+    boxes = four_team_boxes({1: 90.0, 2: 120.0}, played=False)
+    assert build_week_file(boxes, week=15, season=2026,
+                           is_playoff=True)["is_playoff"] is True
+    assert build_week_file(boxes, week=14, season=2026)["is_playoff"] is False
 
 
 def test_a_playoff_week_has_no_projected_standings_block():

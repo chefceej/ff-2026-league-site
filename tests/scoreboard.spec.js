@@ -471,3 +471,98 @@ test.describe("Projected standings block", () => {
     expect(order).toBeGreaterThan(0);
   });
 });
+
+test.describe("Playoff weeks", () => {
+  /** The playoff week, opened as the current week with week 14 behind it. */
+  const openPlayoffs = page =>
+    openScoreboard(page, { current: 15,
+                           weeks: { 15: loadWeekFixture("playoff") } });
+
+  test("labels the week as the playoffs", async ({ page }) => {
+    await openPlayoffs(page);
+
+    await expect(page.locator("#week-nav-label")).toHaveText("Week 15");
+    await expect(page.locator("#week-playoff-label")).toBeVisible();
+    await expect(page.locator("#week-playoff-label")).toHaveText("Playoffs");
+  });
+
+  test("drops the label again on a regular-season week", async ({ page }) => {
+    // The flag arrives with the week file, so the label has to follow the
+    // arrows rather than stay where the first render put it.
+    await openPlayoffs(page);
+    await expect(page.locator("#week-playoff-label")).toBeVisible();
+
+    await page.locator("#prev-week-btn").click();
+    await expect(page.locator("#week-nav-label")).toHaveText("Week 14");
+    await expect(page.locator("#week-playoff-label")).toBeHidden();
+
+    await page.locator("#next-week-btn").click();
+    await expect(page.locator("#week-playoff-label")).toBeVisible();
+  });
+
+  test("shows no label on a week that has no file", async ({ page }) => {
+    await openScoreboard(page, { current: 15,
+                                 weeks: { 14: null,
+                                          15: loadWeekFixture("playoff") } });
+    await expect(page.locator("#week-playoff-label")).toBeVisible();
+
+    await page.locator("#prev-week-btn").click();
+    await expect(page.locator("#empty-state")).toBeVisible();
+    await expect(page.locator("#week-playoff-label")).toBeHidden();
+  });
+
+  test("renders a bye as a single-team card marked bye", async ({ page }) => {
+    const week = loadWeekFixture("playoff");
+    await openPlayoffs(page);
+    const byes = week.matchups.filter(m => !m.away);
+    const byeCards = page.locator(".matchup-card:has(.bye-side)");
+
+    await expect(page.locator(".matchup-card")).toHaveCount(week.matchups.length);
+    await expect(byeCards).toHaveCount(byes.length);
+    // One team, named, and the word bye where the opponent would be.
+    await expect(byeCards.first().locator(".side-name"))
+      .toHaveText([byes[0].home.team_name]);
+    await expect(byeCards.first().locator(".bye-side")).toHaveText("Bye");
+  });
+
+  test("leaves a matchup with two sides unmarked", async ({ page }) => {
+    const week = loadWeekFixture("playoff");
+    await openPlayoffs(page);
+    const played = week.matchups.filter(m => m.away);
+
+    await expect(page.locator(".matchup-card:not(:has(.bye-side))"))
+      .toHaveCount(played.length);
+    await expect(page.locator(".matchup-card:not(:has(.bye-side)) .side-name"))
+      .toHaveCount(played.length * 2);
+  });
+
+  test("marks the winner of a settled playoff matchup but never a bye",
+       async ({ page }) => {
+    // A bye has nobody to beat. The card is one side, so the winner mark has
+    // to stay off it even once the bracket week is a box score.
+    const week = loadWeekFixture("playoff");
+    week.status = "final";
+    for (const m of week.matchups) {
+      for (const side of [m.home, m.away]) {
+        if (side) side.score = side.projected_total;
+      }
+    }
+    await openScoreboard(page, { current: 15, weeks: { 15: week } });
+
+    await expect(page.locator(".matchup-card .card-status").first())
+      .toHaveText("Final");
+    await expect(page.locator(".winner-mark"))
+      .toHaveCount(week.matchups.filter(m => m.away).length);
+    await expect(page.locator(".matchup-card:has(.bye-side) .winner-mark"))
+      .toHaveCount(0);
+  });
+
+  test("leaves the projected standings block off entirely", async ({ page }) => {
+    await openPlayoffs(page);
+
+    await expect(page.locator("#projected-standings")).toBeHidden();
+    // Still a preview: the cards carry the week's projected totals.
+    await expect(page.locator(".matchup-card .card-status").first())
+      .toHaveText("Projected");
+  });
+});

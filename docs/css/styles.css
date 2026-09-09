@@ -111,6 +111,11 @@ tr.cutoff td{border-bottom:2px dashed var(--gold)}
 .week-nav-btn:hover:not(:disabled){background:var(--field-lt)}
 .week-nav-btn:disabled{opacity:.4; cursor:default}
 .week-nav-label{font-weight:700; color:var(--ink); font-size:14px}
+/* Beside the week label on a playoff week, so the missing projected standings
+   below read as deliberate rather than as a week that failed to load. */
+.playoff-tag{padding:3px 10px; border-radius:999px; background:var(--field);
+  color:#fff; font-size:11px; font-weight:800; text-transform:uppercase;
+  letter-spacing:.05em}
 .tabs{display:flex; gap:6px; margin:0 24px 12px; flex-wrap:wrap}
 .tab-btn{padding:5px 14px; border-radius:999px; border:1px solid var(--line);
   background:var(--paper); color:var(--mut); font-size:13px; font-weight:600; cursor:pointer}
@@ -208,6 +213,11 @@ footer{padding:22px 24px; color:var(--mut); font-size:12px; text-align:center}
 .side-total{flex:none; font-size:19px; font-weight:800; color:var(--field-dk);
   font-variant-numeric:tabular-nums}
 .matchup-side.winner .side-total{color:var(--field)}
+/* The empty half of a bye card: the same slot an opponent would fill, so the
+   card keeps the height and the shape of the ones beside it. */
+.bye-side{display:flex; align-items:center; justify-content:center;
+  min-height:46px; color:var(--mut); font-size:12px; font-weight:700;
+  text-transform:uppercase; letter-spacing:.05em}
 .winner-mark{flex:none; width:20px; height:20px; border-radius:50%; background:var(--field);
   color:#fff; font-size:11px; font-weight:800; line-height:20px; text-align:center}
 

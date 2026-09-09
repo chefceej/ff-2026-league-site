@@ -113,33 +113,44 @@ def main():
     # with week-1 schedule rows and rosters long before anyone plays, so this,
     # not the answer itself, is what says the new season has arrived.
     kickoff_in_sight = False
-    for week in weeks_to_fetch(reg_weeks, getattr(league, "current_week", None)):
-        boxes = fetch_boxes(league, week)
+    # ESPN's mapping of matchup period -> the scoring periods it spans, which
+    # is what box_scores itself consults. Absent on a league object that never
+    # loaded its settings, and weeks_to_fetch keeps to the regular season then.
+    matchup_periods = getattr(league.settings, "matchup_periods", None)
+    for week, scoring_period in weeks_to_fetch(
+            reg_weeks, getattr(league, "current_week", None), matchup_periods):
+        # The week is the site's number for it; the scoring period is what ESPN
+        # answers to. The two differ only where a week spans more than one.
+        boxes = fetch_boxes(league, scoring_period)
         if not boxes:
             # None is a failed request; [] is a successful one ESPN answered
             # with nothing. Neither is a week worth publishing, and writing the
             # empty one would overwrite a week already on the site.
             print(f"  week {week}: no box scores served; leaving it as it is")
             continue
-        wk = build_week(boxes, week)
+        # Every week past the last regular-season one is a playoff week. It
+        # gets a week file like any other, but never reaches the standings:
+        # accumulate_weeks skips the weeks marked here, and says why.
+        is_playoff = week > reg_weeks
+        wk = build_week(boxes, week, is_playoff=is_playoff)
         kickoff_in_sight = kickoff_in_sight or near_kickoff(boxes, now_utc)
-        print(f"  week {week}: {wk['status']}")
+        print(f"  week {week}: {wk['status']}"
+              f"{' (playoffs)' if is_playoff else ''}")
         weeks.append(wk)
-        boxes_by_week.append((week, boxes))
+        boxes_by_week.append((wk, boxes))
 
     standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
     # The week files are built after the standings because each one's projected
     # standings block is measured from them. Built from the same box scores
     # whatever the week's status, because a preview of an unfinished week is the
     # point; written further down, once the run knows it is publishing this
-    # season at all. is_playoff is always False while weeks_to_fetch stops at
-    # the last regular-season week; the playoff walk is a later ticket.
-    week_files = [build_week_file(boxes, week, SEASON_YEAR,
-                                  is_playoff=week > reg_weeks,
+    # season at all.
+    week_files = [build_week_file(boxes, wk["week"], SEASON_YEAR,
+                                  is_playoff=wk["is_playoff"],
                                   fetched_at=fetched_at,
                                   standings=standings,
                                   playoff_cutoff=PLAYOFF_CUTOFF)
-                  for week, boxes in boxes_by_week]
+                  for wk, boxes in boxes_by_week]
     final_weeks = standings["final_weeks"]
     if standings["stopped_at_week"]:
         # Loud on purpose: the run still publishes, so a red X is not the
