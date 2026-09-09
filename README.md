@@ -20,8 +20,10 @@ averaged); those points accumulate all season, then the total is shifted so
 - `docs/` — the static site: the Chart.js playoff-position chart and standings
   table, the Scoreboard's per-week matchup cards, and the position pivot.
 - `.github/workflows/update_data.yml` — refreshes the data daily (7 AM UTC) and
-  commits it. Once the 2026 season kicks off it populates automatically; until
-  then it leaves the most recent completed season in place.
+  commits it. The site becomes the 2026 site on kickoff week: the first week
+  ESPN serves publishes the standings (empty until a week is final) and that
+  week's file, so the Week 1 preview is up before Week 1 is done. Until then it
+  leaves the most recent completed season in place.
 
 ## Local run
 
