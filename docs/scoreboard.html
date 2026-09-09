@@ -31,8 +31,13 @@
       <div class="table-wrap">
         <table id="projected-table">
           <thead>
-            <tr><th>#</th><th class="left">Team</th><th>Proj</th>
-                <th title="Ranking points this week">RP</th><th>Norm</th></tr>
+            <!-- The rows are ordered by projected total, so the rank column
+                 has to say which rank it means: the standings' one. -->
+            <tr><th title="Where the team would sit in the standings after this week">Rank</th>
+                <th class="left">Team</th>
+                <th title="Projected total this week">Proj</th>
+                <th title="Ranking points this week">RP</th>
+                <th title="Points above or below the playoff cutoff">Norm</th></tr>
           </thead>
           <tbody></tbody>
         </table>
