@@ -55,9 +55,11 @@ _Avoid_: live week, partial week
 
 **Season rollover**:
 The moment the site starts describing the new season instead of the last one:
-the first run that fetches any week of it, which is kickoff week rather than
-the Tuesday after. Before it, the site is in the **preseason** and still shows
-the most recent completed season.
+the first run whose fetched week is at or near kickoff, which is kickoff week
+rather than the Tuesday after. ESPN serves a new league year's schedule and
+rosters weeks earlier, so an answer from ESPN is not the signal; a kickoff time
+within a week of the run is. Before it, the site is in the **preseason** and
+still shows the most recent completed season.
 _Avoid_: season change, new year, cutover
 
 **Matchup**:

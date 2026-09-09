@@ -29,7 +29,8 @@ _espn_req.FANTASY_BASE_ENDPOINT = (
 from espn_api.football import League
 
 from week_data import (accumulate_weeks, build_week, build_week_file,
-                       owner_name, publishes_this_season, weeks_to_fetch)
+                       near_kickoff, owner_name, publishes_this_season,
+                       weeks_to_fetch)
 
 # ---------------------------------------------------------------------------
 # Config (env-driven; no secrets in source)
@@ -108,6 +109,10 @@ def main():
 
     weeks = []
     week_files = []
+    # Whether any week this run fetched is at or near kickoff. ESPN answers
+    # with week-1 schedule rows and rosters long before anyone plays, so this,
+    # not the answer itself, is what says the new season has arrived.
+    kickoff_in_sight = False
     for week in weeks_to_fetch(reg_weeks, getattr(league, "current_week", None)):
         boxes = fetch_boxes(league, week)
         if not boxes:
@@ -117,6 +122,7 @@ def main():
             print(f"  week {week}: no box scores served; leaving it as it is")
             continue
         wk = build_week(boxes, week)
+        kickoff_in_sight = kickoff_in_sight or near_kickoff(boxes, now_utc)
         print(f"  week {week}: {wk['status']}")
         weeks.append(wk)
         # Built from the same box scores whatever the week's status, because a
@@ -174,15 +180,13 @@ def main():
         "top_players_by_week": top_players_by_week,
         "position_scores_by_week": position_scores_by_week,
     }
-    # In the preseason ESPN serves no week of the new season, and the site
-    # keeps showing the last completed one rather than an empty board. The
-    # first week ESPN does serve rolls the season over: the standings publish
-    # with empty arrays and the week files publish with them, so the Week 1
-    # preview is up on kickoff week rather than the Tuesday after. By keyword,
-    # because four values of the same shape are easy to hand over in the wrong
-    # order and no test would notice.
+    # Two ways a run declines to publish: the preseason, where the games are
+    # still weeks out and the site keeps showing the last completed season, and
+    # a run whose fetch has a hole in it, which would hand back fewer final
+    # weeks than are already up. By keyword, because four values of the same
+    # shape are easy to hand over in the wrong order and no test would notice.
     if not publishes_this_season(season=SEASON_YEAR, final_weeks=final_weeks,
-                                 week_files=week_files,
+                                 kickoff_in_sight=kickoff_in_sight,
                                  published=published_metadata()):
         print(f"Nothing to publish for {SEASON_YEAR}; keeping existing "
               f"{OUTPUT_PATH} and the week files beside it untouched.")

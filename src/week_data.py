@@ -7,7 +7,7 @@ hand-built stand-ins for the library's box-score objects:
   - per season : assign_ranking_points / accumulate_weeks
 """
 
-from datetime import timezone
+from datetime import timedelta, timezone
 
 # ESPN's Team QB slot: an NFL team's quarterbacks as one unit. The site counts
 # it as QB everywhere it groups by position (see CONTEXT.md, "QB slot").
@@ -37,17 +37,21 @@ POSITION_ALIASES = {TEAM_QB: "QB"}
 FULLY_PLAYED = 100
 
 
-def iso_utc(when):
-    """A kickoff as ISO 8601 UTC, or None when ESPN gave no time.
+def utc(when):
+    """A kickoff as an aware UTC datetime, or None when ESPN gave no time.
 
     espn_api builds game_date with datetime.fromtimestamp, which yields a naive
     datetime in the machine's local zone; astimezone reads a naive value as
     local, so this converts rather than mislabels. A run on a UTC CI box and a
-    run on a laptop therefore write the same instant.
+    run on a laptop therefore read the same instant.
     """
-    if when is None:
-        return None
-    return when.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    return None if when is None else when.astimezone(timezone.utc)
+
+
+def iso_utc(when):
+    """A kickoff as ISO 8601 UTC, or None when ESPN gave no time."""
+    when = utc(when)
+    return None if when is None else when.isoformat().replace("+00:00", "Z")
 
 
 def weeks_to_fetch(reg_weeks, current_week):
@@ -389,31 +393,55 @@ def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None):
     }
 
 
-def publishes_this_season(season, final_weeks, week_files, published):
+# How far ahead of the first game the site starts showing the new season. ESPN
+# serves week-1 schedule rows and full rosters as soon as the league year
+# exists, which is weeks before anyone plays, so "ESPN answered" is no kickoff
+# signal at all. The first game being a week out is one: it puts the Week 1
+# preview up on the Tuesday before kickoff, which is what the spec asks for,
+# without handing the site to an empty season in August.
+KICKOFF_LEAD_DAYS = 7
+
+
+def near_kickoff(boxes, now, lead_days=KICKOFF_LEAD_DAYS):
+    """True when this week's games have started, or start within `lead_days`.
+
+    Read from the starters' kickoff times, the same game_date the week file's
+    player rows carry. A week ESPN serves no kickoff times for reads as far
+    off, so a schedule-only preseason answer cannot roll the season over.
+    """
+    horizon = now + timedelta(days=lead_days)
+    for pl in _starters(boxes):
+        when = utc(getattr(pl, "game_date", None))
+        if when is not None and when <= horizon:
+            return True
+    return False
+
+
+def publishes_this_season(season, final_weeks, kickoff_in_sight, published):
     """Whether this run's data replaces what the site is serving.
 
-    The site becomes the new season's site on kickoff week, not the Tuesday
-    after: once ESPN serves any week of this season, the standings file is
-    written even with zero final weeks -- its per-week arrays empty, which the
-    Standings and Position pages already read as their empty state -- and the
-    week files publish with it, so the Week 1 preview is up before Week 1 is
-    done (spec 05, user story 36).
+    `published` is the metadata of the standings file already on the site, or
+    None when there is none; `kickoff_in_sight` is whether any week this run
+    fetched is at or near kickoff (near_kickoff above).
 
-    `week_files` is the week files this run built, `published` the metadata of
-    the standings file already on the site, or None when there is none.
+    Two questions, in order. Is the site still on last season? Then this is the
+    rollover, and it turns on kickoff week rather than the Tuesday after: the
+    standings publish with zero final weeks and empty per-week arrays -- which
+    the Standings and Position pages already read as their empty state -- and
+    the week files publish with them, so the Week 1 preview is up before Week 1
+    is done (spec 05, user story 36). A week that is already final rolls the
+    season over whatever the kickoffs say, since it cannot be final unplayed;
+    that is the floor if ESPN ever serves a slate without times.
 
-    Two runs step aside, both because publishing would take the site backwards:
-    one that found no week at all, which is the preseason, where ESPN serves
-    nothing of the new season and the site keeps showing the last one; and one
-    that counts no final week over a season that already stands, which is a
-    week the fetch missed rather than a season that has not started -- an early
-    week ESPN would not serve stops the accumulation before every later one, so
-    publishing would blank a standing season until tomorrow's run.
+    Or is the site already on this season? Then the only rule is that a run
+    must never take it backwards. An early week ESPN would not serve stops the
+    accumulation before every later one, so a single missed fetch can hand back
+    fewer final weeks than are already published -- and publishing that would
+    drop weeks from the chart, the table, Top Scorers and the pivot until
+    tomorrow's run. Equal counts still publish: same weeks, fresher numbers.
     """
-    if final_weeks:
+    if published is None:
         return True
-    if not week_files:
-        return published is None
-    if published is None or published.get("season") != season:
-        return True
-    return not published.get("completed_weeks")
+    if published.get("season") != season:
+        return bool(final_weeks or kickoff_in_sight)
+    return final_weeks >= (published.get("completed_weeks") or 0)
