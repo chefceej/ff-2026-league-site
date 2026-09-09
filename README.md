@@ -40,3 +40,15 @@ npm test
 It also runs in GitHub Actions on every push and pull request.
 
 Deployed via GitHub Pages from the `docs/` folder on `main`.
+
+## Later
+
+Ideas deliberately left out of the current work, so they aren't forgotten:
+
+- **Game-day refresh every 30 minutes** as the first step toward live-ish
+  tracking. Workflow-only change; see
+  [ADR 0001](docs/adr/0001-nightly-snapshots-not-live-fetch.md).
+- **Full-league matchup view.** Because standings rank every team against the
+  whole field, the head-to-head matchup page only tells part of the story. Explore
+  a view that lines up every team's starters and projected totals against each
+  other at once, the way the matchup page does for two teams.
