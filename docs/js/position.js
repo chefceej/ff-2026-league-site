@@ -30,6 +30,26 @@ function cellColor(val, min, max) {
 function getVal(team, pos, w) { return state.data.position_scores_by_week[w]?.[team]?.[pos] || 0; }
 function getAgg(team, pos, weeks) { let s = 0; for (const w of weeks) s += getVal(team, pos, w); return s; }
 
+// The one definition of "present": this team has this bucket recorded for this
+// week. Every view asks this instead of testing the value for positivity, so a
+// 0.0 kicker or a negative D/ST reads as a score rather than as missing data.
+function hasVal(team, pos, w) { return state.data.position_scores_by_week[w]?.[team]?.[pos] != null; }
+// An aggregate is present when any of the selected weeks recorded the bucket.
+function hasAgg(team, pos, weeks) { return weeks.some(w => hasVal(team, pos, w)); }
+
+// Present -> the number, sign and all; absent -> the em dash, which now means
+// only "no such lineup slot". Heat is untouched: still gated on the raw value
+// being positive, still skipped when no range is given. Only the brick-red
+// class reads the rounded value, so a float-error -0.004 prints "0.0" plain
+// rather than a red "-0.0".
+function fillCell(td, val, present, range) {
+  if (!present) { td.textContent = "—"; return; }
+  const shown = Math.round(val * 10) / 10;
+  td.textContent = shown.toFixed(1);
+  if (val > 0) { if (range) td.style.background = cellColor(val, range[0], range[1]); }
+  else if (shown < 0) td.classList.add("neg");
+}
+
 function render() {
   if (!state.data) return;
   const headEl = document.getElementById("pivot-head");
@@ -49,7 +69,6 @@ function render() {
 }
 
 function renderTeamByWeek(headEl, bodyEl, teams, positions, weeks) {
-  const byWeek = state.data.position_scores_by_week;
   const weeklyRange = {}, totalRange = {};
   for (const pos of positions) {
     const weekVals = [], totals = [];
@@ -92,18 +111,15 @@ function renderTeamByWeek(headEl, bodyEl, teams, positions, weeks) {
       }
       const posTd = document.createElement("td"); posTd.textContent = pos; posTd.className = "sticky-col2 pos-col";
       row.appendChild(posTd);
-      let rowTotal = 0; const [wMin, wMax] = weeklyRange[pos] || [0, 0];
+      let rowTotal = 0;
       for (const w of weeks) {
         const v = getVal(team, pos, w); rowTotal += v;
         const td = document.createElement("td");
-        td.textContent = byWeek[w]?.[team]?.[pos] != null ? v.toFixed(1) : "—";
-        if (v > 0) td.style.background = cellColor(v, wMin, wMax);
+        fillCell(td, v, hasVal(team, pos, w), weeklyRange[pos]);
         row.appendChild(td);
       }
-      const [tMin, tMax] = totalRange[pos] || [0, 0];
-      const totalTd = document.createElement("td");
-      totalTd.textContent = rowTotal > 0 ? rowTotal.toFixed(1) : "—"; totalTd.className = "total-col";
-      if (rowTotal > 0) totalTd.style.background = cellColor(rowTotal, tMin, tMax);
+      const totalTd = document.createElement("td"); totalTd.className = "total-col";
+      fillCell(totalTd, rowTotal, hasAgg(team, pos, weeks), totalRange[pos]);
       row.appendChild(totalTd);
       bodyEl.appendChild(row);
     }
@@ -150,12 +166,13 @@ function renderTeamTotal(headEl, bodyEl, teams, positions, weeks) {
     let teamTotal = 0;
     for (const pos of positions) {
       const v = getAgg(team, pos, weeks); teamTotal += v;
-      const [cMin, cMax] = colRange[pos] || [0, 0];
-      const td = document.createElement("td"); td.textContent = v > 0 ? v.toFixed(1) : "—";
-      if (v > 0) td.style.background = cellColor(v, cMin, cMax); row.appendChild(td);
+      const td = document.createElement("td");
+      fillCell(td, v, hasAgg(team, pos, weeks), colRange[pos]); row.appendChild(td);
     }
-    const totalTd = document.createElement("td"); totalTd.textContent = teamTotal > 0 ? teamTotal.toFixed(1) : "—";
-    totalTd.className = "total-col"; row.appendChild(totalTd);
+    const totalTd = document.createElement("td"); totalTd.className = "total-col";
+    // No range: the team total spans positions, so it carries no heat scale.
+    fillCell(totalTd, teamTotal, positions.some(p => hasAgg(team, p, weeks)));
+    row.appendChild(totalTd);
     bodyEl.appendChild(row);
   }
   if (state.showLeagueTotal) {
@@ -214,15 +231,14 @@ function renderPositionByWeek(headEl, bodyEl, teams, positions, weeks) {
       }
       const teamTd = document.createElement("td"); teamTd.textContent = team; teamTd.className = "sticky-col2 pos-col";
       row.appendChild(teamTd);
-      let rt = 0; const [wMin, wMax] = weeklyRange[pos] || [0, 0];
+      let rt = 0;
       for (const w of weeks) {
         const v = getVal(team, pos, w); rt += v;
-        const td = document.createElement("td"); td.textContent = v > 0 ? v.toFixed(1) : "—";
-        if (v > 0) td.style.background = cellColor(v, wMin, wMax); row.appendChild(td);
+        const td = document.createElement("td");
+        fillCell(td, v, hasVal(team, pos, w), weeklyRange[pos]); row.appendChild(td);
       }
-      const [tMin, tMax] = totalRange[pos] || [0, 0];
-      const totalTd = document.createElement("td"); totalTd.textContent = rt > 0 ? rt.toFixed(1) : "—";
-      totalTd.className = "total-col"; if (rt > 0) totalTd.style.background = cellColor(rt, tMin, tMax);
+      const totalTd = document.createElement("td"); totalTd.className = "total-col";
+      fillCell(totalTd, rt, hasAgg(team, pos, weeks), totalRange[pos]);
       row.appendChild(totalTd); bodyEl.appendChild(row);
     }
     if (state.showTeamTotals) {
@@ -256,14 +272,13 @@ function renderPositionTotal(headEl, bodyEl, teams, positions, weeks) {
   headEl.appendChild(tr);
   bodyEl.innerHTML = "";
   for (const pos of sortedPositions) {
-    const [rMin, rMax] = rowMinMax[pos];
     const row = document.createElement("tr");
     const posTd = document.createElement("td"); posTd.textContent = pos; posTd.className = "sticky-col team-col";
     row.appendChild(posTd);
     for (const team of teams) {
       const v = getAgg(team, pos, weeks);
-      const td = document.createElement("td"); td.textContent = v > 0 ? v.toFixed(1) : "—";
-      if (v > 0) td.style.background = cellColor(v, rMin, rMax); row.appendChild(td);
+      const td = document.createElement("td");
+      fillCell(td, v, hasAgg(team, pos, weeks), rowMinMax[pos]); row.appendChild(td);
     }
     bodyEl.appendChild(row);
   }
