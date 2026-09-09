@@ -38,6 +38,7 @@ async function main() {
 
   if (!meta.completed_weeks || teams.length === 0) {
     showEmpty();
+    showScoreboardPreview(meta);
     return;
   }
 

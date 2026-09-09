@@ -44,6 +44,10 @@ main{max-width:1000px; margin:0 auto; padding-bottom:44px}
 }
 .empty-card h2{color:var(--ink); margin:0 0 8px; text-transform:none; letter-spacing:0; font-size:20px}
 .empty-card p{color:var(--mut); margin:0}
+/* The way out while the season has no final week: the Scoreboard is
+   already previewing the week this page cannot draw yet. */
+.empty-card .preview-link{margin-top:10px}
+.empty-card .preview-link a{color:var(--field); font-weight:600}
 
 /* Chart card */
 .chart-wrap{

@@ -9,7 +9,8 @@ from datetime import datetime, timedelta, timezone
 import pytest
 
 from week_data import (accumulate_weeks, assign_ranking_points,
-                       build_week, build_week_file, team_record, week_status,
+                       build_week, build_week_file, near_kickoff,
+                       publishes_this_season, team_record, week_status,
                        weeks_to_fetch)
 
 
@@ -760,3 +761,129 @@ def test_a_playoff_bye_is_left_out_of_a_regular_weeks_block():
     wf = build_week_file(boxes, week=1, season=2026, playoff_cutoff=2)
 
     assert [r["team_id"] for r in wf["projected_standings"]] == [2, 1, 3]
+
+
+# --- season rollover ---------------------------------------------------------
+# The site becomes the new season's site on kickoff week: the week the games
+# are about to start, the standings file is written even with nothing final in
+# it, so the week files can publish alongside and the Week 1 preview is visible
+# before Week 1 is done.
+
+LAST_SEASON = {"season": 2025, "completed_weeks": 14}
+NOW = datetime(2026, 9, 9, 12, 0, tzinfo=timezone.utc)
+
+
+def kicking_off_in(days):
+    """A week whose only game starts `days` from NOW."""
+    when = NOW + timedelta(days=days)
+    return [box([FakePlayer(name="Home", game_date=when)],
+                [FakePlayer(name="Away", game_date=when)])]
+
+
+def test_a_week_whose_games_are_weeks_away_is_not_near_kickoff():
+    # ESPN serves week-1 schedule rows and rosters as soon as the league year
+    # exists. That is not kickoff, and it must not hand the site to an empty
+    # season in August.
+    assert not near_kickoff(kicking_off_in(20), NOW)
+
+
+def test_a_week_whose_games_are_days_away_is_near_kickoff():
+    assert near_kickoff(kicking_off_in(5), NOW)
+
+
+def test_a_week_that_has_already_started_is_near_kickoff():
+    assert near_kickoff(kicking_off_in(-2), NOW)
+
+
+def test_a_week_espn_gives_no_kickoff_times_for_reads_as_far_off():
+    boxes = [box([FakePlayer(name="Home")], [FakePlayer(name="Away")])]
+    assert not near_kickoff(boxes, NOW)
+
+
+def test_a_bench_players_kickoff_does_not_speak_for_the_week():
+    boxes = [box([FakePlayer(name="Benched", slot="BE",
+                             game_date=NOW + timedelta(days=1))],
+                 [FakePlayer(name="Away", game_date=NOW + timedelta(days=30))])]
+    assert not near_kickoff(boxes, NOW)
+
+
+def test_the_schedule_alone_does_not_roll_the_season_over():
+    assert not publishes_this_season(2026, 0,
+                                     near_kickoff(kicking_off_in(20), NOW),
+                                     LAST_SEASON)
+
+
+def test_kickoff_week_rolls_the_season_over_with_nothing_final():
+    assert publishes_this_season(2026, 0,
+                                 near_kickoff(kicking_off_in(5), NOW),
+                                 LAST_SEASON)
+
+
+def test_the_rolled_over_season_starts_with_empty_arrays():
+    boxes = kicking_off_in(-2)                       # week 1, under way
+    boxes[0].home_lineup[0].game_played = 100
+    wk = build_week(boxes, 1)
+    standings = accumulate_weeks([wk], [1, 2], playoff_cutoff=1)
+
+    assert standings["final_weeks"] == 0
+    assert standings["top_players_by_week"] == []
+    assert standings["position_scores_by_week"] == []
+    for arrays in standings["teams"].values():
+        assert arrays["scores_by_week"] == []
+        assert arrays["cumulative_points_by_week"] == []
+        assert arrays["normalized_by_week"] == []
+    assert build_week_file(boxes, week=1, season=2026) is not None
+    assert publishes_this_season(2026, standings["final_weeks"],
+                                 near_kickoff(boxes, NOW), LAST_SEASON)
+
+
+def test_a_preseason_run_that_found_nothing_keeps_the_previous_season():
+    assert not publishes_this_season(2026, 0, False, LAST_SEASON)
+
+
+def test_the_very_first_run_writes_a_standings_file_with_nothing_to_keep():
+    assert publishes_this_season(2026, 0, False, None)
+
+
+def test_a_final_week_rolls_the_season_over_whatever_the_kickoffs_say():
+    # A week cannot be final without having been played, so a season with one
+    # rolls over even if ESPN served no kickoff times to read.
+    assert publishes_this_season(2026, 1, False, LAST_SEASON)
+
+
+def test_a_second_run_during_week_one_still_publishes_the_empty_board():
+    # The rollover already happened; the week file has to keep refreshing
+    # daily, and rewriting an empty board over an empty board loses nothing.
+    assert publishes_this_season(2026, 0, True,
+                                 {"season": 2026, "completed_weeks": 0})
+
+
+def test_a_gap_at_week_one_leaves_a_standing_season_alone():
+    # Week 1's fetch failed and week 5's did not: accumulate_weeks stops before
+    # the gap, so this run counts no final week at all. Publishing it would
+    # replace five weeks of standings with empty arrays until tomorrow's run.
+    assert not publishes_this_season(2026, 0, True,
+                                     {"season": 2026, "completed_weeks": 5})
+
+
+def test_a_gap_mid_season_does_not_republish_fewer_weeks_than_are_up():
+    # Weeks 1, 2, 4 and 5 came back and week 3's fetch did not, so the
+    # standings stop after week 2. The site is showing five.
+    assert not publishes_this_season(2026, 2, True,
+                                     {"season": 2026, "completed_weeks": 5})
+
+
+def test_a_run_that_counts_the_weeks_already_up_republishes_them():
+    # The ordinary nightly run: same weeks, fresher numbers.
+    assert publishes_this_season(2026, 5, True,
+                                 {"season": 2026, "completed_weeks": 5})
+
+
+def test_a_week_going_final_publishes_over_the_week_before_it():
+    assert publishes_this_season(2026, 6, True,
+                                 {"season": 2026, "completed_weeks": 5})
+
+
+def test_a_run_that_fetched_nothing_keeps_this_season_too():
+    assert not publishes_this_season(2026, 0, False,
+                                     {"season": 2026, "completed_weeks": 5})
