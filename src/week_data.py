@@ -55,7 +55,7 @@ def iso_utc(when):
 
 
 def weeks_to_fetch(reg_weeks, current_week):
-    """The regular-season weeks ESPN can actually answer for, in order.
+    """Every week ESPN can actually answer for, in order, playoffs included.
 
     espn_api's box_scores(week) has no else branch for a week beyond
     league.current_week: it silently serves the current week's box scores
@@ -63,10 +63,17 @@ def weeks_to_fetch(reg_weeks, current_week):
     therefore hands back the same week over and over, and once that week goes
     final it would be counted once per remaining week of the season. Asking
     only for weeks that exist is what prevents it.
+
+    The walk runs past reg_weeks into the bracket, because ESPN serves those
+    weeks and the Scoreboard shows them (spec 05, user story 17). What stops at
+    reg_weeks is the standings, not the fetch: a playoff week hands out no
+    ranking points, so build_week marks it and accumulate_weeks leaves it out.
+    A season ESPN reports no current week for has nothing to say about how far
+    the bracket has got, so the regular season is as far as the walk goes.
     """
     if current_week is None:          # a season ESPN reports nothing about
         current_week = reg_weeks
-    return list(range(1, min(reg_weeks, current_week) + 1))
+    return list(range(1, current_week + 1))
 
 
 def normalize_position(position):
@@ -109,10 +116,13 @@ def week_status(boxes):
     return "in-progress"
 
 
-def build_week(boxes, week):
+def build_week(boxes, week, is_playoff=False):
     """One week's box scores -> the week structure the site is built from.
 
       week            : the week number these box scores were asked for
+      is_playoff      : whether the week is a bracket week rather than a
+                        regular-season one, which is what keeps it out of the
+                        standings (accumulate_weeks)
       status          : "upcoming" | "in-progress" | "final"
       scores          : {team_id: team score}
       top_players     : {"all": [...], "QB": [...], ...} of starter scores
@@ -151,6 +161,7 @@ def build_week(boxes, week):
                             if p["position"] == pos][:TOP_N]
     return {
         "week": week,
+        "is_playoff": is_playoff,
         "status": week_status(boxes),
         "scores": scores,
         "top_players": top_players,
@@ -182,8 +193,12 @@ def assign_ranking_points(scores_by_team_id, num_teams):
 def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     """Week structures (in week order) -> the season's standings state.
 
-    Only final weeks count: an upcoming or in-progress week contributes no
-    scores, ranking points, top scorers or position scores.
+    Only final regular-season weeks count: an upcoming or in-progress week
+    contributes no scores, ranking points, top scorers or position scores, and
+    neither does a playoff week. The bracket hands out no ranking points, and a
+    playoff week goes final the moment its games are played -- so counting one
+    would award another week of the season's currency to teams that are no
+    longer racing for it, and stamp a bracket week's number on a standings slot.
 
     Position in the returned arrays is what the site reads as the week number,
     so the final weeks accumulated have to be weeks 1..N with nothing missing.
@@ -211,7 +226,7 @@ def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     stopped_at_week = None
 
     for wk in weeks:
-        if wk["status"] != "final":
+        if wk["status"] != "final" or wk.get("is_playoff"):
             continue
         expected = len(top_players_by_week) + 1
         if wk["week"] < expected:
