@@ -166,6 +166,8 @@ table.heat td{color:#20302a}
 #pivot-table .team-total-row td,#pivot-table .league-total-row td{
   font-weight:700; background:var(--cream); color:var(--ink)}
 #pivot-table .pos-total{color:var(--field-dk)}
+/* A negative score is a score, not missing data — brick red, never heat-tinted */
+#pivot-table td.neg{color:var(--neg); font-weight:700}
 #pivot-table th.sort-active{color:var(--ink)}
 #pivot-table .sort-arrow{color:var(--gold)}
 /* sticky-col2 sits to the right of the sticky team column */
