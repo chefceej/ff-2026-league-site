@@ -229,3 +229,39 @@ test.describe("Missing week", () => {
     await expect(page.locator(".matchup-card")).toHaveCount(6);
   });
 });
+
+test.describe("Week fixtures", () => {
+  test("the in-progress week carries every case the pages have to handle",
+       async () => {
+    const live = loadWeekFixture("in-progress");
+    expect(live.status).toBe("in-progress");
+    const starters = sidesOf(live).flatMap(s => s.lineup);
+
+    expect(starters.some(p => p.played)).toBe(true);
+    expect(starters.some(p => !p.played && !p.on_bye)).toBe(true);
+    expect(starters.some(p => p.on_bye && p.kickoff === null)).toBe(true);
+    expect(starters.some(p => p.injury === "Q")).toBe(true);
+    expect(starters.every(p => p.kickoff === null || /Z$/.test(p.kickoff)))
+      .toBe(true);
+
+    // One slot where the two sides swap places once the games are over: the
+    // higher projection loses to the lower one's actual. The matchup page's
+    // advantage mark has nothing to prove without it.
+    const flips = live.matchups.flatMap(m =>
+      m.home.lineup.map((home, i) => [home, m.away.lineup[i]]))
+      .filter(([h, a]) => h && a && h.played && a.played)
+      .filter(([h, a]) => (h.projected > a.projected) !== (h.actual > a.actual));
+    expect(flips.length).toBeGreaterThan(0);
+  });
+
+  test("the final week has every starter played and no projection left",
+       async () => {
+    const done = loadWeekFixture("final");
+    expect(done.status).toBe("final");
+    for (const side of sidesOf(done)) {
+      expect(side.lineup.every(p => p.played)).toBe(true);
+      expect(side.to_play).toBe(0);
+      expect(side.projected_total).toBeCloseTo(side.score, 2);
+    }
+  });
+});
