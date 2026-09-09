@@ -90,6 +90,12 @@ def main():
 
     standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
     final_weeks = standings["final_weeks"]
+    if standings["stopped_at_week"]:
+        # Loud on purpose: the run still publishes, so a red X is not the
+        # signal. Weeks after the gap wait for a run that can number them.
+        print(f"!! week {standings['stopped_at_week']} is missing or unfinished"
+              f"; standings stop after week {final_weeks}. Later weeks are "
+              f"held back until it lands.")
     top_players_by_week = standings["top_players_by_week"]
     position_scores_by_week = standings["position_scores_by_week"]
     for tid, meta in team_meta.items():

@@ -167,13 +167,16 @@ def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     scores, ranking points, top scorers or position scores.
 
     Position in the returned arrays is what the site reads as the week number,
-    so the final weeks have to be weeks 1..N with nothing missing and nothing
-    repeated. A gap -- one week's fetch failed, or an unfinished week sits
-    between two final ones -- would publish every later week under the wrong
-    label for the rest of the season, and a repeat would count one week twice,
-    so both raise instead of quietly shifting the arrays.
+    so the final weeks accumulated have to be weeks 1..N with nothing missing.
+    On a forward gap -- one week's fetch failed, or a postponed game leaves an
+    unfinished week between two final ones -- the weeks before the gap are
+    still correctly numbered, so they are kept and everything after the gap is
+    left for a later run; stopped_at_week names the week that was missing, or
+    None. Only a repeated week raises, because a week arriving behind the slot
+    it belongs in can never be the start of a correctly numbered season.
 
       final_weeks             : how many weeks fed the standings
+      stopped_at_week         : the missing week the standings stop before
       teams                   : {team_id: {four per-week arrays}}
       top_players_by_week     : one entry per final week
       position_scores_by_week : one entry per final week
@@ -186,16 +189,20 @@ def accumulate_weeks(weeks, team_ids, playoff_cutoff):
     cumulative = {tid: 0.0 for tid in team_ids}
     top_players_by_week = []
     position_scores_by_week = []
+    stopped_at_week = None
 
     for wk in weeks:
         if wk["status"] != "final":
             continue
         expected = len(top_players_by_week) + 1
-        if wk["week"] != expected:
+        if wk["week"] < expected:
             raise ValueError(
-                f"final week {wk['week']} arrived where week {expected} was "
-                f"expected: the standings are written one week per slot, so a "
-                f"missing or repeated week would relabel every later week")
+                f"week {wk['week']} arrived again after week {expected - 1}: "
+                f"the standings are written one week per slot, so counting it "
+                f"twice would double every team's ranking points")
+        if wk["week"] > expected:
+            stopped_at_week = expected
+            break
         top_players_by_week.append(wk["top_players"])
         position_scores_by_week.append(wk["position_scores"])
         rp = assign_ranking_points(wk["scores"], num_teams)
@@ -211,6 +218,7 @@ def accumulate_weeks(weeks, team_ids, playoff_cutoff):
 
     return {
         "final_weeks": len(top_players_by_week),
+        "stopped_at_week": stopped_at_week,
         "teams": teams,
         "top_players_by_week": top_players_by_week,
         "position_scores_by_week": position_scores_by_week,

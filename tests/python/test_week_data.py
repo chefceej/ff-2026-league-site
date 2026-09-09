@@ -224,33 +224,46 @@ def test_build_week_carries_the_week_it_was_asked_for():
     assert wk["week"] == 7
 
 
-def test_the_same_week_twice_is_counted_once_or_not_at_all():
-    # The shape espn_api's future-week fallback produces: one real week handed
-    # back under two different requests. Counting it twice would double every
-    # team's ranking points.
+def test_the_same_week_twice_is_refused():
+    # A repeat can never be the start of a correctly numbered season, so there
+    # is no prefix to salvage: counting it would double every team's points.
     duplicated = [week(1, "final", {1: 100.0, 2: 90.0}),
                   week(1, "final", {1: 100.0, 2: 90.0})]
     with pytest.raises(ValueError, match="week 1"):
         accumulate_weeks(duplicated, team_ids=[1, 2], playoff_cutoff=1)
 
 
-def test_a_missing_week_is_refused_rather_than_silently_closed():
-    # Week 2's fetch failed. Accumulating weeks 1 and 3 positionally would
-    # publish week 3's scores under the label W2 for the rest of the season.
+def test_a_missing_week_publishes_the_weeks_before_it_and_stops():
+    # Week 2's fetch failed. Week 1 is correctly numbered and safe to publish;
+    # week 3 is not, because it would land in week 2's slot and read as W2.
     with_gap = [week(1, "final", {1: 100.0, 2: 90.0}),
                 week(3, "final", {1: 80.0, 2: 95.0})]
-    with pytest.raises(ValueError, match="week 3"):
-        accumulate_weeks(with_gap, team_ids=[1, 2], playoff_cutoff=1)
+    standings = accumulate_weeks(with_gap, team_ids=[1, 2], playoff_cutoff=1)
+    assert standings["final_weeks"] == 1
+    assert standings["stopped_at_week"] == 2
+    assert standings["teams"][1]["scores_by_week"] == [100.0]
+    assert standings["teams"][2]["scores_by_week"] == [90.0]
 
 
-def test_an_unfinished_week_between_final_ones_is_refused_too():
-    # Week 2 unfinished but week 3 final means week 3 would land in week 2's
-    # slot — the same relabelling, arrived at a different way.
-    out_of_order = [week(1, "final", {1: 100.0, 2: 90.0}),
-                    week(2, "in-progress", {1: 40.0, 2: 10.0}),
-                    week(3, "final", {1: 80.0, 2: 95.0})]
-    with pytest.raises(ValueError, match="week 3"):
-        accumulate_weeks(out_of_order, team_ids=[1, 2], playoff_cutoff=1)
+def test_an_unfinished_week_between_final_ones_stops_the_standings_there():
+    # A postponed game keeps week 2 in progress while week 3 finishes. Week 3
+    # waits; week 1 still publishes, so the site does not freeze meanwhile.
+    postponed = [week(1, "final", {1: 100.0, 2: 90.0}),
+                 week(2, "in-progress", {1: 40.0, 2: 10.0}),
+                 week(3, "final", {1: 80.0, 2: 95.0})]
+    standings = accumulate_weeks(postponed, team_ids=[1, 2], playoff_cutoff=1)
+    assert standings["final_weeks"] == 1
+    assert standings["stopped_at_week"] == 2
+    assert standings["teams"][1]["scores_by_week"] == [100.0]
+
+
+def test_a_season_with_no_gap_stops_nowhere():
+    weeks = [week(1, "final", {1: 100.0, 2: 90.0}),
+             week(2, "final", {1: 80.0, 2: 95.0})]
+    standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
+    assert standings["final_weeks"] == 2
+    assert standings["stopped_at_week"] is None
+
 
 
 def test_an_unfinished_week_after_the_last_final_one_is_fine():
