@@ -9,8 +9,8 @@ from datetime import datetime, timedelta, timezone
 import pytest
 
 from week_data import (accumulate_weeks, assign_ranking_points,
-                       build_week, build_week_file, team_record, week_status,
-                       weeks_to_fetch)
+                       build_week, build_week_file, publishes_this_season,
+                       team_record, week_status, weeks_to_fetch)
 
 
 class FakePlayer:
@@ -520,3 +520,42 @@ def test_a_week_espn_answers_with_no_matchups_produces_no_week_file():
 def test_a_week_with_matchups_still_produces_a_week_file():
     boxes = [box([FakePlayer(game_played=100)], [FakePlayer(game_played=100)])]
     assert build_week_file(boxes, week=7, season=2026)["week"] == 7
+
+
+# --- season rollover ---------------------------------------------------------
+# The site becomes the new season's site on kickoff week: the moment ESPN
+# serves a week of it, the standings file is written even with nothing final in
+# it, so the week files can publish alongside and the Week 1 preview is visible
+# before Week 1 is done.
+
+def test_a_week_file_publishes_the_season_with_no_final_weeks_and_empty_arrays():
+    # Week 1 is under way: one starter has played, one has not.
+    boxes = [box([FakePlayer(name="Played", game_played=100, points=20.0)],
+                 [FakePlayer(name="Waiting", game_played=0, projected=14.0)])]
+    wk = build_week(boxes, 1)
+    standings = accumulate_weeks([wk], [1, 2], playoff_cutoff=1)
+
+    assert standings["final_weeks"] == 0
+    assert standings["top_players_by_week"] == []
+    assert standings["position_scores_by_week"] == []
+    for arrays in standings["teams"].values():
+        assert arrays["scores_by_week"] == []
+        assert arrays["cumulative_points_by_week"] == []
+        assert arrays["normalized_by_week"] == []
+    assert build_week_file(boxes, week=1, season=2026) is not None
+    # ...and that week file is what lets the empty standings be written over
+    # the previous season's.
+    assert publishes_this_season(standings["final_weeks"], week_files=1,
+                                 standings_exists=True)
+
+
+def test_a_preseason_run_that_found_nothing_keeps_the_previous_season():
+    assert not publishes_this_season(0, week_files=0, standings_exists=True)
+
+
+def test_the_very_first_run_writes_a_standings_file_with_nothing_to_keep():
+    assert publishes_this_season(0, week_files=0, standings_exists=False)
+
+
+def test_a_final_week_publishes_as_it_always_did():
+    assert publishes_this_season(2, week_files=2, standings_exists=True)

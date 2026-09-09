@@ -387,3 +387,22 @@ def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None):
              "away": _side(b.away_team, b.away_score, b.away_lineup, week)}
             for b in boxes],
     }
+
+
+def publishes_this_season(final_weeks, week_files, standings_exists):
+    """Whether this run's data replaces what the site is serving.
+
+    The site becomes the new season's site on kickoff week, not the Tuesday
+    after: once ESPN serves any week of this season, the standings file is
+    written even with zero final weeks -- its per-week arrays empty, which the
+    Standings and Position pages already read as their empty state -- and the
+    week files publish with it, so the Week 1 preview is up before Week 1 is
+    done (spec 05, user story 36).
+
+    Only a run that found nothing at all steps aside, and only when a standings
+    file is already there to keep showing: that is the preseason, where ESPN
+    serves no week of the new season and the site still shows the last one.
+    """
+    if final_weeks or week_files:
+        return True
+    return not standings_exists

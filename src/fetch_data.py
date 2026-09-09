@@ -29,7 +29,7 @@ _espn_req.FANTASY_BASE_ENDPOINT = (
 from espn_api.football import League
 
 from week_data import (accumulate_weeks, build_week, build_week_file,
-                       owner_name, weeks_to_fetch)
+                       owner_name, publishes_this_season, weeks_to_fetch)
 
 # ---------------------------------------------------------------------------
 # Config (env-driven; no secrets in source)
@@ -107,8 +107,7 @@ def main():
         print(f"  week {week}: {wk['status']}")
         weeks.append(wk)
         # Built from the same box scores whatever the week's status, because a
-        # preview of an unfinished week is the point. Written further down,
-        # once the run knows it is publishing this season at all.
+        # preview of an unfinished week is the point.
         # is_playoff is always False while weeks_to_fetch stops at the last
         # regular-season week; the playoff walk is a later ticket.
         week_files.append(build_week_file(boxes, week, SEASON_YEAR,
@@ -162,15 +161,14 @@ def main():
         "top_players_by_week": top_players_by_week,
         "position_scores_by_week": position_scores_by_week,
     }
-    # Don't clobber existing standings with an empty preseason board: if no
-    # weeks are done yet but a data file already exists, leave it in place so
-    # the site keeps showing the most recent completed season until kickoff.
-    if final_weeks == 0 and os.path.exists(OUTPUT_PATH):
-        # The week files wait with it. Publishing them now would overwrite last
-        # season's week_1.json while the standings still describe last season,
-        # so the Scoreboard would open a week from the wrong year. Both files
-        # start flowing together when the rollover ticket retires this guard.
-        print(f"0 final weeks for {SEASON_YEAR}; keeping existing "
+    # In the preseason ESPN serves no week of the new season, and the site
+    # keeps showing the last completed one rather than an empty board. The
+    # first week ESPN does serve rolls the season over: the standings publish
+    # with empty arrays and the week files publish with them, so the Week 1
+    # preview is up on kickoff week rather than the Tuesday after.
+    if not publishes_this_season(final_weeks, len(week_files),
+                                 os.path.exists(OUTPUT_PATH)):
+        print(f"No week of {SEASON_YEAR} served yet; keeping existing "
               f"{OUTPUT_PATH} and the previous season's week files untouched.")
         return
 
