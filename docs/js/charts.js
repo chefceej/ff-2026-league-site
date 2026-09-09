@@ -329,14 +329,6 @@ function previousRanks(teams, completedWeeks) {
   return prev;
 }
 
-// Movement is announced in words as well as drawn, so the glyph and its color
-// are never the only signal.
-function describeMovement(move) {
-  if (move > 0) return { cls: "up", glyph: `\u25b2${move}`, words: `up ${move}` };
-  if (move < 0) return { cls: "down", glyph: `\u25bc${-move}`, words: `down ${-move}` };
-  return { cls: "flat", glyph: "\u2013", words: "no change" };
-}
-
 // An absent week reads as a dash, not as a genuine zero.
 function lastWeekPoints(team, week) {
   const v = team.ranking_points_by_week[week - 1];

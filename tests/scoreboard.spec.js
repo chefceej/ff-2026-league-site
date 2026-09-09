@@ -314,3 +314,136 @@ test.describe("Overlapping week changes", () => {
     await expect(page.locator(".matchup-card")).toHaveCount(6);
   });
 });
+
+test.describe("Projected standings block", () => {
+  /** The block's rows as the DOM shows them, in the order they are rendered. */
+  const blockRows = page => page.locator("#projected-table tbody tr");
+
+  test("lists every team in the week file's order", async ({ page }) => {
+    const live = loadWeekFixture("in-progress");
+    await openScoreboard(page, { weeks: { 14: live } });
+
+    await expect(blockRows(page)).toHaveCount(live.projected_standings.length);
+    await expect(page.locator("#projected-table td.team"))
+      .toHaveText(live.projected_standings.map(r => r.team_name));
+    // The file orders the teams by projected total; the page must not re-sort.
+    const totals = live.projected_standings.map(r => r.projected_total);
+    expect([...totals].sort((a, b) => b - a)).toEqual(totals);
+  });
+
+  test("shows each team's projected rank, total, ranking points and normalized",
+       async ({ page }) => {
+    const live = loadWeekFixture("in-progress");
+    await openScoreboard(page, { weeks: { 14: live } });
+    const rows = live.projected_standings;
+
+    await expect(page.locator("#projected-table .rk-num"))
+      .toHaveText(rows.map(r => String(r.projected_rank)));
+    await expect(page.locator("#projected-table td.proj"))
+      .toHaveText(rows.map(r => r.projected_total.toFixed(1)));
+    await expect(page.locator("#projected-table td.rp"))
+      .toHaveText(rows.map(r => r.projected_ranking_points.toFixed(1)));
+    await expect(page.locator("#projected-table td.norm"))
+      .toHaveText(rows.map(r => (r.projected_normalized > 0 ? "+" : "") +
+                                r.projected_normalized));
+  });
+
+  test("marks a normalized total above the cutoff apart from one below",
+       async ({ page }) => {
+    const live = loadWeekFixture("in-progress");
+    await openScoreboard(page, { weeks: { 14: live } });
+    const rows = live.projected_standings;
+
+    await expect(page.locator("#projected-table td.norm.pos"))
+      .toHaveCount(rows.filter(r => r.projected_normalized >= 0).length);
+    await expect(page.locator("#projected-table td.norm.neg"))
+      .toHaveCount(rows.filter(r => r.projected_normalized < 0).length);
+  });
+
+  test("draws the Standings table's own movement indicator", async ({ page }) => {
+    const live = loadWeekFixture("in-progress");
+    await openScoreboard(page, { weeks: { 14: live } });
+    const rows = live.projected_standings;
+
+    const move = r => r.current_rank - r.projected_rank;
+    await expect(page.locator("#projected-table .mv-glyph")).toHaveText(
+      rows.map(r => move(r) > 0 ? `▲${move(r)}`
+                  : move(r) < 0 ? `▼${-move(r)}` : "–"));
+    await expect(page.locator("#projected-table .mv-label")).toHaveText(
+      rows.map(r => move(r) > 0 ? `up ${move(r)}`
+                  : move(r) < 0 ? `down ${-move(r)}` : "no change"));
+    await expect(page.locator("#projected-table .mv.up"))
+      .toHaveCount(rows.filter(r => move(r) > 0).length);
+    await expect(page.locator("#projected-table .mv.down"))
+      .toHaveCount(rows.filter(r => move(r) < 0).length);
+    // The fixture has to contain a mover each way for that to mean anything.
+    expect(rows.some(r => move(r) > 0)).toBe(true);
+    expect(rows.some(r => move(r) < 0)).toBe(true);
+    expect(rows.some(r => move(r) === 0)).toBe(true);
+  });
+
+  test("says the numbers are projections until the week is final",
+       async ({ page }) => {
+    await openScoreboard(page, { weeks: { 14: loadWeekFixture("in-progress") } });
+    await expect(page.locator("#projected-heading"))
+      .toHaveText("Projected standings after Week 14");
+  });
+
+  test("says the numbers are the standings once the week is final",
+       async ({ page }) => {
+    await openScoreboard(page, { weeks: { 14: loadWeekFixture("final") } });
+    await expect(page.locator("#projected-heading"))
+      .toHaveText("Standings after Week 14");
+  });
+
+  test("reads an upcoming week as a projection too", async ({ page }) => {
+    const soon = loadWeekFixture("in-progress");
+    soon.status = "upcoming";
+    await openScoreboard(page, { weeks: { 14: soon } });
+    await expect(page.locator("#projected-heading"))
+      .toHaveText("Projected standings after Week 14");
+  });
+
+  test("names the week it lands on when the arrows move", async ({ page }) => {
+    await openScoreboard(page, { weeks: { 14: loadWeekFixture("in-progress") } });
+    await expect(page.locator("#projected-heading"))
+      .toHaveText("Projected standings after Week 14");
+
+    await page.locator("#prev-week-btn").click();
+    await expect(page.locator("#projected-heading"))
+      .toHaveText("Standings after Week 13");
+  });
+
+  test("is left off a week that carries no block", async ({ page }) => {
+    // A playoff week writes no projected standings: the bracket hands out no
+    // ranking points, so there is nothing honest to show.
+    const playoffs = loadWeekFixture("final");
+    playoffs.is_playoff = true;
+    delete playoffs.projected_standings;
+    await openScoreboard(page, { weeks: { 14: playoffs } });
+
+    await expect(page.locator(".matchup-card")).toHaveCount(6);
+    await expect(page.locator("#projected-standings")).toBeHidden();
+  });
+
+  test("goes away when the week on screen has no file", async ({ page }) => {
+    await openScoreboard(page, { weeks: { 13: null, 14: loadWeekFixture("final") } });
+    await expect(page.locator("#projected-standings")).toBeVisible();
+
+    await page.locator("#prev-week-btn").click();
+    await expect(page.locator("#empty-state")).toBeVisible();
+    await expect(page.locator("#projected-standings")).toBeHidden();
+  });
+
+  test("sits below the matchup cards", async ({ page }) => {
+    await openScoreboard(page, { weeks: { 14: loadWeekFixture("in-progress") } });
+
+    const order = await page.evaluate(() => {
+      const cards = document.getElementById("matchup-cards");
+      const block = document.getElementById("projected-standings");
+      return cards.compareDocumentPosition(block) &
+             Node.DOCUMENT_POSITION_FOLLOWING;
+    });
+    expect(order).toBeGreaterThan(0);
+  });
+});

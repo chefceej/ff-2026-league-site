@@ -25,6 +25,19 @@
       <button id="next-week-btn" class="week-nav-btn" aria-label="Next week">&rsaquo;</button>
     </div>
     <div id="matchup-cards" class="matchup-cards"></div>
+
+    <section id="projected-standings" class="hidden">
+      <h2 id="projected-heading" class="block-heading"></h2>
+      <div class="table-wrap">
+        <table id="projected-table">
+          <thead>
+            <tr><th>#</th><th class="left">Team</th><th>Proj</th>
+                <th title="Ranking points this week">RP</th><th>Norm</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
   </section>
 
   <section id="empty-state" class="hidden">
@@ -38,6 +51,7 @@
 <footer><span id="updated"></span></footer>
 
 <script src="js/highlight.js"></script>
+<script src="js/movement.js"></script>
 <script src="js/scoreboard.js"></script>
 </body>
 </html>

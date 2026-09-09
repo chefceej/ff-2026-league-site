@@ -2801,5 +2801,139 @@
     ]
    }
   }
+ ],
+ "projected_standings": [
+  {
+   "team_id": 3,
+   "team_name": "Toe Burrow",
+   "abbrev": "BW",
+   "projected_total": 198.6,
+   "projected_ranking_points": 12.0,
+   "projected_cumulative": 89.0,
+   "projected_normalized": 0.0,
+   "current_rank": 9,
+   "projected_rank": 6
+  },
+  {
+   "team_id": 6,
+   "team_name": "Never Gonna Gibbs You Up",
+   "abbrev": "Naug",
+   "projected_total": 180.5,
+   "projected_ranking_points": 11.0,
+   "projected_cumulative": 96.0,
+   "projected_normalized": 7.0,
+   "current_rank": 5,
+   "projected_rank": 5
+  },
+  {
+   "team_id": 11,
+   "team_name": "AJ Brown Bible Quotes",
+   "abbrev": "BIBL",
+   "projected_total": 179.7,
+   "projected_ranking_points": 10.0,
+   "projected_cumulative": 81.0,
+   "projected_normalized": -8.0,
+   "current_rank": 10,
+   "projected_rank": 10
+  },
+  {
+   "team_id": 1,
+   "team_name": "Nixed Downs in Dallas",
+   "abbrev": "Stev",
+   "projected_total": 166.3,
+   "projected_ranking_points": 9.0,
+   "projected_cumulative": 56.0,
+   "projected_normalized": -33.0,
+   "current_rank": 12,
+   "projected_rank": 11
+  },
+  {
+   "team_id": 2,
+   "team_name": "The Meat Man Makes a Deposit",
+   "abbrev": "CJ",
+   "projected_total": 162.6,
+   "projected_ranking_points": 8.0,
+   "projected_cumulative": 103.0,
+   "projected_normalized": 14.0,
+   "current_rank": 4,
+   "projected_rank": 4
+  },
+  {
+   "team_id": 7,
+   "team_name": "Rubber Bucky's",
+   "abbrev": "RB",
+   "projected_total": 135.6,
+   "projected_ranking_points": 7.0,
+   "projected_cumulative": 121.0,
+   "projected_normalized": 32.0,
+   "current_rank": 2,
+   "projected_rank": 1
+  },
+  {
+   "team_id": 9,
+   "team_name": "Walt's Warriors",
+   "abbrev": "WALT",
+   "projected_total": 125.4,
+   "projected_ranking_points": 6.0,
+   "projected_cumulative": 86.0,
+   "projected_normalized": -3.0,
+   "current_rank": 8,
+   "projected_rank": 8
+  },
+  {
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "abbrev": "PORK",
+   "projected_total": 119.9,
+   "projected_ranking_points": 4.5,
+   "projected_cumulative": 115.5,
+   "projected_normalized": 26.5,
+   "current_rank": 3,
+   "projected_rank": 3
+  },
+  {
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "abbrev": "SACK",
+   "projected_total": 119.9,
+   "projected_ranking_points": 4.5,
+   "projected_cumulative": 54.5,
+   "projected_normalized": -34.5,
+   "current_rank": 11,
+   "projected_rank": 12
+  },
+  {
+   "team_id": 12,
+   "team_name": "Remeber Bendel",
+   "abbrev": "BEND",
+   "projected_total": 110.4,
+   "projected_ranking_points": 3.0,
+   "projected_cumulative": 87.0,
+   "projected_normalized": -2.0,
+   "current_rank": 6,
+   "projected_rank": 7
+  },
+  {
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "abbrev": "MBJG",
+   "projected_total": 101.9,
+   "projected_ranking_points": 2.0,
+   "projected_cumulative": 119.0,
+   "projected_normalized": 30.0,
+   "current_rank": 1,
+   "projected_rank": 2
+  },
+  {
+   "team_id": 4,
+   "team_name": "The Panic Traders",
+   "abbrev": "SW$H",
+   "projected_total": 95.5,
+   "projected_ranking_points": 1.0,
+   "projected_cumulative": 84.0,
+   "projected_normalized": -5.0,
+   "current_rank": 7,
+   "projected_rank": 9
+  }
  ]
 }

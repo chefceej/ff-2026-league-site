@@ -215,3 +215,19 @@ footer{padding:22px 24px; color:var(--mut); font-size:12px; text-align:center}
   .matchup-cards{margin:0 12px; grid-template-columns:1fr}
   .side-leaders{padding-left:0}
 }
+
+/* ── Scoreboard: the projected standings under the cards ── */
+.block-heading{margin:26px 24px 10px; font-size:15px; color:var(--ink)}
+/* The same rank movement the Standings table draws, in the same colours: a
+   projected move and a settled one should never read differently. */
+#projected-table td.rk .mv{margin-left:7px; font-size:12px; font-weight:700}
+#projected-table td.rk .mv.up{color:var(--pos)}
+#projected-table td.rk .mv.down{color:var(--neg)}
+#projected-table td.rk .mv.flat{color:var(--mut); font-weight:600}
+#projected-table td.proj,#projected-table td.rp{font-variant-numeric:tabular-nums}
+#projected-table td.rp{color:var(--field-dk); font-weight:700}
+#projected-table tbody tr:hover td{background:var(--field-lt)}
+
+@media (max-width:600px){
+  .block-heading{margin-left:12px; margin-right:12px}
+}
