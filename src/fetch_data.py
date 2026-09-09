@@ -108,7 +108,7 @@ def main():
         }
 
     weeks = []
-    week_files = []
+    boxes_by_week = []
     # Whether any week this run fetched is at or near kickoff. ESPN answers
     # with week-1 schedule rows and rosters long before anyone plays, so this,
     # not the answer itself, is what says the new season has arrived.
@@ -125,15 +125,21 @@ def main():
         kickoff_in_sight = kickoff_in_sight or near_kickoff(boxes, now_utc)
         print(f"  week {week}: {wk['status']}")
         weeks.append(wk)
-        # Built from the same box scores whatever the week's status, because a
-        # preview of an unfinished week is the point.
-        # is_playoff is always False while weeks_to_fetch stops at the last
-        # regular-season week; the playoff walk is a later ticket.
-        week_files.append(build_week_file(boxes, week, SEASON_YEAR,
-                                          is_playoff=week > reg_weeks,
-                                          fetched_at=fetched_at))
+        boxes_by_week.append((week, boxes))
 
     standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
+    # The week files are built after the standings because each one's projected
+    # standings block is measured from them. Built from the same box scores
+    # whatever the week's status, because a preview of an unfinished week is the
+    # point; written further down, once the run knows it is publishing this
+    # season at all. is_playoff is always False while weeks_to_fetch stops at
+    # the last regular-season week; the playoff walk is a later ticket.
+    week_files = [build_week_file(boxes, week, SEASON_YEAR,
+                                  is_playoff=week > reg_weeks,
+                                  fetched_at=fetched_at,
+                                  standings=standings,
+                                  playoff_cutoff=PLAYOFF_CUTOFF)
+                  for week, boxes in boxes_by_week]
     final_weeks = standings["final_weeks"]
     if standings["stopped_at_week"]:
         # Loud on purpose: the run still publishes, so a red X is not the

@@ -523,6 +523,325 @@ def test_a_week_with_matchups_still_produces_a_week_file():
     assert build_week_file(boxes, week=7, season=2026)["week"] == 7
 
 
+# ── The projected standings block ──
+
+def four_team_boxes(totals, played=True):
+    """Two matchups, four teams, each team's projected total handed in.
+
+    Each team fields one starter worth exactly its total, so ranking the teams
+    by projected total is ranking them by the number in `totals`. `played`
+    decides whether that number arrives as an actual or as a projection, which
+    is what makes the same league read as a final or an unfinished week.
+    """
+    def side(tid, pts):
+        kw = ({"game_played": 100, "points": pts} if played
+              else {"game_played": 0, "projected": pts})
+        return FakeTeam(tid), (pts if played else 0.0), [FakePlayer(**kw)]
+
+    ids = sorted(totals)
+    boxes = []
+    for a, b in zip(ids[::2], ids[1::2]):
+        ha, hs, hl = side(a, totals[a])
+        aa, as_, al = side(b, totals[b])
+        boxes.append(FakeBox(ha, hs, hl, aa, as_, al))
+    return boxes
+
+
+def standings_state(cumulative_by_team, weeks=1):
+    """A stand-in for accumulate_weeks' return: `weeks` slots per team, the
+    last one holding the cumulative ranking points handed in."""
+    return {"teams": {tid: {"cumulative_points_by_week":
+                            [pts] * weeks}
+                      for tid, pts in cumulative_by_team.items()}}
+
+
+def block_by_abbrev(wf):
+    return {row["abbrev"]: row for row in wf["projected_standings"]}
+
+
+def test_the_block_orders_every_team_by_projected_total():
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    wf = build_week_file(boxes, week=1, season=2026, playoff_cutoff=2)
+
+    assert [r["abbrev"] for r in wf["projected_standings"]] == \
+        ["T2", "T3", "T1", "T4"]
+    assert [r["projected_total"] for r in wf["projected_standings"]] == \
+        [120.0, 100.0, 90.0, 80.0]
+
+
+def test_the_block_earns_ranking_points_with_the_standings_own_function():
+    totals = {1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}
+    wf = build_week_file(four_team_boxes(totals, played=False), week=1,
+                         season=2026, playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    expected = assign_ranking_points(totals, 4)
+    assert {tid: rows[f"T{tid}"]["projected_ranking_points"] for tid in totals} \
+        == expected
+    assert rows["T2"]["projected_ranking_points"] == 4
+    assert rows["T4"]["projected_ranking_points"] == 1
+
+
+def test_teams_tied_on_projected_total_split_the_ranking_points():
+    # T2 and T3 tie for the top two ranks (4 and 3), so each takes 3.5 -- the
+    # same averaging the settled standings use.
+    wf = build_week_file(
+        four_team_boxes({1: 90.0, 2: 120.0, 3: 120.0, 4: 80.0}, played=False),
+        week=1, season=2026, playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    assert rows["T2"]["projected_ranking_points"] == 3.5
+    assert rows["T3"]["projected_ranking_points"] == 3.5
+    assert rows["T1"]["projected_ranking_points"] == 2
+    assert rows["T4"]["projected_ranking_points"] == 1
+
+
+def test_the_block_adds_the_week_to_the_cumulative_it_entered_with():
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    standings = standings_state({1: 10.0, 2: 3.0, 3: 6.0, 4: 20.0}, weeks=3)
+    wf = build_week_file(boxes, week=4, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    # entering + this week's ranking points
+    assert rows["T2"]["projected_cumulative"] == 7.0     # 3 + 4
+    assert rows["T3"]["projected_cumulative"] == 9.0     # 6 + 3
+    assert rows["T1"]["projected_cumulative"] == 12.0    # 10 + 2
+    assert rows["T4"]["projected_cumulative"] == 21.0    # 20 + 1
+
+
+def test_the_block_normalizes_against_the_cutoff_teams_projected_cumulative():
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    standings = standings_state({1: 10.0, 2: 3.0, 3: 6.0, 4: 20.0}, weeks=3)
+    wf = build_week_file(boxes, week=4, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    # Projected cumulatives are 21, 12, 9, 7; the 2nd best is 12, so that team
+    # sits on the zero line and everyone else is measured from it.
+    rows = block_by_abbrev(wf)
+    assert rows["T1"]["projected_normalized"] == 0.0
+    assert rows["T4"]["projected_normalized"] == 9.0
+    assert rows["T3"]["projected_normalized"] == -3.0
+    assert rows["T2"]["projected_normalized"] == -5.0
+
+
+def test_the_block_records_the_rank_each_team_holds_now_and_would_hold_after():
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    standings = standings_state({1: 10.0, 2: 3.0, 3: 6.0, 4: 20.0}, weeks=3)
+    wf = build_week_file(boxes, week=4, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    # entering: T4 20, T1 10, T3 6, T2 3
+    assert [rows[f"T{tid}"]["current_rank"] for tid in (4, 1, 3, 2)] == [1, 2, 3, 4]
+    # after:    T4 21, T1 12, T3 9, T2 7 -- nobody moves this week
+    assert [rows[f"T{tid}"]["projected_rank"] for tid in (4, 1, 3, 2)] == [1, 2, 3, 4]
+
+
+def test_a_big_week_moves_a_team_up_the_projected_rank():
+    # T2 sits a point behind T3 and outscores the league, which is worth 4
+    # ranking points against T3's 2: 10 + 4 passes 11 + 2. The pair of ranks is
+    # what the page draws its arrow from, so one week has to be able to move it.
+    boxes = four_team_boxes({1: 100.0, 2: 120.0, 3: 90.0, 4: 80.0}, played=False)
+    standings = standings_state({1: 9.0, 2: 10.0, 3: 11.0, 4: 30.0}, weeks=3)
+    wf = build_week_file(boxes, week=4, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    assert (rows["T2"]["current_rank"], rows["T2"]["projected_rank"]) == (3, 2)
+    assert (rows["T3"]["current_rank"], rows["T3"]["projected_rank"]) == (2, 3)
+    assert (rows["T4"]["current_rank"], rows["T4"]["projected_rank"]) == (1, 1)
+
+
+def test_teams_level_entering_the_week_are_not_shown_moving_past_each_other():
+    # T1 and T3 arrive level on 10. Whichever of them the week puts ahead, both
+    # have to read as having held their place: neither passed the other, and an
+    # arrow drawn off an order nobody earned is the Standings table's own
+    # documented mistake to avoid (docs/js/charts.js, previousRanks).
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    standings = {"teams": {tid: {"cumulative_points_by_week": [pts]}
+                           for tid, pts in [(3, 10.0), (1, 10.0),
+                                            (2, 1.0), (4, 30.0)]}}
+    wf = build_week_file(boxes, week=2, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    # T3 out-earns T1 this week, so it ends ahead -- without being credited a
+    # move it did not make.
+    assert (rows["T3"]["current_rank"], rows["T3"]["projected_rank"]) == (2, 2)
+    assert (rows["T1"]["current_rank"], rows["T1"]["projected_rank"]) == (3, 3)
+
+
+def test_ties_below_still_let_a_real_mover_pass_them():
+    # The tie rule must not swallow genuine movement. T2 enters last on 9, tops
+    # the week for 4 ranking points, and passes the pair level on 10 -- who are
+    # shown moving down, because this time somebody really did go by them.
+    boxes = four_team_boxes({1: 80.0, 2: 120.0, 3: 90.0, 4: 110.0}, played=False)
+    standings = {"teams": {tid: {"cumulative_points_by_week": [pts]}
+                           for tid, pts in [(3, 10.0), (1, 10.0),
+                                            (2, 9.0), (4, 30.0)]}}
+    wf = build_week_file(boxes, week=2, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    assert (rows["T2"]["current_rank"], rows["T2"]["projected_rank"]) == (4, 2)
+    assert (rows["T3"]["current_rank"], rows["T3"]["projected_rank"]) == (2, 3)
+    assert (rows["T1"]["current_rank"], rows["T1"]["projected_rank"]) == (3, 4)
+
+
+def test_on_a_final_week_the_block_is_the_weeks_actual_result():
+    # The same league, once as an unfinished week and once as a settled one.
+    # A final week's block is not a projection of anything: the totals are the
+    # scores and the cumulative is where the standings actually land.
+    totals = {1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}
+    standings = standings_state({1: 10.0, 2: 3.0, 3: 6.0, 4: 20.0}, weeks=3)
+    live = build_week_file(four_team_boxes(totals, played=False), week=4,
+                           season=2026, standings=standings, playoff_cutoff=2)
+    done = build_week_file(four_team_boxes(totals, played=True), week=4,
+                           season=2026, standings=standings, playoff_cutoff=2)
+
+    assert live["status"] == "upcoming"
+    assert done["status"] == "final"
+    assert done["projected_standings"] == live["projected_standings"]
+    for row in done["projected_standings"]:
+        assert row["projected_total"] == totals[row["team_id"]]
+
+
+def test_a_final_week_is_measured_from_the_standings_before_it_not_after():
+    # accumulate_weeks has already counted this final week, so the last slot
+    # includes it. Reading that slot would hand out the week's ranking points
+    # twice and leave every arrow pointing nowhere.
+    totals = {1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}
+    standings = {"teams": {
+        # week 1 cumulative, then week 2's -- week 2 being the week being built
+        1: {"cumulative_points_by_week": [10.0, 12.0]},
+        2: {"cumulative_points_by_week": [3.0, 7.0]},
+        3: {"cumulative_points_by_week": [6.0, 9.0]},
+        4: {"cumulative_points_by_week": [20.0, 21.0]},
+    }}
+    wf = build_week_file(four_team_boxes(totals, played=True), week=2,
+                         season=2026, standings=standings, playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    assert rows["T2"]["projected_cumulative"] == 7.0     # 3 + 4, not 7 + 4
+    assert rows["T1"]["projected_cumulative"] == 12.0
+
+
+def test_week_one_starts_every_team_from_nothing():
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    wf = build_week_file(boxes, week=1, season=2026, playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    # Nothing has been earned yet, so the week's ranking points are the whole
+    # cumulative and the projected rank is this week's order.
+    assert rows["T2"]["projected_cumulative"] == 4.0
+    assert [r["projected_rank"] for r in wf["projected_standings"]] == [1, 2, 3, 4]
+    # And nobody has moved: every team entered level on nothing, so the page has
+    # no arrow to draw. Handing out a baseline order by whatever sequence ESPN
+    # listed the teams in would invent twelve of them on day one.
+    for row in wf["projected_standings"]:
+        assert row["current_rank"] == row["projected_rank"]
+
+
+def test_a_playoff_week_has_no_projected_standings_block():
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    wf = build_week_file(boxes, week=15, season=2026, is_playoff=True,
+                         playoff_cutoff=2)
+
+    assert "projected_standings" not in wf
+
+
+def test_a_playoff_bye_is_left_out_of_a_regular_weeks_block():
+    # A bye has no opponent side. Regular-season weeks never carry one, but the
+    # block reads the same matchup list either way, so it has to skip the hole
+    # rather than count a team that is not there.
+    boxes = four_team_boxes({1: 90.0, 2: 120.0}, played=False)
+    boxes.append(FakeBox(FakeTeam(3), 0.0, [FakePlayer(projected=50.0)],
+                         None, 0.0, []))
+    wf = build_week_file(boxes, week=1, season=2026, playoff_cutoff=2)
+
+    assert [r["team_id"] for r in wf["projected_standings"]] == [2, 1, 3]
+
+
+def gapped_season():
+    """Weeks 1, 2, 4 and 5 final; week 3's fetch failed, so it is not there.
+
+    accumulate_weeks numbers the standings one slot per final week from week 1,
+    so it counts weeks 1 and 2 and stops before the hole -- final_weeks 2,
+    stopped_at_week 3. Weeks 4 and 5 are fetched and published all the same,
+    which is what makes them the interesting case: the standings cannot say
+    what either team took into them.
+    """
+    def week(number, scores):
+        boxes = four_team_boxes(scores, played=True)
+        return build_week(boxes, number)
+
+    scores = {1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}
+    weeks = [week(n, scores) for n in (1, 2, 4, 5)]
+    return accumulate_weeks(weeks, team_ids=[1, 2, 3, 4], playoff_cutoff=2)
+
+
+def test_a_gap_in_the_standings_stops_the_block_at_the_gap():
+    # The standings stop before week 3, so weeks 4 and 5 get no block at all.
+    # Measuring them from weeks 1 and 2 would publish a table headed "Standings
+    # after Week 5" whose totals quietly leave weeks 3 and 4 out -- and the
+    # Standings page, which correctly stops at week 2, would contradict it.
+    standings = gapped_season()
+    assert (standings["final_weeks"], standings["stopped_at_week"]) == (2, 3)
+
+    def block_for(week):
+        boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0},
+                                played=True)
+        wf = build_week_file(boxes, week=week, season=2026,
+                             standings=standings, playoff_cutoff=2)
+        return wf.get("projected_standings")
+
+    assert block_for(1) is not None
+    assert block_for(2) is not None
+    assert block_for(4) is None
+    assert block_for(5) is None
+
+
+def test_the_week_the_standings_stopped_before_gets_no_block_either():
+    # Week 3 is the hole itself. Whether it was never fetched or arrived
+    # unfinished, it is the week the standings could not count, so the site
+    # does not project from it.
+    standings = gapped_season()
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    wf = build_week_file(boxes, week=3, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    assert "projected_standings" not in wf
+
+
+def test_a_week_the_standings_have_no_slot_for_gets_no_block():
+    # The same rule without a gap to blame: nothing accumulated, so week 9 has
+    # no baseline to be measured from. It used to fall back to the last slot
+    # there was and publish a plausible-looking fiction.
+    boxes = four_team_boxes({1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}, played=False)
+    wf = build_week_file(boxes, week=9, season=2026, playoff_cutoff=2)
+
+    assert "projected_standings" not in wf
+
+
+def test_an_unbroken_season_still_blocks_every_week_it_reaches():
+    # The guard must not swallow the ordinary case: weeks 1..4 final, and week
+    # 5 -- the week being previewed -- reads its baseline from week 4.
+    scores = {1: 90.0, 2: 120.0, 3: 100.0, 4: 80.0}
+    weeks = [build_week(four_team_boxes(scores, played=True), n)
+             for n in (1, 2, 3, 4)]
+    standings = accumulate_weeks(weeks, team_ids=[1, 2, 3, 4], playoff_cutoff=2)
+    assert standings["stopped_at_week"] is None
+
+    boxes = four_team_boxes(scores, played=False)
+    wf = build_week_file(boxes, week=5, season=2026, standings=standings,
+                         playoff_cutoff=2)
+
+    rows = block_by_abbrev(wf)
+    # Four final weeks at 4 ranking points each, plus this week's 4.
+    assert rows["T2"]["projected_cumulative"] == 20.0
+
+
 # --- season rollover ---------------------------------------------------------
 # The site becomes the new season's site on kickoff week: the week the games
 # are about to start, the standings file is written even with nothing final in

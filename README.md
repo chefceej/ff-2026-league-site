@@ -16,10 +16,13 @@ averaged); those points accumulate all season, then the total is shifted so
 - `src/week_data.py` — the pure per-week transforms the fetcher runs on each
   week's box scores: week status (upcoming / in-progress / final), position
   buckets, top scorers and the standings accumulation over final weeks only,
-  plus the week file the Scoreboard reads (matchups, projected totals, leaders)
-  and the rule deciding whether a run publishes what it fetched at all.
+  plus the week file the Scoreboard reads (matchups, projected totals, leaders,
+  and the week's projected standings) and the rule deciding whether a run
+  publishes what it fetched at all.
 - `docs/` — the static site: the Chart.js playoff-position chart and standings
-  table, the Scoreboard's per-week matchup cards, and the position pivot.
+  table, the Scoreboard's per-week matchup cards and projected standings, and
+  the position pivot. `docs/js/movement.js` draws the rank-movement indicator
+  for the standings table and the projected standings alike.
 - `.github/workflows/update_data.yml` — refreshes the data daily (7 AM UTC) and
   commits it. The site becomes the 2026 site on kickoff week — the first run
   whose fetched week kicks off within seven days, not the first run ESPN
@@ -53,7 +56,8 @@ npm test
 
 A pytest suite covers the pure per-week transforms in `src/week_data.py` —
 week finality, position buckets, top scorers, the standings accumulation, and
-the week file's matchups, projected totals and leaders — against hand-built
+the week file's matchups, projected totals, leaders and projected standings —
+against hand-built
 stand-ins, so it needs neither ESPN nor `espn_api`:
 
 ```bash
