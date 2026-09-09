@@ -31,6 +31,42 @@ async function useFixture(page, mutate) {
   return served;
 }
 
+/**
+ * The frozen week files: one week before it is final, one after, and a playoff
+ * week -- which carries two byes and no projected standings block.
+ */
+const WEEK_FIXTURES = {
+  "in-progress": "week_in_progress.json",
+  final: "week_final.json",
+  playoff: "week_playoff.json",
+};
+
+/** A fresh parsed copy of one week fixture, safe for a test to mutate. */
+function loadWeekFixture(kind) {
+  const name = WEEK_FIXTURES[kind];
+  if (!name) throw new Error(`no week fixture named ${kind}`);
+  return JSON.parse(
+    fs.readFileSync(path.join(__dirname, "fixtures", name), "utf8"));
+}
+
+/**
+ * Answer every request for a week file from `byWeek`, keyed by week number.
+ * A week the map does not name answers 404, which is how the page's missing-week
+ * empty state is produced without deleting anything.
+ */
+async function useWeekFixtures(page, byWeek) {
+  await page.route("**/data/week_*.json*", route => {
+    const week = /week_(\d+)\.json/.exec(route.request().url())?.[1];
+    const served = byWeek[Number(week)];
+    if (!served) return route.fulfill({ status: 404, body: "" });
+    return route.fulfill({
+      status: 200,
+      contentType: "application/json",
+      body: JSON.stringify(served),
+    });
+  });
+}
+
 const last = arr => (arr.length ? arr[arr.length - 1] : 0);
 
 /** Truncate every per-week array so only `weeks` weeks are complete. */
@@ -64,4 +100,5 @@ function truncateToWeeks(data, weeks) {
   return data;
 }
 
-module.exports = { useFixture, truncateToWeeks };
+module.exports = { useFixture, useWeekFixtures, loadFixture,
+                   loadWeekFixture, truncateToWeeks };

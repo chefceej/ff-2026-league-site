@@ -1,0 +1,650 @@
+"""The site's pure league math: box scores in, week structure and standings out.
+
+Two layers, both free of espn_api and of the network, so the tests feed
+hand-built stand-ins for the library's box-score objects:
+
+  - per week   : week_status / build_week / build_week_file
+  - per season : assign_ranking_points / accumulate_weeks
+"""
+
+from datetime import timedelta, timezone
+
+# ESPN's Team QB slot: an NFL team's quarterbacks as one unit. The site counts
+# it as QB everywhere it groups by position (see CONTEXT.md, "QB slot").
+TEAM_QB = "TQB"
+
+# Starting slot -> position bucket for the position-score pivot. A slot in this
+# map is what makes a player a starter: these are the slots that score for a
+# team, so bench, IR and anything ESPN does not recognize fall out of both the
+# pivot and the week's finality.
+SLOT_MAP = {
+    "QB": "QB", TEAM_QB: "QB", "RB": "RB", "WR": "WR", "TE": "TE",
+    "RB/WR/TE": "FLEX", "WR/TE": "FLEX", "FLEX": "FLEX",
+    "OP": "OP", "QB/RB/WR/TE": "OP",
+    "D/ST": "D/ST", "K": "K",
+}
+
+POS_TABS = ["QB", "RB", "WR", "TE"]   # player-type tabs for Top Scorers
+TOP_N = 25
+
+POSITION_ALIASES = {TEAM_QB: "QB"}
+
+# espn_api reports game_played as a percentage, but only ever 0 or 100: it
+# flips to 100 three hours after kickoff. The nightly run lands hours after the
+# last game, so that is accurate for the standings; a future game-day refresh
+# would see a game in its first three hours as not yet started (spec 05,
+# "Further Notes"), which reads as upcoming rather than in progress.
+FULLY_PLAYED = 100
+
+
+def utc(when):
+    """A kickoff as an aware UTC datetime, or None when ESPN gave no time.
+
+    espn_api builds game_date with datetime.fromtimestamp, which yields a naive
+    datetime in the machine's local zone; astimezone reads a naive value as
+    local, so this converts rather than mislabels. A run on a UTC CI box and a
+    run on a laptop therefore read the same instant.
+    """
+    return None if when is None else when.astimezone(timezone.utc)
+
+
+def iso_utc(when):
+    """A kickoff as ISO 8601 UTC, or None when ESPN gave no time."""
+    when = utc(when)
+    return None if when is None else when.isoformat().replace("+00:00", "Z")
+
+
+def weeks_to_fetch(reg_weeks, current_week, matchup_periods=None):
+    """The weeks ESPN can actually answer for: (week, scoring period) pairs.
+
+    espn_api's box_scores(week) takes a SCORING period and looks up the matchup
+    period holding it, with no else branch either side of the league's range:
+    a week past league.current_week silently serves the current week's box
+    scores, and a scoring period belonging to no matchup period silently serves
+    the current matchup period's. Both hand back a week the run already has,
+    under a second week number -- and once that week goes final it would be
+    counted twice. Asking only for weeks that exist is what prevents it.
+
+    The two units are why this returns pairs. The site's week is a matchup
+    period (CONTEXT.md, "Week"), which is what the file is named for and what
+    reg_weeks counts; ESPN wants the scoring period the week starts in. They
+    are the same number in a league whose rounds are one week each, and part
+    company the moment one is not -- a two-week championship is ONE week of the
+    site, so its second scoring period is not a week at all.
+
+    A week is in reach when the scoring period it starts in is: that is what
+    puts a round the league has only half played on the Scoreboard as a
+    preview, and what stops the walk at the last week the league actually has,
+    however far ESPN's own scoring periods run past it. A multi-week round is
+    read from the scoring period it starts in, so a round still under way is
+    previewed from its first week rather than from nothing.
+
+    `matchup_periods` is ESPN's mapping of matchup period -> its scoring
+    periods (league.settings.matchup_periods; its keys arrive as strings).
+    Without it there is no telling the two units apart, so the walk keeps to
+    the regular season, where a league has one week per week.
+    """
+    if current_week is None:          # a season ESPN reports nothing about
+        current_week = reg_weeks
+    if not matchup_periods:
+        return [(week, week)
+                for week in range(1, min(reg_weeks, current_week) + 1)]
+    weeks = []
+    for week, scoring_periods in matchup_periods.items():
+        if not scoring_periods:
+            continue
+        starts_at = min(int(period) for period in scoring_periods)
+        if starts_at <= current_week:
+            weeks.append((int(week), starts_at))
+    return sorted(weeks)
+
+
+def normalize_position(position):
+    return POSITION_ALIASES.get(position, position)
+
+
+def is_starter(player):
+    """True when the player's slot scores for their team this week."""
+    return getattr(player, "slot_position", "") in SLOT_MAP
+
+
+def _starters(boxes):
+    """Every starting player on both sides of every matchup in the week."""
+    return [pl
+            for b in boxes
+            for lineup in (b.home_lineup, b.away_lineup)
+            for pl in lineup or []
+            if is_starter(pl)]
+
+
+def _has_played(player):
+    return float(getattr(player, "game_played", 0) or 0) >= FULLY_PLAYED
+
+
+def week_status(boxes):
+    """Classify one week's box scores: upcoming, in-progress, or final.
+
+    A week is final when every starter has played or is on bye, upcoming when
+    no starter has played, and in progress in between. Players on bye never
+    play, so they count as neither. A week ESPN serves with no starters at all
+    reads as upcoming, which keeps a week the fetcher cannot see out of the
+    standings rather than awarding ranking points on it.
+    """
+    active = [p for p in _starters(boxes)
+              if not getattr(p, "on_bye_week", False)]
+    if not any(_has_played(p) for p in active):
+        return "upcoming"
+    if all(_has_played(p) for p in active):
+        return "final"
+    return "in-progress"
+
+
+def build_week(boxes, week, is_playoff=False):
+    """One week's box scores -> the week structure the site is built from.
+
+      week            : the week number these box scores were asked for
+      is_playoff      : whether the week is a playoff week rather than a
+                        regular-season one, which is what keeps it out of the
+                        standings (accumulate_weeks, which says why)
+      status          : "upcoming" | "in-progress" | "final"
+      scores          : {team_id: team score}
+      top_players     : {"all": [...], "QB": [...], ...} of starter scores
+      position_scores : {team_abbrev: {position bucket: points}}
+    """
+    scores, all_players = {}, []
+    position_scores = {}
+    for b in boxes:
+        for team, score, lineup in (
+                (b.home_team, b.home_score, b.home_lineup),
+                (b.away_team, b.away_score, b.away_lineup)):
+            if team is None or team == 0:
+                continue
+            scores[team.team_id] = score
+            abbrev = getattr(team, "team_abbrev", "") or team.team_name
+            slots = position_scores.setdefault(abbrev, {})
+            for pl in lineup or []:
+                if not is_starter(pl):
+                    continue
+                bucket = SLOT_MAP[pl.slot_position]
+                pts = float(getattr(pl, "points", 0) or 0)
+                slots[bucket] = round(slots.get(bucket, 0) + pts, 2)
+                all_players.append({
+                    "name": pl.name,
+                    "pro_team": getattr(pl, "proTeam", ""),
+                    "fantasy_team": team.team_name,
+                    "position": normalize_position(
+                        getattr(pl, "position", "")),
+                    "score": round(pts, 2),
+                })
+
+    all_players.sort(key=lambda p: p["score"], reverse=True)
+    top_players = {"all": all_players[:TOP_N]}
+    for pos in POS_TABS:
+        top_players[pos] = [p for p in all_players
+                            if p["position"] == pos][:TOP_N]
+    return {
+        "week": week,
+        "is_playoff": is_playoff,
+        "status": week_status(boxes),
+        "scores": scores,
+        "top_players": top_players,
+        "position_scores": position_scores,
+    }
+
+
+def assign_ranking_points(scores_by_team_id, num_teams):
+    """{team_id: score} -> {team_id: ranking_points}. Ties share the average rank.
+
+    Best score gets num_teams points, worst gets 1.
+    """
+    ordered = sorted(scores_by_team_id.items(), key=lambda x: x[1], reverse=True)
+    points = {}
+    i = 0
+    while i < len(ordered):
+        j = i
+        while j < len(ordered) - 1 and ordered[j][1] == ordered[j + 1][1]:
+            j += 1
+        # ranks occupied by the tie group: (num_teams - i) .. (num_teams - j)
+        rank_sum = sum(num_teams - k for k in range(i, j + 1))
+        avg = rank_sum / (j - i + 1)
+        for k in range(i, j + 1):
+            points[ordered[k][0]] = avg
+        i = j + 1
+    return points
+
+
+def accumulate_weeks(weeks, team_ids, playoff_cutoff):
+    """Week structures (in week order) -> the season's standings state.
+
+    Only final regular-season weeks count: an upcoming or in-progress week
+    contributes no scores, ranking points, top scorers or position scores, and
+    neither does a playoff week. The bracket hands out no ranking points, and a
+    playoff week goes final the moment its games are played -- so counting one
+    would award another week of the season's currency to teams that are no
+    longer racing for it, and stamp its number on a standings slot that belongs
+    to a regular-season week. This is the rule the rest of the module points at.
+
+    Position in the returned arrays is what the site reads as the week number,
+    so the final weeks accumulated have to be weeks 1..N with nothing missing.
+    On a forward gap -- one week's fetch failed, or a postponed game leaves an
+    unfinished week between two final ones -- the weeks before the gap are
+    still correctly numbered, so they are kept and everything after the gap is
+    left for a later run; stopped_at_week names the week that was missing, or
+    None. Only a repeated week raises, because a week arriving behind the slot
+    it belongs in can never be the start of a correctly numbered season.
+
+      final_weeks             : how many weeks fed the standings
+      stopped_at_week         : the missing week the standings stop before
+      teams                   : {team_id: {four per-week arrays}}
+      top_players_by_week     : one entry per final week
+      position_scores_by_week : one entry per final week
+    """
+    team_ids = list(team_ids)
+    num_teams = len(team_ids)
+    teams = {tid: {"scores_by_week": [], "ranking_points_by_week": [],
+                   "cumulative_points_by_week": [], "normalized_by_week": []}
+             for tid in team_ids}
+    cumulative = {tid: 0.0 for tid in team_ids}
+    top_players_by_week = []
+    position_scores_by_week = []
+    stopped_at_week = None
+
+    for wk in weeks:
+        if wk["status"] != "final" or wk["is_playoff"]:
+            continue
+        expected = len(top_players_by_week) + 1
+        if wk["week"] < expected:
+            raise ValueError(
+                f"week {wk['week']} arrived again after week {expected - 1}: "
+                f"the standings are written one week per slot, so counting it "
+                f"twice would double every team's ranking points")
+        if wk["week"] > expected:
+            stopped_at_week = expected
+            break
+        top_players_by_week.append(wk["top_players"])
+        position_scores_by_week.append(wk["position_scores"])
+        rp = assign_ranking_points(wk["scores"], num_teams)
+        for tid in teams:
+            cumulative[tid] += rp.get(tid, 0)
+        cutoff_val = sorted(cumulative.values(), reverse=True)[playoff_cutoff - 1]
+        for tid, arrays in teams.items():
+            arrays["scores_by_week"].append(round(wk["scores"].get(tid, 0), 2))
+            arrays["ranking_points_by_week"].append(rp.get(tid, 0))
+            arrays["cumulative_points_by_week"].append(round(cumulative[tid], 2))
+            arrays["normalized_by_week"].append(
+                round(cumulative[tid] - cutoff_val, 4))
+
+    return {
+        "final_weeks": len(top_players_by_week),
+        "stopped_at_week": stopped_at_week,
+        "teams": teams,
+        "top_players_by_week": top_players_by_week,
+        "position_scores_by_week": position_scores_by_week,
+    }
+
+
+def owner_name(team):
+    """The manager's display name. espn_api hands back a list that holds dicts
+    on a modern league and bare strings on an old one, and an empty list on a
+    team nobody claimed."""
+    owners = getattr(team, "owners", None) or []
+    if not owners:
+        return ""
+    first = owners[0]
+    if isinstance(first, dict):
+        return (first.get("firstName", "") + " " +
+                first.get("lastName", "")).strip()
+    return str(first)
+
+
+def _projected(player):
+    return round(float(getattr(player, "projected_points", 0) or 0), 2)
+
+
+def _actual(player):
+    return round(float(getattr(player, "points", 0) or 0), 2)
+
+
+def _live_points(player):
+    """What a starter is worth right now: the actual score once the game is
+    played, the projection until then. This is the one blend the projected
+    total and the leaders both read (CONTEXT.md, "Projected total").
+
+    A starter on bye is worth nothing either way. They have no game to wait on,
+    which is why a week can go final around them -- so carrying their
+    projection would push a settled week's projected total above its score.
+    """
+    if getattr(player, "on_bye_week", False):
+        return 0.0
+    return _actual(player) if _has_played(player) else _projected(player)
+
+
+# ESPN's injury statuses, and the tags the pages show for them. A status the
+# league does not carry a tag for -- ACTIVE, NORMAL, or None -- shows no tag.
+INJURY_TAGS = {
+    "QUESTIONABLE": "Q", "DOUBTFUL": "D", "OUT": "O",
+    "INJURY_RESERVE": "IR", "SUSPENSION": "SUSP",
+}
+
+LEADERS_PER_TEAM = 3
+
+
+def injury_tag(status):
+    return INJURY_TAGS.get(str(status or "").upper(), "")
+
+
+# espn_api does not leave an unknown NFL team or opponent empty: BoxPlayer sets
+# pro_opponent to the string "None" and only overwrites it when two lookups
+# both land, and PRO_TEAM_MAP[0] is 'None' as well. A falsy guard cannot catch a
+# non-empty string, so the site would print the word where a team belongs.
+ESPN_ABSENT = "None"
+
+
+def _espn_str(value):
+    """One of espn_api's string fields, with its sentinel read as absent."""
+    text = str(value or "").strip()
+    return "" if text == ESPN_ABSENT else text
+
+
+def _player(pl):
+    """One roster player, as both pages read them."""
+    # ESPN leaves last week's opponent and game time on a player whose team is
+    # off this week, and a page cannot tell that from a real game. A bye row is
+    # marked as a bye and carries nothing else, so its zero is never read as a
+    # kickoff that has come and gone (spec 05, user story 28).
+    on_bye = bool(getattr(pl, "on_bye_week", False))
+    return {
+        "player_id": getattr(pl, "playerId", None),
+        "name": pl.name,
+        "pro_team": _espn_str(getattr(pl, "proTeam", "")),
+        "position": normalize_position(getattr(pl, "position", "") or ""),
+        "slot": getattr(pl, "slot_position", "") or "",
+        "injury": injury_tag(getattr(pl, "injuryStatus", None)),
+        "opponent": "" if on_bye else _espn_str(getattr(pl, "pro_opponent", "")),
+        "kickoff": None if on_bye else iso_utc(getattr(pl, "game_date", None)),
+        "on_bye": on_bye,
+        "played": _has_played(pl),
+        "projected": _projected(pl),
+        "actual": _actual(pl),
+    }
+
+
+# espn_api's per-week outcome codes. 'U' is a week ESPN has not settled, and it
+# is in the list from the moment the schedule exists, so it counts as nothing.
+OUTCOME_WIN, OUTCOME_LOSS, OUTCOME_TIE = "W", "L", "T"
+
+
+def team_record(team, week):
+    """The record the team took into `week`.
+
+    espn_api's Team carries the season-to-date wins/losses/ties, and one League
+    object builds every week file in a run -- so reading those would stamp
+    December's record onto September's box score, and rewrite it again every
+    night. outcomes is the per-week result list, index 0 being week 1, so the
+    weeks before this one are the record entering it.
+
+    A team whose schedule never loaded has no per-week list to slice; today's
+    record beats no record at all, so that is what it falls back to.
+    """
+    outcomes = getattr(team, "outcomes", None)
+    if not outcomes:
+        return {"wins": getattr(team, "wins", 0),
+                "losses": getattr(team, "losses", 0),
+                "ties": getattr(team, "ties", 0)}
+    before = [str(o).upper() for o in outcomes[:max(week - 1, 0)]]
+    return {"wins": before.count(OUTCOME_WIN),
+            "losses": before.count(OUTCOME_LOSS),
+            "ties": before.count(OUTCOME_TIE)}
+
+
+def _side(team, score, lineup, week):
+    """One team's half of a matchup, as the Scoreboard and matchup page read it."""
+    if team is None or team == 0:      # a playoff bye has no opponent
+        return None
+    # One pass, two lists: a slot either scores for the team this week or it is
+    # the bench (IR included), and asking twice would only invite the two
+    # answers to disagree.
+    starters, benched = [], []
+    for pl in lineup or []:
+        (starters if is_starter(pl) else benched).append(pl)
+    # A starter on bye is neither played nor still to play: their week is over
+    # without a game, which is the same rule that decides the week's finality.
+    return {
+        "team_id": team.team_id,
+        "team_name": team.team_name,
+        "abbrev": getattr(team, "team_abbrev", "") or team.team_name,
+        "owner": owner_name(team),
+        "logo_url": getattr(team, "logo_url", "") or "",
+        "record": team_record(team, week),
+        "score": round(float(score or 0), 2),
+        "projected_total": round(sum(_live_points(pl) for pl in starters), 2),
+        "played": sum(1 for pl in starters if _has_played(pl)),
+        "to_play": sum(1 for pl in starters
+                       if not _has_played(pl)
+                       and not getattr(pl, "on_bye_week", False)),
+        "leaders": [_player(pl) for pl in
+                    sorted(starters, key=_live_points,
+                           reverse=True)[:LEADERS_PER_TEAM]],
+        # ESPN's own lineup order, untouched: it is the order the matchup page
+        # draws the rows in, and sorting here would only invent an order ESPN
+        # did not give. The page pairs the two sides on the slot rather than on
+        # the position in this list, so a side missing a slot leaves a gap
+        # instead of shifting every row under it. Everything that does not
+        # score for the team -- bench and IR alike -- is the bench.
+        "lineup": [_player(pl) for pl in starters],
+        "bench": [_player(pl) for pl in benched],
+    }
+
+
+def _standings_slots(standings):
+    """How many final weeks the standings carry.
+
+    accumulate_weeks writes the same number of slots for every team, so the
+    shortest array answers for all of them.
+    """
+    teams = (standings or {}).get("teams") or {}
+    return min((len(arrays.get("cumulative_points_by_week") or [])
+                for arrays in teams.values()), default=0)
+
+
+def standings_reach_week(standings, week):
+    """Whether the standings can say what every team took into `week`.
+
+    Week 1 needs nothing: every team enters it level on nothing. Any later week
+    needs the slot before it, and accumulate_weeks writes one slot per FINAL
+    week contiguous from week 1 -- so `week - 1` of them have to exist.
+
+    A run that stopped at a gap has fewer. The site still fetches and publishes
+    the weeks after the hole, and measuring one of those from the slots that
+    survive would head a table "Standings after Week 5" over totals that
+    quietly leave weeks 3 and 4 out -- contradicting the Standings page, which
+    correctly stops at week 2. The week at the gap is the one the standings
+    could not count, so it is out too; from there on the site says nothing
+    rather than something confident and wrong.
+    """
+    if week <= 1:
+        return True
+    stopped = (standings or {}).get("stopped_at_week")
+    if stopped is not None and week >= stopped:
+        return False
+    return _standings_slots(standings) >= week - 1
+
+
+def _entering_cumulative(standings, week, team_ids):
+    """Each team's cumulative ranking points as the week kicked off.
+
+    Slot `week - 2` is the cumulative through week `week - 1`. Reading the last
+    slot instead would count a final week twice: the standings have already
+    counted it, and this block adds the week's ranking points itself.
+
+    Only reached once standings_reach_week has said that slot is there. Week 1
+    is the one week with none to read, and a team the standings have never
+    heard of enters on nothing.
+    """
+    teams = (standings or {}).get("teams") or {}
+    entering = {}
+    for tid in team_ids:
+        arrays = teams.get(tid) or {}
+        cumulative = arrays.get("cumulative_points_by_week") or []
+        entering[tid] = cumulative[week - 2] if week >= 2 and cumulative else 0.0
+    return entering
+
+
+def _ranks(points_by_team, order):
+    """1-based rank by points, best first, ties settled by `order`.
+
+    Who `order` is decides what a tie means, so the two callers hand in
+    different orders on purpose -- see _projected_standings.
+    """
+    ranked = sorted(order, key=lambda tid: -points_by_team[tid])
+    return {tid: i + 1 for i, tid in enumerate(ranked)}
+
+
+def _projected_standings(sides, standings, week, playoff_cutoff):
+    """Where the week would leave the standings, one row per team.
+
+    Ranks the teams by projected total, hands out ranking points with the same
+    function the settled standings use, adds them to what each team entered the
+    week with, and normalizes against the cutoff team -- so a row reads exactly
+    like a Standings row, only a week early. On a final week the projected
+    totals are the scores, so the block is the week's actual result.
+
+    Rows come back ordered by projected total, which is the order the
+    Scoreboard renders them in.
+    """
+    totals = {s["team_id"]: s["projected_total"] for s in sides}
+    # The standings' delivery order settles ties; a team the standings have
+    # never heard of (an expansion team's first week) follows in the week's own
+    # order rather than being dropped.
+    order = [tid for tid in ((standings or {}).get("teams") or {})
+             if tid in totals]
+    order += [tid for tid in totals if tid not in order]
+
+    entering = _entering_cumulative(standings, week, order)
+    earned = assign_ranking_points(totals, len(totals))
+    projected = {tid: round(entering[tid] + earned[tid], 2) for tid in order}
+    # A league with fewer teams than the cutoff normalizes against its last
+    # team; the real league always has more, but the transform is handed
+    # whatever the boxes hold.
+    cutoff_index = min(playoff_cutoff, len(projected)) - 1
+    cutoff_value = sorted(projected.values(), reverse=True)[cutoff_index]
+
+    # The rank the week would leave a team on: a tie there breaks the way the
+    # standings file's own rank column breaks it, which is its delivery order.
+    projected_rank = _ranks(projected, order)
+    # The rank the team holds now, which the page draws its arrow FROM. Teams
+    # level entering the week are settled in the order they sit in after it, so
+    # a tie manufactures no movement -- the rule docs/js/charts.js already
+    # states for the Standings table. Without it week 1, where every team
+    # enters on nothing, would draw a full set of arrows away from an order
+    # nobody earned.
+    settled_by_now = sorted(order, key=lambda tid: projected_rank[tid])
+    current_rank = _ranks(entering, settled_by_now)
+    by_id = {s["team_id"]: s for s in sides}
+    return [{
+        "team_id": tid,
+        "team_name": by_id[tid]["team_name"],
+        "abbrev": by_id[tid]["abbrev"],
+        "projected_total": totals[tid],
+        "projected_ranking_points": earned[tid],
+        "projected_cumulative": projected[tid],
+        "projected_normalized": round(projected[tid] - cutoff_value, 4),
+        "current_rank": current_rank[tid],
+        "projected_rank": projected_rank[tid],
+    } for tid in sorted(order, key=lambda t: -totals[t])]
+
+
+def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None,
+                    standings=None, playoff_cutoff=6):
+    """One week's box scores -> the week file the Scoreboard reads.
+
+    Separate from build_week because the two answer different questions from
+    the same boxes: build_week feeds the season's standings, this feeds one
+    week's page. Both are pure, so neither knows how the other is published.
+
+    `standings` is accumulate_weeks' return through the last final week -- the
+    season state the projected standings block is measured from. A playoff week
+    gets no block at all: the bracket does not hand out ranking points, so a
+    projection of them would be fiction. Nor does a week the standings cannot
+    reach behind (standings_reach_week); the page hides the section either way.
+
+    Returns None when ESPN answered with no matchups at all. That is not an
+    empty week, it is a week ESPN would not talk about, and a file built from
+    it would replace a published week with zero matchups -- which the page has
+    no way to tell from a week that simply has no games.
+    """
+    if not boxes:
+        return None
+    matchups = [
+        {"home": _side(b.home_team, b.home_score, b.home_lineup, week),
+         "away": _side(b.away_team, b.away_score, b.away_lineup, week)}
+        for b in boxes]
+    week_file = {
+        "week": week,
+        "season": season,
+        "is_playoff": is_playoff,
+        "status": week_status(boxes),
+        "fetched_at": fetched_at,
+        "matchups": matchups,
+    }
+    # No block on a playoff week -- the bracket hands out no ranking points --
+    # and none on a week the standings cannot reach behind.
+    if not is_playoff and standings_reach_week(standings, week):
+        sides = [s for m in matchups for s in (m["home"], m["away"]) if s]
+        week_file["projected_standings"] = _projected_standings(
+            sides, standings, week, playoff_cutoff)
+    return week_file
+
+
+# How far ahead of the first game the site starts showing the new season. ESPN
+# serves week-1 schedule rows and full rosters as soon as the league year
+# exists, which is weeks before anyone plays, so "ESPN answered" is no kickoff
+# signal at all. The first game being a week out is one: it puts the Week 1
+# preview up on the Tuesday before kickoff, which is what the spec asks for,
+# without handing the site to an empty season in August.
+KICKOFF_LEAD_DAYS = 7
+
+
+def near_kickoff(boxes, now, lead_days=KICKOFF_LEAD_DAYS):
+    """True when this week's games have started, or start within `lead_days`.
+
+    Read from the starters' kickoff times, the same game_date the week file's
+    player rows carry. A week ESPN serves no kickoff times for reads as far
+    off, so a schedule-only preseason answer cannot roll the season over.
+    """
+    horizon = now + timedelta(days=lead_days)
+    for pl in _starters(boxes):
+        when = utc(getattr(pl, "game_date", None))
+        if when is not None and when <= horizon:
+            return True
+    return False
+
+
+def publishes_this_season(season, final_weeks, kickoff_in_sight, published):
+    """Whether this run's data replaces what the site is serving.
+
+    `published` is the metadata of the standings file already on the site, or
+    None when there is none; `kickoff_in_sight` is whether any week this run
+    fetched is at or near kickoff (near_kickoff above).
+
+    Two questions, in order. Is the site still on last season? Then this is the
+    rollover, and it turns on kickoff week rather than the Tuesday after: the
+    standings publish with zero final weeks and empty per-week arrays -- which
+    the Standings and Position pages already read as their empty state -- and
+    the week files publish with them, so the Week 1 preview is up before Week 1
+    is done (spec 05, user story 36). A week that is already final rolls the
+    season over whatever the kickoffs say, since it cannot be final unplayed;
+    that is the floor if ESPN ever serves a slate without times.
+
+    Or is the site already on this season? Then the only rule is that a run
+    must never take it backwards. An early week ESPN would not serve stops the
+    accumulation before every later one, so a single missed fetch can hand back
+    fewer final weeks than are already published -- and publishing that would
+    drop weeks from the chart, the table, Top Scorers and the pivot until
+    tomorrow's run. Equal counts still publish: same weeks, fresher numbers.
+    """
+    if published is None:
+        return True
+    if published.get("season") != season:
+        return bool(final_weeks or kickoff_in_sight)
+    return final_weeks >= (published.get("completed_weeks") or 0)

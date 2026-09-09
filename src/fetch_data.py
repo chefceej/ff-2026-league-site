@@ -1,5 +1,8 @@
 """
-Fetch ESPN fantasy FOOTBALL league data -> docs/data/league_data.json.
+Fetch ESPN fantasy FOOTBALL league data -> docs/data/.
+
+Writes the season's standings to league_data.json and one matchup file per
+week to week_<N>.json, so the Scoreboard loads only the week on screen.
 
 Mirrors the baseball site's standings model:
   - each week, rank all teams by score -> ranking points (num_teams..1, ties averaged)
@@ -25,6 +28,10 @@ _espn_req.FANTASY_BASE_ENDPOINT = (
 
 from espn_api.football import League
 
+from week_data import (accumulate_weeks, build_week, build_week_file,
+                       near_kickoff, owner_name, publishes_this_season,
+                       weeks_to_fetch)
+
 # ---------------------------------------------------------------------------
 # Config (env-driven; no secrets in source)
 # ---------------------------------------------------------------------------
@@ -34,98 +41,42 @@ PLAYOFF_CUTOFF = int(os.environ.get("FF_PLAYOFF_CUTOFF", "6"))  # zero-line rank
 ESPN_S2 = os.environ.get("ESPN_S2")
 SWID = os.environ.get("SWID")
 
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..",
-                           "docs", "data", "league_data.json")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "data")
+OUTPUT_PATH = os.path.join(DATA_DIR, "league_data.json")
 
 
-def assign_ranking_points(scores_by_team_id, num_teams):
-    """{team_id: score} -> {team_id: ranking_points}. Ties share the average rank.
-
-    Best score gets num_teams points, worst gets 1.
-    """
-    ordered = sorted(scores_by_team_id.items(), key=lambda x: x[1], reverse=True)
-    points = {}
-    i = 0
-    while i < len(ordered):
-        j = i
-        while j < len(ordered) - 1 and ordered[j][1] == ordered[j + 1][1]:
-            j += 1
-        # ranks occupied by the tie group: (num_teams - i) .. (num_teams - j)
-        rank_sum = sum(num_teams - k for k in range(i, j + 1))
-        avg = rank_sum / (j - i + 1)
-        for k in range(i, j + 1):
-            points[ordered[k][0]] = avg
-        i = j + 1
-    return points
+def week_path(week):
+    """Where one week's matchups are published. One file per week is what lets
+    the Scoreboard load only the week on screen (spec 05, user story 39)."""
+    return os.path.join(DATA_DIR, f"week_{week}.json")
 
 
-def week_scores(league, week):
-    """Deprecated single-purpose helper; see fetch_week."""
-    res = fetch_week(league, week)
-    return res[0] if res else None
-
-
-# Lineup slot -> position bucket for the position-score pivot. Bench/IR skipped.
-SLOT_MAP = {
-    "QB": "QB", "RB": "RB", "WR": "WR", "TE": "TE",
-    "RB/WR/TE": "FLEX", "WR/TE": "FLEX", "FLEX": "FLEX",
-    "OP": "OP", "QB/RB/WR/TE": "OP",
-    "D/ST": "D/ST", "K": "K",
-}
-SKIP_SLOTS = {"BE", "IR", "BENCH"}
-POS_TABS = ["QB", "RB", "WR", "TE"]   # player-type tabs for Top Scorers
-TOP_N = 25
-
-
-def fetch_week(league, week):
-    """Return (scores_by_team_id, top_players, position_scores) for a played
-    week, else None.
-
-      scores_by_team_id : {team_id: team score}
-      top_players       : {"all": [...], "QB": [...], ...} of starter scores
-      position_scores   : {team_abbrev: {slot_bucket: points}}
-    """
+def fetch_boxes(league, week):
+    """One week's box scores, or None if ESPN would not serve them."""
     try:
-        boxes = league.box_scores(week)
+        return league.box_scores(week)
     except Exception as e:
         print(f"  week {week}: box_scores failed ({e})")
         return None
 
-    scores, all_players = {}, []
-    position_scores = {}
-    for b in boxes:
-        for team, score, lineup in (
-                (b.home_team, b.home_score, b.home_lineup),
-                (b.away_team, b.away_score, b.away_lineup)):
-            if team is None or team == 0:
-                continue
-            scores[team.team_id] = score
-            abbrev = getattr(team, "team_abbrev", "") or team.team_name
-            slots = position_scores.setdefault(abbrev, {})
-            for pl in lineup or []:
-                slot = getattr(pl, "slot_position", "")
-                if slot in SKIP_SLOTS:
-                    continue
-                bucket = SLOT_MAP.get(slot)
-                pts = float(getattr(pl, "points", 0) or 0)
-                if bucket:
-                    slots[bucket] = round(slots.get(bucket, 0) + pts, 2)
-                all_players.append({
-                    "name": pl.name,
-                    "pro_team": getattr(pl, "proTeam", ""),
-                    "fantasy_team": team.team_name,
-                    "position": getattr(pl, "position", ""),
-                    "score": round(pts, 2),
-                })
 
-    if not scores or all(s == 0 for s in scores.values()):
+def published_metadata():
+    """The metadata of the standings file already on the site, or None.
+
+    None also covers a file that cannot be read: an unreadable file is nothing
+    the site can be serving, so there is nothing for this run to protect.
+    """
+    try:
+        with open(OUTPUT_PATH) as f:
+            return json.load(f).get("metadata", {})
+    except (OSError, ValueError):
         return None
 
-    all_players.sort(key=lambda p: p["score"], reverse=True)
-    top_players = {"all": all_players[:TOP_N]}
-    for pos in POS_TABS:
-        top_players[pos] = [p for p in all_players if p["position"] == pos][:TOP_N]
-    return scores, top_players, position_scores
+
+def write_json(path, payload):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(payload, f, indent=1)
 
 
 def main():
@@ -142,48 +93,75 @@ def main():
     print(f"League {LEAGUE_ID} ({SEASON_YEAR}): {num_teams} teams, "
           f"{reg_weeks} regular-season weeks, cutoff at {PLAYOFF_CUTOFF}")
 
+    now_utc = datetime.now(timezone.utc)
+    fetched_at = now_utc.isoformat().replace("+00:00", "Z")
+
     team_meta = {}
     for t in teams:
-        owners = t.owners or []
-        if owners and isinstance(owners[0], dict):
-            owner = (owners[0].get("firstName", "") + " " +
-                     owners[0].get("lastName", "")).strip()
-        else:
-            owner = str(owners[0]) if owners else ""
+        owner = owner_name(t)
         team_meta[t.team_id] = {
             "team_id": t.team_id,
             "team_name": t.team_name,
             "team_abbrev": getattr(t, "team_abbrev", ""),
             "abbrev": getattr(t, "team_abbrev", ""),
             "owner": owner,
-            "scores_by_week": [],
-            "ranking_points_by_week": [],
-            "cumulative_points_by_week": [],
-            "normalized_by_week": [],
         }
 
-    cumulative = {tid: 0.0 for tid in team_meta}
-    completed_weeks = 0
-    top_players_by_week = []
-    position_scores_by_week = []
-    for week in range(1, reg_weeks + 1):
-        res = fetch_week(league, week)
-        if res is None:
+    weeks = []
+    boxes_by_week = []
+    # Whether any week this run fetched is at or near kickoff. ESPN answers
+    # with week-1 schedule rows and rosters long before anyone plays, so this,
+    # not the answer itself, is what says the new season has arrived.
+    kickoff_in_sight = False
+    # ESPN's mapping of matchup period -> the scoring periods it spans, which
+    # is what box_scores itself consults. Absent on a league object that never
+    # loaded its settings, and weeks_to_fetch keeps to the regular season then.
+    matchup_periods = getattr(league.settings, "matchup_periods", None)
+    for week, scoring_period in weeks_to_fetch(
+            reg_weeks, getattr(league, "current_week", None), matchup_periods):
+        # The week is the site's number for it; the scoring period is what ESPN
+        # answers to. The two differ only where a week spans more than one.
+        boxes = fetch_boxes(league, scoring_period)
+        if not boxes:
+            # None is a failed request; [] is a successful one ESPN answered
+            # with nothing. Neither is a week worth publishing, and writing the
+            # empty one would overwrite a week already on the site.
+            print(f"  week {week}: no box scores served; leaving it as it is")
             continue
-        scores, top_players, pos_scores = res
-        completed_weeks += 1
-        top_players_by_week.append(top_players)
-        position_scores_by_week.append(pos_scores)
-        rp = assign_ranking_points(scores, num_teams)
-        for tid in team_meta:
-            cumulative[tid] += rp.get(tid, 0)
-        cutoff_val = sorted(cumulative.values(), reverse=True)[PLAYOFF_CUTOFF - 1]
-        for tid, meta in team_meta.items():
-            meta["scores_by_week"].append(round(scores.get(tid, 0), 2))
-            meta["ranking_points_by_week"].append(rp.get(tid, 0))
-            meta["cumulative_points_by_week"].append(round(cumulative[tid], 2))
-            meta["normalized_by_week"].append(
-                round(cumulative[tid] - cutoff_val, 4))
+        # Every week past the last regular-season one is a playoff week. It
+        # gets a week file like any other, but never reaches the standings:
+        # accumulate_weeks skips the weeks marked here, and says why.
+        is_playoff = week > reg_weeks
+        wk = build_week(boxes, week, is_playoff=is_playoff)
+        kickoff_in_sight = kickoff_in_sight or near_kickoff(boxes, now_utc)
+        print(f"  week {week}: {wk['status']}"
+              f"{' (playoffs)' if is_playoff else ''}")
+        weeks.append(wk)
+        boxes_by_week.append((wk, boxes))
+
+    standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
+    # The week files are built after the standings because each one's projected
+    # standings block is measured from them. Built from the same box scores
+    # whatever the week's status, because a preview of an unfinished week is the
+    # point; written further down, once the run knows it is publishing this
+    # season at all.
+    week_files = [build_week_file(boxes, wk["week"], SEASON_YEAR,
+                                  is_playoff=wk["is_playoff"],
+                                  fetched_at=fetched_at,
+                                  standings=standings,
+                                  playoff_cutoff=PLAYOFF_CUTOFF)
+                  for wk, boxes in boxes_by_week]
+    final_weeks = standings["final_weeks"]
+    if standings["stopped_at_week"]:
+        # Loud on purpose: the run still publishes, so a red X is not the
+        # signal. Weeks after the gap wait for a run that can number them.
+        print(f"!! week {standings['stopped_at_week']} is missing or unfinished"
+              f"; standings stop after week {final_weeks}. Later weeks are "
+              f"held back until it lands.")
+    top_players_by_week = standings["top_players_by_week"]
+    position_scores_by_week = standings["position_scores_by_week"]
+    for tid, meta in team_meta.items():
+        meta.update(standings["teams"][tid])
 
     teams_out = sorted(team_meta.values(),
                        key=lambda m: m["cumulative_points_by_week"][-1]
@@ -193,18 +171,25 @@ def main():
         m["total_ranking_points"] = (m["cumulative_points_by_week"][-1]
                                      if m["cumulative_points_by_week"] else 0)
 
-    now_utc = datetime.now(timezone.utc)
     out = {
         "metadata": {
             "league_id": int(LEAGUE_ID),
             "season": SEASON_YEAR,
             "num_teams": num_teams,
             "regular_season_weeks": reg_weeks,
-            "completed_weeks": completed_weeks,
+            "completed_weeks": final_weeks,
             # aliases matching the baseball site's shape (used by the shared JS):
-            "current_matchup_week": completed_weeks,
+            "current_matchup_week": final_weeks,
             "total_matchup_weeks": reg_weeks,
             "playoff_cutoff": PLAYOFF_CUTOFF,
+            # The weeks the Scoreboard can open, and the one it opens on.
+            # Distinct from current_matchup_week above, which is an alias for
+            # the count of FINAL weeks that the standings and pivot read; this
+            # is the NFL week the site is currently previewing. The current
+            # week is the last week with a file rather than ESPN's own
+            # current_week, so the page never opens on a week nobody wrote.
+            "week_files": [w["week"] for w in week_files],
+            "current_week": week_files[-1]["week"] if week_files else None,
             "updated_at": now_utc.strftime("%Y-%m-%d %H:%M:%S UTC"),
             "last_updated": now_utc.isoformat(),
         },
@@ -212,18 +197,23 @@ def main():
         "top_players_by_week": top_players_by_week,
         "position_scores_by_week": position_scores_by_week,
     }
-    # Don't clobber existing standings with an empty preseason board: if no
-    # weeks are done yet but a data file already exists, leave it in place so
-    # the site keeps showing the most recent completed season until kickoff.
-    if completed_weeks == 0 and os.path.exists(OUTPUT_PATH):
-        print(f"0 completed weeks for {SEASON_YEAR}; keeping existing "
-              f"{OUTPUT_PATH} untouched.")
+    # Two ways a run declines to publish: the preseason, where the games are
+    # still weeks out and the site keeps showing the last completed season, and
+    # a run whose fetch has a hole in it, which would hand back fewer final
+    # weeks than are already up. By keyword, because four values of the same
+    # shape are easy to hand over in the wrong order and no test would notice.
+    if not publishes_this_season(season=SEASON_YEAR, final_weeks=final_weeks,
+                                 kickoff_in_sight=kickoff_in_sight,
+                                 published=published_metadata()):
+        print(f"Nothing to publish for {SEASON_YEAR}; keeping existing "
+              f"{OUTPUT_PATH} and the week files beside it untouched.")
         return
 
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, "w") as f:
-        json.dump(out, f, indent=1)
-    print(f"Wrote {OUTPUT_PATH} ({completed_weeks} completed weeks)")
+    for week_file in week_files:
+        write_json(week_path(week_file["week"]), week_file)
+    print(f"Wrote {len(week_files)} week file(s) to {DATA_DIR}")
+    write_json(OUTPUT_PATH, out)
+    print(f"Wrote {OUTPUT_PATH} ({final_weeks} final weeks)")
 
 
 if __name__ == "__main__":
