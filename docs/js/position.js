@@ -379,6 +379,7 @@ fetch("data/league_data.json", { cache: "no-store" })
     const mw = data.metadata?.current_matchup_week || 0;
     if (!mw || !data.position_scores_by_week?.length) {
       document.getElementById("empty-state").classList.remove("hidden");
+      showScoreboardPreview(data.metadata);
       return;
     }
     state.data = data;

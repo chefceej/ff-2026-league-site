@@ -29,7 +29,8 @@ _espn_req.FANTASY_BASE_ENDPOINT = (
 from espn_api.football import League
 
 from week_data import (accumulate_weeks, build_week, build_week_file,
-                       owner_name, weeks_to_fetch)
+                       near_kickoff, owner_name, publishes_this_season,
+                       weeks_to_fetch)
 
 # ---------------------------------------------------------------------------
 # Config (env-driven; no secrets in source)
@@ -56,6 +57,19 @@ def fetch_boxes(league, week):
         return league.box_scores(week)
     except Exception as e:
         print(f"  week {week}: box_scores failed ({e})")
+        return None
+
+
+def published_metadata():
+    """The metadata of the standings file already on the site, or None.
+
+    None also covers a file that cannot be read: an unreadable file is nothing
+    the site can be serving, so there is nothing for this run to protect.
+    """
+    try:
+        with open(OUTPUT_PATH) as f:
+            return json.load(f).get("metadata", {})
+    except (OSError, ValueError):
         return None
 
 
@@ -94,7 +108,11 @@ def main():
         }
 
     weeks = []
-    week_files = []
+    boxes_by_week = []
+    # Whether any week this run fetched is at or near kickoff. ESPN answers
+    # with week-1 schedule rows and rosters long before anyone plays, so this,
+    # not the answer itself, is what says the new season has arrived.
+    kickoff_in_sight = False
     for week in weeks_to_fetch(reg_weeks, getattr(league, "current_week", None)):
         boxes = fetch_boxes(league, week)
         if not boxes:
@@ -104,18 +122,24 @@ def main():
             print(f"  week {week}: no box scores served; leaving it as it is")
             continue
         wk = build_week(boxes, week)
+        kickoff_in_sight = kickoff_in_sight or near_kickoff(boxes, now_utc)
         print(f"  week {week}: {wk['status']}")
         weeks.append(wk)
-        # Built from the same box scores whatever the week's status, because a
-        # preview of an unfinished week is the point. Written further down,
-        # once the run knows it is publishing this season at all.
-        # is_playoff is always False while weeks_to_fetch stops at the last
-        # regular-season week; the playoff walk is a later ticket.
-        week_files.append(build_week_file(boxes, week, SEASON_YEAR,
-                                          is_playoff=week > reg_weeks,
-                                          fetched_at=fetched_at))
+        boxes_by_week.append((week, boxes))
 
     standings = accumulate_weeks(weeks, team_meta, PLAYOFF_CUTOFF)
+    # The week files are built after the standings because each one's projected
+    # standings block is measured from them. Built from the same box scores
+    # whatever the week's status, because a preview of an unfinished week is the
+    # point; written further down, once the run knows it is publishing this
+    # season at all. is_playoff is always False while weeks_to_fetch stops at
+    # the last regular-season week; the playoff walk is a later ticket.
+    week_files = [build_week_file(boxes, week, SEASON_YEAR,
+                                  is_playoff=week > reg_weeks,
+                                  fetched_at=fetched_at,
+                                  standings=standings,
+                                  playoff_cutoff=PLAYOFF_CUTOFF)
+                  for week, boxes in boxes_by_week]
     final_weeks = standings["final_weeks"]
     if standings["stopped_at_week"]:
         # Loud on purpose: the run still publishes, so a red X is not the
@@ -162,16 +186,16 @@ def main():
         "top_players_by_week": top_players_by_week,
         "position_scores_by_week": position_scores_by_week,
     }
-    # Don't clobber existing standings with an empty preseason board: if no
-    # weeks are done yet but a data file already exists, leave it in place so
-    # the site keeps showing the most recent completed season until kickoff.
-    if final_weeks == 0 and os.path.exists(OUTPUT_PATH):
-        # The week files wait with it. Publishing them now would overwrite last
-        # season's week_1.json while the standings still describe last season,
-        # so the Scoreboard would open a week from the wrong year. Both files
-        # start flowing together when the rollover ticket retires this guard.
-        print(f"0 final weeks for {SEASON_YEAR}; keeping existing "
-              f"{OUTPUT_PATH} and the previous season's week files untouched.")
+    # Two ways a run declines to publish: the preseason, where the games are
+    # still weeks out and the site keeps showing the last completed season, and
+    # a run whose fetch has a hole in it, which would hand back fewer final
+    # weeks than are already up. By keyword, because four values of the same
+    # shape are easy to hand over in the wrong order and no test would notice.
+    if not publishes_this_season(season=SEASON_YEAR, final_weeks=final_weeks,
+                                 kickoff_in_sight=kickoff_in_sight,
+                                 published=published_metadata()):
+        print(f"Nothing to publish for {SEASON_YEAR}; keeping existing "
+              f"{OUTPUT_PATH} and the week files beside it untouched.")
         return
 
     for week_file in week_files:

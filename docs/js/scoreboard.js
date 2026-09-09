@@ -109,8 +109,52 @@ function renderCards(weekFile, highlight) {
   }
 }
 
+/**
+ * The projected standings under the cards: every team in the file's order --
+ * which is by projected total -- with the ranking points the week would earn
+ * them, where their normalized points would land, and how far they would move.
+ *
+ * The heading is the honest part. An unfinished week's numbers are a
+ * projection and say so; a final week's are the standings themselves.
+ * `week` is the week on screen rather than the file's own number, so the
+ * heading and the week label can never name different weeks.
+ */
+function renderProjectedStandings(weekFile, week) {
+  const section = document.getElementById("projected-standings");
+  const rows = weekFile.projected_standings;
+  // A playoff week writes no block: the bracket hands out no ranking points.
+  if (!Array.isArray(rows) || !rows.length) {
+    section.classList.add("hidden");
+    return;
+  }
+  document.getElementById("projected-heading").textContent =
+    weekFile.status === "final"
+      ? `Standings after Week ${week}`
+      : `Projected standings after Week ${week}`;
+
+  const tbody = document.querySelector("#projected-table tbody");
+  tbody.innerHTML = "";
+  for (const r of rows) {
+    const norm = r.projected_normalized;
+    const tr = document.createElement("tr");
+    tr.innerHTML =
+      `<td class="rk"><span class="rk-num">${r.projected_rank}</span>` +
+        movementCell(r.current_rank - r.projected_rank) + `</td>` +
+      `<td class="left team"></td>` +
+      `<td class="proj">${pts(r.projected_total)}</td>` +
+      `<td class="rp">${pts(r.projected_ranking_points)}</td>` +
+      `<td class="norm ${norm >= 0 ? "pos" : "neg"}">${norm > 0 ? "+" : ""}${norm}</td>`;
+    // Team names come from ESPN and are league members' own words, so they are
+    // written as text rather than parsed as markup.
+    tr.querySelector("td.team").textContent = r.team_name;
+    tbody.appendChild(tr);
+  }
+  section.classList.remove("hidden");
+}
+
 function showEmpty(message) {
   document.getElementById("matchup-cards").innerHTML = "";
+  document.getElementById("projected-standings").classList.add("hidden");
   document.getElementById("empty-message").textContent = message;
   document.getElementById("empty-state").classList.remove("hidden");
 }
@@ -166,6 +210,7 @@ async function main() {
       if (mine !== latestRender) return;
       hideEmpty();
       renderCards(weekFile, highlight);
+      renderProjectedStandings(weekFile, week);
     } catch (e) {
       if (mine !== latestRender) return;
       showEmpty(`Week ${week} hasn't been published yet.`);

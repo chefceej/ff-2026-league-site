@@ -38,6 +38,7 @@ async function main() {
 
   if (!meta.completed_weeks || teams.length === 0) {
     showEmpty();
+    showScoreboardPreview(meta);
     return;
   }
 
@@ -329,14 +330,6 @@ function previousRanks(teams, completedWeeks) {
   return prev;
 }
 
-// Movement is announced in words as well as drawn, so the glyph and its color
-// are never the only signal.
-function describeMovement(move) {
-  if (move > 0) return { cls: "up", glyph: `\u25b2${move}`, words: `up ${move}` };
-  if (move < 0) return { cls: "down", glyph: `\u25bc${-move}`, words: `down ${-move}` };
-  return { cls: "flat", glyph: "\u2013", words: "no change" };
-}
-
 // An absent week reads as a dash, not as a genuine zero.
 function lastWeekPoints(team, week) {
   const v = team.ranking_points_by_week[week - 1];
@@ -353,13 +346,11 @@ function renderTable(teams, meta) {
   tbody.innerHTML = "";
   teams.forEach((t, i) => {
     const norm = t.normalized_by_week[t.normalized_by_week.length - 1];
-    const mv = describeMovement(prev[i] - (i + 1));
     const tr = document.createElement("tr");
     if (i + 1 === meta.playoff_cutoff) tr.classList.add("cutoff");
     tr.innerHTML =
       `<td class="rk"><span class="rk-num">${t.rank}</span>` +
-        `<span class="mv ${mv.cls}"><span class="mv-glyph" aria-hidden="true">${mv.glyph}</span>` +
-        `<span class="mv-label sr-only">${mv.words}</span></span></td>` +
+        movementCell(prev[i] - (i + 1)) + `</td>` +
       `<td class="left team">${t.team_name}</td>` +
       `<td class="left mgr">${t.owner || ""}</td>` +
       `<td class="lastwk">${lastWeekPoints(t, week)}</td>` +
