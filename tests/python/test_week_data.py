@@ -523,6 +523,99 @@ def test_a_week_with_matchups_still_produces_a_week_file():
     assert build_week_file(boxes, week=7, season=2026)["week"] == 7
 
 
+# ── The lineup and bench the matchup page pairs row by row ──
+
+def test_the_week_file_lists_the_starting_lineup_in_espns_slot_order():
+    # The order espn_api hands the lineup back in is the order the matchup
+    # page draws: it is preserved rather than sorted, so the page shows the
+    # lineup ESPN shows.
+    home = [FakePlayer(name="Passer", slot="QB"),
+            FakePlayer(name="Runner", slot="RB"),
+            FakePlayer(name="Benched", slot="BE"),
+            FakePlayer(name="Flexed", slot="RB/WR/TE"),
+            FakePlayer(name="Kicker", slot="K")]
+    boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+
+    assert [p["name"] for p in side["lineup"]] == [
+        "Passer", "Runner", "Flexed", "Kicker"]
+    assert [p["slot"] for p in side["lineup"]] == [
+        "QB", "RB", "RB/WR/TE", "K"]
+
+
+def test_bench_and_ir_are_kept_out_of_the_lineup_and_listed_as_bench():
+    home = [FakePlayer(name="Starter", slot="QB"),
+            FakePlayer(name="Reserve", slot="BE"),
+            FakePlayer(name="Hurt", slot="IR"),
+            FakePlayer(name="Also starting", slot="RB")]
+    boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+
+    assert [p["name"] for p in side["lineup"]] == ["Starter", "Also starting"]
+    assert [p["name"] for p in side["bench"]] == ["Reserve", "Hurt"]
+    assert [p["slot"] for p in side["bench"]] == ["BE", "IR"]
+
+
+def test_a_lineup_row_carries_the_whole_player_the_page_draws():
+    kick = datetime(2026, 9, 13, 17, 0, tzinfo=timezone.utc)
+    home = [FakePlayer(name="Marcus Whitfield", slot="TQB", position="TQB",
+                       pro_team="MIA", player_id=1000, injury="QUESTIONABLE",
+                       opponent="@NYJ", game_date=kick, projected=18.2)]
+    boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+
+    assert side["lineup"][0] == {
+        "player_id": 1000, "name": "Marcus Whitfield", "pro_team": "MIA",
+        "position": "QB", "slot": "TQB", "injury": "Q", "opponent": "@NYJ",
+        "kickoff": "2026-09-13T17:00:00Z", "on_bye": False,
+        "played": False, "projected": 18.2, "actual": 0.0}
+
+
+def test_a_lineup_row_on_bye_carries_no_opponent_and_no_kickoff():
+    # ESPN keeps last week's opponent and game time on a player whose team is
+    # off, and the page has no way to tell that from a real game. A bye row is
+    # marked as a bye and nothing else, so a zero never reads as a bad game.
+    stale = datetime(2026, 9, 13, 17, 0, tzinfo=timezone.utc)
+    home = [FakePlayer(name="Idle", slot="RB", on_bye_week=True,
+                       opponent="@NYJ", game_date=stale)]
+    boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    row = side["lineup"][0]
+
+    assert row["on_bye"] is True
+    assert row["opponent"] == ""
+    assert row["kickoff"] is None
+
+
+def test_the_played_flag_is_what_tells_an_actual_from_a_projection():
+    # Both numbers ride on every row; the flag is what says which one the page
+    # may show. An unplayed starter's actual is ESPN's running zero, not a
+    # score, so a page reading it without the flag would print a bust.
+    home = [FakePlayer(name="Done", slot="QB", game_played=100, points=26.4,
+                       projected=18.2),
+            FakePlayer(name="Waiting", slot="RB", game_played=0, points=0.0,
+                       projected=14.3)]
+    boxes = [FakeBox(FakeTeam(1), 26.4, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    lineup = side["lineup"]
+
+    assert [p["played"] for p in lineup] == [True, False]
+    assert [p["projected"] for p in lineup] == [18.2, 14.3]
+    assert [p["actual"] for p in lineup] == [26.4, 0.0]
+
+
+def test_a_playoff_bye_has_no_lineup_to_pair_against():
+    boxes = [FakeBox(FakeTeam(1), 0.0, [FakePlayer(name="Starter")], 0, 0.0, [])]
+    matchup = build_week_file(boxes, week=15, season=2026,
+                              is_playoff=True)["matchups"][0]
+
+    assert matchup["away"] is None
+    assert [p["name"] for p in matchup["home"]["lineup"]] == ["Starter"]
 # ── The projected standings block ──
 
 def four_team_boxes(totals, played=True):
@@ -966,3 +1059,29 @@ def test_a_week_going_final_publishes_over_the_week_before_it():
 def test_a_run_that_fetched_nothing_keeps_this_season_too():
     assert not publishes_this_season(2026, 0, False,
                                      {"season": 2026, "completed_weeks": 5})
+
+
+def test_espns_none_sentinel_never_reaches_the_page_as_text():
+    # espn_api does not leave an unknown NFL team or opponent empty: it leaves
+    # the *string* "None" there (BoxPlayer.pro_opponent's default, and
+    # PRO_TEAM_MAP[0]). A falsy check cannot catch a non-empty string, so the
+    # page would draw the word None where an opponent belongs.
+    home = [FakePlayer(name="Unplaced", slot="QB", pro_team="None",
+                       opponent="None", projected=5.0)]
+    boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+
+    assert side["lineup"][0]["pro_team"] == ""
+    assert side["lineup"][0]["opponent"] == ""
+
+
+def test_a_real_opponent_named_none_is_not_a_thing_but_a_real_one_survives():
+    home = [FakePlayer(name="Playing", slot="QB", pro_team="NE",
+                       opponent="@BUF", projected=5.0)]
+    boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+
+    assert (side["lineup"][0]["pro_team"],
+            side["lineup"][0]["opponent"]) == ("NE", "@BUF")

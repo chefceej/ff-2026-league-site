@@ -226,3 +226,102 @@ footer{padding:22px 24px; color:var(--mut); font-size:12px; text-align:center}
 /* ── Scoreboard: the projected standings under the cards ── */
 #projected-table td.proj,#projected-table td.rp{font-variant-numeric:tabular-nums}
 #projected-table td.rp{color:var(--field-dk); font-weight:700}
+
+/* ── Matchup page: two lineups paired slot by slot ── */
+.matchup-header{display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  margin:0 24px 14px; background:var(--paper); border:1px solid var(--line);
+  border-radius:14px; padding:12px 14px}
+.team-head{display:flex; align-items:center; gap:10px; min-width:0}
+/* The away half mirrors the home half, so both teams' numbers meet in the
+   middle the way the lineup rows below them do. */
+.team-head + .team-head{flex-direction:row-reverse; text-align:right}
+.team-head-logo{width:34px; height:34px; border-radius:7px; object-fit:contain; flex:none}
+.team-head-id{flex:1; min-width:0}
+.team-head-name{display:block; font-weight:700; overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+.team-head-meta{display:flex; gap:8px; font-size:12px; color:var(--mut)}
+.team-head + .team-head .team-head-meta{justify-content:flex-end}
+.team-head + .team-head .team-head-counts{text-align:right}
+.team-head-mgr{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.team-head-record{flex:none; font-variant-numeric:tabular-nums}
+/* Not a flex row: the words between the two counts are ordinary text, and a
+   flex item would have its spaces stripped ("1played ·8to play"). */
+.team-head-counts{display:block; font-size:12px; color:var(--mut);
+  font-variant-numeric:tabular-nums}
+.team-head-score{flex:none; display:flex; flex-direction:column; align-items:center}
+.team-head-total{font-size:20px; font-weight:800; color:var(--field-dk);
+  font-variant-numeric:tabular-nums}
+.total-label{font-size:10px; font-weight:700; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--mut)}
+
+.lineup-legend{display:grid; grid-template-columns:1fr 58px 1fr; gap:6px;
+  margin:0 24px; font-size:10px; font-weight:700; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--mut)}
+.legend-side{display:flex; gap:10px; justify-content:flex-end}
+.lineup-legend .legend-side:last-child{flex-direction:row-reverse}
+
+.lineup{margin:0 24px; background:var(--paper); border:1px solid var(--line);
+  border-radius:14px; overflow:hidden}
+.lineup-row{display:grid; grid-template-columns:1fr 58px 1fr; gap:6px;
+  align-items:center; padding:7px 10px}
+.lineup-row + .lineup-row{border-top:1px solid var(--line)}
+/* ESPN's own slot name, so a flex slot reads the way it does on ESPN. The
+   longest of them ("QB/RB/WR/TE") wraps inside its column rather than running
+   over the points beside it. */
+.slot-label{font-size:9.5px; font-weight:700; text-align:center; color:var(--mut);
+  text-transform:uppercase; letter-spacing:.03em; line-height:1.15;
+  overflow-wrap:anywhere}
+.slot-side{display:flex; align-items:center; gap:4px; min-width:0}
+.slot-side.away{flex-direction:row-reverse}
+.player{display:flex; align-items:center; gap:8px; flex:1; min-width:0}
+.slot-side.away .player{flex-direction:row-reverse; text-align:right}
+.player-shot{width:30px; height:30px; border-radius:50%; flex:none;
+  object-fit:cover; background:var(--field-lt)}
+.player-silhouette{fill:var(--mut); padding:3px}
+.player-id{flex:1; min-width:0}
+.player-name{display:block; font-size:13px; font-weight:700; overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+.player-meta,.player-game{display:flex; gap:6px; font-size:11px; color:var(--mut);
+  overflow:hidden; white-space:nowrap}
+.slot-side.away .player-meta,.slot-side.away .player-game{justify-content:flex-end}
+.player-pos{font-weight:600}
+.injury-tag{color:var(--neg); font-weight:800}
+.player-bye{font-weight:700; letter-spacing:.04em}
+.player-kick{white-space:nowrap}
+.player-pts{flex:none; display:flex; gap:8px; align-items:baseline;
+  font-variant-numeric:tabular-nums}
+.slot-side.away .player-pts{flex-direction:row-reverse}
+.pts-proj{font-size:12px; color:var(--mut)}
+.pts-actual{font-size:14px; font-weight:800; color:var(--ink)}
+.adv-mark{flex:none; font-size:10px; color:var(--field)}
+.slot-side.advantage .pts-actual,.slot-side.advantage .pts-proj{color:var(--field-dk)}
+
+.bench-control{margin:12px 24px}
+
+@media (max-width:600px){
+  /* Two team headers side by side leave neither one room for a team name, so
+     a phone reads them stacked -- and unmirrored, because the mirroring only
+     means anything when the two are shoulder to shoulder. */
+  .matchup-header{margin:0 12px 12px; padding:10px; gap:10px;
+    grid-template-columns:1fr}
+  .team-head + .team-head{flex-direction:row; text-align:left;
+    border-top:1px solid var(--line); padding-top:10px}
+  .team-head + .team-head .team-head-meta{justify-content:flex-start}
+  .team-head + .team-head .team-head-counts{text-align:left}
+  .team-head-logo{width:28px; height:28px}
+  .team-head-total{font-size:18px}
+  .lineup,.lineup-legend,.bench-control{margin-left:12px; margin-right:12px}
+  .lineup-row{padding:7px 6px; gap:3px}
+  .lineup-row,.lineup-legend{grid-template-columns:1fr 44px 1fr}
+  .player{gap:5px}
+  .player-shot{width:22px; height:22px}
+  .player-pts{gap:5px}
+  /* A narrow column cannot hold a name and a kickoff on one line each, so both
+     wrap onto as many lines as they need. A row that grew taller still says
+     everything; one that clipped would leave a player half-named and a kickoff
+     cut off mid-word. */
+  .player-name{white-space:normal; overflow:visible; text-overflow:clip}
+  .player-meta,.player-game{font-size:10px; gap:4px; flex-wrap:wrap;
+    overflow:visible; white-space:normal}
+  .player-kick{white-space:nowrap}
+}
