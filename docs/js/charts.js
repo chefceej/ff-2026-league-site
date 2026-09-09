@@ -13,8 +13,6 @@ const CUTOFF = "#c8a23c", CUTOFF_WIDTH = 2;
 const DIM_ALPHA = 0.22;
 const BASE_WIDTH = 2, BASE_POINT = 2;
 const LIT_WIDTH = 3.5, LIT_POINT = 4;
-// One key, one query parameter, both holding a team abbreviation.
-const HIGHLIGHT_KEY = "ff-highlight-team", HIGHLIGHT_PARAM = "team";
 
 // Chart.js resolves grid color and width per tick, so the cutoff line needs no
 // plugin. Tick values are rounded to the step's precision, so zero is exact.
@@ -244,6 +242,8 @@ function renderChart(teams, meta) {
 }
 
 // ── Highlight one team across the chart and the Standings table ──
+// The key, the resolution and teamKey live in highlight.js, shared with the
+// Scoreboard; what stays here is the chart and table styling they drive.
 
 /** No team highlighted: the index that matches no dataset and no table row. */
 const NONE = -1;
@@ -271,31 +271,6 @@ function styleDataset(ds, i, lit) {
   ds.pointBorderWidth = dimmed ? 0 : 1;
 }
 
-// Local storage is unavailable in some privacy modes, where merely touching it
-// throws. The highlight is a convenience: losing it must never take down the
-// sections main() renders after this one.
-function readRemembered() {
-  try { return localStorage.getItem(HIGHLIGHT_KEY); } catch (e) { return null; }
-}
-function writeRemembered(abbrev) {
-  try {
-    if (abbrev) localStorage.setItem(HIGHLIGHT_KEY, abbrev);
-    else localStorage.removeItem(HIGHLIGHT_KEY);
-  } catch (e) { /* the link still carries the choice; only the memory is lost */ }
-}
-
-/**
- * The abbreviation to highlight on load: the link's team if it names one we
- * know, else the remembered one if it does, else nothing. An unknown value is
- * ignored rather than corrected, and load never writes back — neither a stale
- * link nor someone else's shared one may overwrite what this device remembers.
- */
-function resolveHighlight(abbrevs) {
-  const known = a => (abbrevs.includes(a) ? a : "");
-  const linked = new URLSearchParams(location.search).get(HIGHLIGHT_PARAM);
-  return known(linked) || known(readRemembered());
-}
-
 /** Record the choice on this device and in the link, without navigating. */
 function rememberHighlight(abbrev) {
   const url = new URL(location.href);
@@ -304,13 +279,6 @@ function rememberHighlight(abbrev) {
   history.replaceState(null, "", url);
   writeRemembered(abbrev);
 }
-
-// The abbreviation a team is keyed by. The fetch script defaults team_abbrev to
-// the empty string (src/fetch_data.py) and this feature already spends "" as its
-// "no highlight" token, so an unfallen-back key would name None and light a team
-// nobody chose. Falling back to the name is what the fetch script's own position
-// bucketing and renderTable already do.
-const teamKey = t => t.team_abbrev || t.team_name;
 
 function setupHighlight(chart, teams) {
   // Datasets and Standings rows are both built from the delivered team order,

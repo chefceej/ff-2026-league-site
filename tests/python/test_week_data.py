@@ -4,15 +4,20 @@ Stand-ins mimic the espn_api box-score objects the fetcher actually sees:
 a BoxScore with home/away team, score and lineup, and BoxPlayers carrying
 slot_position, position, points, game_played (0-100) and on_bye_week.
 """
+from datetime import datetime, timedelta, timezone
+
 import pytest
 
 from week_data import (accumulate_weeks, assign_ranking_points,
-                       build_week, week_status, weeks_to_fetch)
+                       build_week, build_week_file, team_record, week_status,
+                       weeks_to_fetch)
 
 
 class FakePlayer:
     def __init__(self, name="Player", slot="QB", position="QB", points=0.0,
-                 game_played=0, on_bye_week=False, pro_team="NE"):
+                 game_played=0, on_bye_week=False, pro_team="NE",
+                 projected=0.0, player_id=0, injury=None, opponent="",
+                 game_date=None):
         self.name = name
         self.slot_position = slot
         self.position = position
@@ -20,13 +25,27 @@ class FakePlayer:
         self.game_played = game_played
         self.on_bye_week = on_bye_week
         self.proTeam = pro_team
+        self.projected_points = projected
+        self.playerId = player_id
+        self.injuryStatus = injury
+        self.pro_opponent = opponent
+        self.game_date = game_date
 
 
 class FakeTeam:
-    def __init__(self, team_id, name=None, abbrev=None):
+    def __init__(self, team_id, name=None, abbrev=None, owners=None,
+                 wins=0, losses=0, ties=0, logo_url="", outcomes=None):
         self.team_id = team_id
         self.team_name = name or f"Team {team_id}"
         self.team_abbrev = abbrev or f"T{team_id}"
+        self.owners = owners if owners is not None else []
+        self.wins = wins
+        self.losses = losses
+        self.ties = ties
+        self.logo_url = logo_url
+        # espn_api's per-week result list: 'W', 'L', 'T', or 'U' while the week
+        # is undecided, one entry per scheduled week with index 0 as week 1.
+        self.outcomes = outcomes if outcomes is not None else []
 
 
 class FakeBox:
@@ -273,3 +292,231 @@ def test_an_unfinished_week_after_the_last_final_one_is_fine():
              week(4, "upcoming", {1: 0.0, 2: 0.0})]
     standings = accumulate_weeks(weeks, team_ids=[1, 2], playoff_cutoff=1)
     assert standings["final_weeks"] == 2
+
+
+# ── The week file: one week's matchups as the Scoreboard reads them ──
+
+def test_build_week_file_carries_the_weeks_identity_and_status():
+    boxes = [box([FakePlayer(game_played=100)], [FakePlayer(game_played=100)])]
+    wf = build_week_file(boxes, week=3, season=2026, is_playoff=False,
+                         fetched_at="2026-09-09T00:00:00Z")
+    assert wf["week"] == 3
+    assert wf["season"] == 2026
+    assert wf["is_playoff"] is False
+    assert wf["status"] == "final"
+    assert wf["fetched_at"] == "2026-09-09T00:00:00Z"
+
+
+def test_the_week_file_names_both_teams_of_every_matchup():
+    home = FakeTeam(1, name="Home Team", abbrev="HOME", wins=3, losses=1,
+                    ties=1, logo_url="https://logos/1.png",
+                    owners=[{"firstName": "Ada", "lastName": "Lovelace"}])
+    away = FakeTeam(2, name="Away Team", abbrev="AWAY", wins=2, losses=3)
+    boxes = [FakeBox(home, 91.5, [FakePlayer(game_played=100, points=91.5)],
+                     away, 80.0, [FakePlayer(game_played=100, points=80.0)])]
+    wf = build_week_file(boxes, week=5, season=2026)
+
+    assert len(wf["matchups"]) == 1
+    side = wf["matchups"][0]["home"]
+    assert side["team_id"] == 1
+    assert side["team_name"] == "Home Team"
+    assert side["abbrev"] == "HOME"
+    assert side["owner"] == "Ada Lovelace"
+    assert side["logo_url"] == "https://logos/1.png"
+    assert side["record"] == {"wins": 3, "losses": 1, "ties": 1}
+    assert side["score"] == 91.5
+    assert wf["matchups"][0]["away"]["abbrev"] == "AWAY"
+
+
+def test_projected_total_blends_played_actuals_with_unplayed_projections():
+    home = [FakePlayer(name="Done", game_played=100, points=20.0, projected=15.0),
+            FakePlayer(name="Waiting", slot="RB", projected=12.5)]
+    away = [FakePlayer(name="Also done", game_played=100, points=9.0,
+                       projected=8.0)]
+    boxes = [FakeBox(FakeTeam(1), 20.0, home, FakeTeam(2), 9.0, away)]
+    wf = build_week_file(boxes, week=2, season=2026)
+
+    assert wf["status"] == "in-progress"
+    side = wf["matchups"][0]["home"]
+    assert side["projected_total"] == 32.5
+    assert side["played"] == 1
+    assert side["to_play"] == 1
+
+
+def test_a_final_weeks_projected_total_is_the_score_it_already_has():
+    # Every starter has played, so the blend has nothing left to project and
+    # the "projected" total reads as the box score (spec 05, projected total).
+    home = [FakePlayer(name="One", game_played=100, points=20.0, projected=15.0),
+            FakePlayer(name="Two", slot="RB", game_played=100, points=11.25,
+                       projected=9.0)]
+    away = [FakePlayer(name="Three", game_played=100, points=9.0, projected=8.0)]
+    boxes = [FakeBox(FakeTeam(1), 31.25, home, FakeTeam(2), 9.0, away)]
+    wf = build_week_file(boxes, week=2, season=2026)
+
+    assert wf["status"] == "final"
+    side = wf["matchups"][0]["home"]
+    assert side["projected_total"] == side["score"] == 31.25
+    assert (side["played"], side["to_play"]) == (2, 0)
+
+
+def test_a_starter_on_bye_is_counted_as_neither_played_nor_still_to_play():
+    home = [FakePlayer(name="Done", game_played=100, points=20.0, projected=15.0),
+            FakePlayer(name="Idle", slot="RB", on_bye_week=True)]
+    away = [FakePlayer(name="Also done", game_played=100, points=9.0)]
+    boxes = [FakeBox(FakeTeam(1), 20.0, home, FakeTeam(2), 9.0, away)]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+
+    assert (side["played"], side["to_play"]) == (1, 0)
+
+
+def test_leaders_are_the_three_best_starters_by_actual_if_played_else_projected():
+    home = [
+        FakePlayer(name="Played big", game_played=100, points=28.0,
+                   projected=10.0),
+        FakePlayer(name="Projected big", slot="RB", projected=22.0),
+        # Projected highest of anyone, but its game is over and it busted, so
+        # the actual is what ranks it: fourth, and out of the leaders.
+        FakePlayer(name="Played small", slot="WR", game_played=100, points=4.0,
+                   projected=30.0),
+        FakePlayer(name="Middling", slot="TE", projected=11.0),
+        FakePlayer(name="Benched", slot="BE", projected=99.0),
+    ]
+    boxes = [FakeBox(FakeTeam(1), 32.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+
+    assert [p["name"] for p in side["leaders"]] == [
+        "Played big", "Projected big", "Middling"]
+    assert [p["projected"] for p in side["leaders"]] == [10.0, 22.0, 11.0]
+    assert [p["actual"] for p in side["leaders"]] == [28.0, 0.0, 0.0]
+    assert [p["played"] for p in side["leaders"]] == [True, False, False]
+
+
+def test_a_team_with_fewer_than_three_starters_leads_with_what_it_has():
+    boxes = [FakeBox(FakeTeam(1), 5.0, [FakePlayer(name="Only one", projected=5.0)],
+                     FakeTeam(2), 0.0, [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    assert [p["name"] for p in side["leaders"]] == ["Only one"]
+
+
+@pytest.mark.parametrize("status, tag", [
+    ("QUESTIONABLE", "Q"),
+    ("DOUBTFUL", "D"),
+    ("OUT", "O"),
+    ("INJURY_RESERVE", "IR"),
+    ("SUSPENSION", "SUSP"),
+    ("ACTIVE", ""),
+    ("NORMAL", ""),
+    (None, ""),
+])
+def test_espn_injury_statuses_map_to_the_leagues_tags(status, tag):
+    boxes = [FakeBox(FakeTeam(1), 5.0,
+                     [FakePlayer(name="Hurting", projected=5.0, injury=status)],
+                     FakeTeam(2), 0.0, [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    assert side["leaders"][0]["injury"] == tag
+
+
+def test_a_kickoff_is_written_as_iso_8601_utc_whatever_zone_espn_used():
+    # 1:00 pm on the US east coast in September is 5:00 pm UTC.
+    kick = datetime(2026, 9, 13, 13, 0,
+                    tzinfo=timezone(timedelta(hours=-4)))
+    boxes = [FakeBox(FakeTeam(1), 5.0,
+                     [FakePlayer(name="Starter", projected=5.0, game_date=kick)],
+                     FakeTeam(2), 0.0, [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    assert side["leaders"][0]["kickoff"] == "2026-09-13T17:00:00Z"
+
+
+def test_a_player_with_no_kickoff_carries_none_rather_than_a_made_up_time():
+    boxes = [FakeBox(FakeTeam(1), 5.0,
+                     [FakePlayer(name="On bye", projected=0.0, on_bye_week=True)],
+                     FakeTeam(2), 0.0, [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    assert side["leaders"][0]["kickoff"] is None
+    assert side["leaders"][0]["on_bye"] is True
+
+
+def test_a_bye_starter_does_not_inflate_a_final_weeks_projected_total():
+    # The week is final with a starter on bye, because a bye is not a game
+    # anyone is waiting on. That starter can still carry a projection, and
+    # counting it would put the projected total above the score it settled at.
+    home = [FakePlayer(name="Done", game_played=100, points=20.0, projected=15.0),
+            FakePlayer(name="Idle", slot="RB", projected=8.4, on_bye_week=True)]
+    away = [FakePlayer(name="Also done", game_played=100, points=9.0)]
+    boxes = [FakeBox(FakeTeam(1), 20.0, home, FakeTeam(2), 9.0, away)]
+    wf = build_week_file(boxes, week=2, season=2026)
+
+    assert wf["status"] == "final"
+    side = wf["matchups"][0]["home"]
+    assert side["projected_total"] == side["score"] == 20.0
+
+
+def test_a_bye_starter_does_not_crowd_out_a_real_leader():
+    home = [FakePlayer(name="Playing", projected=6.0),
+            FakePlayer(name="Idle", slot="RB", projected=99.0, on_bye_week=True)]
+    boxes = [FakeBox(FakeTeam(1), 0.0, home, FakeTeam(2), 0.0,
+                     [FakePlayer(name="Lonely")])]
+    side = build_week_file(boxes, week=2, season=2026)["matchups"][0]["home"]
+    assert [p["name"] for p in side["leaders"]] == ["Playing", "Idle"]
+
+
+# ── The record a card shows: where the team stood entering that week ──
+
+def test_the_record_counts_only_the_weeks_before_the_one_being_written():
+    # One League object builds every week file, so the Team's season-to-date
+    # 10-3 must not be stamped onto week 4's card. Entering week 4 this team
+    # was 2-1.
+    team = FakeTeam(1, wins=10, losses=3,
+                    outcomes=["W", "L", "W", "W", "W", "L", "W", "W", "W",
+                              "W", "W", "L", "W"])
+    assert team_record(team, week=4) == {"wins": 2, "losses": 1, "ties": 0}
+
+
+def test_entering_week_one_every_team_has_played_nobody():
+    team = FakeTeam(1, wins=10, losses=3, outcomes=["W", "L", "W"])
+    assert team_record(team, week=1) == {"wins": 0, "losses": 0, "ties": 0}
+
+
+def test_an_undecided_week_counts_as_neither_a_win_nor_a_loss():
+    # ESPN marks a week it has not settled 'U'; it is in the list from the
+    # moment the schedule exists, so it must not read as a loss.
+    team = FakeTeam(1, outcomes=["W", "U", "U", "U"])
+    assert team_record(team, week=4) == {"wins": 1, "losses": 0, "ties": 0}
+
+
+def test_a_tie_is_counted_as_a_tie():
+    team = FakeTeam(1, outcomes=["W", "T", "L"])
+    assert team_record(team, week=4) == {"wins": 1, "losses": 1, "ties": 1}
+
+
+def test_a_team_with_no_outcome_list_falls_back_to_its_season_record():
+    # Nothing else in the file can be salvaged from a Team that lost its
+    # schedule, and today's record beats no record at all.
+    team = FakeTeam(1, wins=6, losses=7, ties=1, outcomes=[])
+    assert team_record(team, week=9) == {"wins": 6, "losses": 7, "ties": 1}
+
+
+def test_the_week_file_carries_the_record_the_team_took_into_the_week():
+    home = FakeTeam(1, wins=9, losses=1, outcomes=["W", "W", "L", "W"])
+    away = FakeTeam(2, wins=2, losses=8, outcomes=["L", "L", "W", "L"])
+    boxes = [FakeBox(home, 20.0, [FakePlayer(game_played=100, points=20.0)],
+                     away, 9.0, [FakePlayer(game_played=100, points=9.0)])]
+    matchup = build_week_file(boxes, week=3, season=2026)["matchups"][0]
+
+    assert matchup["home"]["record"] == {"wins": 2, "losses": 0, "ties": 0}
+    assert matchup["away"]["record"] == {"wins": 0, "losses": 2, "ties": 0}
+
+
+def test_a_week_espn_answers_with_no_matchups_produces_no_week_file():
+    # An empty-but-successful answer is not an empty week; it is a week ESPN
+    # would not talk about. Building a file from it would publish a week with
+    # zero matchups over a week that already has one, and the Scoreboard would
+    # render a blank under a live week label.
+    assert build_week_file([], week=7, season=2026,
+                           fetched_at="2026-09-09T00:00:00Z") is None
+
+
+def test_a_week_with_matchups_still_produces_a_week_file():
+    boxes = [box([FakePlayer(game_played=100)], [FakePlayer(game_played=100)])]
+    assert build_week_file(boxes, week=7, season=2026)["week"] == 7

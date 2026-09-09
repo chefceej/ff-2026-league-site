@@ -10,12 +10,15 @@ averaged); those points accumulate all season, then the total is shifted so
 ## How it works
 
 - `src/fetch_data.py` — pulls the league from ESPN (`espn_api`) and writes
-  `docs/data/league_data.json`. Reads `FF_LEAGUE_ID`, `FF_SEASON_YEAR`,
-  `FF_PLAYOFF_CUTOFF`, and `ESPN_S2` / `SWID` from the environment.
-- `src/week_data.py` — the pure per-week transform the fetcher runs on each
+  `docs/data/league_data.json` plus one `docs/data/week_<N>.json` per week.
+  Reads `FF_LEAGUE_ID`, `FF_SEASON_YEAR`, `FF_PLAYOFF_CUTOFF`, and
+  `ESPN_S2` / `SWID` from the environment.
+- `src/week_data.py` — the pure per-week transforms the fetcher runs on each
   week's box scores: week status (upcoming / in-progress / final), position
-  buckets, top scorers, and the standings accumulation over final weeks only.
-- `docs/` — the static site (Chart.js playoff-position chart + standings table).
+  buckets, top scorers and the standings accumulation over final weeks only,
+  plus the week file the Scoreboard reads (matchups, projected totals, leaders).
+- `docs/` — the static site: the Chart.js playoff-position chart and standings
+  table, the Scoreboard's per-week matchup cards, and the position pivot.
 - `.github/workflows/update_data.yml` — refreshes the data daily (7 AM UTC) and
   commits it. Once the 2026 season kicks off it populates automatically; until
   then it leaves the most recent completed season in place.
@@ -31,8 +34,11 @@ python3 -m http.server 8080 --directory docs/   # http://localhost:8080
 ## Tests
 
 A Playwright suite loads the site in Chromium against a frozen copy of the
-league data (`tests/fixtures/league_data.json`), so it never depends on the
-daily data commit and needs no credentials:
+league data (`tests/fixtures/league_data.json`) and two hand-built week files,
+one week in progress and one final, so it never depends on the daily data
+commit and needs no credentials. The week fixtures are written to the week
+file's full shape from the spec, including the lineups the matchup page will
+need, which runs ahead of what `build_week_file` emits today:
 
 ```bash
 npm install
@@ -40,9 +46,10 @@ npx playwright install chromium
 npm test
 ```
 
-A pytest suite covers the pure per-week transform in `src/week_data.py` —
-week finality, position buckets, top scorers, and the standings accumulation —
-against hand-built stand-ins, so it needs neither ESPN nor `espn_api`:
+A pytest suite covers the pure per-week transforms in `src/week_data.py` —
+week finality, position buckets, top scorers, the standings accumulation, and
+the week file's matchups, projected totals and leaders — against hand-built
+stand-ins, so it needs neither ESPN nor `espn_api`:
 
 ```bash
 pip install pytest

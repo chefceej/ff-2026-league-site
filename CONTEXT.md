@@ -71,7 +71,13 @@ own term above)
 A matchup or week shown after it is final, built from actual scores.
 _Avoid_: results, recap
 
+**Side**:
+One team's half of a matchup: the team plus what it did or is projected to do
+that week. A playoff bye is a matchup with only one side.
+_Avoid_: half, entry, participant
+
 **Projected total**:
 A team's expected score for a week: actual points for starters who have
-played plus projected points for those who have not.
+played plus projected points for those who have not. A starter on bye counts
+as nothing either way, so a final week's projected total is its score.
 _Avoid_: proj, expected score, live projection

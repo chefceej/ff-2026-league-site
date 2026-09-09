@@ -3,9 +3,11 @@
 Two layers, both free of espn_api and of the network, so the tests feed
 hand-built stand-ins for the library's box-score objects:
 
-  - per week   : week_status / build_week
+  - per week   : week_status / build_week / build_week_file
   - per season : assign_ranking_points / accumulate_weeks
 """
+
+from datetime import timezone
 
 # ESPN's Team QB slot: an NFL team's quarterbacks as one unit. The site counts
 # it as QB everywhere it groups by position (see CONTEXT.md, "QB slot").
@@ -33,6 +35,19 @@ POSITION_ALIASES = {TEAM_QB: "QB"}
 # would see a game in its first three hours as not yet started (spec 05,
 # "Further Notes"), which reads as upcoming rather than in progress.
 FULLY_PLAYED = 100
+
+
+def iso_utc(when):
+    """A kickoff as ISO 8601 UTC, or None when ESPN gave no time.
+
+    espn_api builds game_date with datetime.fromtimestamp, which yields a naive
+    datetime in the machine's local zone; astimezone reads a naive value as
+    local, so this converts rather than mislabels. A run on a UTC CI box and a
+    run on a laptop therefore write the same instant.
+    """
+    if when is None:
+        return None
+    return when.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
 def weeks_to_fetch(reg_weeks, current_week):
@@ -222,4 +237,153 @@ def accumulate_weeks(weeks, team_ids, playoff_cutoff):
         "teams": teams,
         "top_players_by_week": top_players_by_week,
         "position_scores_by_week": position_scores_by_week,
+    }
+
+
+def owner_name(team):
+    """The manager's display name. espn_api hands back a list that holds dicts
+    on a modern league and bare strings on an old one, and an empty list on a
+    team nobody claimed."""
+    owners = getattr(team, "owners", None) or []
+    if not owners:
+        return ""
+    first = owners[0]
+    if isinstance(first, dict):
+        return (first.get("firstName", "") + " " +
+                first.get("lastName", "")).strip()
+    return str(first)
+
+
+def _projected(player):
+    return round(float(getattr(player, "projected_points", 0) or 0), 2)
+
+
+def _actual(player):
+    return round(float(getattr(player, "points", 0) or 0), 2)
+
+
+def _live_points(player):
+    """What a starter is worth right now: the actual score once the game is
+    played, the projection until then. This is the one blend the projected
+    total and the leaders both read (CONTEXT.md, "Projected total").
+
+    A starter on bye is worth nothing either way. They have no game to wait on,
+    which is why a week can go final around them -- so carrying their
+    projection would push a settled week's projected total above its score.
+    """
+    if getattr(player, "on_bye_week", False):
+        return 0.0
+    return _actual(player) if _has_played(player) else _projected(player)
+
+
+# ESPN's injury statuses, and the tags the pages show for them. A status the
+# league does not carry a tag for -- ACTIVE, NORMAL, or None -- shows no tag.
+INJURY_TAGS = {
+    "QUESTIONABLE": "Q", "DOUBTFUL": "D", "OUT": "O",
+    "INJURY_RESERVE": "IR", "SUSPENSION": "SUSP",
+}
+
+LEADERS_PER_TEAM = 3
+
+
+def injury_tag(status):
+    return INJURY_TAGS.get(str(status or "").upper(), "")
+
+
+def _player(pl):
+    """One roster player, as both pages read them."""
+    return {
+        "player_id": getattr(pl, "playerId", None),
+        "name": pl.name,
+        "pro_team": getattr(pl, "proTeam", "") or "",
+        "position": normalize_position(getattr(pl, "position", "") or ""),
+        "slot": getattr(pl, "slot_position", "") or "",
+        "injury": injury_tag(getattr(pl, "injuryStatus", None)),
+        "opponent": getattr(pl, "pro_opponent", "") or "",
+        "kickoff": iso_utc(getattr(pl, "game_date", None)),
+        "on_bye": bool(getattr(pl, "on_bye_week", False)),
+        "played": _has_played(pl),
+        "projected": _projected(pl),
+        "actual": _actual(pl),
+    }
+
+
+# espn_api's per-week outcome codes. 'U' is a week ESPN has not settled, and it
+# is in the list from the moment the schedule exists, so it counts as nothing.
+OUTCOME_WIN, OUTCOME_LOSS, OUTCOME_TIE = "W", "L", "T"
+
+
+def team_record(team, week):
+    """The record the team took into `week`.
+
+    espn_api's Team carries the season-to-date wins/losses/ties, and one League
+    object builds every week file in a run -- so reading those would stamp
+    December's record onto September's box score, and rewrite it again every
+    night. outcomes is the per-week result list, index 0 being week 1, so the
+    weeks before this one are the record entering it.
+
+    A team whose schedule never loaded has no per-week list to slice; today's
+    record beats no record at all, so that is what it falls back to.
+    """
+    outcomes = getattr(team, "outcomes", None)
+    if not outcomes:
+        return {"wins": getattr(team, "wins", 0),
+                "losses": getattr(team, "losses", 0),
+                "ties": getattr(team, "ties", 0)}
+    before = [str(o).upper() for o in outcomes[:max(week - 1, 0)]]
+    return {"wins": before.count(OUTCOME_WIN),
+            "losses": before.count(OUTCOME_LOSS),
+            "ties": before.count(OUTCOME_TIE)}
+
+
+def _side(team, score, lineup, week):
+    """One team's half of a matchup, as the Scoreboard and matchup page read it."""
+    if team is None or team == 0:      # a playoff bye has no opponent
+        return None
+    starters = [pl for pl in lineup or [] if is_starter(pl)]
+    # A starter on bye is neither played nor still to play: their week is over
+    # without a game, which is the same rule that decides the week's finality.
+    return {
+        "team_id": team.team_id,
+        "team_name": team.team_name,
+        "abbrev": getattr(team, "team_abbrev", "") or team.team_name,
+        "owner": owner_name(team),
+        "logo_url": getattr(team, "logo_url", "") or "",
+        "record": team_record(team, week),
+        "score": round(float(score or 0), 2),
+        "projected_total": round(sum(_live_points(pl) for pl in starters), 2),
+        "played": sum(1 for pl in starters if _has_played(pl)),
+        "to_play": sum(1 for pl in starters
+                       if not _has_played(pl)
+                       and not getattr(pl, "on_bye_week", False)),
+        "leaders": [_player(pl) for pl in
+                    sorted(starters, key=_live_points,
+                           reverse=True)[:LEADERS_PER_TEAM]],
+    }
+
+
+def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None):
+    """One week's box scores -> the week file the Scoreboard reads.
+
+    Separate from build_week because the two answer different questions from
+    the same boxes: build_week feeds the season's standings, this feeds one
+    week's page. Both are pure, so neither knows how the other is published.
+
+    Returns None when ESPN answered with no matchups at all. That is not an
+    empty week, it is a week ESPN would not talk about, and a file built from
+    it would replace a published week with zero matchups -- which the page has
+    no way to tell from a week that simply has no games.
+    """
+    if not boxes:
+        return None
+    return {
+        "week": week,
+        "season": season,
+        "is_playoff": is_playoff,
+        "status": week_status(boxes),
+        "fetched_at": fetched_at,
+        "matchups": [
+            {"home": _side(b.home_team, b.home_score, b.home_lineup, week),
+             "away": _side(b.away_team, b.away_score, b.away_lineup, week)}
+            for b in boxes],
     }

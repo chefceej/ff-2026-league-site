@@ -175,3 +175,43 @@ table.heat td{color:#20302a}
 #pivot-table .sticky-col2.pos-col{left:70px}
 
 footer{padding:22px 24px; color:var(--mut); font-size:12px; text-align:center}
+
+/* ── Scoreboard: one card per matchup ── */
+.matchup-cards{display:grid; gap:14px; margin:0 24px;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+.matchup-card{display:block; padding:14px 16px; text-decoration:none; color:inherit;
+  background:var(--paper); border:1px solid var(--line); border-radius:14px}
+.matchup-card:hover{border-color:var(--field); box-shadow:0 1px 0 rgba(0,0,0,.04)}
+/* The highlighted team's matchup, keyed to the same choice and the same wash as
+   the Standings row. Placed after the hover rule so the tint survives the cursor. */
+.matchup-card.highlight{background:var(--field-hl)}
+.card-status{font-size:11px; font-weight:700; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--mut); margin-bottom:10px}
+
+.matchup-side{padding:8px 0}
+.matchup-side + .matchup-side{border-top:1px solid var(--line)}
+.side-main{display:flex; align-items:center; gap:10px}
+.side-logo{width:30px; height:30px; border-radius:6px; object-fit:contain; flex:none}
+.side-id{flex:1; min-width:0}
+.side-name{display:block; font-weight:700; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap}
+.side-meta{display:flex; gap:8px; font-size:12px; color:var(--mut)}
+.side-mgr{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.side-record{flex:none; font-variant-numeric:tabular-nums}
+.side-total{flex:none; font-size:19px; font-weight:800; color:var(--field-dk);
+  font-variant-numeric:tabular-nums}
+.matchup-side.winner .side-total{color:var(--field)}
+.winner-mark{flex:none; width:20px; height:20px; border-radius:50%; background:var(--field);
+  color:#fff; font-size:11px; font-weight:800; line-height:20px; text-align:center}
+
+.side-leaders{list-style:none; margin:6px 0 0; padding:0 0 0 40px;
+  display:flex; flex-direction:column; gap:2px}
+.leader{display:flex; justify-content:space-between; gap:10px; font-size:12.5px;
+  color:var(--mut)}
+.leader-name{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.leader-pts{flex:none; font-variant-numeric:tabular-nums; color:var(--ink); font-weight:600}
+
+@media (max-width:600px){
+  .matchup-cards{margin:0 12px; grid-template-columns:1fr}
+  .side-leaders{padding-left:0}
+}

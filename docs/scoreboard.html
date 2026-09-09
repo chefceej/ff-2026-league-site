@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scoreboard — Fantasy Football</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <h1><span class="ball">🏈</span>Scoreboard</h1>
+  <p class="sub" id="subtitle">Every matchup for the week, with projected totals and leaders.</p>
+  <nav class="header-nav">
+    <a href="index.html" class="nav-link">Standings</a>
+    <a href="scoreboard.html" class="nav-link active">Scoreboard</a>
+    <a href="position.html" class="nav-link">Position &amp; Score Analysis</a>
+  </nav>
+</header>
+
+<main>
+  <section id="week-section" class="hidden">
+    <div class="week-nav">
+      <button id="prev-week-btn" class="week-nav-btn" aria-label="Previous week">&lsaquo;</button>
+      <span id="week-nav-label" class="week-nav-label"></span>
+      <button id="next-week-btn" class="week-nav-btn" aria-label="Next week">&rsaquo;</button>
+    </div>
+    <div id="matchup-cards" class="matchup-cards"></div>
+  </section>
+
+  <section id="empty-state" class="hidden">
+    <div class="empty-card">
+      <h2>Nothing to show for this week yet 🏈</h2>
+      <p id="empty-message">This week's matchups haven't been published yet.</p>
+    </div>
+  </section>
+</main>
+
+<footer><span id="updated"></span></footer>
+
+<script src="js/highlight.js"></script>
+<script src="js/scoreboard.js"></script>
+</body>
+</html>

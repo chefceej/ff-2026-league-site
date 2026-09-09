@@ -2,9 +2,15 @@
 // documents, so the tests exercise the site exactly as GitHub Pages serves it.
 const { defineConfig, devices } = require("@playwright/test");
 
-// Same server the README documents, one port over so a dev server already
-// running on 8080 is never mistaken for the one under test.
-const PORT = 8081;
+// One test server per checkout, on a port of its own. `reuseExistingServer`
+// only checks that *something* answers the URL, so a port shared between the
+// main checkout and a worktree would quietly run one tree's suite against the
+// other tree's docs/ -- a green run proving nothing. Deriving the port from
+// this file's own directory keeps each checkout stable and distinct, and well
+// clear of the 8080 the README documents for serving the site by hand.
+const { createHash } = require("crypto");
+const PORT = Number(process.env.FF_TEST_PORT) ||
+  8100 + parseInt(createHash("sha1").update(__dirname).digest("hex").slice(0, 4), 16) % 400;
 
 module.exports = defineConfig({
   testDir: "./tests",
