@@ -16,9 +16,11 @@ averaged); those points accumulate all season, then the total is shifted so
 - `src/week_data.py` — the pure per-week transforms the fetcher runs on each
   week's box scores: week status (upcoming / in-progress / final), position
   buckets, top scorers and the standings accumulation over final weeks only,
-  plus the week file the Scoreboard reads (matchups, projected totals, leaders).
+  plus the week file the Scoreboard reads (matchups, projected totals, leaders,
+  and each team's lineup and bench).
 - `docs/` — the static site: the Chart.js playoff-position chart and standings
-  table, the Scoreboard's per-week matchup cards, and the position pivot.
+  table, the Scoreboard's per-week matchup cards, the matchup page one of those
+  cards opens (`matchup.html?week=N&team=ABBREV`), and the position pivot.
 - `.github/workflows/update_data.yml` — refreshes the data daily (7 AM UTC) and
   commits it. Once the 2026 season kicks off it populates automatically; until
   then it leaves the most recent completed season in place.

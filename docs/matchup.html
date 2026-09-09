@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matchup — Fantasy Football</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <h1><span class="ball">🏈</span>Matchup</h1>
+  <p class="sub" id="subtitle"></p>
+  <!-- Not in the nav itself (spec 05): this page is reached from a Scoreboard
+       card, and carries the nav only so it is not a dead end. -->
+  <nav class="header-nav">
+    <a href="index.html" class="nav-link">Standings</a>
+    <a href="scoreboard.html" class="nav-link">Scoreboard</a>
+    <a href="position.html" class="nav-link">Position &amp; Score Analysis</a>
+  </nav>
+</header>
+
+<main>
+  <section id="matchup-section" class="hidden">
+    <div id="matchup-header" class="matchup-header"></div>
+
+    <div class="lineup-legend">
+      <span class="legend-side"><span>Proj</span><span>Pts</span></span>
+      <span class="legend-slot"></span>
+      <span class="legend-side"><span>Proj</span><span>Pts</span></span>
+    </div>
+    <div id="lineup-rows" class="lineup"></div>
+
+    <div class="bench-control">
+      <button id="bench-toggle" class="mini-btn" aria-expanded="false"
+              aria-controls="bench-rows">Show bench</button>
+    </div>
+    <div id="bench-rows" class="lineup hidden"></div>
+  </section>
+
+  <section id="empty-state" class="hidden">
+    <div class="empty-card">
+      <h2>Nothing to show for this matchup yet 🏈</h2>
+      <p id="empty-message">This week's matchups haven't been published yet.</p>
+    </div>
+  </section>
+</main>
+
+<footer><span id="updated"></span></footer>
+
+<script src="js/highlight.js"></script>
+<script src="js/matchup.js"></script>
+</body>
+</html>
