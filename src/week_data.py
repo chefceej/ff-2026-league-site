@@ -294,6 +294,19 @@ def injury_tag(status):
     return INJURY_TAGS.get(str(status or "").upper(), "")
 
 
+# espn_api does not leave an unknown NFL team or opponent empty: BoxPlayer sets
+# pro_opponent to the string "None" and only overwrites it when two lookups
+# both land, and PRO_TEAM_MAP[0] is 'None' as well. A falsy guard cannot catch a
+# non-empty string, so the site would print the word where a team belongs.
+ESPN_ABSENT = "None"
+
+
+def _espn_str(value):
+    """One of espn_api's string fields, with its sentinel read as absent."""
+    text = str(value or "").strip()
+    return "" if text == ESPN_ABSENT else text
+
+
 def _player(pl):
     """One roster player, as both pages read them."""
     # ESPN leaves last week's opponent and game time on a player whose team is
@@ -304,11 +317,11 @@ def _player(pl):
     return {
         "player_id": getattr(pl, "playerId", None),
         "name": pl.name,
-        "pro_team": getattr(pl, "proTeam", "") or "",
+        "pro_team": _espn_str(getattr(pl, "proTeam", "")),
         "position": normalize_position(getattr(pl, "position", "") or ""),
         "slot": getattr(pl, "slot_position", "") or "",
         "injury": injury_tag(getattr(pl, "injuryStatus", None)),
-        "opponent": "" if on_bye else (getattr(pl, "pro_opponent", "") or ""),
+        "opponent": "" if on_bye else _espn_str(getattr(pl, "pro_opponent", "")),
         "kickoff": None if on_bye else iso_utc(getattr(pl, "game_date", None)),
         "on_bye": on_bye,
         "played": _has_played(pl),
@@ -373,10 +386,12 @@ def _side(team, score, lineup, week):
         "leaders": [_player(pl) for pl in
                     sorted(starters, key=_live_points,
                            reverse=True)[:LEADERS_PER_TEAM]],
-        # ESPN's own lineup order, untouched: the matchup page pairs the two
-        # sides by index, so re-sorting either one here would put a team's
-        # kicker opposite the other team's quarterback. Everything that does
-        # not score for the team -- bench and IR alike -- is the bench.
+        # ESPN's own lineup order, untouched: it is the order the matchup page
+        # draws the rows in, and sorting here would only invent an order ESPN
+        # did not give. The page pairs the two sides on the slot rather than on
+        # the position in this list, so a side missing a slot leaves a gap
+        # instead of shifting every row under it. Everything that does not
+        # score for the team -- bench and IR alike -- is the bench.
         "lineup": [_player(pl) for pl in starters],
         "bench": [_player(pl) for pl in benched],
     }

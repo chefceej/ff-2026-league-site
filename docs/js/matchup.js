@@ -198,16 +198,46 @@ function markAdvantage(cell) {
 }
 
 /**
- * Pair the two lineups by index and draw a row each. ESPN's own slot order is
- * what makes the pairing meaningful, so neither side is sorted here.
- * `compare` is off for the bench, which is not a matchup and has no advantage.
+ * Walk the two lineups together and pair them slot by slot.
+ *
+ * By index would be simpler and is wrong: the week file carries ESPN's roster
+ * order with nothing padding an unfilled starting slot, so a manager who drops
+ * a tight end and never refills the slot shifts every row below it -- and the
+ * page would then label a row for one position, put two different positions in
+ * it, and hand out an advantage mark between them. A side without the slot
+ * gets an empty cell instead, which is the row the spec's "no advantage on an
+ * empty slot" rule is about.
+ *
+ * A slot only one side filled takes a row of its own, in the place the lineups
+ * agree on. If the two ever disagree on order outright, the pairing degrades
+ * into single-sided rows: a visible gap, never a confident wrong answer.
+ */
+function pairLineups(home, away) {
+  const rows = [];
+  let i = 0, j = 0;
+  while (i < home.length && j < away.length) {
+    if (home[i].slot === away[j].slot) {
+      rows.push([home[i++], away[j++]]);
+    } else if (away.slice(j).some(p => p.slot === home[i].slot)) {
+      // Home's slot turns up further down the away lineup, so what is in the
+      // way is a slot home did not fill.
+      rows.push([null, away[j++]]);
+    } else {
+      rows.push([home[i++], null]);
+    }
+  }
+  while (i < home.length) rows.push([home[i++], null]);
+  while (j < away.length) rows.push([null, away[j++]]);
+  return rows;
+}
+
+/**
+ * Draw a row per pairing. `compare` is off for the bench, which is not a
+ * matchup and has no advantage to hand out.
  */
 function renderRows(holder, home, away, { compare }) {
   holder.innerHTML = "";
-  const rows = Math.max(home.length, away.length);
-  for (let i = 0; i < rows; i++) {
-    const h = home[i] || null;
-    const a = away[i] || null;
+  for (const [h, a] of pairLineups(home, away)) {
     const slot = (h || a).slot;
     const row = el("div", "lineup-row");
     const homeCell = playerCell(h, "home");

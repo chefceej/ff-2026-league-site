@@ -45,12 +45,36 @@ async function openMatchup(page, {
   return data;
 }
 
-/** The two lineups paired the way the page has to pair them. */
+/**
+ * The two lineups paired the way the page has to pair them. The fixtures give
+ * both sides the same slots in the same order, so for them this is index
+ * pairing; the tests that pull a slot out of one side spell out the answer
+ * themselves rather than leaning on this.
+ */
 const pairs = (matchup, key = "lineup") => {
   const home = matchup.home ? matchup.home[key] : [];
   const away = matchup.away ? matchup.away[key] : [];
   return Array.from({ length: Math.max(home.length, away.length) },
                     (_, i) => [home[i] || null, away[i] || null]);
+};
+
+/** Every row's slot label, home player and away player, in page order. */
+const rowShapes = async page => {
+  await page.locator("#lineup-rows .lineup-row").first().waitFor();
+  return page.locator("#lineup-rows .lineup-row").evaluateAll(rows =>
+    rows.map(r => {
+      const text = (side, sel) => {
+        const node = r.querySelector(`.slot-side.${side} ${sel}`);
+        return node ? node.textContent : null;
+      };
+      return {
+        label: r.querySelector(".slot-label").textContent,
+        home: text("home", ".player-name"),
+        away: text("away", ".player-name"),
+        advantage: r.querySelector(".slot-side.advantage.home") ? "home"
+          : r.querySelector(".slot-side.advantage.away") ? "away" : "",
+      };
+    }));
 };
 
 const oneDecimal = n => n.toFixed(1);
@@ -377,6 +401,75 @@ test.describe("The advantage mark", () => {
   });
 });
 
+test.describe("Lineups that are not the same shape", () => {
+  // Index pairing survives the frozen fixtures only because both sides were
+  // hand-written with identical slots. A manager who drops a tight end and
+  // never refills the slot shifts every row below it, which is how a D/ST ends
+  // up labelled as a kicker's row with a confident advantage mark on it.
+  const SLOTS = ["QB", "RB", "RB", "WR", "WR", "TE", "RB/WR/TE", "D/ST", "K"];
+
+  test("keeps each row on one slot when a side is short in the middle",
+       async ({ page }) => {
+    const live = loadWeekFixture("in-progress");
+    const m = live.matchups[0];
+    const [dropped] = m.away.lineup.splice(5, 1);       // the away tight end
+    expect(dropped.slot).toBe("TE");
+    await openMatchup(page, { weeks: { 14: live }, query: "?week=14&team=CJ" });
+
+    const shapes = await rowShapes(page);
+    expect(shapes.map(r => r.label)).toEqual(SLOTS);
+    expect(shapes.map(r => r.home)).toEqual(m.home.lineup.map(p => p.name));
+    // The tight-end row has nobody opposite it; everything below stays paired
+    // with its own slot rather than sliding up one.
+    expect(shapes[5].away).toBe(null);
+    expect(shapes.map(r => r.away)).toEqual([
+      ...m.away.lineup.slice(0, 5).map(p => p.name),
+      null,
+      ...m.away.lineup.slice(5).map(p => p.name),
+    ]);
+    // And no mark is handed out across positions, or on the empty row.
+    expect(shapes.map(r => r.advantage)).toEqual(
+      ["home", "", "away", "home", "away", "", "home", "away", "away"]);
+  });
+
+  test("gives a slot only the other side filled a row of its own",
+       async ({ page }) => {
+    const live = loadWeekFixture("in-progress");
+    const m = live.matchups[0];
+    m.home.lineup.splice(5, 1);                         // the home tight end
+    await openMatchup(page, { weeks: { 14: live }, query: "?week=14&team=CJ" });
+
+    const shapes = await rowShapes(page);
+    expect(shapes.map(r => r.label)).toEqual(SLOTS);
+    expect(shapes[5].home).toBe(null);
+    expect(shapes[5].away).toBe(m.away.lineup[5].name);
+    expect(shapes[5].advantage).toBe("");
+    await expect(page.locator("#lineup-rows .slot-side.home.empty"))
+      .toHaveCount(1);
+  });
+
+  test("never pairs a benched player against an injured-reserve one",
+       async ({ page }) => {
+    const live = loadWeekFixture("in-progress");
+    const m = live.matchups[0];
+    m.away.bench[2].slot = "IR";
+    await openMatchup(page, { weeks: { 14: live }, query: "?week=14&team=CJ" });
+    await page.locator("#bench-toggle").click();
+
+    await expect(page.locator("#bench-rows .slot-label"))
+      .toHaveText(["BE", "BE", "BE", "IR"]);
+    // The third bench row keeps the home player and loses its opposite; the
+    // IR gets a row of its own.
+    await expect(page.locator("#bench-rows .lineup-row").nth(2)
+      .locator(".slot-side.away.empty")).toHaveCount(1);
+    await expect(page.locator("#bench-rows .lineup-row").nth(3)
+      .locator(".slot-side.home.empty")).toHaveCount(1);
+    await expect(page.locator("#bench-rows .lineup-row").nth(3)
+      .locator(".slot-side.away .player-name"))
+      .toHaveText(m.away.bench[2].name);
+  });
+});
+
 test.describe("The bench", () => {
   test("stays hidden until the toggle asks for it", async ({ page }) => {
     const live = loadWeekFixture("in-progress");
@@ -422,7 +515,10 @@ test.describe("Headshots", () => {
     // neither frozen week has one, hence the slot swap here.
     const live = loadWeekFixture("in-progress");
     const starter = live.matchups[0].home.lineup[0];
+    // Both sides: a Team QB league runs the slot league-wide, and the rows
+    // pair on it.
     starter.slot = "TQB";
+    live.matchups[0].away.lineup[0].slot = "TQB";
     await openMatchup(page, { weeks: { 14: live }, query: "?week=14&team=CJ" });
 
     const shot = page.locator("#lineup-rows .lineup-row").first()
