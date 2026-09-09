@@ -54,26 +54,49 @@ def iso_utc(when):
     return None if when is None else when.isoformat().replace("+00:00", "Z")
 
 
-def weeks_to_fetch(reg_weeks, current_week):
-    """Every week ESPN can actually answer for, in order, playoffs included.
+def weeks_to_fetch(reg_weeks, current_week, matchup_periods=None):
+    """The weeks ESPN can actually answer for: (week, scoring period) pairs.
 
-    espn_api's box_scores(week) has no else branch for a week beyond
-    league.current_week: it silently serves the current week's box scores
-    instead of the week asked for. Asking for weeks the league has not reached
-    therefore hands back the same week over and over, and once that week goes
-    final it would be counted once per remaining week of the season. Asking
-    only for weeks that exist is what prevents it.
+    espn_api's box_scores(week) takes a SCORING period and looks up the matchup
+    period holding it, with no else branch either side of the league's range:
+    a week past league.current_week silently serves the current week's box
+    scores, and a scoring period belonging to no matchup period silently serves
+    the current matchup period's. Both hand back a week the run already has,
+    under a second week number -- and once that week goes final it would be
+    counted twice. Asking only for weeks that exist is what prevents it.
 
-    The walk runs past reg_weeks into the playoff weeks, because ESPN serves
-    them and the Scoreboard shows them (spec 05, user story 17). What stops at
-    reg_weeks is the standings, not the fetch: build_week marks a playoff week
-    and accumulate_weeks leaves it out. A season ESPN reports no current week
-    for has nothing to say about how far the bracket has got, so the regular
-    season is as far as the walk goes.
+    The two units are why this returns pairs. The site's week is a matchup
+    period (CONTEXT.md, "Week"), which is what the file is named for and what
+    reg_weeks counts; ESPN wants the scoring period the week starts in. They
+    are the same number in a league whose rounds are one week each, and part
+    company the moment one is not -- a two-week championship is ONE week of the
+    site, so its second scoring period is not a week at all.
+
+    A week is in reach when the scoring period it starts in is: that is what
+    puts a round the league has only half played on the Scoreboard as a
+    preview, and what stops the walk at the last week the league actually has,
+    however far ESPN's own scoring periods run past it. A multi-week round is
+    read from the scoring period it starts in, so a round still under way is
+    previewed from its first week rather than from nothing.
+
+    `matchup_periods` is ESPN's mapping of matchup period -> its scoring
+    periods (league.settings.matchup_periods; its keys arrive as strings).
+    Without it there is no telling the two units apart, so the walk keeps to
+    the regular season, where a league has one week per week.
     """
     if current_week is None:          # a season ESPN reports nothing about
         current_week = reg_weeks
-    return list(range(1, current_week + 1))
+    if not matchup_periods:
+        return [(week, week)
+                for week in range(1, min(reg_weeks, current_week) + 1)]
+    weeks = []
+    for week, scoring_periods in matchup_periods.items():
+        if not scoring_periods:
+            continue
+        starts_at = min(int(period) for period in scoring_periods)
+        if starts_at <= current_week:
+            weeks.append((int(week), starts_at))
+    return sorted(weeks)
 
 
 def normalize_position(position):

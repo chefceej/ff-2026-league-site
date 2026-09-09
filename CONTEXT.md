@@ -53,6 +53,13 @@ _Avoid_: future week, next week
 A week in which at least one game has started and the week is not yet final.
 _Avoid_: live week, partial week
 
+**Scoring period**:
+ESPN's own week number, which is not always the site's. A week is one matchup
+period and usually spans one scoring period, but a league can run a playoff
+round over two, and the NFL's scoring periods carry on past the league's last
+week either way. ESPN is asked for a week by the scoring period it starts in.
+_Avoid_: espn week, period (on its own)
+
 **Regular-season week**:
 A week up to and including the league's last regular-season week, where ranking
 points are earned. Only these weeks feed the standings.

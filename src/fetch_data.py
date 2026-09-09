@@ -113,8 +113,15 @@ def main():
     # with week-1 schedule rows and rosters long before anyone plays, so this,
     # not the answer itself, is what says the new season has arrived.
     kickoff_in_sight = False
-    for week in weeks_to_fetch(reg_weeks, getattr(league, "current_week", None)):
-        boxes = fetch_boxes(league, week)
+    # ESPN's mapping of matchup period -> the scoring periods it spans, which
+    # is what box_scores itself consults. Absent on a league object that never
+    # loaded its settings, and weeks_to_fetch keeps to the regular season then.
+    matchup_periods = getattr(league.settings, "matchup_periods", None)
+    for week, scoring_period in weeks_to_fetch(
+            reg_weeks, getattr(league, "current_week", None), matchup_periods):
+        # The week is the site's number for it; the scoring period is what ESPN
+        # answers to. The two differ only where a week spans more than one.
+        boxes = fetch_boxes(league, scoring_period)
         if not boxes:
             # None is a failed request; [] is a successful one ESPN answered
             # with nothing. Neither is a week worth publishing, and writing the

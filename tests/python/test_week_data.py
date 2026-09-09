@@ -223,37 +223,102 @@ def test_a_slot_that_scores_for_nobody_is_left_out_of_the_top_scorers():
 
 # ── The week number: what keeps one week from being counted as several ──
 
+def one_period_each(last):
+    """ESPN's matchup_periods for a league whose weeks are one week each.
+
+    Keys arrive from ESPN's JSON as strings, which is how the real mapping
+    reads, so the transform has to cope with them.
+    """
+    return {str(week): [week] for week in range(1, last + 1)}
+
+
+def fetched(*args, **kwargs):
+    """Just the week numbers weeks_to_fetch would walk."""
+    return [week for week, _ in weeks_to_fetch(*args, **kwargs)]
+
+
 def test_the_fetcher_asks_only_for_weeks_the_league_has_reached():
     # espn_api's box_scores(week) has no else branch for a week past
     # league.current_week: it quietly serves the CURRENT week instead. Asking
     # for weeks 2..14 during week 1 would hand back week 1 thirteen more times.
-    assert weeks_to_fetch(reg_weeks=14, current_week=1) == [1]
-    assert weeks_to_fetch(reg_weeks=14, current_week=5) == [1, 2, 3, 4, 5]
-    assert weeks_to_fetch(reg_weeks=14, current_week=14) == list(range(1, 15))
+    periods = one_period_each(17)
+    assert fetched(14, 1, periods) == [1]
+    assert fetched(14, 5, periods) == [1, 2, 3, 4, 5]
+    assert fetched(14, 14, periods) == list(range(1, 15))
 
 
 def test_the_fetcher_walks_past_the_regular_season_into_the_playoffs():
     # The playoff weeks run past reg_season_count and ESPN serves them, so the
     # Scoreboard gets a file for each of them. Stopping at reg_weeks would leave
     # the page on week 14 for the rest of the season.
-    assert weeks_to_fetch(reg_weeks=14, current_week=17) == list(range(1, 18))
+    assert fetched(14, 17, one_period_each(17)) == list(range(1, 18))
 
 
 def test_the_fetcher_asks_no_further_than_the_playoffs_have_reached():
     # Same reason as the regular season: box_scores(week) past current_week
     # quietly serves the current week again, so a week 16 that has not arrived
     # would be week 15 wearing week 16's number.
-    assert weeks_to_fetch(reg_weeks=14, current_week=15) == list(range(1, 16))
+    assert fetched(14, 15, one_period_each(17)) == list(range(1, 16))
+
+
+def test_the_fetcher_stops_at_the_last_week_the_league_actually_has():
+    # ESPN's current week is a scoring period and can run past the league's
+    # last matchup period -- the NFL plays an eighteenth week whether or not
+    # the league does. A week with no matchup period of its own falls through
+    # box_scores' lookup to the CURRENT matchup period, so asking for it would
+    # publish the last week's games again under a number nobody played.
+    assert fetched(14, 20, one_period_each(16)) == list(range(1, 17))
+
+
+def test_a_two_week_championship_round_is_one_week_of_the_site():
+    # A league with playoffMatchupPeriodLength 2 runs its final round over two
+    # scoring periods, which ESPN reports as ONE matchup period. The site's
+    # week is the matchup period, so the round is week 16 and there is no week
+    # 17: asking for scoring period 17 would serve the same championship game
+    # a second time, as its own navigable week.
+    periods = one_period_each(15)
+    periods["16"] = [16, 17]
+    assert fetched(14, 17, periods) == list(range(1, 17))
+
+
+def test_a_week_is_asked_for_by_the_scoring_period_it_starts_in():
+    # box_scores takes a SCORING period and looks the matchup period up from
+    # it, so the number handed to ESPN is not always the number the site files
+    # the week under. They part company exactly where a matchup period spans
+    # more than one scoring period.
+    periods = one_period_each(14)
+    periods["15"] = [15, 16]
+    periods["16"] = [17, 18]
+    assert weeks_to_fetch(14, 18, periods)[-2:] == [(15, 15), (16, 17)]
+
+
+def test_a_round_the_league_has_only_started_is_still_previewed():
+    # Half of a two-week round is played. The week exists and its first scoring
+    # period is in reach, so the Scoreboard previews it rather than waiting for
+    # the round to end.
+    periods = one_period_each(15)
+    periods["16"] = [16, 17]
+    assert fetched(14, 16, periods) == list(range(1, 17))
+
+
+def test_without_espn_s_matchup_periods_the_walk_stops_at_the_regular_season():
+    # No mapping, no way to tell a matchup period from a scoring period -- so
+    # the walk keeps to the ground it has always been safe on.
+    assert fetched(14, 17, None) == list(range(1, 15))
+    assert fetched(14, 17, {}) == list(range(1, 15))
+    assert fetched(14, 5, None) == [1, 2, 3, 4, 5]
 
 
 def test_a_season_espn_reports_no_current_week_for_stops_at_the_regular_season():
     # Nothing says how far the bracket has got, so the last week the league is
     # known to have is the last regular-season one.
-    assert weeks_to_fetch(reg_weeks=14, current_week=None) == list(range(1, 15))
+    assert fetched(14, None, one_period_each(17)) == list(range(1, 15))
+    assert fetched(14, None, None) == list(range(1, 15))
 
 
 def test_the_fetcher_asks_for_nothing_before_the_season_starts():
-    assert weeks_to_fetch(reg_weeks=14, current_week=0) == []
+    assert fetched(14, 0, one_period_each(17)) == []
+    assert fetched(14, 0, None) == []
 
 
 def test_build_week_carries_the_week_it_was_asked_for():

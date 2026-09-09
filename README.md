@@ -11,7 +11,9 @@ averaged); those points accumulate all season, then the total is shifted so
 
 - `src/fetch_data.py` — pulls the league from ESPN (`espn_api`) and writes
   `docs/data/league_data.json` plus one `docs/data/week_<N>.json` per week,
-  walking from week 1 through ESPN's current week, the playoff weeks included.
+  walking from week 1 through every week the league has reached, the playoff
+  weeks included. A week is one of ESPN's matchup periods, which is not always
+  one of its scoring periods — a two-week playoff round is a single week here.
   Reads `FF_LEAGUE_ID`, `FF_SEASON_YEAR`, `FF_PLAYOFF_CUTOFF`, and
   `ESPN_S2` / `SWID` from the environment.
 - `src/week_data.py` — the pure per-week transforms the fetcher runs on each
