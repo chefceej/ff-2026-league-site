@@ -87,6 +87,9 @@ function renderCards(weekFile, highlight) {
   const isFinal = weekFile.status === "final";
   for (const m of weekFile.matchups || []) {
     const sides = [m.home, m.away].filter(Boolean);
+    // A playoff bye: the file gives the matchup one side, because there is no
+    // opponent to give it a second one.
+    const isBye = sides.length === 1;
     // A card is one link, so the whole matchup is the click target. It opens on
     // the home team; the matchup page resolves the rest from the week and team.
     const card = el("a", "matchup-card");
@@ -104,6 +107,13 @@ function renderCards(weekFile, highlight) {
       card.appendChild(renderSide(side, {
         isFinal, winner: best != null && side.score === best,
       }));
+    }
+    // The empty half of the bracket, where the opponent would be. Marked in
+    // the card's own shape rather than left blank, so a bye reads as a round
+    // the team sat out and not as a card that failed to render.
+    if (isBye) {
+      card.classList.add("bye");
+      card.appendChild(el("div", "matchup-side bye-side", "Bye"));
     }
     holder.appendChild(card);
   }
@@ -188,6 +198,7 @@ async function main() {
   if (index < 0) index = weeks.length - 1;
 
   const label = document.getElementById("week-nav-label");
+  const playoffTag = document.getElementById("week-playoff-label");
   const prevBtn = document.getElementById("prev-week-btn");
   const nextBtn = document.getElementById("next-week-btn");
   show("week-section");
@@ -203,12 +214,17 @@ async function main() {
     const mine = ++latestRender;
     const week = weeks[index];
     label.textContent = `Week ${week}`;
+    // Only the week file says whether the week is a bracket week, and that is
+    // a round trip away -- so the tag comes off now and goes back on with the
+    // cards. A week that turns out to be missing keeps it off.
+    playoffTag.classList.add("hidden");
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === weeks.length - 1;
     try {
       const weekFile = await loadJSON(`data/week_${week}.json`);
       if (mine !== latestRender) return;
       hideEmpty();
+      playoffTag.classList.toggle("hidden", !weekFile.is_playoff);
       renderCards(weekFile, highlight);
       renderProjectedStandings(weekFile, week);
     } catch (e) {
