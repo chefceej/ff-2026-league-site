@@ -528,12 +528,20 @@ def test_a_week_with_matchups_still_produces_a_week_file():
 # it, so the week files can publish alongside and the Week 1 preview is visible
 # before Week 1 is done.
 
+LAST_SEASON = {"season": 2025, "completed_weeks": 14}
+
+
+def in_progress_week(week=1):
+    """One week under way: a starter who has played, and one who has not."""
+    return [box([FakePlayer(name="Played", game_played=100, points=20.0)],
+                [FakePlayer(name="Waiting", game_played=0, projected=14.0)])]
+
+
 def test_a_week_file_publishes_the_season_with_no_final_weeks_and_empty_arrays():
-    # Week 1 is under way: one starter has played, one has not.
-    boxes = [box([FakePlayer(name="Played", game_played=100, points=20.0)],
-                 [FakePlayer(name="Waiting", game_played=0, projected=14.0)])]
+    boxes = in_progress_week()
     wk = build_week(boxes, 1)
     standings = accumulate_weeks([wk], [1, 2], playoff_cutoff=1)
+    week_file = build_week_file(boxes, week=1, season=2026)
 
     assert standings["final_weeks"] == 0
     assert standings["top_players_by_week"] == []
@@ -542,20 +550,40 @@ def test_a_week_file_publishes_the_season_with_no_final_weeks_and_empty_arrays()
         assert arrays["scores_by_week"] == []
         assert arrays["cumulative_points_by_week"] == []
         assert arrays["normalized_by_week"] == []
-    assert build_week_file(boxes, week=1, season=2026) is not None
     # ...and that week file is what lets the empty standings be written over
-    # the previous season's.
-    assert publishes_this_season(standings["final_weeks"], week_files=1,
-                                 standings_exists=True)
+    # last season's.
+    assert publishes_this_season(2026, standings["final_weeks"], [week_file],
+                                 LAST_SEASON)
 
 
 def test_a_preseason_run_that_found_nothing_keeps_the_previous_season():
-    assert not publishes_this_season(0, week_files=0, standings_exists=True)
+    assert not publishes_this_season(2026, 0, [], LAST_SEASON)
 
 
 def test_the_very_first_run_writes_a_standings_file_with_nothing_to_keep():
-    assert publishes_this_season(0, week_files=0, standings_exists=False)
+    assert publishes_this_season(2026, 0, [], None)
 
 
 def test_a_final_week_publishes_as_it_always_did():
-    assert publishes_this_season(2, week_files=2, standings_exists=True)
+    assert publishes_this_season(2026, 2, [{"week": 1}, {"week": 2}],
+                                 {"season": 2026, "completed_weeks": 1})
+
+
+def test_a_second_run_during_week_one_still_publishes_the_empty_board():
+    # The rollover already happened; the week file has to keep refreshing
+    # daily, and rewriting an empty board over an empty board loses nothing.
+    assert publishes_this_season(2026, 0, [{"week": 1}],
+                                 {"season": 2026, "completed_weeks": 0})
+
+
+def test_a_missing_early_week_never_blanks_a_season_already_standing():
+    # Week 1's fetch failed and week 5's did not: accumulate_weeks stops before
+    # the gap, so this run counts no final week at all. Publishing it would
+    # replace five weeks of standings with empty arrays until tomorrow's run.
+    assert not publishes_this_season(2026, 0, [{"week": 5}],
+                                     {"season": 2026, "completed_weeks": 5})
+
+
+def test_a_run_that_fetched_nothing_keeps_this_season_too():
+    assert not publishes_this_season(2026, 0, [],
+                                     {"season": 2026, "completed_weeks": 5})

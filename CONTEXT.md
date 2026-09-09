@@ -53,6 +53,13 @@ _Avoid_: future week, next week
 A week in which at least one game has started and the week is not yet final.
 _Avoid_: live week, partial week
 
+**Season rollover**:
+The moment the site starts describing the new season instead of the last one:
+the first run that fetches any week of it, which is kickoff week rather than
+the Tuesday after. Before it, the site is in the **preseason** and still shows
+the most recent completed season.
+_Avoid_: season change, new year, cutover
+
 **Matchup**:
 ESPN's head-to-head pairing of two teams for one week.
 _Avoid_: game, contest, H2H

@@ -59,6 +59,19 @@ def fetch_boxes(league, week):
         return None
 
 
+def published_metadata():
+    """The metadata of the standings file already on the site, or None.
+
+    None also covers a file that cannot be read: an unreadable file is nothing
+    the site can be serving, so there is nothing for this run to protect.
+    """
+    try:
+        with open(OUTPUT_PATH) as f:
+            return json.load(f).get("metadata", {})
+    except (OSError, ValueError):
+        return None
+
+
 def write_json(path, payload):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
@@ -165,11 +178,14 @@ def main():
     # keeps showing the last completed one rather than an empty board. The
     # first week ESPN does serve rolls the season over: the standings publish
     # with empty arrays and the week files publish with them, so the Week 1
-    # preview is up on kickoff week rather than the Tuesday after.
-    if not publishes_this_season(final_weeks, len(week_files),
-                                 os.path.exists(OUTPUT_PATH)):
-        print(f"No week of {SEASON_YEAR} served yet; keeping existing "
-              f"{OUTPUT_PATH} and the previous season's week files untouched.")
+    # preview is up on kickoff week rather than the Tuesday after. By keyword,
+    # because four values of the same shape are easy to hand over in the wrong
+    # order and no test would notice.
+    if not publishes_this_season(season=SEASON_YEAR, final_weeks=final_weeks,
+                                 week_files=week_files,
+                                 published=published_metadata()):
+        print(f"Nothing to publish for {SEASON_YEAR}; keeping existing "
+              f"{OUTPUT_PATH} and the week files beside it untouched.")
         return
 
     for week_file in week_files:

@@ -54,6 +54,21 @@ for (const pg of PAGES) {
         await expect(link(page)).toContainText("Week 3");
       });
 
+    test("falls back to the last published week, as the Scoreboard does",
+      async ({ page }) => {
+        // The Scoreboard opens on the most recent week it has a file for when
+        // current_week names one nobody wrote, so that is the week to name.
+        await useFixture(page, data => {
+          kickoffWeek(data);
+          data.metadata.week_files = [1, 2];
+          data.metadata.current_week = 3;
+          return data;
+        });
+        await page.goto(pg.path);
+
+        await expect(link(page)).toContainText("Week 2");
+      });
+
     test("stays quiet when no week has been published yet",
       async ({ page }) => {
         await useFixture(page, preseason);

@@ -389,7 +389,7 @@ def build_week_file(boxes, week, season, is_playoff=False, fetched_at=None):
     }
 
 
-def publishes_this_season(final_weeks, week_files, standings_exists):
+def publishes_this_season(season, final_weeks, week_files, published):
     """Whether this run's data replaces what the site is serving.
 
     The site becomes the new season's site on kickoff week, not the Tuesday
@@ -399,10 +399,21 @@ def publishes_this_season(final_weeks, week_files, standings_exists):
     week files publish with it, so the Week 1 preview is up before Week 1 is
     done (spec 05, user story 36).
 
-    Only a run that found nothing at all steps aside, and only when a standings
-    file is already there to keep showing: that is the preseason, where ESPN
-    serves no week of the new season and the site still shows the last one.
+    `week_files` is the week files this run built, `published` the metadata of
+    the standings file already on the site, or None when there is none.
+
+    Two runs step aside, both because publishing would take the site backwards:
+    one that found no week at all, which is the preseason, where ESPN serves
+    nothing of the new season and the site keeps showing the last one; and one
+    that counts no final week over a season that already stands, which is a
+    week the fetch missed rather than a season that has not started -- an early
+    week ESPN would not serve stops the accumulation before every later one, so
+    publishing would blank a standing season until tomorrow's run.
     """
-    if final_weeks or week_files:
+    if final_weeks:
         return True
-    return not standings_exists
+    if not week_files:
+        return published is None
+    if published is None or published.get("season") != season:
+        return True
+    return not published.get("completed_weeks")
