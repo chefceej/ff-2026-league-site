@@ -8,6 +8,7 @@
   --field:#2f7d4f;      /* primary field green */
   --field-dk:#1e5e39;   /* darker green for headers */
   --field-lt:#e7f1e6;   /* faint green tint (hover/fill) */
+  --field-hl:#d6ead0;   /* the highlighted team's row — deeper than the hover tint */
   --gold:#c8a23c;       /* chalk/pigskin gold accent */
   --pos:#2f7d4f;        /* in the playoff picture */
   --neg:#b0402f;        /* below the cutoff (brick red) */
@@ -43,11 +44,23 @@ main{max-width:1000px; margin:0 auto; padding-bottom:44px}
 }
 .empty-card h2{color:var(--ink); margin:0 0 8px; text-transform:none; letter-spacing:0; font-size:20px}
 .empty-card p{color:var(--mut); margin:0}
+/* The way out while the season has no final week: the Scoreboard is
+   already previewing the week this page cannot draw yet. */
+.empty-card .preview-link{margin-top:10px}
+.empty-card .preview-link a{color:var(--field); font-weight:600}
 
 /* Chart card */
 .chart-wrap{
   margin:0 24px; height:420px; position:relative;
   background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:16px;
+}
+
+/* Highlight control above the chart — quiet, so the chart stays the focus */
+.chart-control{display:flex; align-items:center; gap:10px; margin:0 24px 10px}
+.chart-control .pivot-select{min-width:220px}
+@media (max-width:600px){
+  .chart-control{flex-direction:column; align-items:stretch; gap:6px}
+  .chart-control .pivot-select{width:100%}
 }
 
 /* Standings table */
@@ -61,11 +74,26 @@ th{color:var(--field-dk); font-size:11px; font-weight:700; text-transform:upperc
    background:var(--field-lt)}
 th.left,td.left{text-align:left}
 tbody tr:last-child td{border-bottom:none}
-#standings-table tbody tr:hover td{background:var(--field-lt)}
+#standings-table tbody tr:hover td,
+#projected-table tbody tr:hover td{background:var(--field-lt)}
 td.team{font-weight:700}
 td.mgr{color:var(--mut)}
+#standings-table .lastwk{font-variant-numeric:tabular-nums}
 td.norm.pos{color:var(--pos); font-weight:700}
 td.norm.neg{color:var(--neg); font-weight:700}
+/* Rank movement: up in playoff green, down in brick red, held in muted.
+   Shared by the Standings table and the Scoreboard's projected standings, so a
+   projected move and a settled one never read differently. */
+#standings-table td.rk .mv,#projected-table td.rk .mv{margin-left:7px; font-size:12px; font-weight:700}
+#standings-table td.rk .mv.up,#projected-table td.rk .mv.up{color:var(--pos)}
+#standings-table td.rk .mv.down,#projected-table td.rk .mv.down{color:var(--neg)}
+#standings-table td.rk .mv.flat,#projected-table td.rk .mv.flat{color:var(--mut); font-weight:600}
+/* Announced to screen readers, hidden from sight */
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
+/* The highlighted team's row, keyed to the chart's Highlight control. Placed
+   after the hover rule, at equal specificity, so the wash survives the cursor. */
+#standings-table tbody tr.highlight td{background:var(--field-hl)}
 /* the playoff cutoff line — a gold chalk stripe */
 tr.cutoff td{border-bottom:2px dashed var(--gold)}
 
@@ -83,6 +111,11 @@ tr.cutoff td{border-bottom:2px dashed var(--gold)}
 .week-nav-btn:hover:not(:disabled){background:var(--field-lt)}
 .week-nav-btn:disabled{opacity:.4; cursor:default}
 .week-nav-label{font-weight:700; color:var(--ink); font-size:14px}
+/* Beside the week label on a playoff week, so the missing projected standings
+   below read as deliberate rather than as a week that failed to load. */
+.playoff-tag{padding:3px 10px; border-radius:999px; background:var(--field);
+  color:#fff; font-size:11px; font-weight:800; text-transform:uppercase;
+  letter-spacing:.05em}
 .tabs{display:flex; gap:6px; margin:0 24px 12px; flex-wrap:wrap}
 .tab-btn{padding:5px 14px; border-radius:999px; border:1px solid var(--line);
   background:var(--paper); color:var(--mut); font-size:13px; font-weight:600; cursor:pointer}
@@ -145,6 +178,8 @@ table.heat td{color:#20302a}
 #pivot-table .team-total-row td,#pivot-table .league-total-row td{
   font-weight:700; background:var(--cream); color:var(--ink)}
 #pivot-table .pos-total{color:var(--field-dk)}
+/* A negative score is a score, not missing data — brick red, never heat-tinted */
+#pivot-table td.neg{color:var(--neg)}
 #pivot-table th.sort-active{color:var(--ink)}
 #pivot-table .sort-arrow{color:var(--gold)}
 /* sticky-col2 sits to the right of the sticky team column */
@@ -152,3 +187,151 @@ table.heat td{color:#20302a}
 #pivot-table .sticky-col2.pos-col{left:70px}
 
 footer{padding:22px 24px; color:var(--mut); font-size:12px; text-align:center}
+
+/* ── Scoreboard: one card per matchup ── */
+.matchup-cards{display:grid; gap:14px; margin:0 24px;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+.matchup-card{display:block; padding:14px 16px; text-decoration:none; color:inherit;
+  background:var(--paper); border:1px solid var(--line); border-radius:14px}
+.matchup-card:hover{border-color:var(--field); box-shadow:0 1px 0 rgba(0,0,0,.04)}
+/* The highlighted team's matchup, keyed to the same choice and the same wash as
+   the Standings row. Placed after the hover rule so the tint survives the cursor. */
+.matchup-card.highlight{background:var(--field-hl)}
+.card-status{font-size:11px; font-weight:700; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--mut); margin-bottom:10px}
+
+.matchup-side{padding:8px 0}
+.matchup-side + .matchup-side{border-top:1px solid var(--line)}
+.side-main{display:flex; align-items:center; gap:10px}
+.side-logo{width:30px; height:30px; border-radius:6px; object-fit:contain; flex:none}
+.side-id{flex:1; min-width:0}
+.side-name{display:block; font-weight:700; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap}
+.side-meta{display:flex; gap:8px; font-size:12px; color:var(--mut)}
+.side-mgr{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.side-record{flex:none; font-variant-numeric:tabular-nums}
+.side-total{flex:none; font-size:19px; font-weight:800; color:var(--field-dk);
+  font-variant-numeric:tabular-nums}
+.matchup-side.winner .side-total{color:var(--field)}
+/* The empty half of a bye card: the same slot an opponent would fill, so the
+   card keeps the height and the shape of the ones beside it. */
+.bye-side{display:flex; align-items:center; justify-content:center;
+  min-height:46px; color:var(--mut); font-size:12px; font-weight:700;
+  text-transform:uppercase; letter-spacing:.05em}
+.winner-mark{flex:none; width:20px; height:20px; border-radius:50%; background:var(--field);
+  color:#fff; font-size:11px; font-weight:800; line-height:20px; text-align:center}
+
+.side-leaders{list-style:none; margin:6px 0 0; padding:0 0 0 40px;
+  display:flex; flex-direction:column; gap:2px}
+.leader{display:flex; justify-content:space-between; gap:10px; font-size:12.5px;
+  color:var(--mut)}
+.leader-name{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.leader-pts{flex:none; font-variant-numeric:tabular-nums; color:var(--ink); font-weight:600}
+
+@media (max-width:600px){
+  .matchup-cards{margin:0 12px; grid-template-columns:1fr}
+  .side-leaders{padding-left:0}
+}
+
+/* ── Scoreboard: the projected standings under the cards ── */
+#projected-table td.proj,#projected-table td.rp{font-variant-numeric:tabular-nums}
+#projected-table td.rp{color:var(--field-dk); font-weight:700}
+
+/* ── Matchup page: two lineups paired slot by slot ── */
+.matchup-header{display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  margin:0 24px 14px; background:var(--paper); border:1px solid var(--line);
+  border-radius:14px; padding:12px 14px}
+.team-head{display:flex; align-items:center; gap:10px; min-width:0}
+/* The away half mirrors the home half, so both teams' numbers meet in the
+   middle the way the lineup rows below them do. */
+.team-head + .team-head{flex-direction:row-reverse; text-align:right}
+.team-head-logo{width:34px; height:34px; border-radius:7px; object-fit:contain; flex:none}
+.team-head-id{flex:1; min-width:0}
+.team-head-name{display:block; font-weight:700; overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+.team-head-meta{display:flex; gap:8px; font-size:12px; color:var(--mut)}
+.team-head + .team-head .team-head-meta{justify-content:flex-end}
+.team-head + .team-head .team-head-counts{text-align:right}
+.team-head-mgr{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.team-head-record{flex:none; font-variant-numeric:tabular-nums}
+/* Not a flex row: the words between the two counts are ordinary text, and a
+   flex item would have its spaces stripped ("1played ·8to play"). */
+.team-head-counts{display:block; font-size:12px; color:var(--mut);
+  font-variant-numeric:tabular-nums}
+.team-head-score{flex:none; display:flex; flex-direction:column; align-items:center}
+.team-head-total{font-size:20px; font-weight:800; color:var(--field-dk);
+  font-variant-numeric:tabular-nums}
+.total-label{font-size:10px; font-weight:700; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--mut)}
+
+.lineup-legend{display:grid; grid-template-columns:1fr 58px 1fr; gap:6px;
+  margin:0 24px; font-size:10px; font-weight:700; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--mut)}
+.legend-side{display:flex; gap:10px; justify-content:flex-end}
+.lineup-legend .legend-side:last-child{flex-direction:row-reverse}
+
+.lineup{margin:0 24px; background:var(--paper); border:1px solid var(--line);
+  border-radius:14px; overflow:hidden}
+.lineup-row{display:grid; grid-template-columns:1fr 58px 1fr; gap:6px;
+  align-items:center; padding:7px 10px}
+.lineup-row + .lineup-row{border-top:1px solid var(--line)}
+/* ESPN's own slot name, so a flex slot reads the way it does on ESPN. The
+   longest of them ("QB/RB/WR/TE") wraps inside its column rather than running
+   over the points beside it. */
+.slot-label{font-size:9.5px; font-weight:700; text-align:center; color:var(--mut);
+  text-transform:uppercase; letter-spacing:.03em; line-height:1.15;
+  overflow-wrap:anywhere}
+.slot-side{display:flex; align-items:center; gap:4px; min-width:0}
+.slot-side.away{flex-direction:row-reverse}
+.player{display:flex; align-items:center; gap:8px; flex:1; min-width:0}
+.slot-side.away .player{flex-direction:row-reverse; text-align:right}
+.player-shot{width:30px; height:30px; border-radius:50%; flex:none;
+  object-fit:cover; background:var(--field-lt)}
+.player-silhouette{fill:var(--mut); padding:3px}
+.player-id{flex:1; min-width:0}
+.player-name{display:block; font-size:13px; font-weight:700; overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+.player-meta,.player-game{display:flex; gap:6px; font-size:11px; color:var(--mut);
+  overflow:hidden; white-space:nowrap}
+.slot-side.away .player-meta,.slot-side.away .player-game{justify-content:flex-end}
+.player-pos{font-weight:600}
+.injury-tag{color:var(--neg); font-weight:800}
+.player-bye{font-weight:700; letter-spacing:.04em}
+.player-kick{white-space:nowrap}
+.player-pts{flex:none; display:flex; gap:8px; align-items:baseline;
+  font-variant-numeric:tabular-nums}
+.slot-side.away .player-pts{flex-direction:row-reverse}
+.pts-proj{font-size:12px; color:var(--mut)}
+.pts-actual{font-size:14px; font-weight:800; color:var(--ink)}
+.adv-mark{flex:none; font-size:10px; color:var(--field)}
+.slot-side.advantage .pts-actual,.slot-side.advantage .pts-proj{color:var(--field-dk)}
+
+.bench-control{margin:12px 24px}
+
+@media (max-width:600px){
+  /* Two team headers side by side leave neither one room for a team name, so
+     a phone reads them stacked -- and unmirrored, because the mirroring only
+     means anything when the two are shoulder to shoulder. */
+  .matchup-header{margin:0 12px 12px; padding:10px; gap:10px;
+    grid-template-columns:1fr}
+  .team-head + .team-head{flex-direction:row; text-align:left;
+    border-top:1px solid var(--line); padding-top:10px}
+  .team-head + .team-head .team-head-meta{justify-content:flex-start}
+  .team-head + .team-head .team-head-counts{text-align:left}
+  .team-head-logo{width:28px; height:28px}
+  .team-head-total{font-size:18px}
+  .lineup,.lineup-legend,.bench-control{margin-left:12px; margin-right:12px}
+  .lineup-row{padding:7px 6px; gap:3px}
+  .lineup-row,.lineup-legend{grid-template-columns:1fr 44px 1fr}
+  .player{gap:5px}
+  .player-shot{width:22px; height:22px}
+  .player-pts{gap:5px}
+  /* A narrow column cannot hold a name and a kickoff on one line each, so both
+     wrap onto as many lines as they need. A row that grew taller still says
+     everything; one that clipped would leave a player half-named and a kickoff
+     cut off mid-word. */
+  .player-name{white-space:normal; overflow:visible; text-overflow:clip}
+  .player-meta,.player-game{font-size:10px; gap:4px; flex-wrap:wrap;
+    overflow:visible; white-space:normal}
+  .player-kick{white-space:nowrap}
+}

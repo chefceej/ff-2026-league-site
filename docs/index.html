@@ -12,6 +12,7 @@
   <p class="sub" id="subtitle">Cumulative ranking points, normalized so the playoff cutoff = 0.</p>
   <nav class="header-nav">
     <a href="index.html" class="nav-link active">Standings</a>
+    <a href="scoreboard.html" class="nav-link">Scoreboard</a>
     <a href="position.html" class="nav-link">Position &amp; Score Analysis</a>
   </nav>
 </header>
@@ -21,11 +22,18 @@
     <div class="empty-card">
       <h2>The season hasn't started yet 🏈</h2>
       <p>Standings will populate automatically once Week&nbsp;1 games are final.</p>
+      <p class="preview-link hidden">Week <span class="preview-week"></span> is previewed on the <a href="scoreboard.html">Scoreboard</a>.</p>
     </div>
   </section>
 
   <section id="chart-section" class="hidden">
     <h2>Playoff Position by Week</h2>
+    <div class="chart-control">
+      <label class="control-label" for="highlight-team">Highlight</label>
+      <select id="highlight-team" class="pivot-select">
+        <option value="">None</option>
+      </select>
+    </div>
     <div class="chart-wrap"><canvas id="positionChart"></canvas></div>
   </section>
 
@@ -35,7 +43,7 @@
       <table id="standings-table">
         <thead>
           <tr><th>#</th><th class="left">Team</th><th class="left">Manager</th>
-              <th>Points</th><th>Norm</th></tr>
+              <th class="lastwk">Last Wk</th><th>Points</th><th>Norm</th></tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -89,6 +97,9 @@
 <footer><span id="updated"></span></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/highlight.js"></script>
+<script src="js/preview-link.js"></script>
+<script src="js/movement.js"></script>
 <script src="js/charts.js"></script>
 </body>
 </html>

@@ -5,6 +5,20 @@ const PALETTE = [
   "#b8892b", "#566270", "#a8324a", "#6b7a2f", "#8a5a3c", "#a0498f",
 ];
 const AXIS = "#7c7862", GRID = "#e6dcc4", LEG = "#20302a";
+// Zero is the playoff cutoff, so its gridline is drawn in the same gold chalk
+// as the Standings table's cutoff stripe. Keep in step with --gold in styles.css.
+const CUTOFF = "#c8a23c", CUTOFF_WIDTH = 2;
+// Highlight: the chosen line is drawn heavier with bigger points; the rest keep
+// their hue at an alpha low enough to recede but still legible on the cream.
+const DIM_ALPHA = 0.22;
+const BASE_WIDTH = 2, BASE_POINT = 2;
+const LIT_WIDTH = 3.5, LIT_POINT = 4;
+
+// Chart.js resolves grid color and width per tick, so the cutoff line needs no
+// plugin. Tick values are rounded to the step's precision, so zero is exact.
+// (4.4.1 offers no per-gridline dash — the dash lives on the axis border — so
+// the stripe is matched by color and weight alone.)
+const atCutoff = ctx => ctx.tick && ctx.tick.value === 0;
 
 async function main() {
   let data;
@@ -24,17 +38,22 @@ async function main() {
 
   if (!meta.completed_weeks || teams.length === 0) {
     showEmpty();
+    showScoreboardPreview(meta);
     return;
   }
 
+  // The season leads the subtitle: in the preseason the site still serves last
+  // season's data, and that is the first thing a visitor needs to know.
+  const season = meta.season ? `${meta.season} season · ` : "";
   document.getElementById("subtitle").textContent =
-    `${meta.num_teams}-team league · normalized so #${meta.playoff_cutoff} = 0 ` +
+    `${season}${meta.num_teams}-team league · normalized so #${meta.playoff_cutoff} = 0 ` +
     `· ${meta.completed_weeks} week${meta.completed_weeks > 1 ? "s" : ""} played`;
 
   show("chart-section");
   show("table-section");
-  renderChart(teams, meta);
+  const chart = renderChart(teams, meta);
   renderTable(teams, meta);
+  setupHighlight(chart, teams);
 
   const cmw = meta.current_matchup_week || meta.completed_weeks;
   if (data.top_players_by_week?.length) {
@@ -183,14 +202,22 @@ function show(id) { document.getElementById(id).classList.remove("hidden"); }
 function renderChart(teams, meta) {
   const weeks = meta.completed_weeks;
   const labels = Array.from({ length: weeks }, (_, i) => `W${i + 1}`);
-  const datasets = teams.map((t, i) => ({
-    label: t.team_name,
-    data: t.normalized_by_week,
-    borderColor: PALETTE[i % PALETTE.length],
-    backgroundColor: PALETTE[i % PALETTE.length],
-    tension: 0.25, borderWidth: 2, pointRadius: 2,
-  }));
-  new Chart(document.getElementById("positionChart"), {
+  // backgroundColor is the legend swatch's fill and is deliberately left at full
+  // strength: the highlight dims lines, not the legend. Everything else is the
+  // highlight's to own, so it comes from the one styling routine, unhighlighted.
+  const datasets = teams.map((t, i) => {
+    const ds = {
+      label: t.team_name,
+      data: t.normalized_by_week,
+      backgroundColor: PALETTE[i % PALETTE.length],
+      tension: 0.25,
+    };
+    styleDataset(ds, i, NONE);
+    return ds;
+  });
+  // The instance is returned, not discarded: the highlight routine restyles
+  // these datasets in place, which is what keeps the legend's hidden state.
+  return new Chart(document.getElementById("positionChart"), {
     type: "line",
     data: { labels, datasets },
     options: {
@@ -203,7 +230,11 @@ function renderChart(teams, meta) {
       scales: {
         x: { ticks: { color: AXIS }, grid: { color: GRID } },
         y: {
-          ticks: { color: AXIS }, grid: { color: GRID },
+          ticks: { color: AXIS },
+          grid: {
+            color: ctx => (atCutoff(ctx) ? CUTOFF : GRID),
+            lineWidth: ctx => (atCutoff(ctx) ? CUTOFF_WIDTH : 1),
+          },
           title: { display: true, text: "Points vs. playoff cutoff", color: AXIS },
         },
       },
@@ -211,18 +242,119 @@ function renderChart(teams, meta) {
   });
 }
 
+// ── Highlight one team across the chart and the Standings table ──
+// The key, the resolution and teamKey live in highlight.js, shared with the
+// Scoreboard; what stays here is the chart and table styling they drive.
+
+/** No team highlighted: the index that matches no dataset and no table row. */
+const NONE = -1;
+
+/** A palette hex at `alpha`, so a faded line keeps its team's hue. */
+function fade(hex, alpha) {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+}
+
+/**
+ * Style line `i` for a highlight on dataset `lit` (NONE for no highlight).
+ * The single source of truth for a line's look: renderChart builds every
+ * dataset through it, and the highlight routine rewrites them through it.
+ */
+function styleDataset(ds, i, lit) {
+  const hue = PALETTE[i % PALETTE.length];
+  const dimmed = lit !== NONE && i !== lit;
+  ds.borderColor = ds.pointBackgroundColor = ds.pointBorderColor =
+    dimmed ? fade(hue, DIM_ALPHA) : hue;
+  ds.borderWidth = i === lit ? LIT_WIDTH : BASE_WIDTH;
+  ds.pointRadius = i === lit ? LIT_POINT : BASE_POINT;
+  // A point strokes over its own fill, so a faded one would otherwise read at
+  // roughly twice its line's alpha and pull the eye off the chosen team.
+  ds.pointBorderWidth = dimmed ? 0 : 1;
+}
+
+/** Record the choice on this device and in the link, without navigating. */
+function rememberHighlight(abbrev) {
+  const url = new URL(location.href);
+  if (abbrev) url.searchParams.set(HIGHLIGHT_PARAM, abbrev);
+  else url.searchParams.delete(HIGHLIGHT_PARAM);
+  history.replaceState(null, "", url);
+  writeRemembered(abbrev);
+}
+
+function setupHighlight(chart, teams) {
+  // Datasets and Standings rows are both built from the delivered team order,
+  // so one index addresses a team's line and its row alike.
+  const abbrevs = teams.map(teamKey);
+  const select = document.getElementById("highlight-team");
+  const rows = document.querySelectorAll("#standings-table tbody tr");
+
+  teams.forEach(t => {
+    const option = document.createElement("option");
+    option.value = teamKey(t);
+    option.textContent = t.team_name;
+    select.appendChild(option);
+  });
+
+  /**
+   * Draw `abbrev` as the foreground of both views, or clear the highlight when
+   * it is empty. `persist` is false on load, where the state came from storage
+   * or the URL and writing it back would only echo.
+   */
+  function apply(abbrev, persist) {
+    // teamKey guarantees no team is keyed by "", so the empty selection finds
+    // nothing and lands on NONE by itself.
+    const lit = abbrevs.indexOf(abbrev);
+    select.value = abbrev;
+    chart.data.datasets.forEach((ds, i) => styleDataset(ds, i, lit));
+    // "none" skips the animation and, with it, any chance of a half-drawn
+    // frame; dataset visibility lives in the chart's metadata either way.
+    chart.update("none");
+    rows.forEach((tr, i) => tr.classList.toggle("highlight", i === lit));
+    if (persist) rememberHighlight(abbrev);
+  }
+
+  select.addEventListener("change", () => apply(select.value, true));
+  apply(resolveHighlight(abbrevs), false);
+}
+
+// Where each team stood after the previous completed week: its 1-based position
+// in a stable descending sort of cumulative points over the delivered order, so
+// a tie at week N-1 resolves in current order and manufactures no movement.
+function previousRanks(teams, completedWeeks) {
+  if (completedWeeks < 2) return teams.map((_, i) => i + 1);
+  const prev = [];
+  teams
+    .map((t, i) => ({ i, pts: t.cumulative_points_by_week[completedWeeks - 2] ?? 0 }))
+    .sort((a, b) => b.pts - a.pts || a.i - b.i)
+    .forEach((e, idx) => { prev[e.i] = idx + 1; });
+  return prev;
+}
+
+// An absent week reads as a dash, not as a genuine zero.
+function lastWeekPoints(team, week) {
+  const v = team.ranking_points_by_week[week - 1];
+  return v == null ? "\u2014" : v.toFixed(1);
+}
+
 function renderTable(teams, meta) {
   const tbody = document.querySelector("#standings-table tbody");
+  const prev = previousRanks(teams, meta.completed_weeks);
+  const week = meta.completed_weeks;
+  const lastWkHead = document.querySelector("#standings-table th.lastwk");
+  lastWkHead.textContent = `Wk ${week}`;
+  lastWkHead.title = "Ranking points earned in the most recent completed week";
   tbody.innerHTML = "";
   teams.forEach((t, i) => {
     const norm = t.normalized_by_week[t.normalized_by_week.length - 1];
     const tr = document.createElement("tr");
     if (i + 1 === meta.playoff_cutoff) tr.classList.add("cutoff");
     tr.innerHTML =
-      `<td>${t.rank}</td>` +
+      `<td class="rk"><span class="rk-num">${t.rank}</span>` +
+        movementCell(prev[i] - (i + 1)) + `</td>` +
       `<td class="left team">${t.team_name}</td>` +
       `<td class="left mgr">${t.owner || ""}</td>` +
-      `<td>${t.total_ranking_points}</td>` +
+      `<td class="lastwk">${lastWeekPoints(t, week)}</td>` +
+      `<td class="pts">${t.total_ranking_points}</td>` +
       `<td class="norm ${norm >= 0 ? "pos" : "neg"}">${norm > 0 ? "+" : ""}${norm}</td>`;
     tbody.appendChild(tr);
   });
