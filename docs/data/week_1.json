@@ -2,8 +2,8 @@
  "week": 1,
  "season": 2026,
  "is_playoff": false,
- "status": "upcoming",
- "fetched_at": "2026-09-10T03:09:36.185385Z",
+ "status": "in-progress",
+ "fetched_at": "2026-09-10T03:20:31.800380Z",
  "matchups": [
   {
    "home": {
@@ -17,10 +17,10 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 16.0,
-    "projected_total": 104.44,
-    "played": 0,
-    "to_play": 9,
+    "score": 17.0,
+    "projected_total": 103.52,
+    "played": 2,
+    "to_play": 7,
     "leaders": [
      {
       "player_id": -15016,
@@ -160,9 +160,9 @@
       "opponent": "NE",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 8.26,
-      "actual": 9.0
+      "actual": 10.0
      },
      {
       "player_id": 2473037,
@@ -174,7 +174,7 @@
       "opponent": "NE",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 9.66,
       "actual": 7.0
      },
@@ -204,7 +204,7 @@
       "opponent": "SEA",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 0.0,
       "actual": 0.0
      },
@@ -520,7 +520,7 @@
       "opponent": "NE",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 0.0,
       "actual": 0.0
      },
@@ -1117,10 +1117,10 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 11.2,
-    "projected_total": 108.64,
-    "played": 0,
-    "to_play": 9,
+    "score": 12.0,
+    "projected_total": 108.19,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": -15006,
@@ -1232,9 +1232,9 @@
       "opponent": "SEA",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 12.45,
-      "actual": 11.2
+      "actual": 12.0
      },
      {
       "player_id": 4360248,
@@ -1668,10 +1668,24 @@
      "ties": 0
     },
     "score": 22.2,
-    "projected_total": 107.66,
-    "played": 0,
-    "to_play": 9,
+    "projected_total": 114.33,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
+     {
+      "player_id": 4430878,
+      "name": "Jaxon Smith-Njigba",
+      "pro_team": "SEA",
+      "position": "WR",
+      "slot": "WR",
+      "injury": "",
+      "opponent": "NE",
+      "kickoff": "2026-09-10T00:20:00Z",
+      "on_bye": false,
+      "played": true,
+      "projected": 15.53,
+      "actual": 22.2
+     },
      {
       "player_id": -15033,
       "name": "Ravens TQB",
@@ -1685,20 +1699,6 @@
       "played": false,
       "projected": 19.65,
       "actual": 0.0
-     },
-     {
-      "player_id": 4430878,
-      "name": "Jaxon Smith-Njigba",
-      "pro_team": "SEA",
-      "position": "WR",
-      "slot": "WR",
-      "injury": "",
-      "opponent": "NE",
-      "kickoff": "2026-09-10T00:20:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 15.53,
-      "actual": 22.2
      },
      {
       "player_id": 4361579,
@@ -1726,7 +1726,7 @@
       "opponent": "NE",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 15.53,
       "actual": 22.2
      },
@@ -1910,7 +1910,7 @@
       "opponent": "NE",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 7.12,
       "actual": 0.9
      },
@@ -1924,9 +1924,9 @@
       "opponent": "SEA",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 6.59,
-      "actual": 2.6
+      "actual": 4.1
      }
     ]
    },
@@ -1942,9 +1942,9 @@
      "ties": 0
     },
     "score": 10.9,
-    "projected_total": 108.32,
-    "played": 0,
-    "to_play": 9,
+    "projected_total": 94.84,
+    "played": 2,
+    "to_play": 7,
     "leaders": [
      {
       "player_id": 4430807,
@@ -1975,18 +1975,18 @@
       "actual": 0.0
      },
      {
-      "player_id": 4685512,
-      "name": "Jadarian Price",
-      "pro_team": "SEA",
-      "position": "RB",
-      "slot": "RB",
+      "player_id": 4426354,
+      "name": "George Pickens",
+      "pro_team": "DAL",
+      "position": "WR",
+      "slot": "WR",
       "injury": "",
-      "opponent": "NE",
-      "kickoff": "2026-09-10T00:20:00Z",
+      "opponent": "NYG",
+      "kickoff": "2026-09-14T00:20:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 12.83,
-      "actual": 6.8
+      "projected": 12.21,
+      "actual": 0.0
      }
     ],
     "lineup": [
@@ -2014,7 +2014,7 @@
       "opponent": "SEA",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 11.55,
       "actual": 4.1
      },
@@ -2056,7 +2056,7 @@
       "opponent": "NE",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 12.83,
       "actual": 6.8
      },
@@ -2128,9 +2128,9 @@
       "opponent": "",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 16.77,
-      "actual": 9.86
+      "actual": 10.74
      },
      {
       "player_id": 4432620,
@@ -3010,7 +3010,7 @@
       "opponent": "SEA",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 6.64,
       "actual": 0.0
      },
@@ -3322,10 +3322,10 @@
  ],
  "projected_standings": [
   {
-   "team_id": 7,
-   "team_name": "Speedy CRashees",
-   "abbrev": "SC",
-   "projected_total": 112.73,
+   "team_id": 3,
+   "team_name": "Toe Burrow",
+   "abbrev": "BW",
+   "projected_total": 114.33,
    "projected_ranking_points": 12.0,
    "projected_cumulative": 12.0,
    "projected_normalized": 5.0,
@@ -3333,10 +3333,10 @@
    "projected_rank": 1
   },
   {
-   "team_id": 9,
-   "team_name": "Walt's Warriors",
-   "abbrev": "WALT",
-   "projected_total": 112.54,
+   "team_id": 7,
+   "team_name": "Speedy CRashees",
+   "abbrev": "SC",
+   "projected_total": 112.73,
    "projected_ranking_points": 11.0,
    "projected_cumulative": 11.0,
    "projected_normalized": 4.0,
@@ -3344,10 +3344,10 @@
    "projected_rank": 2
   },
   {
-   "team_id": 12,
-   "team_name": "Remeber Bendel",
-   "abbrev": "BEND",
-   "projected_total": 110.9,
+   "team_id": 9,
+   "team_name": "Walt's Warriors",
+   "abbrev": "WALT",
+   "projected_total": 112.54,
    "projected_ranking_points": 10.0,
    "projected_cumulative": 10.0,
    "projected_normalized": 3.0,
@@ -3355,10 +3355,10 @@
    "projected_rank": 3
   },
   {
-   "team_id": 1,
-   "team_name": "Nixed Downs in Dallas",
-   "abbrev": "Stev",
-   "projected_total": 108.64,
+   "team_id": 12,
+   "team_name": "Remeber Bendel",
+   "abbrev": "BEND",
+   "projected_total": 110.9,
    "projected_ranking_points": 9.0,
    "projected_cumulative": 9.0,
    "projected_normalized": 2.0,
@@ -3366,10 +3366,10 @@
    "projected_rank": 4
   },
   {
-   "team_id": 2,
-   "team_name": "Kaiser Soze",
-   "abbrev": "CJ",
-   "projected_total": 108.32,
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "abbrev": "MBJG",
+   "projected_total": 108.27,
    "projected_ranking_points": 8.0,
    "projected_cumulative": 8.0,
    "projected_normalized": 1.0,
@@ -3377,10 +3377,10 @@
    "projected_rank": 5
   },
   {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "abbrev": "MBJG",
-   "projected_total": 108.27,
+   "team_id": 1,
+   "team_name": "Nixed Downs in Dallas",
+   "abbrev": "Stev",
+   "projected_total": 108.19,
    "projected_ranking_points": 7.0,
    "projected_cumulative": 7.0,
    "projected_normalized": 0.0,
@@ -3399,10 +3399,10 @@
    "projected_rank": 7
   },
   {
-   "team_id": 3,
-   "team_name": "Toe Burrow",
-   "abbrev": "BW",
-   "projected_total": 107.66,
+   "team_id": 6,
+   "team_name": "Never Gonna Gibbs You Up",
+   "abbrev": "Naug",
+   "projected_total": 107.41,
    "projected_ranking_points": 5.0,
    "projected_cumulative": 5.0,
    "projected_normalized": -2.0,
@@ -3410,10 +3410,10 @@
    "projected_rank": 8
   },
   {
-   "team_id": 6,
-   "team_name": "Never Gonna Gibbs You Up",
-   "abbrev": "Naug",
-   "projected_total": 107.41,
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "abbrev": "SACK",
+   "projected_total": 104.66,
    "projected_ranking_points": 4.0,
    "projected_cumulative": 4.0,
    "projected_normalized": -3.0,
@@ -3421,10 +3421,10 @@
    "projected_rank": 9
   },
   {
-   "team_id": 10,
-   "team_name": "Bijan These Nuts",
-   "abbrev": "SACK",
-   "projected_total": 104.66,
+   "team_id": 11,
+   "team_name": "AJ Brown Bible Quotes",
+   "abbrev": "BIBL",
+   "projected_total": 103.52,
    "projected_ranking_points": 3.0,
    "projected_cumulative": 3.0,
    "projected_normalized": -4.0,
@@ -3432,10 +3432,10 @@
    "projected_rank": 10
   },
   {
-   "team_id": 11,
-   "team_name": "AJ Brown Bible Quotes",
-   "abbrev": "BIBL",
-   "projected_total": 104.44,
+   "team_id": 4,
+   "team_name": "Swishington Commies",
+   "abbrev": "SW$H",
+   "projected_total": 97.39,
    "projected_ranking_points": 2.0,
    "projected_cumulative": 2.0,
    "projected_normalized": -5.0,
@@ -3443,10 +3443,10 @@
    "projected_rank": 11
   },
   {
-   "team_id": 4,
-   "team_name": "Swishington Commies",
-   "abbrev": "SW$H",
-   "projected_total": 97.39,
+   "team_id": 2,
+   "team_name": "Kaiser Soze",
+   "abbrev": "CJ",
+   "projected_total": 94.84,
    "projected_ranking_points": 1.0,
    "projected_cumulative": 1.0,
    "projected_normalized": -6.0,
