@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "in-progress",
- "fetched_at": "2026-09-10T03:20:31.800380Z",
+ "fetched_at": "2026-09-10T12:05:54.169243Z",
  "matchups": [
   {
    "home": {
@@ -17,8 +17,8 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 17.0,
-    "projected_total": 103.52,
+    "score": 20.0,
+    "projected_total": 106.52,
     "played": 2,
     "to_play": 7,
     "leaders": [
@@ -162,7 +162,7 @@
       "on_bye": false,
       "played": true,
       "projected": 8.26,
-      "actual": 10.0
+      "actual": 13.0
      },
      {
       "player_id": 2473037,
@@ -214,7 +214,7 @@
       "pro_team": "SF",
       "position": "TE",
       "slot": "BE",
-      "injury": "Q",
+      "injury": "",
       "opponent": "LAR",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
@@ -832,8 +832,8 @@
    },
    "away": {
     "team_id": 4,
-    "team_name": "Swishington Commies",
-    "abbrev": "SW$H",
+    "team_name": "Swishington Football Team",
+    "abbrev": "SFT",
     "owner": "Matt Stern",
     "logo_url": "https://d3s5v81uibmb73.cloudfront.net/storage/category/large/cigars-swisher-sweets-cigars-5c82ed6538b350.45677828.jpg",
     "record": {
@@ -844,7 +844,7 @@
     "score": 0.0,
     "projected_total": 97.39,
     "played": 0,
-    "to_play": 9,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": 4429795,
@@ -902,20 +902,6 @@
       "on_bye": false,
       "played": false,
       "projected": 20.46,
-      "actual": 0.0
-     },
-     {
-      "player_id": 4432665,
-      "name": "Brock Bowers",
-      "pro_team": "LV",
-      "position": "TE",
-      "slot": "TE",
-      "injury": "D",
-      "opponent": "MIA",
-      "kickoff": "2026-09-13T20:25:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 0.0,
       "actual": 0.0
      },
      {
@@ -1018,6 +1004,20 @@
      }
     ],
     "bench": [
+     {
+      "player_id": 4432665,
+      "name": "Brock Bowers",
+      "pro_team": "LV",
+      "position": "TE",
+      "slot": "BE",
+      "injury": "D",
+      "opponent": "MIA",
+      "kickoff": "2026-09-13T20:25:00Z",
+      "on_bye": false,
+      "played": false,
+      "projected": 0.0,
+      "actual": 0.0
+     },
      {
       "player_id": 4047365,
       "name": "Josh Jacobs",
@@ -2010,7 +2010,7 @@
       "pro_team": "NE",
       "position": "WR",
       "slot": "WR",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "SEA",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
@@ -2130,7 +2130,7 @@
       "on_bye": false,
       "played": true,
       "projected": 16.77,
-      "actual": 10.74
+      "actual": 9.82
      },
      {
       "player_id": 4432620,
@@ -3410,10 +3410,10 @@
    "projected_rank": 8
   },
   {
-   "team_id": 10,
-   "team_name": "Bijan These Nuts",
-   "abbrev": "SACK",
-   "projected_total": 104.66,
+   "team_id": 11,
+   "team_name": "AJ Brown Bible Quotes",
+   "abbrev": "BIBL",
+   "projected_total": 106.52,
    "projected_ranking_points": 4.0,
    "projected_cumulative": 4.0,
    "projected_normalized": -3.0,
@@ -3421,10 +3421,10 @@
    "projected_rank": 9
   },
   {
-   "team_id": 11,
-   "team_name": "AJ Brown Bible Quotes",
-   "abbrev": "BIBL",
-   "projected_total": 103.52,
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "abbrev": "SACK",
+   "projected_total": 104.66,
    "projected_ranking_points": 3.0,
    "projected_cumulative": 3.0,
    "projected_normalized": -4.0,
@@ -3433,8 +3433,8 @@
   },
   {
    "team_id": 4,
-   "team_name": "Swishington Commies",
-   "abbrev": "SW$H",
+   "team_name": "Swishington Football Team",
+   "abbrev": "SFT",
    "projected_total": 97.39,
    "projected_ranking_points": 2.0,
    "projected_cumulative": 2.0,
