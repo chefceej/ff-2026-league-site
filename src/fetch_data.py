@@ -34,8 +34,11 @@ PLAYOFF_CUTOFF = int(os.environ.get("FF_PLAYOFF_CUTOFF", "6"))  # zero-line rank
 ESPN_S2 = os.environ.get("ESPN_S2")
 SWID = os.environ.get("SWID")
 
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..",
-                           "docs", "data", "league_data.json")
+# Where to write the site data. Defaults to docs/data/league_data.json next to
+# this checkout; FF_OUTPUT_PATH lets a scheduled job point a standalone copy of
+# this script at whichever checkout actually serves the site.
+OUTPUT_PATH = os.environ.get("FF_OUTPUT_PATH") or os.path.join(
+    os.path.dirname(__file__), "..", "docs", "data", "league_data.json")
 
 
 def assign_ranking_points(scores_by_team_id, num_teams):
@@ -67,11 +70,14 @@ def week_scores(league, week):
 
 # Lineup slot -> position bucket for the position-score pivot. Bench/IR skipped.
 SLOT_MAP = {
-    "QB": "QB", "RB": "RB", "WR": "WR", "TE": "TE",
+    "QB": "QB", "TQB": "QB",   # TQB = Team QB (this league's 2026 format)
+    "RB": "RB", "WR": "WR", "TE": "TE",
     "RB/WR/TE": "FLEX", "WR/TE": "FLEX", "FLEX": "FLEX",
     "OP": "OP", "QB/RB/WR/TE": "OP",
     "D/ST": "D/ST", "K": "K",
 }
+# Player-position labels that should be treated as QB for the Top Scorers tabs.
+POS_NORMALIZE = {"TQB": "QB"}
 SKIP_SLOTS = {"BE", "IR", "BENCH"}
 POS_TABS = ["QB", "RB", "WR", "TE"]   # player-type tabs for Top Scorers
 TOP_N = 25
@@ -110,11 +116,12 @@ def fetch_week(league, week):
                 pts = float(getattr(pl, "points", 0) or 0)
                 if bucket:
                     slots[bucket] = round(slots.get(bucket, 0) + pts, 2)
+                pos = getattr(pl, "position", "")
                 all_players.append({
                     "name": pl.name,
                     "pro_team": getattr(pl, "proTeam", ""),
                     "fantasy_team": team.team_name,
-                    "position": getattr(pl, "position", ""),
+                    "position": POS_NORMALIZE.get(pos, pos),
                     "score": round(pts, 2),
                 })
 
@@ -162,11 +169,20 @@ def main():
             "normalized_by_week": [],
         }
 
+    # ESPN's box_scores() happily returns the *current* week's live scores for
+    # any future week you ask for, so blindly looping 1..reg_weeks would treat
+    # every remaining week as "played" with duplicate numbers. Bound the loop to
+    # the current NFL scoring period; weeks past it haven't happened yet.
+    current = (getattr(league, "current_week", None)
+               or getattr(league, "nfl_week", None) or reg_weeks)
+    max_week = max(1, min(reg_weeks, current))
+    print(f"Current scoring week: {current} -> fetching weeks 1..{max_week}")
+
     cumulative = {tid: 0.0 for tid in team_meta}
     completed_weeks = 0
     top_players_by_week = []
     position_scores_by_week = []
-    for week in range(1, reg_weeks + 1):
+    for week in range(1, max_week + 1):
         res = fetch_week(league, week)
         if res is None:
             continue
