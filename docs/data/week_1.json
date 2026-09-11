@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "in-progress",
- "fetched_at": "2026-09-10T12:05:54.169243Z",
+ "fetched_at": "2026-09-11T12:04:24.778774Z",
  "matchups": [
   {
    "home": {
@@ -17,10 +17,10 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 20.0,
-    "projected_total": 106.52,
-    "played": 2,
-    "to_play": 7,
+    "score": 24.1,
+    "projected_total": 98.82,
+    "played": 3,
+    "to_play": 6,
     "leaders": [
      {
       "player_id": -15016,
@@ -118,9 +118,9 @@
       "opponent": "SF",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 11.8,
-      "actual": 0.0
+      "actual": 4.1
      },
      {
       "player_id": 4371733,
@@ -218,9 +218,9 @@
       "opponent": "LAR",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 6.61,
-      "actual": 0.0
+      "actual": 2.2
      },
      {
       "player_id": -15025,
@@ -232,9 +232,9 @@
       "opponent": "",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 15.93,
-      "actual": 0.0
+      "actual": 21.1
      },
      {
       "player_id": 4683062,
@@ -291,25 +291,11 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 104.66,
-    "played": 0,
-    "to_play": 9,
+    "score": 19.52,
+    "projected_total": 93.42,
+    "played": 2,
+    "to_play": 7,
     "leaders": [
-     {
-      "player_id": -15014,
-      "name": "Rams TQB",
-      "pro_team": "LAR",
-      "position": "QB",
-      "slot": "TQB",
-      "injury": "",
-      "opponent": "",
-      "kickoff": "2026-09-11T00:35:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 18.09,
-      "actual": 0.0
-     },
      {
       "player_id": 4362628,
       "name": "Ja'Marr Chase",
@@ -323,6 +309,20 @@
       "played": false,
       "projected": 16.44,
       "actual": 0.0
+     },
+     {
+      "player_id": 4430737,
+      "name": "Kyren Williams",
+      "pro_team": "LAR",
+      "position": "RB",
+      "slot": "RB",
+      "injury": "",
+      "opponent": "SF",
+      "kickoff": "2026-09-11T00:35:00Z",
+      "on_bye": false,
+      "played": true,
+      "projected": 12.67,
+      "actual": 14.0
      },
      {
       "player_id": 4567048,
@@ -378,9 +378,9 @@
       "opponent": "SF",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 12.67,
-      "actual": 0.0
+      "actual": 14.0
      },
      {
       "player_id": 4426388,
@@ -434,9 +434,9 @@
       "opponent": "",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 18.09,
-      "actual": 0.0
+      "actual": 5.52
      },
      {
       "player_id": -16021,
@@ -841,10 +841,10 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 97.39,
-    "played": 0,
-    "to_play": 8,
+    "score": 1.0,
+    "projected_total": 88.71,
+    "played": 1,
+    "to_play": 7,
     "leaders": [
      {
       "player_id": 4429795,
@@ -984,9 +984,9 @@
       "opponent": "SF",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 9.68,
-      "actual": 0.0
+      "actual": 1.0
      },
      {
       "player_id": -16009,
@@ -1010,7 +1010,7 @@
       "pro_team": "LV",
       "position": "TE",
       "slot": "BE",
-      "injury": "D",
+      "injury": "O",
       "opponent": "MIA",
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
@@ -1117,10 +1117,10 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 12.0,
-    "projected_total": 108.19,
-    "played": 1,
-    "to_play": 8,
+    "score": 23.0,
+    "projected_total": 110.26,
+    "played": 2,
+    "to_play": 7,
     "leaders": [
      {
       "player_id": -15006,
@@ -1200,7 +1200,7 @@
       "pro_team": "BAL",
       "position": "WR",
       "slot": "WR",
-      "injury": "Q",
+      "injury": "",
       "opponent": "IND",
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
@@ -1274,9 +1274,9 @@
       "opponent": "LAR",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 8.93,
-      "actual": 0.0
+      "actual": 11.0
      },
      {
       "player_id": -16008,
@@ -1391,10 +1391,10 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 110.9,
-    "played": 0,
-    "to_play": 9,
+    "score": 11.3,
+    "projected_total": 106.2,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": -15019,
@@ -1411,20 +1411,6 @@
       "actual": 0.0
      },
      {
-      "player_id": 3117251,
-      "name": "Christian McCaffrey",
-      "pro_team": "SF",
-      "position": "RB",
-      "slot": "RB",
-      "injury": "",
-      "opponent": "LAR",
-      "kickoff": "2026-09-11T00:35:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 16.0,
-      "actual": 0.0
-     },
-     {
       "player_id": 4258173,
       "name": "Nico Collins",
       "pro_team": "HOU",
@@ -1436,6 +1422,20 @@
       "on_bye": false,
       "played": false,
       "projected": 12.96,
+      "actual": 0.0
+     },
+     {
+      "player_id": 4870808,
+      "name": "Jeremiyah Love",
+      "pro_team": "ARI",
+      "position": "RB",
+      "slot": "RB",
+      "injury": "Q",
+      "opponent": "LAC",
+      "kickoff": "2026-09-13T20:25:00Z",
+      "on_bye": false,
+      "played": false,
+      "projected": 12.82,
       "actual": 0.0
      }
     ],
@@ -1450,9 +1450,9 @@
       "opponent": "LAR",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 16.0,
-      "actual": 0.0
+      "actual": 11.3
      },
      {
       "player_id": 4870808,
@@ -2156,9 +2156,9 @@
       "opponent": "SF",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 8.87,
-      "actual": 0.0
+      "actual": 5.4
      },
      {
       "player_id": 4688813,
@@ -2217,10 +2217,10 @@
      "losses": 0,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 112.54,
-    "played": 0,
-    "to_play": 9,
+    "score": 9.9,
+    "projected_total": 105.07,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": -15030,
@@ -2237,20 +2237,6 @@
       "actual": 0.0
      },
      {
-      "player_id": 4426515,
-      "name": "Puka Nacua",
-      "pro_team": "LAR",
-      "position": "WR",
-      "slot": "WR",
-      "injury": "",
-      "opponent": "SF",
-      "kickoff": "2026-09-11T00:35:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 17.37,
-      "actual": 0.0
-     },
-     {
       "player_id": 4890973,
       "name": "Ashton Jeanty",
       "pro_team": "LV",
@@ -2262,6 +2248,20 @@
       "on_bye": false,
       "played": false,
       "projected": 16.52,
+      "actual": 0.0
+     },
+     {
+      "player_id": 4427366,
+      "name": "Breece Hall",
+      "pro_team": "NYJ",
+      "position": "RB",
+      "slot": "RB",
+      "injury": "",
+      "opponent": "TEN",
+      "kickoff": "2026-09-13T17:00:00Z",
+      "on_bye": false,
+      "played": false,
+      "projected": 14.96,
       "actual": 0.0
      }
     ],
@@ -2276,9 +2276,9 @@
       "opponent": "SF",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 17.37,
-      "actual": 0.0
+      "actual": 9.9
      },
      {
       "player_id": 4890973,
@@ -2482,19 +2482,19 @@
    },
    "away": {
     "team_id": 6,
-    "team_name": "Never Gonna Gibbs You Up",
+    "team_name": "Joe Burrow MVP",
     "abbrev": "Naug",
     "owner": "John Naughton",
-    "logo_url": "https://g.espncdn.com/lm-static/logo-packs/ffl/1stStringAllStars-SportsManias/gibbs-01.svg",
+    "logo_url": "https://g.espncdn.com/lm-static/logo-packs/ffl/1stStringAllStars-SportsManias-QB/burrow-01.svg",
     "record": {
      "wins": 0,
      "losses": 0,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 107.41,
-    "played": 0,
-    "to_play": 9,
+    "score": 2.0,
+    "projected_total": 102.1,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": -15004,
@@ -2648,9 +2648,9 @@
       "opponent": "SF",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 7.31,
-      "actual": 0.0
+      "actual": 2.0
      },
      {
       "player_id": 4036133,
@@ -2720,9 +2720,9 @@
       "opponent": "LAR",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 7.36,
-      "actual": 0.0
+      "actual": 15.0
      },
      {
       "player_id": 4569603,
@@ -2954,9 +2954,9 @@
       "opponent": "LAR",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 8.88,
-      "actual": 0.0
+      "actual": 13.9
      },
      {
       "player_id": 4575131,
@@ -2978,11 +2978,11 @@
       "pro_team": "SF",
       "position": "WR",
       "slot": "BE",
-      "injury": "",
+      "injury": "Q",
       "opponent": "LAR",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 7.94,
       "actual": 0.0
      },
@@ -3312,7 +3312,7 @@
       "opponent": "SF",
       "kickoff": "2026-09-11T00:35:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 6.7,
       "actual": 0.0
      }
@@ -3344,10 +3344,10 @@
    "projected_rank": 2
   },
   {
-   "team_id": 9,
-   "team_name": "Walt's Warriors",
-   "abbrev": "WALT",
-   "projected_total": 112.54,
+   "team_id": 1,
+   "team_name": "Nixed Downs in Dallas",
+   "abbrev": "Stev",
+   "projected_total": 110.26,
    "projected_ranking_points": 10.0,
    "projected_cumulative": 10.0,
    "projected_normalized": 3.0,
@@ -3355,10 +3355,10 @@
    "projected_rank": 3
   },
   {
-   "team_id": 12,
-   "team_name": "Remeber Bendel",
-   "abbrev": "BEND",
-   "projected_total": 110.9,
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "abbrev": "MBJG",
+   "projected_total": 108.27,
    "projected_ranking_points": 9.0,
    "projected_cumulative": 9.0,
    "projected_normalized": 2.0,
@@ -3366,10 +3366,10 @@
    "projected_rank": 4
   },
   {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "abbrev": "MBJG",
-   "projected_total": 108.27,
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "abbrev": "PORK",
+   "projected_total": 107.82,
    "projected_ranking_points": 8.0,
    "projected_cumulative": 8.0,
    "projected_normalized": 1.0,
@@ -3377,10 +3377,10 @@
    "projected_rank": 5
   },
   {
-   "team_id": 1,
-   "team_name": "Nixed Downs in Dallas",
-   "abbrev": "Stev",
-   "projected_total": 108.19,
+   "team_id": 12,
+   "team_name": "Remeber Bendel",
+   "abbrev": "BEND",
+   "projected_total": 106.2,
    "projected_ranking_points": 7.0,
    "projected_cumulative": 7.0,
    "projected_normalized": 0.0,
@@ -3388,10 +3388,10 @@
    "projected_rank": 6
   },
   {
-   "team_id": 8,
-   "team_name": "Satriale's Pork Store",
-   "abbrev": "PORK",
-   "projected_total": 107.82,
+   "team_id": 9,
+   "team_name": "Walt's Warriors",
+   "abbrev": "WALT",
+   "projected_total": 105.07,
    "projected_ranking_points": 6.0,
    "projected_cumulative": 6.0,
    "projected_normalized": -1.0,
@@ -3400,9 +3400,9 @@
   },
   {
    "team_id": 6,
-   "team_name": "Never Gonna Gibbs You Up",
+   "team_name": "Joe Burrow MVP",
    "abbrev": "Naug",
-   "projected_total": 107.41,
+   "projected_total": 102.1,
    "projected_ranking_points": 5.0,
    "projected_cumulative": 5.0,
    "projected_normalized": -2.0,
@@ -3413,7 +3413,7 @@
    "team_id": 11,
    "team_name": "AJ Brown Bible Quotes",
    "abbrev": "BIBL",
-   "projected_total": 106.52,
+   "projected_total": 98.82,
    "projected_ranking_points": 4.0,
    "projected_cumulative": 4.0,
    "projected_normalized": -3.0,
@@ -3421,10 +3421,10 @@
    "projected_rank": 9
   },
   {
-   "team_id": 10,
-   "team_name": "Bijan These Nuts",
-   "abbrev": "SACK",
-   "projected_total": 104.66,
+   "team_id": 2,
+   "team_name": "Kaiser Soze",
+   "abbrev": "CJ",
+   "projected_total": 94.84,
    "projected_ranking_points": 3.0,
    "projected_cumulative": 3.0,
    "projected_normalized": -4.0,
@@ -3432,10 +3432,10 @@
    "projected_rank": 10
   },
   {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "abbrev": "SFT",
-   "projected_total": 97.39,
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "abbrev": "SACK",
+   "projected_total": 93.42,
    "projected_ranking_points": 2.0,
    "projected_cumulative": 2.0,
    "projected_normalized": -5.0,
@@ -3443,10 +3443,10 @@
    "projected_rank": 11
   },
   {
-   "team_id": 2,
-   "team_name": "Kaiser Soze",
-   "abbrev": "CJ",
-   "projected_total": 94.84,
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "abbrev": "SFT",
+   "projected_total": 88.71,
    "projected_ranking_points": 1.0,
    "projected_cumulative": 1.0,
    "projected_normalized": -6.0,
