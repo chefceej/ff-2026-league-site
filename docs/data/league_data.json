@@ -8,8 +8,8 @@
   "current_matchup_week": 1,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-11 11:56:58 UTC",
-  "last_updated": "2026-09-11T11:56:58.604101+00:00"
+  "updated_at": "2026-09-12 11:23:51 UTC",
+  "last_updated": "2026-09-12T11:23:51.904329+00:00"
  },
  "teams": [
   {
@@ -907,6 +907,13 @@
      "score": 0.0
     },
     {
+     "name": "Dalton Schultz",
+     "pro_team": "HOU",
+     "fantasy_team": "Swishington Football Team",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
      "fantasy_team": "Nixed Downs in Dallas",
@@ -942,8 +949,8 @@
      "score": 0.0
     },
     {
-     "name": "T.J. Hockenson",
-     "pro_team": "MIN",
+     "name": "Michael Mayer",
+     "pro_team": "LV",
      "fantasy_team": "Joe Burrow MVP",
      "position": "TE",
      "score": 0.0
@@ -1000,7 +1007,8 @@
     "WR": 0.0,
     "FLEX": 0.0,
     "K": 1.0,
-    "D/ST": 0.0
+    "D/ST": 0.0,
+    "TE": 0.0
    },
    "Stev": {
     "WR": 0.0,
