@@ -8,18 +8,18 @@
   "current_matchup_week": 1,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-13 12:27:18 UTC",
-  "last_updated": "2026-09-13T12:27:18.434953+00:00"
+  "updated_at": "2026-09-13 19:12:28 UTC",
+  "last_updated": "2026-09-13T19:12:28.274204+00:00"
  },
  "teams": [
   {
-   "team_id": 11,
-   "team_name": "AJ Brown Bible Quotes",
-   "team_abbrev": "BIBL",
-   "abbrev": "BIBL",
-   "owner": "Maxx Millstein",
+   "team_id": 2,
+   "team_name": "Kaiser Soze",
+   "team_abbrev": "CJ",
+   "abbrev": "CJ",
+   "owner": "Connor Kraus",
    "scores_by_week": [
-    24.1
+    94.84
    ],
    "ranking_points_by_week": [
     12.0
@@ -40,7 +40,7 @@
    "abbrev": "Stev",
    "owner": "Ben Fagin",
    "scores_by_week": [
-    23.0
+    86.2
    ],
    "ranking_points_by_week": [
     11.0
@@ -55,13 +55,13 @@
    "total_ranking_points": 11.0
   },
   {
-   "team_id": 3,
-   "team_name": "Toe Burrow",
-   "team_abbrev": "BW",
-   "abbrev": "BW",
-   "owner": "Brian Wilson",
+   "team_id": 9,
+   "team_name": "Walt's Warriors",
+   "team_abbrev": "WALT",
+   "abbrev": "WALT",
+   "owner": "Matthew  Walter",
    "scores_by_week": [
-    22.2
+    73.3
    ],
    "ranking_points_by_week": [
     10.0
@@ -76,13 +76,13 @@
    "total_ranking_points": 10.0
   },
   {
-   "team_id": 10,
-   "team_name": "Bijan These Nuts",
-   "team_abbrev": "SACK",
-   "abbrev": "SACK",
-   "owner": "Brendan Ecker",
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SFT",
+   "abbrev": "SFT",
+   "owner": "Matt Stern",
    "scores_by_week": [
-    19.52
+    50.4
    ],
    "ranking_points_by_week": [
     9.0
@@ -97,13 +97,13 @@
    "total_ranking_points": 9.0
   },
   {
-   "team_id": 12,
-   "team_name": "Remeber Bendel",
-   "team_abbrev": "BEND",
-   "abbrev": "BEND",
-   "owner": "Ben Mendel",
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "team_abbrev": "MBJG",
+   "abbrev": "MBJG",
+   "owner": "Matthew Bernstein",
    "scores_by_week": [
-    11.3
+    50.0
    ],
    "ranking_points_by_week": [
     8.0
@@ -118,13 +118,13 @@
    "total_ranking_points": 8.0
   },
   {
-   "team_id": 2,
-   "team_name": "Kaiser Soze",
-   "team_abbrev": "CJ",
-   "abbrev": "CJ",
-   "owner": "Connor Kraus",
+   "team_id": 3,
+   "team_name": "Toe Burrow",
+   "team_abbrev": "BW",
+   "abbrev": "BW",
+   "owner": "Brian Wilson",
    "scores_by_week": [
-    10.9
+    48.96
    ],
    "ranking_points_by_week": [
     7.0
@@ -139,13 +139,13 @@
    "total_ranking_points": 7.0
   },
   {
-   "team_id": 9,
-   "team_name": "Walt's Warriors",
-   "team_abbrev": "WALT",
-   "abbrev": "WALT",
-   "owner": "Matthew  Walter",
+   "team_id": 12,
+   "team_name": "Remeber Bendel",
+   "team_abbrev": "BEND",
+   "abbrev": "BEND",
+   "owner": "Ben Mendel",
    "scores_by_week": [
-    9.9
+    48.6
    ],
    "ranking_points_by_week": [
     6.0
@@ -160,13 +160,13 @@
    "total_ranking_points": 6.0
   },
   {
-   "team_id": 6,
-   "team_name": "Joe Burrow MVP",
-   "team_abbrev": "Naug",
-   "abbrev": "Naug",
-   "owner": "John Naughton",
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
    "scores_by_week": [
-    2.0
+    46.2
    ],
    "ranking_points_by_week": [
     5.0
@@ -181,13 +181,13 @@
    "total_ranking_points": 5.0
   },
   {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SFT",
-   "abbrev": "SFT",
-   "owner": "Matt Stern",
+   "team_id": 11,
+   "team_name": "AJ Brown Bible Quotes",
+   "team_abbrev": "BIBL",
+   "abbrev": "BIBL",
+   "owner": "Maxx Millstein",
    "scores_by_week": [
-    1.0
+    45.3
    ],
    "ranking_points_by_week": [
     4.0
@@ -202,34 +202,34 @@
    "total_ranking_points": 4.0
   },
   {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "team_abbrev": "MBJG",
-   "abbrev": "MBJG",
-   "owner": "Matthew Bernstein",
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "team_abbrev": "SACK",
+   "abbrev": "SACK",
+   "owner": "Brendan Ecker",
    "scores_by_week": [
-    0.0
+    40.72
    ],
    "ranking_points_by_week": [
-    2.0
+    3.0
    ],
    "cumulative_points_by_week": [
-    2.0
+    3.0
    ],
    "normalized_by_week": [
-    -5.0
+    -4.0
    ],
    "rank": 10,
-   "total_ranking_points": 2.0
+   "total_ranking_points": 3.0
   },
   {
-   "team_id": 7,
-   "team_name": "Speedy CRashees",
-   "team_abbrev": "SC",
-   "abbrev": "SC",
-   "owner": "Brantley Lohkamp",
+   "team_id": 6,
+   "team_name": "Joe Burrow MVP",
+   "team_abbrev": "Naug",
+   "abbrev": "Naug",
+   "owner": "John Naughton",
    "scores_by_week": [
-    0.0
+    36.12
    ],
    "ranking_points_by_week": [
     2.0
@@ -244,36 +244,127 @@
    "total_ranking_points": 2.0
   },
   {
-   "team_id": 8,
-   "team_name": "Satriale's Pork Store",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
+   "team_id": 7,
+   "team_name": "Speedy CRashees",
+   "team_abbrev": "SC",
+   "abbrev": "SC",
+   "owner": "Brantley Lohkamp",
    "scores_by_week": [
-    0.0
+    34.3
    ],
    "ranking_points_by_week": [
-    2.0
+    1.0
    ],
    "cumulative_points_by_week": [
-    2.0
+    1.0
    ],
    "normalized_by_week": [
-    -5.0
+    -6.0
    ],
    "rank": 12,
-   "total_ranking_points": 2.0
+   "total_ranking_points": 1.0
   }
  ],
  "top_players_by_week": [
   {
    "all": [
     {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Kaiser Soze",
+     "position": "QB",
+     "score": 29.04
+    },
+    {
+     "name": "Jaguars TQB",
+     "pro_team": "JAX",
+     "fantasy_team": "Walt's Warriors",
+     "position": "QB",
+     "score": 26.1
+    },
+    {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "score": 26.0
+    },
+    {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 23.5
+    },
+    {
      "name": "Jaxon Smith-Njigba",
      "pro_team": "SEA",
      "fantasy_team": "Toe Burrow",
      "position": "WR",
      "score": 22.2
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 22.0
+    },
+    {
+     "name": "Ravens TQB",
+     "pro_team": "BAL",
+     "fantasy_team": "Toe Burrow",
+     "position": "QB",
+     "score": 21.56
+    },
+    {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "RB",
+     "score": 20.7
+    },
+    {
+     "name": "Bijan Robinson",
+     "pro_team": "ATL",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "score": 20.0
+    },
+    {
+     "name": "Lions D/ST",
+     "pro_team": "DET",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "D/ST",
+     "score": 19.0
+    },
+    {
+     "name": "Jonathan Taylor",
+     "pro_team": "IND",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 18.7
+    },
+    {
+     "name": "DJ Moore",
+     "pro_team": "BUF",
+     "fantasy_team": "Speedy CRashees",
+     "position": "WR",
+     "score": 18.5
+    },
+    {
+     "name": "David Montgomery",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 18.5
+    },
+    {
+     "name": "Breece Hall",
+     "pro_team": "NYJ",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "score": 15.9
     },
     {
      "name": "Kyren Williams",
@@ -283,11 +374,53 @@
      "score": 14.0
     },
     {
+     "name": "Amon-Ra St. Brown",
+     "pro_team": "DET",
+     "fantasy_team": "AJ Brown Bible Quotes",
+     "position": "WR",
+     "score": 13.6
+    },
+    {
      "name": "Seahawks D/ST",
      "pro_team": "SEA",
      "fantasy_team": "AJ Brown Bible Quotes",
      "position": "D/ST",
      "score": 13.0
+    },
+    {
+     "name": "Bucky Irving",
+     "pro_team": "TB",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "score": 13.0
+    },
+    {
+     "name": "Jaguars D/ST",
+     "pro_team": "JAX",
+     "fantasy_team": "Kaiser Soze",
+     "position": "D/ST",
+     "score": 13.0
+    },
+    {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "Joe Burrow MVP",
+     "position": "RB",
+     "score": 13.0
+    },
+    {
+     "name": "Chase Brown",
+     "pro_team": "CIN",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 12.9
+    },
+    {
+     "name": "Nico Collins",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 12.8
     },
     {
      "name": "Rhamondre Stevenson",
@@ -297,154 +430,56 @@
      "score": 12.0
     },
     {
+     "name": "Cam Little",
+     "pro_team": "JAX",
+     "fantasy_team": "The Lizard Kings",
+     "position": "K",
+     "score": 12.0
+    },
+    {
      "name": "Christian McCaffrey",
      "pro_team": "SF",
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "score": 11.3
-    },
-    {
-     "name": "Eddy Pineiro",
-     "pro_team": "SF",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "K",
-     "score": 11.0
-    },
-    {
-     "name": "Puka Nacua",
-     "pro_team": "LAR",
-     "fantasy_team": "Walt's Warriors",
-     "position": "WR",
-     "score": 9.9
-    },
-    {
-     "name": "Jason Myers",
-     "pro_team": "SEA",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "K",
-     "score": 7.0
-    },
-    {
-     "name": "Jadarian Price",
-     "pro_team": "SEA",
-     "fantasy_team": "Kaiser Soze",
-     "position": "RB",
-     "score": 6.8
-    },
-    {
-     "name": "Rams TQB",
-     "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "QB",
-     "score": 5.52
-    },
-    {
-     "name": "Davante Adams",
-     "pro_team": "LAR",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "WR",
-     "score": 4.1
-    },
-    {
-     "name": "A.J. Brown",
-     "pro_team": "NE",
-     "fantasy_team": "Kaiser Soze",
-     "position": "WR",
-     "score": 4.1
-    },
-    {
-     "name": "Rams D/ST",
-     "pro_team": "LAR",
-     "fantasy_team": "Joe Burrow MVP",
-     "position": "D/ST",
-     "score": 2.0
-    },
-    {
-     "name": "Harrison Mevis",
-     "pro_team": "LAR",
-     "fantasy_team": "Swishington Football Team",
-     "position": "K",
-     "score": 1.0
-    },
-    {
-     "name": "Amon-Ra St. Brown",
-     "pro_team": "DET",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Drake London",
-     "pro_team": "ATL",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Travis Etienne Jr.",
-     "pro_team": "NO",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Kenny Gainwell",
-     "pro_team": "TB",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Travis Kelce",
-     "pro_team": "KC",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "TE",
-     "score": 0.0
-    },
-    {
-     "name": "Vikings TQB",
-     "pro_team": "MIN",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "Ja'Marr Chase",
-     "pro_team": "CIN",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Kenneth Walker III",
-     "pro_team": "KC",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Jameson Williams",
-     "pro_team": "DET",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Rome Odunze",
-     "pro_team": "CHI",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Tucker Kraft",
-     "pro_team": "GB",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "TE",
-     "score": 0.0
     }
    ],
    "QB": [
+    {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Kaiser Soze",
+     "position": "QB",
+     "score": 29.04
+    },
+    {
+     "name": "Jaguars TQB",
+     "pro_team": "JAX",
+     "fantasy_team": "Walt's Warriors",
+     "position": "QB",
+     "score": 26.1
+    },
+    {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "score": 26.0
+    },
+    {
+     "name": "Ravens TQB",
+     "pro_team": "BAL",
+     "fantasy_team": "Toe Burrow",
+     "position": "QB",
+     "score": 21.56
+    },
+    {
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "Joe Burrow MVP",
+     "position": "QB",
+     "score": 10.52
+    },
     {
      "name": "Rams TQB",
      "pro_team": "LAR",
@@ -467,13 +502,6 @@
      "score": 0.0
     },
     {
-     "name": "Bills TQB",
-     "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
-     "position": "QB",
-     "score": 0.0
-    },
-    {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
      "fantasy_team": "Nixed Downs in Dallas",
@@ -484,34 +512,6 @@
      "name": "Giants TQB",
      "pro_team": "NYG",
      "fantasy_team": "Remeber Bendel",
-     "position": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "Ravens TQB",
-     "pro_team": "BAL",
-     "fantasy_team": "Toe Burrow",
-     "position": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "Bears TQB",
-     "pro_team": "CHI",
-     "fantasy_team": "Kaiser Soze",
-     "position": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "Jaguars TQB",
-     "pro_team": "JAX",
-     "fantasy_team": "Walt's Warriors",
-     "position": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "Bengals TQB",
-     "pro_team": "CIN",
-     "fantasy_team": "Joe Burrow MVP",
      "position": "QB",
      "score": 0.0
     },
@@ -532,11 +532,74 @@
    ],
    "RB": [
     {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 22.0
+    },
+    {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "RB",
+     "score": 20.7
+    },
+    {
+     "name": "Bijan Robinson",
+     "pro_team": "ATL",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "score": 20.0
+    },
+    {
+     "name": "Jonathan Taylor",
+     "pro_team": "IND",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 18.7
+    },
+    {
+     "name": "David Montgomery",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 18.5
+    },
+    {
+     "name": "Breece Hall",
+     "pro_team": "NYJ",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "score": 15.9
+    },
+    {
      "name": "Kyren Williams",
      "pro_team": "LAR",
      "fantasy_team": "Bijan These Nuts",
      "position": "RB",
      "score": 14.0
+    },
+    {
+     "name": "Bucky Irving",
+     "pro_team": "TB",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "score": 13.0
+    },
+    {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "Joe Burrow MVP",
+     "position": "RB",
+     "score": 13.0
+    },
+    {
+     "name": "Chase Brown",
+     "pro_team": "CIN",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 12.9
     },
     {
      "name": "Rhamondre Stevenson",
@@ -553,6 +616,20 @@
      "score": 11.3
     },
     {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 10.3
+    },
+    {
+     "name": "Bhayshul Tuten",
+     "pro_team": "JAX",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 8.1
+    },
+    {
      "name": "Jadarian Price",
      "pro_team": "SEA",
      "fantasy_team": "Kaiser Soze",
@@ -560,30 +637,58 @@
      "score": 6.8
     },
     {
-     "name": "Travis Etienne Jr.",
-     "pro_team": "NO",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "name": "Jonathon Brooks",
+     "pro_team": "CAR",
+     "fantasy_team": "The Lizard Kings",
      "position": "RB",
-     "score": 0.0
+     "score": 6.1
+    },
+    {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Speedy CRashees",
+     "position": "RB",
+     "score": 4.8
     },
     {
      "name": "Kenny Gainwell",
      "pro_team": "TB",
      "fantasy_team": "AJ Brown Bible Quotes",
      "position": "RB",
-     "score": 0.0
+     "score": 2.3
+    },
+    {
+     "name": "Quinshon Judkins",
+     "pro_team": "CLE",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "score": 2.1
+    },
+    {
+     "name": "Tony Pollard",
+     "pro_team": "TEN",
+     "fantasy_team": "Joe Burrow MVP",
+     "position": "RB",
+     "score": 1.8
+    },
+    {
+     "name": "Travis Etienne Jr.",
+     "pro_team": "NO",
+     "fantasy_team": "AJ Brown Bible Quotes",
+     "position": "RB",
+     "score": 1.4
+    },
+    {
+     "name": "Rico Dowdle",
+     "pro_team": "PIT",
+     "fantasy_team": "Toe Burrow",
+     "position": "RB",
+     "score": 1.3
     },
     {
      "name": "Kenneth Walker III",
      "pro_team": "KC",
      "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "James Cook III",
-     "pro_team": "BUF",
-     "fantasy_team": "Speedy CRashees",
      "position": "RB",
      "score": 0.0
     },
@@ -595,119 +700,21 @@
      "score": 0.0
     },
     {
-     "name": "Jahmyr Gibbs",
-     "pro_team": "DET",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
      "name": "MarShawn Lloyd",
      "pro_team": "GB",
      "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "score": 0.0
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Jeremiyah Love",
-     "pro_team": "ARI",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "David Montgomery",
-     "pro_team": "HOU",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Javonte Williams",
-     "pro_team": "DAL",
-     "fantasy_team": "Toe Burrow",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Cam Skattebo",
-     "pro_team": "NYG",
-     "fantasy_team": "Toe Burrow",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Rico Dowdle",
-     "pro_team": "PIT",
-     "fantasy_team": "Toe Burrow",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Bijan Robinson",
-     "pro_team": "ATL",
-     "fantasy_team": "Kaiser Soze",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Bucky Irving",
-     "pro_team": "TB",
-     "fantasy_team": "Kaiser Soze",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Ashton Jeanty",
-     "pro_team": "LV",
-     "fantasy_team": "Walt's Warriors",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Breece Hall",
-     "pro_team": "NYJ",
-     "fantasy_team": "Walt's Warriors",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Quinshon Judkins",
-     "pro_team": "CLE",
-     "fantasy_team": "Walt's Warriors",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Saquon Barkley",
-     "pro_team": "PHI",
-     "fantasy_team": "Joe Burrow MVP",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "D'Andre Swift",
-     "pro_team": "CHI",
-     "fantasy_team": "Joe Burrow MVP",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Tony Pollard",
-     "pro_team": "TEN",
-     "fantasy_team": "Joe Burrow MVP",
-     "position": "RB",
-     "score": 0.0
     }
    ],
    "WR": [
+    {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 23.5
+    },
     {
      "name": "Jaxon Smith-Njigba",
      "pro_team": "SEA",
@@ -716,11 +723,74 @@
      "score": 22.2
     },
     {
+     "name": "DJ Moore",
+     "pro_team": "BUF",
+     "fantasy_team": "Speedy CRashees",
+     "position": "WR",
+     "score": 18.5
+    },
+    {
+     "name": "Amon-Ra St. Brown",
+     "pro_team": "DET",
+     "fantasy_team": "AJ Brown Bible Quotes",
+     "position": "WR",
+     "score": 13.6
+    },
+    {
+     "name": "Nico Collins",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 12.8
+    },
+    {
+     "name": "Garrett Wilson",
+     "pro_team": "NYJ",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "WR",
+     "score": 10.9
+    },
+    {
+     "name": "Chris Olave",
+     "pro_team": "NO",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "WR",
+     "score": 10.7
+    },
+    {
      "name": "Puka Nacua",
      "pro_team": "LAR",
      "fantasy_team": "Walt's Warriors",
      "position": "WR",
      "score": 9.9
+    },
+    {
+     "name": "Emeka Egbuka",
+     "pro_team": "TB",
+     "fantasy_team": "Joe Burrow MVP",
+     "position": "WR",
+     "score": 8.8
+    },
+    {
+     "name": "Rome Odunze",
+     "pro_team": "CHI",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 6.2
+    },
+    {
+     "name": "Tee Higgins",
+     "pro_team": "CIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "score": 5.1
+    },
+    {
+     "name": "Luther Burden III",
+     "pro_team": "CHI",
+     "fantasy_team": "Walt's Warriors",
+     "position": "WR",
+     "score": 4.3
     },
     {
      "name": "Davante Adams",
@@ -737,39 +807,39 @@
      "score": 4.1
     },
     {
-     "name": "Amon-Ra St. Brown",
-     "pro_team": "DET",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Drake London",
      "pro_team": "ATL",
      "fantasy_team": "AJ Brown Bible Quotes",
      "position": "WR",
-     "score": 0.0
+     "score": 3.9
     },
     {
-     "name": "Ja'Marr Chase",
-     "pro_team": "CIN",
-     "fantasy_team": "Bijan These Nuts",
+     "name": "Carnell Tate",
+     "pro_team": "TEN",
+     "fantasy_team": "Toe Burrow",
      "position": "WR",
-     "score": 0.0
+     "score": 3.9
     },
     {
      "name": "Jameson Williams",
      "pro_team": "DET",
      "fantasy_team": "Bijan These Nuts",
      "position": "WR",
-     "score": 0.0
+     "score": 3.8
     },
     {
-     "name": "Rome Odunze",
-     "pro_team": "CHI",
+     "name": "Ja'Marr Chase",
+     "pro_team": "CIN",
      "fantasy_team": "Bijan These Nuts",
      "position": "WR",
-     "score": 0.0
+     "score": 2.2
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 1.9
     },
     {
      "name": "Rashee Rice",
@@ -781,13 +851,6 @@
     {
      "name": "Ladd McConkey",
      "pro_team": "LAC",
-     "fantasy_team": "Speedy CRashees",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "DJ Moore",
-     "pro_team": "BUF",
      "fantasy_team": "Speedy CRashees",
      "position": "WR",
      "score": 0.0
@@ -819,72 +882,37 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "WR",
      "score": 0.0
-    },
-    {
-     "name": "Zay Flowers",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "DeVonta Smith",
-     "pro_team": "PHI",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Nico Collins",
-     "pro_team": "HOU",
-     "fantasy_team": "Remeber Bendel",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Tetairoa McMillan",
-     "pro_team": "CAR",
-     "fantasy_team": "Remeber Bendel",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Carnell Tate",
-     "pro_team": "TEN",
-     "fantasy_team": "Toe Burrow",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "George Pickens",
-     "pro_team": "DAL",
-     "fantasy_team": "Kaiser Soze",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Luther Burden III",
-     "pro_team": "CHI",
-     "fantasy_team": "Walt's Warriors",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Justin Jefferson",
-     "pro_team": "MIN",
-     "fantasy_team": "Joe Burrow MVP",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Emeka Egbuka",
-     "pro_team": "TB",
-     "fantasy_team": "Joe Burrow MVP",
-     "position": "WR",
-     "score": 0.0
     }
    ],
    "TE": [
+    {
+     "name": "Sam LaPorta",
+     "pro_team": "DET",
+     "fantasy_team": "Kaiser Soze",
+     "position": "TE",
+     "score": 5.9
+    },
+    {
+     "name": "Harold Fannin Jr.",
+     "pro_team": "CLE",
+     "fantasy_team": "Remeber Bendel",
+     "position": "TE",
+     "score": 3.1
+    },
+    {
+     "name": "Dalton Schultz",
+     "pro_team": "HOU",
+     "fantasy_team": "Swishington Football Team",
+     "position": "TE",
+     "score": 1.4
+    },
+    {
+     "name": "Tyler Warren",
+     "pro_team": "IND",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "TE",
+     "score": 1.4
+    },
     {
      "name": "Travis Kelce",
      "pro_team": "KC",
@@ -907,13 +935,6 @@
      "score": 0.0
     },
     {
-     "name": "Dalton Schultz",
-     "pro_team": "HOU",
-     "fantasy_team": "Swishington Football Team",
-     "position": "TE",
-     "score": 0.0
-    },
-    {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
      "fantasy_team": "Nixed Downs in Dallas",
@@ -921,23 +942,9 @@
      "score": 0.0
     },
     {
-     "name": "Harold Fannin Jr.",
-     "pro_team": "CLE",
-     "fantasy_team": "Remeber Bendel",
-     "position": "TE",
-     "score": 0.0
-    },
-    {
      "name": "Colston Loveland",
      "pro_team": "CHI",
      "fantasy_team": "Toe Burrow",
-     "position": "TE",
-     "score": 0.0
-    },
-    {
-     "name": "Sam LaPorta",
-     "pro_team": "DET",
-     "fantasy_team": "Kaiser Soze",
      "position": "TE",
      "score": 0.0
     },
@@ -956,13 +963,6 @@
      "score": 0.0
     },
     {
-     "name": "Tyler Warren",
-     "pro_team": "IND",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "TE",
-     "score": 0.0
-    },
-    {
      "name": "Trey McBride",
      "pro_team": "ARI",
      "fantasy_team": "The Lizard Kings",
@@ -975,8 +975,8 @@
  "position_scores_by_week": [
   {
    "BIBL": {
-    "WR": 0.0,
-    "RB": 0.0,
+    "WR": 17.5,
+    "RB": 3.7,
     "FLEX": 4.1,
     "TE": 0.0,
     "D/ST": 13.0,
@@ -984,103 +984,103 @@
     "QB": 0.0
    },
    "SACK": {
-    "WR": 0.0,
+    "WR": 6.0,
     "RB": 14.0,
-    "FLEX": 0.0,
+    "FLEX": 6.2,
     "TE": 0.0,
     "QB": 5.52,
     "D/ST": 0.0,
-    "K": 0.0
+    "K": 9.0
    },
    "SC": {
-    "RB": 0.0,
+    "RB": 4.8,
     "WR": 0.0,
-    "FLEX": 0.0,
+    "FLEX": 18.5,
     "QB": 0.0,
     "TE": 0.0,
-    "K": 0.0,
-    "D/ST": 0.0
+    "K": 3.0,
+    "D/ST": 8.0
    },
    "SFT": {
-    "RB": 0.0,
-    "QB": 0.0,
+    "RB": 22.0,
+    "QB": 26.0,
     "WR": 0.0,
     "FLEX": 0.0,
     "K": 1.0,
     "D/ST": 0.0,
-    "TE": 0.0
+    "TE": 1.4
    },
    "Stev": {
-    "WR": 0.0,
-    "RB": 12.0,
+    "WR": 23.5,
+    "RB": 32.7,
     "FLEX": 0.0,
     "TE": 0.0,
     "QB": 0.0,
     "K": 11.0,
-    "D/ST": 0.0
+    "D/ST": 19.0
    },
    "BEND": {
     "RB": 11.3,
-    "WR": 0.0,
-    "FLEX": 0.0,
-    "TE": 0.0,
+    "WR": 14.7,
+    "FLEX": 18.5,
+    "TE": 3.1,
     "QB": 0.0,
-    "D/ST": 0.0,
+    "D/ST": 1.0,
     "K": 0.0
    },
    "BW": {
-    "WR": 22.2,
+    "WR": 26.1,
     "RB": 0.0,
     "TE": 0.0,
-    "QB": 0.0,
-    "FLEX": 0.0,
+    "QB": 21.56,
+    "FLEX": 1.3,
     "D/ST": 0.0,
     "K": 0.0
    },
    "CJ": {
-    "RB": 6.8,
+    "RB": 26.8,
     "WR": 4.1,
-    "FLEX": 0.0,
-    "TE": 0.0,
-    "QB": 0.0,
-    "D/ST": 0.0,
-    "K": 0.0
+    "FLEX": 13.0,
+    "TE": 5.9,
+    "QB": 29.04,
+    "D/ST": 13.0,
+    "K": 3.0
    },
    "WALT": {
-    "WR": 9.9,
-    "RB": 0.0,
+    "WR": 14.2,
     "FLEX": 0.0,
-    "QB": 0.0,
+    "RB": 18.0,
+    "QB": 26.1,
     "TE": 0.0,
-    "D/ST": 0.0,
-    "K": 0.0
+    "D/ST": 7.0,
+    "K": 8.0
    },
    "Naug": {
-    "WR": 0.0,
-    "RB": 0.0,
-    "FLEX": 0.0,
-    "QB": 0.0,
+    "WR": 8.8,
+    "RB": 13.0,
+    "FLEX": 1.8,
+    "QB": 10.52,
     "K": 0.0,
     "D/ST": 2.0,
     "TE": 0.0
    },
    "PORK": {
-    "RB": 0.0,
-    "WR": 0.0,
-    "TE": 0.0,
+    "RB": 12.9,
+    "WR": 21.6,
+    "TE": 1.4,
     "QB": 0.0,
-    "FLEX": 0.0,
+    "FLEX": 10.3,
     "K": 0.0,
     "D/ST": 0.0
    },
    "MBJG": {
-    "RB": 0.0,
-    "WR": 0.0,
+    "RB": 26.8,
+    "WR": 5.1,
     "TE": 0.0,
-    "FLEX": 0.0,
+    "FLEX": 6.1,
     "QB": 0.0,
     "D/ST": 0.0,
-    "K": 0.0
+    "K": 12.0
    }
   }
  ]
