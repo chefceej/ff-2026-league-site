@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "in-progress",
- "fetched_at": "2026-09-12T11:30:54.125848Z",
+ "fetched_at": "2026-09-13T12:35:53.327279Z",
  "matchups": [
   {
    "home": {
@@ -292,7 +292,7 @@
      "ties": 0
     },
     "score": 19.52,
-    "projected_total": 93.33,
+    "projected_total": 93.3,
     "played": 2,
     "to_play": 7,
     "leaders": [
@@ -449,7 +449,7 @@
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 7.14,
+      "projected": 7.11,
       "actual": 0.0
      },
      {
@@ -549,7 +549,7 @@
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 7.94,
+      "projected": 7.93,
       "actual": 0.0
      }
     ]
@@ -797,7 +797,7 @@
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 6.56,
+      "projected": 6.91,
       "actual": 0.0
      },
      {
@@ -1071,7 +1071,7 @@
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 7.17,
+      "projected": 7.07,
       "actual": 0.0
      },
      {
@@ -1682,7 +1682,7 @@
      "ties": 0
     },
     "score": 22.2,
-    "projected_total": 114.42,
+    "projected_total": 114.43,
     "played": 1,
     "to_play": 8,
     "leaders": [
@@ -1811,7 +1811,7 @@
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 9.84,
+      "projected": 9.85,
       "actual": 0.0
      },
      {
@@ -2232,7 +2232,7 @@
      "ties": 0
     },
     "score": 9.9,
-    "projected_total": 104.93,
+    "projected_total": 104.59,
     "played": 1,
     "to_play": 8,
     "leaders": [
@@ -2261,7 +2261,7 @@
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 16.52,
+      "projected": 16.17,
       "actual": 0.0
      },
      {
@@ -2275,7 +2275,7 @@
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 14.96,
+      "projected": 14.97,
       "actual": 0.0
      }
     ],
@@ -2305,7 +2305,7 @@
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 16.52,
+      "projected": 16.17,
       "actual": 0.0
      },
      {
@@ -2319,7 +2319,7 @@
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 14.96,
+      "projected": 14.97,
       "actual": 0.0
      },
      {
@@ -2447,7 +2447,7 @@
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 8.1,
+      "projected": 8.11,
       "actual": 0.0
      },
      {
@@ -2475,7 +2475,7 @@
       "kickoff": "2026-09-15T00:15:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 16.77,
+      "projected": 16.7,
       "actual": 0.0
      },
      {
@@ -2506,7 +2506,7 @@
      "ties": 0
     },
     "score": 2.0,
-    "projected_total": 102.52,
+    "projected_total": 102.5,
     "played": 1,
     "to_play": 8,
     "leaders": [
@@ -2621,7 +2621,7 @@
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 10.7,
+      "projected": 10.68,
       "actual": 0.0
      },
      {
@@ -2782,7 +2782,7 @@
      "ties": 0
     },
     "score": 0.0,
-    "projected_total": 107.92,
+    "projected_total": 107.91,
     "played": 0,
     "to_play": 9,
     "leaders": [
@@ -2883,7 +2883,7 @@
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 11.85,
+      "projected": 11.84,
       "actual": 0.0
      },
      {
@@ -3053,7 +3053,7 @@
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 4.05,
+      "projected": 4.04,
       "actual": 0.0
      }
     ]
@@ -3339,7 +3339,7 @@
    "team_id": 3,
    "team_name": "Toe Burrow",
    "abbrev": "BW",
-   "projected_total": 114.42,
+   "projected_total": 114.43,
    "projected_ranking_points": 12.0,
    "projected_cumulative": 12.0,
    "projected_normalized": 5.0,
@@ -3372,7 +3372,7 @@
    "team_id": 8,
    "team_name": "Satriale's Pork Store",
    "abbrev": "PORK",
-   "projected_total": 107.92,
+   "projected_total": 107.91,
    "projected_ranking_points": 9.0,
    "projected_cumulative": 9.0,
    "projected_normalized": 2.0,
@@ -3405,7 +3405,7 @@
    "team_id": 9,
    "team_name": "Walt's Warriors",
    "abbrev": "WALT",
-   "projected_total": 104.93,
+   "projected_total": 104.59,
    "projected_ranking_points": 6.0,
    "projected_cumulative": 6.0,
    "projected_normalized": -1.0,
@@ -3416,7 +3416,7 @@
    "team_id": 6,
    "team_name": "Joe Burrow MVP",
    "abbrev": "Naug",
-   "projected_total": 102.52,
+   "projected_total": 102.5,
    "projected_ranking_points": 5.0,
    "projected_cumulative": 5.0,
    "projected_normalized": -2.0,
@@ -3460,7 +3460,7 @@
    "team_id": 10,
    "team_name": "Bijan These Nuts",
    "abbrev": "SACK",
-   "projected_total": 93.33,
+   "projected_total": 93.3,
    "projected_ranking_points": 1.0,
    "projected_cumulative": 1.0,
    "projected_normalized": -6.0,
