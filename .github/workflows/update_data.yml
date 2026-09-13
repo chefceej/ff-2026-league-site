@@ -15,7 +15,7 @@ on:
     # only has to honor an hourly trigger, which it does far more reliably; a
     # dropped hour is the worst case, not a dropped 15-min slot. The nightly
     # backup catches any late-finalizing stats after the windows close.
-    - cron: '10 7 * * *'         # nightly backup, ~2 AM CT (single one-shot fetch)
+    - cron: '10 6 * * *'         # nightly backup, ~1 AM CT (single one-shot fetch)
     # Thursday Night Football — Thu 7:30-11 PM CT  ->  Fri 00:00-05:00 UTC
     - cron: '10 0-4 * * 5'
     # Sunday slate — Sun 12-11 PM CT  ->  Sun 17:00 UTC through Mon 05:00 UTC
@@ -65,7 +65,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if [ "${SCHEDULE:-}" = "10 7 * * *" ] || [ -z "${SCHEDULE:-}" ]; then
+          if [ "${SCHEDULE:-}" = "10 6 * * *" ] || [ -z "${SCHEDULE:-}" ]; then
             passes=1     # nightly backup / manual dispatch: one-shot
           else
             passes=4     # game window: cover :10 / :25 / :40 / :55
