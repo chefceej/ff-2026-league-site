@@ -4,27 +4,41 @@ on:
   schedule:
     # GitHub cron is UTC and does NOT observe DST, so game-day windows are given
     # in UTC padded to cover both CDT (UTC-5) and CST (UTC-6). Central evening
-    # games land on the NEXT UTC day. Actions cron is best-effort and can lag a
-    # few minutes, so "every 15 min" is approximate.
-    - cron: '0 7 * * *'        # nightly backup, ~2 AM CT (also catches overnight final stats)
+    # games land on the NEXT UTC day.
+    #
+    # GitHub's scheduler is best-effort and heavily drops high-frequency crons:
+    # every-15-min triggers are almost never all honored, and anything on the
+    # :00/:15/:30/:45 boundary competes with the whole platform. So instead of
+    # ~28 separate */15 triggers we fire ONE trigger per game-window hour,
+    # staggered to :10 (off the busy boundaries), and the job itself loops
+    # fetch->push every 15 min to cover that hour (:10/:25/:40/:55). GitHub then
+    # only has to honor an hourly trigger, which it does far more reliably; a
+    # dropped hour is the worst case, not a dropped 15-min slot. The nightly
+    # backup catches any late-finalizing stats after the windows close.
+    - cron: '10 7 * * *'         # nightly backup, ~2 AM CT (single one-shot fetch)
     # Thursday Night Football — Thu 7:30-11 PM CT  ->  Fri 00:00-05:00 UTC
-    - cron: '*/15 0-4 * * 5'
-    - cron: '0 5 * * 5'
+    - cron: '10 0-4 * * 5'
     # Sunday slate — Sun 12-11 PM CT  ->  Sun 17:00 UTC through Mon 05:00 UTC
-    - cron: '*/15 17-23 * * 0'
-    - cron: '*/15 0-4 * * 1'
-    - cron: '0 5 * * 1'
+    - cron: '10 17-23 * * 0'
+    - cron: '10 0-4 * * 1'
     # Monday Night Football — Mon 7:30-11 PM CT  ->  Tue 00:00-05:00 UTC
-    - cron: '*/15 0-4 * * 2'
-    - cron: '0 5 * * 2'
-  workflow_dispatch:          # manual trigger
+    - cron: '10 0-4 * * 2'
+  workflow_dispatch:          # manual trigger (one-shot)
 
 permissions:
   contents: write
 
+# Don't let a neighbouring run race on git push; queue instead of overlapping.
+concurrency:
+  group: update-league-data
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    # The intra-hour loop sleeps up to ~46 min; give headroom but stay well
+    # under GitHub's 6h job cap.
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
 
@@ -35,24 +49,42 @@ jobs:
       - name: Install dependencies
         run: pip install espn_api
 
-      - name: Fetch league data
+      - name: Fetch + commit league data (loop within the hour)
         env:
           FF_LEAGUE_ID: ${{ secrets.FF_LEAGUE_ID }}
           FF_SEASON_YEAR: '2026'
           FF_PLAYOFF_CUTOFF: '6'
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           SWID: ${{ secrets.SWID }}
-        run: python src/fetch_data.py
-
-      - name: Commit updated data
+          # github.event.schedule is the exact cron string that fired (empty for
+          # a manual dispatch). The nightly backup and manual runs do a single
+          # pass; game-window crons loop across the hour.
+          SCHEDULE: ${{ github.event.schedule }}
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/league_data.json
-          if git diff --cached --quiet; then
-            echo "No changes."
+
+          if [ "${SCHEDULE:-}" = "10 7 * * *" ] || [ -z "${SCHEDULE:-}" ]; then
+            passes=1     # nightly backup / manual dispatch: one-shot
           else
-            git commit -m "chore: update league data $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git pull --rebase origin main
-            git push
+            passes=4     # game window: cover :10 / :25 / :40 / :55
           fi
+
+          for i in $(seq 1 "$passes"); do
+            echo "::group::pass $i/$passes"
+            python src/fetch_data.py
+            git add docs/data/league_data.json
+            if git diff --cached --quiet; then
+              echo "No changes."
+            else
+              git commit -m "chore: update league data $(date -u '+%Y-%m-%d %H:%M UTC')"
+              # Reconcile with any commit a neighbouring run may have landed.
+              git pull --rebase origin main
+              git push
+            fi
+            echo "::endgroup::"
+            if [ "$i" -lt "$passes" ]; then
+              sleep 900   # 15 min between passes; not after the last one
+            fi
+          done
