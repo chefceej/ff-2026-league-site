@@ -8,8 +8,8 @@
   "current_matchup_week": 1,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-14 13:30:45 UTC",
-  "last_updated": "2026-09-14T13:30:45.118859+00:00"
+  "updated_at": "2026-09-15 03:38:32 UTC",
+  "last_updated": "2026-09-15T03:38:32.805051+00:00"
  },
  "teams": [
   {
@@ -40,7 +40,7 @@
    "abbrev": "SC",
    "owner": "Brantley Lohkamp",
    "scores_by_week": [
-    125.62
+    134.52
    ],
    "ranking_points_by_week": [
     11.0
@@ -55,13 +55,13 @@
    "total_ranking_points": 11.0
   },
   {
-   "team_id": 1,
-   "team_name": "Nixed Downs in Dallas",
-   "team_abbrev": "Stev",
-   "abbrev": "Stev",
-   "owner": "Ben Fagin",
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
    "scores_by_week": [
-    125.4
+    127.36
    ],
    "ranking_points_by_week": [
     10.0
@@ -76,13 +76,13 @@
    "total_ranking_points": 10.0
   },
   {
-   "team_id": 2,
-   "team_name": "Kaiser Soze",
-   "team_abbrev": "CJ",
-   "abbrev": "CJ",
-   "owner": "Connor Kraus",
+   "team_id": 1,
+   "team_name": "Nixed Downs in Dallas",
+   "team_abbrev": "Stev",
+   "abbrev": "Stev",
+   "owner": "Ben Fagin",
    "scores_by_week": [
-    123.86
+    125.4
    ],
    "ranking_points_by_week": [
     9.0
@@ -97,13 +97,13 @@
    "total_ranking_points": 9.0
   },
   {
-   "team_id": 8,
-   "team_name": "Satriale's Pork Store",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
+   "team_id": 2,
+   "team_name": "Kaiser Soze",
+   "team_abbrev": "CJ",
+   "abbrev": "CJ",
+   "owner": "Connor Kraus",
    "scores_by_week": [
-    120.36
+    123.86
    ],
    "ranking_points_by_week": [
     8.0
@@ -187,7 +187,7 @@
    "abbrev": "BW",
    "owner": "Brian Wilson",
    "scores_by_week": [
-    91.86
+    98.86
    ],
    "ranking_points_by_week": [
     4.0
@@ -208,7 +208,7 @@
    "abbrev": "BIBL",
    "owner": "Maxx Millstein",
    "scores_by_week": [
-    84.74
+    93.34
    ],
    "ranking_points_by_week": [
     3.0
@@ -223,13 +223,13 @@
    "total_ranking_points": 3.0
   },
   {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SFT",
-   "abbrev": "SFT",
-   "owner": "Matt Stern",
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "team_abbrev": "SACK",
+   "abbrev": "SACK",
+   "owner": "Brendan Ecker",
    "scores_by_week": [
-    84.06
+    92.02
    ],
    "ranking_points_by_week": [
     2.0
@@ -244,13 +244,13 @@
    "total_ranking_points": 2.0
   },
   {
-   "team_id": 10,
-   "team_name": "Bijan These Nuts",
-   "team_abbrev": "SACK",
-   "abbrev": "SACK",
-   "owner": "Brendan Ecker",
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SFT",
+   "abbrev": "SFT",
+   "owner": "Matt Stern",
    "scores_by_week": [
-    59.42
+    84.76
    ],
    "ranking_points_by_week": [
     1.0
@@ -288,6 +288,13 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "RB",
      "score": 34.8
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 32.6
     },
     {
      "name": "D'Andre Swift",
@@ -435,13 +442,6 @@
      "fantasy_team": "AJ Brown Bible Quotes",
      "position": "QB",
      "score": 18.84
-    },
-    {
-     "name": "Breece Hall",
-     "pro_team": "NYJ",
-     "fantasy_team": "Walt's Warriors",
-     "position": "RB",
-     "score": 18.8
     }
    ],
    "QB": [
@@ -537,6 +537,13 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "RB",
      "score": 34.8
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 32.6
     },
     {
      "name": "D'Andre Swift",
@@ -698,13 +705,6 @@
      "fantasy_team": "Kaiser Soze",
      "position": "RB",
      "score": 6.8
-    },
-    {
-     "name": "Jonathon Brooks",
-     "pro_team": "CAR",
-     "fantasy_team": "The Lizard Kings",
-     "position": "RB",
-     "score": 6.7
     }
    ],
    "WR": [
@@ -793,6 +793,13 @@
      "score": 9.9
     },
     {
+     "name": "Rashee Rice",
+     "pro_team": "KC",
+     "fantasy_team": "Speedy CRashees",
+     "position": "WR",
+     "score": 8.9
+    },
+    {
      "name": "Emeka Egbuka",
      "pro_team": "TB",
      "fantasy_team": "Joe Burrow MVP",
@@ -875,13 +882,6 @@
      "fantasy_team": "Kaiser Soze",
      "position": "WR",
      "score": 4.1
-    },
-    {
-     "name": "Quentin Johnston",
-     "pro_team": "LAC",
-     "fantasy_team": "Swishington Football Team",
-     "position": "WR",
-     "score": 2.7
     }
    ],
    "TE": [
@@ -912,6 +912,13 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "TE",
      "score": 8.8
+    },
+    {
+     "name": "Travis Kelce",
+     "pro_team": "KC",
+     "fantasy_team": "AJ Brown Bible Quotes",
+     "position": "TE",
+     "score": 8.6
     },
     {
      "name": "Tucker Kraft",
@@ -949,13 +956,6 @@
      "score": 3.1
     },
     {
-     "name": "Travis Kelce",
-     "pro_team": "KC",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "TE",
-     "score": 0.0
-    },
-    {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
      "fantasy_team": "Nixed Downs in Dallas",
@@ -978,14 +978,14 @@
     "WR": 28.2,
     "RB": 13.6,
     "FLEX": 4.1,
-    "TE": 0.0,
+    "TE": 8.6,
     "D/ST": 13.0,
     "K": 7.0,
     "QB": 18.84
    },
    "SACK": {
     "WR": 8.7,
-    "RB": 14.0,
+    "RB": 46.6,
     "FLEX": 6.2,
     "TE": 8.0,
     "QB": 5.52,
@@ -994,7 +994,7 @@
    },
    "SC": {
     "RB": 17.0,
-    "WR": 16.7,
+    "WR": 25.6,
     "FLEX": 18.5,
     "QB": 24.72,
     "TE": 21.7,
@@ -1004,7 +1004,7 @@
    "SFT": {
     "RB": 34.8,
     "QB": 35.66,
-    "WR": 2.4,
+    "WR": 3.1,
     "FLEX": 2.7,
     "K": 1.0,
     "D/ST": 2.0,
@@ -1034,8 +1034,8 @@
     "TE": 0.0,
     "QB": 24.96,
     "FLEX": 3.1,
-    "D/ST": 0.0,
-    "K": 0.0
+    "D/ST": 3.0,
+    "K": 4.0
    },
    "CJ": {
     "RB": 34.1,
@@ -1070,7 +1070,7 @@
     "TE": 8.8,
     "QB": 17.66,
     "FLEX": 22.2,
-    "K": 0.0,
+    "K": 7.0,
     "D/ST": 13.0
    },
    "MBJG": {
