@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "final",
- "fetched_at": "2026-09-15T12:30:34.651227Z",
+ "fetched_at": "2026-09-16T12:28:53.782886Z",
  "matchups": [
   {
    "home": {
@@ -200,7 +200,7 @@
       "pro_team": "NE",
       "position": "RB",
       "slot": "BE",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "SEA",
       "kickoff": "2026-09-10T00:20:00Z",
       "on_bye": false,
@@ -806,7 +806,7 @@
       "pro_team": "CLE",
       "position": "RB",
       "slot": "BE",
-      "injury": "O",
+      "injury": "IR",
       "opponent": "JAX",
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
@@ -1024,7 +1024,7 @@
       "pro_team": "LV",
       "position": "TE",
       "slot": "IR",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "MIA",
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
@@ -1094,7 +1094,7 @@
       "pro_team": "NO",
       "position": "RB",
       "slot": "BE",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "DET",
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
@@ -1672,7 +1672,7 @@
   {
    "home": {
     "team_id": 3,
-    "team_name": "Toe Burrow",
+    "team_name": "JSN Derulo ",
     "abbrev": "BW",
     "owner": "Brian Wilson",
     "logo_url": "https://i.pinimg.com/1200x/47/ec/67/47ec6754d60f4a3664e5afdc9cea2c95.jpg",
@@ -3280,7 +3280,7 @@
       "pro_team": "TB",
       "position": "WR",
       "slot": "IR",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "CIN",
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
@@ -3439,7 +3439,7 @@
   },
   {
    "team_id": 3,
-   "team_name": "Toe Burrow",
+   "team_name": "JSN Derulo ",
    "abbrev": "BW",
    "projected_total": 98.86,
    "projected_ranking_points": 4.0,
