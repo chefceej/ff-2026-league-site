@@ -5,18 +5,21 @@ on:
     # GitHub cron is UTC and does NOT observe DST, so game-day windows are given
     # in UTC padded to cover both CDT (UTC-5) and CST (UTC-6). Central evening
     # games land on the NEXT UTC day. Actions cron is best-effort and can lag a
-    # few minutes, so "every 15 min" is approximate.
-    - cron: '0 7 * * *'        # nightly backup, ~2 AM CT (also catches overnight final stats)
+    # few minutes, so "every 15 min" is approximate. Minutes are deliberately
+    # OFFSET from the :00/:15/:30/:45 boundaries: GitHub drops scheduled runs
+    # under high load, and round-number slots are the most contended (that's why
+    # TNF runs got dropped entirely on 2026-09-17). Odd offsets dodge the crowd.
+    - cron: '7 7 * * *'        # nightly backup, ~2 AM CT (also catches overnight final stats)
     # Thursday Night Football — Thu 7:30-11 PM CT  ->  Fri 00:00-05:00 UTC
-    - cron: '*/15 0-4 * * 5'
-    - cron: '0 5 * * 5'
+    - cron: '7,22,37,52 0-4 * * 5'
+    - cron: '7 5 * * 5'
     # Sunday slate — Sun 12-11 PM CT  ->  Sun 17:00 UTC through Mon 05:00 UTC
-    - cron: '*/15 17-23 * * 0'
-    - cron: '*/15 0-4 * * 1'
-    - cron: '0 5 * * 1'
+    - cron: '7,22,37,52 17-23 * * 0'
+    - cron: '7,22,37,52 0-4 * * 1'
+    - cron: '7 5 * * 1'
     # Monday Night Football — Mon 7:30-11 PM CT  ->  Tue 00:00-05:00 UTC
-    - cron: '*/15 0-4 * * 2'
-    - cron: '0 5 * * 2'
+    - cron: '7,22,37,52 0-4 * * 2'
+    - cron: '7 5 * * 2'
   workflow_dispatch:          # manual trigger
 
 permissions:
