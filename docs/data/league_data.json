@@ -8,8 +8,8 @@
   "current_matchup_week": 2,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-18 02:44:37 UTC",
-  "last_updated": "2026-09-18T02:44:37.758960+00:00"
+  "updated_at": "2026-09-18 04:18:32 UTC",
+  "last_updated": "2026-09-18T04:18:32.161746+00:00"
  },
  "teams": [
   {
@@ -20,7 +20,7 @@
    "owner": "Brantley Lohkamp",
    "scores_by_week": [
     134.52,
-    11.6
+    20.3
    ],
    "ranking_points_by_week": [
     11.0,
@@ -45,7 +45,7 @@
    "owner": "Connor Kraus",
    "scores_by_week": [
     123.86,
-    7.6
+    14.2
    ],
    "ranking_points_by_week": [
     8.0,
@@ -120,7 +120,7 @@
    "owner": "Maxx Millstein",
    "scores_by_week": [
     93.34,
-    21.5
+    30.7
    ],
    "ranking_points_by_week": [
     3.0,
@@ -170,7 +170,7 @@
    "owner": "Matt Stern",
    "scores_by_week": [
     84.76,
-    57.46
+    61.12
    ],
    "ranking_points_by_week": [
     1.0,
@@ -245,7 +245,7 @@
    "owner": "Brendan Ecker",
    "scores_by_week": [
     92.02,
-    2.1
+    4.3
    ],
    "ranking_points_by_week": [
     2.0,
@@ -1026,42 +1026,42 @@
      "pro_team": "BUF",
      "fantasy_team": "Swishington Football Team",
      "position": "QB",
-     "score": 38.76
+     "score": 40.82
     },
     {
      "name": "Amon-Ra St. Brown",
      "pro_team": "DET",
      "fantasy_team": "AJ Brown Bible Quotes",
      "position": "WR",
-     "score": 21.5
-    },
-    {
-     "name": "Jahmyr Gibbs",
-     "pro_team": "DET",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "score": 18.7
+     "score": 30.7
     },
     {
      "name": "James Cook III",
      "pro_team": "BUF",
      "fantasy_team": "Speedy CRashees",
      "position": "RB",
-     "score": 11.7
+     "score": 20.4
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 20.3
     },
     {
      "name": "Sam LaPorta",
      "pro_team": "DET",
      "fantasy_team": "Kaiser Soze",
      "position": "TE",
-     "score": 7.6
+     "score": 14.2
     },
     {
      "name": "Jameson Williams",
      "pro_team": "DET",
      "fantasy_team": "Bijan These Nuts",
      "position": "WR",
-     "score": 2.1
+     "score": 4.3
     },
     {
      "name": "Ja'Marr Chase",
@@ -1203,7 +1203,7 @@
      "pro_team": "BUF",
      "fantasy_team": "Swishington Football Team",
      "position": "QB",
-     "score": 38.76
+     "score": 40.82
     },
     {
      "name": "Rams TQB",
@@ -1285,18 +1285,18 @@
    ],
    "RB": [
     {
-     "name": "Jahmyr Gibbs",
-     "pro_team": "DET",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "score": 18.7
-    },
-    {
      "name": "James Cook III",
      "pro_team": "BUF",
      "fantasy_team": "Speedy CRashees",
      "position": "RB",
-     "score": 11.7
+     "score": 20.4
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 20.3
     },
     {
      "name": "Kenneth Walker III",
@@ -1466,14 +1466,14 @@
      "pro_team": "DET",
      "fantasy_team": "AJ Brown Bible Quotes",
      "position": "WR",
-     "score": 21.5
+     "score": 30.7
     },
     {
      "name": "Jameson Williams",
      "pro_team": "DET",
      "fantasy_team": "Bijan These Nuts",
      "position": "WR",
-     "score": 2.1
+     "score": 4.3
     },
     {
      "name": "Ja'Marr Chase",
@@ -1643,7 +1643,7 @@
      "pro_team": "DET",
      "fantasy_team": "Kaiser Soze",
      "position": "TE",
-     "score": 7.6
+     "score": 14.2
     },
     {
      "name": "Tucker Kraft",
@@ -1838,7 +1838,7 @@
   },
   {
    "SACK": {
-    "WR": 2.1,
+    "WR": 4.3,
     "RB": 0.0,
     "FLEX": 0.0,
     "TE": 0.0,
@@ -1847,9 +1847,9 @@
     "K": 0.0
    },
    "SFT": {
-    "RB": 18.7,
+    "RB": 20.3,
     "TE": 0.0,
-    "QB": 38.76,
+    "QB": 40.82,
     "WR": 0.0,
     "FLEX": 0.0,
     "K": 0.0,
@@ -1865,7 +1865,7 @@
     "K": 0.0
    },
    "BIBL": {
-    "WR": 21.5,
+    "WR": 30.7,
     "RB": 0.0,
     "FLEX": 0.0,
     "QB": 0.0,
@@ -1877,13 +1877,13 @@
     "RB": 0.0,
     "WR": 0.0,
     "FLEX": 0.0,
-    "TE": 7.6,
+    "TE": 14.2,
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0
    },
    "SC": {
-    "RB": 11.7,
+    "RB": 20.4,
     "WR": -0.1,
     "FLEX": 0.0,
     "QB": 0.0,
