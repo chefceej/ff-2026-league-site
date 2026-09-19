@@ -6,6 +6,28 @@ on ESPN's head-to-head records.
 
 ## Language
 
+### Managers and teams
+
+**Manager**:
+The person who runs a team. The site's identity across seasons: team names,
+abbreviations, and logos change yearly, the manager doesn't.
+_Avoid_: owner (ESPN's word, kept only in the data files), user, member
+
+**Manager key**:
+The slug that names a manager in links and data files, derived from their name
+and never from ESPN's member id.
+_Avoid_: manager id, owner id, slug (on its own)
+
+**Team**:
+One manager's entry in one season: its name, abbreviation, logo, and results. A
+team may have more than one manager.
+_Avoid_: franchise, squad
+
+**Abbreviation**:
+ESPN's short team code, which a manager can change at any time. In-season pages
+key on it; it never identifies a manager.
+_Avoid_: abbrev (in prose), team code
+
 ### Standings
 
 **Ranking points**:
