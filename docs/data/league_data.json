@@ -13,8 +13,8 @@
    2
   ],
   "current_week": 2,
-  "updated_at": "2026-09-18 12:06:41 UTC",
-  "last_updated": "2026-09-18T12:06:41.717498+00:00"
+  "updated_at": "2026-09-19 11:49:28 UTC",
+  "last_updated": "2026-09-19T11:49:28.515385+00:00"
  },
  "teams": [
   {
@@ -250,9 +250,9 @@
   },
   {
    "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SFT",
-   "abbrev": "SFT",
+   "team_name": "Teeny Weeny Matt Sterny",
+   "team_abbrev": "LAST",
+   "abbrev": "LAST",
    "owner": "Matt Stern",
    "scores_by_week": [
     84.76
@@ -283,7 +283,7 @@
     {
      "name": "Bills TQB",
      "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
+     "fantasy_team": "Teeny Weeny Matt Sterny",
      "position": "QB",
      "score": 35.66
     },
@@ -311,7 +311,7 @@
     {
      "name": "Jahmyr Gibbs",
      "pro_team": "DET",
-     "fantasy_team": "Swishington Football Team",
+     "fantasy_team": "Teeny Weeny Matt Sterny",
      "position": "RB",
      "score": 31.1
     },
@@ -460,7 +460,7 @@
     {
      "name": "Bills TQB",
      "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
+     "fantasy_team": "Teeny Weeny Matt Sterny",
      "position": "QB",
      "score": 35.66
     },
@@ -560,7 +560,7 @@
     {
      "name": "Jahmyr Gibbs",
      "pro_team": "DET",
-     "fantasy_team": "Swishington Football Team",
+     "fantasy_team": "Teeny Weeny Matt Sterny",
      "position": "RB",
      "score": 31.1
     },
@@ -949,7 +949,7 @@
     {
      "name": "Dalton Schultz",
      "pro_team": "HOU",
-     "fantasy_team": "Swishington Football Team",
+     "fantasy_team": "Teeny Weeny Matt Sterny",
      "position": "TE",
      "score": 5.5
     },
@@ -1006,7 +1006,7 @@
     "K": 9.0,
     "D/ST": 18.0
    },
-   "SFT": {
+   "LAST": {
     "RB": 34.8,
     "QB": 35.66,
     "WR": 3.1,
