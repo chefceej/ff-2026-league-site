@@ -8,8 +8,8 @@
   "current_matchup_week": 2,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-19 11:53:38 UTC",
-  "last_updated": "2026-09-19T11:53:38.108919+00:00"
+  "updated_at": "2026-09-20 12:13:43 UTC",
+  "last_updated": "2026-09-20T12:13:43.097315+00:00"
  },
  "teams": [
   {
@@ -1183,17 +1183,17 @@
      "score": 0.0
     },
     {
-     "name": "Nico Collins",
-     "pro_team": "HOU",
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "score": 0.0
     },
     {
-     "name": "Tetairoa McMillan",
-     "pro_team": "CAR",
+     "name": "David Montgomery",
+     "pro_team": "HOU",
      "fantasy_team": "Remeber Bendel",
-     "position": "WR",
+     "position": "RB",
      "score": 0.0
     }
    ],
@@ -1411,6 +1411,13 @@
      "score": 0.0
     },
     {
+     "name": "Kaelon Black",
+     "pro_team": "SF",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
      "name": "Jonathan Taylor",
      "pro_team": "IND",
      "fantasy_team": "The Lizard Kings",
@@ -1448,13 +1455,6 @@
     {
      "name": "Chase Brown",
      "pro_team": "CIN",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Omarion Hampton",
-     "pro_team": "LAC",
      "fantasy_team": "Satriale's Pork Store",
      "position": "RB",
      "score": 0.0
@@ -1511,15 +1511,15 @@
      "score": 0.0
     },
     {
-     "name": "Nico Collins",
-     "pro_team": "HOU",
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "score": 0.0
     },
     {
-     "name": "Tetairoa McMillan",
-     "pro_team": "CAR",
+     "name": "DK Metcalf",
+     "pro_team": "PIT",
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "score": 0.0
@@ -1595,13 +1595,6 @@
      "score": 0.0
     },
     {
-     "name": "Zay Flowers",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
      "name": "DeVonta Smith",
      "pro_team": "PHI",
      "fantasy_team": "Nixed Downs in Dallas",
@@ -1632,6 +1625,13 @@
     {
      "name": "Jaxon Smith-Njigba",
      "pro_team": "SEA",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Dontayvion Wicks",
+     "pro_team": "PHI",
      "fantasy_team": "JSN Derulo ",
      "position": "WR",
      "score": 0.0
@@ -1903,10 +1903,10 @@
    "Stev": {
     "WR": 0.0,
     "RB": 0.0,
-    "FLEX": 0.0,
     "TE": 0.0,
     "QB": 0.0,
     "K": 0.0,
+    "FLEX": 0.0,
     "D/ST": 0.0
    },
    "MBJG": {
