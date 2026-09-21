@@ -8,8 +8,8 @@
   "current_matchup_week": 2,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-21 01:40:38 UTC",
-  "last_updated": "2026-09-21T01:40:38.062386+00:00"
+  "updated_at": "2026-09-21 04:43:21 UTC",
+  "last_updated": "2026-09-21T04:43:21.095607+00:00"
  },
  "teams": [
   {
@@ -45,7 +45,7 @@
    "owner": "Kyle  Disch",
    "scores_by_week": [
     127.36,
-    117.88
+    131.28
    ],
    "ranking_points_by_week": [
     10.0,
@@ -70,7 +70,7 @@
    "owner": "Brantley Lohkamp",
    "scores_by_week": [
     134.52,
-    71.76
+    71.46
    ],
    "ranking_points_by_week": [
     11.0,
@@ -99,18 +99,43 @@
    ],
    "ranking_points_by_week": [
     8.0,
-    7.0
+    6.0
    ],
    "cumulative_points_by_week": [
     8.0,
-    15.0
+    14.0
    ],
    "normalized_by_week": [
     1.0,
-    2.0
+    1.0
    ],
    "rank": 4,
-   "total_ranking_points": 15.0
+   "total_ranking_points": 14.0
+  },
+  {
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "team_abbrev": "MBJG",
+   "abbrev": "MBJG",
+   "owner": "Matthew Bernstein",
+   "scores_by_week": [
+    103.16,
+    96.98
+   ],
+   "ranking_points_by_week": [
+    5.0,
+    8.0
+   ],
+   "cumulative_points_by_week": [
+    5.0,
+    13.0
+   ],
+   "normalized_by_week": [
+    -2.0,
+    0.0
+   ],
+   "rank": 5,
+   "total_ranking_points": 13.0
   },
   {
    "team_id": 9,
@@ -124,18 +149,18 @@
    ],
    "ranking_points_by_week": [
     12.0,
-    2.0
+    1.0
    ],
    "cumulative_points_by_week": [
     12.0,
-    14.0
+    13.0
    ],
    "normalized_by_week": [
     5.0,
-    1.0
+    0.0
    ],
-   "rank": 5,
-   "total_ranking_points": 14.0
+   "rank": 6,
+   "total_ranking_points": 13.0
   },
   {
    "team_id": 11,
@@ -145,7 +170,7 @@
    "owner": "Maxx Millstein",
    "scores_by_week": [
     93.34,
-    110.98
+    121.18
    ],
    "ranking_points_by_week": [
     3.0,
@@ -159,7 +184,7 @@
     -4.0,
     0.0
    ],
-   "rank": 6,
+   "rank": 7,
    "total_ranking_points": 13.0
   },
   {
@@ -174,39 +199,14 @@
    ],
    "ranking_points_by_week": [
     4.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     4.0,
-    12.0
-   ],
-   "normalized_by_week": [
-    -3.0,
-    -1.0
-   ],
-   "rank": 7,
-   "total_ranking_points": 12.0
-  },
-  {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "team_abbrev": "MBJG",
-   "abbrev": "MBJG",
-   "owner": "Matthew Bernstein",
-   "scores_by_week": [
-    103.16,
-    75.68
-   ],
-   "ranking_points_by_week": [
-    5.0,
-    6.0
-   ],
-   "cumulative_points_by_week": [
-    5.0,
     11.0
    ],
    "normalized_by_week": [
-    -2.0,
+    -3.0,
     -2.0
    ],
    "rank": 8,
@@ -274,18 +274,18 @@
    ],
    "ranking_points_by_week": [
     7.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     7.0,
-    10.0
+    9.0
    ],
    "normalized_by_week": [
     0.0,
-    -3.0
+    -4.0
    ],
    "rank": 11,
-   "total_ranking_points": 10.0
+   "total_ranking_points": 9.0
   },
   {
    "team_id": 10,
@@ -295,22 +295,22 @@
    "owner": "Brendan Ecker",
    "scores_by_week": [
     92.02,
-    51.2
+    65.4
    ],
    "ranking_points_by_week": [
     2.0,
-    1.0
+    3.0
    ],
    "cumulative_points_by_week": [
     2.0,
-    3.0
+    5.0
    ],
    "normalized_by_week": [
     -5.0,
-    -10.0
+    -8.0
    ],
    "rank": 12,
-   "total_ranking_points": 3.0
+   "total_ranking_points": 5.0
   }
  ],
  "top_players_by_week": [
@@ -1064,6 +1064,13 @@
      "score": 28.28
     },
     {
+     "name": "Jonathan Taylor",
+     "pro_team": "IND",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 27.2
+    },
+    {
      "name": "Commanders TQB",
      "pro_team": "WSH",
      "fantasy_team": "Satriale's Pork Store",
@@ -1085,10 +1092,24 @@
      "score": 22.7
     },
     {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 20.8
+    },
+    {
      "name": "Christian McCaffrey",
      "pro_team": "SF",
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
+     "score": 20.6
+    },
+    {
+     "name": "Travis Kelce",
+     "pro_team": "KC",
+     "fantasy_team": "AJ Brown Bible Quotes",
+     "position": "TE",
      "score": 20.6
     },
     {
@@ -1125,6 +1146,13 @@
      "fantasy_team": "Teeny Weeny Matt Sterny",
      "position": "WR",
      "score": 17.8
+    },
+    {
+     "name": "Harrison Butker",
+     "pro_team": "KC",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "K",
+     "score": 17.0
     },
     {
      "name": "Omarion Hampton",
@@ -1167,34 +1195,6 @@
      "fantasy_team": "JSN Derulo ",
      "position": "QB",
      "score": 14.8
-    },
-    {
-     "name": "Sam LaPorta",
-     "pro_team": "DET",
-     "fantasy_team": "Kaiser Soze",
-     "position": "TE",
-     "score": 14.2
-    },
-    {
-     "name": "Garrett Wilson",
-     "pro_team": "NYJ",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "WR",
-     "score": 14.2
-    },
-    {
-     "name": "Trey McBride",
-     "pro_team": "ARI",
-     "fantasy_team": "The Lizard Kings",
-     "position": "TE",
-     "score": 14.1
-    },
-    {
-     "name": "TreVeyon Henderson",
-     "pro_team": "NE",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "RB",
-     "score": 13.6
     }
    ],
    "QB": [
@@ -1284,6 +1284,20 @@
     }
    ],
    "RB": [
+    {
+     "name": "Jonathan Taylor",
+     "pro_team": "IND",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 27.2
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 20.8
+    },
     {
      "name": "Christian McCaffrey",
      "pro_team": "SF",
@@ -1404,13 +1418,6 @@
      "score": 7.3
     },
     {
-     "name": "Kenneth Walker III",
-     "pro_team": "KC",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 6.6
-    },
-    {
      "name": "Javonte Williams",
      "pro_team": "DAL",
      "fantasy_team": "JSN Derulo ",
@@ -1430,13 +1437,6 @@
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "score": 6.0
-    },
-    {
-     "name": "Jonathan Taylor",
-     "pro_team": "IND",
-     "fantasy_team": "The Lizard Kings",
-     "position": "RB",
-     "score": 5.9
     },
     {
      "name": "Rico Dowdle",
@@ -1546,6 +1546,13 @@
      "score": 10.6
     },
     {
+     "name": "Rashee Rice",
+     "pro_team": "KC",
+     "fantasy_team": "Speedy CRashees",
+     "position": "WR",
+     "score": 10.3
+    },
+    {
      "name": "Dontayvion Wicks",
      "pro_team": "PHI",
      "fantasy_team": "JSN Derulo ",
@@ -1595,13 +1602,6 @@
      "score": 5.8
     },
     {
-     "name": "Rashee Rice",
-     "pro_team": "KC",
-     "fantasy_team": "Speedy CRashees",
-     "position": "WR",
-     "score": 5.6
-    },
-    {
      "name": "Ladd McConkey",
      "pro_team": "LAC",
      "fantasy_team": "Speedy CRashees",
@@ -1639,6 +1639,13 @@
    ],
    "TE": [
     {
+     "name": "Travis Kelce",
+     "pro_team": "KC",
+     "fantasy_team": "AJ Brown Bible Quotes",
+     "position": "TE",
+     "score": 20.6
+    },
+    {
      "name": "Sam LaPorta",
      "pro_team": "DET",
      "fantasy_team": "Kaiser Soze",
@@ -1653,18 +1660,11 @@
      "score": 14.1
     },
     {
-     "name": "Travis Kelce",
-     "pro_team": "KC",
-     "fantasy_team": "AJ Brown Bible Quotes",
-     "position": "TE",
-     "score": 10.4
-    },
-    {
      "name": "Tyler Warren",
      "pro_team": "IND",
      "fantasy_team": "Satriale's Pork Store",
      "position": "TE",
-     "score": 9.0
+     "score": 11.4
     },
     {
      "name": "Harold Fannin Jr.",
@@ -1839,7 +1839,7 @@
   {
    "SACK": {
     "WR": 27.3,
-    "RB": 6.6,
+    "RB": 20.8,
     "FLEX": 5.8,
     "TE": 2.5,
     "QB": 0.0,
@@ -1869,7 +1869,7 @@
     "RB": 19.7,
     "FLEX": 0.0,
     "QB": 28.28,
-    "TE": 10.4,
+    "TE": 20.6,
     "D/ST": 8.0,
     "K": 7.0
    },
@@ -1884,12 +1884,12 @@
    },
    "SC": {
     "RB": 31.2,
-    "WR": 5.5,
+    "WR": 10.2,
     "FLEX": 5.0,
     "QB": 16.16,
     "TE": 0.9,
     "K": 7.0,
-    "D/ST": 6.0
+    "D/ST": 1.0
    },
    "Naug": {
     "WR": 15.8,
@@ -1910,7 +1910,7 @@
     "D/ST": 20.0
    },
    "MBJG": {
-    "RB": 19.1,
+    "RB": 40.4,
     "FLEX": 0.0,
     "TE": 14.1,
     "WR": 22.6,
@@ -1930,10 +1930,10 @@
    "PORK": {
     "RB": 26.2,
     "WR": 32.8,
-    "TE": 9.0,
+    "TE": 11.4,
     "QB": 23.48,
     "FLEX": 13.4,
-    "K": 6.0,
+    "K": 17.0,
     "D/ST": 7.0
    },
    "WALT": {
