@@ -10,7 +10,9 @@ on ESPN's head-to-head records.
 
 **Manager**:
 The person who runs a team. The site's identity across seasons: team names,
-abbreviations, and logos change yearly, the manager doesn't.
+abbreviations, and logos change yearly, the manager doesn't. A manager is a
+person, not an ESPN account: one manager may hold two accounts, and an account
+ESPN lists on a team whose holder never ran it is not a manager.
 _Avoid_: owner (ESPN's word, kept only in the data files), user, member
 
 **Manager key**:
