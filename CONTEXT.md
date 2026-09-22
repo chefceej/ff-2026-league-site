@@ -156,3 +156,27 @@ player is eligible for, that would have gained the most points in one week. It
 can fall short of what was left on the bench when the best lineup takes more
 than one move.
 _Avoid_: biggest miss, should-have-started
+
+**Expected wins**:
+The wins a team would hold if it had played every other team each week: the
+share of the field its score beat, summed over the counted weeks, a tie counting
+half. Teams beaten in a week is ranking points minus one, so this is the
+standings restated in wins.
+_Avoid_: all-play wins, power wins, Pythagorean wins
+
+**Luck**:
+A team's actual wins over the counted weeks minus its expected wins; positive
+means its record is better than its scores earned. Wins are counted from the
+same weeks, a tie as half.
+_Avoid_: schedule luck, variance, fortune
+
+**Lucky win**:
+A matchup won with a score in the bottom half of that week's field, beating at
+most five teams.
+_Avoid_: steal, robbery
+
+**Unlucky loss**:
+A matchup lost with a score in the top half of that week's field, beating at
+least six teams. A tie that straddles the middle of the field is neither lucky
+nor unlucky.
+_Avoid_: bad beat
