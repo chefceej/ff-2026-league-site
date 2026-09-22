@@ -136,3 +136,23 @@ A team's expected score for a week: actual points for starters who have
 played plus projected points for those who have not. A starter on bye counts
 as nothing either way, so a final week's projected total is its score.
 _Avoid_: proj, expected score, live projection
+
+### Analytics
+
+**Best lineup**:
+The legal lineup that would have scored most from a team's roster in one week,
+by actual points under the slot rules, with IR players left out. Bye and injured
+players score nothing, so they never displace anyone.
+_Avoid_: optimal lineup, perfect lineup, max lineup
+
+**Left on the bench**:
+The points a team's best lineup would have scored beyond what its started lineup
+did in one week, and their total over the counted weeks. Never below zero.
+_Avoid_: bench regret, bench points, lineup gap
+
+**Best swap**:
+The single one-for-one exchange, a bench player into a starter's slot that
+player is eligible for, that would have gained the most points in one week. It
+can fall short of what was left on the bench when the best lineup takes more
+than one move.
+_Avoid_: biggest miss, should-have-started
