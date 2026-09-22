@@ -87,6 +87,12 @@ A week up to and including the league's last regular-season week, where ranking
 points are earned. Only these weeks feed the standings.
 _Avoid_: normal week, season week
 
+**Counted week**:
+A final regular-season week the standings include: weeks are counted in order
+from week one and stop at the first week that is not final. Every season stat
+on the site runs over counted weeks and nothing else.
+_Avoid_: eligible week, scored week, completed week, standings week
+
 **Playoff week**:
 A week past the last regular-season one, where ESPN runs the bracket. The
 Scoreboard shows its matchups labeled as playoffs; it earns no ranking points,
@@ -130,3 +136,71 @@ A team's expected score for a week: actual points for starters who have
 played plus projected points for those who have not. A starter on bye counts
 as nothing either way, so a final week's projected total is its score.
 _Avoid_: proj, expected score, live projection
+
+### Analytics
+
+**Best lineup**:
+The legal lineup that would have scored most from a team's roster in one week,
+by actual points under the slot rules, with IR players left out. Bye and injured
+players score nothing, so they never displace anyone.
+_Avoid_: optimal lineup, perfect lineup, max lineup
+
+**Left on the bench**:
+The points a team's best lineup would have scored beyond what its started lineup
+did in one week, and their total over the counted weeks. Never below zero.
+_Avoid_: bench regret, bench points, lineup gap
+
+**Best swap**:
+The single one-for-one exchange, a bench player into a starter's slot that
+player is eligible for, that would have gained the most points in one week. It
+can fall short of what was left on the bench when the best lineup takes more
+than one move.
+_Avoid_: biggest miss, should-have-started
+
+**Expected wins**:
+The wins a team would hold if it had played every other team each week: the
+share of the field its score beat, summed over the counted weeks, a tie counting
+half. Teams beaten in a week is ranking points minus one, so this is the
+standings restated in wins.
+_Avoid_: all-play wins, power wins, Pythagorean wins
+
+**Luck**:
+A team's actual wins over the counted weeks minus its expected wins; positive
+means its record is better than its scores earned. Wins are counted from the
+same weeks, a tie as half.
+_Avoid_: schedule luck, variance, fortune
+
+**Lucky win**:
+A matchup won with a score in the bottom half of that week's field, beating at
+most five teams.
+_Avoid_: steal, robbery
+
+**Unlucky loss**:
+A matchup lost with a score in the top half of that week's field, beating at
+least six teams. A tie that straddles the middle of the field is neither lucky
+nor unlucky.
+_Avoid_: bad beat
+
+**Consistency**:
+How steady a team's weekly scores are: the standard deviation of its scores
+over the counted weeks, shown with its lowest, highest, and average score, and
+ranked league-wide with 1 the steadiest. It exists from the first counted week,
+however little one week says.
+_Avoid_: volatility, variance, steadiness, boom-or-bust
+
+**Lineup projection**:
+The sum of a started lineup's per-player projections as the site last fetched
+them before kickoff, which is what the manager saw when locking the lineup.
+Unlike the projected total it never blends in actual points, so it stays the
+pre-game number after the week is final.
+_Avoid_: pre-game projection, ESPN projection, projected total (for this)
+
+**Projection gap**:
+A week's score minus its lineup projection, positive when the lineup beat its
+projection, with the total and the per-week average over the counted weeks.
+_Avoid_: projection error, projection accuracy (as the number's name), vs
+projection, over/under
+
+**Head-to-head record**:
+A team's wins, losses, and ties against one opponent over the counted weeks.
+_Avoid_: H2H, split, series record, season series
