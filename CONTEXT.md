@@ -200,3 +200,7 @@ A week's score minus its lineup projection, positive when the lineup beat its
 projection, with the total and the per-week average over the counted weeks.
 _Avoid_: projection error, projection accuracy (as the number's name), vs
 projection, over/under
+
+**Head-to-head record**:
+A team's wins, losses, and ties against one opponent over the counted weeks.
+_Avoid_: H2H, split, series record, season series
