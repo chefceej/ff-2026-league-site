@@ -187,3 +187,16 @@ over the counted weeks, shown with its lowest, highest, and average score, and
 ranked league-wide with 1 the steadiest. It exists from the first counted week,
 however little one week says.
 _Avoid_: volatility, variance, steadiness, boom-or-bust
+
+**Lineup projection**:
+The sum of a started lineup's per-player projections as the site last fetched
+them before kickoff, which is what the manager saw when locking the lineup.
+Unlike the projected total it never blends in actual points, so it stays the
+pre-game number after the week is final.
+_Avoid_: pre-game projection, ESPN projection, projected total (for this)
+
+**Projection gap**:
+A week's score minus its lineup projection, positive when the lineup beat its
+projection, with the total and the per-week average over the counted weeks.
+_Avoid_: projection error, projection accuracy (as the number's name), vs
+projection, over/under
