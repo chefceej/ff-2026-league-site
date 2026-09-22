@@ -50,6 +50,14 @@ _Avoid_: norm, position, margin
 
 ### Lineups
 
+**Roster**:
+Everyone on a team in one week: the lineup, the bench, and IR.
+_Avoid_: squad, players, team (for the people on it)
+
+**Lineup**:
+The starters a team has set for one week, one per slot; only they score.
+_Avoid_: starters (as the name), starting lineup, active roster
+
 **QB slot**:
 The quarterback starting slot. In 2026 the league fills it with a Team QB
 (an NFL team's quarterbacks as one unit); in 2025 it held an individual
@@ -116,6 +124,11 @@ _Avoid_: game, contest, H2H
 The page listing every matchup for one week, with the week's projected
 standings.
 _Avoid_: matchups page, week page
+
+**Team page**:
+The page for one team's season, keyed by its manager: standing, trajectory,
+week by week, roster, and analytics.
+_Avoid_: manager page, profile, My Team (that is the nav link, not the page)
 
 **Preview**:
 A matchup or week shown before it is final, built from projections.
