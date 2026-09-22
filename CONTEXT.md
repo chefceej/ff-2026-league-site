@@ -87,6 +87,12 @@ A week up to and including the league's last regular-season week, where ranking
 points are earned. Only these weeks feed the standings.
 _Avoid_: normal week, season week
 
+**Counted week**:
+A final regular-season week the standings include: weeks are counted in order
+from week one and stop at the first week that is not final. Every season stat
+on the site runs over counted weeks and nothing else.
+_Avoid_: eligible week, scored week, completed week, standings week
+
 **Playoff week**:
 A week past the last regular-season one, where ESPN runs the bracket. The
 Scoreboard shows its matchups labeled as playoffs; it earns no ranking points,
