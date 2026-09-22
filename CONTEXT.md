@@ -180,3 +180,10 @@ A matchup lost with a score in the top half of that week's field, beating at
 least six teams. A tie that straddles the middle of the field is neither lucky
 nor unlucky.
 _Avoid_: bad beat
+
+**Consistency**:
+How steady a team's weekly scores are: the standard deviation of its scores
+over the counted weeks, shown with its lowest, highest, and average score, and
+ranked league-wide with 1 the steadiest. It exists from the first counted week,
+however little one week says.
+_Avoid_: volatility, variance, steadiness, boom-or-bust
