@@ -14,8 +14,8 @@
    3
   ],
   "current_week": 3,
-  "updated_at": "2026-09-22 12:25:59 UTC",
-  "last_updated": "2026-09-22T12:25:59.163484+00:00"
+  "updated_at": "2026-09-23 12:37:00 UTC",
+  "last_updated": "2026-09-23T12:37:00.286450+00:00"
  },
  "teams": [
   {
@@ -70,9 +70,9 @@
   },
   {
    "team_id": 11,
-   "team_name": "AJ Brown Bible Quotes",
-   "team_abbrev": "BIBL",
-   "abbrev": "BIBL",
+   "team_name": "The Sun Gods ",
+   "team_abbrev": "RA",
+   "abbrev": "RA",
    "owner": "Maxx Millstein",
    "scores_by_week": [
     93.34,
@@ -120,7 +120,7 @@
   },
   {
    "team_id": 9,
-   "team_name": "Walt's Warriors",
+   "team_name": "Poopy Diapey",
    "team_abbrev": "WALT",
    "abbrev": "WALT",
    "owner": "Matthew  Walter",
@@ -270,9 +270,9 @@
   },
   {
    "team_id": 4,
-   "team_name": "Teeny Weeny Matt Sterny",
-   "team_abbrev": "LAST",
-   "abbrev": "LAST",
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SWSH",
+   "abbrev": "SWSH",
    "owner": "Matt Stern",
    "scores_by_week": [
     84.76,
@@ -332,7 +332,7 @@
     {
      "name": "Bills TQB",
      "pro_team": "BUF",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "QB",
      "score": 35.66
     },
@@ -360,14 +360,14 @@
     {
      "name": "Jahmyr Gibbs",
      "pro_team": "DET",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "score": 31.1
     },
     {
      "name": "Ashton Jeanty",
      "pro_team": "LV",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 29.7
     },
@@ -402,7 +402,7 @@
     {
      "name": "Jaguars TQB",
      "pro_team": "JAX",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "QB",
      "score": 25.8
     },
@@ -423,14 +423,14 @@
     {
      "name": "Isaiah Likely",
      "pro_team": "NYG",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "TE",
      "score": 23.8
     },
     {
      "name": "Amon-Ra St. Brown",
      "pro_team": "DET",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 23.7
     },
@@ -493,7 +493,7 @@
     {
      "name": "Vikings TQB",
      "pro_team": "MIN",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "QB",
      "score": 18.84
     }
@@ -509,7 +509,7 @@
     {
      "name": "Bills TQB",
      "pro_team": "BUF",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "QB",
      "score": 35.66
     },
@@ -523,7 +523,7 @@
     {
      "name": "Jaguars TQB",
      "pro_team": "JAX",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "QB",
      "score": 25.8
     },
@@ -544,7 +544,7 @@
     {
      "name": "Vikings TQB",
      "pro_team": "MIN",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "QB",
      "score": 18.84
     },
@@ -609,14 +609,14 @@
     {
      "name": "Jahmyr Gibbs",
      "pro_team": "DET",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "score": 31.1
     },
     {
      "name": "Ashton Jeanty",
      "pro_team": "LV",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 29.7
     },
@@ -658,7 +658,7 @@
     {
      "name": "Breece Hall",
      "pro_team": "NYJ",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 18.8
     },
@@ -707,7 +707,7 @@
     {
      "name": "Travis Etienne Jr.",
      "pro_team": "NO",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "score": 11.3
     },
@@ -772,7 +772,7 @@
     {
      "name": "Amon-Ra St. Brown",
      "pro_team": "DET",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 23.7
     },
@@ -835,7 +835,7 @@
     {
      "name": "Puka Nacua",
      "pro_team": "LAR",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "WR",
      "score": 9.9
     },
@@ -877,7 +877,7 @@
     {
      "name": "Luther Burden III",
      "pro_team": "CHI",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "WR",
      "score": 7.0
     },
@@ -912,7 +912,7 @@
     {
      "name": "Drake London",
      "pro_team": "ATL",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 4.5
     },
@@ -926,7 +926,7 @@
     {
      "name": "Davante Adams",
      "pro_team": "LAR",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 4.1
     },
@@ -942,7 +942,7 @@
     {
      "name": "Isaiah Likely",
      "pro_team": "NYG",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "TE",
      "score": 23.8
     },
@@ -970,7 +970,7 @@
     {
      "name": "Travis Kelce",
      "pro_team": "KC",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "TE",
      "score": 8.6
     },
@@ -998,7 +998,7 @@
     {
      "name": "Dalton Schultz",
      "pro_team": "HOU",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "TE",
      "score": 5.5
     },
@@ -1030,7 +1030,7 @@
     {
      "name": "Bills TQB",
      "pro_team": "BUF",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "QB",
      "score": 40.82
     },
@@ -1044,7 +1044,7 @@
     {
      "name": "Davante Adams",
      "pro_team": "LAR",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 35.5
     },
@@ -1058,7 +1058,7 @@
     {
      "name": "Amon-Ra St. Brown",
      "pro_team": "DET",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 30.7
     },
@@ -1072,7 +1072,7 @@
     {
      "name": "49ers TQB",
      "pro_team": "SF",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "QB",
      "score": 28.28
     },
@@ -1128,7 +1128,7 @@
     {
      "name": "Travis Kelce",
      "pro_team": "KC",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "TE",
      "score": 20.6
     },
@@ -1142,7 +1142,7 @@
     {
      "name": "Jahmyr Gibbs",
      "pro_team": "DET",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "score": 20.3
     },
@@ -1163,7 +1163,7 @@
     {
      "name": "Jaylen Waddle",
      "pro_team": "DEN",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "WR",
      "score": 17.8
     },
@@ -1207,7 +1207,7 @@
     {
      "name": "Bills TQB",
      "pro_team": "BUF",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "QB",
      "score": 40.82
     },
@@ -1221,7 +1221,7 @@
     {
      "name": "49ers TQB",
      "pro_team": "SF",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "QB",
      "score": 28.28
     },
@@ -1277,7 +1277,7 @@
     {
      "name": "Jaguars TQB",
      "pro_team": "JAX",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "QB",
      "score": 6.16
     },
@@ -1321,7 +1321,7 @@
     {
      "name": "Jahmyr Gibbs",
      "pro_team": "DET",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "score": 20.3
     },
@@ -1349,7 +1349,7 @@
     {
      "name": "TreVeyon Henderson",
      "pro_team": "NE",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "score": 13.6
     },
@@ -1370,7 +1370,7 @@
     {
      "name": "Breece Hall",
      "pro_team": "NYJ",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 11.7
     },
@@ -1412,14 +1412,14 @@
     {
      "name": "Ashton Jeanty",
      "pro_team": "LV",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 8.3
     },
     {
      "name": "MarShawn Lloyd",
      "pro_team": "GB",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "score": 7.6
     },
@@ -1433,7 +1433,7 @@
     {
      "name": "Quinshon Judkins",
      "pro_team": "CLE",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 7.3
     },
@@ -1447,7 +1447,7 @@
     {
      "name": "Travis Etienne Jr.",
      "pro_team": "NO",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "score": 6.1
     },
@@ -1477,7 +1477,7 @@
     {
      "name": "Davante Adams",
      "pro_team": "LAR",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 35.5
     },
@@ -1491,7 +1491,7 @@
     {
      "name": "Amon-Ra St. Brown",
      "pro_team": "DET",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 30.7
     },
@@ -1519,7 +1519,7 @@
     {
      "name": "Jaylen Waddle",
      "pro_team": "DEN",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "WR",
      "score": 17.8
     },
@@ -1596,14 +1596,14 @@
     {
      "name": "Drake London",
      "pro_team": "ATL",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 6.9
     },
     {
      "name": "Terry McLaurin",
      "pro_team": "WSH",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "WR",
      "score": 6.0
     },
@@ -1638,7 +1638,7 @@
     {
      "name": "Luther Burden III",
      "pro_team": "CHI",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "WR",
      "score": 4.7
     }
@@ -1647,7 +1647,7 @@
     {
      "name": "Travis Kelce",
      "pro_team": "KC",
-     "fantasy_team": "AJ Brown Bible Quotes",
+     "fantasy_team": "The Sun Gods ",
      "position": "TE",
      "score": 20.6
     },
@@ -1682,7 +1682,7 @@
     {
      "name": "Mark Andrews",
      "pro_team": "BAL",
-     "fantasy_team": "Walt's Warriors",
+     "fantasy_team": "Poopy Diapey",
      "position": "TE",
      "score": 7.9
     },
@@ -1724,7 +1724,7 @@
     {
      "name": "Mike Gesicki",
      "pro_team": "CIN",
-     "fantasy_team": "Teeny Weeny Matt Sterny",
+     "fantasy_team": "Swishington Football Team",
      "position": "TE",
      "score": 0.0
     }
@@ -1733,7 +1733,7 @@
  ],
  "position_scores_by_week": [
   {
-   "BIBL": {
+   "RA": {
     "WR": 28.2,
     "RB": 13.6,
     "FLEX": 4.1,
@@ -1760,7 +1760,7 @@
     "K": 9.0,
     "D/ST": 18.0
    },
-   "LAST": {
+   "SWSH": {
     "RB": 34.8,
     "QB": 35.66,
     "WR": 3.1,
@@ -1852,7 +1852,7 @@
     "D/ST": 3.0,
     "K": 6.0
    },
-   "LAST": {
+   "SWSH": {
     "RB": 27.9,
     "QB": 40.82,
     "WR": 23.8,
@@ -1870,7 +1870,7 @@
     "D/ST": 6.0,
     "K": 2.0
    },
-   "BIBL": {
+   "RA": {
     "WR": 37.6,
     "RB": 19.7,
     "FLEX": 35.5,

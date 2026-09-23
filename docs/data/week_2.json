@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "final",
- "fetched_at": "2026-09-22T12:25:59.163484Z",
+ "fetched_at": "2026-09-23T12:37:00.286450Z",
  "matchups": [
   {
    "home": {
@@ -282,8 +282,8 @@
    },
    "away": {
     "team_id": 4,
-    "team_name": "Teeny Weeny Matt Sterny",
-    "abbrev": "LAST",
+    "team_name": "Swishington Football Team",
+    "abbrev": "SWSH",
     "owner": "Matt Stern",
     "logo_url": "https://d3s5v81uibmb73.cloudfront.net/storage/category/large/cigars-swisher-sweets-cigars-5c82ed6538b350.45677828.jpg",
     "record": {
@@ -474,7 +474,7 @@
       "pro_team": "LV",
       "position": "TE",
       "slot": "BE",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "LAC",
       "kickoff": "2026-09-20T20:05:00Z",
       "on_bye": false,
@@ -764,7 +764,7 @@
       "pro_team": "HOU",
       "position": "WR",
       "slot": "BE",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "CIN",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -846,8 +846,8 @@
    },
    "away": {
     "team_id": 11,
-    "team_name": "AJ Brown Bible Quotes",
-    "abbrev": "BIBL",
+    "team_name": "The Sun Gods ",
+    "abbrev": "RA",
     "owner": "Maxx Millstein",
     "logo_url": "https://g.espncdn.com/lm-static/logo-packs/ffl/AtTheStadium-RobbHarskamp/At_The_Stadium_12.svg",
     "record": {
@@ -1920,7 +1920,7 @@
       "pro_team": "GB",
       "position": "WR",
       "slot": "BE",
-      "injury": "Q",
+      "injury": "D",
       "opponent": "NYJ",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -2152,7 +2152,7 @@
       "pro_team": "BAL",
       "position": "WR",
       "slot": "BE",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "NO",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -2166,7 +2166,7 @@
       "pro_team": "PIT",
       "position": "WR",
       "slot": "BE",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "NE",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -2744,7 +2744,7 @@
       "pro_team": "DEN",
       "position": "RB",
       "slot": "BE",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "JAX",
       "kickoff": "2026-09-20T20:05:00Z",
       "on_bye": false,
@@ -3088,7 +3088,7 @@
    },
    "away": {
     "team_id": 9,
-    "team_name": "Walt's Warriors",
+    "team_name": "Poopy Diapey",
     "abbrev": "WALT",
     "owner": "Matthew  Walter",
     "logo_url": "https://g.espncdn.com/s/ffllm/logos/GridironWarriors-MartinLaksman/warriors-13.svg",
@@ -3280,7 +3280,7 @@
       "pro_team": "LAR",
       "position": "WR",
       "slot": "BE",
-      "injury": "O",
+      "injury": "Q",
       "opponent": "NYG",
       "kickoff": "2026-09-22T00:15:00Z",
       "on_bye": false,
@@ -3365,8 +3365,8 @@
  "projected_standings": [
   {
    "team_id": 11,
-   "team_name": "AJ Brown Bible Quotes",
-   "abbrev": "BIBL",
+   "team_name": "The Sun Gods ",
+   "abbrev": "RA",
    "projected_total": 156.68,
    "projected_ranking_points": 12.0,
    "projected_cumulative": 15.0,
@@ -3409,8 +3409,8 @@
   },
   {
    "team_id": 4,
-   "team_name": "Teeny Weeny Matt Sterny",
-   "abbrev": "LAST",
+   "team_name": "Swishington Football Team",
+   "abbrev": "SWSH",
    "projected_total": 106.42,
    "projected_ranking_points": 8.0,
    "projected_cumulative": 9.0,
@@ -3486,7 +3486,7 @@
   },
   {
    "team_id": 9,
-   "team_name": "Walt's Warriors",
+   "team_name": "Poopy Diapey",
    "abbrev": "WALT",
    "projected_total": 55.66,
    "projected_ranking_points": 1.0,
