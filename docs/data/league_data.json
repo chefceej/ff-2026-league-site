@@ -4,64 +4,14 @@
   "season": 2026,
   "num_teams": 12,
   "regular_season_weeks": 14,
-  "completed_weeks": 2,
-  "current_matchup_week": 2,
+  "completed_weeks": 3,
+  "current_matchup_week": 3,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-24 12:40:56 UTC",
-  "last_updated": "2026-09-24T12:40:56.410207+00:00"
+  "updated_at": "2026-09-25 04:43:47 UTC",
+  "last_updated": "2026-09-25T04:43:47.507464+00:00"
  },
  "teams": [
-  {
-   "team_id": 1,
-   "team_name": "Nixed Downs in Dallas",
-   "team_abbrev": "Stev",
-   "abbrev": "Stev",
-   "owner": "Ben Fagin",
-   "scores_by_week": [
-    125.4,
-    132.56
-   ],
-   "ranking_points_by_week": [
-    9.0,
-    11.0
-   ],
-   "cumulative_points_by_week": [
-    9.0,
-    20.0
-   ],
-   "normalized_by_week": [
-    2.0,
-    8.0
-   ],
-   "rank": 1,
-   "total_ranking_points": 20.0
-  },
-  {
-   "team_id": 8,
-   "team_name": "Satriale's Pork Store",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0
-   ],
-   "rank": 2,
-   "total_ranking_points": 20.0
-  },
   {
    "team_id": 11,
    "team_name": "The Sun Gods ",
@@ -70,72 +20,55 @@
    "owner": "Maxx Millstein",
    "scores_by_week": [
     93.34,
-    156.68
+    156.68,
+    23.9
    ],
    "ranking_points_by_week": [
     3.0,
-    12.0
+    12.0,
+    11.0
    ],
    "cumulative_points_by_week": [
     3.0,
-    15.0
+    15.0,
+    26.0
    ],
    "normalized_by_week": [
     -4.0,
-    3.0
+    3.0,
+    5.0
    ],
-   "rank": 3,
-   "total_ranking_points": 15.0
+   "rank": 1,
+   "total_ranking_points": 26.0
   },
   {
-   "team_id": 7,
-   "team_name": "Speedy CRashees",
-   "team_abbrev": "SC",
-   "abbrev": "SC",
-   "owner": "Brantley Lohkamp",
+   "team_id": 1,
+   "team_name": "Nixed Downs in Dallas",
+   "team_abbrev": "Stev",
+   "abbrev": "Stev",
+   "owner": "Ben Fagin",
    "scores_by_week": [
-    134.52,
-    71.46
+    125.4,
+    132.56,
+    0.0
    ],
    "ranking_points_by_week": [
+    9.0,
     11.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    9.0,
+    20.0,
+    24.0
+   ],
+   "normalized_by_week": [
+    2.0,
+    8.0,
     3.0
    ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 14.0
-  },
-  {
-   "team_id": 9,
-   "team_name": "Poopy Diapey",
-   "team_abbrev": "WALT",
-   "abbrev": "WALT",
-   "owner": "Matthew  Walter",
-   "scores_by_week": [
-    136.0,
-    55.66
-   ],
-   "ranking_points_by_week": [
-    12.0,
-    1.0
-   ],
-   "cumulative_points_by_week": [
-    12.0,
-    13.0
-   ],
-   "normalized_by_week": [
-    5.0,
-    1.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 13.0
+   "rank": 2,
+   "total_ranking_points": 24.0
   },
   {
    "team_id": 2,
@@ -145,97 +78,84 @@
    "owner": "Connor Kraus",
    "scores_by_week": [
     123.86,
-    76.48
+    76.48,
+    34.3
    ],
    "ranking_points_by_week": [
     8.0,
-    4.0
+    4.0,
+    12.0
    ],
    "cumulative_points_by_week": [
     8.0,
-    12.0
+    12.0,
+    24.0
    ],
    "normalized_by_week": [
     1.0,
+    0.0,
+    3.0
+   ],
+   "rank": 3,
+   "total_ranking_points": 24.0
+  },
+  {
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
     0.0
    ],
-   "rank": 6,
-   "total_ranking_points": 12.0
-  },
-  {
-   "team_id": 3,
-   "team_name": "JSN Derulo ",
-   "team_abbrev": "BW",
-   "abbrev": "BW",
-   "owner": "Brian Wilson",
-   "scores_by_week": [
-    98.86,
-    99.9
-   ],
    "ranking_points_by_week": [
-    4.0,
-    7.0
+    10.0,
+    10.0,
+    4.0
    ],
    "cumulative_points_by_week": [
-    4.0,
-    11.0
+    10.0,
+    20.0,
+    24.0
    ],
    "normalized_by_week": [
-    -3.0,
-    -1.0
+    3.0,
+    8.0,
+    3.0
    ],
-   "rank": 7,
-   "total_ranking_points": 11.0
+   "rank": 4,
+   "total_ranking_points": 24.0
   },
   {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "team_abbrev": "MBJG",
-   "abbrev": "MBJG",
-   "owner": "Matthew Bernstein",
+   "team_id": 9,
+   "team_name": "Poopy Diapey",
+   "team_abbrev": "WALT",
+   "abbrev": "WALT",
+   "owner": "Matthew  Walter",
    "scores_by_week": [
-    103.16,
-    97.58
+    136.0,
+    55.66,
+    2.0
    ],
    "ranking_points_by_week": [
+    12.0,
+    1.0,
+    8.0
+   ],
+   "cumulative_points_by_week": [
+    12.0,
+    13.0,
+    21.0
+   ],
+   "normalized_by_week": [
     5.0,
-    6.0
+    1.0,
+    0.0
    ],
-   "cumulative_points_by_week": [
-    5.0,
-    11.0
-   ],
-   "normalized_by_week": [
-    -2.0,
-    -1.0
-   ],
-   "rank": 8,
-   "total_ranking_points": 11.0
-  },
-  {
-   "team_id": 6,
-   "team_name": "Mid AF Squad",
-   "team_abbrev": "Naug",
-   "abbrev": "Naug",
-   "owner": "John Naughton",
-   "scores_by_week": [
-    104.66,
-    80.28
-   ],
-   "ranking_points_by_week": [
-    6.0,
-    5.0
-   ],
-   "cumulative_points_by_week": [
-    6.0,
-    11.0
-   ],
-   "normalized_by_week": [
-    -1.0,
-    -1.0
-   ],
-   "rank": 9,
-   "total_ranking_points": 11.0
+   "rank": 5,
+   "total_ranking_points": 21.0
   },
   {
    "team_id": 10,
@@ -245,22 +165,26 @@
    "owner": "Brendan Ecker",
    "scores_by_week": [
     92.02,
-    107.08
+    107.08,
+    4.6
    ],
    "ranking_points_by_week": [
     2.0,
-    9.0
+    9.0,
+    10.0
    ],
    "cumulative_points_by_week": [
     2.0,
-    11.0
+    11.0,
+    21.0
    ],
    "normalized_by_week": [
     -5.0,
-    -1.0
+    -1.0,
+    0.0
    ],
-   "rank": 10,
-   "total_ranking_points": 11.0
+   "rank": 6,
+   "total_ranking_points": 21.0
   },
   {
    "team_id": 4,
@@ -270,22 +194,142 @@
    "owner": "Matt Stern",
    "scores_by_week": [
     84.76,
-    106.42
+    106.42,
+    2.8
    ],
    "ranking_points_by_week": [
     1.0,
-    8.0
+    8.0,
+    9.0
    ],
    "cumulative_points_by_week": [
     1.0,
-    9.0
+    9.0,
+    18.0
    ],
    "normalized_by_week": [
     -6.0,
+    -3.0,
     -3.0
    ],
+   "rank": 7,
+   "total_ranking_points": 18.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Speedy CRashees",
+   "team_abbrev": "SC",
+   "abbrev": "SC",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    0.0
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    18.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -3.0
+   ],
+   "rank": 8,
+   "total_ranking_points": 18.0
+  },
+  {
+   "team_id": 3,
+   "team_name": "JSN Derulo ",
+   "team_abbrev": "BW",
+   "abbrev": "BW",
+   "owner": "Brian Wilson",
+   "scores_by_week": [
+    98.86,
+    99.9,
+    0.0
+   ],
+   "ranking_points_by_week": [
+    4.0,
+    7.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    4.0,
+    11.0,
+    15.0
+   ],
+   "normalized_by_week": [
+    -3.0,
+    -1.0,
+    -6.0
+   ],
+   "rank": 9,
+   "total_ranking_points": 15.0
+  },
+  {
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "team_abbrev": "MBJG",
+   "abbrev": "MBJG",
+   "owner": "Matthew Bernstein",
+   "scores_by_week": [
+    103.16,
+    97.58,
+    0.0
+   ],
+   "ranking_points_by_week": [
+    5.0,
+    6.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    5.0,
+    11.0,
+    15.0
+   ],
+   "normalized_by_week": [
+    -2.0,
+    -1.0,
+    -6.0
+   ],
+   "rank": 10,
+   "total_ranking_points": 15.0
+  },
+  {
+   "team_id": 6,
+   "team_name": "Mid AF Squad",
+   "team_abbrev": "Naug",
+   "abbrev": "Naug",
+   "owner": "John Naughton",
+   "scores_by_week": [
+    104.66,
+    80.28,
+    0.0
+   ],
+   "ranking_points_by_week": [
+    6.0,
+    5.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    6.0,
+    11.0,
+    15.0
+   ],
+   "normalized_by_week": [
+    -1.0,
+    -1.0,
+    -6.0
+   ],
    "rank": 11,
-   "total_ranking_points": 9.0
+   "total_ranking_points": 15.0
   },
   {
    "team_id": 12,
@@ -295,22 +339,26 @@
    "owner": "Ben Mendel",
    "scores_by_week": [
     107.1,
-    66.54
+    66.54,
+    0.0
    ],
    "ranking_points_by_week": [
     7.0,
-    2.0
+    2.0,
+    4.0
    ],
    "cumulative_points_by_week": [
     7.0,
-    9.0
+    9.0,
+    13.0
    ],
    "normalized_by_week": [
     0.0,
-    -3.0
+    -3.0,
+    -8.0
    ],
    "rank": 12,
-   "total_ranking_points": 9.0
+   "total_ranking_points": 13.0
   }
  ],
  "top_players_by_week": [
@@ -1723,6 +1771,711 @@
      "score": 0.0
     }
    ]
+  },
+  {
+   "all": [
+    {
+     "name": "Bijan Robinson",
+     "pro_team": "ATL",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "score": 34.3
+    },
+    {
+     "name": "Drake London",
+     "pro_team": "ATL",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 23.9
+    },
+    {
+     "name": "Tucker Kraft",
+     "pro_team": "GB",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "TE",
+     "score": 4.6
+    },
+    {
+     "name": "MarShawn Lloyd",
+     "pro_team": "GB",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 2.8
+    },
+    {
+     "name": "Trey Smack",
+     "pro_team": "GB",
+     "fantasy_team": "Poopy Diapey",
+     "position": "K",
+     "score": 2.0
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jeremiyah Love",
+     "pro_team": "ARI",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "David Montgomery",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "DK Metcalf",
+     "pro_team": "PIT",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Harold Fannin Jr.",
+     "pro_team": "CLE",
+     "fantasy_team": "Remeber Bendel",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Texans D/ST",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Cameron Dicker",
+     "pro_team": "LAC",
+     "fantasy_team": "Remeber Bendel",
+     "position": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Vikings TQB",
+     "pro_team": "MIN",
+     "fantasy_team": "Remeber Bendel",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Ja'Marr Chase",
+     "pro_team": "CIN",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Kyren Williams",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jameson Williams",
+     "pro_team": "DET",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Rome Odunze",
+     "pro_team": "CHI",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Rams TQB",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Eagles D/ST",
+     "pro_team": "PHI",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Tyler Loop",
+     "pro_team": "BAL",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Brock Bowers",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "score": 0.0
+    }
+   ],
+   "QB": [
+    {
+     "name": "Vikings TQB",
+     "pro_team": "MIN",
+     "fantasy_team": "Remeber Bendel",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Rams TQB",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Patriots TQB",
+     "pro_team": "NE",
+     "fantasy_team": "Kaiser Soze",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "Mid AF Squad",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Eagles TQB",
+     "pro_team": "PHI",
+     "fantasy_team": "Speedy CRashees",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Chiefs TQB",
+     "pro_team": "KC",
+     "fantasy_team": "The Lizard Kings",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Lions TQB",
+     "pro_team": "DET",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Ravens TQB",
+     "pro_team": "BAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Jaguars TQB",
+     "pro_team": "JAX",
+     "fantasy_team": "Poopy Diapey",
+     "position": "QB",
+     "score": 0.0
+    }
+   ],
+   "RB": [
+    {
+     "name": "Bijan Robinson",
+     "pro_team": "ATL",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "score": 34.3
+    },
+    {
+     "name": "MarShawn Lloyd",
+     "pro_team": "GB",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 2.8
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jeremiyah Love",
+     "pro_team": "ARI",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "David Montgomery",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Kyren Williams",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Bucky Irving",
+     "pro_team": "TB",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jadarian Price",
+     "pro_team": "SEA",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Travis Etienne Jr.",
+     "pro_team": "NO",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "TreVeyon Henderson",
+     "pro_team": "NE",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Saquon Barkley",
+     "pro_team": "PHI",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Aaron Jones Sr.",
+     "pro_team": "MIN",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Speedy CRashees",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "De'Von Achane",
+     "pro_team": "MIA",
+     "fantasy_team": "Speedy CRashees",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jonathan Taylor",
+     "pro_team": "IND",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Bhayshul Tuten",
+     "pro_team": "JAX",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Rachaad White",
+     "pro_team": "WSH",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Chase Brown",
+     "pro_team": "CIN",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Omarion Hampton",
+     "pro_team": "LAC",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Javonte Williams",
+     "pro_team": "DAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "score": 0.0
+    }
+   ],
+   "WR": [
+    {
+     "name": "Drake London",
+     "pro_team": "ATL",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 23.9
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "DK Metcalf",
+     "pro_team": "PIT",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Ja'Marr Chase",
+     "pro_team": "CIN",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Jameson Williams",
+     "pro_team": "DET",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Rome Odunze",
+     "pro_team": "CHI",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Jaylen Waddle",
+     "pro_team": "DEN",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Terry McLaurin",
+     "pro_team": "WSH",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Quentin Johnston",
+     "pro_team": "LAC",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "George Pickens",
+     "pro_team": "DAL",
+     "fantasy_team": "Kaiser Soze",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Parker Washington",
+     "pro_team": "JAX",
+     "fantasy_team": "Kaiser Soze",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Amon-Ra St. Brown",
+     "pro_team": "DET",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Davante Adams",
+     "pro_team": "LAR",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Justin Jefferson",
+     "pro_team": "MIN",
+     "fantasy_team": "Mid AF Squad",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Emeka Egbuka",
+     "pro_team": "TB",
+     "fantasy_team": "Mid AF Squad",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Rashee Rice",
+     "pro_team": "KC",
+     "fantasy_team": "Speedy CRashees",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Ladd McConkey",
+     "pro_team": "LAC",
+     "fantasy_team": "Speedy CRashees",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "DJ Moore",
+     "pro_team": "BUF",
+     "fantasy_team": "Speedy CRashees",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Malik Nabers",
+     "pro_team": "NYG",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Tee Higgins",
+     "pro_team": "CIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Jalen Coker",
+     "pro_team": "CAR",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "CeeDee Lamb",
+     "pro_team": "DAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "DeVonta Smith",
+     "pro_team": "PHI",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Chris Olave",
+     "pro_team": "NO",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "WR",
+     "score": 0.0
+    }
+   ],
+   "TE": [
+    {
+     "name": "Tucker Kraft",
+     "pro_team": "GB",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "TE",
+     "score": 4.6
+    },
+    {
+     "name": "Harold Fannin Jr.",
+     "pro_team": "CLE",
+     "fantasy_team": "Remeber Bendel",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Brock Bowers",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Dalton Kincaid",
+     "pro_team": "BUF",
+     "fantasy_team": "Kaiser Soze",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Travis Kelce",
+     "pro_team": "KC",
+     "fantasy_team": "The Sun Gods ",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "T.J. Hockenson",
+     "pro_team": "MIN",
+     "fantasy_team": "Mid AF Squad",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Darren Waller",
+     "pro_team": "CAR",
+     "fantasy_team": "Speedy CRashees",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Trey McBride",
+     "pro_team": "ARI",
+     "fantasy_team": "The Lizard Kings",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Dalton Schultz",
+     "pro_team": "HOU",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Tyler Warren",
+     "pro_team": "IND",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Hunter Henry",
+     "pro_team": "NE",
+     "fantasy_team": "JSN Derulo ",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Mark Andrews",
+     "pro_team": "BAL",
+     "fantasy_team": "Poopy Diapey",
+     "position": "TE",
+     "score": 0.0
+    }
+   ]
   }
  ],
  "position_scores_by_week": [
@@ -1944,6 +2697,116 @@
     "TE": 7.9,
     "D/ST": 3.0,
     "K": 5.0
+   }
+  },
+  {
+   "BEND": {
+    "RB": 0.0,
+    "WR": 0.0,
+    "FLEX": 0.0,
+    "TE": 0.0,
+    "D/ST": 0.0,
+    "K": 0.0,
+    "QB": 0.0
+   },
+   "SACK": {
+    "WR": 0.0,
+    "RB": 0.0,
+    "FLEX": 0.0,
+    "TE": 4.6,
+    "QB": 0.0,
+    "D/ST": 0.0,
+    "K": 0.0
+   },
+   "SWSH": {
+    "RB": 2.8,
+    "TE": 0.0,
+    "QB": 0.0,
+    "WR": 0.0,
+    "FLEX": 0.0,
+    "D/ST": 0.0,
+    "K": 0.0
+   },
+   "CJ": {
+    "RB": 34.3,
+    "WR": 0.0,
+    "FLEX": 0.0,
+    "QB": 0.0,
+    "TE": 0.0,
+    "D/ST": 0.0,
+    "K": 0.0
+   },
+   "RA": {
+    "WR": 23.9,
+    "RB": 0.0,
+    "FLEX": 0.0,
+    "QB": 0.0,
+    "TE": 0.0,
+    "D/ST": 0.0,
+    "K": 0.0
+   },
+   "Naug": {
+    "WR": 0.0,
+    "RB": 0.0,
+    "QB": 0.0,
+    "FLEX": 0.0,
+    "K": 0.0,
+    "TE": 0.0,
+    "D/ST": 0.0
+   },
+   "SC": {
+    "RB": 0.0,
+    "WR": 0.0,
+    "FLEX": 0.0,
+    "QB": 0.0,
+    "K": 0.0,
+    "D/ST": 0.0,
+    "TE": 0.0
+   },
+   "MBJG": {
+    "RB": 0.0,
+    "FLEX": 0.0,
+    "TE": 0.0,
+    "WR": 0.0,
+    "K": 0.0,
+    "D/ST": 0.0,
+    "QB": 0.0
+   },
+   "Stev": {
+    "WR": 0.0,
+    "RB": 0.0,
+    "FLEX": 0.0,
+    "QB": 0.0,
+    "K": 0.0,
+    "D/ST": 0.0,
+    "TE": 0.0
+   },
+   "PORK": {
+    "RB": 0.0,
+    "WR": 0.0,
+    "TE": 0.0,
+    "FLEX": 0.0,
+    "K": 0.0,
+    "D/ST": 0.0,
+    "QB": 0.0
+   },
+   "BW": {
+    "WR": 0.0,
+    "RB": 0.0,
+    "QB": 0.0,
+    "FLEX": 0.0,
+    "D/ST": 0.0,
+    "TE": 0.0,
+    "K": 0.0
+   },
+   "WALT": {
+    "WR": 0.0,
+    "FLEX": 0.0,
+    "RB": 0.0,
+    "QB": 0.0,
+    "TE": 0.0,
+    "D/ST": 0.0,
+    "K": 2.0
    }
   }
  ]
