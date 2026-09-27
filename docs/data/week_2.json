@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "final",
- "fetched_at": "2026-09-26T12:05:51.237715Z",
+ "fetched_at": "2026-09-27T12:50:50.909051Z",
  "matchups": [
   {
    "home": {
@@ -1122,7 +1122,7 @@
   {
    "home": {
     "team_id": 2,
-    "team_name": "Kaiser Soze",
+    "team_name": "Maye's Windu fell out a window",
     "abbrev": "CJ",
     "owner": "Connor Kraus",
     "logo_url": "https://i.redd.it/si5mfysgzpc41.jpg",
@@ -1298,7 +1298,7 @@
       "pro_team": "CHI",
       "position": "K",
       "slot": "K",
-      "injury": "Q",
+      "injury": "",
       "opponent": "MIN",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -1558,7 +1558,7 @@
       "pro_team": "PHI",
       "position": "TE",
       "slot": "TE",
-      "injury": "D",
+      "injury": "O",
       "opponent": "TEN",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -2008,7 +2008,7 @@
       "pro_team": "PHI",
       "position": "WR",
       "slot": "WR",
-      "injury": "Q",
+      "injury": "",
       "opponent": "TEN",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -2052,7 +2052,7 @@
       "pro_team": "PHI",
       "position": "WR",
       "slot": "WR",
-      "injury": "Q",
+      "injury": "",
       "opponent": "TEN",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -3222,7 +3222,7 @@
       "pro_team": "IND",
       "position": "WR",
       "slot": "WR",
-      "injury": "O",
+      "injury": "IR",
       "opponent": "KC",
       "kickoff": "2026-09-21T00:20:00Z",
       "on_bye": false,
@@ -3453,7 +3453,7 @@
   },
   {
    "team_id": 2,
-   "team_name": "Kaiser Soze",
+   "team_name": "Maye's Windu fell out a window",
    "abbrev": "CJ",
    "projected_total": 76.48,
    "projected_ranking_points": 4.0,
