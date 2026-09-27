@@ -80,7 +80,10 @@ jobs:
             else
               git commit -m "chore: update league data $(date -u '+%Y-%m-%d %H:%M UTC')"
               # Reconcile with any commit a neighbouring run may have landed.
-              git pull --rebase origin main
+              # Both sides regenerate the same JSON, so on conflict keep ours
+              # (-X theirs = the commit being replayed, i.e. this run's fresh
+              # fetch) instead of dying and abandoning the rest of the hour.
+              git pull --rebase -X theirs origin main
               git push
             fi
             echo "::endgroup::"
