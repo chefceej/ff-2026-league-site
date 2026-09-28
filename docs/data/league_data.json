@@ -8,8 +8,8 @@
   "current_matchup_week": 3,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-28 01:34:20 UTC",
-  "last_updated": "2026-09-28T01:34:20.783437+00:00"
+  "updated_at": "2026-09-28 01:49:25 UTC",
+  "last_updated": "2026-09-28T01:49:25.987809+00:00"
  },
  "teams": [
   {
@@ -26,20 +26,49 @@
    "ranking_points_by_week": [
     10.0,
     10.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     10.0,
     20.0,
-    30.0
+    29.0
    ],
    "normalized_by_week": [
     3.0,
     8.0,
-    10.0
+    9.0
    ],
    "rank": 1,
-   "total_ranking_points": 30.0
+   "total_ranking_points": 29.0
+  },
+  {
+   "team_id": 11,
+   "team_name": "The Sun Gods ",
+   "team_abbrev": "RA",
+   "abbrev": "RA",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    107.58
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    10.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    25.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    5.0
+   ],
+   "rank": 2,
+   "total_ranking_points": 25.0
   },
   {
    "team_id": 1,
@@ -67,35 +96,6 @@
     8.0,
     4.0
    ],
-   "rank": 2,
-   "total_ranking_points": 24.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "The Sun Gods ",
-   "team_abbrev": "RA",
-   "abbrev": "RA",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    105.78
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    24.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    4.0
-   ],
    "rank": 3,
    "total_ranking_points": 24.0
   },
@@ -108,7 +108,7 @@
    "scores_by_week": [
     84.76,
     106.42,
-    114.46
+    115.86
    ],
    "ranking_points_by_week": [
     1.0,
@@ -282,7 +282,7 @@
    "scores_by_week": [
     92.02,
     107.08,
-    85.32
+    86.94
    ],
    "ranking_points_by_week": [
     2.0,
@@ -2019,7 +2019,7 @@
      "pro_team": "LAR",
      "fantasy_team": "Bijan These Nuts",
      "position": "QB",
-     "score": 10.72
+     "score": 11.64
     },
     {
      "name": "Vikings TQB",
@@ -2122,6 +2122,13 @@
      "score": 11.5
     },
     {
+     "name": "Kyren Williams",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 11.2
+    },
+    {
      "name": "Ashton Jeanty",
      "pro_team": "LV",
      "fantasy_team": "Poopy Diapey",
@@ -2134,13 +2141,6 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "RB",
      "score": 10.6
-    },
-    {
-     "name": "Kyren Williams",
-     "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 10.5
     },
     {
      "name": "Quinshon Judkins",
@@ -2334,6 +2334,13 @@
      "score": 8.6
     },
     {
+     "name": "Davante Adams",
+     "pro_team": "LAR",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 7.2
+    },
+    {
      "name": "Jameson Williams",
      "pro_team": "DET",
      "fantasy_team": "Bijan These Nuts",
@@ -2346,13 +2353,6 @@
      "fantasy_team": "Swishington Football Team",
      "position": "WR",
      "score": 5.5
-    },
-    {
-     "name": "Davante Adams",
-     "pro_team": "LAR",
-     "fantasy_team": "The Sun Gods ",
-     "position": "WR",
-     "score": 5.4
     },
     {
      "name": "Malik Nabers",
@@ -2711,10 +2711,10 @@
    },
    "SACK": {
     "WR": 27.2,
-    "RB": 30.8,
+    "RB": 31.5,
     "FLEX": 0.0,
     "TE": 4.6,
-    "QB": 10.72,
+    "QB": 11.64,
     "D/ST": 0.0,
     "K": 12.0
    },
@@ -2722,7 +2722,7 @@
     "RB": 40.7,
     "TE": 22.6,
     "QB": 16.96,
-    "WR": 16.7,
+    "WR": 18.1,
     "FLEX": 5.5,
     "D/ST": 1.0,
     "K": 11.0
@@ -2739,7 +2739,7 @@
    "RA": {
     "WR": 33.8,
     "RB": 11.4,
-    "FLEX": 5.4,
+    "FLEX": 7.2,
     "QB": 31.28,
     "TE": 12.9,
     "D/ST": 2.0,
