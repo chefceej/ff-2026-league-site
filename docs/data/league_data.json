@@ -8,8 +8,8 @@
   "current_matchup_week": 3,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-27 23:43:20 UTC",
-  "last_updated": "2026-09-27T23:43:20.442600+00:00"
+  "updated_at": "2026-09-28 01:34:20 UTC",
+  "last_updated": "2026-09-28T01:34:20.783437+00:00"
  },
  "teams": [
   {
@@ -55,20 +55,20 @@
    "ranking_points_by_week": [
     9.0,
     11.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     9.0,
     20.0,
-    25.0
+    24.0
    ],
    "normalized_by_week": [
     2.0,
     8.0,
-    5.0
+    4.0
    ],
    "rank": 2,
-   "total_ranking_points": 25.0
+   "total_ranking_points": 24.0
   },
   {
    "team_id": 11,
@@ -79,54 +79,25 @@
    "scores_by_week": [
     93.34,
     156.68,
-    100.38
+    105.78
    ],
    "ranking_points_by_week": [
     3.0,
     12.0,
-    7.0
+    9.0
    ],
    "cumulative_points_by_week": [
     3.0,
     15.0,
-    22.0
+    24.0
    ],
    "normalized_by_week": [
     -4.0,
     3.0,
-    2.0
+    4.0
    ],
    "rank": 3,
-   "total_ranking_points": 22.0
-  },
-  {
-   "team_id": 2,
-   "team_name": "Maye's Windu fell out a window",
-   "team_abbrev": "CJ",
-   "abbrev": "CJ",
-   "owner": "Connor Kraus",
-   "scores_by_week": [
-    123.86,
-    76.48,
-    102.4
-   ],
-   "ranking_points_by_week": [
-    8.0,
-    4.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    8.0,
-    12.0,
-    21.0
-   ],
-   "normalized_by_week": [
-    1.0,
-    0.0,
-    1.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 21.0
+   "total_ranking_points": 24.0
   },
   {
    "team_id": 4,
@@ -154,8 +125,37 @@
     -3.0,
     1.0
    ],
-   "rank": 5,
+   "rank": 4,
    "total_ranking_points": 21.0
+  },
+  {
+   "team_id": 2,
+   "team_name": "Maye's Windu fell out a window",
+   "team_abbrev": "CJ",
+   "abbrev": "CJ",
+   "owner": "Connor Kraus",
+   "scores_by_week": [
+    123.86,
+    76.48,
+    102.6
+   ],
+   "ranking_points_by_week": [
+    8.0,
+    4.0,
+    8.0
+   ],
+   "cumulative_points_by_week": [
+    8.0,
+    12.0,
+    20.0
+   ],
+   "normalized_by_week": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "rank": 5,
+   "total_ranking_points": 20.0
   },
   {
    "team_id": 12,
@@ -200,48 +200,19 @@
    "ranking_points_by_week": [
     5.0,
     6.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     5.0,
     11.0,
-    19.0
+    18.0
    ],
    "normalized_by_week": [
     -2.0,
     -1.0,
-    -1.0
-   ],
-   "rank": 7,
-   "total_ranking_points": 19.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Speedy CRashees",
-   "team_abbrev": "SC",
-   "abbrev": "SC",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    72.3
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    18.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
     -2.0
    ],
-   "rank": 8,
+   "rank": 7,
    "total_ranking_points": 18.0
   },
   {
@@ -253,7 +224,7 @@
    "scores_by_week": [
     98.86,
     99.9,
-    87.82
+    93.9
    ],
    "ranking_points_by_week": [
     4.0,
@@ -270,8 +241,66 @@
     -1.0,
     -3.0
    ],
+   "rank": 8,
+   "total_ranking_points": 17.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Speedy CRashees",
+   "team_abbrev": "SC",
+   "abbrev": "SC",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    72.3
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -3.0
+   ],
    "rank": 9,
    "total_ranking_points": 17.0
+  },
+  {
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "team_abbrev": "SACK",
+   "abbrev": "SACK",
+   "owner": "Brendan Ecker",
+   "scores_by_week": [
+    92.02,
+    107.08,
+    85.32
+   ],
+   "ranking_points_by_week": [
+    2.0,
+    9.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    2.0,
+    11.0,
+    16.0
+   ],
+   "normalized_by_week": [
+    -5.0,
+    -1.0,
+    -4.0
+   ],
+   "rank": 10,
+   "total_ranking_points": 16.0
   },
   {
    "team_id": 9,
@@ -287,20 +316,20 @@
    "ranking_points_by_week": [
     12.0,
     1.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     12.0,
     13.0,
-    16.0
+    15.0
    ],
    "normalized_by_week": [
     5.0,
     1.0,
-    -4.0
+    -5.0
    ],
-   "rank": 10,
-   "total_ranking_points": 16.0
+   "rank": 11,
+   "total_ranking_points": 15.0
   },
   {
    "team_id": 6,
@@ -316,44 +345,15 @@
    "ranking_points_by_week": [
     6.0,
     5.0,
-    2.0
+    1.0
    ],
    "cumulative_points_by_week": [
     6.0,
     11.0,
-    13.0
-   ],
-   "normalized_by_week": [
-    -1.0,
-    -1.0,
-    -7.0
-   ],
-   "rank": 11,
-   "total_ranking_points": 13.0
-  },
-  {
-   "team_id": 10,
-   "team_name": "Bijan These Nuts",
-   "team_abbrev": "SACK",
-   "abbrev": "SACK",
-   "owner": "Brendan Ecker",
-   "scores_by_week": [
-    92.02,
-    107.08,
-    59.1
-   ],
-   "ranking_points_by_week": [
-    2.0,
-    9.0,
-    1.0
-   ],
-   "cumulative_points_by_week": [
-    2.0,
-    11.0,
     12.0
    ],
    "normalized_by_week": [
-    -5.0,
+    -1.0,
     -1.0,
     -8.0
    ],
@@ -1814,7 +1814,7 @@
      "pro_team": "NO",
      "fantasy_team": "Maye's Windu fell out a window",
      "position": "QB",
-     "score": 23.6
+     "score": 23.8
     },
     {
      "name": "Brock Bowers",
@@ -1850,6 +1850,13 @@
      "fantasy_team": "Remeber Bendel",
      "position": "TE",
      "score": 20.6
+    },
+    {
+     "name": "Ravens TQB",
+     "pro_team": "BAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "QB",
+     "score": 20.44
     },
     {
      "name": "Ja'Marr Chase",
@@ -1897,13 +1904,6 @@
      "name": "Lions TQB",
      "pro_team": "DET",
      "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "score": 19.36
-    },
-    {
-     "name": "Ravens TQB",
-     "pro_team": "BAL",
-     "fantasy_team": "JSN Derulo ",
      "position": "QB",
      "score": 19.36
     },
@@ -1963,7 +1963,7 @@
      "pro_team": "NO",
      "fantasy_team": "Maye's Windu fell out a window",
      "position": "QB",
-     "score": 23.6
+     "score": 23.8
     },
     {
      "name": "Bengals TQB",
@@ -1971,6 +1971,13 @@
      "fantasy_team": "Mid AF Squad",
      "position": "QB",
      "score": 22.58
+    },
+    {
+     "name": "Ravens TQB",
+     "pro_team": "BAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "QB",
+     "score": 20.44
     },
     {
      "name": "Jaguars TQB",
@@ -1983,13 +1990,6 @@
      "name": "Lions TQB",
      "pro_team": "DET",
      "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "score": 19.36
-    },
-    {
-     "name": "Ravens TQB",
-     "pro_team": "BAL",
-     "fantasy_team": "JSN Derulo ",
      "position": "QB",
      "score": 19.36
     },
@@ -2015,18 +2015,18 @@
      "score": 15.94
     },
     {
+     "name": "Rams TQB",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "QB",
+     "score": 10.72
+    },
+    {
      "name": "Vikings TQB",
      "pro_team": "MIN",
      "fantasy_team": "Remeber Bendel",
      "position": "QB",
      "score": 10.42
-    },
-    {
-     "name": "Rams TQB",
-     "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "QB",
-     "score": 0.0
     },
     {
      "name": "Eagles TQB",
@@ -2136,6 +2136,13 @@
      "score": 10.6
     },
     {
+     "name": "Kyren Williams",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 10.5
+    },
+    {
      "name": "Quinshon Judkins",
      "pro_team": "CLE",
      "fantasy_team": "Poopy Diapey",
@@ -2204,13 +2211,6 @@
      "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "score": 2.8
-    },
-    {
-     "name": "De'Von Achane",
-     "pro_team": "MIA",
-     "fantasy_team": "Speedy CRashees",
-     "position": "RB",
-     "score": 1.7
     }
    ],
    "WR": [
@@ -2348,6 +2348,13 @@
      "score": 5.5
     },
     {
+     "name": "Davante Adams",
+     "pro_team": "LAR",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 5.4
+    },
+    {
      "name": "Malik Nabers",
      "pro_team": "NYG",
      "fantasy_team": "The Lizard Kings",
@@ -2381,13 +2388,6 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "WR",
      "score": 2.6
-    },
-    {
-     "name": "Brian Thomas Jr.",
-     "pro_team": "JAX",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "score": 1.3
     }
    ],
    "TE": [
@@ -2711,12 +2711,12 @@
    },
    "SACK": {
     "WR": 27.2,
-    "RB": 20.3,
+    "RB": 30.8,
     "FLEX": 0.0,
     "TE": 4.6,
-    "QB": 0.0,
+    "QB": 10.72,
     "D/ST": 0.0,
-    "K": 7.0
+    "K": 12.0
    },
    "SWSH": {
     "RB": 40.7,
@@ -2734,12 +2734,12 @@
     "TE": 2.8,
     "D/ST": 5.0,
     "K": 6.0,
-    "QB": 23.6
+    "QB": 23.8
    },
    "RA": {
     "WR": 33.8,
     "RB": 11.4,
-    "FLEX": 0.0,
+    "FLEX": 5.4,
     "QB": 31.28,
     "TE": 12.9,
     "D/ST": 2.0,
@@ -2793,9 +2793,9 @@
    "BW": {
     "WR": 30.36,
     "RB": 28.8,
-    "QB": 19.36,
+    "QB": 20.44,
     "FLEX": 1.3,
-    "D/ST": 0.0,
+    "D/ST": 5.0,
     "TE": 1.0,
     "K": 7.0
    },
