@@ -8,8 +8,8 @@
   "current_matchup_week": 3,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-09-28 13:45:34 UTC",
-  "last_updated": "2026-09-28T13:45:34.769147+00:00"
+  "updated_at": "2026-09-29 05:35:04 UTC",
+  "last_updated": "2026-09-29T05:35:04.353383+00:00"
  },
  "teams": [
   {
@@ -26,20 +26,20 @@
    "ranking_points_by_week": [
     10.0,
     10.0,
-    9.0
+    7.0
    ],
    "cumulative_points_by_week": [
     10.0,
     20.0,
-    29.0
+    27.0
    ],
    "normalized_by_week": [
     3.0,
     8.0,
-    10.0
+    8.0
    ],
    "rank": 1,
-   "total_ranking_points": 29.0
+   "total_ranking_points": 27.0
   },
   {
    "team_id": 11,
@@ -79,7 +79,7 @@
    "scores_by_week": [
     125.4,
     132.56,
-    82.74
+    92.24
    ],
    "ranking_points_by_week": [
     9.0,
@@ -137,24 +137,53 @@
    "scores_by_week": [
     92.02,
     107.08,
-    103.8
+    109.7
    ],
    "ranking_points_by_week": [
     2.0,
     9.0,
-    8.0
+    9.0
    ],
    "cumulative_points_by_week": [
     2.0,
     11.0,
-    19.0
+    20.0
    ],
    "normalized_by_week": [
     -5.0,
     -1.0,
-    0.0
+    1.0
    ],
    "rank": 5,
+   "total_ranking_points": 20.0
+  },
+  {
+   "team_id": 3,
+   "team_name": "JSN Derulo ",
+   "team_abbrev": "BW",
+   "abbrev": "BW",
+   "owner": "Brian Wilson",
+   "scores_by_week": [
+    98.86,
+    99.9,
+    107.1
+   ],
+   "ranking_points_by_week": [
+    4.0,
+    7.0,
+    8.0
+   ],
+   "cumulative_points_by_week": [
+    4.0,
+    11.0,
+    19.0
+   ],
+   "normalized_by_week": [
+    -3.0,
+    -1.0,
+    0.0
+   ],
+   "rank": 6,
    "total_ranking_points": 19.0
   },
   {
@@ -183,7 +212,7 @@
     -3.0,
     0.0
    ],
-   "rank": 6,
+   "rank": 7,
    "total_ranking_points": 19.0
   },
   {
@@ -212,35 +241,6 @@
     0.0,
     -1.0
    ],
-   "rank": 7,
-   "total_ranking_points": 18.0
-  },
-  {
-   "team_id": 3,
-   "team_name": "JSN Derulo ",
-   "team_abbrev": "BW",
-   "abbrev": "BW",
-   "owner": "Brian Wilson",
-   "scores_by_week": [
-    98.86,
-    99.9,
-    102.9
-   ],
-   "ranking_points_by_week": [
-    4.0,
-    7.0,
-    7.0
-   ],
-   "cumulative_points_by_week": [
-    4.0,
-    11.0,
-    18.0
-   ],
-   "normalized_by_week": [
-    -3.0,
-    -1.0,
-    -1.0
-   ],
    "rank": 8,
    "total_ranking_points": 18.0
   },
@@ -253,7 +253,7 @@
    "scores_by_week": [
     134.52,
     71.46,
-    72.3
+    82.92
    ],
    "ranking_points_by_week": [
     11.0,
@@ -311,7 +311,7 @@
    "scores_by_week": [
     136.0,
     55.66,
-    65.98
+    82.28
    ],
    "ranking_points_by_week": [
     12.0,
@@ -340,7 +340,7 @@
    "scores_by_week": [
     104.66,
     80.28,
-    63.28
+    81.58
    ],
    "ranking_points_by_week": [
     6.0,
@@ -2022,18 +2022,18 @@
      "score": 15.94
     },
     {
+     "name": "Eagles TQB",
+     "pro_team": "PHI",
+     "fantasy_team": "Speedy CRashees",
+     "position": "QB",
+     "score": 10.62
+    },
+    {
      "name": "Vikings TQB",
      "pro_team": "MIN",
      "fantasy_team": "Remeber Bendel",
      "position": "QB",
      "score": 10.42
-    },
-    {
-     "name": "Eagles TQB",
-     "pro_team": "PHI",
-     "fantasy_team": "Speedy CRashees",
-     "position": "QB",
-     "score": 0.0
     }
    ],
    "RB": [
@@ -2143,11 +2143,25 @@
      "score": 10.6
     },
     {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "score": 9.8
+    },
+    {
      "name": "Quinshon Judkins",
      "pro_team": "CLE",
      "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 8.9
+    },
+    {
+     "name": "Saquon Barkley",
+     "pro_team": "PHI",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "score": 8.5
     },
     {
      "name": "Jonathan Taylor",
@@ -2197,20 +2211,6 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "RB",
      "score": 5.6
-    },
-    {
-     "name": "TreVeyon Henderson",
-     "pro_team": "NE",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "score": 3.4
-    },
-    {
-     "name": "MarShawn Lloyd",
-     "pro_team": "GB",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "score": 2.8
     }
    ],
    "WR": [
@@ -2271,6 +2271,13 @@
      "score": 16.7
     },
     {
+     "name": "Luther Burden III",
+     "pro_team": "CHI",
+     "fantasy_team": "Poopy Diapey",
+     "position": "WR",
+     "score": 16.3
+    },
+    {
      "name": "Chris Olave",
      "pro_team": "NO",
      "fantasy_team": "Satriale's Pork Store",
@@ -2320,6 +2327,13 @@
      "score": 9.7
     },
     {
+     "name": "DeVonta Smith",
+     "pro_team": "PHI",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 9.5
+    },
+    {
      "name": "Emeka Egbuka",
      "pro_team": "TB",
      "fantasy_team": "Mid AF Squad",
@@ -2348,6 +2362,13 @@
      "score": 6.9
     },
     {
+     "name": "Rome Odunze",
+     "pro_team": "CHI",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 5.9
+    },
+    {
      "name": "Quentin Johnston",
      "pro_team": "LAC",
      "fantasy_team": "Swishington Football Team",
@@ -2367,27 +2388,6 @@
      "fantasy_team": "The Lizard Kings",
      "position": "WR",
      "score": 5.1
-    },
-    {
-     "name": "Justin Jefferson",
-     "pro_team": "MIN",
-     "fantasy_team": "Mid AF Squad",
-     "position": "WR",
-     "score": 4.2
-    },
-    {
-     "name": "Jalen Coker",
-     "pro_team": "CAR",
-     "fantasy_team": "The Lizard Kings",
-     "position": "WR",
-     "score": 2.8
-    },
-    {
-     "name": "Tetairoa McMillan",
-     "pro_team": "CAR",
-     "fantasy_team": "Remeber Bendel",
-     "position": "WR",
-     "score": 2.7
     }
    ],
    "TE": [
@@ -2712,7 +2712,7 @@
    "SACK": {
     "WR": 27.2,
     "RB": 39.1,
-    "FLEX": 0.0,
+    "FLEX": 5.9,
     "TE": 4.6,
     "QB": 20.9,
     "D/ST": 0.0,
@@ -2747,7 +2747,7 @@
    },
    "Naug": {
     "WR": 12.9,
-    "RB": 0.0,
+    "RB": 18.3,
     "QB": 22.58,
     "FLEX": 11.7,
     "K": 11.0,
@@ -2758,7 +2758,7 @@
     "RB": 21.1,
     "WR": 20.9,
     "FLEX": 9.7,
-    "QB": 0.0,
+    "QB": 10.62,
     "K": 5.0,
     "D/ST": 8.0,
     "TE": 7.6
@@ -2773,7 +2773,7 @@
     "QB": 15.94
    },
    "Stev": {
-    "WR": 16.7,
+    "WR": 26.2,
     "RB": 32.0,
     "FLEX": 2.6,
     "QB": 18.94,
@@ -2791,7 +2791,7 @@
     "QB": 19.36
    },
    "BW": {
-    "WR": 30.36,
+    "WR": 34.56,
     "RB": 28.8,
     "QB": 20.44,
     "FLEX": 1.3,
@@ -2802,7 +2802,7 @@
    "WALT": {
     "FLEX": 10.8,
     "RB": 15.9,
-    "WR": 8.6,
+    "WR": 24.9,
     "QB": 19.78,
     "TE": 3.9,
     "D/ST": 5.0,
