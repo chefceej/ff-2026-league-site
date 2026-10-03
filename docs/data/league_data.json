@@ -8,8 +8,8 @@
   "current_matchup_week": 4,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-02 12:25:18 UTC",
-  "last_updated": "2026-10-02T12:25:18.487667+00:00"
+  "updated_at": "2026-10-03 11:34:40 UTC",
+  "last_updated": "2026-10-03T11:34:40.229654+00:00"
  },
  "teams": [
   {
@@ -2689,15 +2689,15 @@
      "score": 0.0
     },
     {
-     "name": "Justin Jefferson",
-     "pro_team": "MIN",
+     "name": "Saquon Barkley",
+     "pro_team": "PHI",
      "fantasy_team": "Mid AF Squad",
-     "position": "WR",
+     "position": "RB",
      "score": 0.0
     },
     {
-     "name": "Saquon Barkley",
-     "pro_team": "PHI",
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
      "score": 0.0
@@ -3024,13 +3024,6 @@
      "score": 0.0
     },
     {
-     "name": "Justin Jefferson",
-     "pro_team": "MIN",
-     "fantasy_team": "Mid AF Squad",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Emeka Egbuka",
      "pro_team": "TB",
      "fantasy_team": "Mid AF Squad",
@@ -3038,8 +3031,15 @@
      "score": 0.0
     },
     {
-     "name": "Ladd McConkey",
-     "pro_team": "LAC",
+     "name": "Deebo Samuel Sr.",
+     "pro_team": "SF",
+     "fantasy_team": "Mid AF Squad",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Jordan Addison",
+     "pro_team": "MIN",
      "fantasy_team": "Mid AF Squad",
      "position": "WR",
      "score": 0.0
@@ -3582,13 +3582,13 @@
     "D/ST": 0.0
    },
    "Naug": {
-    "FLEX": 0.0,
     "RB": 0.0,
     "WR": 0.0,
     "QB": 0.0,
     "K": 0.0,
     "D/ST": 0.0,
-    "TE": 0.0
+    "TE": 0.0,
+    "FLEX": 0.0
    },
    "BEND": {
     "RB": 0.0,
