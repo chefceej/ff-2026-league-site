@@ -8,8 +8,8 @@
   "current_matchup_week": 4,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-03 11:34:40 UTC",
-  "last_updated": "2026-10-03T11:34:40.229654+00:00"
+  "updated_at": "2026-10-04 12:15:43 UTC",
+  "last_updated": "2026-10-04T12:15:43.446879+00:00"
  },
  "teams": [
   {
@@ -2889,6 +2889,13 @@
      "score": 0.0
     },
     {
+     "name": "George Holani",
+     "pro_team": "SEA",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 0.0
+    },
+    {
      "name": "Chase Brown",
      "pro_team": "CIN",
      "fantasy_team": "Satriale's Pork Store",
@@ -2955,13 +2962,6 @@
      "name": "Cam Skattebo",
      "pro_team": "NYG",
      "fantasy_team": "JSN Derulo ",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
      "position": "RB",
      "score": 0.0
     }
@@ -3059,8 +3059,8 @@
      "score": 0.0
     },
     {
-     "name": "Jalen Coker",
-     "pro_team": "CAR",
+     "name": "Stefon Diggs",
+     "pro_team": "WSH",
      "fantasy_team": "The Lizard Kings",
      "position": "WR",
      "score": 0.0
@@ -3075,13 +3075,6 @@
     {
      "name": "Jaylen Waddle",
      "pro_team": "DEN",
-     "fantasy_team": "Swishington Football Team",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Terry McLaurin",
-     "pro_team": "WSH",
      "fantasy_team": "Swishington Football Team",
      "position": "WR",
      "score": 0.0
@@ -3138,6 +3131,13 @@
     {
      "name": "Luther Burden III",
      "pro_team": "CHI",
+     "fantasy_team": "Poopy Diapey",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Wan'Dale Robinson",
+     "pro_team": "TEN",
      "fantasy_team": "Poopy Diapey",
      "position": "WR",
      "score": 0.0
@@ -3613,8 +3613,8 @@
     "TE": 0.0,
     "QB": 0.0,
     "WR": 0.0,
-    "K": 0.0,
     "FLEX": 0.0,
+    "K": 0.0,
     "D/ST": 9.0
    },
    "PORK": {
@@ -3658,8 +3658,8 @@
     "RB": 0.0,
     "TE": 0.0,
     "QB": 0.0,
-    "D/ST": 0.0,
     "FLEX": 0.0,
+    "D/ST": 0.0,
     "K": 0.0
    },
    "Stev": {
