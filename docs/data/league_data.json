@@ -8,8 +8,8 @@
   "current_matchup_week": 4,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-04 20:06:26 UTC",
-  "last_updated": "2026-10-04T20:06:26.395287+00:00"
+  "updated_at": "2026-10-04 20:21:32 UTC",
+  "last_updated": "2026-10-04T20:21:32.072553+00:00"
  },
  "teams": [
   {
@@ -22,7 +22,7 @@
     125.4,
     132.56,
     92.24,
-    109.12
+    121.3
    ],
    "ranking_points_by_week": [
     9.0,
@@ -46,6 +46,39 @@
    "total_ranking_points": 36.0
   },
   {
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "team_abbrev": "SACK",
+   "abbrev": "SACK",
+   "owner": "Brendan Ecker",
+   "scores_by_week": [
+    92.02,
+    107.08,
+    109.7,
+    98.48
+   ],
+   "ranking_points_by_week": [
+    2.0,
+    9.0,
+    9.0,
+    10.0
+   ],
+   "cumulative_points_by_week": [
+    2.0,
+    11.0,
+    20.0,
+    30.0
+   ],
+   "normalized_by_week": [
+    -5.0,
+    -1.0,
+    1.0,
+    3.0
+   ],
+   "rank": 2,
+   "total_ranking_points": 30.0
+  },
+  {
    "team_id": 8,
    "team_name": "Satriale's Pork Store",
    "team_abbrev": "PORK",
@@ -55,7 +88,7 @@
     127.36,
     131.28,
     106.96,
-    23.0
+    24.4
    ],
    "ranking_points_by_week": [
     10.0,
@@ -75,39 +108,6 @@
     8.0,
     2.0
    ],
-   "rank": 2,
-   "total_ranking_points": 29.0
-  },
-  {
-   "team_id": 10,
-   "team_name": "Bijan These Nuts",
-   "team_abbrev": "SACK",
-   "abbrev": "SACK",
-   "owner": "Brendan Ecker",
-   "scores_by_week": [
-    92.02,
-    107.08,
-    109.7,
-    92.06
-   ],
-   "ranking_points_by_week": [
-    2.0,
-    9.0,
-    9.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    2.0,
-    11.0,
-    20.0,
-    29.0
-   ],
-   "normalized_by_week": [
-    -5.0,
-    -1.0,
-    1.0,
-    2.0
-   ],
    "rank": 3,
    "total_ranking_points": 29.0
   },
@@ -121,7 +121,7 @@
     98.86,
     99.9,
     107.1,
-    88.1
+    87.9
    ],
    "ranking_points_by_week": [
     4.0,
@@ -145,39 +145,6 @@
    "total_ranking_points": 27.0
   },
   {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SWSH",
-   "abbrev": "SWSH",
-   "owner": "Matt Stern",
-   "scores_by_week": [
-    84.76,
-    106.42,
-    119.86,
-    43.92
-   ],
-   "ranking_points_by_week": [
-    1.0,
-    8.0,
-    12.0,
-    6.0
-   ],
-   "cumulative_points_by_week": [
-    1.0,
-    9.0,
-    21.0,
-    27.0
-   ],
-   "normalized_by_week": [
-    -6.0,
-    -3.0,
-    2.0,
-    0.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 27.0
-  },
-  {
    "team_id": 5,
    "team_name": "The Lizard Kings",
    "team_abbrev": "MBJG",
@@ -187,7 +154,7 @@
     103.16,
     97.58,
     101.04,
-    99.4
+    100.3
    ],
    "ranking_points_by_week": [
     5.0,
@@ -207,7 +174,7 @@
     -3.0,
     0.0
    ],
-   "rank": 6,
+   "rank": 5,
    "total_ranking_points": 27.0
   },
   {
@@ -220,7 +187,7 @@
     93.34,
     156.68,
     117.58,
-    9.2
+    9.4
    ],
    "ranking_points_by_week": [
     3.0,
@@ -240,7 +207,7 @@
     7.0,
     0.0
    ],
-   "rank": 7,
+   "rank": 6,
    "total_ranking_points": 27.0
   },
   {
@@ -253,7 +220,7 @@
     107.1,
     66.54,
     110.12,
-    52.4
+    52.96
    ],
    "ranking_points_by_week": [
     7.0,
@@ -273,8 +240,41 @@
     0.0,
     -1.0
    ],
-   "rank": 8,
+   "rank": 7,
    "total_ranking_points": 26.0
+  },
+  {
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SWSH",
+   "abbrev": "SWSH",
+   "owner": "Matt Stern",
+   "scores_by_week": [
+    84.76,
+    106.42,
+    119.86,
+    42.32
+   ],
+   "ranking_points_by_week": [
+    1.0,
+    8.0,
+    12.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    1.0,
+    9.0,
+    21.0,
+    25.0
+   ],
+   "normalized_by_week": [
+    -6.0,
+    -3.0,
+    2.0,
+    -2.0
+   ],
+   "rank": 8,
+   "total_ranking_points": 25.0
   },
   {
    "team_id": 9,
@@ -286,28 +286,61 @@
     136.0,
     55.66,
     82.28,
-    94.88
+    96.38
    ],
    "ranking_points_by_week": [
     12.0,
     1.0,
     2.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     12.0,
     13.0,
     15.0,
-    25.0
+    24.0
    ],
    "normalized_by_week": [
     5.0,
     1.0,
     -4.0,
-    -2.0
+    -3.0
    ],
    "rank": 9,
-   "total_ranking_points": 25.0
+   "total_ranking_points": 24.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Speedy CRashees",
+   "team_abbrev": "SC",
+   "abbrev": "SC",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    47.12
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    22.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -5.0
+   ],
+   "rank": 10,
+   "total_ranking_points": 22.0
   },
   {
    "team_id": 2,
@@ -339,39 +372,6 @@
     -1.0,
     -6.0
    ],
-   "rank": 10,
-   "total_ranking_points": 21.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Speedy CRashees",
-   "team_abbrev": "SC",
-   "abbrev": "SC",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    42.72
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    21.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -6.0
-   ],
    "rank": 11,
    "total_ranking_points": 21.0
   },
@@ -385,28 +385,28 @@
     104.66,
     80.28,
     81.58,
-    42.78
+    48.62
    ],
    "ranking_points_by_week": [
     6.0,
     5.0,
     1.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     6.0,
     11.0,
     12.0,
-    17.0
+    18.0
    ],
    "normalized_by_week": [
     -1.0,
     -1.0,
     -7.0,
-    -10.0
+    -9.0
    ],
    "rank": 12,
-   "total_ranking_points": 17.0
+   "total_ranking_points": 18.0
   }
  ],
  "top_players_by_week": [
@@ -2528,6 +2528,20 @@
   {
    "all": [
     {
+     "name": "CeeDee Lamb",
+     "pro_team": "DAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 32.8
+    },
+    {
+     "name": "Kyren Williams",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 31.7
+    },
+    {
      "name": "Javonte Williams",
      "pro_team": "DAL",
      "fantasy_team": "JSN Derulo ",
@@ -2535,25 +2549,25 @@
      "score": 28.8
     },
     {
-     "name": "CeeDee Lamb",
-     "pro_team": "DAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "WR",
-     "score": 25.1
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "Mid AF Squad",
+     "position": "QB",
+     "score": 23.72
     },
     {
-     "name": "Kyren Williams",
+     "name": "Puka Nacua",
      "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 24.5
+     "fantasy_team": "Poopy Diapey",
+     "position": "WR",
+     "score": 23.2
     },
     {
      "name": "Ravens TQB",
      "pro_team": "BAL",
      "fantasy_team": "JSN Derulo ",
      "position": "QB",
-     "score": 23.2
+     "score": 23.0
     },
     {
      "name": "Jonathan Taylor",
@@ -2570,25 +2584,11 @@
      "score": 21.8
     },
     {
-     "name": "Puka Nacua",
-     "pro_team": "LAR",
-     "fantasy_team": "Poopy Diapey",
-     "position": "WR",
-     "score": 21.5
-    },
-    {
      "name": "Tee Higgins",
      "pro_team": "CIN",
      "fantasy_team": "The Lizard Kings",
      "position": "WR",
      "score": 21.2
-    },
-    {
-     "name": "Bengals TQB",
-     "pro_team": "CIN",
-     "fantasy_team": "Mid AF Squad",
-     "position": "QB",
-     "score": 20.88
     },
     {
      "name": "Malik Nabers",
@@ -2598,18 +2598,25 @@
      "score": 20.2
     },
     {
-     "name": "Bills TQB",
-     "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
-     "position": "QB",
-     "score": 20.12
-    },
-    {
      "name": "Quinshon Judkins",
      "pro_team": "CLE",
      "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 18.6
+    },
+    {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "score": 18.52
+    },
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "QB",
+     "score": 18.1
     },
     {
      "name": "Carnell Tate",
@@ -2668,11 +2675,11 @@
      "score": 14.0
     },
     {
-     "name": "Cowboys TQB",
-     "pro_team": "DAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "QB",
-     "score": 13.62
+     "name": "Chase Brown",
+     "pro_team": "CIN",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 13.6
     },
     {
      "name": "Eagles TQB",
@@ -2693,44 +2700,37 @@
      "pro_team": "JAX",
      "fantasy_team": "Poopy Diapey",
      "position": "QB",
-     "score": 13.28
-    },
-    {
-     "name": "Chase Brown",
-     "pro_team": "CIN",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "RB",
-     "score": 12.2
+     "score": 13.08
     }
    ],
    "QB": [
-    {
-     "name": "Ravens TQB",
-     "pro_team": "BAL",
-     "fantasy_team": "JSN Derulo ",
-     "position": "QB",
-     "score": 23.2
-    },
     {
      "name": "Bengals TQB",
      "pro_team": "CIN",
      "fantasy_team": "Mid AF Squad",
      "position": "QB",
-     "score": 20.88
+     "score": 23.72
+    },
+    {
+     "name": "Ravens TQB",
+     "pro_team": "BAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "QB",
+     "score": 23.0
     },
     {
      "name": "Bills TQB",
      "pro_team": "BUF",
      "fantasy_team": "Swishington Football Team",
      "position": "QB",
-     "score": 20.12
+     "score": 18.52
     },
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "QB",
-     "score": 13.62
+     "score": 18.1
     },
     {
      "name": "Eagles TQB",
@@ -2744,26 +2744,26 @@
      "pro_team": "JAX",
      "fantasy_team": "Poopy Diapey",
      "position": "QB",
-     "score": 13.28
+     "score": 13.08
     },
     {
      "name": "Rams TQB",
      "pro_team": "LAR",
      "fantasy_team": "Bijan These Nuts",
      "position": "QB",
-     "score": 8.46
-    },
-    {
-     "name": "Saints TQB",
-     "pro_team": "NO",
-     "fantasy_team": "Maye's fell out of a Windu",
-     "position": "QB",
-     "score": 0.0
+     "score": 9.68
     },
     {
      "name": "Vikings TQB",
      "pro_team": "MIN",
      "fantasy_team": "Remeber Bendel",
+     "position": "QB",
+     "score": 1.56
+    },
+    {
+     "name": "Saints TQB",
+     "pro_team": "NO",
+     "fantasy_team": "Maye's fell out of a Windu",
      "position": "QB",
      "score": 0.0
     },
@@ -2791,18 +2791,18 @@
    ],
    "RB": [
     {
+     "name": "Kyren Williams",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 31.7
+    },
+    {
      "name": "Javonte Williams",
      "pro_team": "DAL",
      "fantasy_team": "JSN Derulo ",
      "position": "RB",
      "score": 28.8
-    },
-    {
-     "name": "Kyren Williams",
-     "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 24.5
     },
     {
      "name": "Jonathan Taylor",
@@ -2844,7 +2844,7 @@
      "pro_team": "CIN",
      "fantasy_team": "Satriale's Pork Store",
      "position": "RB",
-     "score": 12.2
+     "score": 13.6
     },
     {
      "name": "Bhayshul Tuten",
@@ -2907,7 +2907,7 @@
      "pro_team": "NE",
      "fantasy_team": "The Sun Gods ",
      "position": "RB",
-     "score": 4.0
+     "score": 4.2
     },
     {
      "name": "Saquon Barkley",
@@ -2915,6 +2915,13 @@
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
      "score": 1.5
+    },
+    {
+     "name": "Aaron Jones Sr.",
+     "pro_team": "MIN",
+     "fantasy_team": "Speedy CRashees",
+     "position": "RB",
+     "score": 0.4
     },
     {
      "name": "Kenneth Walker III",
@@ -2957,13 +2964,6 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "RB",
      "score": 0.0
-    },
-    {
-     "name": "Chuba Hubbard",
-     "pro_team": "CAR",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "RB",
-     "score": 0.0
     }
    ],
    "WR": [
@@ -2972,7 +2972,14 @@
      "pro_team": "DAL",
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "WR",
-     "score": 25.1
+     "score": 32.8
+    },
+    {
+     "name": "Puka Nacua",
+     "pro_team": "LAR",
+     "fantasy_team": "Poopy Diapey",
+     "position": "WR",
+     "score": 23.2
     },
     {
      "name": "Zay Flowers",
@@ -2980,13 +2987,6 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "WR",
      "score": 21.8
-    },
-    {
-     "name": "Puka Nacua",
-     "pro_team": "LAR",
-     "fantasy_team": "Poopy Diapey",
-     "position": "WR",
-     "score": 21.5
     },
     {
      "name": "Tee Higgins",
@@ -3173,18 +3173,18 @@
      "score": 8.7
     },
     {
+     "name": "Trey McBride",
+     "pro_team": "ARI",
+     "fantasy_team": "The Lizard Kings",
+     "position": "TE",
+     "score": 6.6
+    },
+    {
      "name": "Tyler Warren",
      "pro_team": "IND",
      "fantasy_team": "Satriale's Pork Store",
      "position": "TE",
      "score": 6.6
-    },
-    {
-     "name": "Trey McBride",
-     "pro_team": "ARI",
-     "fantasy_team": "The Lizard Kings",
-     "position": "TE",
-     "score": 5.7
     },
     {
      "name": "Dalton Schultz",
@@ -3565,11 +3565,11 @@
   {
    "SACK": {
     "WR": 24.4,
-    "RB": 24.5,
+    "RB": 31.7,
     "FLEX": 6.2,
     "TE": 13.5,
-    "QB": 8.46,
-    "D/ST": 7.0,
+    "QB": 9.68,
+    "D/ST": 5.0,
     "K": 8.0
    },
    "CJ": {
@@ -3583,9 +3583,9 @@
    },
    "Naug": {
     "RB": 7.9,
-    "QB": 20.88,
-    "K": 11.0,
-    "D/ST": 3.0,
+    "QB": 23.72,
+    "K": 12.0,
+    "D/ST": 5.0,
     "WR": 0.0,
     "TE": 0.0,
     "FLEX": 0.0
@@ -3595,13 +3595,13 @@
     "WR": 10.9,
     "FLEX": 4.3,
     "TE": 10.2,
-    "D/ST": 5.0,
-    "QB": 0.0,
+    "D/ST": 4.0,
+    "QB": 1.56,
     "K": 16.0
    },
    "MBJG": {
     "RB": 32.3,
-    "TE": 5.7,
+    "TE": 6.6,
     "WR": 27.2,
     "K": 14.0,
     "D/ST": 10.0,
@@ -3611,14 +3611,14 @@
    "SWSH": {
     "RB": 0.0,
     "TE": 0.0,
-    "QB": 20.12,
+    "QB": 18.52,
     "WR": 1.6,
     "FLEX": 8.2,
     "K": 5.0,
     "D/ST": 9.0
    },
    "PORK": {
-    "RB": 12.2,
+    "RB": 13.6,
     "WR": 4.2,
     "TE": 6.6,
     "FLEX": 0.0,
@@ -3629,43 +3629,43 @@
    "RA": {
     "WR": 0.0,
     "FLEX": 5.2,
-    "RB": 4.0,
+    "RB": 4.2,
     "TE": 0.0,
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0
    },
    "WALT": {
-    "WR": 30.9,
+    "WR": 32.6,
     "RB": 18.6,
-    "QB": 13.28,
+    "QB": 13.08,
     "TE": 10.1,
     "D/ST": 6.0,
     "K": 16.0,
     "FLEX": 0.0
    },
    "SC": {
-    "RB": 15.3,
+    "RB": 15.7,
     "WR": 2.2,
     "QB": 13.52,
     "FLEX": 7.7,
     "TE": 0.0,
     "D/ST": 4.0,
-    "K": 0.0
+    "K": 4.0
    },
    "BW": {
     "WR": 3.3,
     "RB": 35.9,
     "TE": 8.7,
-    "QB": 23.2,
+    "QB": 23.0,
     "FLEX": 17.0,
     "D/ST": 0.0,
     "K": 0.0
    },
    "Stev": {
-    "WR": 46.9,
+    "WR": 54.6,
     "RB": 31.8,
-    "QB": 13.62,
+    "QB": 18.1,
     "K": 0.0,
     "TE": 1.9,
     "FLEX": 14.9,
