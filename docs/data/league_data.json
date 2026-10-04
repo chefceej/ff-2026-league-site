@@ -8,8 +8,8 @@
   "current_matchup_week": 4,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-04 23:16:07 UTC",
-  "last_updated": "2026-10-04T23:16:07.637642+00:00"
+  "updated_at": "2026-10-04 23:31:11 UTC",
+  "last_updated": "2026-10-04T23:31:11.826017+00:00"
  },
  "teams": [
   {
@@ -22,7 +22,7 @@
     125.4,
     132.56,
     92.24,
-    130.3
+    131.3
    ],
    "ranking_points_by_week": [
     9.0,
@@ -55,7 +55,7 @@
     92.02,
     107.08,
     109.7,
-    120.48
+    128.68
    ],
    "ranking_points_by_week": [
     2.0,
@@ -88,28 +88,28 @@
     127.36,
     131.28,
     106.96,
-    42.7
+    44.7
    ],
    "ranking_points_by_week": [
     10.0,
     10.0,
     7.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     10.0,
     20.0,
     27.0,
-    30.0
+    29.0
    ],
    "normalized_by_week": [
     3.0,
     8.0,
     8.0,
-    5.0
+    4.0
    ],
    "rank": 3,
-   "total_ranking_points": 30.0
+   "total_ranking_points": 29.0
   },
   {
    "team_id": 11,
@@ -121,28 +121,28 @@
     93.34,
     156.68,
     117.58,
-    41.32
+    59.22
    ],
    "ranking_points_by_week": [
     3.0,
     12.0,
     11.0,
-    2.0
+    3.0
    ],
    "cumulative_points_by_week": [
     3.0,
     15.0,
     26.0,
-    28.0
+    29.0
    ],
    "normalized_by_week": [
     -4.0,
     3.0,
     7.0,
-    3.0
+    4.0
    ],
    "rank": 4,
-   "total_ranking_points": 28.0
+   "total_ranking_points": 29.0
   },
   {
    "team_id": 3,
@@ -154,7 +154,7 @@
     98.86,
     99.9,
     107.1,
-    102.0
+    100.0
    ],
    "ranking_points_by_week": [
     4.0,
@@ -187,7 +187,7 @@
     84.76,
     106.42,
     119.86,
-    64.32
+    73.42
    ],
    "ranking_points_by_week": [
     1.0,
@@ -253,7 +253,7 @@
     136.0,
     55.66,
     82.28,
-    117.18
+    119.78
    ],
    "ranking_points_by_week": [
     12.0,
@@ -286,28 +286,28 @@
     107.1,
     66.54,
     110.12,
-    75.78
+    77.38
    ],
    "ranking_points_by_week": [
     7.0,
     2.0,
     10.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     7.0,
     9.0,
     19.0,
-    24.0
+    25.0
    ],
    "normalized_by_week": [
     0.0,
     -3.0,
     0.0,
-    -1.0
+    0.0
    ],
    "rank": 9,
-   "total_ranking_points": 24.0
+   "total_ranking_points": 25.0
   },
   {
    "team_id": 7,
@@ -325,22 +325,22 @@
     11.0,
     3.0,
     3.0,
-    6.0
+    5.0
    ],
    "cumulative_points_by_week": [
     11.0,
     14.0,
     17.0,
-    23.0
+    22.0
    ],
    "normalized_by_week": [
     4.0,
     2.0,
     -2.0,
-    -2.0
+    -3.0
    ],
    "rank": 10,
-   "total_ranking_points": 23.0
+   "total_ranking_points": 22.0
   },
   {
    "team_id": 2,
@@ -2542,6 +2542,13 @@
      "score": 31.7
     },
     {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 30.2
+    },
+    {
      "name": "Javonte Williams",
      "pro_team": "DAL",
      "fantasy_team": "JSN Derulo ",
@@ -2577,13 +2584,6 @@
      "score": 22.2
     },
     {
-     "name": "Kenneth Walker III",
-     "pro_team": "KC",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 22.0
-    },
-    {
      "name": "Zay Flowers",
      "pro_team": "BAL",
      "fantasy_team": "Nixed Downs in Dallas",
@@ -2603,6 +2603,13 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "WR",
      "score": 20.2
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "QB",
+     "score": 19.82
     },
     {
      "name": "Will Reichard",
@@ -2638,6 +2645,13 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "QB",
      "score": 18.1
+    },
+    {
+     "name": "Brock Bowers",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "TE",
+     "score": 17.6
     },
     {
      "name": "Chiefs TQB",
@@ -2687,20 +2701,6 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "score": 15.3
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "RB",
-     "score": 14.9
-    },
-    {
-     "name": "Roman Wilson",
-     "pro_team": "PIT",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "WR",
-     "score": 14.9
     }
    ],
    "QB": [
@@ -2717,6 +2717,13 @@
      "fantasy_team": "JSN Derulo ",
      "position": "QB",
      "score": 23.0
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "QB",
+     "score": 19.82
     },
     {
      "name": "Bills TQB",
@@ -2752,13 +2759,6 @@
      "fantasy_team": "Poopy Diapey",
      "position": "QB",
      "score": 13.08
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "QB",
-     "score": 13.02
     },
     {
      "name": "Vikings TQB",
@@ -2798,6 +2798,13 @@
      "score": 31.7
     },
     {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 30.2
+    },
+    {
      "name": "Javonte Williams",
      "pro_team": "DAL",
      "fantasy_team": "JSN Derulo ",
@@ -2810,13 +2817,6 @@
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "score": 22.2
-    },
-    {
-     "name": "Kenneth Walker III",
-     "pro_team": "KC",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 22.0
     },
     {
      "name": "Quinshon Judkins",
@@ -2854,6 +2854,20 @@
      "score": 14.8
     },
     {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 14.5
+    },
+    {
+     "name": "Ashton Jeanty",
+     "pro_team": "LV",
+     "fantasy_team": "Poopy Diapey",
+     "position": "RB",
+     "score": 13.9
+    },
+    {
      "name": "Chase Brown",
      "pro_team": "CIN",
      "fantasy_team": "Satriale's Pork Store",
@@ -2861,25 +2875,11 @@
      "score": 13.6
     },
     {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "score": 12.9
-    },
-    {
      "name": "Omarion Hampton",
      "pro_team": "LAC",
      "fantasy_team": "Satriale's Pork Store",
      "position": "RB",
      "score": 12.3
-    },
-    {
-     "name": "Ashton Jeanty",
-     "pro_team": "LV",
-     "fantasy_team": "Poopy Diapey",
-     "position": "RB",
-     "score": 11.3
     },
     {
      "name": "Bhayshul Tuten",
@@ -2949,7 +2949,7 @@
      "pro_team": "SEA",
      "fantasy_team": "Swishington Football Team",
      "position": "RB",
-     "score": 1.9
+     "score": 2.5
     },
     {
      "name": "Saquon Barkley",
@@ -3152,6 +3152,20 @@
      "score": 18.4
     },
     {
+     "name": "Brock Bowers",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "TE",
+     "score": 17.6
+    },
+    {
+     "name": "George Kittle",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "TE",
+     "score": 15.0
+    },
+    {
      "name": "Tucker Kraft",
      "pro_team": "GB",
      "fantasy_team": "Bijan These Nuts",
@@ -3173,13 +3187,6 @@
      "score": 10.1
     },
     {
-     "name": "Brock Bowers",
-     "pro_team": "LV",
-     "fantasy_team": "Swishington Football Team",
-     "position": "TE",
-     "score": 9.1
-    },
-    {
      "name": "Colston Loveland",
      "pro_team": "CHI",
      "fantasy_team": "JSN Derulo ",
@@ -3199,13 +3206,6 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "TE",
      "score": 6.6
-    },
-    {
-     "name": "George Kittle",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "TE",
-     "score": 2.9
     },
     {
      "name": "Dalton Schultz",
@@ -3565,7 +3565,7 @@
   {
    "SACK": {
     "WR": 24.4,
-    "RB": 53.7,
+    "RB": 61.9,
     "FLEX": 6.2,
     "TE": 13.5,
     "QB": 9.68,
@@ -3591,7 +3591,7 @@
     "FLEX": 7.1
    },
    "BEND": {
-    "RB": 18.9,
+    "RB": 20.5,
     "WR": 10.9,
     "FLEX": 4.3,
     "TE": 10.2,
@@ -3609,8 +3609,8 @@
     "FLEX": 10.2
    },
    "SWSH": {
-    "RB": 1.9,
-    "TE": 9.1,
+    "RB": 2.5,
+    "TE": 17.6,
     "QB": 18.52,
     "WR": 12.6,
     "FLEX": 8.2,
@@ -3622,22 +3622,22 @@
     "WR": 4.2,
     "TE": 6.6,
     "FLEX": 0.0,
-    "K": 5.0,
+    "K": 6.0,
     "QB": 0.0,
-    "D/ST": 1.0
+    "D/ST": 2.0
    },
    "RA": {
     "WR": 0.0,
     "FLEX": 5.2,
     "RB": 4.2,
-    "TE": 2.9,
-    "QB": 13.02,
-    "D/ST": 10.0,
+    "TE": 15.0,
+    "QB": 19.82,
+    "D/ST": 9.0,
     "K": 6.0
    },
    "WALT": {
     "WR": 32.6,
-    "RB": 29.9,
+    "RB": 32.5,
     "QB": 13.08,
     "TE": 10.1,
     "D/ST": 6.0,
@@ -3659,14 +3659,14 @@
     "TE": 8.7,
     "QB": 23.0,
     "FLEX": 17.0,
-    "D/ST": 4.0,
+    "D/ST": 2.0,
     "K": 0.0
    },
    "Stev": {
     "WR": 54.6,
     "RB": 31.8,
     "QB": 18.1,
-    "K": 5.0,
+    "K": 6.0,
     "TE": 1.9,
     "FLEX": 14.9,
     "D/ST": 4.0
