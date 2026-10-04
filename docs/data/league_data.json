@@ -8,8 +8,8 @@
   "current_matchup_week": 4,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-04 23:31:11 UTC",
-  "last_updated": "2026-10-04T23:31:11.826017+00:00"
+  "updated_at": "2026-10-04 23:46:15 UTC",
+  "last_updated": "2026-10-04T23:46:15.604089+00:00"
  },
  "teams": [
   {
@@ -55,7 +55,7 @@
     92.02,
     107.08,
     109.7,
-    128.68
+    128.88
    ],
    "ranking_points_by_week": [
     2.0,
@@ -88,7 +88,7 @@
     127.36,
     131.28,
     106.96,
-    44.7
+    46.7
    ],
    "ranking_points_by_week": [
     10.0,
@@ -121,7 +121,7 @@
     93.34,
     156.68,
     117.58,
-    59.22
+    62.02
    ],
    "ranking_points_by_week": [
     3.0,
@@ -187,7 +187,7 @@
     84.76,
     106.42,
     119.86,
-    73.42
+    74.42
    ],
    "ranking_points_by_week": [
     1.0,
@@ -220,7 +220,7 @@
     103.16,
     97.58,
     101.04,
-    115.4
+    115.3
    ],
    "ranking_points_by_week": [
     5.0,
@@ -253,7 +253,7 @@
     136.0,
     55.66,
     82.28,
-    119.78
+    121.48
    ],
    "ranking_points_by_week": [
     12.0,
@@ -2546,7 +2546,7 @@
      "pro_team": "KC",
      "fantasy_team": "Bijan These Nuts",
      "position": "RB",
-     "score": 30.2
+     "score": 30.4
     },
     {
      "name": "Javonte Williams",
@@ -2609,7 +2609,7 @@
      "pro_team": "SF",
      "fantasy_team": "The Sun Gods ",
      "position": "QB",
-     "score": 19.82
+     "score": 19.62
     },
     {
      "name": "Will Reichard",
@@ -2658,7 +2658,7 @@
      "pro_team": "KC",
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
-     "score": 17.1
+     "score": 17.0
     },
     {
      "name": "Carnell Tate",
@@ -2689,18 +2689,18 @@
      "score": 16.0
     },
     {
+     "name": "Ashton Jeanty",
+     "pro_team": "LV",
+     "fantasy_team": "Poopy Diapey",
+     "position": "RB",
+     "score": 15.6
+    },
+    {
      "name": "Deebo Samuel Sr.",
      "pro_team": "SF",
      "fantasy_team": "Mid AF Squad",
      "position": "WR",
      "score": 15.5
-    },
-    {
-     "name": "James Cook III",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "score": 15.3
     }
    ],
    "QB": [
@@ -2723,7 +2723,7 @@
      "pro_team": "SF",
      "fantasy_team": "The Sun Gods ",
      "position": "QB",
-     "score": 19.82
+     "score": 19.62
     },
     {
      "name": "Bills TQB",
@@ -2744,7 +2744,7 @@
      "pro_team": "KC",
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
-     "score": 17.1
+     "score": 17.0
     },
     {
      "name": "Eagles TQB",
@@ -2802,7 +2802,7 @@
      "pro_team": "KC",
      "fantasy_team": "Bijan These Nuts",
      "position": "RB",
-     "score": 30.2
+     "score": 30.4
     },
     {
      "name": "Javonte Williams",
@@ -2833,6 +2833,13 @@
      "score": 16.9
     },
     {
+     "name": "Ashton Jeanty",
+     "pro_team": "LV",
+     "fantasy_team": "Poopy Diapey",
+     "position": "RB",
+     "score": 15.6
+    },
+    {
      "name": "James Cook III",
      "pro_team": "BUF",
      "fantasy_team": "Team Made of Glass",
@@ -2859,13 +2866,6 @@
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "score": 14.5
-    },
-    {
-     "name": "Ashton Jeanty",
-     "pro_team": "LV",
-     "fantasy_team": "Poopy Diapey",
-     "position": "RB",
-     "score": 13.9
     },
     {
      "name": "Chase Brown",
@@ -3028,7 +3028,7 @@
      "pro_team": "DEN",
      "fantasy_team": "Swishington Football Team",
      "position": "WR",
-     "score": 11.0
+     "score": 12.0
     },
     {
      "name": "Denzel Boston",
@@ -3565,7 +3565,7 @@
   {
    "SACK": {
     "WR": 24.4,
-    "RB": 61.9,
+    "RB": 62.1,
     "FLEX": 6.2,
     "TE": 13.5,
     "QB": 9.68,
@@ -3605,14 +3605,14 @@
     "WR": 27.2,
     "K": 14.0,
     "D/ST": 8.0,
-    "QB": 17.1,
+    "QB": 17.0,
     "FLEX": 10.2
    },
    "SWSH": {
     "RB": 2.5,
     "TE": 17.6,
     "QB": 18.52,
-    "WR": 12.6,
+    "WR": 13.6,
     "FLEX": 8.2,
     "K": 5.0,
     "D/ST": 9.0
@@ -3624,20 +3624,20 @@
     "FLEX": 0.0,
     "K": 6.0,
     "QB": 0.0,
-    "D/ST": 2.0
+    "D/ST": 4.0
    },
    "RA": {
     "WR": 0.0,
     "FLEX": 5.2,
     "RB": 4.2,
     "TE": 15.0,
-    "QB": 19.82,
-    "D/ST": 9.0,
+    "QB": 19.62,
+    "D/ST": 12.0,
     "K": 6.0
    },
    "WALT": {
     "WR": 32.6,
-    "RB": 32.5,
+    "RB": 34.2,
     "QB": 13.08,
     "TE": 10.1,
     "D/ST": 6.0,
