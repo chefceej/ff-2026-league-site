@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "final",
- "fetched_at": "2026-10-03T12:17:36.104223Z",
+ "fetched_at": "2026-10-04T13:04:22.012771Z",
  "matchups": [
   {
    "home": {
@@ -388,7 +388,7 @@
       "pro_team": "WSH",
       "position": "WR",
       "slot": "WR",
-      "injury": "Q",
+      "injury": "O",
       "opponent": "DAL",
       "kickoff": "2026-09-20T20:25:00Z",
       "on_bye": false,
@@ -1228,7 +1228,7 @@
       "pro_team": "SEA",
       "position": "RB",
       "slot": "RB/WR/TE",
-      "injury": "O",
+      "injury": "IR",
       "opponent": "ARI",
       "kickoff": "2026-09-20T20:25:00Z",
       "on_bye": false,
@@ -2772,7 +2772,7 @@
       "pro_team": "IND",
       "position": "WR",
       "slot": "BE",
-      "injury": "Q",
+      "injury": "O",
       "opponent": "KC",
       "kickoff": "2026-09-21T00:20:00Z",
       "on_bye": false,
