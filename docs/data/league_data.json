@@ -8,8 +8,8 @@
   "current_matchup_week": 4,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-04 23:46:15 UTC",
-  "last_updated": "2026-10-04T23:46:15.604089+00:00"
+  "updated_at": "2026-10-05 01:51:34 UTC",
+  "last_updated": "2026-10-05T01:51:34.613750+00:00"
  },
  "teams": [
   {
@@ -40,7 +40,7 @@
     2.0,
     8.0,
     5.0,
-    11.0
+    10.0
    ],
    "rank": 1,
    "total_ranking_points": 36.0
@@ -73,7 +73,7 @@
     -5.0,
     -1.0,
     1.0,
-    6.0
+    5.0
    ],
    "rank": 2,
    "total_ranking_points": 31.0
@@ -88,7 +88,7 @@
     127.36,
     131.28,
     106.96,
-    46.7
+    62.62
    ],
    "ranking_points_by_week": [
     10.0,
@@ -106,7 +106,7 @@
     3.0,
     8.0,
     8.0,
-    4.0
+    3.0
    ],
    "rank": 3,
    "total_ranking_points": 29.0
@@ -121,7 +121,7 @@
     93.34,
     156.68,
     117.58,
-    62.02
+    67.22
    ],
    "ranking_points_by_week": [
     3.0,
@@ -139,7 +139,7 @@
     -4.0,
     3.0,
     7.0,
-    4.0
+    3.0
    ],
    "rank": 4,
    "total_ranking_points": 29.0
@@ -154,7 +154,7 @@
     98.86,
     99.9,
     107.1,
-    100.0
+    110.0
    ],
    "ranking_points_by_week": [
     4.0,
@@ -172,7 +172,7 @@
     -3.0,
     -1.0,
     0.0,
-    2.0
+    1.0
    ],
    "rank": 5,
    "total_ranking_points": 27.0
@@ -187,19 +187,19 @@
     84.76,
     106.42,
     119.86,
-    74.42
+    85.82
    ],
    "ranking_points_by_week": [
     1.0,
     8.0,
     12.0,
-    4.0
+    5.0
    ],
    "cumulative_points_by_week": [
     1.0,
     9.0,
     21.0,
-    25.0
+    26.0
    ],
    "normalized_by_week": [
     -6.0,
@@ -208,7 +208,40 @@
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 25.0
+   "total_ranking_points": 26.0
+  },
+  {
+   "team_id": 12,
+   "team_name": "Remeber Bendel",
+   "team_abbrev": "BEND",
+   "abbrev": "BEND",
+   "owner": "Ben Mendel",
+   "scores_by_week": [
+    107.1,
+    66.54,
+    110.12,
+    102.58
+   ],
+   "ranking_points_by_week": [
+    7.0,
+    2.0,
+    10.0,
+    7.0
+   ],
+   "cumulative_points_by_week": [
+    7.0,
+    9.0,
+    19.0,
+    26.0
+   ],
+   "normalized_by_week": [
+    0.0,
+    -3.0,
+    0.0,
+    0.0
+   ],
+   "rank": 7,
+   "total_ranking_points": 26.0
   },
   {
    "team_id": 5,
@@ -238,9 +271,9 @@
     -2.0,
     -1.0,
     -3.0,
-    0.0
+    -1.0
    ],
-   "rank": 7,
+   "rank": 8,
    "total_ranking_points": 25.0
   },
   {
@@ -271,40 +304,7 @@
     5.0,
     1.0,
     -4.0,
-    0.0
-   ],
-   "rank": 8,
-   "total_ranking_points": 25.0
-  },
-  {
-   "team_id": 12,
-   "team_name": "Remeber Bendel",
-   "team_abbrev": "BEND",
-   "abbrev": "BEND",
-   "owner": "Ben Mendel",
-   "scores_by_week": [
-    107.1,
-    66.54,
-    110.12,
-    77.38
-   ],
-   "ranking_points_by_week": [
-    7.0,
-    2.0,
-    10.0,
-    6.0
-   ],
-   "cumulative_points_by_week": [
-    7.0,
-    9.0,
-    19.0,
-    25.0
-   ],
-   "normalized_by_week": [
-    0.0,
-    -3.0,
-    0.0,
-    0.0
+    -1.0
    ],
    "rank": 9,
    "total_ranking_points": 25.0
@@ -325,22 +325,22 @@
     11.0,
     3.0,
     3.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     11.0,
     14.0,
     17.0,
-    22.0
+    21.0
    ],
    "normalized_by_week": [
     4.0,
     2.0,
     -2.0,
-    -3.0
+    -5.0
    ],
    "rank": 10,
-   "total_ranking_points": 22.0
+   "total_ranking_points": 21.0
   },
   {
    "team_id": 2,
@@ -370,7 +370,7 @@
     1.0,
     0.0,
     -1.0,
-    -6.0
+    -7.0
    ],
    "rank": 11,
    "total_ranking_points": 19.0
@@ -391,22 +391,22 @@
     6.0,
     5.0,
     1.0,
-    7.0
+    6.0
    ],
    "cumulative_points_by_week": [
     6.0,
     11.0,
     12.0,
-    19.0
+    18.0
    ],
    "normalized_by_week": [
     -1.0,
     -1.0,
     -7.0,
-    -6.0
+    -8.0
    ],
    "rank": 12,
-   "total_ranking_points": 19.0
+   "total_ranking_points": 18.0
   }
  ],
  "top_players_by_week": [
@@ -2556,6 +2556,13 @@
      "score": 28.8
     },
     {
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 25.2
+    },
+    {
      "name": "Bengals TQB",
      "pro_team": "CIN",
      "fantasy_team": "Mid AF Squad",
@@ -2694,13 +2701,6 @@
      "fantasy_team": "Poopy Diapey",
      "position": "RB",
      "score": 15.6
-    },
-    {
-     "name": "Deebo Samuel Sr.",
-     "pro_team": "SF",
-     "fantasy_team": "Mid AF Squad",
-     "position": "WR",
-     "score": 15.5
     }
    ],
    "QB": [
@@ -2775,16 +2775,16 @@
      "score": 9.68
     },
     {
-     "name": "Saints TQB",
-     "pro_team": "NO",
-     "fantasy_team": "Maye's fell out of a Windu",
-     "position": "QB",
-     "score": 0.0
-    },
-    {
      "name": "Lions TQB",
      "pro_team": "DET",
      "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "score": 6.12
+    },
+    {
+     "name": "Saints TQB",
+     "pro_team": "NO",
+     "fantasy_team": "Maye's fell out of a Windu",
      "position": "QB",
      "score": 0.0
     }
@@ -2882,11 +2882,25 @@
      "score": 12.3
     },
     {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 11.4
+    },
+    {
      "name": "Bhayshul Tuten",
      "pro_team": "JAX",
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "score": 10.1
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 9.8
     },
     {
      "name": "Woody Marks",
@@ -2950,20 +2964,6 @@
      "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "score": 2.5
-    },
-    {
-     "name": "Saquon Barkley",
-     "pro_team": "PHI",
-     "fantasy_team": "Mid AF Squad",
-     "position": "RB",
-     "score": 1.5
-    },
-    {
-     "name": "Bijan Robinson",
-     "pro_team": "ATL",
-     "fantasy_team": "Maye's fell out of a Windu",
-     "position": "RB",
-     "score": 0.0
     }
    ],
    "WR": [
@@ -2973,6 +2973,13 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "WR",
      "score": 32.8
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 25.2
     },
     {
      "name": "Puka Nacua",
@@ -3094,6 +3101,13 @@
      "score": 6.0
     },
     {
+     "name": "Amon-Ra St. Brown",
+     "pro_team": "DET",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 5.2
+    },
+    {
      "name": "Davante Adams",
      "pro_team": "LAR",
      "fantasy_team": "The Sun Gods ",
@@ -3127,20 +3141,6 @@
      "fantasy_team": "Maye's fell out of a Windu",
      "position": "WR",
      "score": 3.1
-    },
-    {
-     "name": "DJ Moore",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "WR",
-     "score": 2.2
-    },
-    {
-     "name": "Kalif Raymond",
-     "pro_team": "CHI",
-     "fantasy_team": "Swishington Football Team",
-     "position": "WR",
-     "score": 1.6
     }
    ],
    "TE": [
@@ -3592,7 +3592,7 @@
    },
    "BEND": {
     "RB": 20.5,
-    "WR": 10.9,
+    "WR": 36.1,
     "FLEX": 4.3,
     "TE": 10.2,
     "D/ST": 4.0,
@@ -3609,7 +3609,7 @@
     "FLEX": 10.2
    },
    "SWSH": {
-    "RB": 2.5,
+    "RB": 13.9,
     "TE": 17.6,
     "QB": 18.52,
     "WR": 13.6,
@@ -3621,13 +3621,13 @@
     "RB": 25.9,
     "WR": 4.2,
     "TE": 6.6,
-    "FLEX": 0.0,
+    "FLEX": 9.8,
     "K": 6.0,
-    "QB": 0.0,
+    "QB": 6.12,
     "D/ST": 4.0
    },
    "RA": {
-    "WR": 0.0,
+    "WR": 5.2,
     "FLEX": 5.2,
     "RB": 4.2,
     "TE": 15.0,
@@ -3660,7 +3660,7 @@
     "QB": 23.0,
     "FLEX": 17.0,
     "D/ST": 2.0,
-    "K": 0.0
+    "K": 10.0
    },
    "Stev": {
     "WR": 54.6,
