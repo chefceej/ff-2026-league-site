@@ -8,8 +8,8 @@
   "current_matchup_week": 4,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-05 02:21:42 UTC",
-  "last_updated": "2026-10-05T02:21:42.848888+00:00"
+  "updated_at": "2026-10-05 02:36:46 UTC",
+  "last_updated": "2026-10-05T02:36:46.870568+00:00"
  },
  "teams": [
   {
@@ -88,28 +88,61 @@
     127.36,
     131.28,
     106.96,
-    64.14
+    75.42
    ],
    "ranking_points_by_week": [
     10.0,
     10.0,
     7.0,
-    2.0
+    3.0
    ],
    "cumulative_points_by_week": [
     10.0,
     20.0,
     27.0,
-    29.0
+    30.0
    ],
    "normalized_by_week": [
     3.0,
     8.0,
     8.0,
-    3.0
+    4.0
    ],
    "rank": 3,
-   "total_ranking_points": 29.0
+   "total_ranking_points": 30.0
+  },
+  {
+   "team_id": 3,
+   "team_name": "JSN Derulo ",
+   "team_abbrev": "BW",
+   "abbrev": "BW",
+   "owner": "Brian Wilson",
+   "scores_by_week": [
+    98.86,
+    99.9,
+    107.1,
+    117.0
+   ],
+   "ranking_points_by_week": [
+    4.0,
+    7.0,
+    8.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    4.0,
+    11.0,
+    19.0,
+    28.0
+   ],
+   "normalized_by_week": [
+    -3.0,
+    -1.0,
+    0.0,
+    2.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 28.0
   },
   {
    "team_id": 11,
@@ -127,55 +160,22 @@
     3.0,
     12.0,
     11.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     3.0,
     15.0,
     26.0,
-    29.0
+    28.0
    ],
    "normalized_by_week": [
     -4.0,
     3.0,
     7.0,
-    3.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 29.0
-  },
-  {
-   "team_id": 3,
-   "team_name": "JSN Derulo ",
-   "team_abbrev": "BW",
-   "abbrev": "BW",
-   "owner": "Brian Wilson",
-   "scores_by_week": [
-    98.86,
-    99.9,
-    107.1,
-    114.0
-   ],
-   "ranking_points_by_week": [
-    4.0,
-    7.0,
-    8.0,
-    8.0
-   ],
-   "cumulative_points_by_week": [
-    4.0,
-    11.0,
-    19.0,
-    27.0
-   ],
-   "normalized_by_week": [
-    -3.0,
-    -1.0,
-    0.0,
-    1.0
+    2.0
    ],
    "rank": 5,
-   "total_ranking_points": 27.0
+   "total_ranking_points": 28.0
   },
   {
    "team_id": 4,
@@ -187,7 +187,7 @@
     84.76,
     106.42,
     119.86,
-    86.12
+    86.52
    ],
    "ranking_points_by_week": [
     1.0,
@@ -244,39 +244,6 @@
    "total_ranking_points": 26.0
   },
   {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "team_abbrev": "MBJG",
-   "abbrev": "MBJG",
-   "owner": "Matthew Bernstein",
-   "scores_by_week": [
-    103.16,
-    97.58,
-    101.04,
-    115.3
-   ],
-   "ranking_points_by_week": [
-    5.0,
-    6.0,
-    5.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    5.0,
-    11.0,
-    16.0,
-    25.0
-   ],
-   "normalized_by_week": [
-    -2.0,
-    -1.0,
-    -3.0,
-    -1.0
-   ],
-   "rank": 8,
-   "total_ranking_points": 25.0
-  },
-  {
    "team_id": 9,
    "team_name": "Poopy Diapey",
    "team_abbrev": "WALT",
@@ -306,8 +273,41 @@
     -4.0,
     -1.0
    ],
-   "rank": 9,
+   "rank": 8,
    "total_ranking_points": 25.0
+  },
+  {
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "team_abbrev": "MBJG",
+   "abbrev": "MBJG",
+   "owner": "Matthew Bernstein",
+   "scores_by_week": [
+    103.16,
+    97.58,
+    101.04,
+    115.3
+   ],
+   "ranking_points_by_week": [
+    5.0,
+    6.0,
+    5.0,
+    8.0
+   ],
+   "cumulative_points_by_week": [
+    5.0,
+    11.0,
+    16.0,
+    24.0
+   ],
+   "normalized_by_week": [
+    -2.0,
+    -1.0,
+    -3.0,
+    -2.0
+   ],
+   "rank": 9,
+   "total_ranking_points": 24.0
   },
   {
    "team_id": 7,
@@ -319,7 +319,7 @@
     134.52,
     71.46,
     82.92,
-    78.12
+    80.22
    ],
    "ranking_points_by_week": [
     11.0,
@@ -2612,6 +2612,13 @@
      "score": 20.2
     },
     {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 20.0
+    },
+    {
      "name": "49ers TQB",
      "pro_team": "SF",
      "fantasy_team": "The Sun Gods ",
@@ -2675,6 +2682,13 @@
      "score": 17.0
     },
     {
+     "name": "Jake Bates",
+     "pro_team": "DET",
+     "fantasy_team": "JSN Derulo ",
+     "position": "K",
+     "score": 17.0
+    },
+    {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
      "fantasy_team": "Nixed Downs in Dallas",
@@ -2687,20 +2701,6 @@
      "fantasy_team": "Remeber Bendel",
      "position": "K",
      "score": 16.0
-    },
-    {
-     "name": "Spencer Shrader",
-     "pro_team": "IND",
-     "fantasy_team": "Poopy Diapey",
-     "position": "K",
-     "score": 16.0
-    },
-    {
-     "name": "Ashton Jeanty",
-     "pro_team": "LV",
-     "fantasy_team": "Poopy Diapey",
-     "position": "RB",
-     "score": 15.6
     }
    ],
    "QB": [
@@ -2779,7 +2779,7 @@
      "pro_team": "DET",
      "fantasy_team": "Satriale's Pork Store",
      "position": "QB",
-     "score": 6.44
+     "score": 8.72
     },
     {
      "name": "Saints TQB",
@@ -2817,6 +2817,13 @@
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "score": 22.2
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 20.0
     },
     {
      "name": "Quinshon Judkins",
@@ -2886,14 +2893,7 @@
      "pro_team": "DET",
      "fantasy_team": "Swishington Football Team",
      "position": "RB",
-     "score": 11.7
-    },
-    {
-     "name": "Chuba Hubbard",
-     "pro_team": "CAR",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "RB",
-     "score": 11.0
+     "score": 12.1
     },
     {
      "name": "Bhayshul Tuten",
@@ -3208,18 +3208,18 @@
      "score": 6.6
     },
     {
+     "name": "Darren Waller",
+     "pro_team": "CAR",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "score": 3.7
+    },
+    {
      "name": "Dalton Schultz",
      "pro_team": "HOU",
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "TE",
      "score": 1.9
-    },
-    {
-     "name": "Darren Waller",
-     "pro_team": "CAR",
-     "fantasy_team": "Team Made of Glass",
-     "position": "TE",
-     "score": 1.6
     },
     {
      "name": "Dalton Kincaid",
@@ -3609,7 +3609,7 @@
     "FLEX": 10.2
    },
    "SWSH": {
-    "RB": 14.2,
+    "RB": 14.6,
     "TE": 17.6,
     "QB": 18.52,
     "WR": 13.6,
@@ -3621,9 +3621,9 @@
     "RB": 25.9,
     "WR": 4.2,
     "TE": 6.6,
-    "FLEX": 11.0,
+    "FLEX": 20.0,
     "K": 6.0,
-    "QB": 6.44,
+    "QB": 8.72,
     "D/ST": 4.0
    },
    "RA": {
@@ -3649,7 +3649,7 @@
     "WR": 2.2,
     "QB": 13.52,
     "FLEX": 7.7,
-    "TE": 1.6,
+    "TE": 3.7,
     "D/ST": 4.0,
     "K": 19.0
    },
@@ -3660,7 +3660,7 @@
     "QB": 23.0,
     "FLEX": 17.0,
     "D/ST": 2.0,
-    "K": 14.0
+    "K": 17.0
    },
    "Stev": {
     "WR": 54.6,
