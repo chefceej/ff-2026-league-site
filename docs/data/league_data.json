@@ -8,8 +8,8 @@
   "current_matchup_week": 4,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-05 14:27:34 UTC",
-  "last_updated": "2026-10-05T14:27:34.936022+00:00"
+  "updated_at": "2026-10-06 06:10:10 UTC",
+  "last_updated": "2026-10-06T06:10:10.984741+00:00"
  },
  "teams": [
   {
@@ -55,7 +55,7 @@
     127.36,
     131.28,
     106.96,
-    92.58
+    108.18
    ],
    "ranking_points_by_week": [
     10.0,
@@ -112,6 +112,39 @@
    "total_ranking_points": 31.0
   },
   {
+   "team_id": 11,
+   "team_name": "The Sun Gods ",
+   "team_abbrev": "RA",
+   "abbrev": "RA",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 31.0
+  },
+  {
    "team_id": 3,
    "team_name": "JSN Derulo ",
    "team_abbrev": "BW",
@@ -139,39 +172,6 @@
     -3.0,
     -1.0,
     0.0,
-    1.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 28.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "The Sun Gods ",
-   "team_abbrev": "RA",
-   "abbrev": "RA",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    73.52
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    2.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    28.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
     1.0
    ],
    "rank": 5,
@@ -226,22 +226,22 @@
     1.0,
     8.0,
     12.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     1.0,
     9.0,
     21.0,
-    26.0
+    25.0
    ],
    "normalized_by_week": [
     -6.0,
     -3.0,
     2.0,
-    -1.0
+    -2.0
    ],
    "rank": 7,
-   "total_ranking_points": 26.0
+   "total_ranking_points": 25.0
   },
   {
    "team_id": 9,
@@ -310,39 +310,6 @@
    "total_ranking_points": 23.0
   },
   {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    3.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    20.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -7.0
-   ],
-   "rank": 10,
-   "total_ranking_points": 20.0
-  },
-  {
    "team_id": 2,
    "team_name": "Maye's fell out of a Windu",
    "team_abbrev": "CJ",
@@ -352,7 +319,7 @@
     123.86,
     76.48,
     102.6,
-    35.4
+    78.54
    ],
    "ranking_points_by_week": [
     8.0,
@@ -370,6 +337,39 @@
     1.0,
     0.0,
     -1.0,
+    -8.0
+   ],
+   "rank": 10,
+   "total_ranking_points": 19.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
     -8.0
    ],
    "rank": 11,
@@ -391,22 +391,22 @@
     6.0,
     5.0,
     1.0,
-    4.0
+    3.0
    ],
    "cumulative_points_by_week": [
     6.0,
     11.0,
     12.0,
-    16.0
+    15.0
    ],
    "normalized_by_week": [
     -1.0,
     -1.0,
     -7.0,
-    -11.0
+    -12.0
    ],
    "rank": 12,
-   "total_ranking_points": 16.0
+   "total_ranking_points": 15.0
   }
  ],
  "top_players_by_week": [
@@ -2563,6 +2563,13 @@
      "score": 28.8
     },
     {
+     "name": "Bijan Robinson",
+     "pro_team": "ATL",
+     "fantasy_team": "Maye's fell out of a Windu",
+     "position": "RB",
+     "score": 27.2
+    },
+    {
      "name": "Chuba Hubbard",
      "pro_team": "CAR",
      "fantasy_team": "Satriale's Pork Store",
@@ -2617,6 +2624,13 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "QB",
      "score": 20.48
+    },
+    {
+     "name": "Alvin Kamara",
+     "pro_team": "NO",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "score": 20.3
     },
     {
      "name": "Malik Nabers",
@@ -2687,20 +2701,6 @@
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
      "score": 17.0
-    },
-    {
-     "name": "Carnell Tate",
-     "pro_team": "TEN",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "score": 17.0
-    },
-    {
-     "name": "Rhamondre Stevenson",
-     "pro_team": "NE",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "RB",
-     "score": 16.9
     }
    ],
    "QB": [
@@ -2754,6 +2754,13 @@
      "score": 17.0
     },
     {
+     "name": "Saints TQB",
+     "pro_team": "NO",
+     "fantasy_team": "Maye's fell out of a Windu",
+     "position": "QB",
+     "score": 15.94
+    },
+    {
      "name": "Eagles TQB",
      "pro_team": "PHI",
      "fantasy_team": "Team Made of Glass",
@@ -2780,13 +2787,6 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "QB",
      "score": 9.68
-    },
-    {
-     "name": "Saints TQB",
-     "pro_team": "NO",
-     "fantasy_team": "Maye's fell out of a Windu",
-     "position": "QB",
-     "score": 0.0
     }
    ],
    "RB": [
@@ -2812,6 +2812,13 @@
      "score": 28.8
     },
     {
+     "name": "Bijan Robinson",
+     "pro_team": "ATL",
+     "fantasy_team": "Maye's fell out of a Windu",
+     "position": "RB",
+     "score": 27.2
+    },
+    {
      "name": "Chuba Hubbard",
      "pro_team": "CAR",
      "fantasy_team": "Satriale's Pork Store",
@@ -2824,6 +2831,13 @@
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "score": 22.2
+    },
+    {
+     "name": "Alvin Kamara",
+     "pro_team": "NO",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "score": 20.3
     },
     {
      "name": "Quinshon Judkins",
@@ -2950,20 +2964,6 @@
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "score": 4.3
-    },
-    {
-     "name": "TreVeyon Henderson",
-     "pro_team": "NE",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "score": 4.2
-    },
-    {
-     "name": "George Holani",
-     "pro_team": "SEA",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "score": 2.5
     }
    ],
    "WR": [
@@ -3017,6 +3017,13 @@
      "score": 17.0
     },
     {
+     "name": "Chris Olave",
+     "pro_team": "NO",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "WR",
+     "score": 15.6
+    },
+    {
      "name": "Deebo Samuel Sr.",
      "pro_team": "SF",
      "fantasy_team": "Mid AF Squad",
@@ -3029,6 +3036,13 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "WR",
      "score": 14.9
+    },
+    {
+     "name": "Drake London",
+     "pro_team": "ATL",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 12.1
     },
     {
      "name": "Jaylen Waddle",
@@ -3127,20 +3141,6 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "WR",
      "score": 4.2
-    },
-    {
-     "name": "Dontayvion Wicks",
-     "pro_team": "PHI",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "score": 3.3
-    },
-    {
-     "name": "Josh Downs",
-     "pro_team": "IND",
-     "fantasy_team": "Maye's fell out of a Windu",
-     "position": "WR",
-     "score": 3.1
     }
    ],
    "TE": [
@@ -3573,12 +3573,12 @@
     "K": 8.0
    },
    "CJ": {
-    "RB": 6.1,
+    "RB": 33.3,
     "WR": 10.0,
     "FLEX": 3.1,
     "TE": 1.2,
     "K": 8.0,
-    "QB": 0.0,
+    "QB": 15.94,
     "D/ST": 7.0
    },
    "Naug": {
@@ -3619,7 +3619,7 @@
    },
    "PORK": {
     "RB": 25.9,
-    "WR": 4.2,
+    "WR": 19.8,
     "TE": 6.6,
     "FLEX": 25.4,
     "K": 6.0,
@@ -3627,9 +3627,9 @@
     "D/ST": 4.0
    },
    "RA": {
-    "WR": 11.5,
+    "WR": 23.6,
     "FLEX": 5.2,
-    "RB": 4.2,
+    "RB": 24.5,
     "TE": 15.0,
     "QB": 19.62,
     "D/ST": 12.0,
