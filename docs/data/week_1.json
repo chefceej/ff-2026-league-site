@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "final",
- "fetched_at": "2026-10-10T13:21:01.256090Z",
+ "fetched_at": "2026-10-11T13:50:24.239120Z",
  "matchups": [
   {
    "home": {
@@ -1314,7 +1314,7 @@
       "pro_team": "PIT",
       "position": "WR",
       "slot": "BE",
-      "injury": "O",
+      "injury": "IR",
       "opponent": "ATL",
       "kickoff": "2026-09-13T17:00:00Z",
       "on_bye": false,
@@ -2414,7 +2414,7 @@
       "pro_team": "ARI",
       "position": "WR",
       "slot": "BE",
-      "injury": "",
+      "injury": "O",
       "opponent": "LAC",
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
@@ -3336,7 +3336,7 @@
       "pro_team": "GB",
       "position": "RB",
       "slot": "BE",
-      "injury": "O",
+      "injury": "IR",
       "opponent": "MIN",
       "kickoff": "2026-09-13T20:25:00Z",
       "on_bye": false,
