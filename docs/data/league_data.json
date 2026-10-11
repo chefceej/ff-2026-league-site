@@ -8,8 +8,8 @@
   "current_matchup_week": 5,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-11 21:25:19 UTC",
-  "last_updated": "2026-10-11T21:25:19.530701+00:00"
+  "updated_at": "2026-10-11 21:40:23 UTC",
+  "last_updated": "2026-10-11T21:40:23.689524+00:00"
  },
  "teams": [
   {
@@ -97,31 +97,31 @@
     131.28,
     106.96,
     108.18,
-    63.5
+    70.5
    ],
    "ranking_points_by_week": [
     10.0,
     10.0,
     7.0,
     6.0,
-    4.0
+    5.0
    ],
    "cumulative_points_by_week": [
     10.0,
     20.0,
     27.0,
     33.0,
-    37.0
+    38.0
    ],
    "normalized_by_week": [
     3.0,
     8.0,
     8.0,
     6.0,
-    5.0
+    6.0
    ],
    "rank": 3,
-   "total_ranking_points": 37.0
+   "total_ranking_points": 38.0
   },
   {
    "team_id": 9,
@@ -171,7 +171,7 @@
     66.54,
     110.12,
     115.58,
-    68.66
+    76.46
    ],
    "ranking_points_by_week": [
     7.0,
@@ -208,7 +208,7 @@
     106.42,
     119.86,
     90.12,
-    76.7
+    82.0
    ],
    "ranking_points_by_week": [
     1.0,
@@ -245,7 +245,7 @@
     97.58,
     101.04,
     115.3,
-    94.68
+    95.48
    ],
    "ranking_points_by_week": [
     5.0,
@@ -282,7 +282,7 @@
     156.68,
     117.58,
     105.92,
-    24.9
+    23.74
    ],
    "ranking_points_by_week": [
     3.0,
@@ -319,7 +319,7 @@
     76.48,
     102.6,
     78.54,
-    147.36
+    157.66
    ],
    "ranking_points_by_week": [
     8.0,
@@ -356,7 +356,7 @@
     99.9,
     107.1,
     118.0,
-    60.74
+    62.64
    ],
    "ranking_points_by_week": [
     4.0,
@@ -381,43 +381,6 @@
    ],
    "rank": 10,
    "total_ranking_points": 31.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    64.54
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    5.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    24.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -8.0
-   ],
-   "rank": 11,
-   "total_ranking_points": 24.0
   },
   {
    "team_id": 6,
@@ -451,6 +414,43 @@
     -1.0,
     -7.0,
     -12.0,
+    -9.0
+   ],
+   "rank": 11,
+   "total_ranking_points": 23.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    64.54
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    23.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
     -9.0
    ],
    "rank": 12,
@@ -3435,6 +3435,13 @@
      "score": 16.7
     },
     {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 16.2
+    },
+    {
      "name": "Jets D/ST",
      "pro_team": "NYJ",
      "fantasy_team": "Angel Reese Hoop Mixtape",
@@ -3446,13 +3453,6 @@
      "pro_team": "MIN",
      "fantasy_team": "Team Made of Glass",
      "position": "K",
-     "score": 16.0
-    },
-    {
-     "name": "Rhamondre Stevenson",
-     "pro_team": "NE",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "RB",
      "score": 16.0
     }
    ],
@@ -3507,6 +3507,13 @@
      "score": 12.64
     },
     {
+     "name": "Lions TQB",
+     "pro_team": "DET",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "score": 8.2
+    },
+    {
      "name": "Cardinals TQB",
      "pro_team": "ARI",
      "fantasy_team": "Team Made of Glass",
@@ -3518,14 +3525,7 @@
      "pro_team": "SF",
      "fantasy_team": "The Sun Gods ",
      "position": "QB",
-     "score": 6.0
-    },
-    {
-     "name": "Lions TQB",
-     "pro_team": "DET",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "score": 1.2
+     "score": 6.04
     },
     {
      "name": "Rams TQB",
@@ -3572,6 +3572,13 @@
      "score": 17.2
     },
     {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 16.2
+    },
+    {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
      "fantasy_team": "Nixed Downs in Dallas",
@@ -3600,16 +3607,16 @@
      "score": 13.2
     },
     {
-     "name": "Jahmyr Gibbs",
-     "pro_team": "DET",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "score": 10.9
-    },
-    {
      "name": "Bhayshul Tuten",
      "pro_team": "JAX",
      "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 10.6
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "score": 10.6
     },
@@ -3646,7 +3653,7 @@
      "pro_team": "SEA",
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
-     "score": 7.2
+     "score": 8.0
     },
     {
      "name": "Quinshon Judkins",
@@ -3684,13 +3691,6 @@
      "score": 4.3
     },
     {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "score": 3.5
-    },
-    {
      "name": "Omarion Hampton",
      "pro_team": "LAC",
      "fantasy_team": "Satriale's Pork Store",
@@ -3702,7 +3702,7 @@
      "pro_team": "ARI",
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
-     "score": 2.0
+     "score": 2.7
     },
     {
      "name": "Alvin Kamara",
@@ -3812,6 +3812,13 @@
      "score": 6.8
     },
     {
+     "name": "Jaxon Smith-Njigba",
+     "pro_team": "SEA",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "score": 6.8
+    },
+    {
      "name": "Chris Olave",
      "pro_team": "NO",
      "fantasy_team": "Satriale's Pork Store",
@@ -3824,13 +3831,6 @@
      "fantasy_team": "Angel Reese Hoop Mixtape",
      "position": "WR",
      "score": 6.2
-    },
-    {
-     "name": "Jaxon Smith-Njigba",
-     "pro_team": "SEA",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "score": 5.9
     },
     {
      "name": "DK Metcalf",
@@ -3882,16 +3882,16 @@
      "score": 1.1
     },
     {
-     "name": "Puka Nacua",
-     "pro_team": "LAR",
-     "fantasy_team": "Walt's Warriors",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Amon-Ra St. Brown",
      "pro_team": "DET",
      "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 0.8
+    },
+    {
+     "name": "Puka Nacua",
+     "pro_team": "LAR",
+     "fantasy_team": "Walt's Warriors",
      "position": "WR",
      "score": 0.0
     }
@@ -3919,6 +3919,13 @@
      "score": 17.9
     },
     {
+     "name": "Sam LaPorta",
+     "pro_team": "DET",
+     "fantasy_team": "Angel Reese Hoop Mixtape",
+     "position": "TE",
+     "score": 13.6
+    },
+    {
      "name": "Tucker Kraft",
      "pro_team": "GB",
      "fantasy_team": "Bijan These Nuts",
@@ -3931,13 +3938,6 @@
      "fantasy_team": "Team Made of Glass",
      "position": "TE",
      "score": 6.8
-    },
-    {
-     "name": "Sam LaPorta",
-     "pro_team": "DET",
-     "fantasy_team": "Angel Reese Hoop Mixtape",
-     "position": "TE",
-     "score": 3.3
     },
     {
      "name": "Colston Loveland",
@@ -4448,7 +4448,7 @@
     "RB": 30.5,
     "WR": 50.9,
     "QB": 39.46,
-    "TE": 3.3,
+    "TE": 13.6,
     "FLEX": 6.2,
     "D/ST": 16.0,
     "K": 1.0
@@ -4459,11 +4459,11 @@
     "WR": 20.5,
     "K": 9.0,
     "D/ST": 11.0,
-    "FLEX": 7.2,
+    "FLEX": 8.0,
     "QB": 25.08
    },
    "BEND": {
-    "RB": 5.5,
+    "RB": 13.3,
     "WR": 11.9,
     "FLEX": 1.1,
     "TE": 0.9,
@@ -4476,12 +4476,12 @@
     "WR": 26.5,
     "TE": 17.9,
     "FLEX": 8.5,
-    "QB": 1.2,
+    "QB": 8.2,
     "D/ST": 1.0,
     "K": 0.0
    },
    "SWSH": {
-    "RB": 21.4,
+    "RB": 26.7,
     "TE": 19.0,
     "QB": 0.0,
     "WR": 9.1,
@@ -4499,21 +4499,21 @@
     "FLEX": 18.1
    },
    "RA": {
-    "WR": 0.0,
+    "WR": 0.8,
     "FLEX": 0.0,
     "RB": 5.9,
     "TE": 0.0,
-    "QB": 6.0,
-    "D/ST": 8.0,
+    "QB": 6.04,
+    "D/ST": 6.0,
     "K": 5.0
    },
    "BW": {
-    "WR": 7.0,
+    "WR": 7.9,
     "RB": 19.3,
     "TE": 2.9,
     "FLEX": 0.6,
     "D/ST": 9.0,
-    "K": 1.0,
+    "K": 2.0,
     "QB": 20.94
    },
    "TMOG": {
