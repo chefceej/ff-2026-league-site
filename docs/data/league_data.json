@@ -8,8 +8,8 @@
   "current_matchup_week": 5,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-11 20:55:11 UTC",
-  "last_updated": "2026-10-11T20:55:11.363675+00:00"
+  "updated_at": "2026-10-11 21:10:15 UTC",
+  "last_updated": "2026-10-11T21:10:15.442466+00:00"
  },
  "teams": [
   {
@@ -97,7 +97,7 @@
     131.28,
     106.96,
     108.18,
-    62.58
+    63.06
    ],
    "ranking_points_by_week": [
     10.0,
@@ -171,7 +171,7 @@
     66.54,
     110.12,
     115.58,
-    65.56
+    66.86
    ],
    "ranking_points_by_week": [
     7.0,
@@ -208,7 +208,7 @@
     106.42,
     119.86,
     90.12,
-    67.1
+    70.5
    ],
    "ranking_points_by_week": [
     1.0,
@@ -245,7 +245,7 @@
     97.58,
     101.04,
     115.3,
-    96.18
+    96.48
    ],
    "ranking_points_by_week": [
     5.0,
@@ -282,7 +282,7 @@
     156.68,
     117.58,
     105.92,
-    17.5
+    19.06
    ],
    "ranking_points_by_week": [
     3.0,
@@ -319,7 +319,7 @@
     76.48,
     102.6,
     78.54,
-    144.06
+    145.76
    ],
    "ranking_points_by_week": [
     8.0,
@@ -356,7 +356,7 @@
     99.9,
     107.1,
     118.0,
-    57.24
+    59.74
    ],
    "ranking_points_by_week": [
     4.0,
@@ -430,7 +430,7 @@
     80.28,
     81.58,
     89.62,
-    83.9
+    87.3
    ],
    "ranking_points_by_week": [
     6.0,
@@ -3518,14 +3518,14 @@
      "pro_team": "SF",
      "fantasy_team": "The Sun Gods ",
      "position": "QB",
-     "score": 4.6
+     "score": 5.16
     },
     {
      "name": "Lions TQB",
      "pro_team": "DET",
      "fantasy_team": "Satriale's Pork Store",
      "position": "QB",
-     "score": 0.28
+     "score": 0.76
     },
     {
      "name": "Rams TQB",
@@ -3632,14 +3632,14 @@
      "pro_team": "SEA",
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
-     "score": 8.7
+     "score": 9.0
     },
     {
      "name": "J.K. Dobbins",
      "pro_team": "DEN",
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
-     "score": 7.4
+     "score": 8.9
     },
     {
      "name": "Quinshon Judkins",
@@ -3670,6 +3670,13 @@
      "score": 5.2
     },
     {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 4.8
+    },
+    {
      "name": "TreVeyon Henderson",
      "pro_team": "NE",
      "fantasy_team": "The Sun Gods ",
@@ -3684,11 +3691,18 @@
      "score": 2.9
     },
     {
-     "name": "Jahmyr Gibbs",
-     "pro_team": "DET",
-     "fantasy_team": "Swishington Football Team",
+     "name": "Jeremiyah Love",
+     "pro_team": "ARI",
+     "fantasy_team": "Remeber Bendel",
      "position": "RB",
-     "score": 2.2
+     "score": 2.0
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 1.7
     },
     {
      "name": "Alvin Kamara",
@@ -3696,20 +3710,6 @@
      "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "score": 1.6
-    },
-    {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "score": 1.2
-    },
-    {
-     "name": "Jeremiyah Love",
-     "pro_team": "ARI",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "score": 1.2
     },
     {
      "name": "David Montgomery",
@@ -3826,6 +3826,13 @@
      "score": 6.2
     },
     {
+     "name": "Jaxon Smith-Njigba",
+     "pro_team": "SEA",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "score": 5.9
+    },
+    {
      "name": "DK Metcalf",
      "pro_team": "PIT",
      "fantasy_team": "Remeber Bendel",
@@ -3838,6 +3845,20 @@
      "fantasy_team": "The Lizard Kings",
      "position": "WR",
      "score": 3.2
+    },
+    {
+     "name": "Deebo Samuel Sr.",
+     "pro_team": "SF",
+     "fantasy_team": "Mid AF Squad",
+     "position": "WR",
+     "score": 2.3
+    },
+    {
+     "name": "Jaylen Waddle",
+     "pro_team": "DEN",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "score": 2.2
     },
     {
      "name": "CeeDee Lamb",
@@ -3854,25 +3875,11 @@
      "score": 1.58
     },
     {
-     "name": "Jaylen Waddle",
-     "pro_team": "DEN",
-     "fantasy_team": "Swishington Football Team",
-     "position": "WR",
-     "score": 1.4
-    },
-    {
      "name": "Carnell Tate",
      "pro_team": "TEN",
      "fantasy_team": "JSN Derulo ",
      "position": "WR",
      "score": 1.1
-    },
-    {
-     "name": "Deebo Samuel Sr.",
-     "pro_team": "SF",
-     "fantasy_team": "Mid AF Squad",
-     "position": "WR",
-     "score": 0.4
     },
     {
      "name": "Puka Nacua",
@@ -3884,13 +3891,6 @@
     {
      "name": "Amon-Ra St. Brown",
      "pro_team": "DET",
-     "fantasy_team": "The Sun Gods ",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Drake London",
-     "pro_team": "ATL",
      "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "score": 0.0
@@ -3940,6 +3940,13 @@
      "score": 2.9
     },
     {
+     "name": "Sam LaPorta",
+     "pro_team": "DET",
+     "fantasy_team": "Angel Reese Hoop Mixtape",
+     "position": "TE",
+     "score": 1.7
+    },
+    {
      "name": "Trey McBride",
      "pro_team": "ARI",
      "fantasy_team": "The Lizard Kings",
@@ -3966,13 +3973,6 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "TE",
      "score": 0.7
-    },
-    {
-     "name": "Sam LaPorta",
-     "pro_team": "DET",
-     "fantasy_team": "Angel Reese Hoop Mixtape",
-     "position": "TE",
-     "score": 0.0
     },
     {
      "name": "George Kittle",
@@ -4427,12 +4427,12 @@
   },
   {
    "Naug": {
-    "WR": 16.2,
+    "WR": 18.1,
     "RB": 20.5,
     "QB": 24.6,
     "K": 5.0,
     "TE": 1.2,
-    "FLEX": 7.4,
+    "FLEX": 8.9,
     "D/ST": 9.0
    },
    "SACK": {
@@ -4448,7 +4448,7 @@
     "RB": 30.5,
     "WR": 50.9,
     "QB": 39.46,
-    "TE": 0.0,
+    "TE": 1.7,
     "FLEX": 6.2,
     "D/ST": 16.0,
     "K": 1.0
@@ -4459,11 +4459,11 @@
     "WR": 20.5,
     "K": 9.0,
     "D/ST": 11.0,
-    "FLEX": 8.7,
+    "FLEX": 9.0,
     "QB": 25.08
    },
    "BEND": {
-    "RB": 2.4,
+    "RB": 3.7,
     "WR": 11.9,
     "FLEX": 1.1,
     "TE": 0.9,
@@ -4476,15 +4476,15 @@
     "WR": 26.5,
     "TE": 17.9,
     "FLEX": 8.5,
-    "QB": 0.28,
+    "QB": 0.76,
     "D/ST": 1.0,
     "K": 0.0
    },
    "SWSH": {
-    "RB": 12.7,
+    "RB": 15.3,
     "TE": 19.0,
     "QB": 0.0,
-    "WR": 8.2,
+    "WR": 9.0,
     "FLEX": 10.2,
     "K": 7.0,
     "D/ST": 10.0
@@ -4503,16 +4503,16 @@
     "FLEX": 0.0,
     "RB": 5.9,
     "TE": 0.0,
-    "QB": 4.6,
-    "D/ST": 6.0,
+    "QB": 5.16,
+    "D/ST": 7.0,
     "K": 1.0
    },
    "BW": {
-    "WR": 1.1,
+    "WR": 7.0,
     "RB": 19.3,
     "TE": 2.9,
-    "FLEX": 0.0,
-    "D/ST": 13.0,
+    "FLEX": 0.6,
+    "D/ST": 9.0,
     "K": 0.0,
     "QB": 20.94
    },
