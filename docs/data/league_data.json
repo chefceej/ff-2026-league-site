@@ -8,8 +8,8 @@
   "current_matchup_week": 5,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-11 21:10:15 UTC",
-  "last_updated": "2026-10-11T21:10:15.442466+00:00"
+  "updated_at": "2026-10-11 21:25:19 UTC",
+  "last_updated": "2026-10-11T21:25:19.530701+00:00"
  },
  "teams": [
   {
@@ -97,7 +97,7 @@
     131.28,
     106.96,
     108.18,
-    63.06
+    63.5
    ],
    "ranking_points_by_week": [
     10.0,
@@ -171,7 +171,7 @@
     66.54,
     110.12,
     115.58,
-    66.86
+    68.66
    ],
    "ranking_points_by_week": [
     7.0,
@@ -208,7 +208,7 @@
     106.42,
     119.86,
     90.12,
-    70.5
+    76.7
    ],
    "ranking_points_by_week": [
     1.0,
@@ -245,7 +245,7 @@
     97.58,
     101.04,
     115.3,
-    96.48
+    94.68
    ],
    "ranking_points_by_week": [
     5.0,
@@ -282,7 +282,7 @@
     156.68,
     117.58,
     105.92,
-    19.06
+    24.9
    ],
    "ranking_points_by_week": [
     3.0,
@@ -319,7 +319,7 @@
     76.48,
     102.6,
     78.54,
-    145.76
+    147.36
    ],
    "ranking_points_by_week": [
     8.0,
@@ -356,7 +356,7 @@
     99.9,
     107.1,
     118.0,
-    59.74
+    60.74
    ],
    "ranking_points_by_week": [
     4.0,
@@ -393,7 +393,7 @@
     71.46,
     82.92,
     81.62,
-    63.9
+    64.54
    ],
    "ranking_points_by_week": [
     11.0,
@@ -430,7 +430,7 @@
     80.28,
     81.58,
     89.62,
-    87.3
+    87.6
    ],
    "ranking_points_by_week": [
     6.0,
@@ -3511,21 +3511,21 @@
      "pro_team": "ARI",
      "fantasy_team": "Team Made of Glass",
      "position": "QB",
-     "score": 7.52
+     "score": 7.56
     },
     {
      "name": "49ers TQB",
      "pro_team": "SF",
      "fantasy_team": "The Sun Gods ",
      "position": "QB",
-     "score": 5.16
+     "score": 6.0
     },
     {
      "name": "Lions TQB",
      "pro_team": "DET",
      "fantasy_team": "Satriale's Pork Store",
      "position": "QB",
-     "score": 0.76
+     "score": 1.2
     },
     {
      "name": "Rams TQB",
@@ -3600,6 +3600,13 @@
      "score": 13.2
     },
     {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 10.9
+    },
+    {
      "name": "Bhayshul Tuten",
      "pro_team": "JAX",
      "fantasy_team": "The Lizard Kings",
@@ -3621,6 +3628,13 @@
      "score": 9.7
     },
     {
+     "name": "J.K. Dobbins",
+     "pro_team": "DEN",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "score": 9.2
+    },
+    {
      "name": "Ashton Jeanty",
      "pro_team": "LV",
      "fantasy_team": "Walt's Warriors",
@@ -3632,14 +3646,7 @@
      "pro_team": "SEA",
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
-     "score": 9.0
-    },
-    {
-     "name": "J.K. Dobbins",
-     "pro_team": "DEN",
-     "fantasy_team": "Mid AF Squad",
-     "position": "RB",
-     "score": 8.9
+     "score": 7.2
     },
     {
      "name": "Quinshon Judkins",
@@ -3670,18 +3677,18 @@
      "score": 5.2
     },
     {
-     "name": "Jahmyr Gibbs",
-     "pro_team": "DET",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "score": 4.8
-    },
-    {
      "name": "TreVeyon Henderson",
      "pro_team": "NE",
      "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "score": 4.3
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 3.5
     },
     {
      "name": "Omarion Hampton",
@@ -3696,13 +3703,6 @@
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "score": 2.0
-    },
-    {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "score": 1.7
     },
     {
      "name": "Alvin Kamara",
@@ -3858,7 +3858,14 @@
      "pro_team": "DEN",
      "fantasy_team": "Swishington Football Team",
      "position": "WR",
-     "score": 2.2
+     "score": 2.3
+    },
+    {
+     "name": "Michael Wilson",
+     "pro_team": "ARI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "WR",
+     "score": 2.18
     },
     {
      "name": "CeeDee Lamb",
@@ -3866,13 +3873,6 @@
      "fantasy_team": "Nixed Downs in Dallas",
      "position": "WR",
      "score": 1.9
-    },
-    {
-     "name": "Michael Wilson",
-     "pro_team": "ARI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "WR",
-     "score": 1.58
     },
     {
      "name": "Carnell Tate",
@@ -3933,18 +3933,18 @@
      "score": 6.8
     },
     {
+     "name": "Sam LaPorta",
+     "pro_team": "DET",
+     "fantasy_team": "Angel Reese Hoop Mixtape",
+     "position": "TE",
+     "score": 3.3
+    },
+    {
      "name": "Colston Loveland",
      "pro_team": "CHI",
      "fantasy_team": "JSN Derulo ",
      "position": "TE",
      "score": 2.9
-    },
-    {
-     "name": "Sam LaPorta",
-     "pro_team": "DET",
-     "fantasy_team": "Angel Reese Hoop Mixtape",
-     "position": "TE",
-     "score": 1.7
     },
     {
      "name": "Trey McBride",
@@ -4432,7 +4432,7 @@
     "QB": 24.6,
     "K": 5.0,
     "TE": 1.2,
-    "FLEX": 8.9,
+    "FLEX": 9.2,
     "D/ST": 9.0
    },
    "SACK": {
@@ -4448,7 +4448,7 @@
     "RB": 30.5,
     "WR": 50.9,
     "QB": 39.46,
-    "TE": 1.7,
+    "TE": 3.3,
     "FLEX": 6.2,
     "D/ST": 16.0,
     "K": 1.0
@@ -4459,11 +4459,11 @@
     "WR": 20.5,
     "K": 9.0,
     "D/ST": 11.0,
-    "FLEX": 9.0,
+    "FLEX": 7.2,
     "QB": 25.08
    },
    "BEND": {
-    "RB": 3.7,
+    "RB": 5.5,
     "WR": 11.9,
     "FLEX": 1.1,
     "TE": 0.9,
@@ -4476,15 +4476,15 @@
     "WR": 26.5,
     "TE": 17.9,
     "FLEX": 8.5,
-    "QB": 0.76,
+    "QB": 1.2,
     "D/ST": 1.0,
     "K": 0.0
    },
    "SWSH": {
-    "RB": 15.3,
+    "RB": 21.4,
     "TE": 19.0,
     "QB": 0.0,
-    "WR": 9.0,
+    "WR": 9.1,
     "FLEX": 10.2,
     "K": 7.0,
     "D/ST": 10.0
@@ -4503,9 +4503,9 @@
     "FLEX": 0.0,
     "RB": 5.9,
     "TE": 0.0,
-    "QB": 5.16,
-    "D/ST": 7.0,
-    "K": 1.0
+    "QB": 6.0,
+    "D/ST": 8.0,
+    "K": 5.0
    },
    "BW": {
     "WR": 7.0,
@@ -4513,16 +4513,16 @@
     "TE": 2.9,
     "FLEX": 0.6,
     "D/ST": 9.0,
-    "K": 0.0,
+    "K": 1.0,
     "QB": 20.94
    },
    "TMOG": {
     "RB": 17.2,
-    "WR": 1.58,
+    "WR": 2.18,
     "TE": 6.8,
     "FLEX": 14.8,
     "K": 16.0,
-    "QB": 7.52,
+    "QB": 7.56,
     "D/ST": 0.0
    },
    "Stev": {
