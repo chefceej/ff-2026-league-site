@@ -8,8 +8,8 @@
   "current_matchup_week": 5,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-12 01:12:39 UTC",
-  "last_updated": "2026-10-12T01:12:39.465620+00:00"
+  "updated_at": "2026-10-12 05:47:15 UTC",
+  "last_updated": "2026-10-12T05:47:15.417466+00:00"
  },
  "teams": [
   {
@@ -23,7 +23,7 @@
     107.08,
     109.7,
     128.88,
-    120.5
+    131.5
    ],
    "ranking_points_by_week": [
     2.0,
@@ -97,7 +97,7 @@
     132.56,
     92.24,
     131.3,
-    41.74
+    75.94
    ],
    "ranking_points_by_week": [
     9.0,
@@ -161,6 +161,43 @@
    "total_ranking_points": 34.0
   },
   {
+   "team_id": 11,
+   "team_name": "The Sun Gods ",
+   "team_abbrev": "RA",
+   "abbrev": "RA",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92,
+    83.16
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0,
+    3.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0,
+    34.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0,
+    1.0
+   ],
+   "rank": 5,
+   "total_ranking_points": 34.0
+  },
+  {
    "team_id": 5,
    "team_name": "The Lizard Kings",
    "team_abbrev": "MBJG",
@@ -192,43 +229,6 @@
     -1.0,
     -3.0,
     -4.0,
-    0.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 33.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "The Sun Gods ",
-   "team_abbrev": "RA",
-   "abbrev": "RA",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    105.92,
-    67.86
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    5.0,
-    2.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    31.0,
-    33.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
-    4.0,
     0.0
    ],
    "rank": 6,
@@ -319,7 +319,7 @@
     76.48,
     102.6,
     78.54,
-    166.06
+    177.16
    ],
    "ranking_points_by_week": [
     8.0,
@@ -363,24 +363,24 @@
     2.0,
     10.0,
     8.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     7.0,
     9.0,
     19.0,
     27.0,
-    30.0
+    29.0
    ],
    "normalized_by_week": [
     0.0,
     -3.0,
     0.0,
     0.0,
-    -3.0
+    -4.0
    ],
    "rank": 10,
-   "total_ranking_points": 30.0
+   "total_ranking_points": 29.0
   },
   {
    "team_id": 7,
@@ -393,7 +393,7 @@
     71.46,
     82.92,
     81.62,
-    100.86
+    95.86
    ],
    "ranking_points_by_week": [
     11.0,
@@ -3407,6 +3407,13 @@
      "score": 20.94
     },
     {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "RB",
+     "score": 20.5
+    },
+    {
      "name": "Jaxon Smith-Njigba",
      "pro_team": "SEA",
      "fantasy_team": "JSN Derulo ",
@@ -3447,13 +3454,6 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "TE",
      "score": 17.9
-    },
-    {
-     "name": "Sam LaPorta",
-     "pro_team": "DET",
-     "fantasy_team": "Angel Reese Hoop Mixtape",
-     "position": "TE",
-     "score": 17.3
     }
    ],
    "QB": [
@@ -3565,6 +3565,13 @@
      "score": 30.5
     },
     {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "RB",
+     "score": 20.5
+    },
+    {
      "name": "Braelon Allen",
      "pro_team": "NYJ",
      "fantasy_team": "Walt's Warriors",
@@ -3612,6 +3619,13 @@
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
      "score": 14.4
+    },
+    {
+     "name": "Bijan Robinson",
+     "pro_team": "ATL",
+     "fantasy_team": "Angel Reese Hoop Mixtape",
+     "position": "RB",
+     "score": 13.8
     },
     {
      "name": "Javonte Williams",
@@ -3677,13 +3691,6 @@
      "score": 5.5
     },
     {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "RB",
-     "score": 5.5
-    },
-    {
      "name": "Tony Pollard",
      "pro_team": "TEN",
      "fantasy_team": "Mid AF Squad",
@@ -3703,13 +3710,6 @@
      "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "score": 4.3
-    },
-    {
-     "name": "Bijan Robinson",
-     "pro_team": "ATL",
-     "fantasy_team": "Angel Reese Hoop Mixtape",
-     "position": "RB",
-     "score": 2.7
     },
     {
      "name": "Jeremiyah Love",
@@ -3791,6 +3791,20 @@
      "score": 15.8
     },
     {
+     "name": "Drake London",
+     "pro_team": "ATL",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "score": 15.3
+    },
+    {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 10.6
+    },
+    {
      "name": "Terry McLaurin",
      "pro_team": "WSH",
      "fantasy_team": "Swishington Football Team",
@@ -3847,13 +3861,6 @@
      "score": 5.28
     },
     {
-     "name": "Zay Flowers",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "WR",
-     "score": 4.0
-    },
-    {
      "name": "DK Metcalf",
      "pro_team": "PIT",
      "fantasy_team": "Remeber Bendel",
@@ -3887,13 +3894,6 @@
      "fantasy_team": "Mid AF Squad",
      "position": "WR",
      "score": 1.5
-    },
-    {
-     "name": "Carnell Tate",
-     "pro_team": "TEN",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "score": 1.1
     }
    ],
    "TE": [
@@ -4442,10 +4442,10 @@
     "TE": 9.1,
     "QB": 0.0,
     "D/ST": 5.0,
-    "K": 3.0
+    "K": 14.0
    },
    "CJ": {
-    "RB": 33.2,
+    "RB": 44.3,
     "WR": 50.9,
     "QB": 39.46,
     "TE": 17.3,
@@ -4499,7 +4499,7 @@
     "FLEX": 18.1
    },
    "RA": {
-    "WR": 9.9,
+    "WR": 25.2,
     "FLEX": 0.0,
     "RB": 5.9,
     "TE": 4.9,
@@ -4523,16 +4523,16 @@
     "FLEX": 14.8,
     "K": 16.0,
     "QB": 24.78,
-    "D/ST": 16.0
+    "D/ST": 11.0
    },
    "Stev": {
-    "WR": 5.9,
-    "RB": 21.5,
+    "WR": 12.5,
+    "RB": 36.5,
     "QB": 12.64,
-    "FLEX": 0.0,
+    "FLEX": 1.6,
     "TE": 0.7,
     "D/ST": 0.0,
-    "K": 1.0
+    "K": 12.0
    }
   }
  ]
