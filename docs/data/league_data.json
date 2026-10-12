@@ -8,8 +8,8 @@
   "current_matchup_week": 5,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-12 00:57:34 UTC",
-  "last_updated": "2026-10-12T00:57:34.379113+00:00"
+  "updated_at": "2026-10-12 01:12:39 UTC",
+  "last_updated": "2026-10-12T01:12:39.465620+00:00"
  },
  "teams": [
   {
@@ -97,7 +97,7 @@
     132.56,
     92.24,
     131.3,
-    38.84
+    41.74
    ],
    "ranking_points_by_week": [
     9.0,
@@ -393,7 +393,7 @@
     71.46,
     82.92,
     81.62,
-    99.86
+    100.86
    ],
    "ranking_points_by_week": [
     11.0,
@@ -3677,6 +3677,13 @@
      "score": 5.5
     },
     {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "RB",
+     "score": 5.5
+    },
+    {
      "name": "Tony Pollard",
      "pro_team": "TEN",
      "fantasy_team": "Mid AF Squad",
@@ -3696,13 +3703,6 @@
      "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "score": 4.3
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "RB",
-     "score": 3.7
     },
     {
      "name": "Bijan Robinson",
@@ -3847,6 +3847,13 @@
      "score": 5.28
     },
     {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "Nixed Downs in Dallas",
+     "position": "WR",
+     "score": 4.0
+    },
+    {
      "name": "DK Metcalf",
      "pro_team": "PIT",
      "fantasy_team": "Remeber Bendel",
@@ -3866,13 +3873,6 @@
      "fantasy_team": "The Lizard Kings",
      "position": "WR",
      "score": 3.2
-    },
-    {
-     "name": "Zay Flowers",
-     "pro_team": "BAL",
-     "fantasy_team": "Nixed Downs in Dallas",
-     "position": "WR",
-     "score": 2.9
     },
     {
      "name": "CeeDee Lamb",
@@ -4523,11 +4523,11 @@
     "FLEX": 14.8,
     "K": 16.0,
     "QB": 24.78,
-    "D/ST": 15.0
+    "D/ST": 16.0
    },
    "Stev": {
-    "WR": 4.8,
-    "RB": 19.7,
+    "WR": 5.9,
+    "RB": 21.5,
     "QB": 12.64,
     "FLEX": 0.0,
     "TE": 0.7,
