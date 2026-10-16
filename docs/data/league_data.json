@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-16 04:22:09 UTC",
-  "last_updated": "2026-10-16T04:22:09.549612+00:00"
+  "updated_at": "2026-10-16 04:37:14 UTC",
+  "last_updated": "2026-10-16T04:37:14.253989+00:00"
  },
  "teams": [
   {
@@ -4628,13 +4628,6 @@
      "score": 0.0
     },
     {
-     "name": "DeVonta Smith",
-     "pro_team": "PHI",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Terry McLaurin",
      "pro_team": "WSH",
      "fantasy_team": "Swishington Football Team",
@@ -4645,6 +4638,13 @@
      "name": "Tre Tucker",
      "pro_team": "LV",
      "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Rashee Rice",
+     "pro_team": "KC",
+     "fantasy_team": "Team Made of Glass",
      "position": "WR",
      "score": 0.0
     }
@@ -4709,6 +4709,13 @@
     {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Tyler Higbee",
+     "pro_team": "LAR",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "TE",
      "score": 0.0
@@ -5371,10 +5378,10 @@
    "SW": {
     "WR": 0.0,
     "RB": 0.0,
-    "FLEX": 0.0,
     "TE": 0.0,
     "QB": 0.0,
     "K": 0.0,
+    "FLEX": 0.0,
     "D/ST": 0.0
    },
    "SWSH": {
