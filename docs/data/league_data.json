@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-16 11:15:13 UTC",
-  "last_updated": "2026-10-16T11:15:13.518886+00:00"
+  "updated_at": "2026-10-17 10:34:24 UTC",
+  "last_updated": "2026-10-17T10:34:24.668178+00:00"
  },
  "teams": [
   {
@@ -4253,8 +4253,8 @@
      "score": 0.0
     },
     {
-     "name": "Ravens TQB",
-     "pro_team": "BAL",
+     "name": "Texans TQB",
+     "pro_team": "HOU",
      "fantasy_team": "JSN Derulo ",
      "position": "QB",
      "score": 0.0
@@ -4381,8 +4381,8 @@
      "score": 0.0
     },
     {
-     "name": "Quinshon Judkins",
-     "pro_team": "CLE",
+     "name": "Tyler Allgeier",
+     "pro_team": "ARI",
      "fantasy_team": "Walt's Warriors",
      "position": "RB",
      "score": 0.0
@@ -4437,8 +4437,8 @@
      "score": 0.0
     },
     {
-     "name": "Jeremiyah Love",
-     "pro_team": "ARI",
+     "name": "Kenny Gainwell",
+     "pro_team": "TB",
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "score": 0.0
@@ -4607,8 +4607,8 @@
      "score": 0.0
     },
     {
-     "name": "DK Metcalf",
-     "pro_team": "PIT",
+     "name": "Denzel Boston",
+     "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "score": 0.0
@@ -4642,8 +4642,8 @@
      "score": 0.0
     },
     {
-     "name": "Rashee Rice",
-     "pro_team": "KC",
+     "name": "DJ Moore",
+     "pro_team": "BUF",
      "fantasy_team": "Team Made of Glass",
      "position": "WR",
      "score": 0.0
@@ -5360,18 +5360,18 @@
    "BW": {
     "WR": 19.4,
     "RB": 0.0,
-    "QB": 0.0,
     "FLEX": 0.0,
     "D/ST": 13.0,
     "TE": 0.0,
+    "QB": 0.0,
     "K": 0.0
    },
    "BEND": {
     "RB": 0.0,
     "WR": 0.0,
-    "FLEX": 0.0,
     "TE": 0.0,
     "D/ST": 0.0,
+    "FLEX": 0.0,
     "K": 0.0,
     "QB": 0.0
    },
@@ -5395,12 +5395,12 @@
    },
    "TMOG": {
     "RB": 0.0,
-    "FLEX": 0.0,
     "WR": 0.0,
     "TE": 0.0,
     "D/ST": 0.0,
     "QB": 0.0,
-    "K": 0.0
+    "K": 0.0,
+    "FLEX": 0.0
    },
    "RA": {
     "WR": 0.0,
