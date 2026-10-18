@@ -8,51 +8,10 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-18 19:53:33 UTC",
-  "last_updated": "2026-10-18T19:53:33.720863+00:00"
+  "updated_at": "2026-10-18 20:08:38 UTC",
+  "last_updated": "2026-10-18T20:08:38.755051+00:00"
  },
  "teams": [
-  {
-   "team_id": 8,
-   "team_name": "Satriale's Pork Store",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    46.0
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    7.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    46.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    7.0
-   ],
-   "rank": 1,
-   "total_ranking_points": 46.0
-  },
   {
    "team_id": 9,
    "team_name": "Walt's Warriors",
@@ -65,7 +24,7 @@
     82.28,
     121.48,
     142.54,
-    77.74
+    88.64
    ],
    "ranking_points_by_week": [
     12.0,
@@ -89,10 +48,51 @@
     -4.0,
     -2.0,
     1.0,
-    7.0
+    6.0
+   ],
+   "rank": 1,
+   "total_ranking_points": 46.0
+  },
+  {
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    44.7
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    6.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    45.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    5.0
    ],
    "rank": 2,
-   "total_ranking_points": 46.0
+   "total_ranking_points": 45.0
   },
   {
    "team_id": 10,
@@ -106,7 +106,7 @@
     109.7,
     128.88,
     175.42,
-    26.8
+    29.34
    ],
    "ranking_points_by_week": [
     2.0,
@@ -130,51 +130,10 @@
     1.0,
     4.0,
     8.0,
-    5.0
+    4.0
    ],
    "rank": 3,
    "total_ranking_points": 44.0
-  },
-  {
-   "team_id": 1,
-   "team_name": "Sophi* C0mminhand B*th Wa1er",
-   "team_abbrev": "SW",
-   "abbrev": "SW",
-   "owner": "Ben Fagin",
-   "scores_by_week": [
-    125.4,
-    132.56,
-    92.24,
-    131.3,
-    75.94,
-    39.9
-   ],
-   "ranking_points_by_week": [
-    9.0,
-    11.0,
-    4.0,
-    12.0,
-    1.0,
-    6.0
-   ],
-   "cumulative_points_by_week": [
-    9.0,
-    20.0,
-    24.0,
-    36.0,
-    37.0,
-    43.0
-   ],
-   "normalized_by_week": [
-    2.0,
-    8.0,
-    5.0,
-    9.0,
-    3.0,
-    4.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 43.0
   },
   {
    "team_id": 3,
@@ -188,7 +147,7 @@
     107.1,
     118.0,
     88.24,
-    96.68
+    99.08
    ],
    "ranking_points_by_week": [
     4.0,
@@ -212,10 +171,92 @@
     0.0,
     1.0,
     -3.0,
+    3.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 43.0
+  },
+  {
+   "team_id": 1,
+   "team_name": "Sophi* C0mminhand B*th Wa1er",
+   "team_abbrev": "SW",
+   "abbrev": "SW",
+   "owner": "Ben Fagin",
+   "scores_by_week": [
+    125.4,
+    132.56,
+    92.24,
+    131.3,
+    75.94,
+    39.1
+   ],
+   "ranking_points_by_week": [
+    9.0,
+    11.0,
+    4.0,
+    12.0,
+    1.0,
     4.0
    ],
+   "cumulative_points_by_week": [
+    9.0,
+    20.0,
+    24.0,
+    36.0,
+    37.0,
+    41.0
+   ],
+   "normalized_by_week": [
+    2.0,
+    8.0,
+    5.0,
+    9.0,
+    3.0,
+    1.0
+   ],
    "rank": 5,
-   "total_ranking_points": 43.0
+   "total_ranking_points": 41.0
+  },
+  {
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "team_abbrev": "MBJG",
+   "abbrev": "MBJG",
+   "owner": "Matthew Bernstein",
+   "scores_by_week": [
+    103.16,
+    97.58,
+    101.04,
+    115.3,
+    115.18,
+    79.7
+   ],
+   "ranking_points_by_week": [
+    5.0,
+    6.0,
+    5.0,
+    7.0,
+    7.0,
+    10.0
+   ],
+   "cumulative_points_by_week": [
+    5.0,
+    11.0,
+    16.0,
+    23.0,
+    30.0,
+    40.0
+   ],
+   "normalized_by_week": [
+    -2.0,
+    -1.0,
+    -3.0,
+    -4.0,
+    -4.0,
+    0.0
+   ],
+   "rank": 6,
+   "total_ranking_points": 40.0
   },
   {
    "team_id": 2,
@@ -229,7 +270,7 @@
     102.6,
     78.54,
     177.16,
-    51.5
+    51.9
    ],
    "ranking_points_by_week": [
     8.0,
@@ -253,48 +294,7 @@
     -1.0,
     -8.0,
     -3.0,
-    0.0
-   ],
-   "rank": 6,
-   "total_ranking_points": 39.0
-  },
-  {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "team_abbrev": "MBJG",
-   "abbrev": "MBJG",
-   "owner": "Matthew Bernstein",
-   "scores_by_week": [
-    103.16,
-    97.58,
-    101.04,
-    115.3,
-    115.18,
-    69.7
-   ],
-   "ranking_points_by_week": [
-    5.0,
-    6.0,
-    5.0,
-    7.0,
-    7.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    5.0,
-    11.0,
-    16.0,
-    23.0,
-    30.0,
-    39.0
-   ],
-   "normalized_by_week": [
-    -2.0,
-    -1.0,
-    -3.0,
-    -4.0,
-    -4.0,
-    0.0
+    -1.0
    ],
    "rank": 7,
    "total_ranking_points": 39.0
@@ -311,7 +311,7 @@
     117.58,
     105.92,
     103.76,
-    34.1
+    36.1
    ],
    "ranking_points_by_week": [
     3.0,
@@ -335,7 +335,7 @@
     7.0,
     4.0,
     2.0,
-    0.0
+    -1.0
    ],
    "rank": 8,
    "total_ranking_points": 39.0
@@ -376,10 +376,51 @@
     2.0,
     -2.0,
     0.0,
-    -4.0
+    -5.0
    ],
    "rank": 9,
    "total_ranking_points": 35.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    47.42
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    7.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    34.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -6.0
+   ],
+   "rank": 10,
+   "total_ranking_points": 34.0
   },
   {
    "team_id": 12,
@@ -417,51 +458,10 @@
     0.0,
     0.0,
     -5.0,
-    -5.0
-   ],
-   "rank": 10,
-   "total_ranking_points": 34.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    38.64
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    31.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -8.0
+    -6.0
    ],
    "rank": 11,
-   "total_ranking_points": 31.0
+   "total_ranking_points": 34.0
   },
   {
    "team_id": 6,
@@ -475,7 +475,7 @@
     81.58,
     89.62,
     92.0,
-    71.22
+    72.02
    ],
    "ranking_points_by_week": [
     6.0,
@@ -483,7 +483,7 @@
     1.0,
     3.0,
     4.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -491,7 +491,7 @@
     12.0,
     15.0,
     19.0,
-    29.0
+    28.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -499,10 +499,10 @@
     -7.0,
     -12.0,
     -15.0,
-    -10.0
+    -12.0
    ],
    "rank": 12,
-   "total_ranking_points": 29.0
+   "total_ranking_points": 28.0
   }
  ],
  "top_players_by_week": [
@@ -4066,7 +4066,7 @@
      "pro_team": "CHI",
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
-     "score": 20.7
+     "score": 21.0
     },
     {
      "name": "Jonathan Taylor",
@@ -4083,11 +4083,39 @@
      "score": 19.4
     },
     {
+     "name": "Isaiah Likely",
+     "pro_team": "NYG",
+     "fantasy_team": "Walt's Warriors",
+     "position": "TE",
+     "score": 18.4
+    },
+    {
+     "name": "Giants TQB",
+     "pro_team": "NYG",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "score": 16.32
+    },
+    {
+     "name": "Malik Nabers",
+     "pro_team": "NYG",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 16.0
+    },
+    {
      "name": "Carnell Tate",
      "pro_team": "TEN",
      "fantasy_team": "JSN Derulo ",
      "position": "WR",
      "score": 16.0
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "score": 15.9
     },
     {
      "name": "Colston Loveland",
@@ -4097,25 +4125,11 @@
      "score": 15.5
     },
     {
-     "name": "Chuba Hubbard",
-     "pro_team": "CAR",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "RB",
-     "score": 15.2
-    },
-    {
      "name": "DeVonta Smith",
      "pro_team": "PHI",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "WR",
      "score": 14.3
-    },
-    {
-     "name": "Malik Nabers",
-     "pro_team": "NYG",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "score": 14.2
     },
     {
      "name": "Alvin Kamara",
@@ -4146,6 +4160,13 @@
      "score": 13.0
     },
     {
+     "name": "Dameon Pierce",
+     "pro_team": "PHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "score": 13.0
+    },
+    {
      "name": "Jalen Coker",
      "pro_team": "CAR",
      "fantasy_team": "The Lizard Kings",
@@ -4160,16 +4181,16 @@
      "score": 12.3
     },
     {
+     "name": "Keenan Allen",
+     "pro_team": "IND",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "score": 12.2
+    },
+    {
      "name": "J.K. Dobbins",
      "pro_team": "DEN",
      "fantasy_team": "Mid AF Squad",
-     "position": "RB",
-     "score": 12.1
-    },
-    {
-     "name": "Dameon Pierce",
-     "pro_team": "PHI",
-     "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "score": 12.1
     },
@@ -4186,27 +4207,6 @@
      "fantasy_team": "Walt's Warriors",
      "position": "RB",
      "score": 11.4
-    },
-    {
-     "name": "Seahawks TQB",
-     "pro_team": "SEA",
-     "fantasy_team": "Mid AF Squad",
-     "position": "QB",
-     "score": 11.02
-    },
-    {
-     "name": "Ka'imi Fairbairn",
-     "pro_team": "HOU",
-     "fantasy_team": "Remeber Bendel",
-     "position": "K",
-     "score": 11.0
-    },
-    {
-     "name": "Buccaneers D/ST",
-     "pro_team": "TB",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "D/ST",
-     "score": 10.0
     }
    ],
    "QB": [
@@ -4232,6 +4232,13 @@
      "score": 22.98
     },
     {
+     "name": "Giants TQB",
+     "pro_team": "NYG",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "score": 16.32
+    },
+    {
      "name": "Seahawks TQB",
      "pro_team": "SEA",
      "fantasy_team": "Mid AF Squad",
@@ -4239,18 +4246,11 @@
      "score": 11.02
     },
     {
-     "name": "Giants TQB",
-     "pro_team": "NYG",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "score": 8.44
-    },
-    {
      "name": "Rams TQB",
      "pro_team": "LAR",
      "fantasy_team": "Bijan These Nuts",
      "position": "QB",
-     "score": 0.0
+     "score": 0.24
     },
     {
      "name": "Packers TQB",
@@ -4308,7 +4308,7 @@
      "pro_team": "CHI",
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
-     "score": 20.7
+     "score": 21.0
     },
     {
      "name": "Jonathan Taylor",
@@ -4322,7 +4322,7 @@
      "pro_team": "CAR",
      "fantasy_team": "Satriale's Pork Store",
      "position": "RB",
-     "score": 15.2
+     "score": 15.9
     },
     {
      "name": "Alvin Kamara",
@@ -4332,16 +4332,16 @@
      "score": 13.9
     },
     {
-     "name": "J.K. Dobbins",
-     "pro_team": "DEN",
-     "fantasy_team": "Mid AF Squad",
-     "position": "RB",
-     "score": 12.1
-    },
-    {
      "name": "Dameon Pierce",
      "pro_team": "PHI",
      "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "score": 13.0
+    },
+    {
+     "name": "J.K. Dobbins",
+     "pro_team": "DEN",
+     "fantasy_team": "Mid AF Squad",
      "position": "RB",
      "score": 12.1
     },
@@ -4364,21 +4364,21 @@
      "pro_team": "TEN",
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
-     "score": 7.1
+     "score": 7.6
     },
     {
      "name": "Bijan Robinson",
      "pro_team": "ATL",
      "fantasy_team": "Angel Reese Hoop Mixtape",
      "position": "RB",
-     "score": 5.9
+     "score": 6.3
     },
     {
      "name": "Jaylen Warren",
      "pro_team": "PIT",
      "fantasy_team": "Bijan These Nuts",
      "position": "RB",
-     "score": 5.6
+     "score": 5.8
     },
     {
      "name": "Emanuel Wilson",
@@ -4406,7 +4406,7 @@
      "pro_team": "NE",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "RB",
-     "score": 3.4
+     "score": 3.6
     },
     {
      "name": "Kenny Gainwell",
@@ -4416,15 +4416,15 @@
      "score": 2.9
     },
     {
-     "name": "Kenneth Walker III",
-     "pro_team": "KC",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "score": 0.0
-    },
-    {
      "name": "Kyren Williams",
      "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "score": 0.3
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
      "fantasy_team": "Bijan These Nuts",
      "position": "RB",
      "score": 0.0
@@ -4481,6 +4481,13 @@
      "score": 19.4
     },
     {
+     "name": "Malik Nabers",
+     "pro_team": "NYG",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "score": 16.0
+    },
+    {
      "name": "Carnell Tate",
      "pro_team": "TEN",
      "fantasy_team": "JSN Derulo ",
@@ -4493,13 +4500,6 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "WR",
      "score": 14.3
-    },
-    {
-     "name": "Malik Nabers",
-     "pro_team": "NYG",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "score": 14.2
     },
     {
      "name": "Luther Burden III",
@@ -4530,6 +4530,13 @@
      "score": 12.3
     },
     {
+     "name": "Keenan Allen",
+     "pro_team": "IND",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "score": 12.2
+    },
+    {
      "name": "Tetairoa McMillan",
      "pro_team": "CAR",
      "fantasy_team": "Remeber Bendel",
@@ -4537,11 +4544,11 @@
      "score": 11.6
     },
     {
-     "name": "Keenan Allen",
-     "pro_team": "IND",
-     "fantasy_team": "JSN Derulo ",
+     "name": "Drake London",
+     "pro_team": "ATL",
+     "fantasy_team": "The Sun Gods ",
      "position": "WR",
-     "score": 9.8
+     "score": 10.2
     },
     {
      "name": "Zay Flowers",
@@ -4563,13 +4570,6 @@
      "fantasy_team": "Angel Reese Hoop Mixtape",
      "position": "WR",
      "score": 8.4
-    },
-    {
-     "name": "Drake London",
-     "pro_team": "ATL",
-     "fantasy_team": "The Sun Gods ",
-     "position": "WR",
-     "score": 8.2
     },
     {
      "name": "Garrett Wilson",
@@ -4651,18 +4651,18 @@
    ],
    "TE": [
     {
+     "name": "Isaiah Likely",
+     "pro_team": "NYG",
+     "fantasy_team": "Walt's Warriors",
+     "position": "TE",
+     "score": 18.4
+    },
+    {
      "name": "Colston Loveland",
      "pro_team": "CHI",
      "fantasy_team": "JSN Derulo ",
      "position": "TE",
      "score": 15.5
-    },
-    {
-     "name": "Isaiah Likely",
-     "pro_team": "NYG",
-     "fantasy_team": "Walt's Warriors",
-     "position": "TE",
-     "score": 9.5
     },
     {
      "name": "Dallas Goedert",
@@ -5297,11 +5297,11 @@
   },
   {
    "SACK": {
-    "RB": 0.0,
-    "WR": 14.2,
-    "FLEX": 5.6,
+    "RB": 0.3,
+    "WR": 16.0,
+    "FLEX": 5.8,
     "TE": 0.0,
-    "QB": 0.0,
+    "QB": 0.24,
     "D/ST": 3.0,
     "K": 4.0
    },
@@ -5312,19 +5312,19 @@
     "WR": 12.7,
     "K": 9.0,
     "QB": 0.0,
-    "D/ST": 0.0
+    "D/ST": 10.0
    },
    "PORK": {
-    "RB": 15.2,
+    "RB": 15.9,
     "WR": 18.7,
     "FLEX": 0.0,
     "QB": 0.0,
-    "D/ST": 10.0,
+    "D/ST": 8.0,
     "K": 0.0,
     "TE": 2.1
    },
    "Naug": {
-    "RB": 27.8,
+    "RB": 28.6,
     "WR": 13.4,
     "K": 0.0,
     "FLEX": 12.1,
@@ -5336,13 +5336,13 @@
     "WR": 13.5,
     "RB": 11.4,
     "QB": 27.34,
-    "TE": 9.5,
-    "D/ST": 7.0,
+    "TE": 18.4,
+    "D/ST": 9.0,
     "K": 9.0,
     "FLEX": 0.0
    },
    "CJ": {
-    "RB": 11.0,
+    "RB": 11.4,
     "WR": 12.6,
     "FLEX": 0.0,
     "QB": 23.9,
@@ -5351,7 +5351,7 @@
     "D/ST": 4.0
    },
    "BW": {
-    "WR": 29.2,
+    "WR": 31.6,
     "RB": 0.0,
     "TE": 15.5,
     "FLEX": 16.0,
@@ -5370,12 +5370,12 @@
    },
    "SW": {
     "WR": 9.7,
-    "RB": 7.9,
+    "RB": 8.1,
     "FLEX": 14.3,
     "QB": 0.0,
     "K": 1.0,
     "TE": 0.0,
-    "D/ST": 7.0
+    "D/ST": 6.0
    },
    "SWSH": {
     "TE": 0.0,
@@ -5387,16 +5387,16 @@
     "D/ST": 0.0
    },
    "TMOG": {
-    "RB": 12.1,
+    "RB": 13.0,
     "WR": 0.0,
     "TE": 9.1,
     "D/ST": 9.0,
-    "QB": 8.44,
+    "QB": 16.32,
     "K": 0.0,
     "FLEX": 0.0
    },
    "RA": {
-    "WR": 8.2,
+    "WR": 10.2,
     "FLEX": 0.0,
     "QB": 0.0,
     "TE": 0.0,
