@@ -163,8 +163,8 @@ function render(data) {
         `<div class="lp ${p.status}"><span class="lp-slot">${esc(p.slot)}</span>` +
         `<span class="lp-name">${esc(p.name)}</span>` +
         `<span class="lp-game">${esc(p.pro_team)}${p.opponent && p.opponent !== "None" ? ` vs ${esc(p.opponent)}` : ""}` +
-        ` · ${p.status === "pre" && p.kickoff ? new Date(p.kickoff).toLocaleString("en-US",
-          { timeZone: TZ, weekday: "short", hour: "numeric", minute: "2-digit" }) : p.status}</span>` +
+        `<span class="lp-tag">${p.status === "pre" && p.kickoff ? new Date(p.kickoff).toLocaleString("en-US",
+          { timeZone: TZ, weekday: "short", hour: "numeric", minute: "2-digit" }) : esc(p.status)}</span></span>` +
         `<span class="lp-pts">${fmt(p.points)}<small> / ${fmt(p.projected)}</small></span></div>`).join("");
       dr.innerHTML = `<td colspan="8"><div class="lineup">${rows}</div></td>`;
       tbody.appendChild(dr);
