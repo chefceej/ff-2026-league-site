@@ -87,6 +87,10 @@ tr.cutoff td{border-bottom:2px dashed var(--gold)}
 .tab-btn{padding:5px 14px; border-radius:999px; border:1px solid var(--line);
   background:var(--paper); color:var(--mut); font-size:13px; font-weight:600; cursor:pointer}
 .tab-btn:hover{color:var(--ink)}
+.ts-filters{display:flex; gap:8px; margin:0 24px 12px; flex-wrap:wrap}
+.ts-filters select,.ts-filters input{padding:5px 10px; border-radius:8px; border:1px solid var(--line);
+  background:var(--paper); color:var(--ink); font:inherit; font-size:13px}
+.ts-filters input{flex:1 1 160px; min-width:0}
 .tab-btn.active{background:var(--field); border-color:var(--field); color:#fff}
 
 /* Top scorers table cells */

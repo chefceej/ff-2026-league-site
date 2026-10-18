@@ -61,7 +61,10 @@ function heatGreen(val, min, max) {
   return `hsl(132, ${S}%, ${L}%)`;
 }
 
-// ── Top Scorers by Week (prev/next nav + position tabs) ──
+// ── Top Scorers by Week (prev/next nav + position tabs + filters) ──
+// Each week holds every starter in wk.all; tabs and filters are applied here.
+const TS_TAB_POSITIONS = { FLEX: ["RB", "WR", "TE"] };
+
 function buildTopScorersTable(weeklyData, currentWeek) {
   let displayWeek = currentWeek - 1;
   let activeTab = "all";
@@ -70,11 +73,27 @@ function buildTopScorersTable(weeklyData, currentWeek) {
   const prevBtn = document.getElementById("prev-week-btn");
   const nextBtn = document.getElementById("next-week-btn");
   const tabsEl = document.getElementById("top-scorers-tabs");
+  const teamSel = document.getElementById("ts-team");
+  const searchEl = document.getElementById("ts-search");
+  const limitSel = document.getElementById("ts-limit");
+
+  const teamNames = [...new Set(weeklyData.flatMap(wk =>
+    (Array.isArray(wk) ? wk : wk?.all || []).map(p => p.fantasy_team)))].sort();
+  teamNames.forEach(n => teamSel.add(new Option(n, n)));
 
   function players() {
     const wk = weeklyData[displayWeek];
     if (!wk) return [];
-    return Array.isArray(wk) ? (activeTab === "all" ? wk : []) : (wk[activeTab] || []);
+    let ps = Array.isArray(wk) ? wk : (wk.all || []);
+    if (activeTab !== "all") {
+      const allowed = TS_TAB_POSITIONS[activeTab] || [activeTab];
+      ps = ps.filter(p => allowed.includes(p.position));
+    }
+    if (teamSel.value) ps = ps.filter(p => p.fantasy_team === teamSel.value);
+    const q = searchEl.value.trim().toLowerCase();
+    if (q) ps = ps.filter(p => p.name.toLowerCase().includes(q));
+    const limit = parseInt(limitSel.value);
+    return limit ? ps.slice(0, limit) : ps;
   }
   function render() {
     label.textContent = `Week ${displayWeek + 1} of ${currentWeek}`;
@@ -83,13 +102,14 @@ function buildTopScorersTable(weeklyData, currentWeek) {
     const ps = players();
     tbody.innerHTML = "";
     if (!ps.length) {
-      tbody.innerHTML = `<tr><td colspan="5" class="nodata">No data</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="6" class="nodata">No data</td></tr>`;
       return;
     }
     ps.forEach((p, i) => {
       const tr = document.createElement("tr");
       tr.innerHTML =
         `<td class="rk">${i + 1}</td><td class="left player">${p.name}</td>` +
+        `<td class="mut">${p.position}</td>` +
         `<td class="mut">${p.pro_team}</td><td class="left">${p.fantasy_team}</td>` +
         `<td class="pts">${p.score.toFixed(1)}</td>`;
       tbody.appendChild(tr);
@@ -103,6 +123,9 @@ function buildTopScorersTable(weeklyData, currentWeek) {
     activeTab = btn.dataset.tab;
     render();
   }));
+  teamSel.onchange = render;
+  limitSel.onchange = render;
+  searchEl.oninput = render;
   render();
 }
 
