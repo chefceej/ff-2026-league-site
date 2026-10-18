@@ -79,8 +79,6 @@ SLOT_MAP = {
 # Player-position labels that should be treated as QB for the Top Scorers tabs.
 POS_NORMALIZE = {"TQB": "QB"}
 SKIP_SLOTS = {"BE", "IR", "BENCH"}
-POS_TABS = ["QB", "RB", "WR", "TE"]   # player-type tabs for Top Scorers
-TOP_N = 25
 
 
 def fetch_week(league, week):
@@ -88,7 +86,8 @@ def fetch_week(league, week):
     week, else None.
 
       scores_by_team_id : {team_id: team score}
-      top_players       : {"all": [...], "QB": [...], ...} of starter scores
+      top_players       : {"all": [...]} every starter, best score first. The
+                          page derives position tabs / filters from this list.
       position_scores   : {team_abbrev: {slot_bucket: points}}
     """
     try:
@@ -122,6 +121,7 @@ def fetch_week(league, week):
                     "pro_team": getattr(pl, "proTeam", ""),
                     "fantasy_team": team.team_name,
                     "position": POS_NORMALIZE.get(pos, pos),
+                    "slot": bucket or slot,
                     "score": round(pts, 2),
                 })
 
@@ -129,9 +129,7 @@ def fetch_week(league, week):
         return None
 
     all_players.sort(key=lambda p: p["score"], reverse=True)
-    top_players = {"all": all_players[:TOP_N]}
-    for pos in POS_TABS:
-        top_players[pos] = [p for p in all_players if p["position"] == pos][:TOP_N]
+    top_players = {"all": all_players}
     return scores, top_players, position_scores
 
 
