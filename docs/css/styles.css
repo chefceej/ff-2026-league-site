@@ -156,3 +156,95 @@ table.heat td{color:#20302a}
 #pivot-table .sticky-col2.pos-col{left:70px}
 
 footer{padding:22px 24px; color:var(--mut); font-size:12px; text-align:center}
+
+/* ── Live Hub ── */
+.live-dot{display:inline-block; width:7px; height:7px; border-radius:50%; background:#ff5a4a;
+  margin-right:6px; vertical-align:1px; animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.live-banner{display:flex; align-items:center; gap:14px 22px; flex-wrap:wrap; margin:24px 24px 0;
+  padding:14px 18px; background:var(--ink); color:var(--chalk); border-radius:14px;
+  border-bottom:3px solid var(--gold)}
+.lb-left{display:flex; align-items:center; gap:12px}
+.lb-state{font-size:11px; font-weight:800; letter-spacing:.1em; padding:3px 9px; border-radius:999px}
+.lb-state.live{background:var(--neg); animation:pulse 1.6s ease-in-out infinite}
+.lb-state.pre{background:var(--field)}
+.lb-state.final{background:#566270}
+.lb-week{font-size:18px; font-weight:800}
+.lb-pips{display:flex; gap:8px; font-size:13px; color:rgba(255,255,255,.8)}
+.lb-pips b{color:#fff}
+.lb-pips .sep{opacity:.4}
+.lb-right{margin-left:auto; font-size:12px; color:rgba(255,255,255,.65)}
+.section-head{display:flex; align-items:center; justify-content:space-between; gap:12px;
+  margin-right:24px; flex-wrap:wrap}
+.section-note{margin:-4px 24px 12px; color:var(--mut); font-size:13px}
+
+#race-table td{padding:9px 12px}
+.race-row{cursor:pointer}
+.race-row:hover td,.race-row.open td{background:var(--field-lt)}
+#race-table td.rk{color:var(--mut); font-weight:700}
+#race-table td.team,#live-standings-table td.team{font-weight:700}
+.abbr{color:var(--mut); font-weight:600; font-size:11px}
+.swatch{display:inline-block; width:9px; height:9px; border-radius:3px; margin-right:8px; vertical-align:0}
+#race-table td.score{font-weight:800; font-size:16px; color:var(--ink)}
+.bar-col{width:22%; min-width:90px}
+.bar{position:relative; height:10px; background:var(--cream); border-radius:999px; overflow:hidden}
+.bar-proj{position:absolute; inset:0 auto 0 0; background:var(--line)}
+.bar-live{position:absolute; inset:0 auto 0 0; border-radius:999px; transition:width .6s ease}
+td.mut{color:var(--mut)}
+td.rp{font-weight:800; color:var(--field-dk)}
+.pips{display:inline-flex; gap:3px; vertical-align:middle; margin-right:8px}
+.pip{width:8px; height:8px; border-radius:50%; border:1.5px solid var(--field)}
+.pip.final{background:var(--field)}
+.pip.live{background:var(--gold); border-color:var(--gold); animation:pulse 1.6s ease-in-out infinite}
+.pip.pre{background:transparent}
+.pip.bye{border-color:var(--line); background:var(--line)}
+.left-ct{font-size:12px; color:var(--mut)}
+tr.drawer td{background:var(--cream); padding:8px 14px 12px; white-space:normal}
+.lineup{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:4px 18px}
+.lp{display:grid; grid-template-columns:52px 1fr auto; grid-template-rows:auto auto; column-gap:8px;
+  padding:6px 0; border-bottom:1px dashed var(--line); text-align:left; font-size:13px}
+.lp-slot{grid-row:span 2; font-size:11px; font-weight:700; color:var(--field-dk); align-self:center}
+.lp-name{font-weight:600}
+.lp-game{grid-column:2; font-size:11px; color:var(--mut)}
+.lp-pts{grid-row:1 / span 2; grid-column:3; align-self:center; font-weight:800}
+.lp-pts small{color:var(--mut); font-weight:500}
+.lp.live .lp-name::after{content:" ●"; color:var(--gold)}
+.lp.pre .lp-pts{color:var(--mut)}
+
+.battles{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin:0 24px}
+.battle{background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:12px 14px}
+.b-spot{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--gold)}
+.b-line{display:flex; align-items:center; font-size:14px; margin-top:4px}
+.b-left{margin-left:auto; font-size:11px; color:var(--mut)}
+.b-gap{font-size:12px; color:var(--mut); margin:2px 0 0 17px}
+
+#live-standings-table tr.in td:first-child{color:var(--pos); font-weight:800}
+td.move{font-size:12px; font-weight:700; color:var(--mut); text-align:center}
+td.move.up{color:var(--pos)}
+td.move.down{color:var(--neg)}
+
+.feed{list-style:none; margin:0 24px; padding:4px 0; background:var(--paper); border:1px solid var(--line);
+  border-radius:14px; max-height:420px; overflow-y:auto}
+.feed li{display:flex; gap:14px; padding:9px 16px; border-bottom:1px solid var(--line); font-size:14px}
+.feed li:last-child{border-bottom:none}
+.f-time{flex:0 0 64px; color:var(--mut); font-size:12px; padding-top:2px}
+.feed li.in{background:var(--field-lt)}
+.feed li.out{background:#f8ebe7}
+.feed li.quiet{color:var(--mut)}
+
+@media (max-width:640px){
+  .live-banner,.battles,.feed,.table-wrap,.chart-wrap{margin-left:16px; margin-right:16px}
+  h2,.section-note{margin-left:16px; margin-right:16px}
+  .lb-right{margin-left:0}
+  .bar-col,.abbr,.left-ct{display:none}
+  #race-table th:nth-child(5),#race-table td:nth-child(5),
+  #race-table th:nth-child(7),#race-table tr.race-row td:nth-child(7){display:none}
+  #race-table td,#race-table th{padding:8px 7px}
+  #race-table td.team{white-space:normal; min-width:120px}
+  .pips{gap:2px; margin-right:0}
+  .pip{width:6px; height:6px; border-width:1px}
+  .pips{gap:1px}
+  #live-standings-table th:nth-child(4),#live-standings-table td:nth-child(4){display:none}
+  #live-standings-table td,#live-standings-table th{padding:8px 7px}
+  #live-standings-table td.team{white-space:normal}
+}

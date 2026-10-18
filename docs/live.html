@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Hub — Fantasy Football</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <h1><span class="ball">🏈</span>Live Hub</h1>
+  <p class="sub" id="subtitle">Who's climbing, who's sliding, and who's on the playoff bubble, as it happens.</p>
+  <nav class="header-nav">
+    <a href="index.html" class="nav-link">Standings</a>
+    <a href="live.html" class="nav-link active"><span class="live-dot"></span>Live Hub</a>
+    <a href="position.html" class="nav-link">Position &amp; Score Analysis</a>
+  </nav>
+</header>
+
+<main>
+  <section id="empty-state" class="hidden">
+    <div class="empty-card">
+      <h2>No live week yet 🏈</h2>
+      <p id="empty-msg">The hub lights up once this week's first game kicks off.</p>
+    </div>
+  </section>
+
+  <section id="live-top" class="hidden">
+    <div class="live-banner">
+      <div class="lb-left">
+        <span class="lb-state" id="lb-state">LIVE</span>
+        <span class="lb-week" id="lb-week">Week –</span>
+      </div>
+      <div class="lb-pips" id="lb-pips"></div>
+      <div class="lb-right" id="lb-updated"></div>
+    </div>
+  </section>
+
+  <section id="race-section" class="hidden">
+    <div class="section-head">
+      <h2>This Week's Race</h2>
+      <div class="pivot-toggle" id="mode-toggle">
+        <button class="pivot-toggle-btn active" data-mode="live">Live</button>
+        <button class="pivot-toggle-btn" data-mode="proj">Projected</button>
+      </div>
+    </div>
+    <p class="section-note">Every team is ranked against the whole league each week. 1st earns
+      <span id="max-pts">12</span> ranking points, last earns 1. Tap a team to see its lineup.</p>
+    <div class="table-wrap">
+      <table id="race-table">
+        <thead><tr><th>#</th><th class="left">Team</th><th>Pts</th><th class="left bar-col"></th>
+          <th>Proj</th><th class="left">Players</th><th>Gap</th><th>Rk Pts</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="battles-section" class="hidden">
+    <h2>Tightest Battles</h2>
+    <div class="battles" id="battles"></div>
+  </section>
+
+  <section id="standings-section" class="hidden">
+    <h2>Standings If the Week Ended Now</h2>
+    <div class="table-wrap">
+      <table id="live-standings-table">
+        <thead><tr><th>#</th><th>Move</th><th class="left">Team</th><th>Before</th>
+          <th>+ This Wk</th><th>Total</th><th>vs Cutoff</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="jostle-section" class="hidden">
+    <h2>The Jostle: Weekly Rank Through the Day</h2>
+    <div class="chart-wrap"><canvas id="jostleChart"></canvas></div>
+  </section>
+
+  <section id="feed-section" class="hidden">
+    <h2>Play-by-Play</h2>
+    <ul class="feed" id="feed"></ul>
+  </section>
+</main>
+
+<footer><span id="updated"></span></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/live.js"></script>
+</body>
+</html>
