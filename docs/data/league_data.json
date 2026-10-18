@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-18 21:40:42 UTC",
-  "last_updated": "2026-10-18T21:40:42.391490+00:00"
+  "updated_at": "2026-10-18 21:50:16 UTC",
+  "last_updated": "2026-10-18T21:50:16.162194+00:00"
  },
  "teams": [
   {
@@ -65,7 +65,7 @@
     82.28,
     121.48,
     142.54,
-    110.44
+    113.24
    ],
    "ranking_points_by_week": [
     12.0,
@@ -106,7 +106,7 @@
     106.96,
     108.18,
     111.04,
-    52.7
+    59.0
    ],
    "ranking_points_by_week": [
     10.0,
@@ -188,7 +188,7 @@
     101.04,
     115.3,
     115.18,
-    81.4
+    83.3
    ],
    "ranking_points_by_week": [
     5.0,
@@ -311,7 +311,7 @@
     102.6,
     78.54,
     177.16,
-    61.2
+    64.2
    ],
    "ranking_points_by_week": [
     8.0,
@@ -5089,6 +5089,14 @@
      "score": 10.2
     },
     {
+     "name": "Harrison Butker",
+     "pro_team": "KC",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "K",
+     "slot": "K",
+     "score": 10.0
+    },
+    {
      "name": "Steelers D/ST",
      "pro_team": "PIT",
      "fantasy_team": "Walt's Warriors",
@@ -5217,6 +5225,14 @@
      "score": 7.8
     },
     {
+     "name": "Trey McBride",
+     "pro_team": "ARI",
+     "fantasy_team": "The Lizard Kings",
+     "position": "TE",
+     "slot": "TE",
+     "score": 7.6
+    },
+    {
      "name": "Tony Pollard",
      "pro_team": "TEN",
      "fantasy_team": "Mid AF Squad",
@@ -5230,6 +5246,14 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "D/ST",
      "slot": "D/ST",
+     "score": 7.0
+    },
+    {
+     "name": "Matt Gay",
+     "pro_team": "LV",
+     "fantasy_team": "Angel Reese Hoop Mixtape",
+     "position": "K",
+     "slot": "K",
      "score": 7.0
     },
     {
@@ -5289,14 +5313,6 @@
      "score": 5.9
     },
     {
-     "name": "Trey McBride",
-     "pro_team": "ARI",
-     "fantasy_team": "The Lizard Kings",
-     "position": "TE",
-     "slot": "TE",
-     "score": 5.7
-    },
-    {
      "name": "Emanuel Wilson",
      "pro_team": "SEA",
      "fantasy_team": "The Lizard Kings",
@@ -5311,14 +5327,6 @@
      "position": "QB",
      "slot": "QB",
      "score": 5.04
-    },
-    {
-     "name": "Harrison Butker",
-     "pro_team": "KC",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "K",
-     "slot": "K",
-     "score": 5.0
     },
     {
      "name": "Panthers D/ST",
@@ -5353,6 +5361,14 @@
      "score": 4.4
     },
     {
+     "name": "Tyler Allgeier",
+     "pro_team": "ARI",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 4.2
+    },
+    {
      "name": "A.J. Brown",
      "pro_team": "NE",
      "fantasy_team": "Angel Reese Hoop Mixtape",
@@ -5372,14 +5388,6 @@
      "name": "Tyler Loop",
      "pro_team": "BAL",
      "fantasy_team": "Bijan These Nuts",
-     "position": "K",
-     "slot": "K",
-     "score": 4.0
-    },
-    {
-     "name": "Matt Gay",
-     "pro_team": "LV",
-     "fantasy_team": "Angel Reese Hoop Mixtape",
      "position": "K",
      "slot": "K",
      "score": 4.0
@@ -5431,6 +5439,14 @@
      "position": "RB",
      "slot": "RB",
      "score": 2.9
+    },
+    {
+     "name": "Omarion Hampton",
+     "pro_team": "LAC",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "RB",
+     "slot": "RB",
+     "score": 2.6
     },
     {
      "name": "Puka Nacua",
@@ -5489,28 +5505,12 @@
      "score": 1.5
     },
     {
-     "name": "Tyler Allgeier",
-     "pro_team": "ARI",
-     "fantasy_team": "Walt's Warriors",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 1.4
-    },
-    {
      "name": "Harold Fannin Jr.",
      "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
      "position": "TE",
      "slot": "TE",
      "score": 1.4
-    },
-    {
-     "name": "Omarion Hampton",
-     "pro_team": "LAC",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "RB",
-     "slot": "RB",
-     "score": 1.3
     },
     {
      "name": "Davante Adams",
@@ -6278,7 +6278,7 @@
    },
    "MBJG": {
     "FLEX": 20.1,
-    "TE": 5.7,
+    "TE": 7.6,
     "RB": 27.9,
     "WR": 12.7,
     "K": 9.0,
@@ -6286,12 +6286,12 @@
     "D/ST": 6.0
    },
    "PORK": {
-    "RB": 19.9,
+    "RB": 21.2,
     "WR": 18.7,
     "FLEX": 0.0,
     "QB": 0.0,
     "D/ST": 7.0,
-    "K": 5.0,
+    "K": 10.0,
     "TE": 2.1
    },
    "Naug": {
@@ -6310,7 +6310,7 @@
     "TE": 20.9,
     "D/ST": 10.0,
     "K": 9.0,
-    "FLEX": 1.4
+    "FLEX": 4.2
    },
    "CJ": {
     "RB": 12.2,
@@ -6318,7 +6318,7 @@
     "FLEX": 0.0,
     "QB": 23.8,
     "TE": 3.6,
-    "K": 4.0,
+    "K": 7.0,
     "D/ST": 5.0
    },
    "BW": {
@@ -6376,5 +6376,1290 @@
     "RB": 13.9
    }
   }
- ]
+ ],
+ "live": {
+  "week": 6,
+  "updated_at": "2026-10-18T21:50:16+00:00",
+  "teams": {
+   "SACK": {
+    "score": 68.28,
+    "projected": 116.49,
+    "starters": [
+     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "KC",
+      "opponent": "LAC",
+      "points": 20.6,
+      "projected": 21.85,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "LAR",
+      "opponent": "ARI",
+      "points": 3.5,
+      "projected": 19.17,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "Christian Watson",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "GB",
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 13.68,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "PIT",
+      "opponent": "TB",
+      "points": 8.8,
+      "projected": 13.25,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "GB",
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 9.76,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Rams TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "LAR",
+      "opponent": "None",
+      "points": 6.88,
+      "projected": 19.62,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "Eagles D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "PHI",
+      "opponent": "CAR",
+      "points": 2.0,
+      "projected": 6.45,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "BAL",
+      "opponent": "CLE",
+      "points": 4.0,
+      "projected": 9.46,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "NYG",
+      "opponent": "NO",
+      "points": 22.5,
+      "projected": 14.6,
+      "status": "final",
+      "kickoff": 1792342800000
+     }
+    ]
+   },
+   "MBJG": {
+    "score": 83.3,
+    "projected": 122.99,
+    "starters": [
+     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "IND",
+      "opponent": "TEN",
+      "points": 20.1,
+      "projected": 18.24,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "ARI",
+      "opponent": "LAR",
+      "points": 7.6,
+      "projected": 13.26,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "JAX",
+      "opponent": "HOU",
+      "points": 22.7,
+      "projected": 11.69,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Jalen Coker",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "CAR",
+      "opponent": "PHI",
+      "points": 12.7,
+      "projected": 11.34,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Cam Little",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "JAX",
+      "opponent": "HOU",
+      "points": 9.0,
+      "projected": 7.6,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "SEA",
+      "opponent": "DEN",
+      "points": 5.2,
+      "projected": 13.99,
+      "status": "final",
+      "kickoff": 1792109700000
+     },
+     {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "GB",
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 13.31,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Packers TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "GB",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 20.9,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Rams D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "LAR",
+      "opponent": "ARI",
+      "points": 6.0,
+      "projected": 8.11,
+      "status": "live",
+      "kickoff": 1792353900000
+     }
+    ]
+   },
+   "PORK": {
+    "score": 59.0,
+    "projected": 100.64,
+    "starters": [
+     {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "LAC",
+      "opponent": "KC",
+      "points": 2.6,
+      "projected": 8.32,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "NO",
+      "opponent": "NYG",
+      "points": 12.3,
+      "projected": 13.9,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "NYJ",
+      "opponent": "NE",
+      "points": 6.4,
+      "projected": 11.72,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Mike Evans",
+      "position": "WR",
+      "slot": "FLEX",
+      "pro_team": "SF",
+      "opponent": "WSH",
+      "points": 0.0,
+      "projected": 12.6,
+      "status": "pre",
+      "kickoff": 1792455300000
+     },
+     {
+      "name": "Commanders TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "WSH",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 19.94,
+      "status": "pre",
+      "kickoff": 1792455300000
+     },
+     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "CAR",
+      "opponent": "PHI",
+      "points": 18.6,
+      "projected": 13.7,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Buccaneers D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "TB",
+      "opponent": "PIT",
+      "points": 7.0,
+      "projected": 7.08,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Harrison Butker",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "KC",
+      "opponent": "LAC",
+      "points": 10.0,
+      "projected": 9.88,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "PIT",
+      "opponent": "TB",
+      "points": 2.1,
+      "projected": 9.04,
+      "status": "final",
+      "kickoff": 1792342800000
+     }
+    ]
+   },
+   "Naug": {
+    "score": 75.12,
+    "projected": 92.17,
+    "starters": [
+     {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "CHI",
+      "opponent": "ATL",
+      "points": 21.0,
+      "projected": 13.81,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "TB",
+      "opponent": "PIT",
+      "points": 14.3,
+      "projected": 9.12,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "TEN",
+      "opponent": "IND",
+      "points": 7.6,
+      "projected": 13.34,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "DAL",
+      "opponent": "GB",
+      "points": 0.0,
+      "projected": 10.5,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "LAC",
+      "opponent": "KC",
+      "points": 2.2,
+      "projected": 8.37,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "DEN",
+      "opponent": "SEA",
+      "points": 12.1,
+      "projected": 9.67,
+      "status": "final",
+      "kickoff": 1792109700000
+     },
+     {
+      "name": "Seahawks TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "SEA",
+      "opponent": "None",
+      "points": 11.02,
+      "projected": 13.82,
+      "status": "final",
+      "kickoff": 1792109700000
+     },
+     {
+      "name": "Brenton Strange",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "JAX",
+      "opponent": "HOU",
+      "points": 6.9,
+      "projected": 7.71,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "49ers D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "SF",
+      "opponent": "WSH",
+      "points": 0.0,
+      "projected": 6.55,
+      "status": "pre",
+      "kickoff": 1792455300000
+     }
+    ]
+   },
+   "WALT": {
+    "score": 113.24,
+    "projected": 132.52,
+    "starters": [
+     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "LAR",
+      "opponent": "ARI",
+      "points": 2.6,
+      "projected": 19.18,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "LV",
+      "opponent": "BUF",
+      "points": 14.3,
+      "projected": 16.96,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Luther Burden III",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "CHI",
+      "opponent": "ATL",
+      "points": 13.5,
+      "projected": 10.34,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Jaguars TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "JAX",
+      "opponent": "None",
+      "points": 27.34,
+      "projected": 17.66,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "NYG",
+      "opponent": "NO",
+      "points": 20.9,
+      "projected": 12.03,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Steelers D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "PIT",
+      "opponent": "TB",
+      "points": 10.0,
+      "projected": 8.54,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Spencer Shrader",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "IND",
+      "opponent": "TEN",
+      "points": 9.0,
+      "projected": 11.28,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "ARI",
+      "opponent": "LAR",
+      "points": 4.2,
+      "projected": 11.08,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "NYJ",
+      "opponent": "NE",
+      "points": 11.4,
+      "projected": 13.19,
+      "status": "final",
+      "kickoff": 1792342800000
+     }
+    ]
+   },
+   "CJ": {
+    "score": 64.2,
+    "projected": 84.28,
+    "starters": [
+     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "ATL",
+      "opponent": "CHI",
+      "points": 6.3,
+      "projected": 21.34,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "A.J. Brown",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "NE",
+      "opponent": "NYJ",
+      "points": 4.2,
+      "projected": 10.59,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "George Pickens",
+      "position": "WR",
+      "slot": "FLEX",
+      "pro_team": "DAL",
+      "opponent": "GB",
+      "points": 0.0,
+      "projected": 11.04,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "TB",
+      "opponent": "PIT",
+      "points": 5.9,
+      "projected": 14.79,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Patriots TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "NE",
+      "opponent": "None",
+      "points": 23.8,
+      "projected": 20.25,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "JAX",
+      "opponent": "HOU",
+      "points": 8.4,
+      "projected": 12.96,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "BUF",
+      "opponent": "LV",
+      "points": 3.6,
+      "projected": 6.99,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Matt Gay",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "LV",
+      "opponent": "BUF",
+      "points": 7.0,
+      "projected": 11.09,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Panthers D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "CAR",
+      "opponent": "PHI",
+      "points": 5.0,
+      "projected": 6.92,
+      "status": "final",
+      "kickoff": 1792342800000
+     }
+    ]
+   },
+   "BW": {
+    "score": 107.08,
+    "projected": 127.29,
+    "starters": [
+     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "SEA",
+      "opponent": "DEN",
+      "points": 19.4,
+      "projected": 16.22,
+      "status": "final",
+      "kickoff": 1792109700000
+     },
+     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "DAL",
+      "opponent": "GB",
+      "points": 0.0,
+      "projected": 15.55,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "CHI",
+      "opponent": "ATL",
+      "points": 15.5,
+      "projected": 7.03,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "NYG",
+      "opponent": "NO",
+      "points": 0.0,
+      "projected": 8.29,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Carnell Tate",
+      "position": "WR",
+      "slot": "FLEX",
+      "pro_team": "TEN",
+      "opponent": "IND",
+      "points": 16.0,
+      "projected": 8.71,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Broncos D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "DEN",
+      "opponent": "SEA",
+      "points": 13.0,
+      "projected": 7.42,
+      "status": "final",
+      "kickoff": 1792109700000
+     },
+     {
+      "name": "Keenan Allen",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "IND",
+      "opponent": "TEN",
+      "points": 12.2,
+      "projected": 7.27,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Texans TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "HOU",
+      "opponent": "None",
+      "points": 22.98,
+      "projected": 15.91,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Tyler Bass",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "BUF",
+      "opponent": "LV",
+      "points": 8.0,
+      "projected": 9.34,
+      "status": "live",
+      "kickoff": 1792355100000
+     }
+    ]
+   },
+   "BEND": {
+    "score": 44.34,
+    "projected": 72.64,
+    "starters": [
+     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "SF",
+      "opponent": "WSH",
+      "points": 0.0,
+      "projected": 19.15,
+      "status": "pre",
+      "kickoff": 1792455300000
+     },
+     {
+      "name": "Nico Collins",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "HOU",
+      "opponent": "JAX",
+      "points": 9.4,
+      "projected": 13.94,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "CAR",
+      "opponent": "PHI",
+      "points": 11.6,
+      "projected": 13.29,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "CLE",
+      "opponent": "BAL",
+      "points": 1.4,
+      "projected": 8.2,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Texans D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "HOU",
+      "opponent": "JAX",
+      "points": 1.0,
+      "projected": 6.97,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Denzel Boston",
+      "position": "WR",
+      "slot": "FLEX",
+      "pro_team": "CLE",
+      "opponent": "BAL",
+      "points": 2.0,
+      "projected": 11.51,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "HOU",
+      "opponent": "JAX",
+      "points": 11.0,
+      "projected": 8.56,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Raiders TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "LV",
+      "opponent": "None",
+      "points": 5.04,
+      "projected": 18.29,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Kenny Gainwell",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "TB",
+      "opponent": "PIT",
+      "points": 2.9,
+      "projected": 7.46,
+      "status": "final",
+      "kickoff": 1792342800000
+     }
+    ]
+   },
+   "SW": {
+    "score": 41.8,
+    "projected": 75.89,
+    "starters": [
+     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "DAL",
+      "opponent": "GB",
+      "points": 0.0,
+      "projected": 14.94,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "BAL",
+      "opponent": "CLE",
+      "points": 4.5,
+      "projected": 17.6,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "BAL",
+      "opponent": "CLE",
+      "points": 9.7,
+      "projected": 11.11,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "slot": "FLEX",
+      "pro_team": "PHI",
+      "opponent": "CAR",
+      "points": 17.0,
+      "projected": 10.95,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "NE",
+      "opponent": "NYJ",
+      "points": 3.6,
+      "projected": 11.9,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Cowboys TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "DAL",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 17.12,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Nick Folk",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "ATL",
+      "opponent": "CHI",
+      "points": 1.0,
+      "projected": 9.81,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Tyler Higbee",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "LAR",
+      "opponent": "ARI",
+      "points": 0.0,
+      "projected": 5.71,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "Patriots D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "NE",
+      "opponent": "NYJ",
+      "points": 6.0,
+      "projected": 7.84,
+      "status": "final",
+      "kickoff": 1792342800000
+     }
+    ]
+   },
+   "SWSH": {
+    "score": 43.56,
+    "projected": 88.82,
+    "starters": [
+     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "LV",
+      "opponent": "BUF",
+      "points": 0.0,
+      "projected": 16.17,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Bills TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "BUF",
+      "opponent": "None",
+      "points": 9.96,
+      "projected": 25.15,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "DEN",
+      "opponent": "SEA",
+      "points": 4.4,
+      "projected": 7.38,
+      "status": "final",
+      "kickoff": 1792109700000
+     },
+     {
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "WSH",
+      "opponent": "SF",
+      "points": 0.0,
+      "projected": 10.1,
+      "status": "pre",
+      "kickoff": 1792455300000
+     },
+     {
+      "name": "Woody Marks",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "HOU",
+      "opponent": "JAX",
+      "points": 9.1,
+      "projected": 10.47,
+      "status": "final",
+      "kickoff": 1792330200000
+     },
+     {
+      "name": "Tre Tucker",
+      "position": "WR",
+      "slot": "FLEX",
+      "pro_team": "LV",
+      "opponent": "BUF",
+      "points": 4.1,
+      "projected": 8.59,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "GB",
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 10.06,
+      "status": "pre",
+      "kickoff": 1792369200000
+     },
+     {
+      "name": "Dominic Zvada",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "NYG",
+      "opponent": "NO",
+      "points": 8.0,
+      "projected": 11.31,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Chiefs D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "KC",
+      "opponent": "LAC",
+      "points": 8.0,
+      "projected": 8.28,
+      "status": "live",
+      "kickoff": 1792355100000
+     }
+    ]
+   },
+   "TMOG": {
+    "score": 69.8,
+    "projected": 100.64,
+    "starters": [
+     {
+      "name": "James Cook III",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "BUF",
+      "opponent": "LV",
+      "points": 7.8,
+      "projected": 18.53,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "ARI",
+      "opponent": "LAR",
+      "points": 1.5,
+      "projected": 11.42,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "PHI",
+      "opponent": "CAR",
+      "points": 9.1,
+      "projected": 8.0,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Keon Coleman",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "BUF",
+      "opponent": "LV",
+      "points": 2.6,
+      "projected": 9.06,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Ravens D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "BAL",
+      "opponent": "CLE",
+      "points": 9.0,
+      "projected": 8.27,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Giants TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "NYG",
+      "opponent": "None",
+      "points": 22.8,
+      "projected": 18.37,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "PHI",
+      "opponent": "CAR",
+      "points": 13.0,
+      "projected": 11.41,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Blake Grupe",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "LAR",
+      "opponent": "ARI",
+      "points": 4.0,
+      "projected": 10.18,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "Rachaad White",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "WSH",
+      "opponent": "SF",
+      "points": 0.0,
+      "projected": 9.33,
+      "status": "pre",
+      "kickoff": 1792455300000
+     }
+    ]
+   },
+   "RA": {
+    "score": 42.3,
+    "projected": 93.02,
+    "starters": [
+     {
+      "name": "Drake London",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "ATL",
+      "opponent": "CHI",
+      "points": 10.2,
+      "projected": 12.83,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Davante Adams",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "LAR",
+      "opponent": "ARI",
+      "points": 1.2,
+      "projected": 13.85,
+      "status": "live",
+      "kickoff": 1792353900000
+     },
+     {
+      "name": "George Kittle",
+      "position": "TE",
+      "slot": "FLEX",
+      "pro_team": "SF",
+      "opponent": "WSH",
+      "points": 0.0,
+      "projected": 12.42,
+      "status": "pre",
+      "kickoff": 1792455300000
+     },
+     {
+      "name": "49ers TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "SF",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 21.38,
+      "status": "pre",
+      "kickoff": 1792455300000
+     },
+     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "KC",
+      "opponent": "LAC",
+      "points": 5.0,
+      "projected": 9.31,
+      "status": "live",
+      "kickoff": 1792355100000
+     },
+     {
+      "name": "Seahawks D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "SEA",
+      "opponent": "DEN",
+      "points": 4.0,
+      "projected": 6.83,
+      "status": "final",
+      "kickoff": 1792109700000
+     },
+     {
+      "name": "Jason Myers",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "SEA",
+      "opponent": "DEN",
+      "points": 8.0,
+      "projected": 6.93,
+      "status": "final",
+      "kickoff": 1792109700000
+     },
+     {
+      "name": "Alvin Kamara",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "NO",
+      "opponent": "NYG",
+      "points": 13.9,
+      "projected": 8.55,
+      "status": "final",
+      "kickoff": 1792342800000
+     },
+     {
+      "name": "Pierre Strong Jr.",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "GB",
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 7.32,
+      "status": "pre",
+      "kickoff": 1792369200000
+     }
+    ]
+   }
+  },
+  "history": [
+   {
+    "t": "2026-10-18T21:50:16+00:00",
+    "scores": {
+     "SACK": 68.28,
+     "MBJG": 83.3,
+     "PORK": 59.0,
+     "Naug": 75.12,
+     "WALT": 113.24,
+     "CJ": 64.2,
+     "BW": 107.08,
+     "BEND": 44.34,
+     "SW": 41.8,
+     "SWSH": 43.56,
+     "TMOG": 69.8,
+     "RA": 42.3
+    }
+   }
+  ]
+ }
 }
