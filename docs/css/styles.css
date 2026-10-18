@@ -201,15 +201,29 @@ td.rp{font-weight:800; color:var(--field-dk)}
 .left-ct{font-size:12px; color:var(--mut)}
 tr.drawer td{background:var(--cream); padding:8px 14px 12px; white-space:normal}
 .lineup{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:4px 18px}
-.lp{display:grid; grid-template-columns:52px 1fr auto; grid-template-rows:auto auto; column-gap:8px;
-  padding:6px 0; border-bottom:1px dashed var(--line); text-align:left; font-size:13px}
+.lp{display:grid; grid-template-columns:44px 1fr auto; grid-template-rows:auto auto; column-gap:8px;
+  padding:6px 10px 6px 8px; margin:2px 0; border-left:4px solid transparent; border-radius:4px 8px 8px 4px;
+  text-align:left; font-size:13px}
 .lp-slot{grid-row:span 2; font-size:11px; font-weight:700; color:var(--field-dk); align-self:center}
 .lp-name{font-weight:600}
 .lp-game{grid-column:2; font-size:11px; color:var(--mut)}
 .lp-pts{grid-row:1 / span 2; grid-column:3; align-self:center; font-weight:800}
 .lp-pts small{color:var(--mut); font-weight:500}
-.lp.live .lp-name::after{content:" ●"; color:var(--gold)}
-.lp.pre .lp-pts{color:var(--mut)}
+.lp-tag{display:inline-block; margin-left:6px; padding:1px 6px; border-radius:999px; font-size:10px;
+  font-weight:800; letter-spacing:.06em; text-transform:uppercase; vertical-align:1px}
+/* Game state: final = solid green, live = bright gold + pulse, upcoming = faded/outlined */
+.lp.final{background:var(--paper); border-left-color:var(--field)}
+.lp.final .lp-tag{background:var(--field); color:var(--chalk)}
+.lp.live{background:#fbefc9; border-left-color:var(--gold); box-shadow:0 0 0 1px #ecd593 inset}
+.lp.live .lp-tag{background:var(--gold); color:var(--ink)}
+.lp.live .lp-tag::before{content:"● "; animation:pulse 1.6s ease-in-out infinite}
+.lp.live .lp-pts{color:#8a6a12}
+.lp.pre{border-left:4px dashed var(--line)}
+.lp.pre .lp-tag{border:1px solid var(--mut); color:var(--mut); text-transform:none; letter-spacing:0; font-weight:600}
+.lp.pre .lp-name,.lp.pre .lp-slot{color:var(--mut)}
+.lp.pre .lp-pts{color:var(--mut); font-weight:600}
+.lp.bye{opacity:.5; border-left-color:var(--line)}
+.lp.bye .lp-tag{background:var(--line); color:var(--mut)}
 
 .battles{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin:0 24px}
 .battle{background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:12px 14px}
