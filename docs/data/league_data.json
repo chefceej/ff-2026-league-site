@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-18 21:39:49 UTC",
-  "last_updated": "2026-10-18T21:39:49.740479+00:00"
+  "updated_at": "2026-10-18 21:40:42 UTC",
+  "last_updated": "2026-10-18T21:40:42.391490+00:00"
  },
  "teams": [
   {
@@ -65,7 +65,7 @@
     82.28,
     121.48,
     142.54,
-    109.84
+    110.44
    ],
    "ranking_points_by_week": [
     12.0,
@@ -352,7 +352,7 @@
     119.86,
     90.12,
     133.0,
-    42.56
+    43.56
    ],
    "ranking_points_by_week": [
     1.0,
@@ -434,7 +434,7 @@
     110.12,
     115.58,
     81.16,
-    44.14
+    44.34
    ],
    "ranking_points_by_week": [
     7.0,
@@ -5305,6 +5305,14 @@
      "score": 5.2
     },
     {
+     "name": "Raiders TQB",
+     "pro_team": "LV",
+     "fantasy_team": "Remeber Bendel",
+     "position": "QB",
+     "slot": "QB",
+     "score": 5.04
+    },
+    {
      "name": "Harrison Butker",
      "pro_team": "KC",
      "fantasy_team": "Satriale's Pork Store",
@@ -5329,14 +5337,6 @@
      "score": 5.0
     },
     {
-     "name": "Raiders TQB",
-     "pro_team": "LV",
-     "fantasy_team": "Remeber Bendel",
-     "position": "QB",
-     "slot": "QB",
-     "score": 4.84
-    },
-    {
      "name": "Derrick Henry",
      "pro_team": "BAL",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -5359,6 +5359,14 @@
      "position": "WR",
      "slot": "WR",
      "score": 4.2
+    },
+    {
+     "name": "Tre Tucker",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 4.1
     },
     {
      "name": "Tyler Loop",
@@ -5415,14 +5423,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 3.5
-    },
-    {
-     "name": "Tre Tucker",
-     "pro_team": "LV",
-     "fantasy_team": "Swishington Football Team",
-     "position": "WR",
-     "slot": "FLEX",
-     "score": 3.1
     },
     {
      "name": "Kenny Gainwell",
@@ -5489,6 +5489,14 @@
      "score": 1.5
     },
     {
+     "name": "Tyler Allgeier",
+     "pro_team": "ARI",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 1.4
+    },
+    {
      "name": "Harold Fannin Jr.",
      "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
@@ -5527,14 +5535,6 @@
      "position": "K",
      "slot": "K",
      "score": 1.0
-    },
-    {
-     "name": "Tyler Allgeier",
-     "pro_team": "ARI",
-     "fantasy_team": "Walt's Warriors",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 0.8
     },
     {
      "name": "Christian Watson",
@@ -6310,7 +6310,7 @@
     "TE": 20.9,
     "D/ST": 10.0,
     "K": 9.0,
-    "FLEX": 0.8
+    "FLEX": 1.4
    },
    "CJ": {
     "RB": 12.2,
@@ -6337,7 +6337,7 @@
     "D/ST": 1.0,
     "FLEX": 2.0,
     "K": 11.0,
-    "QB": 4.84
+    "QB": 5.04
    },
    "SW": {
     "WR": 9.7,
@@ -6353,7 +6353,7 @@
     "QB": 9.96,
     "WR": 4.4,
     "RB": 9.1,
-    "FLEX": 3.1,
+    "FLEX": 4.1,
     "K": 8.0,
     "D/ST": 8.0
    },
