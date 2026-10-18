@@ -16,7 +16,7 @@ or put them in a local (gitignored) .env and `source` it first.
 """
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 # espn_api ships an outdated base URL; patch before importing League.
 import espn_api.requests.espn_requests as _espn_req
@@ -81,14 +81,32 @@ POS_NORMALIZE = {"TQB": "QB"}
 SKIP_SLOTS = {"BE", "IR", "BENCH"}
 
 
+def game_status(pl, now):
+    """Starter's NFL game state: 'bye', 'pre', 'live' or 'final'.
+
+    espn_api's game_date is a naive local datetime (same clock as now). ESPN
+    doesn't expose game clock here, so 'live' = kicked off < 3.5h ago.
+    """
+    if getattr(pl, "on_bye_week", False):
+        return "bye"
+    gd = getattr(pl, "game_date", None)
+    if gd is None:
+        return "final"
+    if now < gd:
+        return "pre"
+    return "live" if now < gd + timedelta(hours=3, minutes=30) else "final"
+
+
 def fetch_week(league, week):
-    """Return (scores_by_team_id, top_players, position_scores) for a played
-    week, else None.
+    """Return (scores_by_team_id, top_players, position_scores, live_teams) for
+    a played week, else None.
 
       scores_by_team_id : {team_id: team score}
       top_players       : {"all": [...]} every starter, best score first. The
                           page derives position tabs / filters from this list.
       position_scores   : {team_abbrev: {slot_bucket: points}}
+      live_teams        : {team_id: {score, projected, starters: [...]}} for
+                          the Live hub (only the current week's is kept)
     """
     try:
         boxes = league.box_scores(week)
@@ -96,15 +114,23 @@ def fetch_week(league, week):
         print(f"  week {week}: box_scores failed ({e})")
         return None
 
+    now = datetime.now()   # naive local, to match espn_api's game_date
     scores, all_players = {}, []
-    position_scores = {}
+    position_scores, live_teams = {}, {}
     for b in boxes:
-        for team, score, lineup in (
-                (b.home_team, b.home_score, b.home_lineup),
-                (b.away_team, b.away_score, b.away_lineup)):
+        for team, score, projected, lineup in (
+                (b.home_team, b.home_score, b.home_projected, b.home_lineup),
+                (b.away_team, b.away_score, b.away_projected, b.away_lineup)):
             if team is None or team == 0:
                 continue
             scores[team.team_id] = score
+            starters = []
+            live_teams[team.team_id] = {
+                "score": round(score, 2),
+                "projected": round(projected if projected and projected > 0
+                                   else score, 2),
+                "starters": starters,
+            }
             abbrev = getattr(team, "team_abbrev", "") or team.team_name
             slots = position_scores.setdefault(abbrev, {})
             for pl in lineup or []:
@@ -124,13 +150,62 @@ def fetch_week(league, week):
                     "slot": bucket or slot,
                     "score": round(pts, 2),
                 })
+                gd = getattr(pl, "game_date", None)
+                starters.append({
+                    "name": pl.name,
+                    "position": POS_NORMALIZE.get(pos, pos),
+                    "slot": bucket or slot,
+                    "pro_team": getattr(pl, "proTeam", ""),
+                    "opponent": getattr(pl, "pro_opponent", ""),
+                    "points": round(pts, 2),
+                    "projected": round(float(
+                        getattr(pl, "projected_points", 0) or 0), 2),
+                    "status": game_status(pl, now),
+                    "kickoff": int(gd.timestamp() * 1000) if gd else None,
+                })
 
     if not scores or all(s == 0 for s in scores.values()):
         return None
 
     all_players.sort(key=lambda p: p["score"], reverse=True)
     top_players = {"all": all_players}
-    return scores, top_players, position_scores
+    return scores, top_players, position_scores, live_teams
+
+
+LIVE_HISTORY_MAX = 400   # ~10-min snapshots; a full Sunday is ~75
+
+
+def build_live(live_week, team_meta, now_utc):
+    """Current-week block for live.html: per-team score/projection/starters
+    plus a snapshot history so the page can replay the week's rank race.
+
+    History is carried over from the previous data file while the week is the
+    same, and a snapshot is only appended when some score actually moved.
+    """
+    prev = {}
+    try:
+        with open(OUTPUT_PATH) as f:
+            prev = json.load(f).get("live") or {}
+    except (OSError, ValueError):
+        pass
+    if live_week is None:
+        return prev or None
+    week, live_teams = live_week
+    teams = {}
+    for tid, info in live_teams.items():
+        if tid in team_meta:
+            teams[team_meta[tid]["team_abbrev"] or str(tid)] = info
+    history = prev.get("history", []) if prev.get("week") == week else []
+    snap = {a: t["score"] for a, t in teams.items()}
+    if not history or history[-1]["scores"] != snap:
+        history.append({"t": now_utc.isoformat(timespec="seconds"),
+                        "scores": snap})
+    return {
+        "week": week,
+        "updated_at": now_utc.isoformat(timespec="seconds"),
+        "teams": teams,
+        "history": history[-LIVE_HISTORY_MAX:],
+    }
 
 
 def main():
@@ -176,6 +251,7 @@ def main():
     max_week = max(1, min(reg_weeks, current))
     print(f"Current scoring week: {current} -> fetching weeks 1..{max_week}")
 
+    live_week = None
     cumulative = {tid: 0.0 for tid in team_meta}
     completed_weeks = 0
     top_players_by_week = []
@@ -184,7 +260,8 @@ def main():
         res = fetch_week(league, week)
         if res is None:
             continue
-        scores, top_players, pos_scores = res
+        scores, top_players, pos_scores, live_teams = res
+        live_week = (week, live_teams)
         completed_weeks += 1
         top_players_by_week.append(top_players)
         position_scores_by_week.append(pos_scores)
@@ -225,6 +302,7 @@ def main():
         "teams": teams_out,
         "top_players_by_week": top_players_by_week,
         "position_scores_by_week": position_scores_by_week,
+        "live": build_live(live_week, team_meta, now_utc),
     }
     # Don't clobber existing standings with an empty preseason board: if no
     # weeks are done yet but a data file already exists, leave it in place so
