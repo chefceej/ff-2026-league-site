@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-18 21:50:16 UTC",
-  "last_updated": "2026-10-18T21:50:16.162194+00:00"
+  "updated_at": "2026-10-18 22:00:21 UTC",
+  "last_updated": "2026-10-18T22:00:21.771897+00:00"
  },
  "teams": [
   {
@@ -24,7 +24,7 @@
     109.7,
     128.88,
     175.42,
-    68.28
+    69.24
    ],
    "ranking_points_by_week": [
     2.0,
@@ -48,7 +48,7 @@
     1.0,
     4.0,
     8.0,
-    11.0
+    9.0
    ],
    "rank": 1,
    "total_ranking_points": 49.0
@@ -89,7 +89,7 @@
     -4.0,
     -2.0,
     1.0,
-    9.0
+    7.0
    ],
    "rank": 2,
    "total_ranking_points": 47.0
@@ -130,7 +130,7 @@
     8.0,
     6.0,
     5.0,
-    6.0
+    4.0
    ],
    "rank": 3,
    "total_ranking_points": 44.0
@@ -171,7 +171,7 @@
     0.0,
     1.0,
     -3.0,
-    4.0
+    2.0
    ],
    "rank": 4,
    "total_ranking_points": 42.0
@@ -212,9 +212,50 @@
     -3.0,
     -4.0,
     -4.0,
-    2.0
+    0.0
    ],
    "rank": 5,
+   "total_ranking_points": 40.0
+  },
+  {
+   "team_id": 11,
+   "team_name": "The Sun Gods ",
+   "team_abbrev": "RA",
+   "abbrev": "RA",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92,
+    103.76,
+    44.4
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0,
+    5.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0,
+    36.0,
+    40.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0,
+    2.0,
+    0.0
+   ],
+   "rank": 6,
    "total_ranking_points": 40.0
   },
   {
@@ -253,48 +294,7 @@
     5.0,
     9.0,
     3.0,
-    0.0
-   ],
-   "rank": 6,
-   "total_ranking_points": 38.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "The Sun Gods ",
-   "team_abbrev": "RA",
-   "abbrev": "RA",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    105.92,
-    103.76,
-    42.3
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    5.0,
-    5.0,
-    2.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    31.0,
-    36.0,
-    38.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
-    4.0,
-    2.0,
-    0.0
+    -2.0
    ],
    "rank": 7,
    "total_ranking_points": 38.0
@@ -335,7 +335,7 @@
     -1.0,
     -8.0,
     -3.0,
-    -1.0
+    -3.0
    ],
    "rank": 8,
    "total_ranking_points": 37.0
@@ -360,7 +360,7 @@
     12.0,
     4.0,
     9.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -368,7 +368,7 @@
     21.0,
     25.0,
     34.0,
-    37.0
+    36.0
    ],
    "normalized_by_week": [
     -6.0,
@@ -376,10 +376,10 @@
     2.0,
     -2.0,
     0.0,
-    -1.0
+    -4.0
    ],
    "rank": 9,
-   "total_ranking_points": 37.0
+   "total_ranking_points": 36.0
   },
   {
    "team_id": 7,
@@ -417,7 +417,7 @@
     -2.0,
     -8.0,
     -7.0,
-    -3.0
+    -5.0
    ],
    "rank": 10,
    "total_ranking_points": 35.0
@@ -442,7 +442,7 @@
     10.0,
     8.0,
     2.0,
-    4.0
+    3.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -450,7 +450,7 @@
     19.0,
     27.0,
     29.0,
-    33.0
+    32.0
    ],
    "normalized_by_week": [
     0.0,
@@ -458,10 +458,10 @@
     0.0,
     0.0,
     -5.0,
-    -5.0
+    -8.0
    ],
    "rank": 11,
-   "total_ranking_points": 33.0
+   "total_ranking_points": 32.0
   },
   {
    "team_id": 6,
@@ -499,7 +499,7 @@
     -7.0,
     -12.0,
     -15.0,
-    -10.0
+    -12.0
    ],
    "rank": 12,
    "total_ranking_points": 28.0
@@ -5217,6 +5217,14 @@
      "score": 8.0
     },
     {
+     "name": "Rams TQB",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "QB",
+     "slot": "QB",
+     "score": 7.84
+    },
+    {
      "name": "James Cook III",
      "pro_team": "BUF",
      "fantasy_team": "Team Made of Glass",
@@ -5263,14 +5271,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 6.9
-    },
-    {
-     "name": "Rams TQB",
-     "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "QB",
-     "slot": "QB",
-     "score": 6.88
     },
     {
      "name": "Garrett Wilson",
@@ -5433,6 +5433,14 @@
      "score": 3.5
     },
     {
+     "name": "Davante Adams",
+     "pro_team": "LAR",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 3.3
+    },
+    {
      "name": "Kenny Gainwell",
      "pro_team": "TB",
      "fantasy_team": "Remeber Bendel",
@@ -5511,14 +5519,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 1.4
-    },
-    {
-     "name": "Davante Adams",
-     "pro_team": "LAR",
-     "fantasy_team": "The Sun Gods ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 1.2
     },
     {
      "name": "Texans D/ST",
@@ -6272,7 +6272,7 @@
     "WR": 22.5,
     "FLEX": 8.8,
     "TE": 0.0,
-    "QB": 6.88,
+    "QB": 7.84,
     "D/ST": 2.0,
     "K": 4.0
    },
@@ -6367,7 +6367,7 @@
     "FLEX": 0.0
    },
    "RA": {
-    "WR": 11.4,
+    "WR": 13.5,
     "FLEX": 0.0,
     "QB": 0.0,
     "TE": 5.0,
@@ -6379,11 +6379,11 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-18T21:50:16+00:00",
+  "updated_at": "2026-10-18T22:00:21+00:00",
   "teams": {
    "SACK": {
-    "score": 68.28,
-    "projected": 116.49,
+    "score": 69.24,
+    "projected": 115.02,
     "starters": [
      {
       "name": "Kenneth Walker III",
@@ -6446,7 +6446,7 @@
       "slot": "QB",
       "pro_team": "LAR",
       "opponent": "None",
-      "points": 6.88,
+      "points": 7.84,
       "projected": 19.62,
       "status": "live",
       "kickoff": 1792353900000
@@ -6488,7 +6488,7 @@
    },
    "MBJG": {
     "score": 83.3,
-    "projected": 122.99,
+    "projected": 122.03,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -6803,7 +6803,7 @@
    },
    "WALT": {
     "score": 113.24,
-    "projected": 132.52,
+    "projected": 130.59,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -6908,7 +6908,7 @@
    },
    "CJ": {
     "score": 64.2,
-    "projected": 84.28,
+    "projected": 84.25,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -7013,7 +7013,7 @@
    },
    "BW": {
     "score": 107.08,
-    "projected": 127.29,
+    "projected": 127.28,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7118,7 +7118,7 @@
    },
    "BEND": {
     "score": 44.34,
-    "projected": 72.64,
+    "projected": 72.6,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7223,7 +7223,7 @@
    },
    "SW": {
     "score": 41.8,
-    "projected": 75.89,
+    "projected": 75.54,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -7328,7 +7328,7 @@
    },
    "SWSH": {
     "score": 43.56,
-    "projected": 88.82,
+    "projected": 88.72,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7433,7 +7433,7 @@
    },
    "TMOG": {
     "score": 69.8,
-    "projected": 100.64,
+    "projected": 99.23,
     "starters": [
      {
       "name": "James Cook III",
@@ -7537,8 +7537,8 @@
     ]
    },
    "RA": {
-    "score": 42.3,
-    "projected": 93.02,
+    "score": 44.4,
+    "projected": 94.25,
     "starters": [
      {
       "name": "Drake London",
@@ -7557,7 +7557,7 @@
       "slot": "WR",
       "pro_team": "LAR",
       "opponent": "ARI",
-      "points": 1.2,
+      "points": 3.3,
       "projected": 13.85,
       "status": "live",
       "kickoff": 1792353900000
@@ -7658,6 +7658,23 @@
      "SWSH": 43.56,
      "TMOG": 69.8,
      "RA": 42.3
+    }
+   },
+   {
+    "t": "2026-10-18T22:00:21+00:00",
+    "scores": {
+     "SACK": 69.24,
+     "MBJG": 83.3,
+     "PORK": 59.0,
+     "Naug": 75.12,
+     "WALT": 113.24,
+     "CJ": 64.2,
+     "BW": 107.08,
+     "BEND": 44.34,
+     "SW": 41.8,
+     "SWSH": 43.56,
+     "TMOG": 69.8,
+     "RA": 44.4
     }
    }
   ]
