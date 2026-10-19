@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-19 00:20:16 UTC",
-  "last_updated": "2026-10-19T00:20:16.261024+00:00"
+  "updated_at": "2026-10-19 00:30:18 UTC",
+  "last_updated": "2026-10-19T00:30:18.437294+00:00"
  },
  "teams": [
   {
@@ -147,7 +147,7 @@
     107.1,
     118.0,
     88.24,
-    116.08
+    117.58
    ],
    "ranking_points_by_week": [
     4.0,
@@ -188,7 +188,7 @@
     119.86,
     90.12,
     133.0,
-    87.0
+    86.8
    ],
    "ranking_points_by_week": [
     1.0,
@@ -229,7 +229,7 @@
     92.24,
     131.3,
     75.94,
-    44.0
+    44.36
    ],
    "ranking_points_by_week": [
     9.0,
@@ -5529,6 +5529,14 @@
      "score": 2.0
     },
     {
+     "name": "Javonte Williams",
+     "pro_team": "DAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 1.5
+    },
+    {
      "name": "Harold Fannin Jr.",
      "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
@@ -5551,6 +5559,14 @@
      "position": "K",
      "slot": "K",
      "score": 1.0
+    },
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.36
     },
     {
      "name": "Christian Watson",
@@ -5625,14 +5641,6 @@
      "score": 0.0
     },
     {
-     "name": "Javonte Williams",
-     "pro_team": "DAL",
-     "fantasy_team": "JSN Derulo ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 0.0
-    },
-    {
      "name": "Cam Skattebo",
      "pro_team": "NYG",
      "fantasy_team": "JSN Derulo ",
@@ -5657,27 +5665,11 @@
      "score": 0.0
     },
     {
-     "name": "Cowboys TQB",
-     "pro_team": "DAL",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "QB",
-     "slot": "QB",
-     "score": 0.0
-    },
-    {
      "name": "Terry McLaurin",
      "pro_team": "WSH",
      "fantasy_team": "Swishington Football Team",
      "position": "WR",
      "slot": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "MarShawn Lloyd",
-     "pro_team": "GB",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "slot": "RB",
      "score": 0.0
     },
     {
@@ -5711,6 +5703,14 @@
      "position": "RB",
      "slot": "RB",
      "score": 0.0
+    },
+    {
+     "name": "MarShawn Lloyd",
+     "pro_team": "GB",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "slot": "RB",
+     "score": -0.2
     }
    ]
   }
@@ -6323,7 +6323,7 @@
    },
    "BW": {
     "WR": 31.6,
-    "RB": 0.0,
+    "RB": 1.5,
     "TE": 15.5,
     "FLEX": 16.0,
     "D/ST": 13.0,
@@ -6343,7 +6343,7 @@
     "WR": 9.7,
     "RB": 8.1,
     "FLEX": 17.0,
-    "QB": 0.0,
+    "QB": 0.36,
     "K": 1.0,
     "TE": 2.2,
     "D/ST": 6.0
@@ -6352,7 +6352,7 @@
     "TE": 9.0,
     "QB": 18.3,
     "WR": 4.4,
-    "RB": 9.1,
+    "RB": 8.9,
     "FLEX": 24.2,
     "K": 8.0,
     "D/ST": 14.0
@@ -6379,11 +6379,11 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-19T00:20:16+00:00",
+  "updated_at": "2026-10-19T00:30:18+00:00",
   "teams": {
    "SACK": {
     "score": 89.28,
-    "projected": 112.72,
+    "projected": 111.24,
     "starters": [
      {
       "name": "Kenneth Walker III",
@@ -6488,7 +6488,7 @@
    },
    "MBJG": {
     "score": 81.5,
-    "projected": 115.71,
+    "projected": 113.55,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 75.12,
-    "projected": 92.17,
+    "projected": 91.5,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6908,7 +6908,7 @@
    },
    "CJ": {
     "score": 72.9,
-    "projected": 83.94,
+    "projected": 83.25,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -7012,8 +7012,8 @@
     ]
    },
    "BW": {
-    "score": 116.08,
-    "projected": 131.63,
+    "score": 117.58,
+    "projected": 132.15,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7032,7 +7032,7 @@
       "slot": "RB",
       "pro_team": "DAL",
       "opponent": "GB",
-      "points": 0.0,
+      "points": 1.5,
       "projected": 15.55,
       "status": "live",
       "kickoff": 1792369200000
@@ -7222,8 +7222,8 @@
     ]
    },
    "SW": {
-    "score": 44.0,
-    "projected": 76.06,
+    "score": 44.36,
+    "projected": 74.4,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -7286,7 +7286,7 @@
       "slot": "QB",
       "pro_team": "DAL",
       "opponent": "None",
-      "points": 0.0,
+      "points": 0.36,
       "projected": 17.12,
       "status": "live",
       "kickoff": 1792369200000
@@ -7327,8 +7327,8 @@
     ]
    },
    "SWSH": {
-    "score": 87.0,
-    "projected": 107.16,
+    "score": 86.8,
+    "projected": 106.33,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7402,7 +7402,7 @@
       "slot": "RB",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": 0.0,
+      "points": -0.2,
       "projected": 10.06,
       "status": "live",
       "kickoff": 1792369200000
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 48.8,
-    "projected": 89.92,
+    "projected": 89.46,
     "starters": [
      {
       "name": "Drake London",
@@ -7843,6 +7843,23 @@
      "BEND": 57.82,
      "SW": 44.0,
      "SWSH": 87.0,
+     "TMOG": 99.8,
+     "RA": 48.8
+    }
+   },
+   {
+    "t": "2026-10-19T00:30:18+00:00",
+    "scores": {
+     "SACK": 89.28,
+     "MBJG": 81.5,
+     "PORK": 65.3,
+     "Naug": 75.12,
+     "WALT": 122.24,
+     "CJ": 72.9,
+     "BW": 117.58,
+     "BEND": 57.82,
+     "SW": 44.36,
+     "SWSH": 86.8,
      "TMOG": 99.8,
      "RA": 48.8
     }
