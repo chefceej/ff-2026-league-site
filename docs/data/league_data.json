@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-19 00:10:19 UTC",
-  "last_updated": "2026-10-19T00:10:19.792288+00:00"
+  "updated_at": "2026-10-19 00:20:16 UTC",
+  "last_updated": "2026-10-19T00:20:16.261024+00:00"
  },
  "teams": [
   {
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-19T00:10:19+00:00",
+  "updated_at": "2026-10-19T00:20:16+00:00",
   "teams": {
    "SACK": {
     "score": 89.28,
@@ -6415,7 +6415,7 @@
       "opponent": "DAL",
       "points": 0.0,
       "projected": 13.68,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -6437,7 +6437,7 @@
       "opponent": "DAL",
       "points": 0.0,
       "projected": 9.76,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -6564,7 +6564,7 @@
       "opponent": "DAL",
       "points": 0.0,
       "projected": 13.31,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -6575,7 +6575,7 @@
       "opponent": "None",
       "points": 0.0,
       "projected": 20.9,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -6741,7 +6741,7 @@
       "opponent": "GB",
       "points": 0.0,
       "projected": 10.5,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -6940,7 +6940,7 @@
       "opponent": "GB",
       "points": 0.0,
       "projected": 11.04,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -7034,7 +7034,7 @@
       "opponent": "GB",
       "points": 0.0,
       "projected": 15.55,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -7233,7 +7233,7 @@
       "opponent": "GB",
       "points": 0.0,
       "projected": 14.94,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -7288,7 +7288,7 @@
       "opponent": "None",
       "points": 0.0,
       "projected": 17.12,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -7404,7 +7404,7 @@
       "opponent": "DAL",
       "points": 0.0,
       "projected": 10.06,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      },
      {
@@ -7636,7 +7636,7 @@
       "opponent": "DAL",
       "points": 0.0,
       "projected": 7.32,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792369200000
      }
     ]
