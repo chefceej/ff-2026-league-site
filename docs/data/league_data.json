@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-19 03:20:16 UTC",
-  "last_updated": "2026-10-19T03:20:16.735043+00:00"
+  "updated_at": "2026-10-19 03:30:17 UTC",
+  "last_updated": "2026-10-19T03:30:17.216737+00:00"
  },
  "teams": [
   {
@@ -24,7 +24,7 @@
     109.7,
     128.88,
     175.42,
-    102.08
+    103.38
    ],
    "ranking_points_by_week": [
     2.0,
@@ -188,7 +188,7 @@
     119.86,
     90.12,
     133.0,
-    87.4
+    88.0
    ],
    "ranking_points_by_week": [
     1.0,
@@ -229,7 +229,7 @@
     101.04,
     115.3,
     115.18,
-    121.02
+    121.34
    ],
    "ranking_points_by_week": [
     5.0,
@@ -311,7 +311,7 @@
     92.24,
     131.3,
     75.94,
-    56.76
+    57.28
    ],
    "ranking_points_by_week": [
     9.0,
@@ -4942,7 +4942,7 @@
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
      "slot": "QB",
-     "score": 20.12
+     "score": 20.44
     },
     {
      "name": "Jonathan Taylor",
@@ -5409,6 +5409,14 @@
      "score": 6.3
     },
     {
+     "name": "Tucker Kraft",
+     "pro_team": "GB",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "TE",
+     "slot": "TE",
+     "score": 6.2
+    },
+    {
      "name": "Patriots D/ST",
      "pro_team": "NE",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -5473,14 +5481,6 @@
      "score": 5.0
     },
     {
-     "name": "Tucker Kraft",
-     "pro_team": "GB",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "TE",
-     "slot": "TE",
-     "score": 4.9
-    },
-    {
      "name": "Derrick Henry",
      "pro_team": "BAL",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -5495,6 +5495,14 @@
      "position": "WR",
      "slot": "WR",
      "score": 4.4
+    },
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "QB",
+     "slot": "QB",
+     "score": 4.38
     },
     {
      "name": "A.J. Brown",
@@ -5527,14 +5535,6 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 4.0
-    },
-    {
-     "name": "Cowboys TQB",
-     "pro_team": "DAL",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "QB",
-     "slot": "QB",
-     "score": 3.86
     },
     {
      "name": "Rhamondre Stevenson",
@@ -5638,7 +5638,7 @@
      "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "slot": "RB",
-     "score": 0.4
+     "score": 1.0
     },
     {
      "name": "Mike Evans",
@@ -6271,7 +6271,7 @@
     "RB": 35.1,
     "WR": 30.4,
     "FLEX": 8.8,
-    "TE": 4.9,
+    "TE": 6.2,
     "QB": 16.88,
     "D/ST": 2.0,
     "K": 4.0
@@ -6282,7 +6282,7 @@
     "RB": 27.9,
     "WR": 32.1,
     "K": 9.0,
-    "QB": 20.12,
+    "QB": 20.44,
     "D/ST": 3.0
    },
    "PORK": {
@@ -6343,7 +6343,7 @@
     "WR": 18.6,
     "RB": 8.1,
     "FLEX": 17.0,
-    "QB": 3.86,
+    "QB": 4.38,
     "K": 1.0,
     "TE": 2.2,
     "D/ST": 6.0
@@ -6352,7 +6352,7 @@
     "TE": 9.0,
     "QB": 18.3,
     "WR": 4.4,
-    "RB": 9.5,
+    "RB": 10.1,
     "FLEX": 24.2,
     "K": 8.0,
     "D/ST": 14.0
@@ -6379,11 +6379,11 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-19T03:20:16+00:00",
+  "updated_at": "2026-10-19T03:30:17+00:00",
   "teams": {
    "SACK": {
-    "score": 102.08,
-    "projected": 104.7,
+    "score": 103.38,
+    "projected": 104.96,
     "starters": [
      {
       "name": "Kenneth Walker III",
@@ -6435,7 +6435,7 @@
       "slot": "TE",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": 4.9,
+      "points": 6.2,
       "projected": 9.76,
       "status": "live",
       "kickoff": 1792369200000
@@ -6487,8 +6487,8 @@
     ]
    },
    "MBJG": {
-    "score": 121.02,
-    "projected": 124.85,
+    "score": 121.34,
+    "projected": 123.65,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -6573,7 +6573,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 20.12,
+      "points": 20.44,
       "projected": 20.9,
       "status": "live",
       "kickoff": 1792369200000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 76.12,
-    "projected": 83.84,
+    "projected": 83.38,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6908,7 +6908,7 @@
    },
    "CJ": {
     "score": 79.4,
-    "projected": 80.64,
+    "projected": 80.15,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -7013,7 +7013,7 @@
    },
    "BW": {
     "score": 127.58,
-    "projected": 129.32,
+    "projected": 128.63,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7222,8 +7222,8 @@
     ]
    },
    "SW": {
-    "score": 56.76,
-    "projected": 60.35,
+    "score": 57.28,
+    "projected": 59.44,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -7286,7 +7286,7 @@
       "slot": "QB",
       "pro_team": "DAL",
       "opponent": "None",
-      "points": 3.86,
+      "points": 4.38,
       "projected": 17.12,
       "status": "live",
       "kickoff": 1792369200000
@@ -7327,8 +7327,8 @@
     ]
    },
    "SWSH": {
-    "score": 87.4,
-    "projected": 98.62,
+    "score": 88.0,
+    "projected": 98.78,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7402,7 +7402,7 @@
       "slot": "RB",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": 0.4,
+      "points": 1.0,
       "projected": 10.06,
       "status": "live",
       "kickoff": 1792369200000
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 58.0,
-    "projected": 92.62,
+    "projected": 92.29,
     "starters": [
      {
       "name": "Drake London",
@@ -8132,6 +8132,23 @@
      "BEND": 57.82,
      "SW": 56.76,
      "SWSH": 87.4,
+     "TMOG": 99.8,
+     "RA": 58.0
+    }
+   },
+   {
+    "t": "2026-10-19T03:30:17+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.34,
+     "PORK": 65.3,
+     "Naug": 76.12,
+     "WALT": 122.24,
+     "CJ": 79.4,
+     "BW": 127.58,
+     "BEND": 57.82,
+     "SW": 57.28,
+     "SWSH": 88.0,
      "TMOG": 99.8,
      "RA": 58.0
     }
