@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-19 02:40:20 UTC",
-  "last_updated": "2026-10-19T02:40:20.087051+00:00"
+  "updated_at": "2026-10-19 02:50:17 UTC",
+  "last_updated": "2026-10-19T02:50:17.087947+00:00"
  },
  "teams": [
   {
@@ -270,7 +270,7 @@
     92.24,
     131.3,
     75.94,
-    54.06
+    54.94
    ],
    "ranking_points_by_week": [
     9.0,
@@ -352,7 +352,7 @@
     102.6,
     78.54,
     177.16,
-    75.0
+    76.2
    ],
    "ranking_points_by_week": [
     8.0,
@@ -360,7 +360,7 @@
     6.0,
     1.0,
     12.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -368,7 +368,7 @@
     18.0,
     19.0,
     31.0,
-    36.0
+    37.0
    ],
    "normalized_by_week": [
     1.0,
@@ -376,10 +376,10 @@
     -1.0,
     -8.0,
     -3.0,
-    -4.0
+    -3.0
    ],
    "rank": 9,
-   "total_ranking_points": 36.0
+   "total_ranking_points": 37.0
   },
   {
    "team_id": 7,
@@ -483,7 +483,7 @@
     1.0,
     3.0,
     4.0,
-    6.0
+    5.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -491,7 +491,7 @@
     12.0,
     15.0,
     19.0,
-    25.0
+    24.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -499,10 +499,10 @@
     -7.0,
     -12.0,
     -15.0,
-    -15.0
+    -16.0
    ],
    "rank": 12,
-   "total_ranking_points": 25.0
+   "total_ranking_points": 24.0
   }
  ],
  "top_players_by_week": [
@@ -5529,6 +5529,14 @@
      "score": 3.6
     },
     {
+     "name": "George Pickens",
+     "pro_team": "DAL",
+     "fantasy_team": "Angel Reese Hoop Mixtape",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 3.3
+    },
+    {
      "name": "Rams D/ST",
      "pro_team": "LAR",
      "fantasy_team": "The Lizard Kings",
@@ -5543,6 +5551,14 @@
      "position": "RB",
      "slot": "RB",
      "score": 2.9
+    },
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "QB",
+     "slot": "QB",
+     "score": 2.54
     },
     {
      "name": "Ladd McConkey",
@@ -5569,14 +5585,6 @@
      "score": 2.1
     },
     {
-     "name": "George Pickens",
-     "pro_team": "DAL",
-     "fantasy_team": "Angel Reese Hoop Mixtape",
-     "position": "WR",
-     "slot": "FLEX",
-     "score": 2.1
-    },
-    {
      "name": "Eagles D/ST",
      "pro_team": "PHI",
      "fantasy_team": "Bijan These Nuts",
@@ -5591,14 +5599,6 @@
      "position": "WR",
      "slot": "FLEX",
      "score": 2.0
-    },
-    {
-     "name": "Cowboys TQB",
-     "pro_team": "DAL",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "QB",
-     "slot": "QB",
-     "score": 1.66
     },
     {
      "name": "Harold Fannin Jr.",
@@ -6315,7 +6315,7 @@
    "CJ": {
     "RB": 12.2,
     "WR": 12.6,
-    "FLEX": 2.1,
+    "FLEX": 3.3,
     "QB": 23.8,
     "TE": 7.3,
     "K": 12.0,
@@ -6343,7 +6343,7 @@
     "WR": 18.1,
     "RB": 8.1,
     "FLEX": 17.0,
-    "QB": 1.66,
+    "QB": 2.54,
     "K": 1.0,
     "TE": 2.2,
     "D/ST": 6.0
@@ -6379,11 +6379,11 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-19T02:40:20+00:00",
+  "updated_at": "2026-10-19T02:50:17+00:00",
   "teams": {
    "SACK": {
     "score": 102.08,
-    "projected": 108.48,
+    "projected": 107.4,
     "starters": [
      {
       "name": "Kenneth Walker III",
@@ -6488,7 +6488,7 @@
    },
    "MBJG": {
     "score": 115.4,
-    "projected": 124.74,
+    "projected": 123.16,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 76.12,
-    "projected": 85.53,
+    "projected": 85.05,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6907,8 +6907,8 @@
     ]
    },
    "CJ": {
-    "score": 75.0,
-    "projected": 78.02,
+    "score": 76.2,
+    "projected": 78.71,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -6938,7 +6938,7 @@
       "slot": "FLEX",
       "pro_team": "DAL",
       "opponent": "GB",
-      "points": 2.1,
+      "points": 3.3,
       "projected": 11.04,
       "status": "live",
       "kickoff": 1792369200000
@@ -7013,7 +7013,7 @@
    },
    "BW": {
     "score": 127.58,
-    "projected": 131.83,
+    "projected": 131.11,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7222,8 +7222,8 @@
     ]
    },
    "SW": {
-    "score": 54.06,
-    "projected": 62.81,
+    "score": 54.94,
+    "projected": 62.22,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -7286,7 +7286,7 @@
       "slot": "QB",
       "pro_team": "DAL",
       "opponent": "None",
-      "points": 1.66,
+      "points": 2.54,
       "projected": 17.12,
       "status": "live",
       "kickoff": 1792369200000
@@ -7328,7 +7328,7 @@
    },
    "SWSH": {
     "score": 87.4,
-    "projected": 100.24,
+    "projected": 99.78,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 57.3,
-    "projected": 93.1,
+    "projected": 92.76,
     "starters": [
      {
       "name": "Drake London",
@@ -8080,6 +8080,23 @@
      "BW": 127.58,
      "BEND": 57.82,
      "SW": 54.06,
+     "SWSH": 87.4,
+     "TMOG": 99.8,
+     "RA": 57.3
+    }
+   },
+   {
+    "t": "2026-10-19T02:50:17+00:00",
+    "scores": {
+     "SACK": 102.08,
+     "MBJG": 115.4,
+     "PORK": 65.3,
+     "Naug": 76.12,
+     "WALT": 122.24,
+     "CJ": 76.2,
+     "BW": 127.58,
+     "BEND": 57.82,
+     "SW": 54.94,
      "SWSH": 87.4,
      "TMOG": 99.8,
      "RA": 57.3
