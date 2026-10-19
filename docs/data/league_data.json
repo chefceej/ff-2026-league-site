@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-19 02:00:18 UTC",
-  "last_updated": "2026-10-19T02:00:18.541254+00:00"
+  "updated_at": "2026-10-19 02:10:15 UTC",
+  "last_updated": "2026-10-19T02:10:15.910294+00:00"
  },
  "teams": [
   {
@@ -229,7 +229,7 @@
     101.04,
     115.3,
     115.18,
-    113.6
+    113.72
    ],
    "ranking_points_by_week": [
     5.0,
@@ -4982,7 +4982,7 @@
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
      "slot": "QB",
-     "score": 17.0
+     "score": 17.12
     },
     {
      "name": "Tyler Bass",
@@ -6282,7 +6282,7 @@
     "RB": 27.9,
     "WR": 27.8,
     "K": 9.0,
-    "QB": 17.0,
+    "QB": 17.12,
     "D/ST": 3.0
    },
    "PORK": {
@@ -6379,11 +6379,11 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-19T02:00:18+00:00",
+  "updated_at": "2026-10-19T02:10:15+00:00",
   "teams": {
    "SACK": {
     "score": 97.68,
-    "projected": 109.4,
+    "projected": 108.95,
     "starters": [
      {
       "name": "Kenneth Walker III",
@@ -6487,8 +6487,8 @@
     ]
    },
    "MBJG": {
-    "score": 113.6,
-    "projected": 130.7,
+    "score": 113.72,
+    "projected": 130.17,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -6573,7 +6573,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 17.0,
+      "points": 17.12,
       "projected": 20.9,
       "status": "live",
       "kickoff": 1792369200000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 75.12,
-    "projected": 86.92,
+    "projected": 86.72,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6908,7 +6908,7 @@
    },
    "CJ": {
     "score": 75.0,
-    "projected": 80.52,
+    "projected": 80.31,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -7013,7 +7013,7 @@
    },
    "BW": {
     "score": 120.08,
-    "projected": 127.85,
+    "projected": 127.56,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7223,7 +7223,7 @@
    },
    "SW": {
     "score": 46.64,
-    "projected": 62.67,
+    "projected": 62.06,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -7328,7 +7328,7 @@
    },
    "SWSH": {
     "score": 86.8,
-    "projected": 101.93,
+    "projected": 101.74,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 54.8,
-    "projected": 92.26,
+    "projected": 92.12,
     "starters": [
      {
       "name": "Drake London",
@@ -8005,6 +8005,23 @@
     "scores": {
      "SACK": 97.68,
      "MBJG": 113.6,
+     "PORK": 65.3,
+     "Naug": 75.12,
+     "WALT": 122.24,
+     "CJ": 75.0,
+     "BW": 120.08,
+     "BEND": 57.82,
+     "SW": 46.64,
+     "SWSH": 86.8,
+     "TMOG": 99.8,
+     "RA": 54.8
+    }
+   },
+   {
+    "t": "2026-10-19T02:10:15+00:00",
+    "scores": {
+     "SACK": 97.68,
+     "MBJG": 113.72,
      "PORK": 65.3,
      "Naug": 75.12,
      "WALT": 122.24,
