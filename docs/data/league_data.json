@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-19 00:50:18 UTC",
-  "last_updated": "2026-10-19T00:50:18.411834+00:00"
+  "updated_at": "2026-10-19 01:00:19 UTC",
+  "last_updated": "2026-10-19T01:00:19.264451+00:00"
  },
  "teams": [
   {
@@ -48,7 +48,7 @@
     1.0,
     4.0,
     8.0,
-    10.0
+    11.0
    ],
    "rank": 1,
    "total_ranking_points": 50.0
@@ -89,7 +89,7 @@
     -4.0,
     -2.0,
     1.0,
-    7.0
+    8.0
    ],
    "rank": 2,
    "total_ranking_points": 47.0
@@ -130,7 +130,7 @@
     8.0,
     6.0,
     5.0,
-    3.0
+    4.0
    ],
    "rank": 3,
    "total_ranking_points": 43.0
@@ -171,7 +171,7 @@
     0.0,
     1.0,
     -3.0,
-    2.0
+    3.0
    ],
    "rank": 4,
    "total_ranking_points": 42.0
@@ -212,7 +212,7 @@
     2.0,
     -2.0,
     0.0,
-    1.0
+    2.0
    ],
    "rank": 5,
    "total_ranking_points": 41.0
@@ -229,7 +229,7 @@
     101.04,
     115.3,
     115.18,
-    101.46
+    99.46
    ],
    "ranking_points_by_week": [
     5.0,
@@ -237,7 +237,7 @@
     5.0,
     7.0,
     7.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -245,7 +245,7 @@
     16.0,
     23.0,
     30.0,
-    40.0
+    39.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -256,7 +256,7 @@
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 40.0
+   "total_ranking_points": 39.0
   },
   {
    "team_id": 1,
@@ -270,7 +270,7 @@
     92.24,
     131.3,
     75.94,
-    45.78
+    48.88
    ],
    "ranking_points_by_week": [
     9.0,
@@ -294,7 +294,7 @@
     5.0,
     9.0,
     3.0,
-    -2.0
+    -1.0
    ],
    "rank": 7,
    "total_ranking_points": 38.0
@@ -335,10 +335,51 @@
     7.0,
     4.0,
     2.0,
-    -2.0
+    -1.0
    ],
    "rank": 8,
    "total_ranking_points": 38.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    99.8
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    10.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    37.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -2.0
+   ],
+   "rank": 9,
+   "total_ranking_points": 37.0
   },
   {
    "team_id": 2,
@@ -376,48 +417,7 @@
     -1.0,
     -8.0,
     -3.0,
-    -4.0
-   ],
-   "rank": 9,
-   "total_ranking_points": 36.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    99.8
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0
+    -3.0
    ],
    "rank": 10,
    "total_ranking_points": 36.0
@@ -458,7 +458,7 @@
     0.0,
     0.0,
     -5.0,
-    -8.0
+    -7.0
    ],
    "rank": 11,
    "total_ranking_points": 32.0
@@ -499,7 +499,7 @@
     -7.0,
     -12.0,
     -15.0,
-    -15.0
+    -14.0
    ],
    "rank": 12,
    "total_ranking_points": 25.0
@@ -5281,14 +5281,6 @@
      "score": 8.4
     },
     {
-     "name": "Packers TQB",
-     "pro_team": "GB",
-     "fantasy_team": "The Lizard Kings",
-     "position": "QB",
-     "slot": "QB",
-     "score": 8.36
-    },
-    {
      "name": "Kyren Williams",
      "pro_team": "LAR",
      "fantasy_team": "Bijan These Nuts",
@@ -5359,6 +5351,14 @@
      "position": "WR",
      "slot": "WR",
      "score": 6.4
+    },
+    {
+     "name": "Packers TQB",
+     "pro_team": "GB",
+     "fantasy_team": "The Lizard Kings",
+     "position": "QB",
+     "slot": "QB",
+     "score": 6.36
     },
     {
      "name": "Bijan Robinson",
@@ -5497,6 +5497,14 @@
      "score": 3.2
     },
     {
+     "name": "CeeDee Lamb",
+     "pro_team": "DAL",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "WR",
+     "slot": "WR",
+     "score": 3.2
+    },
+    {
      "name": "Rams D/ST",
      "pro_team": "LAR",
      "fantasy_team": "The Lizard Kings",
@@ -5561,6 +5569,14 @@
      "score": 2.0
     },
     {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "QB",
+     "slot": "QB",
+     "score": 1.68
+    },
+    {
      "name": "Javonte Williams",
      "pro_team": "DAL",
      "fantasy_team": "JSN Derulo ",
@@ -5577,14 +5593,6 @@
      "score": 1.4
     },
     {
-     "name": "CeeDee Lamb",
-     "pro_team": "DAL",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "WR",
-     "slot": "WR",
-     "score": 1.1
-    },
-    {
      "name": "Texans D/ST",
      "pro_team": "HOU",
      "fantasy_team": "Remeber Bendel",
@@ -5599,14 +5607,6 @@
      "position": "K",
      "slot": "K",
      "score": 1.0
-    },
-    {
-     "name": "Cowboys TQB",
-     "pro_team": "DAL",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "QB",
-     "slot": "QB",
-     "score": 0.68
     },
     {
      "name": "Tucker Kraft",
@@ -6282,7 +6282,7 @@
     "RB": 27.9,
     "WR": 24.3,
     "K": 9.0,
-    "QB": 8.36,
+    "QB": 6.36,
     "D/ST": 3.0
    },
    "PORK": {
@@ -6340,10 +6340,10 @@
     "QB": 18.52
    },
    "SW": {
-    "WR": 10.8,
+    "WR": 12.9,
     "RB": 8.1,
     "FLEX": 17.0,
-    "QB": 0.68,
+    "QB": 1.68,
     "K": 1.0,
     "TE": 2.2,
     "D/ST": 6.0
@@ -6379,11 +6379,11 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-19T00:50:18+00:00",
+  "updated_at": "2026-10-19T01:00:19+00:00",
   "teams": {
    "SACK": {
     "score": 92.48,
-    "projected": 111.07,
+    "projected": 110.06,
     "starters": [
      {
       "name": "Kenneth Walker III",
@@ -6487,8 +6487,8 @@
     ]
    },
    "MBJG": {
-    "score": 101.46,
-    "projected": 128.6,
+    "score": 99.46,
+    "projected": 125.11,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -6573,7 +6573,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 8.36,
+      "points": 6.36,
       "projected": 20.9,
       "status": "live",
       "kickoff": 1792369200000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 75.12,
-    "projected": 90.0,
+    "projected": 89.54,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6908,7 +6908,7 @@
    },
    "CJ": {
     "score": 72.9,
-    "projected": 81.66,
+    "projected": 81.18,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -7013,7 +7013,7 @@
    },
    "BW": {
     "score": 117.58,
-    "projected": 129.92,
+    "projected": 129.24,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7222,8 +7222,8 @@
     ]
    },
    "SW": {
-    "score": 45.78,
-    "projected": 71.21,
+    "score": 48.88,
+    "projected": 72.92,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -7231,7 +7231,7 @@
       "slot": "WR",
       "pro_team": "DAL",
       "opponent": "GB",
-      "points": 1.1,
+      "points": 3.2,
       "projected": 14.94,
       "status": "live",
       "kickoff": 1792369200000
@@ -7286,7 +7286,7 @@
       "slot": "QB",
       "pro_team": "DAL",
       "opponent": "None",
-      "points": 0.68,
+      "points": 1.68,
       "projected": 17.12,
       "status": "live",
       "kickoff": 1792369200000
@@ -7328,7 +7328,7 @@
    },
    "SWSH": {
     "score": 86.8,
-    "projected": 104.88,
+    "projected": 104.44,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 50.8,
-    "projected": 90.41,
+    "projected": 90.09,
     "starters": [
      {
       "name": "Drake London",
@@ -7893,6 +7893,23 @@
      "BW": 117.58,
      "BEND": 57.82,
      "SW": 45.78,
+     "SWSH": 86.8,
+     "TMOG": 99.8,
+     "RA": 50.8
+    }
+   },
+   {
+    "t": "2026-10-19T01:00:19+00:00",
+    "scores": {
+     "SACK": 92.48,
+     "MBJG": 99.46,
+     "PORK": 65.3,
+     "Naug": 75.12,
+     "WALT": 122.24,
+     "CJ": 72.9,
+     "BW": 117.58,
+     "BEND": 57.82,
+     "SW": 48.88,
      "SWSH": 86.8,
      "TMOG": 99.8,
      "RA": 50.8
