@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-19 02:50:17 UTC",
-  "last_updated": "2026-10-19T02:50:17.087947+00:00"
+  "updated_at": "2026-10-19 03:00:19 UTC",
+  "last_updated": "2026-10-19T03:00:19.715199+00:00"
  },
  "teams": [
   {
@@ -229,7 +229,7 @@
     101.04,
     115.3,
     115.18,
-    115.4
+    121.02
    ],
    "ranking_points_by_week": [
     5.0,
@@ -257,6 +257,47 @@
    ],
    "rank": 6,
    "total_ranking_points": 40.0
+  },
+  {
+   "team_id": 11,
+   "team_name": "The Sun Gods ",
+   "team_abbrev": "RA",
+   "abbrev": "RA",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92,
+    103.76,
+    58.0
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0,
+    5.0,
+    3.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0,
+    36.0,
+    39.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0,
+    2.0,
+    -1.0
+   ],
+   "rank": 7,
+   "total_ranking_points": 39.0
   },
   {
    "team_id": 1,
@@ -294,47 +335,6 @@
     5.0,
     9.0,
     3.0,
-    -2.0
-   ],
-   "rank": 7,
-   "total_ranking_points": 38.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "The Sun Gods ",
-   "team_abbrev": "RA",
-   "abbrev": "RA",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    105.92,
-    103.76,
-    57.3
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    5.0,
-    5.0,
-    2.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    31.0,
-    36.0,
-    38.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
-    4.0,
-    2.0,
     -2.0
    ],
    "rank": 8,
@@ -442,7 +442,7 @@
     10.0,
     8.0,
     2.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -450,7 +450,7 @@
     19.0,
     27.0,
     29.0,
-    32.0
+    31.0
    ],
    "normalized_by_week": [
     0.0,
@@ -458,10 +458,10 @@
     0.0,
     0.0,
     -5.0,
-    -8.0
+    -9.0
    ],
    "rank": 11,
-   "total_ranking_points": 32.0
+   "total_ranking_points": 31.0
   },
   {
    "team_id": 6,
@@ -4937,6 +4937,14 @@
      "score": 20.9
     },
     {
+     "name": "Packers TQB",
+     "pro_team": "GB",
+     "fantasy_team": "The Lizard Kings",
+     "position": "QB",
+     "slot": "QB",
+     "score": 20.12
+    },
+    {
      "name": "Jonathan Taylor",
      "pro_team": "IND",
      "fantasy_team": "The Lizard Kings",
@@ -4945,20 +4953,20 @@
      "score": 20.1
     },
     {
+     "name": "Matthew Golden",
+     "pro_team": "GB",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "WR",
+     "score": 19.4
+    },
+    {
      "name": "Jaxon Smith-Njigba",
      "pro_team": "SEA",
      "fantasy_team": "JSN Derulo ",
      "position": "WR",
      "slot": "WR",
      "score": 19.4
-    },
-    {
-     "name": "Packers TQB",
-     "pro_team": "GB",
-     "fantasy_team": "The Lizard Kings",
-     "position": "QB",
-     "slot": "QB",
-     "score": 18.8
     },
     {
      "name": "Chuba Hubbard",
@@ -5023,14 +5031,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 15.5
-    },
-    {
-     "name": "Matthew Golden",
-     "pro_team": "GB",
-     "fantasy_team": "The Lizard Kings",
-     "position": "WR",
-     "slot": "WR",
-     "score": 15.1
     },
     {
      "name": "Emeka Egbuka",
@@ -5225,6 +5225,14 @@
      "score": 9.4
     },
     {
+     "name": "Pierre Strong Jr.",
+     "pro_team": "GB",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 9.2
+    },
+    {
      "name": "Woody Marks",
      "pro_team": "HOU",
      "fantasy_team": "Swishington Football Team",
@@ -5287,14 +5295,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 8.8
-    },
-    {
-     "name": "Pierre Strong Jr.",
-     "pro_team": "GB",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 8.5
     },
     {
      "name": "Parker Washington",
@@ -6280,9 +6280,9 @@
     "FLEX": 20.1,
     "TE": 8.8,
     "RB": 27.9,
-    "WR": 27.8,
+    "WR": 32.1,
     "K": 9.0,
-    "QB": 18.8,
+    "QB": 20.12,
     "D/ST": 3.0
    },
    "PORK": {
@@ -6373,17 +6373,17 @@
     "TE": 7.3,
     "D/ST": 4.0,
     "K": 8.0,
-    "RB": 22.4
+    "RB": 23.1
    }
   }
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-19T02:50:17+00:00",
+  "updated_at": "2026-10-19T03:00:19+00:00",
   "teams": {
    "SACK": {
     "score": 102.08,
-    "projected": 107.4,
+    "projected": 106.35,
     "starters": [
      {
       "name": "Kenneth Walker III",
@@ -6487,8 +6487,8 @@
     ]
    },
    "MBJG": {
-    "score": 115.4,
-    "projected": 123.16,
+    "score": 121.02,
+    "projected": 127.25,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -6562,7 +6562,7 @@
       "slot": "WR",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": 15.1,
+      "points": 19.4,
       "projected": 13.31,
       "status": "live",
       "kickoff": 1792369200000
@@ -6573,7 +6573,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 18.8,
+      "points": 20.12,
       "projected": 20.9,
       "status": "live",
       "kickoff": 1792369200000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 76.12,
-    "projected": 85.05,
+    "projected": 84.58,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6908,7 +6908,7 @@
    },
    "CJ": {
     "score": 76.2,
-    "projected": 78.71,
+    "projected": 78.21,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -7013,7 +7013,7 @@
    },
    "BW": {
     "score": 127.58,
-    "projected": 131.11,
+    "projected": 130.41,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7223,7 +7223,7 @@
    },
    "SW": {
     "score": 54.94,
-    "projected": 62.22,
+    "projected": 60.77,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -7328,7 +7328,7 @@
    },
    "SWSH": {
     "score": 87.4,
-    "projected": 99.78,
+    "projected": 99.33,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7537,8 +7537,8 @@
     ]
    },
    "RA": {
-    "score": 57.3,
-    "projected": 92.76,
+    "score": 58.0,
+    "projected": 93.13,
     "starters": [
      {
       "name": "Drake London",
@@ -7634,7 +7634,7 @@
       "slot": "RB",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": 8.5,
+      "points": 9.2,
       "projected": 7.32,
       "status": "live",
       "kickoff": 1792369200000
@@ -8100,6 +8100,23 @@
      "SWSH": 87.4,
      "TMOG": 99.8,
      "RA": 57.3
+    }
+   },
+   {
+    "t": "2026-10-19T03:00:19+00:00",
+    "scores": {
+     "SACK": 102.08,
+     "MBJG": 121.02,
+     "PORK": 65.3,
+     "Naug": 76.12,
+     "WALT": 122.24,
+     "CJ": 76.2,
+     "BW": 127.58,
+     "BEND": 57.82,
+     "SW": 54.94,
+     "SWSH": 87.4,
+     "TMOG": 99.8,
+     "RA": 58.0
     }
    }
   ]
