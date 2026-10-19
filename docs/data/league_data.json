@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-18 23:50:16 UTC",
-  "last_updated": "2026-10-18T23:50:16.093359+00:00"
+  "updated_at": "2026-10-19 00:00:21 UTC",
+  "last_updated": "2026-10-19T00:00:21.580071+00:00"
  },
  "teams": [
   {
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-18T23:50:16+00:00",
+  "updated_at": "2026-10-19T00:00:21+00:00",
   "teams": {
    "SACK": {
     "score": 89.28,
@@ -6393,7 +6393,7 @@
       "opponent": "LAC",
       "points": 26.9,
       "projected": 21.85,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -6603,7 +6603,7 @@
       "opponent": "KC",
       "points": 5.9,
       "projected": 8.32,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -6680,7 +6680,7 @@
       "opponent": "LAC",
       "points": 13.0,
       "projected": 9.88,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -6752,7 +6752,7 @@
       "opponent": "KC",
       "points": 2.2,
       "projected": 8.37,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -6824,7 +6824,7 @@
       "opponent": "BUF",
       "points": 13.8,
       "projected": 16.96,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -6984,7 +6984,7 @@
       "opponent": "LV",
       "points": 7.3,
       "projected": 6.99,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -6995,7 +6995,7 @@
       "opponent": "BUF",
       "points": 12.0,
       "projected": 11.09,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -7111,7 +7111,7 @@
       "opponent": "LV",
       "points": 17.0,
       "projected": 9.34,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      }
     ]
@@ -7205,7 +7205,7 @@
       "opponent": "None",
       "points": 18.52,
       "projected": 18.29,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -7338,7 +7338,7 @@
       "opponent": "BUF",
       "points": 9.0,
       "projected": 16.17,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -7349,7 +7349,7 @@
       "opponent": "None",
       "points": 18.3,
       "projected": 25.15,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -7393,7 +7393,7 @@
       "opponent": "BUF",
       "points": 24.2,
       "projected": 8.59,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -7426,7 +7426,7 @@
       "opponent": "LAC",
       "points": 14.0,
       "projected": 8.28,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      }
     ]
@@ -7443,7 +7443,7 @@
       "opponent": "LV",
       "points": 22.8,
       "projected": 18.53,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -7476,7 +7476,7 @@
       "opponent": "LV",
       "points": 13.9,
       "projected": 9.06,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
@@ -7592,7 +7592,7 @@
       "opponent": "LAC",
       "points": 7.3,
       "projected": 9.31,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792355100000
      },
      {
