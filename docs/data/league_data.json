@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-19 00:30:18 UTC",
-  "last_updated": "2026-10-19T00:30:18.437294+00:00"
+  "updated_at": "2026-10-19 00:40:16 UTC",
+  "last_updated": "2026-10-19T00:40:16.017687+00:00"
  },
  "teams": [
   {
@@ -24,7 +24,7 @@
     109.7,
     128.88,
     175.42,
-    89.28
+    92.48
    ],
    "ranking_points_by_week": [
     2.0,
@@ -188,7 +188,7 @@
     119.86,
     90.12,
     133.0,
-    86.8
+    86.5
    ],
    "ranking_points_by_week": [
     1.0,
@@ -196,7 +196,7 @@
     12.0,
     4.0,
     9.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -204,7 +204,7 @@
     21.0,
     25.0,
     34.0,
-    42.0
+    41.0
    ],
    "normalized_by_week": [
     -6.0,
@@ -212,10 +212,10 @@
     2.0,
     -2.0,
     0.0,
-    4.0
+    3.0
    ],
    "rank": 5,
-   "total_ranking_points": 42.0
+   "total_ranking_points": 41.0
   },
   {
    "team_id": 1,
@@ -259,6 +259,47 @@
    "total_ranking_points": 38.0
   },
   {
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "team_abbrev": "MBJG",
+   "abbrev": "MBJG",
+   "owner": "Matthew Bernstein",
+   "scores_by_week": [
+    103.16,
+    97.58,
+    101.04,
+    115.3,
+    115.18,
+    89.7
+   ],
+   "ranking_points_by_week": [
+    5.0,
+    6.0,
+    5.0,
+    7.0,
+    7.0,
+    8.0
+   ],
+   "cumulative_points_by_week": [
+    5.0,
+    11.0,
+    16.0,
+    23.0,
+    30.0,
+    38.0
+   ],
+   "normalized_by_week": [
+    -2.0,
+    -1.0,
+    -3.0,
+    -4.0,
+    -4.0,
+    0.0
+   ],
+   "rank": 7,
+   "total_ranking_points": 38.0
+  },
+  {
    "team_id": 11,
    "team_name": "The Sun Gods ",
    "team_abbrev": "RA",
@@ -270,7 +311,7 @@
     117.58,
     105.92,
     103.76,
-    48.8
+    50.8
    ],
    "ranking_points_by_week": [
     3.0,
@@ -296,49 +337,8 @@
     2.0,
     0.0
    ],
-   "rank": 7,
-   "total_ranking_points": 38.0
-  },
-  {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "team_abbrev": "MBJG",
-   "abbrev": "MBJG",
-   "owner": "Matthew Bernstein",
-   "scores_by_week": [
-    103.16,
-    97.58,
-    101.04,
-    115.3,
-    115.18,
-    81.5
-   ],
-   "ranking_points_by_week": [
-    5.0,
-    6.0,
-    5.0,
-    7.0,
-    7.0,
-    7.0
-   ],
-   "cumulative_points_by_week": [
-    5.0,
-    11.0,
-    16.0,
-    23.0,
-    30.0,
-    37.0
-   ],
-   "normalized_by_week": [
-    -2.0,
-    -1.0,
-    -3.0,
-    -4.0,
-    -4.0,
-    -1.0
-   ],
    "rank": 8,
-   "total_ranking_points": 37.0
+   "total_ranking_points": 38.0
   },
   {
    "team_id": 7,
@@ -5433,6 +5433,14 @@
      "score": 4.4
     },
     {
+     "name": "Matthew Golden",
+     "pro_team": "GB",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "WR",
+     "score": 4.2
+    },
+    {
      "name": "A.J. Brown",
      "pro_team": "NE",
      "fantasy_team": "Angel Reese Hoop Mixtape",
@@ -5446,6 +5454,14 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "K",
      "slot": "K",
+     "score": 4.0
+    },
+    {
+     "name": "Packers TQB",
+     "pro_team": "GB",
+     "fantasy_team": "The Lizard Kings",
+     "position": "QB",
+     "slot": "QB",
      "score": 4.0
     },
     {
@@ -5471,6 +5487,14 @@
      "position": "RB",
      "slot": "RB",
      "score": 3.6
+    },
+    {
+     "name": "Christian Watson",
+     "pro_team": "GB",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "slot": "WR",
+     "score": 3.2
     },
     {
      "name": "Rams D/ST",
@@ -5529,6 +5553,14 @@
      "score": 2.0
     },
     {
+     "name": "Pierre Strong Jr.",
+     "pro_team": "GB",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 2.0
+    },
+    {
      "name": "Javonte Williams",
      "pro_team": "DAL",
      "fantasy_team": "JSN Derulo ",
@@ -5569,35 +5601,11 @@
      "score": 0.36
     },
     {
-     "name": "Christian Watson",
-     "pro_team": "GB",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Tucker Kraft",
      "pro_team": "GB",
      "fantasy_team": "Bijan These Nuts",
      "position": "TE",
      "slot": "TE",
-     "score": 0.0
-    },
-    {
-     "name": "Matthew Golden",
-     "pro_team": "GB",
-     "fantasy_team": "The Lizard Kings",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Packers TQB",
-     "pro_team": "GB",
-     "fantasy_team": "The Lizard Kings",
-     "position": "QB",
-     "slot": "QB",
      "score": 0.0
     },
     {
@@ -5697,20 +5705,12 @@
      "score": 0.0
     },
     {
-     "name": "Pierre Strong Jr.",
-     "pro_team": "GB",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 0.0
-    },
-    {
      "name": "MarShawn Lloyd",
      "pro_team": "GB",
      "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "slot": "RB",
-     "score": -0.2
+     "score": -0.5
     }
    ]
   }
@@ -6269,7 +6269,7 @@
   {
    "SACK": {
     "RB": 35.1,
-    "WR": 22.5,
+    "WR": 25.7,
     "FLEX": 8.8,
     "TE": 0.0,
     "QB": 16.88,
@@ -6280,9 +6280,9 @@
     "FLEX": 20.1,
     "TE": 8.8,
     "RB": 27.9,
-    "WR": 12.7,
+    "WR": 16.9,
     "K": 9.0,
-    "QB": 0.0,
+    "QB": 4.0,
     "D/ST": 3.0
    },
    "PORK": {
@@ -6352,7 +6352,7 @@
     "TE": 9.0,
     "QB": 18.3,
     "WR": 4.4,
-    "RB": 8.9,
+    "RB": 8.6,
     "FLEX": 24.2,
     "K": 8.0,
     "D/ST": 14.0
@@ -6373,17 +6373,17 @@
     "TE": 7.3,
     "D/ST": 4.0,
     "K": 8.0,
-    "RB": 13.9
+    "RB": 15.9
    }
   }
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-19T00:30:18+00:00",
+  "updated_at": "2026-10-19T00:40:16+00:00",
   "teams": {
    "SACK": {
-    "score": 89.28,
-    "projected": 111.24,
+    "score": 92.48,
+    "projected": 112.45,
     "starters": [
      {
       "name": "Kenneth Walker III",
@@ -6413,7 +6413,7 @@
       "slot": "WR",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": 0.0,
+      "points": 3.2,
       "projected": 13.68,
       "status": "live",
       "kickoff": 1792369200000
@@ -6487,8 +6487,8 @@
     ]
    },
    "MBJG": {
-    "score": 81.5,
-    "projected": 113.55,
+    "score": 89.7,
+    "projected": 118.85,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -6562,7 +6562,7 @@
       "slot": "WR",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": 0.0,
+      "points": 4.2,
       "projected": 13.31,
       "status": "live",
       "kickoff": 1792369200000
@@ -6573,7 +6573,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 0.0,
+      "points": 4.0,
       "projected": 20.9,
       "status": "live",
       "kickoff": 1792369200000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 75.12,
-    "projected": 91.5,
+    "projected": 90.62,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6908,7 +6908,7 @@
    },
    "CJ": {
     "score": 72.9,
-    "projected": 83.25,
+    "projected": 82.31,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -7013,7 +7013,7 @@
    },
    "BW": {
     "score": 117.58,
-    "projected": 132.15,
+    "projected": 130.83,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7223,7 +7223,7 @@
    },
    "SW": {
     "score": 44.36,
-    "projected": 74.4,
+    "projected": 71.68,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -7327,8 +7327,8 @@
     ]
    },
    "SWSH": {
-    "score": 86.8,
-    "projected": 106.33,
+    "score": 86.5,
+    "projected": 105.17,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7402,7 +7402,7 @@
       "slot": "RB",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": -0.2,
+      "points": -0.5,
       "projected": 10.06,
       "status": "live",
       "kickoff": 1792369200000
@@ -7537,8 +7537,8 @@
     ]
    },
    "RA": {
-    "score": 48.8,
-    "projected": 89.46,
+    "score": 50.8,
+    "projected": 90.84,
     "starters": [
      {
       "name": "Drake London",
@@ -7634,7 +7634,7 @@
       "slot": "RB",
       "pro_team": "GB",
       "opponent": "DAL",
-      "points": 0.0,
+      "points": 2.0,
       "projected": 7.32,
       "status": "live",
       "kickoff": 1792369200000
@@ -7862,6 +7862,23 @@
      "SWSH": 86.8,
      "TMOG": 99.8,
      "RA": 48.8
+    }
+   },
+   {
+    "t": "2026-10-19T00:40:16+00:00",
+    "scores": {
+     "SACK": 92.48,
+     "MBJG": 89.7,
+     "PORK": 65.3,
+     "Naug": 75.12,
+     "WALT": 122.24,
+     "CJ": 72.9,
+     "BW": 117.58,
+     "BEND": 57.82,
+     "SW": 44.36,
+     "SWSH": 86.5,
+     "TMOG": 99.8,
+     "RA": 50.8
     }
    }
   ]
