@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 03:00:20 UTC",
-  "last_updated": "2026-10-20T03:00:20.730893+00:00"
+  "updated_at": "2026-10-20 03:10:15 UTC",
+  "last_updated": "2026-10-20T03:10:15.281749+00:00"
  },
  "teams": [
   {
@@ -65,7 +65,7 @@
     106.96,
     108.18,
     111.04,
-    95.88
+    96.16
    ],
    "ranking_points_by_week": [
     10.0,
@@ -4966,7 +4966,7 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "QB",
      "slot": "QB",
-     "score": 19.68
+     "score": 19.96
     },
     {
      "name": "Matthew Golden",
@@ -6289,7 +6289,7 @@
     "RB": 24.5,
     "WR": 18.7,
     "FLEX": 10.9,
-    "QB": 19.68,
+    "QB": 19.96,
     "D/ST": 7.0,
     "K": 13.0,
     "TE": 2.1
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T03:00:20+00:00",
+  "updated_at": "2026-10-20T03:10:15+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 95.88,
-    "projected": 97.12,
+    "score": 96.16,
+    "projected": 96.79,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6645,7 +6645,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 19.68,
+      "points": 19.96,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1792455300000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 81.12,
-    "projected": 81.22,
+    "projected": 81.17,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -7118,7 +7118,7 @@
    },
    "BEND": {
     "score": 82.72,
-    "projected": 83.91,
+    "projected": 83.33,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7433,7 +7433,7 @@
    },
    "TMOG": {
     "score": 112.1,
-    "projected": 112.68,
+    "projected": 112.4,
     "starters": [
      {
       "name": "James Cook III",
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 90.64,
-    "projected": 92.74,
+    "projected": 91.71,
     "starters": [
      {
       "name": "Drake London",
@@ -8448,6 +8448,23 @@
      "SACK": 103.38,
      "MBJG": 121.14,
      "PORK": 95.88,
+     "Naug": 81.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 82.72,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 112.1,
+     "RA": 90.64
+    }
+   },
+   {
+    "t": "2026-10-20T03:10:15+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 96.16,
      "Naug": 81.12,
      "WALT": 122.24,
      "CJ": 83.2,
