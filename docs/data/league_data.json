@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 01:10:16 UTC",
-  "last_updated": "2026-10-20T01:10:16.496930+00:00"
+  "updated_at": "2026-10-20 01:20:18 UTC",
+  "last_updated": "2026-10-20T01:20:18.681276+00:00"
  },
  "teams": [
   {
@@ -147,7 +147,7 @@
     106.96,
     108.18,
     111.04,
-    77.88
+    78.32
    ],
    "ranking_points_by_week": [
     10.0,
@@ -270,7 +270,7 @@
     117.58,
     105.92,
     103.76,
-    79.56
+    80.56
    ],
    "ranking_points_by_week": [
     3.0,
@@ -360,7 +360,7 @@
     6.0,
     1.0,
     12.0,
-    6.0
+    5.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -368,7 +368,7 @@
     18.0,
     19.0,
     31.0,
-    37.0
+    36.0
    ],
    "normalized_by_week": [
     1.0,
@@ -376,10 +376,10 @@
     -1.0,
     -8.0,
     -3.0,
-    -3.0
+    -4.0
    ],
    "rank": 9,
-   "total_ranking_points": 37.0
+   "total_ranking_points": 36.0
   },
   {
    "team_id": 7,
@@ -393,7 +393,7 @@
     82.92,
     81.62,
     125.36,
-    100.0
+    101.0
    ],
    "ranking_points_by_week": [
     11.0,
@@ -434,7 +434,7 @@
     110.12,
     115.58,
     81.16,
-    70.02
+    71.52
    ],
    "ranking_points_by_week": [
     7.0,
@@ -475,7 +475,7 @@
     81.58,
     89.62,
     92.0,
-    83.12
+    84.12
    ],
    "ranking_points_by_week": [
     6.0,
@@ -483,7 +483,7 @@
     1.0,
     3.0,
     4.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -491,7 +491,7 @@
     12.0,
     15.0,
     19.0,
-    24.0
+    25.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -499,10 +499,10 @@
     -7.0,
     -12.0,
     -15.0,
-    -16.0
+    -15.0
    ],
    "rank": 12,
-   "total_ranking_points": 24.0
+   "total_ranking_points": 25.0
   }
  ],
  "top_players_by_week": [
@@ -5073,6 +5073,14 @@
      "score": 13.8
     },
     {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 13.7
+    },
+    {
      "name": "Luther Burden III",
      "pro_team": "CHI",
      "fantasy_team": "Walt's Warriors",
@@ -5129,20 +5137,20 @@
      "score": 12.2
     },
     {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
-     "score": 12.2
-    },
-    {
      "name": "J.K. Dobbins",
      "pro_team": "DEN",
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
      "slot": "FLEX",
      "score": 12.1
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 12.06
     },
     {
      "name": "Matt Gay",
@@ -5183,14 +5191,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 11.4
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 11.06
     },
     {
      "name": "Seahawks TQB",
@@ -5369,6 +5369,14 @@
      "score": 8.2
     },
     {
+     "name": "49ers D/ST",
+     "pro_team": "SF",
+     "fantasy_team": "Mid AF Squad",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 8.0
+    },
+    {
      "name": "Dominic Zvada",
      "pro_team": "NYG",
      "fantasy_team": "Swishington Football Team",
@@ -5420,14 +5428,6 @@
      "name": "Buccaneers D/ST",
      "pro_team": "TB",
      "fantasy_team": "Satriale's Pork Store",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 7.0
-    },
-    {
-     "name": "49ers D/ST",
-     "pro_team": "SF",
-     "fantasy_team": "Mid AF Squad",
      "position": "D/ST",
      "slot": "D/ST",
      "score": 7.0
@@ -5545,6 +5545,14 @@
      "score": 4.4
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "slot": "QB",
+     "score": 4.22
+    },
+    {
      "name": "A.J. Brown",
      "pro_team": "NE",
      "fantasy_team": "Angel Reese Hoop Mixtape",
@@ -5575,14 +5583,6 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 4.0
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "slot": "QB",
-     "score": 3.78
     },
     {
      "name": "Rhamondre Stevenson",
@@ -5665,6 +5665,14 @@
      "score": 1.4
     },
     {
+     "name": "Rachaad White",
+     "pro_team": "WSH",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 1.2
+    },
+    {
      "name": "Brandon Aubrey",
      "pro_team": "DAL",
      "fantasy_team": "Mid AF Squad",
@@ -5695,14 +5703,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 1.0
-    },
-    {
-     "name": "Rachaad White",
-     "pro_team": "WSH",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 0.2
     },
     {
      "name": "Cam Skattebo",
@@ -6289,7 +6289,7 @@
     "RB": 24.5,
     "WR": 18.7,
     "FLEX": 8.8,
-    "QB": 3.78,
+    "QB": 4.22,
     "D/ST": 7.0,
     "K": 13.0,
     "TE": 2.1
@@ -6301,7 +6301,7 @@
     "FLEX": 12.1,
     "QB": 11.02,
     "TE": 6.9,
-    "D/ST": 7.0
+    "D/ST": 8.0
    },
    "WALT": {
     "WR": 24.5,
@@ -6331,7 +6331,7 @@
     "K": 17.0
    },
    "BEND": {
-    "RB": 15.1,
+    "RB": 16.6,
     "WR": 21.0,
     "TE": 1.4,
     "D/ST": 1.0,
@@ -6364,12 +6364,12 @@
     "D/ST": 9.0,
     "QB": 22.8,
     "K": 4.0,
-    "FLEX": 0.2
+    "FLEX": 1.2
    },
    "RA": {
     "WR": 15.6,
     "FLEX": 10.5,
-    "QB": 11.06,
+    "QB": 12.06,
     "TE": 7.3,
     "D/ST": 4.0,
     "K": 8.0,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T01:10:16+00:00",
+  "updated_at": "2026-10-20T01:20:18+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 77.88,
-    "projected": 99.12,
+    "score": 78.32,
+    "projected": 98.08,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6645,7 +6645,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 3.78,
+      "points": 4.22,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1792455300000
@@ -6697,8 +6697,8 @@
     ]
    },
    "Naug": {
-    "score": 83.12,
-    "projected": 82.82,
+    "score": 84.12,
+    "projected": 83.24,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6794,7 +6794,7 @@
       "slot": "D/ST",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 7.0,
+      "points": 8.0,
       "projected": 6.55,
       "status": "live",
       "kickoff": 1792455300000
@@ -7117,8 +7117,8 @@
     ]
    },
    "BEND": {
-    "score": 70.02,
-    "projected": 82.52,
+    "score": 71.52,
+    "projected": 83.15,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7126,7 +7126,7 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 12.2,
+      "points": 13.7,
       "projected": 19.15,
       "status": "live",
       "kickoff": 1792455300000
@@ -7432,8 +7432,8 @@
     ]
    },
    "TMOG": {
-    "score": 100.0,
-    "projected": 106.09,
+    "score": 101.0,
+    "projected": 106.67,
     "starters": [
      {
       "name": "James Cook III",
@@ -7529,7 +7529,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "SF",
-      "points": 0.2,
+      "points": 1.2,
       "projected": 9.33,
       "status": "live",
       "kickoff": 1792455300000
@@ -7537,8 +7537,8 @@
     ]
    },
    "RA": {
-    "score": 79.56,
-    "projected": 101.62,
+    "score": 80.56,
+    "projected": 101.09,
     "starters": [
      {
       "name": "Drake London",
@@ -7579,7 +7579,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 11.06,
+      "points": 12.06,
       "projected": 21.38,
       "status": "live",
       "kickoff": 1792455300000
@@ -8287,6 +8287,23 @@
      "SWSH": 91.2,
      "TMOG": 100.0,
      "RA": 79.56
+    }
+   },
+   {
+    "t": "2026-10-20T01:20:18+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 78.32,
+     "Naug": 84.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 71.52,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 101.0,
+     "RA": 80.56
     }
    }
   ]
