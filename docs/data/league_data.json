@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 03:20:17 UTC",
-  "last_updated": "2026-10-20T03:20:17.387991+00:00"
+  "updated_at": "2026-10-20 03:30:18 UTC",
+  "last_updated": "2026-10-20T03:30:18.339165+00:00"
  },
  "teams": [
   {
@@ -475,7 +475,7 @@
     81.58,
     89.62,
     92.0,
-    81.12
+    82.12
    ],
    "ranking_points_by_week": [
     6.0,
@@ -5473,6 +5473,14 @@
      "score": 6.2
     },
     {
+     "name": "49ers D/ST",
+     "pro_team": "SF",
+     "fantasy_team": "Mid AF Squad",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 6.0
+    },
+    {
      "name": "Patriots D/ST",
      "pro_team": "NE",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -5527,14 +5535,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 5.2
-    },
-    {
-     "name": "49ers D/ST",
-     "pro_team": "SF",
-     "fantasy_team": "Mid AF Squad",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 5.0
     },
     {
      "name": "Panthers D/ST",
@@ -6301,7 +6301,7 @@
     "FLEX": 12.1,
     "QB": 11.02,
     "TE": 6.9,
-    "D/ST": 5.0
+    "D/ST": 6.0
    },
    "WALT": {
     "WR": 24.5,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T03:20:17+00:00",
+  "updated_at": "2026-10-20T03:30:18+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6593,7 +6593,7 @@
    },
    "PORK": {
     "score": 97.2,
-    "projected": 97.32,
+    "projected": 97.2,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6697,8 +6697,8 @@
     ]
    },
    "Naug": {
-    "score": 81.12,
-    "projected": 81.13,
+    "score": 82.12,
+    "projected": 82.12,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6794,7 +6794,7 @@
       "slot": "D/ST",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 5.0,
+      "points": 6.0,
       "projected": 6.55,
       "status": "live",
       "kickoff": 1792455300000
@@ -7118,7 +7118,7 @@
    },
    "BEND": {
     "score": 84.02,
-    "projected": 84.13,
+    "projected": 84.02,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7433,7 +7433,7 @@
    },
    "TMOG": {
     "score": 113.5,
-    "projected": 113.56,
+    "projected": 113.5,
     "starters": [
      {
       "name": "James Cook III",
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 90.76,
-    "projected": 90.96,
+    "projected": 90.76,
     "starters": [
      {
       "name": "Drake London",
@@ -8483,6 +8483,23 @@
      "MBJG": 121.14,
      "PORK": 97.2,
      "Naug": 81.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 84.02,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 113.5,
+     "RA": 90.76
+    }
+   },
+   {
+    "t": "2026-10-20T03:30:18+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 97.2,
+     "Naug": 82.12,
      "WALT": 122.24,
      "CJ": 83.2,
      "BW": 128.08,
