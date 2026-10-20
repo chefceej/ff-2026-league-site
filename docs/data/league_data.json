@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 00:10:19 UTC",
-  "last_updated": "2026-10-20T00:10:19.091291+00:00"
+  "updated_at": "2026-10-20 00:20:20 UTC",
+  "last_updated": "2026-10-20T00:20:20.622043+00:00"
  },
  "teams": [
   {
@@ -48,7 +48,7 @@
     1.0,
     4.0,
     8.0,
-    10.0
+    11.0
    ],
    "rank": 1,
    "total_ranking_points": 51.0
@@ -89,7 +89,7 @@
     -4.0,
     -2.0,
     1.0,
-    5.0
+    6.0
    ],
    "rank": 2,
    "total_ranking_points": 46.0
@@ -130,7 +130,7 @@
     0.0,
     1.0,
     -3.0,
-    2.0
+    3.0
    ],
    "rank": 3,
    "total_ranking_points": 43.0
@@ -147,7 +147,7 @@
     106.96,
     108.18,
     111.04,
-    65.3
+    68.2
    ],
    "ranking_points_by_week": [
     10.0,
@@ -155,7 +155,7 @@
     7.0,
     6.0,
     6.0,
-    3.0
+    4.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -163,7 +163,7 @@
     27.0,
     33.0,
     39.0,
-    42.0
+    43.0
    ],
    "normalized_by_week": [
     3.0,
@@ -171,51 +171,10 @@
     8.0,
     6.0,
     5.0,
-    1.0
+    3.0
    ],
    "rank": 4,
-   "total_ranking_points": 42.0
-  },
-  {
-   "team_id": 1,
-   "team_name": "Sophi* C0mminhand B*th Wa1er",
-   "team_abbrev": "SW",
-   "abbrev": "SW",
-   "owner": "Ben Fagin",
-   "scores_by_week": [
-    125.4,
-    132.56,
-    92.24,
-    131.3,
-    75.94,
-    66.52
-   ],
-   "ranking_points_by_week": [
-    9.0,
-    11.0,
-    4.0,
-    12.0,
-    1.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    9.0,
-    20.0,
-    24.0,
-    36.0,
-    37.0,
-    41.0
-   ],
-   "normalized_by_week": [
-    2.0,
-    8.0,
-    5.0,
-    9.0,
-    3.0,
-    0.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 41.0
+   "total_ranking_points": 43.0
   },
   {
    "team_id": 4,
@@ -253,10 +212,51 @@
     2.0,
     -2.0,
     0.0,
+    1.0
+   ],
+   "rank": 5,
+   "total_ranking_points": 41.0
+  },
+  {
+   "team_id": 1,
+   "team_name": "Sophi* C0mminhand B*th Wa1er",
+   "team_abbrev": "SW",
+   "abbrev": "SW",
+   "owner": "Ben Fagin",
+   "scores_by_week": [
+    125.4,
+    132.56,
+    92.24,
+    131.3,
+    75.94,
+    66.52
+   ],
+   "ranking_points_by_week": [
+    9.0,
+    11.0,
+    4.0,
+    12.0,
+    1.0,
+    3.0
+   ],
+   "cumulative_points_by_week": [
+    9.0,
+    20.0,
+    24.0,
+    36.0,
+    37.0,
+    40.0
+   ],
+   "normalized_by_week": [
+    2.0,
+    8.0,
+    5.0,
+    9.0,
+    3.0,
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 41.0
+   "total_ranking_points": 40.0
   },
   {
    "team_id": 5,
@@ -294,7 +294,7 @@
     -3.0,
     -4.0,
     -4.0,
-    -1.0
+    0.0
    ],
    "rank": 7,
    "total_ranking_points": 40.0
@@ -311,7 +311,7 @@
     117.58,
     105.92,
     103.76,
-    58.0
+    59.36
    ],
    "ranking_points_by_week": [
     3.0,
@@ -319,7 +319,7 @@
     11.0,
     5.0,
     5.0,
-    2.0
+    1.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -327,7 +327,7 @@
     26.0,
     31.0,
     36.0,
-    38.0
+    37.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -338,7 +338,7 @@
     -3.0
    ],
    "rank": 8,
-   "total_ranking_points": 38.0
+   "total_ranking_points": 37.0
   },
   {
    "team_id": 2,
@@ -360,7 +360,7 @@
     6.0,
     1.0,
     12.0,
-    6.0
+    5.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -368,7 +368,7 @@
     18.0,
     19.0,
     31.0,
-    37.0
+    36.0
    ],
    "normalized_by_week": [
     1.0,
@@ -379,7 +379,7 @@
     -4.0
    ],
    "rank": 9,
-   "total_ranking_points": 37.0
+   "total_ranking_points": 36.0
   },
   {
    "team_id": 7,
@@ -417,7 +417,7 @@
     -2.0,
     -8.0,
     -7.0,
-    -6.0
+    -5.0
    ],
    "rank": 10,
    "total_ranking_points": 35.0
@@ -434,7 +434,7 @@
     110.12,
     115.58,
     81.16,
-    57.82
+    60.92
    ],
    "ranking_points_by_week": [
     7.0,
@@ -442,7 +442,7 @@
     10.0,
     8.0,
     2.0,
-    1.0
+    2.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -450,7 +450,7 @@
     19.0,
     27.0,
     29.0,
-    30.0
+    31.0
    ],
    "normalized_by_week": [
     0.0,
@@ -458,10 +458,10 @@
     0.0,
     0.0,
     -5.0,
-    -11.0
+    -9.0
    ],
    "rank": 11,
-   "total_ranking_points": 30.0
+   "total_ranking_points": 31.0
   },
   {
    "team_id": 6,
@@ -475,7 +475,7 @@
     81.58,
     89.62,
     92.0,
-    76.12
+    86.12
    ],
    "ranking_points_by_week": [
     6.0,
@@ -483,7 +483,7 @@
     1.0,
     3.0,
     4.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -491,7 +491,7 @@
     12.0,
     15.0,
     19.0,
-    24.0
+    25.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -499,10 +499,10 @@
     -7.0,
     -12.0,
     -15.0,
-    -17.0
+    -15.0
    ],
    "rank": 12,
-   "total_ranking_points": 24.0
+   "total_ranking_points": 25.0
   }
  ],
  "top_players_by_week": [
@@ -5225,6 +5225,14 @@
      "score": 10.2
     },
     {
+     "name": "49ers D/ST",
+     "pro_team": "SF",
+     "fantasy_team": "Mid AF Squad",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 10.0
+    },
+    {
      "name": "Steelers D/ST",
      "pro_team": "PIT",
      "fantasy_team": "Walt's Warriors",
@@ -5545,12 +5553,28 @@
      "score": 3.6
     },
     {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 3.1
+    },
+    {
      "name": "Rams D/ST",
      "pro_team": "LAR",
      "fantasy_team": "The Lizard Kings",
      "position": "D/ST",
      "slot": "D/ST",
      "score": 3.0
+    },
+    {
+     "name": "Mike Evans",
+     "pro_team": "SF",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 2.9
     },
     {
      "name": "Kenny Gainwell",
@@ -5609,6 +5633,14 @@
      "score": 1.4
     },
     {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 1.36
+    },
+    {
      "name": "Brandon Aubrey",
      "pro_team": "DAL",
      "fantasy_team": "Mid AF Squad",
@@ -5641,14 +5673,6 @@
      "score": 1.0
     },
     {
-     "name": "Mike Evans",
-     "pro_team": "SF",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "WR",
-     "slot": "FLEX",
-     "score": 0.0
-    },
-    {
      "name": "Commanders TQB",
      "pro_team": "WSH",
      "fantasy_team": "Satriale's Pork Store",
@@ -5657,25 +5681,9 @@
      "score": 0.0
     },
     {
-     "name": "49ers D/ST",
-     "pro_team": "SF",
-     "fantasy_team": "Mid AF Squad",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 0.0
-    },
-    {
      "name": "Cam Skattebo",
      "pro_team": "NYG",
      "fantasy_team": "JSN Derulo ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "slot": "RB",
      "score": 0.0
@@ -5702,14 +5710,6 @@
      "fantasy_team": "The Sun Gods ",
      "position": "TE",
      "slot": "FLEX",
-     "score": 0.0
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "QB",
-     "slot": "QB",
      "score": 0.0
     }
    ]
@@ -6288,7 +6288,7 @@
    "PORK": {
     "RB": 24.5,
     "WR": 18.7,
-    "FLEX": 0.0,
+    "FLEX": 2.9,
     "QB": 0.0,
     "D/ST": 7.0,
     "K": 13.0,
@@ -6301,7 +6301,7 @@
     "FLEX": 12.1,
     "QB": 11.02,
     "TE": 6.9,
-    "D/ST": 0.0
+    "D/ST": 10.0
    },
    "WALT": {
     "WR": 24.5,
@@ -6331,7 +6331,7 @@
     "K": 17.0
    },
    "BEND": {
-    "RB": 2.9,
+    "RB": 6.0,
     "WR": 21.0,
     "TE": 1.4,
     "D/ST": 1.0,
@@ -6369,7 +6369,7 @@
    "RA": {
     "WR": 15.6,
     "FLEX": 0.0,
-    "QB": 0.0,
+    "QB": 1.36,
     "TE": 7.3,
     "D/ST": 4.0,
     "K": 8.0,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T00:10:19+00:00",
+  "updated_at": "2026-10-20T00:20:20+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 65.3,
-    "projected": 97.84,
+    "score": 68.2,
+    "projected": 99.63,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6634,9 +6634,9 @@
       "slot": "FLEX",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 0.0,
+      "points": 2.9,
       "projected": 12.6,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792455300000
      },
      {
@@ -6647,7 +6647,7 @@
       "opponent": "None",
       "points": 0.0,
       "projected": 19.94,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792455300000
      },
      {
@@ -6697,8 +6697,8 @@
     ]
    },
    "Naug": {
-    "score": 76.12,
-    "projected": 82.67,
+    "score": 86.12,
+    "projected": 82.78,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6794,9 +6794,9 @@
       "slot": "D/ST",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 0.0,
+      "points": 10.0,
       "projected": 6.55,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792455300000
      }
     ]
@@ -7117,8 +7117,8 @@
     ]
    },
    "BEND": {
-    "score": 57.82,
-    "projected": 76.97,
+    "score": 60.92,
+    "projected": 79.42,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7126,9 +7126,9 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 0.0,
+      "points": 3.1,
       "projected": 19.15,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792455300000
      },
      {
@@ -7328,7 +7328,7 @@
    },
    "SWSH": {
     "score": 88.0,
-    "projected": 98.1,
+    "projected": 97.75,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7371,7 +7371,7 @@
       "opponent": "SF",
       "points": 0.0,
       "projected": 10.1,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792455300000
      },
      {
@@ -7433,7 +7433,7 @@
    },
    "TMOG": {
     "score": 99.8,
-    "projected": 109.13,
+    "projected": 108.81,
     "starters": [
      {
       "name": "James Cook III",
@@ -7531,14 +7531,14 @@
       "opponent": "SF",
       "points": 0.0,
       "projected": 9.33,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792455300000
      }
     ]
    },
    "RA": {
-    "score": 58.0,
-    "projected": 91.8,
+    "score": 59.36,
+    "projected": 92.01,
     "starters": [
      {
       "name": "Drake London",
@@ -7570,7 +7570,7 @@
       "opponent": "WSH",
       "points": 0.0,
       "projected": 12.42,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792455300000
      },
      {
@@ -7579,9 +7579,9 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 0.0,
+      "points": 1.36,
       "projected": 21.38,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792455300000
      },
      {
@@ -8185,6 +8185,23 @@
      "SWSH": 88.0,
      "TMOG": 99.8,
      "RA": 58.0
+    }
+   },
+   {
+    "t": "2026-10-20T00:20:20+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 68.2,
+     "Naug": 86.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 60.92,
+     "SW": 66.52,
+     "SWSH": 88.0,
+     "TMOG": 99.8,
+     "RA": 59.36
     }
    }
   ]
