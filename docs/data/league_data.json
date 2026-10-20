@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 02:50:18 UTC",
-  "last_updated": "2026-10-20T02:50:18.912717+00:00"
+  "updated_at": "2026-10-20 03:00:20 UTC",
+  "last_updated": "2026-10-20T03:00:20.730893+00:00"
  },
  "teams": [
   {
@@ -65,7 +65,7 @@
     106.96,
     108.18,
     111.04,
-    93.48
+    95.88
    ],
    "ranking_points_by_week": [
     10.0,
@@ -352,7 +352,7 @@
     82.92,
     81.62,
     125.36,
-    110.6
+    112.1
    ],
    "ranking_points_by_week": [
     11.0,
@@ -4961,6 +4961,14 @@
      "score": 20.1
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "slot": "QB",
+     "score": 19.68
+    },
+    {
      "name": "Matthew Golden",
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
@@ -4999,14 +5007,6 @@
      "position": "QB",
      "slot": "QB",
      "score": 18.3
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "slot": "QB",
-     "score": 17.28
     },
     {
      "name": "49ers TQB",
@@ -5153,6 +5153,14 @@
      "score": 12.3
     },
     {
+     "name": "Rachaad White",
+     "pro_team": "WSH",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 12.3
+    },
+    {
      "name": "Keenan Allen",
      "pro_team": "IND",
      "fantasy_team": "JSN Derulo ",
@@ -5247,14 +5255,6 @@
      "position": "WR",
      "slot": "FLEX",
      "score": 10.9
-    },
-    {
-     "name": "Rachaad White",
-     "pro_team": "WSH",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 10.8
     },
     {
      "name": "George Pickens",
@@ -6289,7 +6289,7 @@
     "RB": 24.5,
     "WR": 18.7,
     "FLEX": 10.9,
-    "QB": 17.28,
+    "QB": 19.68,
     "D/ST": 7.0,
     "K": 13.0,
     "TE": 2.1
@@ -6364,7 +6364,7 @@
     "D/ST": 9.0,
     "QB": 22.8,
     "K": 4.0,
-    "FLEX": 10.8
+    "FLEX": 12.3
    },
    "RA": {
     "WR": 15.6,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T02:50:18+00:00",
+  "updated_at": "2026-10-20T03:00:20+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 93.48,
-    "projected": 96.55,
+    "score": 95.88,
+    "projected": 97.12,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6645,7 +6645,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 17.28,
+      "points": 19.68,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1792455300000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 81.12,
-    "projected": 81.36,
+    "projected": 81.22,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -7118,7 +7118,7 @@
    },
    "BEND": {
     "score": 82.72,
-    "projected": 85.67,
+    "projected": 83.91,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7432,8 +7432,8 @@
     ]
    },
    "TMOG": {
-    "score": 110.6,
-    "projected": 112.04,
+    "score": 112.1,
+    "projected": 112.68,
     "starters": [
      {
       "name": "James Cook III",
@@ -7529,7 +7529,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "SF",
-      "points": 10.8,
+      "points": 12.3,
       "projected": 9.33,
       "status": "live",
       "kickoff": 1792455300000
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 90.64,
-    "projected": 95.84,
+    "projected": 92.74,
     "starters": [
      {
       "name": "Drake London",
@@ -8439,6 +8439,23 @@
      "SW": 66.52,
      "SWSH": 91.2,
      "TMOG": 110.6,
+     "RA": 90.64
+    }
+   },
+   {
+    "t": "2026-10-20T03:00:20+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 95.88,
+     "Naug": 81.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 82.72,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 112.1,
      "RA": 90.64
     }
    }
