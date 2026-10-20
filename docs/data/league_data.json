@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 01:30:17 UTC",
-  "last_updated": "2026-10-20T01:30:17.569372+00:00"
+  "updated_at": "2026-10-20 01:40:19 UTC",
+  "last_updated": "2026-10-20T01:40:19.288385+00:00"
  },
  "teams": [
   {
@@ -48,7 +48,7 @@
     1.0,
     4.0,
     8.0,
-    11.0
+    10.0
    ],
    "rank": 1,
    "total_ranking_points": 51.0
@@ -89,7 +89,7 @@
     -4.0,
     -2.0,
     1.0,
-    6.0
+    5.0
    ],
    "rank": 2,
    "total_ranking_points": 46.0
@@ -130,7 +130,7 @@
     0.0,
     1.0,
     -3.0,
-    3.0
+    2.0
    ],
    "rank": 3,
    "total_ranking_points": 43.0
@@ -147,7 +147,7 @@
     106.96,
     108.18,
     111.04,
-    80.42
+    80.32
    ],
    "ranking_points_by_week": [
     10.0,
@@ -171,7 +171,7 @@
     8.0,
     6.0,
     5.0,
-    2.0
+    1.0
    ],
    "rank": 4,
    "total_ranking_points": 42.0
@@ -212,9 +212,50 @@
     2.0,
     -2.0,
     0.0,
-    1.0
+    0.0
    ],
    "rank": 5,
+   "total_ranking_points": 41.0
+  },
+  {
+   "team_id": 11,
+   "team_name": "The Sun Gods ",
+   "team_abbrev": "RA",
+   "abbrev": "RA",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92,
+    103.76,
+    83.96
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0,
+    5.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0,
+    36.0,
+    41.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0,
+    2.0,
+    0.0
+   ],
+   "rank": 6,
    "total_ranking_points": 41.0
   },
   {
@@ -253,48 +294,7 @@
     -3.0,
     -4.0,
     -4.0,
-    0.0
-   ],
-   "rank": 6,
-   "total_ranking_points": 40.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "The Sun Gods ",
-   "team_abbrev": "RA",
-   "abbrev": "RA",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    105.92,
-    103.76,
-    82.7
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    5.0,
-    5.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    31.0,
-    36.0,
-    40.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
-    4.0,
-    2.0,
-    0.0
+    -1.0
    ],
    "rank": 7,
    "total_ranking_points": 40.0
@@ -335,7 +335,7 @@
     5.0,
     9.0,
     3.0,
-    -2.0
+    -3.0
    ],
    "rank": 8,
    "total_ranking_points": 38.0
@@ -360,7 +360,7 @@
     6.0,
     1.0,
     12.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -368,7 +368,7 @@
     18.0,
     19.0,
     31.0,
-    36.0
+    35.0
    ],
    "normalized_by_week": [
     1.0,
@@ -376,10 +376,10 @@
     -1.0,
     -8.0,
     -3.0,
-    -4.0
+    -6.0
    ],
    "rank": 9,
-   "total_ranking_points": 36.0
+   "total_ranking_points": 35.0
   },
   {
    "team_id": 7,
@@ -417,7 +417,7 @@
     -2.0,
     -8.0,
     -7.0,
-    -5.0
+    -6.0
    ],
    "rank": 10,
    "total_ranking_points": 35.0
@@ -434,7 +434,7 @@
     110.12,
     115.58,
     81.16,
-    72.92
+    79.02
    ],
    "ranking_points_by_week": [
     7.0,
@@ -458,7 +458,7 @@
     0.0,
     0.0,
     -5.0,
-    -9.0
+    -10.0
    ],
    "rank": 11,
    "total_ranking_points": 31.0
@@ -499,7 +499,7 @@
     -7.0,
     -12.0,
     -15.0,
-    -15.0
+    -16.0
    ],
    "rank": 12,
    "total_ranking_points": 25.0
@@ -4921,6 +4921,14 @@
      "score": 22.5
     },
     {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 21.2
+    },
+    {
      "name": "D'Andre Swift",
      "pro_team": "CHI",
      "fantasy_team": "Mid AF Squad",
@@ -5033,12 +5041,12 @@
      "score": 15.5
     },
     {
-     "name": "Christian McCaffrey",
+     "name": "49ers TQB",
      "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
-     "score": 15.1
+     "fantasy_team": "The Sun Gods ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 14.56
     },
     {
      "name": "Emeka Egbuka",
@@ -5047,14 +5055,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 14.3
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 14.2
     },
     {
      "name": "Chiefs D/ST",
@@ -5193,6 +5193,14 @@
      "score": 11.4
     },
     {
+     "name": "George Kittle",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "TE",
+     "slot": "FLEX",
+     "score": 11.4
+    },
+    {
      "name": "Seahawks TQB",
      "pro_team": "SEA",
      "fantasy_team": "Mid AF Squad",
@@ -5231,14 +5239,6 @@
      "position": "WR",
      "slot": "FLEX",
      "score": 10.9
-    },
-    {
-     "name": "George Kittle",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "TE",
-     "slot": "FLEX",
-     "score": 10.5
     },
     {
      "name": "George Pickens",
@@ -5545,20 +5545,20 @@
      "score": 4.4
     },
     {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "slot": "QB",
-     "score": 4.22
-    },
-    {
      "name": "A.J. Brown",
      "pro_team": "NE",
      "fantasy_team": "Angel Reese Hoop Mixtape",
      "position": "WR",
      "slot": "WR",
      "score": 4.2
+    },
+    {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "slot": "QB",
+     "score": 4.12
     },
     {
      "name": "Tyler Loop",
@@ -6289,7 +6289,7 @@
     "RB": 24.5,
     "WR": 18.7,
     "FLEX": 10.9,
-    "QB": 4.22,
+    "QB": 4.12,
     "D/ST": 7.0,
     "K": 13.0,
     "TE": 2.1
@@ -6331,7 +6331,7 @@
     "K": 17.0
    },
    "BEND": {
-    "RB": 18.0,
+    "RB": 24.1,
     "WR": 21.0,
     "TE": 1.4,
     "D/ST": 1.0,
@@ -6368,8 +6368,8 @@
    },
    "RA": {
     "WR": 15.6,
-    "FLEX": 10.5,
-    "QB": 14.2,
+    "FLEX": 11.4,
+    "QB": 14.56,
     "TE": 7.3,
     "D/ST": 4.0,
     "K": 8.0,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T01:30:17+00:00",
+  "updated_at": "2026-10-20T01:40:19+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 80.42,
-    "projected": 97.26,
+    "score": 80.32,
+    "projected": 96.59,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6645,7 +6645,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 4.22,
+      "points": 4.12,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1792455300000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 84.12,
-    "projected": 83.37,
+    "projected": 83.39,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -7117,8 +7117,8 @@
     ]
    },
    "BEND": {
-    "score": 72.92,
-    "projected": 82.83,
+    "score": 79.02,
+    "projected": 88.6,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7126,7 +7126,7 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 15.1,
+      "points": 21.2,
       "projected": 19.15,
       "status": "live",
       "kickoff": 1792455300000
@@ -7433,7 +7433,7 @@
    },
    "TMOG": {
     "score": 101.0,
-    "projected": 105.83,
+    "projected": 105.66,
     "starters": [
      {
       "name": "James Cook III",
@@ -7537,8 +7537,8 @@
     ]
    },
    "RA": {
-    "score": 82.7,
-    "projected": 100.19,
+    "score": 83.96,
+    "projected": 100.86,
     "starters": [
      {
       "name": "Drake London",
@@ -7568,7 +7568,7 @@
       "slot": "FLEX",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 10.5,
+      "points": 11.4,
       "projected": 12.42,
       "status": "live",
       "kickoff": 1792455300000
@@ -7579,7 +7579,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 14.2,
+      "points": 14.56,
       "projected": 21.38,
       "status": "live",
       "kickoff": 1792455300000
@@ -8321,6 +8321,23 @@
      "SWSH": 91.2,
      "TMOG": 101.0,
      "RA": 82.7
+    }
+   },
+   {
+    "t": "2026-10-20T01:40:19+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 80.32,
+     "Naug": 84.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 79.02,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 101.0,
+     "RA": 83.96
     }
    }
   ]
