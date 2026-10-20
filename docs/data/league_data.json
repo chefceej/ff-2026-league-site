@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 02:20:16 UTC",
-  "last_updated": "2026-10-20T02:20:16.743538+00:00"
+  "updated_at": "2026-10-20 02:30:16 UTC",
+  "last_updated": "2026-10-20T02:30:16.829477+00:00"
  },
  "teams": [
   {
@@ -95,6 +95,47 @@
    "total_ranking_points": 46.0
   },
   {
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    87.04
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    44.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    3.0
+   ],
+   "rank": 3,
+   "total_ranking_points": 44.0
+  },
+  {
    "team_id": 3,
    "team_name": "JSN Derulo ",
    "team_abbrev": "BW",
@@ -132,49 +173,8 @@
     -3.0,
     2.0
    ],
-   "rank": 3,
-   "total_ranking_points": 43.0
-  },
-  {
-   "team_id": 8,
-   "team_name": "Satriale's Pork Store",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    83.0
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    3.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    42.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    1.0
-   ],
    "rank": 4,
-   "total_ranking_points": 42.0
+   "total_ranking_points": 43.0
   },
   {
    "team_id": 11,
@@ -475,7 +475,7 @@
     81.58,
     89.62,
     92.0,
-    85.12
+    83.12
    ],
    "ranking_points_by_week": [
     6.0,
@@ -483,7 +483,7 @@
     1.0,
     3.0,
     4.0,
-    5.0
+    3.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -491,7 +491,7 @@
     12.0,
     15.0,
     19.0,
-    24.0
+    22.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -499,10 +499,10 @@
     -7.0,
     -12.0,
     -15.0,
-    -17.0
+    -19.0
    ],
    "rank": 12,
-   "total_ranking_points": 24.0
+   "total_ranking_points": 22.0
   }
  ],
  "top_players_by_week": [
@@ -5241,6 +5241,14 @@
      "score": 10.9
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "slot": "QB",
+     "score": 10.84
+    },
+    {
      "name": "George Pickens",
      "pro_team": "DAL",
      "fantasy_team": "Angel Reese Hoop Mixtape",
@@ -5310,14 +5318,6 @@
      "fantasy_team": "The Lizard Kings",
      "position": "K",
      "slot": "K",
-     "score": 9.0
-    },
-    {
-     "name": "49ers D/ST",
-     "pro_team": "SF",
-     "fantasy_team": "Mid AF Squad",
-     "position": "D/ST",
-     "slot": "D/ST",
      "score": 9.0
     },
     {
@@ -5433,20 +5433,20 @@
      "score": 7.0
     },
     {
+     "name": "49ers D/ST",
+     "pro_team": "SF",
+     "fantasy_team": "Mid AF Squad",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 7.0
+    },
+    {
      "name": "Brenton Strange",
      "pro_team": "JAX",
      "fantasy_team": "Mid AF Squad",
      "position": "TE",
      "slot": "TE",
      "score": 6.9
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "slot": "QB",
-     "score": 6.8
     },
     {
      "name": "Garrett Wilson",
@@ -6289,7 +6289,7 @@
     "RB": 24.5,
     "WR": 18.7,
     "FLEX": 10.9,
-    "QB": 6.8,
+    "QB": 10.84,
     "D/ST": 7.0,
     "K": 13.0,
     "TE": 2.1
@@ -6301,7 +6301,7 @@
     "FLEX": 12.1,
     "QB": 11.02,
     "TE": 6.9,
-    "D/ST": 9.0
+    "D/ST": 7.0
    },
    "WALT": {
     "WR": 24.5,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T02:20:16+00:00",
+  "updated_at": "2026-10-20T02:30:16+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 83.0,
-    "projected": 88.48,
+    "score": 87.04,
+    "projected": 92.03,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6645,7 +6645,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 6.8,
+      "points": 10.84,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1792455300000
@@ -6697,8 +6697,8 @@
     ]
    },
    "Naug": {
-    "score": 85.12,
-    "projected": 84.45,
+    "score": 83.12,
+    "projected": 83.01,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6794,7 +6794,7 @@
       "slot": "D/ST",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 9.0,
+      "points": 7.0,
       "projected": 6.55,
       "status": "live",
       "kickoff": 1792455300000
@@ -7118,7 +7118,7 @@
    },
    "BEND": {
     "score": 81.42,
-    "projected": 86.68,
+    "projected": 86.21,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7433,7 +7433,7 @@
    },
    "TMOG": {
     "score": 102.7,
-    "projected": 105.26,
+    "projected": 105.03,
     "starters": [
      {
       "name": "James Cook III",
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 89.72,
-    "projected": 99.01,
+    "projected": 98.17,
     "starters": [
      {
       "name": "Drake London",
@@ -8381,6 +8381,23 @@
      "MBJG": 121.14,
      "PORK": 83.0,
      "Naug": 85.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 81.42,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 102.7,
+     "RA": 89.72
+    }
+   },
+   {
+    "t": "2026-10-20T02:30:16+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 87.04,
+     "Naug": 83.12,
      "WALT": 122.24,
      "CJ": 83.2,
      "BW": 128.08,
