@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 01:20:18 UTC",
-  "last_updated": "2026-10-20T01:20:18.681276+00:00"
+  "updated_at": "2026-10-20 01:30:17 UTC",
+  "last_updated": "2026-10-20T01:30:17.569372+00:00"
  },
  "teams": [
   {
@@ -147,7 +147,7 @@
     106.96,
     108.18,
     111.04,
-    78.32
+    80.42
    ],
    "ranking_points_by_week": [
     10.0,
@@ -270,7 +270,7 @@
     117.58,
     105.92,
     103.76,
-    80.56
+    82.7
    ],
    "ranking_points_by_week": [
     3.0,
@@ -434,7 +434,7 @@
     110.12,
     115.58,
     81.16,
-    71.52
+    72.92
    ],
    "ranking_points_by_week": [
     7.0,
@@ -5033,12 +5033,28 @@
      "score": 15.5
     },
     {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 15.1
+    },
+    {
      "name": "Emeka Egbuka",
      "pro_team": "TB",
      "fantasy_team": "Mid AF Squad",
      "position": "WR",
      "slot": "WR",
      "score": 14.3
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 14.2
     },
     {
      "name": "Chiefs D/ST",
@@ -5071,14 +5087,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 13.8
-    },
-    {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
-     "score": 13.7
     },
     {
      "name": "Luther Burden III",
@@ -5143,14 +5151,6 @@
      "position": "RB",
      "slot": "FLEX",
      "score": 12.1
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 12.06
     },
     {
      "name": "Matt Gay",
@@ -5223,6 +5223,14 @@
      "position": "K",
      "slot": "K",
      "score": 11.0
+    },
+    {
+     "name": "Mike Evans",
+     "pro_team": "SF",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 10.9
     },
     {
      "name": "George Kittle",
@@ -5342,14 +5350,6 @@
      "fantasy_team": "The Lizard Kings",
      "position": "TE",
      "slot": "TE",
-     "score": 8.8
-    },
-    {
-     "name": "Mike Evans",
-     "pro_team": "SF",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "WR",
-     "slot": "FLEX",
      "score": 8.8
     },
     {
@@ -6288,7 +6288,7 @@
    "PORK": {
     "RB": 24.5,
     "WR": 18.7,
-    "FLEX": 8.8,
+    "FLEX": 10.9,
     "QB": 4.22,
     "D/ST": 7.0,
     "K": 13.0,
@@ -6331,7 +6331,7 @@
     "K": 17.0
    },
    "BEND": {
-    "RB": 16.6,
+    "RB": 18.0,
     "WR": 21.0,
     "TE": 1.4,
     "D/ST": 1.0,
@@ -6369,7 +6369,7 @@
    "RA": {
     "WR": 15.6,
     "FLEX": 10.5,
-    "QB": 12.06,
+    "QB": 14.2,
     "TE": 7.3,
     "D/ST": 4.0,
     "K": 8.0,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T01:20:18+00:00",
+  "updated_at": "2026-10-20T01:30:17+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 78.32,
-    "projected": 98.08,
+    "score": 80.42,
+    "projected": 97.26,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6634,7 +6634,7 @@
       "slot": "FLEX",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 8.8,
+      "points": 10.9,
       "projected": 12.6,
       "status": "live",
       "kickoff": 1792455300000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 84.12,
-    "projected": 83.24,
+    "projected": 83.37,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -7117,8 +7117,8 @@
     ]
    },
    "BEND": {
-    "score": 71.52,
-    "projected": 83.15,
+    "score": 72.92,
+    "projected": 82.83,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7126,7 +7126,7 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 13.7,
+      "points": 15.1,
       "projected": 19.15,
       "status": "live",
       "kickoff": 1792455300000
@@ -7433,7 +7433,7 @@
    },
    "TMOG": {
     "score": 101.0,
-    "projected": 106.67,
+    "projected": 105.83,
     "starters": [
      {
       "name": "James Cook III",
@@ -7537,8 +7537,8 @@
     ]
    },
    "RA": {
-    "score": 80.56,
-    "projected": 101.09,
+    "score": 82.7,
+    "projected": 100.19,
     "starters": [
      {
       "name": "Drake London",
@@ -7579,7 +7579,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 12.06,
+      "points": 14.2,
       "projected": 21.38,
       "status": "live",
       "kickoff": 1792455300000
@@ -8304,6 +8304,23 @@
      "SWSH": 91.2,
      "TMOG": 101.0,
      "RA": 80.56
+    }
+   },
+   {
+    "t": "2026-10-20T01:30:17+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 80.42,
+     "Naug": 84.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 72.92,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 101.0,
+     "RA": 82.7
     }
    }
   ]
