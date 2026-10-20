@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 00:50:16 UTC",
-  "last_updated": "2026-10-20T00:50:16.894876+00:00"
+  "updated_at": "2026-10-20 01:00:23 UTC",
+  "last_updated": "2026-10-20T01:00:23.840796+00:00"
  },
  "teams": [
   {
@@ -147,7 +147,7 @@
     106.96,
     108.18,
     111.04,
-    75.8
+    77.32
    ],
    "ranking_points_by_week": [
     10.0,
@@ -270,7 +270,7 @@
     117.58,
     105.92,
     103.76,
-    76.56
+    78.04
    ],
    "ranking_points_by_week": [
     3.0,
@@ -5217,6 +5217,14 @@
      "score": 11.0
     },
     {
+     "name": "George Kittle",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "TE",
+     "slot": "FLEX",
+     "score": 10.5
+    },
+    {
      "name": "George Pickens",
      "pro_team": "DAL",
      "fantasy_team": "Angel Reese Hoop Mixtape",
@@ -5249,28 +5257,20 @@
      "score": 9.7
     },
     {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "The Sun Gods ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 9.54
+    },
+    {
      "name": "Nico Collins",
      "pro_team": "HOU",
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "slot": "WR",
      "score": 9.4
-    },
-    {
-     "name": "George Kittle",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "TE",
-     "slot": "FLEX",
-     "score": 9.3
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "The Sun Gods ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 9.26
     },
     {
      "name": "Pierre Strong Jr.",
@@ -5585,6 +5585,14 @@
      "score": 3.6
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "slot": "QB",
+     "score": 3.22
+    },
+    {
      "name": "Terry McLaurin",
      "pro_team": "WSH",
      "fantasy_team": "Swishington Football Team",
@@ -5647,14 +5655,6 @@
      "position": "WR",
      "slot": "FLEX",
      "score": 2.0
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "slot": "QB",
-     "score": 1.7
     },
     {
      "name": "Harold Fannin Jr.",
@@ -6289,7 +6289,7 @@
     "RB": 24.5,
     "WR": 18.7,
     "FLEX": 8.8,
-    "QB": 1.7,
+    "QB": 3.22,
     "D/ST": 7.0,
     "K": 13.0,
     "TE": 2.1
@@ -6368,8 +6368,8 @@
    },
    "RA": {
     "WR": 15.6,
-    "FLEX": 9.3,
-    "QB": 9.26,
+    "FLEX": 10.5,
+    "QB": 9.54,
     "TE": 7.3,
     "D/ST": 4.0,
     "K": 8.0,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T00:50:16+00:00",
+  "updated_at": "2026-10-20T01:00:23+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 75.8,
-    "projected": 101.25,
+    "score": 77.32,
+    "projected": 101.72,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6645,7 +6645,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 1.7,
+      "points": 3.22,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1792455300000
@@ -6698,7 +6698,7 @@
    },
    "Naug": {
     "score": 83.12,
-    "projected": 82.77,
+    "projected": 82.78,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -7118,7 +7118,7 @@
    },
    "BEND": {
     "score": 68.92,
-    "projected": 83.9,
+    "projected": 83.28,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7328,7 +7328,7 @@
    },
    "SWSH": {
     "score": 91.2,
-    "projected": 99.1,
+    "projected": 91.2,
     "starters": [
      {
       "name": "Brock Bowers",
@@ -7433,7 +7433,7 @@
    },
    "TMOG": {
     "score": 100.0,
-    "projected": 107.3,
+    "projected": 107.0,
     "starters": [
      {
       "name": "James Cook III",
@@ -7537,8 +7537,8 @@
     ]
    },
    "RA": {
-    "score": 76.56,
-    "projected": 103.0,
+    "score": 78.04,
+    "projected": 103.39,
     "starters": [
      {
       "name": "Drake London",
@@ -7568,7 +7568,7 @@
       "slot": "FLEX",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 9.3,
+      "points": 10.5,
       "projected": 12.42,
       "status": "live",
       "kickoff": 1792455300000
@@ -7579,7 +7579,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 9.26,
+      "points": 9.54,
       "projected": 21.38,
       "status": "live",
       "kickoff": 1792455300000
@@ -8253,6 +8253,23 @@
      "SWSH": 91.2,
      "TMOG": 100.0,
      "RA": 76.56
+    }
+   },
+   {
+    "t": "2026-10-20T01:00:23+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 77.32,
+     "Naug": 83.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 68.92,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 100.0,
+     "RA": 78.04
     }
    }
   ]
