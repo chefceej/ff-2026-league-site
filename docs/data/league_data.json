@@ -8,8 +8,8 @@
   "current_matchup_week": 6,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-20 01:50:17 UTC",
-  "last_updated": "2026-10-20T01:50:17.371307+00:00"
+  "updated_at": "2026-10-20 02:00:19 UTC",
+  "last_updated": "2026-10-20T02:00:19.237976+00:00"
  },
  "teams": [
   {
@@ -147,7 +147,7 @@
     106.96,
     108.18,
     111.04,
-    80.32
+    81.48
    ],
    "ranking_points_by_week": [
     10.0,
@@ -393,7 +393,7 @@
     82.92,
     81.62,
     125.36,
-    101.0
+    101.6
    ],
    "ranking_points_by_week": [
     11.0,
@@ -475,7 +475,7 @@
     81.58,
     89.62,
     92.0,
-    84.12
+    85.12
    ],
    "ranking_points_by_week": [
     6.0,
@@ -5313,6 +5313,14 @@
      "score": 9.0
     },
     {
+     "name": "49ers D/ST",
+     "pro_team": "SF",
+     "fantasy_team": "Mid AF Squad",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 9.0
+    },
+    {
      "name": "Spencer Shrader",
      "pro_team": "IND",
      "fantasy_team": "Walt's Warriors",
@@ -5367,14 +5375,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 8.2
-    },
-    {
-     "name": "49ers D/ST",
-     "pro_team": "SF",
-     "fantasy_team": "Mid AF Squad",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 8.0
     },
     {
      "name": "Dominic Zvada",
@@ -5505,6 +5505,14 @@
      "score": 5.3
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "QB",
+     "slot": "QB",
+     "score": 5.28
+    },
+    {
      "name": "Emanuel Wilson",
      "pro_team": "SEA",
      "fantasy_team": "The Lizard Kings",
@@ -5551,14 +5559,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 4.2
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "QB",
-     "slot": "QB",
-     "score": 4.12
     },
     {
      "name": "Tyler Loop",
@@ -5657,20 +5657,20 @@
      "score": 2.0
     },
     {
+     "name": "Rachaad White",
+     "pro_team": "WSH",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 1.8
+    },
+    {
      "name": "Harold Fannin Jr.",
      "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
      "position": "TE",
      "slot": "TE",
      "score": 1.4
-    },
-    {
-     "name": "Rachaad White",
-     "pro_team": "WSH",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 1.2
     },
     {
      "name": "Brandon Aubrey",
@@ -6289,7 +6289,7 @@
     "RB": 24.5,
     "WR": 18.7,
     "FLEX": 10.9,
-    "QB": 4.12,
+    "QB": 5.28,
     "D/ST": 7.0,
     "K": 13.0,
     "TE": 2.1
@@ -6301,7 +6301,7 @@
     "FLEX": 12.1,
     "QB": 11.02,
     "TE": 6.9,
-    "D/ST": 8.0
+    "D/ST": 9.0
    },
    "WALT": {
     "WR": 24.5,
@@ -6364,7 +6364,7 @@
     "D/ST": 9.0,
     "QB": 22.8,
     "K": 4.0,
-    "FLEX": 1.2
+    "FLEX": 1.8
    },
    "RA": {
     "WR": 15.6,
@@ -6379,7 +6379,7 @@
  ],
  "live": {
   "week": 6,
-  "updated_at": "2026-10-20T01:50:17+00:00",
+  "updated_at": "2026-10-20T02:00:19+00:00",
   "teams": {
    "SACK": {
     "score": 103.38,
@@ -6592,8 +6592,8 @@
     ]
    },
    "PORK": {
-    "score": 80.32,
-    "projected": 96.59,
+    "score": 81.48,
+    "projected": 90.46,
     "starters": [
      {
       "name": "Omarion Hampton",
@@ -6645,7 +6645,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 4.12,
+      "points": 5.28,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1792455300000
@@ -6697,8 +6697,8 @@
     ]
    },
    "Naug": {
-    "score": 84.12,
-    "projected": 83.39,
+    "score": 85.12,
+    "projected": 84.02,
     "starters": [
      {
       "name": "D'Andre Swift",
@@ -6794,7 +6794,7 @@
       "slot": "D/ST",
       "pro_team": "SF",
       "opponent": "WSH",
-      "points": 8.0,
+      "points": 9.0,
       "projected": 6.55,
       "status": "live",
       "kickoff": 1792455300000
@@ -7118,7 +7118,7 @@
    },
    "BEND": {
     "score": 79.02,
-    "projected": 88.6,
+    "projected": 87.64,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -7432,8 +7432,8 @@
     ]
    },
    "TMOG": {
-    "score": 101.0,
-    "projected": 105.66,
+    "score": 101.6,
+    "projected": 105.8,
     "starters": [
      {
       "name": "James Cook III",
@@ -7529,7 +7529,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "SF",
-      "points": 1.2,
+      "points": 1.8,
       "projected": 9.33,
       "status": "live",
       "kickoff": 1792455300000
@@ -7538,7 +7538,7 @@
    },
    "RA": {
     "score": 83.96,
-    "projected": 100.86,
+    "projected": 99.18,
     "starters": [
      {
       "name": "Drake London",
@@ -8337,6 +8337,23 @@
      "SW": 66.52,
      "SWSH": 91.2,
      "TMOG": 101.0,
+     "RA": 83.96
+    }
+   },
+   {
+    "t": "2026-10-20T02:00:19+00:00",
+    "scores": {
+     "SACK": 103.38,
+     "MBJG": 121.14,
+     "PORK": 81.48,
+     "Naug": 85.12,
+     "WALT": 122.24,
+     "CJ": 83.2,
+     "BW": 128.08,
+     "BEND": 79.02,
+     "SW": 66.52,
+     "SWSH": 91.2,
+     "TMOG": 101.6,
      "RA": 83.96
     }
    }
