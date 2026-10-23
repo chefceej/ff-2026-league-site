@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-23 02:00:20 UTC",
-  "last_updated": "2026-10-23T02:00:20.870690+00:00"
+  "updated_at": "2026-10-23 02:10:20 UTC",
+  "last_updated": "2026-10-23T02:10:20.525443+00:00"
  },
  "teams": [
   {
@@ -58,51 +58,6 @@
    "total_ranking_points": 58.0
   },
   {
-   "team_id": 8,
-   "team_name": "Satriale's Pork Store",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    97.2,
-    5.0
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    7.0,
-    7.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    46.0,
-    53.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    6.0,
-    7.0
-   ],
-   "rank": 2,
-   "total_ranking_points": 53.0
-  },
-  {
    "team_id": 10,
    "team_name": "Bijan These Nuts",
    "team_abbrev": "SACK",
@@ -144,8 +99,53 @@
     10.0,
     6.5
    ],
-   "rank": 3,
+   "rank": 2,
    "total_ranking_points": 52.5
+  },
+  {
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    97.2,
+    5.0
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    7.0,
+    6.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    46.0,
+    52.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    6.0,
+    6.0
+   ],
+   "rank": 3,
+   "total_ranking_points": 52.0
   },
   {
    "team_id": 3,
@@ -160,7 +160,7 @@
     118.0,
     88.24,
     128.08,
-    4.9
+    16.4
    ],
    "ranking_points_by_week": [
     4.0,
@@ -169,7 +169,7 @@
     9.0,
     3.0,
     12.0,
-    6.0
+    8.0
    ],
    "cumulative_points_by_week": [
     4.0,
@@ -178,7 +178,7 @@
     28.0,
     31.0,
     43.0,
-    49.0
+    51.0
    ],
    "normalized_by_week": [
     -3.0,
@@ -187,10 +187,10 @@
     1.0,
     -3.0,
     3.0,
-    3.0
+    5.0
    ],
    "rank": 4,
-   "total_ranking_points": 49.0
+   "total_ranking_points": 51.0
   },
   {
    "team_id": 1,
@@ -214,7 +214,7 @@
     12.0,
     1.0,
     1.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -223,7 +223,7 @@
     36.0,
     37.0,
     38.0,
-    48.0
+    47.0
    ],
    "normalized_by_week": [
     2.0,
@@ -232,10 +232,55 @@
     9.0,
     3.0,
     -2.0,
-    2.0
+    1.0
    ],
    "rank": 5,
-   "total_ranking_points": 48.0
+   "total_ranking_points": 47.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    113.5,
+    18.4
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    9.0,
+    10.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    36.0,
+    46.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -4.0,
+    0.0
+   ],
+   "rank": 6,
+   "total_ranking_points": 46.0
   },
   {
    "team_id": 11,
@@ -279,7 +324,7 @@
     1.0,
     0.0
    ],
-   "rank": 6,
+   "rank": 7,
    "total_ranking_points": 46.0
   },
   {
@@ -322,51 +367,6 @@
     -8.0,
     -3.0,
     -6.0,
-    -1.0
-   ],
-   "rank": 7,
-   "total_ranking_points": 45.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    113.5,
-    10.96
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0,
-    45.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0,
     -1.0
    ],
    "rank": 8,
@@ -520,7 +520,7 @@
     89.62,
     92.0,
     82.12,
-    10.2
+    12.8
    ],
    "ranking_points_by_week": [
     6.0,
@@ -529,7 +529,7 @@
     3.0,
     4.0,
     2.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -538,7 +538,7 @@
     15.0,
     19.0,
     21.0,
-    29.0
+    28.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -547,10 +547,10 @@
     -12.0,
     -15.0,
     -19.0,
-    -17.0
+    -18.0
    ],
    "rank": 12,
-   "total_ranking_points": 29.0
+   "total_ranking_points": 28.0
   }
  ],
  "top_players_by_week": [
@@ -5773,6 +5773,14 @@
      "score": 21.7
     },
     {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 18.4
+    },
+    {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -5789,12 +5797,12 @@
      "score": 16.96
     },
     {
-     "name": "Bears TQB",
+     "name": "Colston Loveland",
      "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "slot": "QB",
-     "score": 10.96
+     "fantasy_team": "JSN Derulo ",
+     "position": "TE",
+     "slot": "TE",
+     "score": 14.3
     },
     {
      "name": "D'Andre Swift",
@@ -5802,7 +5810,7 @@
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
      "slot": "RB",
-     "score": 10.2
+     "score": 12.8
     },
     {
      "name": "Bears D/ST",
@@ -5819,14 +5827,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 3.0
-    },
-    {
-     "name": "Colston Loveland",
-     "pro_team": "CHI",
-     "fantasy_team": "JSN Derulo ",
-     "position": "TE",
-     "slot": "TE",
-     "score": 2.8
     },
     {
      "name": "A.J. Brown",
@@ -7331,7 +7331,7 @@
    },
    "Naug": {
     "WR": 0.0,
-    "RB": 10.2,
+    "RB": 12.8,
     "QB": 0.0,
     "K": 0.0,
     "FLEX": 0.0,
@@ -7341,7 +7341,7 @@
    "BW": {
     "WR": 0.0,
     "RB": 0.0,
-    "TE": 2.8,
+    "TE": 14.3,
     "QB": 0.0,
     "D/ST": 0.0,
     "FLEX": 2.1,
@@ -7378,7 +7378,7 @@
     "WR": 0.0,
     "TE": 0.0,
     "RB": 0.0,
-    "QB": 10.96,
+    "QB": 18.4,
     "K": 0.0,
     "D/ST": 0.0,
     "FLEX": 0.0
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-23T02:00:20+00:00",
+  "updated_at": "2026-10-23T02:10:20+00:00",
   "teams": {
    "PORK": {
     "score": 5.0,
-    "projected": 94.41,
+    "projected": 94.18,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7724,7 +7724,7 @@
    },
    "WALT": {
     "score": 21.7,
-    "projected": 131.73,
+    "projected": 130.83,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7828,8 +7828,8 @@
     ]
    },
    "Naug": {
-    "score": 10.2,
-    "projected": 111.5,
+    "score": 12.8,
+    "projected": 112.79,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7859,7 +7859,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 10.2,
+      "points": 12.8,
       "projected": 14.75,
       "status": "live",
       "kickoff": 1792714500000
@@ -7933,8 +7933,8 @@
     ]
    },
    "BW": {
-    "score": 4.9,
-    "projected": 99.61,
+    "score": 16.4,
+    "projected": 109.69,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7964,7 +7964,7 @@
       "slot": "TE",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 2.8,
+      "points": 14.3,
       "projected": 9.45,
       "status": "live",
       "kickoff": 1792714500000
@@ -8039,7 +8039,7 @@
    },
    "CJ": {
     "score": 19.26,
-    "projected": 114.78,
+    "projected": 111.77,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 17.8,
-    "projected": 129.08,
+    "projected": 128.18,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 10.96,
-    "projected": 92.58,
+    "score": 18.4,
+    "projected": 98.46,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8406,7 +8406,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 10.96,
+      "points": 18.4,
       "projected": 17.6,
       "status": "live",
       "kickoff": 1792714500000
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 3.9,
-    "projected": 101.59,
+    "projected": 100.27,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -8852,6 +8852,23 @@
      "SW": 17.8,
      "BEND": 0.0,
      "TMOG": 10.96,
+     "SWSH": 0.0,
+     "RA": 3.9
+    }
+   },
+   {
+    "t": "2026-10-23T02:10:20+00:00",
+    "scores": {
+     "PORK": 5.0,
+     "SACK": 0.0,
+     "MBJG": 0.0,
+     "WALT": 21.7,
+     "Naug": 12.8,
+     "BW": 16.4,
+     "CJ": 19.26,
+     "SW": 17.8,
+     "BEND": 0.0,
+     "TMOG": 18.4,
      "SWSH": 0.0,
      "RA": 3.9
     }
