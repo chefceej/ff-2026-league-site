@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-23 01:20:17 UTC",
-  "last_updated": "2026-10-23T01:20:17.768769+00:00"
+  "updated_at": "2026-10-23 01:30:21 UTC",
+  "last_updated": "2026-10-23T01:30:21.068055+00:00"
  },
  "teams": [
   {
@@ -34,7 +34,7 @@
     10.0,
     10.0,
     11.0,
-    12.0
+    11.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -43,7 +43,7 @@
     25.0,
     35.0,
     46.0,
-    58.0
+    57.0
    ],
    "normalized_by_week": [
     5.0,
@@ -52,10 +52,10 @@
     -2.0,
     1.0,
     6.0,
-    12.0
+    11.0
    ],
    "rank": 1,
-   "total_ranking_points": 58.0
+   "total_ranking_points": 57.0
   },
   {
    "team_id": 8,
@@ -70,7 +70,7 @@
     108.18,
     111.04,
     97.2,
-    5.0
+    7.0
    ],
    "ranking_points_by_week": [
     10.0,
@@ -79,7 +79,7 @@
     6.0,
     6.0,
     7.0,
-    8.0
+    9.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -88,7 +88,7 @@
     33.0,
     39.0,
     46.0,
-    54.0
+    55.0
    ],
    "normalized_by_week": [
     3.0,
@@ -97,10 +97,10 @@
     6.0,
     5.0,
     6.0,
-    8.0
+    9.0
    ],
    "rank": 2,
-   "total_ranking_points": 54.0
+   "total_ranking_points": 55.0
   },
   {
    "team_id": 10,
@@ -214,7 +214,7 @@
     12.0,
     1.0,
     1.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -223,7 +223,7 @@
     36.0,
     37.0,
     38.0,
-    47.0
+    46.0
    ],
    "normalized_by_week": [
     2.0,
@@ -232,10 +232,55 @@
     9.0,
     3.0,
     -2.0,
-    1.0
+    0.0
    ],
    "rank": 5,
-   "total_ranking_points": 47.0
+   "total_ranking_points": 46.0
+  },
+  {
+   "team_id": 2,
+   "team_name": "Kaiser Soze",
+   "team_abbrev": "CJ",
+   "abbrev": "CJ",
+   "owner": "Connor Kraus",
+   "scores_by_week": [
+    123.86,
+    76.48,
+    102.6,
+    78.54,
+    177.16,
+    83.2,
+    10.32
+   ],
+   "ranking_points_by_week": [
+    8.0,
+    4.0,
+    6.0,
+    1.0,
+    12.0,
+    3.0,
+    12.0
+   ],
+   "cumulative_points_by_week": [
+    8.0,
+    12.0,
+    18.0,
+    19.0,
+    31.0,
+    34.0,
+    46.0
+   ],
+   "normalized_by_week": [
+    1.0,
+    0.0,
+    -1.0,
+    -8.0,
+    -3.0,
+    -6.0,
+    0.0
+   ],
+   "rank": 6,
+   "total_ranking_points": 46.0
   },
   {
    "team_id": 11,
@@ -279,53 +324,8 @@
     1.0,
     0.0
    ],
-   "rank": 6,
-   "total_ranking_points": 46.0
-  },
-  {
-   "team_id": 2,
-   "team_name": "Kaiser Soze",
-   "team_abbrev": "CJ",
-   "abbrev": "CJ",
-   "owner": "Connor Kraus",
-   "scores_by_week": [
-    123.86,
-    76.48,
-    102.6,
-    78.54,
-    177.16,
-    83.2,
-    9.74
-   ],
-   "ranking_points_by_week": [
-    8.0,
-    4.0,
-    6.0,
-    1.0,
-    12.0,
-    3.0,
-    11.0
-   ],
-   "cumulative_points_by_week": [
-    8.0,
-    12.0,
-    18.0,
-    19.0,
-    31.0,
-    34.0,
-    45.0
-   ],
-   "normalized_by_week": [
-    1.0,
-    0.0,
-    -1.0,
-    -8.0,
-    -3.0,
-    -6.0,
-    -1.0
-   ],
    "rank": 7,
-   "total_ranking_points": 45.0
+   "total_ranking_points": 46.0
   },
   {
    "team_id": 7,
@@ -340,7 +340,7 @@
     81.62,
     125.36,
     113.5,
-    4.6
+    4.84
    ],
    "ranking_points_by_week": [
     11.0,
@@ -5765,20 +5765,20 @@
   {
    "all": [
     {
+     "name": "Patriots TQB",
+     "pro_team": "NE",
+     "fantasy_team": "Kaiser Soze",
+     "position": "QB",
+     "slot": "QB",
+     "score": 10.32
+    },
+    {
      "name": "Luther Burden III",
      "pro_team": "CHI",
      "fantasy_team": "Walt's Warriors",
      "position": "WR",
      "slot": "WR",
      "score": 10.1
-    },
-    {
-     "name": "Patriots TQB",
-     "pro_team": "NE",
-     "fantasy_team": "Kaiser Soze",
-     "position": "QB",
-     "slot": "QB",
-     "score": 9.74
     },
     {
      "name": "D'Andre Swift",
@@ -5789,6 +5789,14 @@
      "score": 8.6
     },
     {
+     "name": "Bears D/ST",
+     "pro_team": "CHI",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 7.0
+    },
+    {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -5797,20 +5805,12 @@
      "score": 6.5
     },
     {
-     "name": "Bears D/ST",
-     "pro_team": "CHI",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 5.0
-    },
-    {
      "name": "Bears TQB",
      "pro_team": "CHI",
      "fantasy_team": "Team Made of Glass",
      "position": "QB",
      "slot": "QB",
-     "score": 4.6
+     "score": 4.84
     },
     {
      "name": "TreVeyon Henderson",
@@ -7299,7 +7299,7 @@
     "FLEX": 0.0,
     "QB": 0.0,
     "K": 0.0,
-    "D/ST": 5.0,
+    "D/ST": 7.0,
     "TE": 0.0
    },
    "SACK": {
@@ -7350,7 +7350,7 @@
    "CJ": {
     "RB": 0.0,
     "WR": 0.0,
-    "QB": 9.74,
+    "QB": 10.32,
     "TE": 0.0,
     "FLEX": 0.0,
     "K": 0.0,
@@ -7378,7 +7378,7 @@
     "WR": 0.0,
     "TE": 0.0,
     "RB": 0.0,
-    "QB": 4.6,
+    "QB": 4.84,
     "K": 0.0,
     "D/ST": 0.0,
     "FLEX": 0.0
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-23T01:20:17+00:00",
+  "updated_at": "2026-10-23T01:30:21+00:00",
   "teams": {
    "PORK": {
-    "score": 5.0,
-    "projected": 94.72,
+    "score": 7.0,
+    "projected": 95.44,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7494,7 +7494,7 @@
       "slot": "D/ST",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 5.0,
+      "points": 7.0,
       "projected": 7.6,
       "status": "live",
       "kickoff": 1792714500000
@@ -7724,7 +7724,7 @@
    },
    "WALT": {
     "score": 10.1,
-    "projected": 121.34,
+    "projected": 120.65,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 8.6,
-    "projected": 111.64,
+    "projected": 110.65,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 3.7,
-    "projected": 100.31,
+    "projected": 99.23,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8038,8 +8038,8 @@
     ]
    },
    "CJ": {
-    "score": 9.74,
-    "projected": 109.26,
+    "score": 10.32,
+    "projected": 107.56,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8091,7 +8091,7 @@
       "slot": "QB",
       "pro_team": "NE",
       "opponent": "None",
-      "points": 9.74,
+      "points": 10.32,
       "projected": 20.59,
       "status": "live",
       "kickoff": 1792714500000
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 6.5,
-    "projected": 118.98,
+    "projected": 118.29,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 4.6,
-    "projected": 88.29,
+    "score": 4.84,
+    "projected": 87.35,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8406,7 +8406,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 4.6,
+      "points": 4.84,
       "projected": 17.6,
       "status": "live",
       "kickoff": 1792714500000
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 3.0,
-    "projected": 102.46,
+    "projected": 101.45,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -8784,6 +8784,23 @@
      "SW": 6.5,
      "BEND": 0.0,
      "TMOG": 4.6,
+     "SWSH": 0.0,
+     "RA": 3.0
+    }
+   },
+   {
+    "t": "2026-10-23T01:30:21+00:00",
+    "scores": {
+     "PORK": 7.0,
+     "SACK": 0.0,
+     "MBJG": 0.0,
+     "WALT": 10.1,
+     "Naug": 8.6,
+     "BW": 3.7,
+     "CJ": 10.32,
+     "SW": 6.5,
+     "BEND": 0.0,
+     "TMOG": 4.84,
      "SWSH": 0.0,
      "RA": 3.0
     }
