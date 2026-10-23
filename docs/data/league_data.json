@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-23 01:50:16 UTC",
-  "last_updated": "2026-10-23T01:50:16.316894+00:00"
+  "updated_at": "2026-10-23 02:00:20 UTC",
+  "last_updated": "2026-10-23T02:00:20.870690+00:00"
  },
  "teams": [
   {
@@ -52,7 +52,7 @@
     -2.0,
     1.0,
     6.0,
-    11.0
+    12.0
    ],
    "rank": 1,
    "total_ranking_points": 58.0
@@ -97,7 +97,7 @@
     6.0,
     5.0,
     6.0,
-    6.0
+    7.0
    ],
    "rank": 2,
    "total_ranking_points": 53.0
@@ -142,10 +142,55 @@
     4.0,
     8.0,
     10.0,
-    5.5
+    6.5
    ],
    "rank": 3,
    "total_ranking_points": 52.5
+  },
+  {
+   "team_id": 3,
+   "team_name": "JSN Derulo ",
+   "team_abbrev": "BW",
+   "abbrev": "BW",
+   "owner": "Brian Wilson",
+   "scores_by_week": [
+    98.86,
+    99.9,
+    107.1,
+    118.0,
+    88.24,
+    128.08,
+    4.9
+   ],
+   "ranking_points_by_week": [
+    4.0,
+    7.0,
+    8.0,
+    9.0,
+    3.0,
+    12.0,
+    6.0
+   ],
+   "cumulative_points_by_week": [
+    4.0,
+    11.0,
+    19.0,
+    28.0,
+    31.0,
+    43.0,
+    49.0
+   ],
+   "normalized_by_week": [
+    -3.0,
+    -1.0,
+    0.0,
+    1.0,
+    -3.0,
+    3.0,
+    3.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 49.0
   },
   {
    "team_id": 1,
@@ -187,52 +232,7 @@
     9.0,
     3.0,
     -2.0,
-    1.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 48.0
-  },
-  {
-   "team_id": 3,
-   "team_name": "JSN Derulo ",
-   "team_abbrev": "BW",
-   "abbrev": "BW",
-   "owner": "Brian Wilson",
-   "scores_by_week": [
-    98.86,
-    99.9,
-    107.1,
-    118.0,
-    88.24,
-    128.08,
-    3.7
-   ],
-   "ranking_points_by_week": [
-    4.0,
-    7.0,
-    8.0,
-    9.0,
-    3.0,
-    12.0,
-    5.0
-   ],
-   "cumulative_points_by_week": [
-    4.0,
-    11.0,
-    19.0,
-    28.0,
-    31.0,
-    43.0,
-    48.0
-   ],
-   "normalized_by_week": [
-    -3.0,
-    -1.0,
-    0.0,
-    1.0,
-    -3.0,
-    3.0,
-    1.0
+    2.0
    ],
    "rank": 5,
    "total_ranking_points": 48.0
@@ -259,7 +259,7 @@
     5.0,
     5.0,
     5.0,
-    6.0
+    5.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -268,7 +268,7 @@
     31.0,
     36.0,
     41.0,
-    47.0
+    46.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -280,7 +280,7 @@
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 47.0
+   "total_ranking_points": 46.0
   },
   {
    "team_id": 2,
@@ -322,7 +322,7 @@
     -8.0,
     -3.0,
     -6.0,
-    -2.0
+    -1.0
    ],
    "rank": 7,
    "total_ranking_points": 45.0
@@ -340,7 +340,7 @@
     81.62,
     125.36,
     113.5,
-    10.68
+    10.96
    ],
    "ranking_points_by_week": [
     11.0,
@@ -367,7 +367,7 @@
     -8.0,
     -7.0,
     -4.0,
-    -2.0
+    -1.0
    ],
    "rank": 8,
    "total_ranking_points": 45.0
@@ -412,7 +412,7 @@
     -2.0,
     0.0,
     0.0,
-    -4.5
+    -3.5
    ],
    "rank": 9,
    "total_ranking_points": 42.5
@@ -457,7 +457,7 @@
     -4.0,
     -4.0,
     0.0,
-    -4.5
+    -3.5
    ],
    "rank": 10,
    "total_ranking_points": 42.5
@@ -502,7 +502,7 @@
     0.0,
     -5.0,
     -7.0,
-    -11.5
+    -10.5
    ],
    "rank": 11,
    "total_ranking_points": 35.5
@@ -547,7 +547,7 @@
     -12.0,
     -15.0,
     -19.0,
-    -18.0
+    -17.0
    ],
    "rank": 12,
    "total_ranking_points": 29.0
@@ -5794,7 +5794,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "QB",
      "slot": "QB",
-     "score": 10.68
+     "score": 10.96
     },
     {
      "name": "D'Andre Swift",
@@ -5821,6 +5821,14 @@
      "score": 3.0
     },
     {
+     "name": "Colston Loveland",
+     "pro_team": "CHI",
+     "fantasy_team": "JSN Derulo ",
+     "position": "TE",
+     "slot": "TE",
+     "score": 2.8
+    },
+    {
      "name": "A.J. Brown",
      "pro_team": "NE",
      "fantasy_team": "Kaiser Soze",
@@ -5835,14 +5843,6 @@
      "position": "TE",
      "slot": "FLEX",
      "score": 2.1
-    },
-    {
-     "name": "Colston Loveland",
-     "pro_team": "CHI",
-     "fantasy_team": "JSN Derulo ",
-     "position": "TE",
-     "slot": "TE",
-     "score": 1.6
     },
     {
      "name": "Roschon Johnson",
@@ -7341,7 +7341,7 @@
    "BW": {
     "WR": 0.0,
     "RB": 0.0,
-    "TE": 1.6,
+    "TE": 2.8,
     "QB": 0.0,
     "D/ST": 0.0,
     "FLEX": 2.1,
@@ -7378,7 +7378,7 @@
     "WR": 0.0,
     "TE": 0.0,
     "RB": 0.0,
-    "QB": 10.68,
+    "QB": 10.96,
     "K": 0.0,
     "D/ST": 0.0,
     "FLEX": 0.0
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-23T01:50:16+00:00",
+  "updated_at": "2026-10-23T02:00:20+00:00",
   "teams": {
    "PORK": {
     "score": 5.0,
@@ -7933,8 +7933,8 @@
     ]
    },
    "BW": {
-    "score": 3.7,
-    "projected": 98.41,
+    "score": 4.9,
+    "projected": 99.61,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7964,7 +7964,7 @@
       "slot": "TE",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 1.6,
+      "points": 2.8,
       "projected": 9.45,
       "status": "live",
       "kickoff": 1792714500000
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 10.68,
-    "projected": 92.3,
+    "score": 10.96,
+    "projected": 92.58,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8406,7 +8406,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 10.68,
+      "points": 10.96,
       "projected": 17.6,
       "status": "live",
       "kickoff": 1792714500000
@@ -8835,6 +8835,23 @@
      "SW": 17.8,
      "BEND": 0.0,
      "TMOG": 10.68,
+     "SWSH": 0.0,
+     "RA": 3.9
+    }
+   },
+   {
+    "t": "2026-10-23T02:00:20+00:00",
+    "scores": {
+     "PORK": 5.0,
+     "SACK": 0.0,
+     "MBJG": 0.0,
+     "WALT": 21.7,
+     "Naug": 10.2,
+     "BW": 4.9,
+     "CJ": 19.26,
+     "SW": 17.8,
+     "BEND": 0.0,
+     "TMOG": 10.96,
      "SWSH": 0.0,
      "RA": 3.9
     }
