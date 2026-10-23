@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-23 00:40:17 UTC",
-  "last_updated": "2026-10-23T00:40:17.359413+00:00"
+  "updated_at": "2026-10-23 00:50:17 UTC",
+  "last_updated": "2026-10-23T00:50:17.859721+00:00"
  },
  "teams": [
   {
@@ -52,7 +52,7 @@
     6.0,
     5.0,
     6.0,
-    12.0
+    13.0
    ],
    "rank": 1,
    "total_ranking_points": 58.0
@@ -70,7 +70,7 @@
     121.48,
     142.54,
     122.24,
-    3.1
+    9.4
    ],
    "ranking_points_by_week": [
     12.0,
@@ -97,7 +97,7 @@
     -2.0,
     1.0,
     6.0,
-    11.0
+    12.0
    ],
    "rank": 2,
    "total_ranking_points": 57.0
@@ -124,7 +124,7 @@
     11.0,
     11.0,
     8.0,
-    3.0
+    2.5
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -133,7 +133,7 @@
     31.0,
     42.0,
     50.0,
-    53.0
+    52.5
    ],
    "normalized_by_week": [
     -5.0,
@@ -142,10 +142,55 @@
     4.0,
     8.0,
     10.0,
-    7.0
+    7.5
    ],
    "rank": 3,
-   "total_ranking_points": 53.0
+   "total_ranking_points": 52.5
+  },
+  {
+   "team_id": 3,
+   "team_name": "JSN Derulo ",
+   "team_abbrev": "BW",
+   "abbrev": "BW",
+   "owner": "Brian Wilson",
+   "scores_by_week": [
+    98.86,
+    99.9,
+    107.1,
+    118.0,
+    88.24,
+    128.08,
+    1.6
+   ],
+   "ranking_points_by_week": [
+    4.0,
+    7.0,
+    8.0,
+    9.0,
+    3.0,
+    12.0,
+    6.0
+   ],
+   "cumulative_points_by_week": [
+    4.0,
+    11.0,
+    19.0,
+    28.0,
+    31.0,
+    43.0,
+    49.0
+   ],
+   "normalized_by_week": [
+    -3.0,
+    -1.0,
+    0.0,
+    1.0,
+    -3.0,
+    3.0,
+    4.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 49.0
   },
   {
    "team_id": 11,
@@ -169,7 +214,7 @@
     5.0,
     5.0,
     5.0,
-    10.0
+    8.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -178,7 +223,7 @@
     31.0,
     36.0,
     41.0,
-    51.0
+    49.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -187,10 +232,10 @@
     4.0,
     2.0,
     1.0,
-    5.0
+    4.0
    ],
-   "rank": 4,
-   "total_ranking_points": 51.0
+   "rank": 5,
+   "total_ranking_points": 49.0
   },
   {
    "team_id": 1,
@@ -214,7 +259,7 @@
     12.0,
     1.0,
     1.0,
-    9.0
+    7.0
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -223,7 +268,7 @@
     36.0,
     37.0,
     38.0,
-    47.0
+    45.0
    ],
    "normalized_by_week": [
     2.0,
@@ -232,55 +277,55 @@
     9.0,
     3.0,
     -2.0,
-    1.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 47.0
-  },
-  {
-   "team_id": 3,
-   "team_name": "JSN Derulo ",
-   "team_abbrev": "BW",
-   "abbrev": "BW",
-   "owner": "Brian Wilson",
-   "scores_by_week": [
-    98.86,
-    99.9,
-    107.1,
-    118.0,
-    88.24,
-    128.08,
-    0.0
-   ],
-   "ranking_points_by_week": [
-    4.0,
-    7.0,
-    8.0,
-    9.0,
-    3.0,
-    12.0,
-    3.0
-   ],
-   "cumulative_points_by_week": [
-    4.0,
-    11.0,
-    19.0,
-    28.0,
-    31.0,
-    43.0,
-    46.0
-   ],
-   "normalized_by_week": [
-    -3.0,
-    -1.0,
-    0.0,
-    1.0,
-    -3.0,
-    3.0,
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 46.0
+   "total_ranking_points": 45.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    113.5,
+    3.8
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    9.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    36.0,
+    45.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -4.0,
+    0.0
+   ],
+   "rank": 7,
+   "total_ranking_points": 45.0
   },
   {
    "team_id": 4,
@@ -304,7 +349,7 @@
     4.0,
     9.0,
     6.0,
-    3.0
+    2.5
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -313,7 +358,7 @@
     25.0,
     34.0,
     40.0,
-    43.0
+    42.5
    ],
    "normalized_by_week": [
     -6.0,
@@ -322,10 +367,10 @@
     -2.0,
     0.0,
     0.0,
-    -3.0
+    -2.5
    ],
-   "rank": 7,
-   "total_ranking_points": 43.0
+   "rank": 8,
+   "total_ranking_points": 42.5
   },
   {
    "team_id": 5,
@@ -349,7 +394,7 @@
     7.0,
     7.0,
     10.0,
-    3.0
+    2.5
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -358,7 +403,7 @@
     23.0,
     30.0,
     40.0,
-    43.0
+    42.5
    ],
    "normalized_by_week": [
     -2.0,
@@ -367,10 +412,10 @@
     -4.0,
     -4.0,
     0.0,
-    -3.0
+    -2.5
    ],
-   "rank": 8,
-   "total_ranking_points": 43.0
+   "rank": 9,
+   "total_ranking_points": 42.5
   },
   {
    "team_id": 2,
@@ -385,7 +430,7 @@
     78.54,
     177.16,
     83.2,
-    1.32
+    1.28
    ],
    "ranking_points_by_week": [
     8.0,
@@ -394,7 +439,7 @@
     1.0,
     12.0,
     3.0,
-    8.0
+    5.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -403,7 +448,7 @@
     19.0,
     31.0,
     34.0,
-    42.0
+    39.0
    ],
    "normalized_by_week": [
     1.0,
@@ -412,55 +457,10 @@
     -8.0,
     -3.0,
     -6.0,
-    -4.0
-   ],
-   "rank": 9,
-   "total_ranking_points": 42.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    113.5,
-    1.04
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0,
-    6.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0,
-    42.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0,
-    -4.0
+    -6.0
    ],
    "rank": 10,
-   "total_ranking_points": 42.0
+   "total_ranking_points": 39.0
   },
   {
    "team_id": 12,
@@ -484,7 +484,7 @@
     8.0,
     2.0,
     4.0,
-    3.0
+    2.5
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -493,7 +493,7 @@
     27.0,
     29.0,
     33.0,
-    36.0
+    35.5
    ],
    "normalized_by_week": [
     0.0,
@@ -502,10 +502,10 @@
     0.0,
     -5.0,
     -7.0,
-    -10.0
+    -9.5
    ],
    "rank": 11,
-   "total_ranking_points": 36.0
+   "total_ranking_points": 35.5
   },
   {
    "team_id": 6,
@@ -520,7 +520,7 @@
     89.62,
     92.0,
     82.12,
-    1.1
+    7.6
    ],
    "ranking_points_by_week": [
     6.0,
@@ -529,7 +529,7 @@
     3.0,
     4.0,
     2.0,
-    7.0
+    10.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -538,7 +538,7 @@
     15.0,
     19.0,
     21.0,
-    28.0
+    31.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -547,10 +547,10 @@
     -12.0,
     -15.0,
     -19.0,
-    -18.0
+    -14.0
    ],
    "rank": 12,
-   "total_ranking_points": 28.0
+   "total_ranking_points": 31.0
   }
  ],
  "top_players_by_week": [
@@ -5778,7 +5778,23 @@
      "fantasy_team": "Walt's Warriors",
      "position": "WR",
      "slot": "WR",
-     "score": 3.1
+     "score": 9.4
+    },
+    {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "slot": "RB",
+     "score": 7.6
+    },
+    {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 3.8
     },
     {
      "name": "TreVeyon Henderson",
@@ -5797,28 +5813,20 @@
      "score": 2.5
     },
     {
+     "name": "Colston Loveland",
+     "pro_team": "CHI",
+     "fantasy_team": "JSN Derulo ",
+     "position": "TE",
+     "slot": "TE",
+     "score": 1.6
+    },
+    {
      "name": "Patriots TQB",
      "pro_team": "NE",
      "fantasy_team": "Kaiser Soze",
      "position": "QB",
      "slot": "QB",
-     "score": 1.32
-    },
-    {
-     "name": "D'Andre Swift",
-     "pro_team": "CHI",
-     "fantasy_team": "Mid AF Squad",
-     "position": "RB",
-     "slot": "RB",
-     "score": 1.1
-    },
-    {
-     "name": "Bears TQB",
-     "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "slot": "QB",
-     "score": 1.04
+     "score": 1.28
     },
     {
      "name": "Chase Brown",
@@ -6170,14 +6178,6 @@
      "fantasy_team": "JSN Derulo ",
      "position": "RB",
      "slot": "RB",
-     "score": 0.0
-    },
-    {
-     "name": "Colston Loveland",
-     "pro_team": "CHI",
-     "fantasy_team": "JSN Derulo ",
-     "position": "TE",
-     "slot": "TE",
      "score": 0.0
     },
     {
@@ -7321,7 +7321,7 @@
     "K": 0.0
    },
    "WALT": {
-    "WR": 3.1,
+    "WR": 9.4,
     "RB": 0.0,
     "TE": 0.0,
     "D/ST": 0.0,
@@ -7331,7 +7331,7 @@
    },
    "Naug": {
     "WR": 0.0,
-    "RB": 1.1,
+    "RB": 7.6,
     "QB": 0.0,
     "K": 0.0,
     "FLEX": 0.0,
@@ -7341,7 +7341,7 @@
    "BW": {
     "WR": 0.0,
     "RB": 0.0,
-    "TE": 0.0,
+    "TE": 1.6,
     "QB": 0.0,
     "D/ST": 0.0,
     "FLEX": 0.0,
@@ -7350,7 +7350,7 @@
    "CJ": {
     "RB": 0.0,
     "WR": 0.0,
-    "QB": 1.32,
+    "QB": 1.28,
     "TE": 0.0,
     "FLEX": 0.0,
     "K": 0.0,
@@ -7378,7 +7378,7 @@
     "WR": 0.0,
     "TE": 0.0,
     "RB": 0.0,
-    "QB": 1.04,
+    "QB": 3.8,
     "K": 0.0,
     "D/ST": 0.0,
     "FLEX": 0.0
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-23T00:40:17+00:00",
+  "updated_at": "2026-10-23T00:50:17+00:00",
   "teams": {
    "PORK": {
     "score": 11.0,
-    "projected": 96.23,
+    "projected": 96.47,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7723,8 +7723,8 @@
     ]
    },
    "WALT": {
-    "score": 3.1,
-    "projected": 116.68,
+    "score": 9.4,
+    "projected": 122.27,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7765,7 +7765,7 @@
       "slot": "WR",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 3.1,
+      "points": 9.4,
       "projected": 10.23,
       "status": "live",
       "kickoff": 1792714500000
@@ -7828,8 +7828,8 @@
     ]
    },
    "Naug": {
-    "score": 1.1,
-    "projected": 107.51,
+    "score": 7.6,
+    "projected": 112.99,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7859,7 +7859,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 1.1,
+      "points": 7.6,
       "projected": 14.75,
       "status": "live",
       "kickoff": 1792714500000
@@ -7933,8 +7933,8 @@
     ]
    },
    "BW": {
-    "score": 0.0,
-    "projected": 100.28,
+    "score": 1.6,
+    "projected": 100.77,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7964,7 +7964,7 @@
       "slot": "TE",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 0.0,
+      "points": 1.6,
       "projected": 9.45,
       "status": "live",
       "kickoff": 1792714500000
@@ -8038,8 +8038,8 @@
     ]
    },
    "CJ": {
-    "score": 1.32,
-    "projected": 108.6,
+    "score": 1.28,
+    "projected": 106.22,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8091,7 +8091,7 @@
       "slot": "QB",
       "pro_team": "NE",
       "opponent": "None",
-      "points": 1.32,
+      "points": 1.28,
       "projected": 20.59,
       "status": "live",
       "kickoff": 1792714500000
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 2.5,
-    "projected": 117.29,
+    "projected": 116.59,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 1.04,
-    "projected": 88.75,
+    "score": 3.8,
+    "projected": 90.3,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8406,7 +8406,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 1.04,
+      "points": 3.8,
       "projected": 17.6,
       "status": "live",
       "kickoff": 1792714500000
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 3.0,
-    "projected": 105.89,
+    "projected": 104.85,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -8716,6 +8716,23 @@
      "SW": 2.5,
      "BEND": 0.0,
      "TMOG": 1.04,
+     "SWSH": 0.0,
+     "RA": 3.0
+    }
+   },
+   {
+    "t": "2026-10-23T00:50:17+00:00",
+    "scores": {
+     "PORK": 11.0,
+     "SACK": 0.0,
+     "MBJG": 0.0,
+     "WALT": 9.4,
+     "Naug": 7.6,
+     "BW": 1.6,
+     "CJ": 1.28,
+     "SW": 2.5,
+     "BEND": 0.0,
+     "TMOG": 3.8,
      "SWSH": 0.0,
      "RA": 3.0
     }
