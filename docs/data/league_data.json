@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-23 03:20:18 UTC",
-  "last_updated": "2026-10-23T03:20:18.623780+00:00"
+  "updated_at": "2026-10-23 03:30:18 UTC",
+  "last_updated": "2026-10-23T03:30:18.828935+00:00"
  },
  "teams": [
   {
@@ -340,7 +340,7 @@
     81.62,
     125.36,
     113.5,
-    22.22
+    22.12
    ],
    "ranking_points_by_week": [
     11.0,
@@ -5778,7 +5778,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "QB",
      "slot": "QB",
-     "score": 22.22
+     "score": 22.12
     },
     {
      "name": "Luther Burden III",
@@ -7378,7 +7378,7 @@
     "WR": 0.0,
     "TE": 0.0,
     "RB": 0.0,
-    "QB": 22.22,
+    "QB": 22.12,
     "K": 0.0,
     "D/ST": 0.0,
     "FLEX": 0.0
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-23T03:20:18+00:00",
+  "updated_at": "2026-10-23T03:30:18+00:00",
   "teams": {
    "PORK": {
     "score": 4.0,
-    "projected": 92.15,
+    "projected": 92.12,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7724,7 +7724,7 @@
    },
    "WALT": {
     "score": 21.7,
-    "projected": 126.73,
+    "projected": 126.62,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 17.0,
-    "projected": 111.08,
+    "projected": 110.92,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 27.0,
-    "projected": 113.84,
+    "projected": 113.68,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8039,7 +8039,7 @@
    },
    "CJ": {
     "score": 33.74,
-    "projected": 112.63,
+    "projected": 112.28,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 20.0,
-    "projected": 126.31,
+    "projected": 126.21,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 22.22,
-    "projected": 95.22,
+    "score": 22.12,
+    "projected": 94.94,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8406,7 +8406,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 22.22,
+      "points": 22.12,
       "projected": 17.6,
       "status": "live",
       "kickoff": 1792714500000
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 4.6,
-    "projected": 94.95,
+    "projected": 94.8,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -8988,6 +8988,23 @@
      "SW": 20.0,
      "BEND": 0.0,
      "TMOG": 22.22,
+     "SWSH": 0.0,
+     "RA": 4.6
+    }
+   },
+   {
+    "t": "2026-10-23T03:30:18+00:00",
+    "scores": {
+     "PORK": 4.0,
+     "SACK": 0.0,
+     "MBJG": 0.0,
+     "WALT": 21.7,
+     "Naug": 17.0,
+     "BW": 27.0,
+     "CJ": 33.74,
+     "SW": 20.0,
+     "BEND": 0.0,
+     "TMOG": 22.12,
      "SWSH": 0.0,
      "RA": 4.6
     }
