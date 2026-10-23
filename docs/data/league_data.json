@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-23 02:50:15 UTC",
-  "last_updated": "2026-10-23T02:50:15.531913+00:00"
+  "updated_at": "2026-10-23 03:00:21 UTC",
+  "last_updated": "2026-10-23T03:00:21.206430+00:00"
  },
  "teams": [
   {
@@ -160,7 +160,7 @@
     108.18,
     111.04,
     97.2,
-    4.0
+    5.0
    ],
    "ranking_points_by_week": [
     10.0,
@@ -169,7 +169,7 @@
     6.0,
     6.0,
     7.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -178,7 +178,7 @@
     33.0,
     39.0,
     46.0,
-    51.0
+    52.0
    ],
    "normalized_by_week": [
     3.0,
@@ -187,55 +187,10 @@
     6.0,
     5.0,
     6.0,
-    5.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 51.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "The Sun Gods ",
-   "team_abbrev": "RA",
-   "abbrev": "RA",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    105.92,
-    103.76,
-    90.76,
-    4.6
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    5.0,
-    5.0,
-    5.0,
     6.0
    ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    31.0,
-    36.0,
-    41.0,
-    47.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
-    4.0,
-    2.0,
-    1.0,
-    1.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 47.0
+   "rank": 4,
+   "total_ranking_points": 52.0
   },
   {
    "team_id": 1,
@@ -250,7 +205,7 @@
     131.3,
     75.94,
     66.52,
-    18.2
+    19.9
    ],
    "ranking_points_by_week": [
     9.0,
@@ -279,7 +234,7 @@
     -2.0,
     0.0
    ],
-   "rank": 6,
+   "rank": 5,
    "total_ranking_points": 46.0
   },
   {
@@ -295,7 +250,7 @@
     78.54,
     177.16,
     83.2,
-    30.0
+    30.48
    ],
    "ranking_points_by_week": [
     8.0,
@@ -324,6 +279,51 @@
     -6.0,
     0.0
    ],
+   "rank": 6,
+   "total_ranking_points": 46.0
+  },
+  {
+   "team_id": 11,
+   "team_name": "The Sun Gods ",
+   "team_abbrev": "RA",
+   "abbrev": "RA",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92,
+    103.76,
+    90.76,
+    4.6
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0,
+    36.0,
+    41.0,
+    46.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0,
+    2.0,
+    1.0,
+    0.0
+   ],
    "rank": 7,
    "total_ranking_points": 46.0
   },
@@ -340,7 +340,7 @@
     81.62,
     125.36,
     113.5,
-    19.72
+    20.04
    ],
    "ranking_points_by_week": [
     11.0,
@@ -520,7 +520,7 @@
     89.62,
     92.0,
     82.12,
-    16.0
+    16.1
    ],
    "ranking_points_by_week": [
     6.0,
@@ -5770,7 +5770,7 @@
      "fantasy_team": "Kaiser Soze",
      "position": "QB",
      "slot": "QB",
-     "score": 25.6
+     "score": 26.08
     },
     {
      "name": "Luther Burden III",
@@ -5786,7 +5786,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "QB",
      "slot": "QB",
-     "score": 19.72
+     "score": 20.04
     },
     {
      "name": "Rhamondre Stevenson",
@@ -5794,7 +5794,7 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "RB",
      "slot": "RB",
-     "score": 18.2
+     "score": 19.9
     },
     {
      "name": "Colston Loveland",
@@ -5810,7 +5810,7 @@
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
      "slot": "RB",
-     "score": 16.0
+     "score": 16.1
     },
     {
      "name": "Hunter Henry",
@@ -5821,20 +5821,20 @@
      "score": 9.8
     },
     {
+     "name": "Bears D/ST",
+     "pro_team": "CHI",
+     "fantasy_team": "Satriale's Pork Store",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 5.0
+    },
+    {
      "name": "A.J. Brown",
      "pro_team": "NE",
      "fantasy_team": "Kaiser Soze",
      "position": "WR",
      "slot": "WR",
      "score": 4.4
-    },
-    {
-     "name": "Bears D/ST",
-     "pro_team": "CHI",
-     "fantasy_team": "Satriale's Pork Store",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 4.0
     },
     {
      "name": "TreVeyon Henderson",
@@ -7299,7 +7299,7 @@
     "FLEX": 0.0,
     "QB": 0.0,
     "K": 0.0,
-    "D/ST": 4.0,
+    "D/ST": 5.0,
     "TE": 0.0
    },
    "SACK": {
@@ -7331,7 +7331,7 @@
    },
    "Naug": {
     "WR": 0.0,
-    "RB": 16.0,
+    "RB": 16.1,
     "QB": 0.0,
     "K": 0.0,
     "FLEX": 0.0,
@@ -7350,7 +7350,7 @@
    "CJ": {
     "RB": 0.0,
     "WR": 4.4,
-    "QB": 25.6,
+    "QB": 26.08,
     "TE": 0.0,
     "FLEX": 0.0,
     "K": 0.0,
@@ -7358,7 +7358,7 @@
    },
    "SW": {
     "WR": 0.0,
-    "RB": 18.2,
+    "RB": 19.9,
     "FLEX": 0.0,
     "TE": 0.0,
     "QB": 0.0,
@@ -7378,7 +7378,7 @@
     "WR": 0.0,
     "TE": 0.0,
     "RB": 0.0,
-    "QB": 19.72,
+    "QB": 20.04,
     "K": 0.0,
     "D/ST": 0.0,
     "FLEX": 0.0
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-23T02:50:15+00:00",
+  "updated_at": "2026-10-23T03:00:21+00:00",
   "teams": {
    "PORK": {
-    "score": 4.0,
-    "projected": 92.6,
+    "score": 5.0,
+    "projected": 93.36,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7494,7 +7494,7 @@
       "slot": "D/ST",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 4.0,
+      "points": 5.0,
       "projected": 7.6,
       "status": "live",
       "kickoff": 1792714500000
@@ -7724,7 +7724,7 @@
    },
    "WALT": {
     "score": 21.7,
-    "projected": 127.99,
+    "projected": 127.57,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7828,8 +7828,8 @@
     ]
    },
    "Naug": {
-    "score": 16.0,
-    "projected": 111.9,
+    "score": 16.1,
+    "projected": 111.39,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7859,7 +7859,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "NE",
-      "points": 16.0,
+      "points": 16.1,
       "projected": 14.75,
       "status": "live",
       "kickoff": 1792714500000
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 26.2,
-    "projected": 115.02,
+    "projected": 114.37,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8038,8 +8038,8 @@
     ]
    },
    "CJ": {
-    "score": 30.0,
-    "projected": 113.08,
+    "score": 30.48,
+    "projected": 112.17,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8091,7 +8091,7 @@
       "slot": "QB",
       "pro_team": "NE",
       "opponent": "None",
-      "points": 25.6,
+      "points": 26.08,
       "projected": 20.59,
       "status": "live",
       "kickoff": 1792714500000
@@ -8143,8 +8143,8 @@
     ]
    },
    "SW": {
-    "score": 18.2,
-    "projected": 125.76,
+    "score": 19.9,
+    "projected": 127.05,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8196,7 +8196,7 @@
       "slot": "RB",
       "pro_team": "NE",
       "opponent": "CHI",
-      "points": 18.2,
+      "points": 19.9,
       "projected": 10.15,
       "status": "live",
       "kickoff": 1792714500000
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 19.72,
-    "projected": 94.89,
+    "score": 20.04,
+    "projected": 94.49,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8406,7 +8406,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 19.72,
+      "points": 20.04,
       "projected": 17.6,
       "status": "live",
       "kickoff": 1792714500000
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 4.6,
-    "projected": 96.8,
+    "projected": 96.19,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -8937,6 +8937,23 @@
      "SW": 18.2,
      "BEND": 0.0,
      "TMOG": 19.72,
+     "SWSH": 0.0,
+     "RA": 4.6
+    }
+   },
+   {
+    "t": "2026-10-23T03:00:21+00:00",
+    "scores": {
+     "PORK": 5.0,
+     "SACK": 0.0,
+     "MBJG": 0.0,
+     "WALT": 21.7,
+     "Naug": 16.1,
+     "BW": 26.2,
+     "CJ": 30.48,
+     "SW": 19.9,
+     "BEND": 0.0,
+     "TMOG": 20.04,
      "SWSH": 0.0,
      "RA": 4.6
     }
