@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-23 00:50:17 UTC",
-  "last_updated": "2026-10-23T00:50:17.859721+00:00"
+  "updated_at": "2026-10-23 01:00:20 UTC",
+  "last_updated": "2026-10-23T01:00:20.971823+00:00"
  },
  "teams": [
   {
@@ -52,7 +52,7 @@
     6.0,
     5.0,
     6.0,
-    13.0
+    11.0
    ],
    "rank": 1,
    "total_ranking_points": 58.0
@@ -97,7 +97,7 @@
     -2.0,
     1.0,
     6.0,
-    12.0
+    10.0
    ],
    "rank": 2,
    "total_ranking_points": 57.0
@@ -142,7 +142,7 @@
     4.0,
     8.0,
     10.0,
-    7.5
+    5.5
    ],
    "rank": 3,
    "total_ranking_points": 52.5
@@ -169,7 +169,7 @@
     9.0,
     3.0,
     12.0,
-    6.0
+    5.0
    ],
    "cumulative_points_by_week": [
     4.0,
@@ -178,7 +178,7 @@
     28.0,
     31.0,
     43.0,
-    49.0
+    48.0
    ],
    "normalized_by_week": [
     -3.0,
@@ -187,10 +187,10 @@
     1.0,
     -3.0,
     3.0,
-    4.0
+    1.0
    ],
    "rank": 4,
-   "total_ranking_points": 49.0
+   "total_ranking_points": 48.0
   },
   {
    "team_id": 11,
@@ -214,7 +214,7 @@
     5.0,
     5.0,
     5.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -223,7 +223,7 @@
     31.0,
     36.0,
     41.0,
-    49.0
+    48.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -232,10 +232,10 @@
     4.0,
     2.0,
     1.0,
-    4.0
+    1.0
    ],
    "rank": 5,
-   "total_ranking_points": 49.0
+   "total_ranking_points": 48.0
   },
   {
    "team_id": 1,
@@ -250,7 +250,7 @@
     131.3,
     75.94,
     66.52,
-    2.5
+    5.2
    ],
    "ranking_points_by_week": [
     9.0,
@@ -259,7 +259,7 @@
     12.0,
     1.0,
     1.0,
-    7.0
+    9.0
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -268,7 +268,7 @@
     36.0,
     37.0,
     38.0,
-    45.0
+    47.0
    ],
    "normalized_by_week": [
     2.0,
@@ -280,7 +280,7 @@
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 45.0
+   "total_ranking_points": 47.0
   },
   {
    "team_id": 7,
@@ -304,7 +304,7 @@
     2.0,
     8.0,
     9.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -313,7 +313,7 @@
     19.0,
     27.0,
     36.0,
-    45.0
+    44.0
    ],
    "normalized_by_week": [
     4.0,
@@ -322,10 +322,10 @@
     -8.0,
     -7.0,
     -4.0,
-    0.0
+    -3.0
    ],
    "rank": 7,
-   "total_ranking_points": 45.0
+   "total_ranking_points": 44.0
   },
   {
    "team_id": 4,
@@ -367,7 +367,7 @@
     -2.0,
     0.0,
     0.0,
-    -2.5
+    -4.5
    ],
    "rank": 8,
    "total_ranking_points": 42.5
@@ -412,7 +412,7 @@
     -4.0,
     -4.0,
     0.0,
-    -2.5
+    -4.5
    ],
    "rank": 9,
    "total_ranking_points": 42.5
@@ -430,7 +430,7 @@
     78.54,
     177.16,
     83.2,
-    1.28
+    2.4
    ],
    "ranking_points_by_week": [
     8.0,
@@ -439,7 +439,7 @@
     1.0,
     12.0,
     3.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -448,7 +448,7 @@
     19.0,
     31.0,
     34.0,
-    39.0
+    40.0
    ],
    "normalized_by_week": [
     1.0,
@@ -457,10 +457,10 @@
     -8.0,
     -3.0,
     -6.0,
-    -6.0
+    -7.0
    ],
    "rank": 10,
-   "total_ranking_points": 39.0
+   "total_ranking_points": 40.0
   },
   {
    "team_id": 12,
@@ -502,7 +502,7 @@
     0.0,
     -5.0,
     -7.0,
-    -9.5
+    -11.5
    ],
    "rank": 11,
    "total_ranking_points": 35.5
@@ -547,7 +547,7 @@
     -12.0,
     -15.0,
     -19.0,
-    -14.0
+    -16.0
    ],
    "rank": 12,
    "total_ranking_points": 31.0
@@ -5789,6 +5789,14 @@
      "score": 7.6
     },
     {
+     "name": "Rhamondre Stevenson",
+     "pro_team": "NE",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "RB",
+     "slot": "RB",
+     "score": 5.2
+    },
+    {
      "name": "Bears TQB",
      "pro_team": "CHI",
      "fantasy_team": "Team Made of Glass",
@@ -5805,12 +5813,12 @@
      "score": 3.0
     },
     {
-     "name": "Rhamondre Stevenson",
+     "name": "Patriots TQB",
      "pro_team": "NE",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "RB",
-     "slot": "RB",
-     "score": 2.5
+     "fantasy_team": "Kaiser Soze",
+     "position": "QB",
+     "slot": "QB",
+     "score": 2.4
     },
     {
      "name": "Colston Loveland",
@@ -5819,14 +5827,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 1.6
-    },
-    {
-     "name": "Patriots TQB",
-     "pro_team": "NE",
-     "fantasy_team": "Kaiser Soze",
-     "position": "QB",
-     "slot": "QB",
-     "score": 1.28
     },
     {
      "name": "Chase Brown",
@@ -7350,7 +7350,7 @@
    "CJ": {
     "RB": 0.0,
     "WR": 0.0,
-    "QB": 1.28,
+    "QB": 2.4,
     "TE": 0.0,
     "FLEX": 0.0,
     "K": 0.0,
@@ -7358,7 +7358,7 @@
    },
    "SW": {
     "WR": 0.0,
-    "RB": 2.5,
+    "RB": 5.2,
     "FLEX": 0.0,
     "TE": 0.0,
     "QB": 0.0,
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-23T00:50:17+00:00",
+  "updated_at": "2026-10-23T01:00:20+00:00",
   "teams": {
    "PORK": {
     "score": 11.0,
-    "projected": 96.47,
+    "projected": 96.63,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7724,7 +7724,7 @@
    },
    "WALT": {
     "score": 9.4,
-    "projected": 122.27,
+    "projected": 121.78,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 7.6,
-    "projected": 112.99,
+    "projected": 112.28,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 1.6,
-    "projected": 100.77,
+    "projected": 99.99,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8038,8 +8038,8 @@
     ]
    },
    "CJ": {
-    "score": 1.28,
-    "projected": 106.22,
+    "score": 2.4,
+    "projected": 105.69,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8091,7 +8091,7 @@
       "slot": "QB",
       "pro_team": "NE",
       "opponent": "None",
-      "points": 1.28,
+      "points": 2.4,
       "projected": 20.59,
       "status": "live",
       "kickoff": 1792714500000
@@ -8143,8 +8143,8 @@
     ]
    },
    "SW": {
-    "score": 2.5,
-    "projected": 116.59,
+    "score": 5.2,
+    "projected": 118.8,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8196,7 +8196,7 @@
       "slot": "RB",
       "pro_team": "NE",
       "opponent": "CHI",
-      "points": 2.5,
+      "points": 5.2,
       "projected": 10.15,
       "status": "live",
       "kickoff": 1792714500000
@@ -8354,7 +8354,7 @@
    },
    "TMOG": {
     "score": 3.8,
-    "projected": 90.3,
+    "projected": 89.44,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 3.0,
-    "projected": 104.85,
+    "projected": 104.13,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -8731,6 +8731,23 @@
      "BW": 1.6,
      "CJ": 1.28,
      "SW": 2.5,
+     "BEND": 0.0,
+     "TMOG": 3.8,
+     "SWSH": 0.0,
+     "RA": 3.0
+    }
+   },
+   {
+    "t": "2026-10-23T01:00:20+00:00",
+    "scores": {
+     "PORK": 11.0,
+     "SACK": 0.0,
+     "MBJG": 0.0,
+     "WALT": 9.4,
+     "Naug": 7.6,
+     "BW": 1.6,
+     "CJ": 2.4,
+     "SW": 5.2,
      "BEND": 0.0,
      "TMOG": 3.8,
      "SWSH": 0.0,
