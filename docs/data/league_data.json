@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-25 21:50:18 UTC",
-  "last_updated": "2026-10-25T21:50:18.735263+00:00"
+  "updated_at": "2026-10-25 22:00:20 UTC",
+  "last_updated": "2026-10-25T22:00:20.206868+00:00"
  },
  "teams": [
   {
@@ -34,7 +34,7 @@
     11.0,
     11.0,
     8.0,
-    12.0
+    11.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -43,7 +43,7 @@
     31.0,
     42.0,
     50.0,
-    62.0
+    61.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -52,10 +52,10 @@
     4.0,
     8.0,
     10.0,
-    16.0
+    15.0
    ],
    "rank": 1,
-   "total_ranking_points": 62.0
+   "total_ranking_points": 61.0
   },
   {
    "team_id": 9,
@@ -70,7 +70,7 @@
     121.48,
     142.54,
     122.24,
-    92.18
+    96.18
    ],
    "ranking_points_by_week": [
     12.0,
@@ -79,7 +79,7 @@
     10.0,
     10.0,
     11.0,
-    11.0
+    12.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -88,7 +88,7 @@
     25.0,
     35.0,
     46.0,
-    57.0
+    58.0
    ],
    "normalized_by_week": [
     5.0,
@@ -97,10 +97,10 @@
     -2.0,
     1.0,
     6.0,
-    11.0
+    12.0
    ],
    "rank": 2,
-   "total_ranking_points": 57.0
+   "total_ranking_points": 58.0
   },
   {
    "team_id": 3,
@@ -148,51 +148,6 @@
    "total_ranking_points": 48.0
   },
   {
-   "team_id": 8,
-   "team_name": "Satriale's Pork Store",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    97.2,
-    55.66
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    7.0,
-    2.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    46.0,
-    48.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    6.0,
-    2.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 48.0
-  },
-  {
    "team_id": 5,
    "team_name": "The Lizard Kings",
    "team_abbrev": "MBJG",
@@ -205,7 +160,7 @@
     115.3,
     115.18,
     121.14,
-    74.04
+    75.74
    ],
    "ranking_points_by_week": [
     5.0,
@@ -232,6 +187,51 @@
     -4.0,
     -4.0,
     0.0,
+    1.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 47.0
+  },
+  {
+   "team_id": 8,
+   "team_name": "Satriale's Pork Store",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    97.2,
+    55.66
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    7.0,
+    1.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    46.0,
+    47.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    6.0,
     1.0
    ],
    "rank": 5,
@@ -295,7 +295,7 @@
     81.62,
     125.36,
     113.5,
-    80.62
+    82.52
    ],
    "ranking_points_by_week": [
     11.0,
@@ -385,7 +385,7 @@
     78.54,
     177.16,
     83.2,
-    85.74
+    88.74
    ],
    "ranking_points_by_week": [
     8.0,
@@ -430,7 +430,7 @@
     90.12,
     133.0,
     91.2,
-    52.28
+    56.28
    ],
    "ranking_points_by_week": [
     1.0,
@@ -439,7 +439,7 @@
     4.0,
     9.0,
     6.0,
-    1.0
+    2.0
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -448,7 +448,7 @@
     25.0,
     34.0,
     40.0,
-    41.0
+    42.0
    ],
    "normalized_by_week": [
     -6.0,
@@ -457,10 +457,10 @@
     -2.0,
     0.0,
     0.0,
-    -5.0
+    -4.0
    ],
    "rank": 10,
-   "total_ranking_points": 41.0
+   "total_ranking_points": 42.0
   },
   {
    "team_id": 12,
@@ -6141,6 +6141,14 @@
      "score": 7.4
     },
     {
+     "name": "Ashton Jeanty",
+     "pro_team": "LV",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "slot": "RB",
+     "score": 7.1
+    },
+    {
      "name": "Tyler Loop",
      "pro_team": "BAL",
      "fantasy_team": "Bijan These Nuts",
@@ -6189,6 +6197,14 @@
      "score": 6.3
     },
     {
+     "name": "Matt Gay",
+     "pro_team": "LV",
+     "fantasy_team": "Kaiser Soze",
+     "position": "K",
+     "slot": "K",
+     "score": 6.0
+    },
+    {
      "name": "Tetairoa McMillan",
      "pro_team": "CAR",
      "fantasy_team": "Remeber Bendel",
@@ -6203,6 +6219,14 @@
      "position": "RB",
      "slot": "FLEX",
      "score": 5.8
+    },
+    {
+     "name": "Trey McBride",
+     "pro_team": "ARI",
+     "fantasy_team": "The Lizard Kings",
+     "position": "TE",
+     "slot": "TE",
+     "score": 5.7
     },
     {
      "name": "Derrick Henry",
@@ -6261,6 +6285,14 @@
      "score": 5.0
     },
     {
+     "name": "Michael Wilson",
+     "pro_team": "ARI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "WR",
+     "slot": "WR",
+     "score": 4.5
+    },
+    {
      "name": "Matthew Golden",
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
@@ -6285,11 +6317,11 @@
      "score": 4.0
     },
     {
-     "name": "Trey McBride",
-     "pro_team": "ARI",
-     "fantasy_team": "The Lizard Kings",
-     "position": "TE",
-     "slot": "TE",
+     "name": "Tre Tucker",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "slot": "WR",
      "score": 4.0
     },
     {
@@ -6333,14 +6365,6 @@
      "score": 3.3
     },
     {
-     "name": "Ashton Jeanty",
-     "pro_team": "LV",
-     "fantasy_team": "Walt's Warriors",
-     "position": "RB",
-     "slot": "RB",
-     "score": 3.1
-    },
-    {
      "name": "Aaron Jones Sr.",
      "pro_team": "MIN",
      "fantasy_team": "Team Made of Glass",
@@ -6357,28 +6381,12 @@
      "score": 3.1
     },
     {
-     "name": "Matt Gay",
-     "pro_team": "LV",
-     "fantasy_team": "Kaiser Soze",
-     "position": "K",
-     "slot": "K",
-     "score": 3.0
-    },
-    {
      "name": "Texans D/ST",
      "pro_team": "HOU",
      "fantasy_team": "Remeber Bendel",
      "position": "D/ST",
      "slot": "D/ST",
      "score": 3.0
-    },
-    {
-     "name": "Michael Wilson",
-     "pro_team": "ARI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "WR",
-     "slot": "WR",
-     "score": 2.6
     },
     {
      "name": "Isaiah Likely",
@@ -6578,14 +6586,6 @@
      "fantasy_team": "Team Made of Glass",
      "position": "WR",
      "slot": "FLEX",
-     "score": 0.0
-    },
-    {
-     "name": "Tre Tucker",
-     "pro_team": "LV",
-     "fantasy_team": "Swishington Football Team",
-     "position": "WR",
-     "slot": "WR",
      "score": 0.0
     },
     {
@@ -7313,7 +7313,7 @@
    },
    "MBJG": {
     "RB": 18.0,
-    "TE": 4.0,
+    "TE": 5.7,
     "WR": 25.2,
     "D/ST": 10.0,
     "FLEX": 4.2,
@@ -7322,7 +7322,7 @@
    },
    "WALT": {
     "FLEX": 16.5,
-    "RB": 19.5,
+    "RB": 23.5,
     "WR": 25.9,
     "TE": 2.2,
     "D/ST": 8.0,
@@ -7353,7 +7353,7 @@
     "QB": 27.44,
     "TE": 0.0,
     "FLEX": 5.8,
-    "K": 3.0,
+    "K": 6.0,
     "D/ST": 5.0
    },
    "SW": {
@@ -7375,7 +7375,7 @@
     "K": 11.0
    },
    "TMOG": {
-    "WR": 22.6,
+    "WR": 24.5,
     "TE": 0.0,
     "RB": 19.9,
     "QB": 22.12,
@@ -7386,7 +7386,7 @@
    "SWSH": {
     "RB": 13.6,
     "TE": 3.1,
-    "WR": 3.6,
+    "WR": 7.6,
     "FLEX": 3.5,
     "K": 5.0,
     "D/ST": 0.0,
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-25T21:50:18+00:00",
+  "updated_at": "2026-10-25T22:00:20+00:00",
   "teams": {
    "PORK": {
     "score": 55.66,
@@ -7514,7 +7514,7 @@
    },
    "SACK": {
     "score": 95.52,
-    "projected": 142.93,
+    "projected": 142.13,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7618,8 +7618,8 @@
     ]
    },
    "MBJG": {
-    "score": 74.04,
-    "projected": 107.32,
+    "score": 75.74,
+    "projected": 108.43,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -7638,7 +7638,7 @@
       "slot": "TE",
       "pro_team": "ARI",
       "opponent": "DEN",
-      "points": 4.0,
+      "points": 5.7,
       "projected": 12.34,
       "status": "live",
       "kickoff": 1792958700000
@@ -7723,8 +7723,8 @@
     ]
    },
    "WALT": {
-    "score": 92.18,
-    "projected": 117.94,
+    "score": 96.18,
+    "projected": 120.43,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7743,7 +7743,7 @@
       "slot": "RB",
       "pro_team": "LV",
       "opponent": "LAR",
-      "points": 3.1,
+      "points": 7.1,
       "projected": 15.16,
       "status": "live",
       "kickoff": 1792959900000
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 56.58,
-    "projected": 93.18,
+    "projected": 92.58,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 64.12,
-    "projected": 105.51,
+    "projected": 105.05,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8038,8 +8038,8 @@
     ]
    },
    "CJ": {
-    "score": 85.74,
-    "projected": 111.6,
+    "score": 88.74,
+    "projected": 114.17,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8124,7 +8124,7 @@
       "slot": "K",
       "pro_team": "LV",
       "opponent": "LAR",
-      "points": 3.0,
+      "points": 6.0,
       "projected": 10.07,
       "status": "live",
       "kickoff": 1792959900000
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 80.62,
-    "projected": 101.62,
+    "score": 82.52,
+    "projected": 103.04,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8362,7 +8362,7 @@
       "slot": "WR",
       "pro_team": "ARI",
       "opponent": "DEN",
-      "points": 2.6,
+      "points": 4.5,
       "projected": 10.14,
       "status": "live",
       "kickoff": 1792958700000
@@ -8458,8 +8458,8 @@
     ]
    },
    "SWSH": {
-    "score": 52.28,
-    "projected": 94.66,
+    "score": 56.28,
+    "projected": 97.72,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -8522,7 +8522,7 @@
       "slot": "WR",
       "pro_team": "LV",
       "opponent": "LAR",
-      "points": 0.0,
+      "points": 4.0,
       "projected": 8.73,
       "status": "live",
       "kickoff": 1792959900000
@@ -9516,6 +9516,23 @@
      "BEND": 71.1,
      "TMOG": 80.62,
      "SWSH": 52.28,
+     "RA": 60.52
+    }
+   },
+   {
+    "t": "2026-10-25T22:00:20+00:00",
+    "scores": {
+     "PORK": 55.66,
+     "SACK": 95.52,
+     "MBJG": 75.74,
+     "WALT": 96.18,
+     "Naug": 56.58,
+     "BW": 64.12,
+     "CJ": 88.74,
+     "SW": 80.6,
+     "BEND": 71.1,
+     "TMOG": 82.52,
+     "SWSH": 56.28,
      "RA": 60.52
     }
    }
