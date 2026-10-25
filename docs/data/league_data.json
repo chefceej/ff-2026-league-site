@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-24 10:50:47 UTC",
-  "last_updated": "2026-10-24T10:50:47.909067+00:00"
+  "updated_at": "2026-10-25 11:16:54 UTC",
+  "last_updated": "2026-10-25T11:16:54.296541+00:00"
  },
  "teams": [
   {
@@ -6181,8 +6181,8 @@
      "score": 0.0
     },
     {
-     "name": "Colby Parkinson",
-     "pro_team": "LAR",
+     "name": "Travis Kelce",
+     "pro_team": "KC",
      "fantasy_team": "Mid AF Squad",
      "position": "TE",
      "slot": "TE",
@@ -6445,6 +6445,14 @@
      "score": 0.0
     },
     {
+     "name": "Dallas Goedert",
+     "pro_team": "PHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
      "name": "Ollie Gordon II",
      "pro_team": "MIA",
      "fantasy_team": "Team Made of Glass",
@@ -6490,14 +6498,6 @@
      "fantasy_team": "Team Made of Glass",
      "position": "WR",
      "slot": "FLEX",
-     "score": 0.0
-    },
-    {
-     "name": "Pat Freiermuth",
-     "pro_team": "PIT",
-     "fantasy_team": "Team Made of Glass",
-     "position": "TE",
-     "slot": "TE",
      "score": 0.0
     },
     {
@@ -7376,12 +7376,12 @@
    },
    "TMOG": {
     "WR": 0.0,
+    "TE": 0.0,
     "RB": 0.0,
     "QB": 22.12,
     "K": 0.0,
     "D/ST": 0.0,
-    "FLEX": 0.0,
-    "TE": 0.0
+    "FLEX": 0.0
    },
    "SWSH": {
     "RB": 0.0,
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-24T10:50:47+00:00",
+  "updated_at": "2026-10-25T11:16:54+00:00",
   "teams": {
    "PORK": {
     "score": 4.0,
-    "projected": 98.81,
+    "projected": 98.98,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7418,7 +7418,7 @@
       "pro_team": "CIN",
       "opponent": "BAL",
       "points": 0.0,
-      "projected": 12.43,
+      "projected": 12.6,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -7484,7 +7484,7 @@
       "pro_team": "CHI",
       "opponent": "NE",
       "points": 4.0,
-      "projected": 7.6,
+      "projected": 7.52,
       "status": "final",
       "kickoff": 1792714500000
      },
@@ -7514,7 +7514,7 @@
    },
    "SACK": {
     "score": 0.0,
-    "projected": 128.34,
+    "projected": 127.46,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7523,7 +7523,7 @@
       "pro_team": "CIN",
       "opponent": "BAL",
       "points": 0.0,
-      "projected": 18.07,
+      "projected": 17.86,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -7589,7 +7589,7 @@
       "pro_team": "PHI",
       "opponent": "DAL",
       "points": 0.0,
-      "projected": 6.1,
+      "projected": 5.97,
       "status": "pre",
       "kickoff": 1793060100000
      },
@@ -7600,7 +7600,7 @@
       "pro_team": "BAL",
       "opponent": "CIN",
       "points": 0.0,
-      "projected": 9.38,
+      "projected": 8.86,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -7619,7 +7619,7 @@
    },
    "MBJG": {
     "score": 0.0,
-    "projected": 113.46,
+    "projected": 113.31,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -7650,7 +7650,7 @@
       "pro_team": "CIN",
       "opponent": "BAL",
       "points": 0.0,
-      "projected": 11.77,
+      "projected": 11.62,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -7724,7 +7724,7 @@
    },
    "WALT": {
     "score": 21.7,
-    "projected": 121.16,
+    "projected": 121.24,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -7788,7 +7788,7 @@
       "pro_team": "PIT",
       "opponent": "NO",
       "points": 0.0,
-      "projected": 7.62,
+      "projected": 7.7,
       "status": "pre",
       "kickoff": 1792935000000
      },
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 17.0,
-    "projected": 109.77,
+    "projected": 109.94,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7871,7 +7871,7 @@
       "pro_team": "CIN",
       "opponent": "None",
       "points": 0.0,
-      "projected": 19.41,
+      "projected": 19.31,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -7920,21 +7920,21 @@
       "kickoff": 1792947600000
      },
      {
-      "name": "Colby Parkinson",
+      "name": "Travis Kelce",
       "position": "TE",
       "slot": "TE",
-      "pro_team": "LAR",
-      "opponent": "LV",
+      "pro_team": "KC",
+      "opponent": "SEA",
       "points": 0.0,
-      "projected": 7.69,
+      "projected": 7.97,
       "status": "pre",
-      "kickoff": 1792959900000
+      "kickoff": 1792974000000
      }
     ]
    },
    "BW": {
     "score": 27.0,
-    "projected": 113.64,
+    "projected": 109.81,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7954,7 +7954,7 @@
       "pro_team": "DAL",
       "opponent": "PHI",
       "points": 0.0,
-      "projected": 15.38,
+      "projected": 15.57,
       "status": "pre",
       "kickoff": 1793060100000
      },
@@ -7976,7 +7976,7 @@
       "pro_team": "BAL",
       "opponent": "None",
       "points": 0.0,
-      "projected": 19.95,
+      "projected": 15.92,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -8039,7 +8039,7 @@
    },
    "CJ": {
     "score": 33.74,
-    "projected": 114.66,
+    "projected": 114.72,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8070,7 +8070,7 @@
       "pro_team": "DAL",
       "opponent": "PHI",
       "points": 0.0,
-      "projected": 10.64,
+      "projected": 10.69,
       "status": "pre",
       "kickoff": 1793060100000
      },
@@ -8081,7 +8081,7 @@
       "pro_team": "TB",
       "opponent": "CAR",
       "points": 0.0,
-      "projected": 12.8,
+      "projected": 12.81,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 20.0,
-    "projected": 112.65,
+    "projected": 109.35,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8153,7 +8153,7 @@
       "pro_team": "DAL",
       "opponent": "PHI",
       "points": 0.0,
-      "projected": 14.97,
+      "projected": 15.03,
       "status": "pre",
       "kickoff": 1793060100000
      },
@@ -8164,7 +8164,7 @@
       "pro_team": "BAL",
       "opponent": "CIN",
       "points": 0.0,
-      "projected": 19.41,
+      "projected": 17.37,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -8175,7 +8175,7 @@
       "pro_team": "BAL",
       "opponent": "CIN",
       "points": 0.0,
-      "projected": 13.35,
+      "projected": 12.0,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -8249,7 +8249,7 @@
    },
    "BEND": {
     "score": 0.0,
-    "projected": 109.22,
+    "projected": 109.14,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -8269,7 +8269,7 @@
       "pro_team": "HOU",
       "opponent": "NYG",
       "points": 0.0,
-      "projected": 14.05,
+      "projected": 14.01,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -8302,7 +8302,7 @@
       "pro_team": "HOU",
       "opponent": "NYG",
       "points": 0.0,
-      "projected": 8.44,
+      "projected": 8.4,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -8346,7 +8346,7 @@
       "pro_team": "TB",
       "opponent": "CAR",
       "points": 0.0,
-      "projected": 5.41,
+      "projected": 5.42,
       "status": "pre",
       "kickoff": 1792947600000
      }
@@ -8354,7 +8354,7 @@
    },
    "TMOG": {
     "score": 22.12,
-    "projected": 94.67,
+    "projected": 95.13,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8366,6 +8366,17 @@
       "projected": 10.14,
       "status": "pre",
       "kickoff": 1792958700000
+     },
+     {
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "PHI",
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 8.79,
+      "status": "pre",
+      "kickoff": 1793060100000
      },
      {
       "name": "Ollie Gordon II",
@@ -8440,26 +8451,15 @@
       "pro_team": "DAL",
       "opponent": "PHI",
       "points": 0.0,
-      "projected": 7.09,
+      "projected": 7.13,
       "status": "pre",
       "kickoff": 1793060100000
-     },
-     {
-      "name": "Pat Freiermuth",
-      "position": "TE",
-      "slot": "TE",
-      "pro_team": "PIT",
-      "opponent": "NO",
-      "points": 0.0,
-      "projected": 8.36,
-      "status": "pre",
-      "kickoff": 1792935000000
      }
     ]
    },
    "SWSH": {
     "score": 0.0,
-    "projected": 112.15,
+    "projected": 112.48,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -8512,7 +8512,7 @@
       "pro_team": "HOU",
       "opponent": "NYG",
       "points": 0.0,
-      "projected": 12.74,
+      "projected": 13.07,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 4.6,
-    "projected": 94.8,
+    "projected": 94.74,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -8617,7 +8617,7 @@
       "pro_team": "SF",
       "opponent": "None",
       "points": 0.0,
-      "projected": 20.42,
+      "projected": 20.43,
       "status": "pre",
       "kickoff": 1792947600000
      },
@@ -8639,7 +8639,7 @@
       "pro_team": "SEA",
       "opponent": "KC",
       "points": 0.0,
-      "projected": 6.21,
+      "projected": 6.14,
       "status": "pre",
       "kickoff": 1792974000000
      },
