@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-25 23:30:20 UTC",
-  "last_updated": "2026-10-25T23:30:20.079844+00:00"
+  "updated_at": "2026-10-25 23:40:15 UTC",
+  "last_updated": "2026-10-25T23:40:15.158561+00:00"
  },
  "teams": [
   {
@@ -25,7 +25,7 @@
     121.48,
     142.54,
     122.24,
-    119.18
+    119.08
    ],
    "ranking_points_by_week": [
     12.0,
@@ -70,7 +70,7 @@
     128.88,
     175.42,
     103.38,
-    99.2
+    98.9
    ],
    "ranking_points_by_week": [
     2.0,
@@ -205,7 +205,7 @@
     118.0,
     88.24,
     128.08,
-    74.92
+    77.92
    ],
    "ranking_points_by_week": [
     4.0,
@@ -5786,7 +5786,7 @@
      "fantasy_team": "Walt's Warriors",
      "position": "QB",
      "slot": "QB",
-     "score": 26.28
+     "score": 26.18
     },
     {
      "name": "Tee Higgins",
@@ -5901,14 +5901,6 @@
      "score": 18.0
     },
     {
-     "name": "Rams TQB",
-     "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "QB",
-     "slot": "QB",
-     "score": 17.8
-    },
-    {
      "name": "Puka Nacua",
      "pro_team": "LAR",
      "fantasy_team": "Walt's Warriors",
@@ -5931,6 +5923,14 @@
      "position": "RB",
      "slot": "FLEX",
      "score": 17.6
+    },
+    {
+     "name": "Rams TQB",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "QB",
+     "slot": "QB",
+     "score": 17.5
     },
     {
      "name": "Kyren Williams",
@@ -6149,6 +6149,14 @@
      "score": 10.0
     },
     {
+     "name": "Jake Bates",
+     "pro_team": "DET",
+     "fantasy_team": "JSN Derulo ",
+     "position": "K",
+     "slot": "K",
+     "score": 9.0
+    },
+    {
      "name": "Matt Gay",
      "pro_team": "LV",
      "fantasy_team": "Kaiser Soze",
@@ -6283,14 +6291,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 6.3
-    },
-    {
-     "name": "Jake Bates",
-     "pro_team": "DET",
-     "fantasy_team": "JSN Derulo ",
-     "position": "K",
-     "slot": "K",
-     "score": 6.0
     },
     {
      "name": "Tetairoa McMillan",
@@ -7307,7 +7307,7 @@
     "RB": 17.1,
     "FLEX": 15.2,
     "TE": 12.8,
-    "QB": 17.8,
+    "QB": 17.5,
     "D/ST": 0.0,
     "K": 7.0
    },
@@ -7327,7 +7327,7 @@
     "TE": 2.2,
     "D/ST": 8.0,
     "K": 5.0,
-    "QB": 26.28
+    "QB": 26.18
    },
    "Naug": {
     "WR": 9.7,
@@ -7345,7 +7345,7 @@
     "D/ST": 5.0,
     "FLEX": 10.6,
     "QB": 16.52,
-    "K": 6.0
+    "K": 9.0
    },
    "CJ": {
     "RB": 38.2,
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-25T23:30:20+00:00",
+  "updated_at": "2026-10-25T23:40:15+00:00",
   "teams": {
    "PORK": {
     "score": 61.52,
@@ -7513,8 +7513,8 @@
     ]
    },
    "SACK": {
-    "score": 99.2,
-    "projected": 124.41,
+    "score": 98.9,
+    "projected": 122.61,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7577,7 +7577,7 @@
       "slot": "QB",
       "pro_team": "LAR",
       "opponent": "None",
-      "points": 17.8,
+      "points": 17.5,
       "projected": 18.58,
       "status": "live",
       "kickoff": 1792959900000
@@ -7619,7 +7619,7 @@
    },
    "MBJG": {
     "score": 100.16,
-    "projected": 110.29,
+    "projected": 110.28,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -7640,7 +7640,7 @@
       "opponent": "DEN",
       "points": 22.1,
       "projected": 12.34,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792958700000
      },
      {
@@ -7723,8 +7723,8 @@
     ]
    },
    "WALT": {
-    "score": 119.18,
-    "projected": 120.58,
+    "score": 119.08,
+    "projected": 119.08,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7820,9 +7820,9 @@
       "slot": "QB",
       "pro_team": "DEN",
       "opponent": "None",
-      "points": 26.28,
+      "points": 26.18,
       "projected": 16.09,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792958700000
      }
     ]
@@ -7894,7 +7894,7 @@
       "opponent": "ARI",
       "points": 8.3,
       "projected": 12.73,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792958700000
      },
      {
@@ -7933,8 +7933,8 @@
     ]
    },
    "BW": {
-    "score": 74.92,
-    "projected": 106.74,
+    "score": 77.92,
+    "projected": 109.74,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7988,7 +7988,7 @@
       "opponent": "ARI",
       "points": 13.0,
       "projected": 9.5,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792958700000
      },
      {
@@ -7999,7 +7999,7 @@
       "opponent": "ARI",
       "points": 5.0,
       "projected": 7.34,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792958700000
      },
      {
@@ -8030,7 +8030,7 @@
       "slot": "K",
       "pro_team": "DET",
       "opponent": "GB",
-      "points": 6.0,
+      "points": 9.0,
       "projected": 9.31,
       "status": "live",
       "kickoff": 1792959900000
@@ -8039,7 +8039,7 @@
    },
    "CJ": {
     "score": 104.84,
-    "projected": 116.33,
+    "projected": 115.53,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8364,7 +8364,7 @@
       "opponent": "DEN",
       "points": 8.6,
       "projected": 10.14,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792958700000
      },
      {
@@ -8459,7 +8459,7 @@
    },
    "SWSH": {
     "score": 105.38,
-    "projected": 114.28,
+    "projected": 113.28,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -8491,7 +8491,7 @@
       "opponent": "ARI",
       "points": 6.8,
       "projected": 8.93,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792958700000
      },
      {
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 63.22,
-    "projected": 89.02,
+    "projected": 89.01,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9681,6 +9681,23 @@
      "WALT": 119.18,
      "Naug": 62.88,
      "BW": 74.92,
+     "CJ": 104.84,
+     "SW": 80.6,
+     "BEND": 71.1,
+     "TMOG": 86.62,
+     "SWSH": 105.38,
+     "RA": 63.22
+    }
+   },
+   {
+    "t": "2026-10-25T23:40:15+00:00",
+    "scores": {
+     "PORK": 61.52,
+     "SACK": 98.9,
+     "MBJG": 100.16,
+     "WALT": 119.08,
+     "Naug": 62.88,
+     "BW": 77.92,
      "CJ": 104.84,
      "SW": 80.6,
      "BEND": 71.1,
