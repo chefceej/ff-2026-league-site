@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-25 20:10:14 UTC",
-  "last_updated": "2026-10-25T20:10:14.448049+00:00"
+  "updated_at": "2026-10-25 20:20:18 UTC",
+  "last_updated": "2026-10-25T20:20:18.219182+00:00"
  },
  "teams": [
   {
@@ -25,7 +25,7 @@
     128.88,
     175.42,
     103.38,
-    50.1
+    51.5
    ],
    "ranking_points_by_week": [
     2.0,
@@ -520,7 +520,7 @@
     89.62,
     92.0,
     82.12,
-    55.88
+    56.08
    ],
    "ranking_points_by_week": [
     6.0,
@@ -5933,20 +5933,20 @@
      "score": 14.7
     },
     {
+     "name": "Malik Nabers",
+     "pro_team": "NYG",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "slot": "WR",
+     "score": 14.6
+    },
+    {
      "name": "Vikings TQB",
      "pro_team": "MIN",
      "fantasy_team": "Remeber Bendel",
      "position": "QB",
      "slot": "QB",
      "score": 13.9
-    },
-    {
-     "name": "Malik Nabers",
-     "pro_team": "NYG",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "slot": "WR",
-     "score": 13.2
     },
     {
      "name": "Will Reichard",
@@ -6245,20 +6245,20 @@
      "score": 1.6
     },
     {
+     "name": "J.K. Dobbins",
+     "pro_team": "DEN",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 1.5
+    },
+    {
      "name": "Jalen Coker",
      "pro_team": "CAR",
      "fantasy_team": "The Lizard Kings",
      "position": "WR",
      "slot": "WR",
      "score": 1.4
-    },
-    {
-     "name": "J.K. Dobbins",
-     "pro_team": "DEN",
-     "fantasy_team": "Mid AF Squad",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 1.3
     },
     {
      "name": "Roschon Johnson",
@@ -7303,7 +7303,7 @@
     "TE": 11.5
    },
    "SACK": {
-    "WR": 27.9,
+    "WR": 29.3,
     "RB": 0.0,
     "FLEX": 15.2,
     "TE": 0.0,
@@ -7334,7 +7334,7 @@
     "RB": 17.0,
     "QB": 28.88,
     "K": 0.0,
-    "FLEX": 1.3,
+    "FLEX": 1.5,
     "D/ST": -1.0,
     "TE": 0.0
    },
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-25T20:10:14+00:00",
+  "updated_at": "2026-10-25T20:20:18+00:00",
   "teams": {
    "PORK": {
     "score": 43.5,
@@ -7513,8 +7513,8 @@
     ]
    },
    "SACK": {
-    "score": 50.1,
-    "projected": 119.68,
+    "score": 51.5,
+    "projected": 121.02,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7610,7 +7610,7 @@
       "slot": "WR",
       "pro_team": "NYG",
       "opponent": "HOU",
-      "points": 13.2,
+      "points": 14.6,
       "projected": 14.57,
       "status": "live",
       "kickoff": 1792947600000
@@ -7619,7 +7619,7 @@
    },
    "MBJG": {
     "score": 54.2,
-    "projected": 110.16,
+    "projected": 109.64,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -7724,7 +7724,7 @@
    },
    "WALT": {
     "score": 58.46,
-    "projected": 107.91,
+    "projected": 107.19,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -7828,8 +7828,8 @@
     ]
    },
    "Naug": {
-    "score": 55.88,
-    "projected": 98.35,
+    "score": 56.08,
+    "projected": 98.02,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7892,7 +7892,7 @@
       "slot": "FLEX",
       "pro_team": "DEN",
       "opponent": "ARI",
-      "points": 1.3,
+      "points": 1.5,
       "projected": 12.73,
       "status": "live",
       "kickoff": 1792958700000
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 60.92,
-    "projected": 108.71,
+    "projected": 108.34,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8249,7 +8249,7 @@
    },
    "BEND": {
     "score": 72.1,
-    "projected": 72.23,
+    "projected": 72.11,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -8354,7 +8354,7 @@
    },
    "TMOG": {
     "score": 78.02,
-    "projected": 103.69,
+    "projected": 103.27,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8459,7 +8459,7 @@
    },
    "SWSH": {
     "score": 37.08,
-    "projected": 112.61,
+    "projected": 112.18,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -9340,6 +9340,23 @@
      "MBJG": 54.2,
      "WALT": 58.46,
      "Naug": 55.88,
+     "BW": 60.92,
+     "CJ": 76.94,
+     "SW": 80.6,
+     "BEND": 72.1,
+     "TMOG": 78.02,
+     "SWSH": 37.08,
+     "RA": 43.52
+    }
+   },
+   {
+    "t": "2026-10-25T20:20:18+00:00",
+    "scores": {
+     "PORK": 43.5,
+     "SACK": 51.5,
+     "MBJG": 54.2,
+     "WALT": 58.46,
+     "Naug": 56.08,
      "BW": 60.92,
      "CJ": 76.94,
      "SW": 80.6,
