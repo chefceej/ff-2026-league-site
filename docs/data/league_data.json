@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-26 00:10:19 UTC",
-  "last_updated": "2026-10-26T00:10:19.551093+00:00"
+  "updated_at": "2026-10-26 00:20:18 UTC",
+  "last_updated": "2026-10-26T00:20:18.674890+00:00"
  },
  "teams": [
   {
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-26T00:10:19+00:00",
+  "updated_at": "2026-10-26T00:20:18+00:00",
   "teams": {
    "PORK": {
     "score": 61.52,
@@ -7474,7 +7474,7 @@
       "opponent": "SEA",
       "points": 0.0,
       "projected": 10.73,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      },
      {
@@ -7535,7 +7535,7 @@
       "opponent": "SEA",
       "points": 0.0,
       "projected": 17.74,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      },
      {
@@ -7684,7 +7684,7 @@
       "opponent": "KC",
       "points": 0.0,
       "projected": 10.12,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      },
      {
@@ -7927,7 +7927,7 @@
       "opponent": "SEA",
       "points": 0.0,
       "projected": 7.97,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      }
     ]
@@ -7944,7 +7944,7 @@
       "opponent": "KC",
       "points": 0.0,
       "projected": 16.25,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      },
      {
@@ -8546,7 +8546,7 @@
       "opponent": "SEA",
       "points": 0.0,
       "projected": 7.9,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      },
      {
@@ -8629,7 +8629,7 @@
       "opponent": "SEA",
       "points": 0.0,
       "projected": 9.92,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      },
      {
@@ -8640,7 +8640,7 @@
       "opponent": "KC",
       "points": 0.0,
       "projected": 6.14,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      },
      {
@@ -8651,7 +8651,7 @@
       "opponent": "KC",
       "points": 0.0,
       "projected": 9.74,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1792974000000
      },
      {
