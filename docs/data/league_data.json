@@ -8,10 +8,55 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-26 02:10:20 UTC",
-  "last_updated": "2026-10-26T02:10:20.881748+00:00"
+  "updated_at": "2026-10-26 02:20:17 UTC",
+  "last_updated": "2026-10-26T02:20:17.671980+00:00"
  },
  "teams": [
+  {
+   "team_id": 10,
+   "team_name": "Bijan These Nuts",
+   "team_abbrev": "SACK",
+   "abbrev": "SACK",
+   "owner": "Brendan Ecker",
+   "scores_by_week": [
+    92.02,
+    107.08,
+    109.7,
+    128.88,
+    175.42,
+    103.38,
+    105.2
+   ],
+   "ranking_points_by_week": [
+    2.0,
+    9.0,
+    9.0,
+    11.0,
+    11.0,
+    8.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    2.0,
+    11.0,
+    20.0,
+    31.0,
+    42.0,
+    50.0,
+    59.0
+   ],
+   "normalized_by_week": [
+    -5.0,
+    -1.0,
+    1.0,
+    4.0,
+    8.0,
+    10.0,
+    12.0
+   ],
+   "rank": 1,
+   "total_ranking_points": 59.0
+  },
   {
    "team_id": 9,
    "team_name": "Walt's Warriors",
@@ -52,51 +97,6 @@
     -2.0,
     1.0,
     6.0,
-    11.0
-   ],
-   "rank": 1,
-   "total_ranking_points": 58.0
-  },
-  {
-   "team_id": 10,
-   "team_name": "Bijan These Nuts",
-   "team_abbrev": "SACK",
-   "abbrev": "SACK",
-   "owner": "Brendan Ecker",
-   "scores_by_week": [
-    92.02,
-    107.08,
-    109.7,
-    128.88,
-    175.42,
-    103.38,
-    103.8
-   ],
-   "ranking_points_by_week": [
-    2.0,
-    9.0,
-    9.0,
-    11.0,
-    11.0,
-    8.0,
-    8.0
-   ],
-   "cumulative_points_by_week": [
-    2.0,
-    11.0,
-    20.0,
-    31.0,
-    42.0,
-    50.0,
-    58.0
-   ],
-   "normalized_by_week": [
-    -5.0,
-    -1.0,
-    1.0,
-    4.0,
-    8.0,
-    10.0,
     11.0
    ],
    "rank": 2,
@@ -295,7 +295,7 @@
     105.92,
     103.76,
     90.76,
-    79.92
+    84.82
    ],
    "ranking_points_by_week": [
     3.0,
@@ -304,7 +304,7 @@
     5.0,
     5.0,
     5.0,
-    4.0
+    5.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -313,7 +313,7 @@
     31.0,
     36.0,
     41.0,
-    45.0
+    46.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -322,10 +322,10 @@
     4.0,
     2.0,
     1.0,
-    -2.0
+    -1.0
    ],
    "rank": 7,
-   "total_ranking_points": 45.0
+   "total_ranking_points": 46.0
   },
   {
    "team_id": 1,
@@ -349,7 +349,7 @@
     12.0,
     1.0,
     1.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -358,7 +358,7 @@
     36.0,
     37.0,
     38.0,
-    43.0
+    42.0
    ],
    "normalized_by_week": [
     2.0,
@@ -367,10 +367,10 @@
     9.0,
     3.0,
     -2.0,
-    -4.0
+    -5.0
    ],
    "rank": 8,
-   "total_ranking_points": 43.0
+   "total_ranking_points": 42.0
   },
   {
    "team_id": 2,
@@ -394,7 +394,7 @@
     1.0,
     12.0,
     3.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -403,7 +403,7 @@
     19.0,
     31.0,
     34.0,
-    43.0
+    42.0
    ],
    "normalized_by_week": [
     1.0,
@@ -412,10 +412,10 @@
     -8.0,
     -3.0,
     -6.0,
-    -4.0
+    -5.0
    ],
    "rank": 9,
-   "total_ranking_points": 43.0
+   "total_ranking_points": 42.0
   },
   {
    "team_id": 7,
@@ -520,7 +520,7 @@
     89.62,
     92.0,
     82.12,
-    62.88
+    63.78
    ],
    "ranking_points_by_week": [
     6.0,
@@ -6261,6 +6261,14 @@
      "score": 7.0
     },
     {
+     "name": "Jason Myers",
+     "pro_team": "SEA",
+     "fantasy_team": "The Sun Gods ",
+     "position": "K",
+     "slot": "K",
+     "score": 7.0
+    },
+    {
      "name": "Matthew Golden",
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
@@ -6299,6 +6307,14 @@
      "position": "WR",
      "slot": "WR",
      "score": 6.4
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "slot": "RB",
+     "score": 6.3
     },
     {
      "name": "A.J. Brown",
@@ -6381,14 +6397,6 @@
      "score": 5.0
     },
     {
-     "name": "Kenneth Walker III",
-     "pro_team": "KC",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "slot": "RB",
-     "score": 4.9
-    },
-    {
      "name": "Germie Bernard",
      "pro_team": "PIT",
      "fantasy_team": "Walt's Warriors",
@@ -6402,14 +6410,6 @@
      "fantasy_team": "Satriale's Pork Store",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 4.0
-    },
-    {
-     "name": "Jason Myers",
-     "pro_team": "SEA",
-     "fantasy_team": "The Sun Gods ",
-     "position": "K",
-     "slot": "K",
      "score": 4.0
     },
     {
@@ -6451,6 +6451,14 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 3.0
+    },
+    {
+     "name": "Xavier Worthy",
+     "pro_team": "KC",
+     "fantasy_team": "The Sun Gods ",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 2.6
     },
     {
      "name": "Sam LaPorta",
@@ -6517,12 +6525,12 @@
      "score": 1.0
     },
     {
-     "name": "Xavier Worthy",
+     "name": "Travis Kelce",
      "pro_team": "KC",
-     "fantasy_team": "The Sun Gods ",
-     "position": "WR",
-     "slot": "FLEX",
-     "score": 0.7
+     "fantasy_team": "Mid AF Squad",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.9
     },
     {
      "name": "Harrison Butker",
@@ -6562,14 +6570,6 @@
      "fantasy_team": "Mid AF Squad",
      "position": "K",
      "slot": "K",
-     "score": 0.0
-    },
-    {
-     "name": "Travis Kelce",
-     "pro_team": "KC",
-     "fantasy_team": "Mid AF Squad",
-     "position": "TE",
-     "slot": "TE",
      "score": 0.0
     },
     {
@@ -7304,7 +7304,7 @@
    },
    "SACK": {
     "WR": 29.3,
-    "RB": 22.0,
+    "RB": 23.4,
     "FLEX": 15.2,
     "TE": 12.8,
     "QB": 17.5,
@@ -7336,7 +7336,7 @@
     "K": 0.0,
     "FLEX": 8.3,
     "D/ST": -1.0,
-    "TE": 0.0
+    "TE": 0.9
    },
    "BW": {
     "WR": 30.6,
@@ -7397,19 +7397,19 @@
     "RB": 4.6,
     "TE": 10.8,
     "QB": 12.02,
-    "FLEX": 0.7,
+    "FLEX": 2.6,
     "D/ST": 12.0,
-    "K": 4.0
+    "K": 7.0
    }
   }
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-26T02:10:20+00:00",
+  "updated_at": "2026-10-26T02:20:17+00:00",
   "teams": {
    "PORK": {
     "score": 61.52,
-    "projected": 65.74,
+    "projected": 65.24,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7513,8 +7513,8 @@
     ]
    },
    "SACK": {
-    "score": 103.8,
-    "projected": 116.75,
+    "score": 105.2,
+    "projected": 117.32,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7533,7 +7533,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "SEA",
-      "points": 4.9,
+      "points": 6.3,
       "projected": 17.74,
       "status": "live",
       "kickoff": 1792974000000
@@ -7619,7 +7619,7 @@
    },
    "MBJG": {
     "score": 105.76,
-    "projected": 109.74,
+    "projected": 109.27,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -7828,8 +7828,8 @@
     ]
    },
    "Naug": {
-    "score": 62.88,
-    "projected": 88.29,
+    "score": 63.78,
+    "projected": 88.81,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7925,7 +7925,7 @@
       "slot": "TE",
       "pro_team": "KC",
       "opponent": "SEA",
-      "points": 0.0,
+      "points": 0.9,
       "projected": 7.97,
       "status": "live",
       "kickoff": 1792974000000
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 101.12,
-    "projected": 123.09,
+    "projected": 122.32,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8459,7 +8459,7 @@
    },
    "SWSH": {
     "score": 111.38,
-    "projected": 112.13,
+    "projected": 112.04,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -8563,8 +8563,8 @@
     ]
    },
    "RA": {
-    "score": 79.92,
-    "projected": 85.35,
+    "score": 84.82,
+    "projected": 89.6,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -8627,7 +8627,7 @@
       "slot": "FLEX",
       "pro_team": "KC",
       "opponent": "SEA",
-      "points": 0.7,
+      "points": 2.6,
       "projected": 9.92,
       "status": "live",
       "kickoff": 1792974000000
@@ -8649,7 +8649,7 @@
       "slot": "K",
       "pro_team": "SEA",
       "opponent": "KC",
-      "points": 4.0,
+      "points": 7.0,
       "projected": 9.74,
       "status": "live",
       "kickoff": 1792974000000
@@ -9891,6 +9891,23 @@
      "TMOG": 86.62,
      "SWSH": 111.38,
      "RA": 79.92
+    }
+   },
+   {
+    "t": "2026-10-26T02:20:17+00:00",
+    "scores": {
+     "PORK": 61.52,
+     "SACK": 105.2,
+     "MBJG": 105.76,
+     "WALT": 119.08,
+     "Naug": 63.78,
+     "BW": 101.12,
+     "CJ": 104.84,
+     "SW": 80.6,
+     "BEND": 71.1,
+     "TMOG": 86.62,
+     "SWSH": 111.38,
+     "RA": 84.82
     }
    }
   ]
