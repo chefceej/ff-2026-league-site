@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-25 23:50:18 UTC",
-  "last_updated": "2026-10-25T23:50:18.643562+00:00"
+  "updated_at": "2026-10-26 00:00:21 UTC",
+  "last_updated": "2026-10-26T00:00:21.586188+00:00"
  },
  "teams": [
   {
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-25T23:50:18+00:00",
+  "updated_at": "2026-10-26T00:00:21+00:00",
   "teams": {
    "PORK": {
     "score": 61.52,
@@ -7463,7 +7463,7 @@
       "opponent": "None",
       "points": 18.02,
       "projected": 18.48,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -7546,7 +7546,7 @@
       "opponent": "LV",
       "points": 17.1,
       "projected": 17.58,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -7568,7 +7568,7 @@
       "opponent": "DET",
       "points": 12.8,
       "projected": 9.64,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -7579,7 +7579,7 @@
       "opponent": "None",
       "points": 17.5,
       "projected": 18.58,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -7695,7 +7695,7 @@
       "opponent": "DET",
       "points": 6.9,
       "projected": 14.36,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -7706,7 +7706,7 @@
       "opponent": "None",
       "points": 16.96,
       "projected": 19.62,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -7734,7 +7734,7 @@
       "opponent": "LV",
       "points": 17.8,
       "projected": 18.78,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -7745,7 +7745,7 @@
       "opponent": "LAR",
       "points": 17.6,
       "projected": 15.16,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -8032,7 +8032,7 @@
       "opponent": "GB",
       "points": 9.0,
       "projected": 9.31,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      }
     ]
@@ -8104,7 +8104,7 @@
       "opponent": "GB",
       "points": 2.3,
       "projected": 10.2,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -8115,7 +8115,7 @@
       "opponent": "LV",
       "points": 16.6,
       "projected": 9.21,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -8126,7 +8126,7 @@
       "opponent": "LAR",
       "points": 9.0,
       "projected": 10.07,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -8469,7 +8469,7 @@
       "opponent": "GB",
       "points": 14.8,
       "projected": 23.49,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -8480,7 +8480,7 @@
       "opponent": "LAR",
       "points": 10.3,
       "projected": 15.19,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -8502,7 +8502,7 @@
       "opponent": "DET",
       "points": 17.6,
       "projected": 11.58,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -8524,7 +8524,7 @@
       "opponent": "LAR",
       "points": 18.8,
       "projected": 8.73,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
@@ -8574,7 +8574,7 @@
       "opponent": "GB",
       "points": 19.7,
       "projected": 15.9,
-      "status": "live",
+      "status": "final",
       "kickoff": 1792959900000
      },
      {
