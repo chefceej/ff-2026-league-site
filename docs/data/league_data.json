@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-26 01:40:16 UTC",
-  "last_updated": "2026-10-26T01:40:16.876728+00:00"
+  "updated_at": "2026-10-26 01:50:17 UTC",
+  "last_updated": "2026-10-26T01:50:17.331700+00:00"
  },
  "teams": [
   {
@@ -70,7 +70,7 @@
     128.88,
     175.42,
     103.38,
-    103.4
+    103.8
    ],
    "ranking_points_by_week": [
     2.0,
@@ -115,7 +115,7 @@
     90.12,
     133.0,
     91.2,
-    109.38
+    111.38
    ],
    "ranking_points_by_week": [
     1.0,
@@ -160,7 +160,7 @@
     118.0,
     88.24,
     128.08,
-    97.82
+    101.12
    ],
    "ranking_points_by_week": [
     4.0,
@@ -5821,6 +5821,14 @@
      "score": 23.48
     },
     {
+     "name": "Jaxon Smith-Njigba",
+     "pro_team": "SEA",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 23.2
+    },
+    {
      "name": "Bears TQB",
      "pro_team": "CHI",
      "fantasy_team": "Team Made of Glass",
@@ -5859,14 +5867,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 20.0
-    },
-    {
-     "name": "Jaxon Smith-Njigba",
-     "pro_team": "SEA",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 19.9
     },
     {
      "name": "Amon-Ra St. Brown",
@@ -6317,6 +6317,14 @@
      "score": 6.0
     },
     {
+     "name": "Chiefs D/ST",
+     "pro_team": "KC",
+     "fantasy_team": "Swishington Football Team",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 6.0
+    },
+    {
      "name": "Derrick Henry",
      "pro_team": "BAL",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -6370,7 +6378,7 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "RB",
      "slot": "RB",
-     "score": 4.5
+     "score": 4.9
     },
     {
      "name": "Emanuel Wilson",
@@ -6392,14 +6400,6 @@
      "name": "Bears D/ST",
      "pro_team": "CHI",
      "fantasy_team": "Satriale's Pork Store",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 4.0
-    },
-    {
-     "name": "Chiefs D/ST",
-     "pro_team": "KC",
-     "fantasy_team": "Swishington Football Team",
      "position": "D/ST",
      "slot": "D/ST",
      "score": 4.0
@@ -7304,7 +7304,7 @@
    },
    "SACK": {
     "WR": 29.3,
-    "RB": 21.6,
+    "RB": 22.0,
     "FLEX": 15.2,
     "TE": 12.8,
     "QB": 17.5,
@@ -7339,7 +7339,7 @@
     "TE": 0.0
    },
    "BW": {
-    "WR": 27.3,
+    "WR": 30.6,
     "RB": 13.0,
     "TE": 16.4,
     "D/ST": 5.0,
@@ -7389,7 +7389,7 @@
     "WR": 25.6,
     "FLEX": 17.6,
     "K": 5.0,
-    "D/ST": 4.0,
+    "D/ST": 6.0,
     "QB": 23.48
    },
    "RA": {
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-26T01:40:16+00:00",
+  "updated_at": "2026-10-26T01:50:17+00:00",
   "teams": {
    "PORK": {
     "score": 61.52,
-    "projected": 66.99,
+    "projected": 66.88,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7513,8 +7513,8 @@
     ]
    },
    "SACK": {
-    "score": 103.4,
-    "projected": 118.41,
+    "score": 103.8,
+    "projected": 118.64,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7533,7 +7533,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "SEA",
-      "points": 4.5,
+      "points": 4.9,
       "projected": 17.74,
       "status": "live",
       "kickoff": 1792974000000
@@ -7619,7 +7619,7 @@
    },
    "MBJG": {
     "score": 104.66,
-    "projected": 109.81,
+    "projected": 109.72,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 62.88,
-    "projected": 89.21,
+    "projected": 89.13,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7933,8 +7933,8 @@
     ]
    },
    "BW": {
-    "score": 97.82,
-    "projected": 121.67,
+    "score": 101.12,
+    "projected": 124.82,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7942,7 +7942,7 @@
       "slot": "WR",
       "pro_team": "SEA",
       "opponent": "KC",
-      "points": 19.9,
+      "points": 23.2,
       "projected": 16.25,
       "status": "live",
       "kickoff": 1792974000000
@@ -8458,8 +8458,8 @@
     ]
    },
    "SWSH": {
-    "score": 109.38,
-    "projected": 111.37,
+    "score": 111.38,
+    "projected": 112.33,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -8544,7 +8544,7 @@
       "slot": "D/ST",
       "pro_team": "KC",
       "opponent": "SEA",
-      "points": 4.0,
+      "points": 6.0,
       "projected": 7.9,
       "status": "live",
       "kickoff": 1792974000000
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 79.92,
-    "projected": 86.95,
+    "projected": 86.82,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9839,6 +9839,23 @@
      "BEND": 71.1,
      "TMOG": 86.62,
      "SWSH": 109.38,
+     "RA": 79.92
+    }
+   },
+   {
+    "t": "2026-10-26T01:50:17+00:00",
+    "scores": {
+     "PORK": 61.52,
+     "SACK": 103.8,
+     "MBJG": 104.66,
+     "WALT": 119.08,
+     "Naug": 62.88,
+     "BW": 101.12,
+     "CJ": 104.84,
+     "SW": 80.6,
+     "BEND": 71.1,
+     "TMOG": 86.62,
+     "SWSH": 111.38,
      "RA": 79.92
     }
    }
