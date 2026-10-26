@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-26 02:40:21 UTC",
-  "last_updated": "2026-10-26T02:40:21.471801+00:00"
+  "updated_at": "2026-10-26 02:50:16 UTC",
+  "last_updated": "2026-10-26T02:50:16.359797+00:00"
  },
  "teams": [
   {
@@ -25,7 +25,7 @@
     128.88,
     175.42,
     103.38,
-    106.3
+    106.6
    ],
    "ranking_points_by_week": [
     2.0,
@@ -52,7 +52,7 @@
     4.0,
     8.0,
     10.0,
-    12.0
+    13.0
    ],
    "rank": 1,
    "total_ranking_points": 60.0
@@ -97,7 +97,7 @@
     -2.0,
     1.0,
     6.0,
-    10.0
+    11.0
    ],
    "rank": 2,
    "total_ranking_points": 58.0
@@ -142,7 +142,7 @@
     -2.0,
     0.0,
     0.0,
-    3.0
+    4.0
    ],
    "rank": 3,
    "total_ranking_points": 51.0
@@ -187,7 +187,7 @@
     1.0,
     -3.0,
     3.0,
-    2.0
+    3.0
    ],
    "rank": 4,
    "total_ranking_points": 50.0
@@ -232,7 +232,7 @@
     -4.0,
     -4.0,
     0.0,
-    1.0
+    2.0
    ],
    "rank": 5,
    "total_ranking_points": 49.0
@@ -259,7 +259,7 @@
     6.0,
     6.0,
     7.0,
-    2.0
+    1.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -268,7 +268,7 @@
     33.0,
     39.0,
     46.0,
-    48.0
+    47.0
    ],
    "normalized_by_week": [
     3.0,
@@ -280,7 +280,7 @@
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 48.0
+   "total_ranking_points": 47.0
   },
   {
    "team_id": 11,
@@ -322,7 +322,7 @@
     4.0,
     2.0,
     1.0,
-    -2.0
+    -1.0
    ],
    "rank": 7,
    "total_ranking_points": 46.0
@@ -367,7 +367,7 @@
     9.0,
     3.0,
     -2.0,
-    -6.0
+    -5.0
    ],
    "rank": 8,
    "total_ranking_points": 42.0
@@ -412,7 +412,7 @@
     -8.0,
     -3.0,
     -6.0,
-    -6.0
+    -5.0
    ],
    "rank": 9,
    "total_ranking_points": 42.0
@@ -457,7 +457,7 @@
     -8.0,
     -7.0,
     -4.0,
-    -6.0
+    -5.0
    ],
    "rank": 10,
    "total_ranking_points": 42.0
@@ -502,7 +502,7 @@
     0.0,
     -5.0,
     -7.0,
-    -12.0
+    -11.0
    ],
    "rank": 11,
    "total_ranking_points": 36.0
@@ -520,7 +520,7 @@
     89.62,
     92.0,
     82.12,
-    66.08
+    68.48
    ],
    "ranking_points_by_week": [
     6.0,
@@ -529,7 +529,7 @@
     3.0,
     4.0,
     2.0,
-    1.0
+    2.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -538,7 +538,7 @@
     15.0,
     19.0,
     21.0,
-    22.0
+    23.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -547,10 +547,10 @@
     -12.0,
     -15.0,
     -19.0,
-    -26.0
+    -24.0
    ],
    "rank": 12,
-   "total_ranking_points": 22.0
+   "total_ranking_points": 23.0
   }
  ],
  "top_players_by_week": [
@@ -6250,7 +6250,7 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "RB",
      "slot": "RB",
-     "score": 7.4
+     "score": 7.7
     },
     {
      "name": "Carnell Tate",
@@ -6349,6 +6349,14 @@
      "score": 5.9
     },
     {
+     "name": "Travis Kelce",
+     "pro_team": "KC",
+     "fantasy_team": "Mid AF Squad",
+     "position": "TE",
+     "slot": "TE",
+     "score": 5.6
+    },
+    {
      "name": "Derrick Henry",
      "pro_team": "BAL",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -6443,14 +6451,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 3.3
-    },
-    {
-     "name": "Travis Kelce",
-     "pro_team": "KC",
-     "fantasy_team": "Mid AF Squad",
-     "position": "TE",
-     "slot": "TE",
-     "score": 3.2
     },
     {
      "name": "Aaron Jones Sr.",
@@ -7304,7 +7304,7 @@
    },
    "SACK": {
     "WR": 29.3,
-    "RB": 24.5,
+    "RB": 24.8,
     "FLEX": 15.2,
     "TE": 12.8,
     "QB": 17.5,
@@ -7336,7 +7336,7 @@
     "K": 0.0,
     "FLEX": 8.3,
     "D/ST": -1.0,
-    "TE": 3.2
+    "TE": 5.6
    },
    "BW": {
     "WR": 32.3,
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-26T02:40:21+00:00",
+  "updated_at": "2026-10-26T02:50:16+00:00",
   "teams": {
    "PORK": {
     "score": 66.52,
-    "projected": 69.07,
+    "projected": 68.05,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7513,8 +7513,8 @@
     ]
    },
    "SACK": {
-    "score": 106.3,
-    "projected": 116.49,
+    "score": 106.6,
+    "projected": 115.09,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7533,7 +7533,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "SEA",
-      "points": 7.4,
+      "points": 7.7,
       "projected": 17.74,
       "status": "live",
       "kickoff": 1792974000000
@@ -7619,7 +7619,7 @@
    },
    "MBJG": {
     "score": 106.06,
-    "projected": 108.47,
+    "projected": 107.5,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -7828,8 +7828,8 @@
     ]
    },
    "Naug": {
-    "score": 66.08,
-    "projected": 90.25,
+    "score": 68.48,
+    "projected": 91.89,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7925,7 +7925,7 @@
       "slot": "TE",
       "pro_team": "KC",
       "opponent": "SEA",
-      "points": 3.2,
+      "points": 5.6,
       "projected": 7.97,
       "status": "live",
       "kickoff": 1792974000000
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 102.82,
-    "projected": 122.26,
+    "projected": 120.71,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8459,7 +8459,7 @@
    },
    "SWSH": {
     "score": 111.38,
-    "projected": 111.83,
+    "projected": 111.65,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 81.82,
-    "projected": 85.82,
+    "projected": 84.21,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9935,6 +9935,23 @@
      "MBJG": 106.06,
      "WALT": 119.08,
      "Naug": 66.08,
+     "BW": 102.82,
+     "CJ": 104.84,
+     "SW": 80.6,
+     "BEND": 71.1,
+     "TMOG": 86.62,
+     "SWSH": 111.38,
+     "RA": 81.82
+    }
+   },
+   {
+    "t": "2026-10-26T02:50:16+00:00",
+    "scores": {
+     "PORK": 66.52,
+     "SACK": 106.6,
+     "MBJG": 106.06,
+     "WALT": 119.08,
+     "Naug": 68.48,
      "BW": 102.82,
      "CJ": 104.84,
      "SW": 80.6,
