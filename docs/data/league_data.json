@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-26 01:30:21 UTC",
-  "last_updated": "2026-10-26T01:30:21.830253+00:00"
+  "updated_at": "2026-10-26 01:40:16 UTC",
+  "last_updated": "2026-10-26T01:40:16.876728+00:00"
  },
  "teams": [
   {
@@ -160,7 +160,7 @@
     118.0,
     88.24,
     128.08,
-    95.22
+    97.82
    ],
    "ranking_points_by_week": [
     4.0,
@@ -5861,6 +5861,14 @@
      "score": 20.0
     },
     {
+     "name": "Jaxon Smith-Njigba",
+     "pro_team": "SEA",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 19.9
+    },
+    {
      "name": "Amon-Ra St. Brown",
      "pro_team": "DET",
      "fantasy_team": "The Sun Gods ",
@@ -5931,14 +5939,6 @@
      "position": "QB",
      "slot": "QB",
      "score": 17.5
-    },
-    {
-     "name": "Jaxon Smith-Njigba",
-     "pro_team": "SEA",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 17.3
     },
     {
      "name": "Kyren Williams",
@@ -7339,7 +7339,7 @@
     "TE": 0.0
    },
    "BW": {
-    "WR": 24.7,
+    "WR": 27.3,
     "RB": 13.0,
     "TE": 16.4,
     "D/ST": 5.0,
@@ -7405,11 +7405,11 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-26T01:30:21+00:00",
+  "updated_at": "2026-10-26T01:40:16+00:00",
   "teams": {
    "PORK": {
     "score": 61.52,
-    "projected": 67.19,
+    "projected": 66.99,
     "starters": [
      {
       "name": "Chase Brown",
@@ -7514,7 +7514,7 @@
    },
    "SACK": {
     "score": 103.4,
-    "projected": 118.75,
+    "projected": 118.41,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7619,7 +7619,7 @@
    },
    "MBJG": {
     "score": 104.66,
-    "projected": 110.01,
+    "projected": 109.81,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 62.88,
-    "projected": 89.36,
+    "projected": 89.21,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7933,8 +7933,8 @@
     ]
    },
    "BW": {
-    "score": 95.22,
-    "projected": 119.39,
+    "score": 97.82,
+    "projected": 121.67,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7942,7 +7942,7 @@
       "slot": "WR",
       "pro_team": "SEA",
       "opponent": "KC",
-      "points": 17.3,
+      "points": 19.9,
       "projected": 16.25,
       "status": "live",
       "kickoff": 1792974000000
@@ -8459,7 +8459,7 @@
    },
    "SWSH": {
     "score": 109.38,
-    "projected": 111.44,
+    "projected": 111.37,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -8564,7 +8564,7 @@
    },
    "RA": {
     "score": 79.92,
-    "projected": 87.22,
+    "projected": 86.95,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9817,6 +9817,23 @@
      "WALT": 119.08,
      "Naug": 62.88,
      "BW": 95.22,
+     "CJ": 104.84,
+     "SW": 80.6,
+     "BEND": 71.1,
+     "TMOG": 86.62,
+     "SWSH": 109.38,
+     "RA": 79.92
+    }
+   },
+   {
+    "t": "2026-10-26T01:40:16+00:00",
+    "scores": {
+     "PORK": 61.52,
+     "SACK": 103.4,
+     "MBJG": 104.66,
+     "WALT": 119.08,
+     "Naug": 62.88,
+     "BW": 97.82,
      "CJ": 104.84,
      "SW": 80.6,
      "BEND": 71.1,
