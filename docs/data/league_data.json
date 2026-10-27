@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-27 02:00:23 UTC",
-  "last_updated": "2026-10-27T02:00:23.835702+00:00"
+  "updated_at": "2026-10-27 02:10:16 UTC",
+  "last_updated": "2026-10-27T02:10:16.658504+00:00"
  },
  "teams": [
   {
@@ -430,7 +430,7 @@
     81.62,
     125.36,
     113.5,
-    94.52
+    96.62
    ],
    "ranking_points_by_week": [
     11.0,
@@ -520,7 +520,7 @@
     89.62,
     92.0,
     82.12,
-    92.18
+    93.38
    ],
    "ranking_points_by_week": [
     6.0,
@@ -6069,6 +6069,14 @@
      "score": 14.6
     },
     {
+     "name": "Saquon Barkley",
+     "pro_team": "PHI",
+     "fantasy_team": "Mid AF Squad",
+     "position": "RB",
+     "slot": "RB",
+     "score": 14.1
+    },
+    {
      "name": "Vikings TQB",
      "pro_team": "MIN",
      "fantasy_team": "Remeber Bendel",
@@ -6099,14 +6107,6 @@
      "position": "K",
      "slot": "K",
      "score": 13.0
-    },
-    {
-     "name": "Saquon Barkley",
-     "pro_team": "PHI",
-     "fantasy_team": "Mid AF Squad",
-     "position": "RB",
-     "slot": "RB",
-     "score": 12.9
     },
     {
      "name": "Tucker Kraft",
@@ -6501,6 +6501,14 @@
      "score": 3.3
     },
     {
+     "name": "Dallas Goedert",
+     "pro_team": "PHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "slot": "TE",
+     "score": 3.1
+    },
+    {
      "name": "Aaron Jones Sr.",
      "pro_team": "MIN",
      "fantasy_team": "Team Made of Glass",
@@ -6602,14 +6610,6 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 1.0
-    },
-    {
-     "name": "Dallas Goedert",
-     "pro_team": "PHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "TE",
-     "slot": "TE",
      "score": 1.0
     },
     {
@@ -7331,7 +7331,7 @@
    },
    "Naug": {
     "WR": 9.7,
-    "RB": 29.9,
+    "RB": 31.1,
     "QB": 28.88,
     "K": 10.0,
     "FLEX": 8.3,
@@ -7376,7 +7376,7 @@
    },
    "TMOG": {
     "WR": 28.6,
-    "TE": 1.0,
+    "TE": 3.1,
     "RB": 19.9,
     "QB": 22.12,
     "K": 11.0,
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-27T02:00:23+00:00",
+  "updated_at": "2026-10-27T02:10:16+00:00",
   "teams": {
    "PORK": {
     "score": 66.52,
@@ -7514,7 +7514,7 @@
    },
    "SACK": {
     "score": 107.6,
-    "projected": 110.08,
+    "projected": 109.58,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7828,8 +7828,8 @@
     ]
    },
    "Naug": {
-    "score": 92.18,
-    "projected": 103.32,
+    "score": 93.38,
+    "projected": 102.27,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7848,7 +7848,7 @@
       "slot": "RB",
       "pro_team": "PHI",
       "opponent": "DAL",
-      "points": 12.9,
+      "points": 14.1,
       "projected": 13.9,
       "status": "live",
       "kickoff": 1793060100000
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 111.42,
-    "projected": 119.21,
+    "projected": 117.64,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8039,7 +8039,7 @@
    },
    "CJ": {
     "score": 117.44,
-    "projected": 122.79,
+    "projected": 121.71,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 110.16,
-    "projected": 126.04,
+    "projected": 122.84,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 94.52,
-    "projected": 102.48,
+    "score": 96.62,
+    "projected": 102.98,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8373,7 +8373,7 @@
       "slot": "TE",
       "pro_team": "PHI",
       "opponent": "DAL",
-      "points": 1.0,
+      "points": 3.1,
       "projected": 8.8,
       "status": "live",
       "kickoff": 1793060100000
@@ -10178,6 +10178,23 @@
      "SW": 110.16,
      "BEND": 71.1,
      "TMOG": 94.52,
+     "SWSH": 108.38,
+     "RA": 82.82
+    }
+   },
+   {
+    "t": "2026-10-27T02:10:16+00:00",
+    "scores": {
+     "PORK": 66.52,
+     "SACK": 107.6,
+     "MBJG": 118.16,
+     "WALT": 119.08,
+     "Naug": 93.38,
+     "BW": 111.42,
+     "CJ": 117.44,
+     "SW": 110.16,
+     "BEND": 71.1,
+     "TMOG": 96.62,
      "SWSH": 108.38,
      "RA": 82.82
     }
