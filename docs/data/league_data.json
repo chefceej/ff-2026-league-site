@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-27 03:40:23 UTC",
-  "last_updated": "2026-10-27T03:40:23.056498+00:00"
+  "updated_at": "2026-10-27 03:50:18 UTC",
+  "last_updated": "2026-10-27T03:50:18.837586+00:00"
  },
  "teams": [
   {
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-27T03:40:23+00:00",
+  "updated_at": "2026-10-27T03:50:18+00:00",
   "teams": {
    "PORK": {
     "score": 66.52,
@@ -7590,7 +7590,7 @@
       "opponent": "DAL",
       "points": -3.0,
       "projected": 5.97,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      },
      {
@@ -7850,7 +7850,7 @@
       "opponent": "DAL",
       "points": 14.1,
       "projected": 13.9,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      },
      {
@@ -7883,7 +7883,7 @@
       "opponent": "PHI",
       "points": 14.0,
       "projected": 8.37,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      },
      {
@@ -7955,7 +7955,7 @@
       "opponent": "PHI",
       "points": 21.5,
       "projected": 15.57,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      },
      {
@@ -8071,7 +8071,7 @@
       "opponent": "PHI",
       "points": 13.7,
       "projected": 10.69,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      },
      {
@@ -8154,7 +8154,7 @@
       "opponent": "PHI",
       "points": 21.9,
       "projected": 15.03,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      },
      {
@@ -8209,7 +8209,7 @@
       "opponent": "None",
       "points": 23.28,
       "projected": 16.72,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      },
      {
@@ -8375,7 +8375,7 @@
       "opponent": "DAL",
       "points": 7.3,
       "projected": 8.8,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      },
      {
@@ -8452,7 +8452,7 @@
       "opponent": "PHI",
       "points": 9.0,
       "projected": 7.13,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793060100000
      }
     ]
