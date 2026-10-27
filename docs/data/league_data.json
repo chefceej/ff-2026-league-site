@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-27 02:10:16 UTC",
-  "last_updated": "2026-10-27T02:10:16.658504+00:00"
+  "updated_at": "2026-10-27 02:20:21 UTC",
+  "last_updated": "2026-10-27T02:20:21.141266+00:00"
  },
  "teams": [
   {
@@ -115,7 +115,7 @@
     118.0,
     88.24,
     128.08,
-    111.42
+    111.52
    ],
    "ranking_points_by_week": [
     4.0,
@@ -430,7 +430,7 @@
     81.62,
     125.36,
     113.5,
-    96.62
+    96.72
    ],
    "ranking_points_by_week": [
     11.0,
@@ -6341,6 +6341,14 @@
      "score": 6.9
     },
     {
+     "name": "Javonte Williams",
+     "pro_team": "DAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 6.8
+    },
+    {
      "name": "Jordan Mason",
      "pro_team": "MIN",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -6355,14 +6363,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 6.8
-    },
-    {
-     "name": "Javonte Williams",
-     "pro_team": "DAL",
-     "fantasy_team": "JSN Derulo ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 6.7
     },
     {
      "name": "DK Metcalf",
@@ -6506,7 +6506,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "TE",
      "slot": "TE",
-     "score": 3.1
+     "score": 3.2
     },
     {
      "name": "Aaron Jones Sr.",
@@ -7340,7 +7340,7 @@
    },
    "BW": {
     "WR": 34.2,
-    "RB": 19.7,
+    "RB": 19.8,
     "TE": 16.4,
     "D/ST": 5.0,
     "FLEX": 10.6,
@@ -7376,7 +7376,7 @@
    },
    "TMOG": {
     "WR": 28.6,
-    "TE": 3.1,
+    "TE": 3.2,
     "RB": 19.9,
     "QB": 22.12,
     "K": 11.0,
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-27T02:10:16+00:00",
+  "updated_at": "2026-10-27T02:20:21+00:00",
   "teams": {
    "PORK": {
     "score": 66.52,
@@ -7514,7 +7514,7 @@
    },
    "SACK": {
     "score": 107.6,
-    "projected": 109.58,
+    "projected": 109.25,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 93.38,
-    "projected": 102.27,
+    "projected": 100.76,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7933,8 +7933,8 @@
     ]
    },
    "BW": {
-    "score": 111.42,
-    "projected": 117.64,
+    "score": 111.52,
+    "projected": 116.68,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7953,7 +7953,7 @@
       "slot": "RB",
       "pro_team": "DAL",
       "opponent": "PHI",
-      "points": 6.7,
+      "points": 6.8,
       "projected": 15.57,
       "status": "live",
       "kickoff": 1793060100000
@@ -8039,7 +8039,7 @@
    },
    "CJ": {
     "score": 117.44,
-    "projected": 121.71,
+    "projected": 120.98,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 110.16,
-    "projected": 122.84,
+    "projected": 120.68,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 96.62,
-    "projected": 102.98,
+    "score": 96.72,
+    "projected": 102.0,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8373,7 +8373,7 @@
       "slot": "TE",
       "pro_team": "PHI",
       "opponent": "DAL",
-      "points": 3.1,
+      "points": 3.2,
       "projected": 8.8,
       "status": "live",
       "kickoff": 1793060100000
@@ -10195,6 +10195,23 @@
      "SW": 110.16,
      "BEND": 71.1,
      "TMOG": 96.62,
+     "SWSH": 108.38,
+     "RA": 82.82
+    }
+   },
+   {
+    "t": "2026-10-27T02:20:21+00:00",
+    "scores": {
+     "PORK": 66.52,
+     "SACK": 107.6,
+     "MBJG": 118.16,
+     "WALT": 119.08,
+     "Naug": 93.38,
+     "BW": 111.52,
+     "CJ": 117.44,
+     "SW": 110.16,
+     "BEND": 71.1,
+     "TMOG": 96.72,
      "SWSH": 108.38,
      "RA": 82.82
     }
