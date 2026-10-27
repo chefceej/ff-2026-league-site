@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-27 00:50:19 UTC",
-  "last_updated": "2026-10-27T00:50:19.054292+00:00"
+  "updated_at": "2026-10-27 01:00:21 UTC",
+  "last_updated": "2026-10-27T01:00:21.686664+00:00"
  },
  "teams": [
   {
@@ -520,7 +520,7 @@
     89.62,
     92.0,
     82.12,
-    87.68
+    87.98
    ],
    "ranking_points_by_week": [
     6.0,
@@ -6098,7 +6098,7 @@
      "fantasy_team": "Mid AF Squad",
      "position": "RB",
      "slot": "RB",
-     "score": 12.4
+     "score": 12.7
     },
     {
      "name": "49ers TQB",
@@ -7331,7 +7331,7 @@
    },
    "Naug": {
     "WR": 9.7,
-    "RB": 29.4,
+    "RB": 29.7,
     "QB": 28.88,
     "K": 6.0,
     "FLEX": 8.3,
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-27T00:50:19+00:00",
+  "updated_at": "2026-10-27T01:00:21+00:00",
   "teams": {
    "PORK": {
     "score": 66.52,
@@ -7514,7 +7514,7 @@
    },
    "SACK": {
     "score": 110.6,
-    "projected": 112.08,
+    "projected": 112.02,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7828,8 +7828,8 @@
     ]
    },
    "Naug": {
-    "score": 87.68,
-    "projected": 104.43,
+    "score": 87.98,
+    "projected": 104.1,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7848,7 +7848,7 @@
       "slot": "RB",
       "pro_team": "PHI",
       "opponent": "DAL",
-      "points": 12.4,
+      "points": 12.7,
       "projected": 13.9,
       "status": "live",
       "kickoff": 1793060100000
@@ -7934,7 +7934,7 @@
    },
    "BW": {
     "score": 108.72,
-    "projected": 120.43,
+    "projected": 119.99,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8039,7 +8039,7 @@
    },
    "CJ": {
     "score": 104.84,
-    "projected": 112.88,
+    "projected": 112.58,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 93.96,
-    "projected": 117.85,
+    "projected": 116.94,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8354,7 +8354,7 @@
    },
    "TMOG": {
     "score": 91.62,
-    "projected": 103.6,
+    "projected": 103.15,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -10071,6 +10071,23 @@
      "MBJG": 118.16,
      "WALT": 119.08,
      "Naug": 87.68,
+     "BW": 108.72,
+     "CJ": 104.84,
+     "SW": 93.96,
+     "BEND": 71.1,
+     "TMOG": 91.62,
+     "SWSH": 108.38,
+     "RA": 82.82
+    }
+   },
+   {
+    "t": "2026-10-27T01:00:21+00:00",
+    "scores": {
+     "PORK": 66.52,
+     "SACK": 110.6,
+     "MBJG": 118.16,
+     "WALT": 119.08,
+     "Naug": 87.98,
      "BW": 108.72,
      "CJ": 104.84,
      "SW": 93.96,
