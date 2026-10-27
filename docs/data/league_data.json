@@ -8,8 +8,8 @@
   "current_matchup_week": 7,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-27 02:50:18 UTC",
-  "last_updated": "2026-10-27T02:50:18.590149+00:00"
+  "updated_at": "2026-10-27 03:00:21 UTC",
+  "last_updated": "2026-10-27T03:00:21.046924+00:00"
  },
  "teams": [
   {
@@ -115,7 +115,7 @@
     118.0,
     88.24,
     128.08,
-    117.92
+    118.62
    ],
    "ranking_points_by_week": [
     4.0,
@@ -124,7 +124,7 @@
     9.0,
     3.0,
     12.0,
-    8.0
+    10.0
    ],
    "cumulative_points_by_week": [
     4.0,
@@ -133,7 +133,7 @@
     28.0,
     31.0,
     43.0,
-    51.0
+    53.0
    ],
    "normalized_by_week": [
     -3.0,
@@ -142,10 +142,10 @@
     1.0,
     -3.0,
     3.0,
-    4.0
+    6.0
    ],
    "rank": 3,
-   "total_ranking_points": 51.0
+   "total_ranking_points": 53.0
   },
   {
    "team_id": 1,
@@ -214,7 +214,7 @@
     7.0,
     7.0,
     10.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -223,7 +223,7 @@
     23.0,
     30.0,
     40.0,
-    49.0
+    48.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -232,10 +232,10 @@
     -4.0,
     -4.0,
     0.0,
-    2.0
+    1.0
    ],
    "rank": 5,
-   "total_ranking_points": 49.0
+   "total_ranking_points": 48.0
   },
   {
    "team_id": 4,
@@ -328,51 +328,6 @@
    "total_ranking_points": 47.0
   },
   {
-   "team_id": 2,
-   "team_name": "Kaiser Soze",
-   "team_abbrev": "CJ",
-   "abbrev": "CJ",
-   "owner": "Connor Kraus",
-   "scores_by_week": [
-    123.86,
-    76.48,
-    102.6,
-    78.54,
-    177.16,
-    83.2,
-    118.54
-   ],
-   "ranking_points_by_week": [
-    8.0,
-    4.0,
-    6.0,
-    1.0,
-    12.0,
-    3.0,
-    10.0
-   ],
-   "cumulative_points_by_week": [
-    8.0,
-    12.0,
-    18.0,
-    19.0,
-    31.0,
-    34.0,
-    44.0
-   ],
-   "normalized_by_week": [
-    1.0,
-    0.0,
-    -1.0,
-    -8.0,
-    -3.0,
-    -6.0,
-    -3.0
-   ],
-   "rank": 8,
-   "total_ranking_points": 44.0
-  },
-  {
    "team_id": 11,
    "team_name": "The Sun Gods ",
    "team_abbrev": "RA",
@@ -414,8 +369,53 @@
     1.0,
     -3.0
    ],
-   "rank": 9,
+   "rank": 8,
    "total_ranking_points": 44.0
+  },
+  {
+   "team_id": 2,
+   "team_name": "Kaiser Soze",
+   "team_abbrev": "CJ",
+   "abbrev": "CJ",
+   "owner": "Connor Kraus",
+   "scores_by_week": [
+    123.86,
+    76.48,
+    102.6,
+    78.54,
+    177.16,
+    83.2,
+    118.54
+   ],
+   "ranking_points_by_week": [
+    8.0,
+    4.0,
+    6.0,
+    1.0,
+    12.0,
+    3.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    8.0,
+    12.0,
+    18.0,
+    19.0,
+    31.0,
+    34.0,
+    43.0
+   ],
+   "normalized_by_week": [
+    1.0,
+    0.0,
+    -1.0,
+    -8.0,
+    -3.0,
+    -6.0,
+    -4.0
+   ],
+   "rank": 9,
+   "total_ranking_points": 43.0
   },
   {
    "team_id": 7,
@@ -430,7 +430,7 @@
     81.62,
     125.36,
     113.5,
-    100.62
+    102.92
    ],
    "ranking_points_by_week": [
     11.0,
@@ -6085,6 +6085,14 @@
      "score": 14.1
     },
     {
+     "name": "Javonte Williams",
+     "pro_team": "DAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 13.9
+    },
+    {
      "name": "Vikings TQB",
      "pro_team": "MIN",
      "fantasy_team": "Remeber Bendel",
@@ -6099,14 +6107,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 13.7
-    },
-    {
-     "name": "Javonte Williams",
-     "pro_team": "DAL",
-     "fantasy_team": "JSN Derulo ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 13.2
     },
     {
      "name": "Brandon Aubrey",
@@ -6333,6 +6333,14 @@
      "score": 7.4
     },
     {
+     "name": "Dallas Goedert",
+     "pro_team": "PHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "slot": "TE",
+     "score": 7.3
+    },
+    {
      "name": "Tyler Loop",
      "pro_team": "BAL",
      "fantasy_team": "Bijan These Nuts",
@@ -6442,14 +6450,6 @@
      "fantasy_team": "Kaiser Soze",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 5.0
-    },
-    {
-     "name": "Dallas Goedert",
-     "pro_team": "PHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "TE",
-     "slot": "TE",
      "score": 5.0
     },
     {
@@ -7340,7 +7340,7 @@
    },
    "BW": {
     "WR": 34.2,
-    "RB": 26.2,
+    "RB": 26.9,
     "TE": 16.4,
     "D/ST": 5.0,
     "FLEX": 10.6,
@@ -7376,7 +7376,7 @@
    },
    "TMOG": {
     "WR": 28.6,
-    "TE": 5.0,
+    "TE": 7.3,
     "RB": 19.9,
     "QB": 22.12,
     "K": 11.0,
@@ -7405,7 +7405,7 @@
  ],
  "live": {
   "week": 7,
-  "updated_at": "2026-10-27T02:50:18+00:00",
+  "updated_at": "2026-10-27T03:00:21+00:00",
   "teams": {
    "PORK": {
     "score": 66.52,
@@ -7514,7 +7514,7 @@
    },
    "SACK": {
     "score": 105.6,
-    "projected": 106.66,
+    "projected": 106.38,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -7829,7 +7829,7 @@
    },
    "Naug": {
     "score": 96.38,
-    "projected": 99.78,
+    "projected": 98.89,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -7933,8 +7933,8 @@
     ]
    },
    "BW": {
-    "score": 117.92,
-    "projected": 120.3,
+    "score": 118.62,
+    "projected": 120.37,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -7953,7 +7953,7 @@
       "slot": "RB",
       "pro_team": "DAL",
       "opponent": "PHI",
-      "points": 13.2,
+      "points": 13.9,
       "projected": 15.57,
       "status": "live",
       "kickoff": 1793060100000
@@ -8039,7 +8039,7 @@
    },
    "CJ": {
     "score": 118.54,
-    "projected": 120.17,
+    "projected": 119.74,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -8144,7 +8144,7 @@
    },
    "SW": {
     "score": 125.78,
-    "projected": 130.63,
+    "projected": 129.35,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8353,8 +8353,8 @@
     ]
    },
    "TMOG": {
-    "score": 100.62,
-    "projected": 103.05,
+    "score": 102.92,
+    "projected": 104.71,
     "starters": [
      {
       "name": "Michael Wilson",
@@ -8373,7 +8373,7 @@
       "slot": "TE",
       "pro_team": "PHI",
       "opponent": "DAL",
-      "points": 5.0,
+      "points": 7.3,
       "projected": 8.8,
       "status": "live",
       "kickoff": 1793060100000
@@ -10263,6 +10263,23 @@
      "SW": 125.78,
      "BEND": 71.1,
      "TMOG": 100.62,
+     "SWSH": 108.38,
+     "RA": 82.82
+    }
+   },
+   {
+    "t": "2026-10-27T03:00:21+00:00",
+    "scores": {
+     "PORK": 66.52,
+     "SACK": 105.6,
+     "MBJG": 118.16,
+     "WALT": 119.08,
+     "Naug": 96.38,
+     "BW": 118.62,
+     "CJ": 118.54,
+     "SW": 125.78,
+     "BEND": 71.1,
+     "TMOG": 102.92,
      "SWSH": 108.38,
      "RA": 82.82
     }
