@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-30 03:20:20 UTC",
-  "last_updated": "2026-10-30T03:20:20.149936+00:00"
+  "updated_at": "2026-10-30 03:30:19 UTC",
+  "last_updated": "2026-10-30T03:30:19.704635+00:00"
  },
  "teams": [
   {
@@ -75,7 +75,7 @@
     115.18,
     121.14,
     118.16,
-    49.42
+    47.52
    ],
    "ranking_points_by_week": [
     5.0,
@@ -369,7 +369,7 @@
     103.76,
     90.76,
     82.82,
-    10.0
+    10.36
    ],
    "ranking_points_by_week": [
     3.0,
@@ -516,7 +516,7 @@
     81.16,
     84.02,
     71.1,
-    7.5
+    8.8
    ],
    "ranking_points_by_week": [
     7.0,
@@ -6729,20 +6729,12 @@
      "score": 13.3
     },
     {
-     "name": "Jalen Coker",
-     "pro_team": "CAR",
-     "fantasy_team": "The Lizard Kings",
-     "position": "WR",
-     "slot": "WR",
-     "score": 10.5
-    },
-    {
      "name": "Panthers TQB",
      "pro_team": "CAR",
      "fantasy_team": "The Sun Gods ",
      "position": "QB",
      "slot": "QB",
-     "score": 10.0
+     "score": 10.36
     },
     {
      "name": "Tetairoa McMillan",
@@ -6750,7 +6742,15 @@
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "slot": "WR",
-     "score": 7.5
+     "score": 8.8
+    },
+    {
+     "name": "Jalen Coker",
+     "pro_team": "CAR",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "WR",
+     "score": 8.6
     },
     {
      "name": "Ja'Marr Chase",
@@ -8368,7 +8368,7 @@
     "RB": 0.0,
     "TE": 0.0,
     "FLEX": 0.0,
-    "WR": 27.9,
+    "WR": 26.0,
     "K": 0.0,
     "D/ST": 0.0,
     "QB": 21.52
@@ -8396,7 +8396,7 @@
     "FLEX": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
-    "QB": 10.0,
+    "QB": 10.36,
     "RB": 0.0,
     "TE": 0.0
    },
@@ -8420,7 +8420,7 @@
    },
    "BEND": {
     "RB": 0.0,
-    "WR": 7.5,
+    "WR": 8.8,
     "FLEX": 0.0,
     "TE": 0.0,
     "K": 0.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-10-30T03:20:20+00:00",
+  "updated_at": "2026-10-30T03:30:19+00:00",
   "teams": {
    "SACK": {
     "score": 27.6,
-    "projected": 127.2,
+    "projected": 126.77,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8750,7 +8750,7 @@
    },
    "PORK": {
     "score": 21.4,
-    "projected": 113.47,
+    "projected": 113.18,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8959,8 +8959,8 @@
     ]
    },
    "MBJG": {
-    "score": 49.42,
-    "projected": 120.89,
+    "score": 47.52,
+    "projected": 118.12,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -9012,7 +9012,7 @@
       "slot": "WR",
       "pro_team": "CAR",
       "opponent": "GB",
-      "points": 10.5,
+      "points": 8.6,
       "projected": 11.9,
       "status": "live",
       "kickoff": 1793319300000
@@ -9274,7 +9274,7 @@
     ]
    },
    "RA": {
-    "score": 10.0,
+    "score": 10.36,
     "projected": 84.14,
     "starters": [
      {
@@ -9327,7 +9327,7 @@
       "slot": "QB",
       "pro_team": "CAR",
       "opponent": "None",
-      "points": 10.0,
+      "points": 10.36,
       "projected": 16.92,
       "status": "live",
       "kickoff": 1793319300000
@@ -9485,7 +9485,7 @@
    },
    "SWSH": {
     "score": 20.2,
-    "projected": 113.88,
+    "projected": 113.59,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -9589,8 +9589,8 @@
     ]
    },
    "BEND": {
-    "score": 7.5,
-    "projected": 84.77,
+    "score": 8.8,
+    "projected": 85.8,
     "starters": [
      {
       "name": "Jeremiyah Love",
@@ -9609,7 +9609,7 @@
       "slot": "WR",
       "pro_team": "CAR",
       "opponent": "GB",
-      "points": 7.5,
+      "points": 8.8,
       "projected": 12.87,
       "status": "live",
       "kickoff": 1793319300000
@@ -9999,6 +9999,23 @@
      "CJ": 0.0,
      "SWSH": 20.2,
      "BEND": 7.5
+    }
+   },
+   {
+    "t": "2026-10-30T03:30:19+00:00",
+    "scores": {
+     "SACK": 27.6,
+     "WALT": 0.0,
+     "BW": 0.0,
+     "PORK": 21.4,
+     "SW": 0.0,
+     "MBJG": 47.52,
+     "TMOG": 0.0,
+     "Naug": 0.0,
+     "RA": 10.36,
+     "CJ": 0.0,
+     "SWSH": 20.2,
+     "BEND": 8.8
     }
    }
   ]
