@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-30 03:10:15 UTC",
-  "last_updated": "2026-10-30T03:10:15.646158+00:00"
+  "updated_at": "2026-10-30 03:20:20 UTC",
+  "last_updated": "2026-10-30T03:20:20.149936+00:00"
  },
  "teams": [
   {
@@ -26,7 +26,7 @@
     175.42,
     103.38,
     103.6,
-    26.4
+    27.6
    ],
    "ranking_points_by_week": [
     2.0,
@@ -75,7 +75,7 @@
     115.18,
     121.14,
     118.16,
-    49.14
+    49.42
    ],
    "ranking_points_by_week": [
     5.0,
@@ -222,7 +222,7 @@
     111.04,
     97.2,
     66.52,
-    21.3
+    21.4
    ],
    "ranking_points_by_week": [
     10.0,
@@ -271,7 +271,7 @@
     133.0,
     91.2,
     108.38,
-    19.6
+    20.2
    ],
    "ranking_points_by_week": [
     1.0,
@@ -369,7 +369,7 @@
     103.76,
     90.76,
     82.82,
-    9.84
+    10.0
    ],
    "ranking_points_by_week": [
     3.0,
@@ -6681,20 +6681,20 @@
   {
    "all": [
     {
-     "name": "Chuba Hubbard",
-     "pro_team": "CAR",
-     "fantasy_team": "Mahomesless Without Refs",
-     "position": "RB",
-     "slot": "RB",
-     "score": 21.3
-    },
-    {
      "name": "Packers TQB",
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
      "slot": "QB",
-     "score": 21.24
+     "score": 21.52
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Mahomesless Without Refs",
+     "position": "RB",
+     "slot": "RB",
+     "score": 21.4
     },
     {
      "name": "Josh Jacobs",
@@ -6702,7 +6702,7 @@
      "fantasy_team": "Swishington Football Team",
      "position": "RB",
      "slot": "RB",
-     "score": 19.6
+     "score": 20.2
     },
     {
      "name": "Matthew Golden",
@@ -6726,7 +6726,7 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "WR",
      "slot": "WR",
-     "score": 12.1
+     "score": 13.3
     },
     {
      "name": "Jalen Coker",
@@ -6742,7 +6742,7 @@
      "fantasy_team": "The Sun Gods ",
      "position": "QB",
      "slot": "QB",
-     "score": 9.84
+     "score": 10.0
     },
     {
      "name": "Tetairoa McMillan",
@@ -8320,7 +8320,7 @@
   },
   {
    "SACK": {
-    "WR": 12.1,
+    "WR": 13.3,
     "RB": 0.0,
     "FLEX": 0.0,
     "TE": 14.3,
@@ -8347,7 +8347,7 @@
     "K": 0.0
    },
    "PORK": {
-    "RB": 21.3,
+    "RB": 21.4,
     "FLEX": 0.0,
     "WR": 0.0,
     "QB": 0.0,
@@ -8371,7 +8371,7 @@
     "WR": 27.9,
     "K": 0.0,
     "D/ST": 0.0,
-    "QB": 21.24
+    "QB": 21.52
    },
    "TMOG": {
     "RB": 0.0,
@@ -8396,7 +8396,7 @@
     "FLEX": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
-    "QB": 9.84,
+    "QB": 10.0,
     "RB": 0.0,
     "TE": 0.0
    },
@@ -8410,7 +8410,7 @@
     "D/ST": 0.0
    },
    "SWSH": {
-    "RB": 19.6,
+    "RB": 20.2,
     "TE": 0.0,
     "QB": 0.0,
     "WR": 0.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-10-30T03:10:15+00:00",
+  "updated_at": "2026-10-30T03:20:20+00:00",
   "teams": {
    "SACK": {
-    "score": 26.4,
-    "projected": 127.14,
+    "score": 27.6,
+    "projected": 127.2,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8476,7 +8476,7 @@
       "slot": "WR",
       "pro_team": "GB",
       "opponent": "CAR",
-      "points": 12.1,
+      "points": 13.3,
       "projected": 12.1,
       "status": "live",
       "kickoff": 1793319300000
@@ -8749,8 +8749,8 @@
     ]
    },
    "PORK": {
-    "score": 21.3,
-    "projected": 114.16,
+    "score": 21.4,
+    "projected": 113.47,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8802,7 +8802,7 @@
       "slot": "RB",
       "pro_team": "CAR",
       "opponent": "GB",
-      "points": 21.3,
+      "points": 21.4,
       "projected": 14.09,
       "status": "live",
       "kickoff": 1793319300000
@@ -8959,8 +8959,8 @@
     ]
    },
    "MBJG": {
-    "score": 49.14,
-    "projected": 122.93,
+    "score": 49.42,
+    "projected": 120.89,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -9056,7 +9056,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 21.24,
+      "points": 21.52,
       "projected": 17.07,
       "status": "live",
       "kickoff": 1793319300000
@@ -9274,8 +9274,8 @@
     ]
    },
    "RA": {
-    "score": 9.84,
-    "projected": 84.91,
+    "score": 10.0,
+    "projected": 84.14,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9327,7 +9327,7 @@
       "slot": "QB",
       "pro_team": "CAR",
       "opponent": "None",
-      "points": 9.84,
+      "points": 10.0,
       "projected": 16.92,
       "status": "live",
       "kickoff": 1793319300000
@@ -9484,8 +9484,8 @@
     ]
    },
    "SWSH": {
-    "score": 19.6,
-    "projected": 114.03,
+    "score": 20.2,
+    "projected": 113.88,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -9537,7 +9537,7 @@
       "slot": "RB",
       "pro_team": "GB",
       "opponent": "CAR",
-      "points": 19.6,
+      "points": 20.2,
       "projected": 13.61,
       "status": "live",
       "kickoff": 1793319300000
@@ -9590,7 +9590,7 @@
    },
    "BEND": {
     "score": 7.5,
-    "projected": 85.49,
+    "projected": 84.77,
     "starters": [
      {
       "name": "Jeremiyah Love",
@@ -9981,6 +9981,23 @@
      "RA": 9.84,
      "CJ": 0.0,
      "SWSH": 19.6,
+     "BEND": 7.5
+    }
+   },
+   {
+    "t": "2026-10-30T03:20:20+00:00",
+    "scores": {
+     "SACK": 27.6,
+     "WALT": 0.0,
+     "BW": 0.0,
+     "PORK": 21.4,
+     "SW": 0.0,
+     "MBJG": 49.42,
+     "TMOG": 0.0,
+     "Naug": 0.0,
+     "RA": 10.0,
+     "CJ": 0.0,
+     "SWSH": 20.2,
      "BEND": 7.5
     }
    }
