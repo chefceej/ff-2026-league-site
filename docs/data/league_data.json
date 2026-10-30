@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-30 03:40:16 UTC",
-  "last_updated": "2026-10-30T03:40:16.316353+00:00"
+  "updated_at": "2026-10-30 03:50:16 UTC",
+  "last_updated": "2026-10-30T03:50:16.611911+00:00"
  },
  "teams": [
   {
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-10-30T03:40:16+00:00",
+  "updated_at": "2026-10-30T03:50:16+00:00",
   "teams": {
    "SACK": {
     "score": 27.6,
@@ -8478,7 +8478,7 @@
       "opponent": "CAR",
       "points": 13.3,
       "projected": 12.1,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      },
      {
@@ -8500,7 +8500,7 @@
       "opponent": "CAR",
       "points": 14.3,
       "projected": 8.55,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      },
      {
@@ -8804,7 +8804,7 @@
       "opponent": "GB",
       "points": 21.4,
       "projected": 14.09,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      },
      {
@@ -9014,7 +9014,7 @@
       "opponent": "GB",
       "points": 8.6,
       "projected": 11.9,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      },
      {
@@ -9047,7 +9047,7 @@
       "opponent": "CAR",
       "points": 17.4,
       "projected": 12.77,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      },
      {
@@ -9058,7 +9058,7 @@
       "opponent": "None",
       "points": 21.52,
       "projected": 17.07,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      }
     ]
@@ -9329,7 +9329,7 @@
       "opponent": "None",
       "points": 10.36,
       "projected": 16.92,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      },
      {
@@ -9539,7 +9539,7 @@
       "opponent": "CAR",
       "points": 20.2,
       "projected": 13.61,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      },
      {
@@ -9611,7 +9611,7 @@
       "opponent": "GB",
       "points": 8.8,
       "projected": 12.87,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793319300000
      },
      {
