@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-30 02:40:19 UTC",
-  "last_updated": "2026-10-30T02:40:19.160728+00:00"
+  "updated_at": "2026-10-30 02:50:22 UTC",
+  "last_updated": "2026-10-30T02:50:22.015527+00:00"
  },
  "teams": [
   {
@@ -26,7 +26,7 @@
     175.42,
     103.38,
     103.6,
-    25.1
+    26.4
    ],
    "ranking_points_by_week": [
     2.0,
@@ -75,7 +75,7 @@
     115.18,
     121.14,
     118.16,
-    38.12
+    38.44
    ],
    "ranking_points_by_week": [
     5.0,
@@ -209,6 +209,55 @@
    "total_ranking_points": 58.5
   },
   {
+   "team_id": 8,
+   "team_name": "Mahomesless Without Refs",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    97.2,
+    66.52,
+    18.8
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    7.0,
+    1.0,
+    10.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    46.0,
+    47.0,
+    57.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    6.0,
+    0.0,
+    1.0
+   ],
+   "rank": 5,
+   "total_ranking_points": 57.0
+  },
+  {
    "team_id": 4,
    "team_name": "Swishington Football Team",
    "team_abbrev": "SWSH",
@@ -232,7 +281,7 @@
     9.0,
     6.0,
     7.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -242,7 +291,7 @@
     34.0,
     40.0,
     47.0,
-    57.0
+    56.0
    ],
    "normalized_by_week": [
     -6.0,
@@ -251,55 +300,6 @@
     -2.0,
     0.0,
     0.0,
-    0.0,
-    1.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 57.0
-  },
-  {
-   "team_id": 8,
-   "team_name": "Mahomesless Without Refs",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    97.2,
-    66.52,
-    17.8
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    7.0,
-    1.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    46.0,
-    47.0,
-    56.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    6.0,
     0.0,
     0.0
    ],
@@ -6686,7 +6686,15 @@
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
      "slot": "QB",
-     "score": 20.72
+     "score": 21.04
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Mahomesless Without Refs",
+     "position": "RB",
+     "slot": "RB",
+     "score": 18.8
     },
     {
      "name": "Josh Jacobs",
@@ -6695,14 +6703,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 18.6
-    },
-    {
-     "name": "Chuba Hubbard",
-     "pro_team": "CAR",
-     "fantasy_team": "Mahomesless Without Refs",
-     "position": "RB",
-     "slot": "RB",
-     "score": 17.8
     },
     {
      "name": "Matthew Golden",
@@ -6718,7 +6718,7 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "TE",
      "slot": "TE",
-     "score": 13.0
+     "score": 14.3
     },
     {
      "name": "Christian Watson",
@@ -8323,7 +8323,7 @@
     "WR": 12.1,
     "RB": 0.0,
     "FLEX": 0.0,
-    "TE": 13.0,
+    "TE": 14.3,
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0
@@ -8347,7 +8347,7 @@
     "K": 0.0
    },
    "PORK": {
-    "RB": 17.8,
+    "RB": 18.8,
     "FLEX": 0.0,
     "WR": 0.0,
     "QB": 0.0,
@@ -8371,7 +8371,7 @@
     "WR": 17.4,
     "K": 0.0,
     "D/ST": 0.0,
-    "QB": 20.72
+    "QB": 21.04
    },
    "TMOG": {
     "RB": 0.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-10-30T02:40:19+00:00",
+  "updated_at": "2026-10-30T02:50:22+00:00",
   "teams": {
    "SACK": {
-    "score": 25.1,
-    "projected": 129.07,
+    "score": 26.4,
+    "projected": 129.24,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8498,7 +8498,7 @@
       "slot": "TE",
       "pro_team": "GB",
       "opponent": "CAR",
-      "points": 13.0,
+      "points": 14.3,
       "projected": 8.55,
       "status": "live",
       "kickoff": 1793319300000
@@ -8749,8 +8749,8 @@
     ]
    },
    "PORK": {
-    "score": 17.8,
-    "projected": 112.86,
+    "score": 18.8,
+    "projected": 113.08,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8802,7 +8802,7 @@
       "slot": "RB",
       "pro_team": "CAR",
       "opponent": "GB",
-      "points": 17.8,
+      "points": 18.8,
       "projected": 14.09,
       "status": "live",
       "kickoff": 1793319300000
@@ -8959,8 +8959,8 @@
     ]
    },
    "MBJG": {
-    "score": 38.12,
-    "projected": 118.44,
+    "score": 38.44,
+    "projected": 116.46,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -9056,7 +9056,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 20.72,
+      "points": 21.04,
       "projected": 17.07,
       "status": "live",
       "kickoff": 1793319300000
@@ -9275,7 +9275,7 @@
    },
    "RA": {
     "score": 2.68,
-    "projected": 80.4,
+    "projected": 79.47,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9485,7 +9485,7 @@
    },
    "SWSH": {
     "score": 18.6,
-    "projected": 115.16,
+    "projected": 114.41,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -9590,7 +9590,7 @@
    },
    "BEND": {
     "score": 6.5,
-    "projected": 86.5,
+    "projected": 85.79,
     "starters": [
      {
       "name": "Jeremiyah Love",
@@ -9925,6 +9925,23 @@
      "PORK": 17.8,
      "SW": 0.0,
      "MBJG": 38.12,
+     "TMOG": 0.0,
+     "Naug": 0.0,
+     "RA": 2.68,
+     "CJ": 0.0,
+     "SWSH": 18.6,
+     "BEND": 6.5
+    }
+   },
+   {
+    "t": "2026-10-30T02:50:22+00:00",
+    "scores": {
+     "SACK": 26.4,
+     "WALT": 0.0,
+     "BW": 0.0,
+     "PORK": 18.8,
+     "SW": 0.0,
+     "MBJG": 38.44,
      "TMOG": 0.0,
      "Naug": 0.0,
      "RA": 2.68,
