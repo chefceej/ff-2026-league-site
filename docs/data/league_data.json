@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-30 00:50:17 UTC",
-  "last_updated": "2026-10-30T00:50:17.024761+00:00"
+  "updated_at": "2026-10-30 01:00:19 UTC",
+  "last_updated": "2026-10-30T01:00:19.569002+00:00"
  },
  "teams": [
   {
@@ -26,7 +26,7 @@
     175.42,
     103.38,
     103.6,
-    11.5
+    11.8
    ],
    "ranking_points_by_week": [
     2.0,
@@ -36,7 +36,7 @@
     11.0,
     8.0,
     6.0,
-    12.0
+    11.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -46,7 +46,7 @@
     42.0,
     50.0,
     56.0,
-    68.0
+    67.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -56,10 +56,10 @@
     8.0,
     10.0,
     9.0,
-    13.0
+    12.0
    ],
    "rank": 1,
-   "total_ranking_points": 68.0
+   "total_ranking_points": 67.0
   },
   {
    "team_id": 9,
@@ -111,6 +111,55 @@
    "total_ranking_points": 59.5
   },
   {
+   "team_id": 8,
+   "team_name": "Mahomesless Without Refs",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    97.2,
+    66.52,
+    12.0
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    7.0,
+    1.0,
+    12.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    46.0,
+    47.0,
+    59.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    6.0,
+    0.0,
+    4.0
+   ],
+   "rank": 3,
+   "total_ranking_points": 59.0
+  },
+  {
    "team_id": 3,
    "team_name": "JSN Derulo ",
    "team_abbrev": "BW",
@@ -156,7 +205,7 @@
     8.0,
     3.5
    ],
-   "rank": 3,
+   "rank": 4,
    "total_ranking_points": 58.5
   },
   {
@@ -173,7 +222,7 @@
     115.18,
     121.14,
     118.16,
-    5.72
+    6.6
    ],
    "ranking_points_by_week": [
     5.0,
@@ -203,55 +252,6 @@
     -4.0,
     0.0,
     1.0,
-    3.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 58.0
-  },
-  {
-   "team_id": 8,
-   "team_name": "Mahomesless Without Refs",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    97.2,
-    66.52,
-    5.9
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    7.0,
-    1.0,
-    11.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    46.0,
-    47.0,
-    58.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    6.0,
-    0.0,
     3.0
    ],
    "rank": 5,
@@ -6681,6 +6681,14 @@
   {
    "all": [
     {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Mahomesless Without Refs",
+     "position": "RB",
+     "slot": "RB",
+     "score": 12.0
+    },
+    {
      "name": "Tucker Kraft",
      "pro_team": "GB",
      "fantasy_team": "Bijan These Nuts",
@@ -6689,20 +6697,12 @@
      "score": 7.7
     },
     {
-     "name": "Chuba Hubbard",
-     "pro_team": "CAR",
-     "fantasy_team": "Mahomesless Without Refs",
-     "position": "RB",
-     "slot": "RB",
-     "score": 5.9
-    },
-    {
      "name": "Packers TQB",
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
      "slot": "QB",
-     "score": 5.72
+     "score": 6.6
     },
     {
      "name": "Christian Watson",
@@ -6710,7 +6710,7 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "WR",
      "slot": "WR",
-     "score": 3.8
+     "score": 4.1
     },
     {
      "name": "Panthers TQB",
@@ -8320,7 +8320,7 @@
   },
   {
    "SACK": {
-    "WR": 3.8,
+    "WR": 4.1,
     "RB": 0.0,
     "FLEX": 0.0,
     "TE": 7.7,
@@ -8347,7 +8347,7 @@
     "K": 0.0
    },
    "PORK": {
-    "RB": 5.9,
+    "RB": 12.0,
     "FLEX": 0.0,
     "WR": 0.0,
     "QB": 0.0,
@@ -8371,7 +8371,7 @@
     "WR": 0.0,
     "K": 0.0,
     "D/ST": 0.0,
-    "QB": 5.72
+    "QB": 6.6
    },
    "TMOG": {
     "RB": 0.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-10-30T00:50:17+00:00",
+  "updated_at": "2026-10-30T01:00:19+00:00",
   "teams": {
    "SACK": {
-    "score": 11.5,
-    "projected": 126.21,
+    "score": 11.8,
+    "projected": 125.56,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8476,7 +8476,7 @@
       "slot": "WR",
       "pro_team": "GB",
       "opponent": "CAR",
-      "points": 3.8,
+      "points": 4.1,
       "projected": 12.1,
       "status": "live",
       "kickoff": 1793319300000
@@ -8749,8 +8749,8 @@
     ]
    },
    "PORK": {
-    "score": 5.9,
-    "projected": 108.29,
+    "score": 12.0,
+    "projected": 113.74,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8802,7 +8802,7 @@
       "slot": "RB",
       "pro_team": "CAR",
       "opponent": "GB",
-      "points": 5.9,
+      "points": 12.0,
       "projected": 14.09,
       "status": "live",
       "kickoff": 1793319300000
@@ -8959,8 +8959,8 @@
     ]
    },
    "MBJG": {
-    "score": 5.72,
-    "projected": 107.74,
+    "score": 6.6,
+    "projected": 106.69,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -9056,7 +9056,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 5.72,
+      "points": 6.6,
       "projected": 17.07,
       "status": "live",
       "kickoff": 1793319300000
@@ -9275,7 +9275,7 @@
    },
    "RA": {
     "score": 2.12,
-    "projected": 88.64,
+    "projected": 87.86,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9485,7 +9485,7 @@
    },
    "SWSH": {
     "score": 2.1,
-    "projected": 105.74,
+    "projected": 105.11,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -9590,7 +9590,7 @@
    },
    "BEND": {
     "score": 1.5,
-    "projected": 88.19,
+    "projected": 87.6,
     "starters": [
      {
       "name": "Jeremiyah Love",
@@ -9755,6 +9755,23 @@
      "PORK": 5.9,
      "SW": 0.0,
      "MBJG": 5.72,
+     "TMOG": 0.0,
+     "Naug": 0.0,
+     "RA": 2.12,
+     "CJ": 0.0,
+     "SWSH": 2.1,
+     "BEND": 1.5
+    }
+   },
+   {
+    "t": "2026-10-30T01:00:19+00:00",
+    "scores": {
+     "SACK": 11.8,
+     "WALT": 0.0,
+     "BW": 0.0,
+     "PORK": 12.0,
+     "SW": 0.0,
+     "MBJG": 6.6,
      "TMOG": 0.0,
      "Naug": 0.0,
      "RA": 2.12,
