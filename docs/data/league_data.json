@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-30 01:10:21 UTC",
-  "last_updated": "2026-10-30T01:10:21.646184+00:00"
+  "updated_at": "2026-10-30 01:20:19 UTC",
+  "last_updated": "2026-10-30T01:20:19.354151+00:00"
  },
  "teams": [
   {
@@ -56,7 +56,7 @@
     8.0,
     10.0,
     9.0,
-    12.0
+    11.0
    ],
    "rank": 1,
    "total_ranking_points": 68.0
@@ -105,7 +105,7 @@
     1.0,
     6.0,
     9.0,
-    3.5
+    2.5
    ],
    "rank": 2,
    "total_ranking_points": 59.5
@@ -154,59 +154,10 @@
     -3.0,
     3.0,
     8.0,
-    2.5
+    1.5
    ],
    "rank": 3,
    "total_ranking_points": 58.5
-  },
-  {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "team_abbrev": "MBJG",
-   "abbrev": "MBJG",
-   "owner": "Matthew Bernstein",
-   "scores_by_week": [
-    103.16,
-    97.58,
-    101.04,
-    115.3,
-    115.18,
-    121.14,
-    118.16,
-    9.08
-   ],
-   "ranking_points_by_week": [
-    5.0,
-    6.0,
-    5.0,
-    7.0,
-    7.0,
-    10.0,
-    8.0,
-    10.0
-   ],
-   "cumulative_points_by_week": [
-    5.0,
-    11.0,
-    16.0,
-    23.0,
-    30.0,
-    40.0,
-    48.0,
-    58.0
-   ],
-   "normalized_by_week": [
-    -2.0,
-    -1.0,
-    -3.0,
-    -4.0,
-    -4.0,
-    0.0,
-    1.0,
-    2.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 58.0
   },
   {
    "team_id": 8,
@@ -252,9 +203,9 @@
     5.0,
     6.0,
     0.0,
-    2.0
+    1.0
    ],
-   "rank": 5,
+   "rank": 4,
    "total_ranking_points": 58.0
   },
   {
@@ -271,7 +222,7 @@
     133.0,
     91.2,
     108.38,
-    2.3
+    9.2
    ],
    "ranking_points_by_week": [
     1.0,
@@ -281,7 +232,7 @@
     9.0,
     6.0,
     7.0,
-    9.0
+    10.0
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -291,7 +242,7 @@
     34.0,
     40.0,
     47.0,
-    56.0
+    57.0
    ],
    "normalized_by_week": [
     -6.0,
@@ -303,8 +254,57 @@
     0.0,
     0.0
    ],
+   "rank": 5,
+   "total_ranking_points": 57.0
+  },
+  {
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "team_abbrev": "MBJG",
+   "abbrev": "MBJG",
+   "owner": "Matthew Bernstein",
+   "scores_by_week": [
+    103.16,
+    97.58,
+    101.04,
+    115.3,
+    115.18,
+    121.14,
+    118.16,
+    9.12
+   ],
+   "ranking_points_by_week": [
+    5.0,
+    6.0,
+    5.0,
+    7.0,
+    7.0,
+    10.0,
+    8.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    5.0,
+    11.0,
+    16.0,
+    23.0,
+    30.0,
+    40.0,
+    48.0,
+    57.0
+   ],
+   "normalized_by_week": [
+    -2.0,
+    -1.0,
+    -3.0,
+    -4.0,
+    -4.0,
+    0.0,
+    1.0,
+    0.0
+   ],
    "rank": 6,
-   "total_ranking_points": 56.0
+   "total_ranking_points": 57.0
   },
   {
    "team_id": 1,
@@ -350,7 +350,7 @@
     3.0,
     -2.0,
     2.0,
-    -3.5
+    -4.5
    ],
    "rank": 7,
    "total_ranking_points": 52.5
@@ -399,7 +399,7 @@
     2.0,
     1.0,
     -3.0,
-    -4.0
+    -5.0
    ],
    "rank": 8,
    "total_ranking_points": 52.0
@@ -448,7 +448,7 @@
     -3.0,
     -6.0,
     -4.0,
-    -9.5
+    -10.5
    ],
    "rank": 9,
    "total_ranking_points": 46.5
@@ -497,7 +497,7 @@
     -7.0,
     -4.0,
     -6.0,
-    -11.5
+    -12.5
    ],
    "rank": 10,
    "total_ranking_points": 44.5
@@ -546,7 +546,7 @@
     -5.0,
     -7.0,
     -12.0,
-    -14.0
+    -15.0
    ],
    "rank": 11,
    "total_ranking_points": 42.0
@@ -595,7 +595,7 @@
     -15.0,
     -19.0,
     -22.0,
-    -27.5
+    -28.5
    ],
    "rank": 12,
    "total_ranking_points": 28.5
@@ -6697,12 +6697,20 @@
      "score": 11.0
     },
     {
+     "name": "Josh Jacobs",
+     "pro_team": "GB",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "slot": "RB",
+     "score": 9.2
+    },
+    {
      "name": "Packers TQB",
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
      "slot": "QB",
-     "score": 9.08
+     "score": 9.12
     },
     {
      "name": "Tucker Kraft",
@@ -6711,14 +6719,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 8.5
-    },
-    {
-     "name": "Josh Jacobs",
-     "pro_team": "GB",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "slot": "RB",
-     "score": 2.3
     },
     {
      "name": "Panthers TQB",
@@ -8371,7 +8371,7 @@
     "WR": 0.0,
     "K": 0.0,
     "D/ST": 0.0,
-    "QB": 9.08
+    "QB": 9.12
    },
    "TMOG": {
     "RB": 0.0,
@@ -8410,7 +8410,7 @@
     "D/ST": 0.0
    },
    "SWSH": {
-    "RB": 2.3,
+    "RB": 9.2,
     "TE": 0.0,
     "QB": 0.0,
     "WR": 0.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-10-30T01:10:21+00:00",
+  "updated_at": "2026-10-30T01:20:19+00:00",
   "teams": {
    "SACK": {
     "score": 19.5,
-    "projected": 132.2,
+    "projected": 131.22,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8750,7 +8750,7 @@
    },
    "PORK": {
     "score": 12.0,
-    "projected": 113.01,
+    "projected": 112.34,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8959,8 +8959,8 @@
     ]
    },
    "MBJG": {
-    "score": 9.08,
-    "projected": 107.03,
+    "score": 9.12,
+    "projected": 105.08,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -9056,7 +9056,7 @@
       "slot": "QB",
       "pro_team": "GB",
       "opponent": "None",
-      "points": 9.08,
+      "points": 9.12,
       "projected": 17.07,
       "status": "live",
       "kickoff": 1793319300000
@@ -9275,7 +9275,7 @@
    },
    "RA": {
     "score": 2.12,
-    "projected": 86.99,
+    "projected": 86.19,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9484,8 +9484,8 @@
     ]
    },
    "SWSH": {
-    "score": 2.3,
-    "projected": 104.61,
+    "score": 9.2,
+    "projected": 110.86,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -9537,7 +9537,7 @@
       "slot": "RB",
       "pro_team": "GB",
       "opponent": "CAR",
-      "points": 2.3,
+      "points": 9.2,
       "projected": 13.61,
       "status": "live",
       "kickoff": 1793319300000
@@ -9590,7 +9590,7 @@
    },
    "BEND": {
     "score": 1.5,
-    "projected": 86.94,
+    "projected": 86.33,
     "starters": [
      {
       "name": "Jeremiyah Love",
@@ -9794,6 +9794,23 @@
      "RA": 2.12,
      "CJ": 0.0,
      "SWSH": 2.3,
+     "BEND": 1.5
+    }
+   },
+   {
+    "t": "2026-10-30T01:20:19+00:00",
+    "scores": {
+     "SACK": 19.5,
+     "WALT": 0.0,
+     "BW": 0.0,
+     "PORK": 12.0,
+     "SW": 0.0,
+     "MBJG": 9.12,
+     "TMOG": 0.0,
+     "Naug": 0.0,
+     "RA": 2.12,
+     "CJ": 0.0,
+     "SWSH": 9.2,
      "BEND": 1.5
     }
    }
