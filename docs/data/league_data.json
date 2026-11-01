@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-10-31 12:16:17 UTC",
-  "last_updated": "2026-10-31T12:16:17.705013+00:00"
+  "updated_at": "2026-11-01 13:12:56 UTC",
+  "last_updated": "2026-11-01T13:12:56.745179+00:00"
  },
  "teams": [
   {
@@ -7041,14 +7041,6 @@
      "score": 0.0
     },
     {
-     "name": "DeVonta Smith",
-     "pro_team": "PHI",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "WR",
-     "slot": "FLEX",
-     "score": 0.0
-    },
-    {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -7070,6 +7062,14 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "QB",
      "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Jordan Mason",
+     "pro_team": "MIN",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "RB",
+     "slot": "FLEX",
      "score": 0.0
     },
     {
@@ -7177,19 +7177,19 @@
      "score": 0.0
     },
     {
+     "name": "Rachaad White",
+     "pro_team": "WSH",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
      "name": "Bears TQB",
      "pro_team": "CHI",
      "fantasy_team": "Team Made of Glass",
      "position": "QB",
      "slot": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "Omar Cooper Jr.",
-     "pro_team": "NYJ",
-     "fantasy_team": "Team Made of Glass",
-     "position": "WR",
-     "slot": "FLEX",
      "score": 0.0
     },
     {
@@ -8358,9 +8358,9 @@
    "SW": {
     "WR": 0.0,
     "RB": 0.0,
-    "FLEX": 0.0,
     "TE": 0.0,
     "QB": 0.0,
+    "FLEX": 0.0,
     "K": 0.0,
     "D/ST": 0.0
    },
@@ -8377,8 +8377,8 @@
     "RB": 0.0,
     "WR": 0.0,
     "TE": 0.0,
-    "QB": 0.0,
     "FLEX": 0.0,
+    "QB": 0.0,
     "K": 0.0,
     "D/ST": 0.0
    },
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-10-31T12:16:17+00:00",
+  "updated_at": "2026-11-01T13:12:56+00:00",
   "teams": {
    "SACK": {
     "score": 27.6,
-    "projected": 126.77,
+    "projected": 126.88,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8466,7 +8466,7 @@
       "pro_team": "LAR",
       "opponent": "LAC",
       "points": 0.0,
-      "projected": 16.15,
+      "projected": 16.27,
       "status": "pre",
       "kickoff": 1793567100000
      },
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 0.0,
-    "projected": 114.17,
+    "projected": 101.32,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8549,7 +8549,7 @@
       "pro_team": "LAR",
       "opponent": "LAC",
       "points": 0.0,
-      "projected": 18.67,
+      "projected": 19.04,
       "status": "pre",
       "kickoff": 1793567100000
      },
@@ -8560,7 +8560,7 @@
       "pro_team": "LV",
       "opponent": "NYJ",
       "points": 0.0,
-      "projected": 14.59,
+      "projected": 14.63,
       "status": "pre",
       "kickoff": 1793556000000
      },
@@ -8571,7 +8571,7 @@
       "pro_team": "NYJ",
       "opponent": "LV",
       "points": 0.0,
-      "projected": 13.26,
+      "projected": 0.0,
       "status": "pre",
       "kickoff": 1793556000000
      },
@@ -8593,7 +8593,7 @@
       "pro_team": "CHI",
       "opponent": "SEA",
       "points": 0.0,
-      "projected": 10.8,
+      "projected": 10.79,
       "status": "pre",
       "kickoff": 1793668500000
      },
@@ -8645,7 +8645,7 @@
    },
    "BW": {
     "score": 0.0,
-    "projected": 100.66,
+    "projected": 100.29,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8654,7 +8654,7 @@
       "pro_team": "SEA",
       "opponent": "CHI",
       "points": 0.0,
-      "projected": 18.05,
+      "projected": 17.73,
       "status": "pre",
       "kickoff": 1793668500000
      },
@@ -8731,7 +8731,7 @@
       "pro_team": "NE",
       "opponent": "MIA",
       "points": 0.0,
-      "projected": 8.49,
+      "projected": 8.44,
       "status": "pre",
       "kickoff": 1793568300000
      },
@@ -8750,7 +8750,7 @@
    },
    "PORK": {
     "score": 21.4,
-    "projected": 113.16,
+    "projected": 113.15,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8781,7 +8781,7 @@
       "pro_team": "NYJ",
       "opponent": "LV",
       "points": 0.0,
-      "projected": 11.41,
+      "projected": 11.48,
       "status": "pre",
       "kickoff": 1793556000000
      },
@@ -8847,7 +8847,7 @@
       "pro_team": "WSH",
       "opponent": "PHI",
       "points": 0.0,
-      "projected": 7.98,
+      "projected": 7.9,
       "status": "pre",
       "kickoff": 1793582400000
      }
@@ -8855,7 +8855,7 @@
    },
    "SW": {
     "score": 0.0,
-    "projected": 110.93,
+    "projected": 121.74,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8891,24 +8891,13 @@
       "kickoff": 1793556000000
      },
      {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "slot": "FLEX",
-      "pro_team": "PHI",
-      "opponent": "WSH",
-      "points": 0.0,
-      "projected": 0.0,
-      "status": "pre",
-      "kickoff": 1793582400000
-     },
-     {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "slot": "RB",
       "pro_team": "NE",
       "opponent": "MIA",
       "points": 0.0,
-      "projected": 12.37,
+      "projected": 14.28,
       "status": "pre",
       "kickoff": 1793568300000
      },
@@ -8931,6 +8920,17 @@
       "opponent": "None",
       "points": 0.0,
       "projected": 19.53,
+      "status": "pre",
+      "kickoff": 1793556000000
+     },
+     {
+      "name": "Jordan Mason",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "MIN",
+      "opponent": "DET",
+      "points": 0.0,
+      "projected": 8.9,
       "status": "pre",
       "kickoff": 1793556000000
      },
@@ -8991,7 +8991,7 @@
       "pro_team": "CIN",
       "opponent": "TEN",
       "points": 0.0,
-      "projected": 13.0,
+      "projected": 12.99,
       "status": "pre",
       "kickoff": 1793556000000
      },
@@ -9065,7 +9065,7 @@
    },
    "TMOG": {
     "score": 0.0,
-    "projected": 103.77,
+    "projected": 106.14,
     "starters": [
      {
       "name": "James Cook III",
@@ -9123,6 +9123,17 @@
       "kickoff": 1793568300000
      },
      {
+      "name": "Rachaad White",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "WSH",
+      "opponent": "PHI",
+      "points": 0.0,
+      "projected": 11.17,
+      "status": "pre",
+      "kickoff": 1793582400000
+     },
+     {
       "name": "Bears TQB",
       "position": "QB",
       "slot": "QB",
@@ -9132,17 +9143,6 @@
       "projected": 15.48,
       "status": "pre",
       "kickoff": 1793668500000
-     },
-     {
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
-      "slot": "FLEX",
-      "pro_team": "NYJ",
-      "opponent": "LV",
-      "points": 0.0,
-      "projected": 8.81,
-      "status": "pre",
-      "kickoff": 1793556000000
      },
      {
       "name": "Chris Boswell",
@@ -9190,7 +9190,7 @@
       "pro_team": "PHI",
       "opponent": "WSH",
       "points": 0.0,
-      "projected": 12.78,
+      "projected": 12.79,
       "status": "pre",
       "kickoff": 1793582400000
      },
@@ -9306,7 +9306,7 @@
       "pro_team": "SEA",
       "opponent": "CHI",
       "points": 0.0,
-      "projected": 7.0,
+      "projected": 6.98,
       "status": "pre",
       "kickoff": 1793668500000
      },
@@ -9317,7 +9317,7 @@
       "pro_team": "SEA",
       "opponent": "CHI",
       "points": 0.0,
-      "projected": 9.82,
+      "projected": 9.81,
       "status": "pre",
       "kickoff": 1793668500000
      },
@@ -9372,7 +9372,7 @@
       "pro_team": "LV",
       "opponent": "NYJ",
       "points": 0.0,
-      "projected": 5.64,
+      "projected": 5.66,
       "status": "pre",
       "kickoff": 1793556000000
      }
@@ -9380,7 +9380,7 @@
    },
    "CJ": {
     "score": 0.0,
-    "projected": 110.01,
+    "projected": 109.97,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -9433,7 +9433,7 @@
       "pro_team": "NE",
       "opponent": "None",
       "points": 0.0,
-      "projected": 22.48,
+      "projected": 22.44,
       "status": "pre",
       "kickoff": 1793568300000
      },
@@ -9485,7 +9485,7 @@
    },
    "SWSH": {
     "score": 20.2,
-    "projected": 113.68,
+    "projected": 113.7,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -9505,7 +9505,7 @@
       "pro_team": "LV",
       "opponent": "NYJ",
       "points": 0.0,
-      "projected": 13.11,
+      "projected": 13.2,
       "status": "pre",
       "kickoff": 1793556000000
      },
@@ -9527,7 +9527,7 @@
       "pro_team": "DEN",
       "opponent": "KC",
       "points": 0.0,
-      "projected": 8.48,
+      "projected": 8.51,
       "status": "pre",
       "kickoff": 1793568300000
      },
@@ -9549,7 +9549,7 @@
       "pro_team": "LV",
       "opponent": "NYJ",
       "points": 0.0,
-      "projected": 9.07,
+      "projected": 9.13,
       "status": "pre",
       "kickoff": 1793556000000
      },
@@ -9571,7 +9571,7 @@
       "pro_team": "KC",
       "opponent": "DEN",
       "points": 0.0,
-      "projected": 6.14,
+      "projected": 5.99,
       "status": "pre",
       "kickoff": 1793568300000
      },
