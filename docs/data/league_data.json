@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-01 23:50:22 UTC",
-  "last_updated": "2026-11-01T23:50:22.525612+00:00"
+  "updated_at": "2026-11-02 00:00:21 UTC",
+  "last_updated": "2026-11-02T00:00:21.718773+00:00"
  },
  "teams": [
   {
@@ -26,7 +26,7 @@
     175.42,
     103.38,
     103.6,
-    101.78
+    103.88
    ],
    "ranking_points_by_week": [
     2.0,
@@ -271,7 +271,7 @@
     75.94,
     66.52,
     125.78,
-    58.2
+    58.7
    ],
    "ranking_points_by_week": [
     9.0,
@@ -320,7 +320,7 @@
     177.16,
     83.2,
     118.54,
-    102.56
+    108.48
    ],
    "ranking_points_by_week": [
     8.0,
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    73.9
+    76.1
    ],
    "ranking_points_by_week": [
     11.0,
@@ -6761,6 +6761,14 @@
      "score": 22.8
     },
     {
+     "name": "Patriots TQB",
+     "pro_team": "NE",
+     "fantasy_team": "Kaiser Soze",
+     "position": "QB",
+     "slot": "QB",
+     "score": 22.68
+    },
+    {
      "name": "Braelon Allen",
      "pro_team": "NYJ",
      "fantasy_team": "Walt's Warriors",
@@ -6873,14 +6881,6 @@
      "score": 17.1
     },
     {
-     "name": "Patriots TQB",
-     "pro_team": "NE",
-     "fantasy_team": "Kaiser Soze",
-     "position": "QB",
-     "slot": "QB",
-     "score": 16.76
-    },
-    {
      "name": "Trey McBride",
      "pro_team": "ARI",
      "fantasy_team": "The Lizard Kings",
@@ -6953,6 +6953,14 @@
      "score": 13.0
     },
     {
+     "name": "Kyren Williams",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "slot": "RB",
+     "score": 12.4
+    },
+    {
      "name": "Chase Brown",
      "pro_team": "CIN",
      "fantasy_team": "Mahomesless Without Refs",
@@ -6975,14 +6983,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 11.6
-    },
-    {
-     "name": "Kyren Williams",
-     "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "slot": "RB",
-     "score": 11.3
     },
     {
      "name": "Garrett Wilson",
@@ -7065,6 +7065,14 @@
      "score": 9.1
     },
     {
+     "name": "Rhamondre Stevenson",
+     "pro_team": "NE",
+     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
+     "position": "RB",
+     "slot": "RB",
+     "score": 9.0
+    },
+    {
      "name": "Chris Boswell",
      "pro_team": "PIT",
      "fantasy_team": "Team Made of Glass",
@@ -7095,14 +7103,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 8.6
-    },
-    {
-     "name": "Rhamondre Stevenson",
-     "pro_team": "NE",
-     "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
-     "position": "RB",
-     "slot": "RB",
-     "score": 8.5
     },
     {
      "name": "Rams TQB",
@@ -7193,12 +7193,28 @@
      "score": 5.8
     },
     {
+     "name": "Ollie Gordon II",
+     "pro_team": "MIA",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "RB",
+     "score": 5.6
+    },
+    {
      "name": "Travis Kelce",
      "pro_team": "KC",
      "fantasy_team": "The Garbage Dump",
      "position": "TE",
      "slot": "TE",
      "score": 5.5
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "slot": "RB",
+     "score": 5.2
     },
     {
      "name": "Bengals D/ST",
@@ -7241,14 +7257,6 @@
      "score": 4.5
     },
     {
-     "name": "Kenneth Walker III",
-     "pro_team": "KC",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "slot": "RB",
-     "score": 4.2
-    },
-    {
      "name": "Tyler Loop",
      "pro_team": "BAL",
      "fantasy_team": "Bijan These Nuts",
@@ -7271,14 +7279,6 @@
      "position": "RB",
      "slot": "FLEX",
      "score": 3.7
-    },
-    {
-     "name": "Ollie Gordon II",
-     "pro_team": "MIA",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "RB",
-     "score": 3.4
     },
     {
      "name": "Parker Washington",
@@ -8321,7 +8321,7 @@
   {
    "SACK": {
     "WR": 38.9,
-    "RB": 15.5,
+    "RB": 17.6,
     "FLEX": 20.8,
     "TE": 14.3,
     "QB": 8.28,
@@ -8357,7 +8357,7 @@
    },
    "SW": {
     "WR": 9.3,
-    "RB": 21.5,
+    "RB": 22.0,
     "TE": 1.6,
     "QB": 19.8,
     "FLEX": 2.0,
@@ -8374,7 +8374,7 @@
     "QB": 21.52
    },
    "TMOG": {
-    "RB": 20.5,
+    "RB": 22.7,
     "WR": 37.4,
     "TE": 0.0,
     "FLEX": 0.0,
@@ -8403,7 +8403,7 @@
    "CJ": {
     "RB": 28.6,
     "WR": 8.9,
-    "QB": 16.76,
+    "QB": 22.68,
     "TE": 5.0,
     "FLEX": 13.3,
     "K": 10.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-01T23:50:22+00:00",
+  "updated_at": "2026-11-02T00:00:21+00:00",
   "teams": {
    "SACK": {
-    "score": 101.78,
-    "projected": 113.62,
+    "score": 103.88,
+    "projected": 113.73,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8454,7 +8454,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "DEN",
-      "points": 4.2,
+      "points": 5.2,
       "projected": 18.38,
       "status": "live",
       "kickoff": 1793568300000
@@ -8465,7 +8465,7 @@
       "slot": "RB",
       "pro_team": "LAR",
       "opponent": "LAC",
-      "points": 11.3,
+      "points": 12.4,
       "projected": 16.27,
       "status": "live",
       "kickoff": 1793567100000
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 82.22,
-    "projected": 100.18,
+    "projected": 99.55,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8645,7 +8645,7 @@
    },
    "BW": {
     "score": 37.44,
-    "projected": 68.73,
+    "projected": 67.99,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8750,7 +8750,7 @@
    },
    "PORK": {
     "score": 68.3,
-    "projected": 106.89,
+    "projected": 106.64,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8854,8 +8854,8 @@
     ]
    },
    "SW": {
-    "score": 58.2,
-    "projected": 61.39,
+    "score": 58.7,
+    "projected": 61.18,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -8896,7 +8896,7 @@
       "slot": "RB",
       "pro_team": "NE",
       "opponent": "MIA",
-      "points": 8.5,
+      "points": 9.0,
       "projected": 14.14,
       "status": "live",
       "kickoff": 1793568300000
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 73.9,
-    "projected": 111.89,
+    "score": 76.1,
+    "projected": 113.42,
     "starters": [
      {
       "name": "James Cook III",
@@ -9117,7 +9117,7 @@
       "slot": "RB",
       "pro_team": "MIA",
       "opponent": "NE",
-      "points": 3.4,
+      "points": 5.6,
       "projected": 13.36,
       "status": "live",
       "kickoff": 1793568300000
@@ -9170,7 +9170,7 @@
    },
    "Naug": {
     "score": 119.88,
-    "projected": 134.11,
+    "projected": 133.66,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -9275,7 +9275,7 @@
    },
    "RA": {
     "score": 32.16,
-    "projected": 65.72,
+    "projected": 64.99,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9379,8 +9379,8 @@
     ]
    },
    "CJ": {
-    "score": 102.56,
-    "projected": 107.89,
+    "score": 108.48,
+    "projected": 112.35,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -9421,7 +9421,7 @@
       "slot": "QB",
       "pro_team": "NE",
       "opponent": "None",
-      "points": 16.76,
+      "points": 22.68,
       "projected": 22.07,
       "status": "live",
       "kickoff": 1793568300000
@@ -9590,7 +9590,7 @@
    },
    "BEND": {
     "score": 100.28,
-    "projected": 100.49,
+    "projected": 100.28,
     "starters": [
      {
       "name": "Jeremiyah Love",
@@ -10609,6 +10609,23 @@
      "Naug": 119.88,
      "RA": 32.16,
      "CJ": 102.56,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-02T00:00:21+00:00",
+    "scores": {
+     "SACK": 103.88,
+     "WALT": 82.22,
+     "BW": 37.44,
+     "PORK": 68.3,
+     "SW": 58.7,
+     "MBJG": 143.32,
+     "TMOG": 76.1,
+     "Naug": 119.88,
+     "RA": 32.16,
+     "CJ": 108.48,
      "SWSH": 118.56,
      "BEND": 100.28
     }
