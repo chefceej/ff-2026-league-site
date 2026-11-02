@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-02 01:20:17 UTC",
-  "last_updated": "2026-11-02T01:20:17.550885+00:00"
+  "updated_at": "2026-11-02 01:30:19 UTC",
+  "last_updated": "2026-11-02T01:30:19.371149+00:00"
  },
  "teams": [
   {
@@ -26,7 +26,7 @@
     175.42,
     103.38,
     103.6,
-    109.08
+    119.08
    ],
    "ranking_points_by_week": [
     2.0,
@@ -36,7 +36,7 @@
     11.0,
     8.0,
     6.0,
-    9.0
+    10.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -46,7 +46,7 @@
     42.0,
     50.0,
     56.0,
-    65.0
+    66.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -56,10 +56,10 @@
     8.0,
     10.0,
     9.0,
-    13.0
+    14.0
    ],
    "rank": 1,
-   "total_ranking_points": 65.0
+   "total_ranking_points": 66.0
   },
   {
    "team_id": 9,
@@ -232,7 +232,7 @@
     9.0,
     6.0,
     7.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -242,7 +242,7 @@
     34.0,
     40.0,
     47.0,
-    57.0
+    56.0
    ],
    "normalized_by_week": [
     -6.0,
@@ -252,10 +252,10 @@
     0.0,
     0.0,
     0.0,
-    5.0
+    4.0
    ],
    "rank": 5,
-   "total_ranking_points": 57.0
+   "total_ranking_points": 56.0
   },
   {
    "team_id": 1,
@@ -307,6 +307,55 @@
    "total_ranking_points": 52.0
   },
   {
+   "team_id": 8,
+   "team_name": "Mahomesless Without Refs",
+   "team_abbrev": "PORK",
+   "abbrev": "PORK",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    97.2,
+    66.52,
+    78.46
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    7.0,
+    1.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    46.0,
+    47.0,
+    52.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    6.0,
+    0.0,
+    0.0
+   ],
+   "rank": 7,
+   "total_ranking_points": 52.0
+  },
+  {
    "team_id": 2,
    "team_name": "Kaiser Soze",
    "team_abbrev": "CJ",
@@ -352,55 +401,6 @@
     -4.0,
     -1.0
    ],
-   "rank": 7,
-   "total_ranking_points": 51.0
-  },
-  {
-   "team_id": 8,
-   "team_name": "Mahomesless Without Refs",
-   "team_abbrev": "PORK",
-   "abbrev": "PORK",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    97.2,
-    66.52,
-    68.3
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    7.0,
-    1.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    46.0,
-    47.0,
-    51.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    6.0,
-    0.0,
-    -1.0
-   ],
    "rank": 8,
    "total_ranking_points": 51.0
   },
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    77.4
+    78.3
    ],
    "ranking_points_by_week": [
     11.0,
@@ -428,7 +428,7 @@
     8.0,
     9.0,
     5.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -438,7 +438,7 @@
     27.0,
     36.0,
     41.0,
-    46.0
+    45.0
    ],
    "normalized_by_week": [
     4.0,
@@ -448,10 +448,10 @@
     -7.0,
     -4.0,
     -6.0,
-    -6.0
+    -7.0
    ],
    "rank": 9,
-   "total_ranking_points": 46.0
+   "total_ranking_points": 45.0
   },
   {
    "team_id": 11,
@@ -7041,6 +7041,22 @@
      "score": 10.2
     },
     {
+     "name": "Eagles D/ST",
+     "pro_team": "PHI",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 10.0
+    },
+    {
+     "name": "Commanders D/ST",
+     "pro_team": "WSH",
+     "fantasy_team": "Mahomesless Without Refs",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 10.0
+    },
+    {
      "name": "Matt Gay",
      "pro_team": "LV",
      "fantasy_team": "Kaiser Soze",
@@ -7369,6 +7385,14 @@
      "score": 1.0
     },
     {
+     "name": "Rachaad White",
+     "pro_team": "WSH",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.9
+    },
+    {
      "name": "DK Metcalf",
      "pro_team": "PIT",
      "fantasy_team": "Remeber Bendel",
@@ -7385,12 +7409,12 @@
      "score": 0.5
     },
     {
-     "name": "Eagles D/ST",
-     "pro_team": "PHI",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 0.0
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Mahomesless Without Refs",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.16
     },
     {
      "name": "Luther Burden III",
@@ -7425,22 +7449,6 @@
      "score": 0.0
     },
     {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Mahomesless Without Refs",
-     "position": "QB",
-     "slot": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "Commanders D/ST",
-     "pro_team": "WSH",
-     "fantasy_team": "Mahomesless Without Refs",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 0.0
-    },
-    {
      "name": "Darius Cooper",
      "pro_team": "PHI",
      "fantasy_team": "Mahomesless Without Refs",
@@ -7462,14 +7470,6 @@
      "fantasy_team": "Team Made of Glass",
      "position": "TE",
      "slot": "TE",
-     "score": 0.0
-    },
-    {
-     "name": "Rachaad White",
-     "pro_team": "WSH",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "FLEX",
      "score": 0.0
     },
     {
@@ -8325,7 +8325,7 @@
     "FLEX": 20.8,
     "TE": 14.3,
     "QB": 8.28,
-    "D/ST": 0.0,
+    "D/ST": 10.0,
     "K": 4.0
    },
    "WALT": {
@@ -8351,9 +8351,9 @@
     "FLEX": 3.7,
     "WR": 11.3,
     "TE": 3.8,
-    "QB": 0.0,
+    "QB": 0.16,
     "K": 16.0,
-    "D/ST": 0.0
+    "D/ST": 10.0
    },
    "SW": {
     "WR": 9.3,
@@ -8377,7 +8377,7 @@
     "RB": 24.0,
     "WR": 37.4,
     "TE": 0.0,
-    "FLEX": 0.0,
+    "FLEX": 0.9,
     "QB": 0.0,
     "K": 9.0,
     "D/ST": 7.0
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-02T01:20:17+00:00",
+  "updated_at": "2026-11-02T01:30:19+00:00",
   "teams": {
    "SACK": {
-    "score": 109.08,
-    "projected": 114.88,
+    "score": 119.08,
+    "projected": 115.07,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8520,7 +8520,7 @@
       "slot": "D/ST",
       "pro_team": "PHI",
       "opponent": "WSH",
-      "points": 0.0,
+      "points": 10.0,
       "projected": 5.8,
       "status": "live",
       "kickoff": 1793582400000
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 82.22,
-    "projected": 99.55,
+    "projected": 99.25,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8749,8 +8749,8 @@
     ]
    },
    "PORK": {
-    "score": 68.3,
-    "projected": 106.64,
+    "score": 78.46,
+    "projected": 105.52,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8802,7 +8802,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 0.0,
+      "points": 0.16,
       "projected": 22.8,
       "status": "live",
       "kickoff": 1793582400000
@@ -8835,7 +8835,7 @@
       "slot": "D/ST",
       "pro_team": "WSH",
       "opponent": "PHI",
-      "points": 0.0,
+      "points": 10.0,
       "projected": 7.9,
       "status": "live",
       "kickoff": 1793582400000
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 77.4,
-    "projected": 112.38,
+    "score": 78.3,
+    "projected": 112.4,
     "starters": [
      {
       "name": "James Cook III",
@@ -9128,7 +9128,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "PHI",
-      "points": 0.0,
+      "points": 0.9,
       "projected": 11.17,
       "status": "live",
       "kickoff": 1793582400000
@@ -9170,7 +9170,7 @@
    },
    "Naug": {
     "score": 120.58,
-    "projected": 133.37,
+    "projected": 132.79,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10691,6 +10691,23 @@
      "SW": 60.2,
      "MBJG": 143.32,
      "TMOG": 77.4,
+     "Naug": 120.58,
+     "RA": 33.86,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-02T01:30:19+00:00",
+    "scores": {
+     "SACK": 119.08,
+     "WALT": 82.22,
+     "BW": 39.44,
+     "PORK": 78.46,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 78.3,
      "Naug": 120.58,
      "RA": 33.86,
      "CJ": 108.26,
