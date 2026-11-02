@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-02 02:40:17 UTC",
-  "last_updated": "2026-11-02T02:40:17.324842+00:00"
+  "updated_at": "2026-11-02 02:50:17 UTC",
+  "last_updated": "2026-11-02T02:50:17.838505+00:00"
  },
  "teams": [
   {
@@ -271,7 +271,7 @@
     111.04,
     97.2,
     66.52,
-    84.6
+    84.64
    ],
    "ranking_points_by_week": [
     10.0,
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    79.8
+    81.4
    ],
    "ranking_points_by_week": [
     11.0,
@@ -7126,7 +7126,7 @@
      "fantasy_team": "Mahomesless Without Refs",
      "position": "QB",
      "slot": "QB",
-     "score": 8.4
+     "score": 8.44
     },
     {
      "name": "Rams TQB",
@@ -7321,6 +7321,14 @@
      "score": 3.7
     },
     {
+     "name": "Rachaad White",
+     "pro_team": "WSH",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 3.1
+    },
+    {
      "name": "Parker Washington",
      "pro_team": "JAX",
      "fantasy_team": "Kaiser Soze",
@@ -7351,14 +7359,6 @@
      "position": "WR",
      "slot": "FLEX",
      "score": 2.8
-    },
-    {
-     "name": "Rachaad White",
-     "pro_team": "WSH",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 2.4
     },
     {
      "name": "Jeremiyah Love",
@@ -7417,6 +7417,14 @@
      "score": 1.0
     },
     {
+     "name": "Dallas Goedert",
+     "pro_team": "PHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.9
+    },
+    {
      "name": "DK Metcalf",
      "pro_team": "PIT",
      "fantasy_team": "Remeber Bendel",
@@ -7462,14 +7470,6 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "WR",
      "slot": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Dallas Goedert",
-     "pro_team": "PHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "TE",
-     "slot": "TE",
      "score": 0.0
     },
     {
@@ -8351,7 +8351,7 @@
     "FLEX": 3.7,
     "WR": 14.2,
     "TE": 3.8,
-    "QB": 8.4,
+    "QB": 8.44,
     "K": 16.0,
     "D/ST": 5.0
    },
@@ -8376,8 +8376,8 @@
    "TMOG": {
     "RB": 24.0,
     "WR": 37.4,
-    "TE": 0.0,
-    "FLEX": 2.4,
+    "TE": 0.9,
+    "FLEX": 3.1,
     "QB": 0.0,
     "K": 9.0,
     "D/ST": 7.0
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-02T02:40:17+00:00",
+  "updated_at": "2026-11-02T02:50:17+00:00",
   "teams": {
    "SACK": {
     "score": 115.08,
-    "projected": 114.97,
+    "projected": 114.98,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 81.82,
-    "projected": 96.1,
+    "projected": 95.97,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8749,8 +8749,8 @@
     ]
    },
    "PORK": {
-    "score": 84.6,
-    "projected": 102.39,
+    "score": 84.64,
+    "projected": 101.78,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8802,7 +8802,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 8.4,
+      "points": 8.44,
       "projected": 22.8,
       "status": "live",
       "kickoff": 1793582400000
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 79.8,
-    "projected": 105.68,
+    "score": 81.4,
+    "projected": 106.9,
     "starters": [
      {
       "name": "James Cook III",
@@ -9106,7 +9106,7 @@
       "slot": "TE",
       "pro_team": "PHI",
       "opponent": "WSH",
-      "points": 0.0,
+      "points": 0.9,
       "projected": 8.33,
       "status": "live",
       "kickoff": 1793582400000
@@ -9128,7 +9128,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "PHI",
-      "points": 2.4,
+      "points": 3.1,
       "projected": 11.17,
       "status": "live",
       "kickoff": 1793582400000
@@ -9170,7 +9170,7 @@
    },
    "Naug": {
     "score": 130.68,
-    "projected": 137.5,
+    "projected": 137.25,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10827,6 +10827,23 @@
      "SW": 60.2,
      "MBJG": 143.32,
      "TMOG": 79.8,
+     "Naug": 130.68,
+     "RA": 33.86,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-02T02:50:17+00:00",
+    "scores": {
+     "SACK": 115.08,
+     "WALT": 81.82,
+     "BW": 39.44,
+     "PORK": 84.64,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 81.4,
      "Naug": 130.68,
      "RA": 33.86,
      "CJ": 108.26,
