@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-02 03:50:18 UTC",
-  "last_updated": "2026-11-02T03:50:18.641021+00:00"
+  "updated_at": "2026-11-02 04:00:20 UTC",
+  "last_updated": "2026-11-02T04:00:20.676556+00:00"
  },
  "teams": [
   {
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    85.5
+    85.7
    ],
    "ranking_points_by_week": [
     11.0,
@@ -7241,6 +7241,14 @@
      "score": 5.8
     },
     {
+     "name": "Dallas Goedert",
+     "pro_team": "PHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "slot": "TE",
+     "score": 5.2
+    },
+    {
      "name": "Eagles D/ST",
      "pro_team": "PHI",
      "fantasy_team": "Bijan These Nuts",
@@ -7254,14 +7262,6 @@
      "fantasy_team": "Walt's Warriors",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 5.0
-    },
-    {
-     "name": "Dallas Goedert",
-     "pro_team": "PHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "TE",
-     "slot": "TE",
      "score": 5.0
     },
     {
@@ -8376,7 +8376,7 @@
    "TMOG": {
     "RB": 24.0,
     "WR": 37.4,
-    "TE": 5.0,
+    "TE": 5.2,
     "FLEX": 3.1,
     "QB": 0.0,
     "K": 9.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-02T03:50:18+00:00",
+  "updated_at": "2026-11-02T04:00:20+00:00",
   "teams": {
    "SACK": {
     "score": 114.08,
-    "projected": 114.26,
+    "projected": 114.2,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 84.42,
-    "projected": 96.64,
+    "projected": 96.19,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8750,7 +8750,7 @@
    },
    "PORK": {
     "score": 93.58,
-    "projected": 99.99,
+    "projected": 97.97,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 85.5,
-    "projected": 105.24,
+    "score": 85.7,
+    "projected": 104.09,
     "starters": [
      {
       "name": "James Cook III",
@@ -9106,7 +9106,7 @@
       "slot": "TE",
       "pro_team": "PHI",
       "opponent": "WSH",
-      "points": 5.0,
+      "points": 5.2,
       "projected": 8.33,
       "status": "live",
       "kickoff": 1793582400000
@@ -9170,7 +9170,7 @@
    },
    "Naug": {
     "score": 132.48,
-    "projected": 135.27,
+    "projected": 134.39,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10929,6 +10929,23 @@
      "SW": 60.2,
      "MBJG": 143.32,
      "TMOG": 85.5,
+     "Naug": 132.48,
+     "RA": 33.86,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-02T04:00:20+00:00",
+    "scores": {
+     "SACK": 114.08,
+     "WALT": 84.42,
+     "BW": 39.44,
+     "PORK": 93.58,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 85.7,
      "Naug": 132.48,
      "RA": 33.86,
      "CJ": 108.26,
