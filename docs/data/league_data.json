@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-02 03:30:19 UTC",
-  "last_updated": "2026-11-02T03:30:19.267136+00:00"
+  "updated_at": "2026-11-02 03:40:17 UTC",
+  "last_updated": "2026-11-02T03:40:17.833127+00:00"
  },
  "teams": [
   {
@@ -26,7 +26,7 @@
     175.42,
     103.38,
     103.6,
-    116.08
+    114.08
    ],
    "ranking_points_by_week": [
     2.0,
@@ -60,55 +60,6 @@
    ],
    "rank": 1,
    "total_ranking_points": 65.0
-  },
-  {
-   "team_id": 9,
-   "team_name": "Walt's Warriors",
-   "team_abbrev": "WALT",
-   "abbrev": "WALT",
-   "owner": "Matthew  Walter",
-   "scores_by_week": [
-    136.0,
-    55.66,
-    82.28,
-    121.48,
-    142.54,
-    122.24,
-    119.08,
-    84.42
-   ],
-   "ranking_points_by_week": [
-    12.0,
-    1.0,
-    2.0,
-    10.0,
-    10.0,
-    11.0,
-    10.0,
-    5.0
-   ],
-   "cumulative_points_by_week": [
-    12.0,
-    13.0,
-    15.0,
-    25.0,
-    35.0,
-    46.0,
-    56.0,
-    61.0
-   ],
-   "normalized_by_week": [
-    5.0,
-    1.0,
-    -4.0,
-    -2.0,
-    1.0,
-    6.0,
-    9.0,
-    8.0
-   ],
-   "rank": 2,
-   "total_ranking_points": 61.0
   },
   {
    "team_id": 5,
@@ -154,6 +105,55 @@
     -4.0,
     0.0,
     1.0,
+    7.0
+   ],
+   "rank": 2,
+   "total_ranking_points": 60.0
+  },
+  {
+   "team_id": 9,
+   "team_name": "Walt's Warriors",
+   "team_abbrev": "WALT",
+   "abbrev": "WALT",
+   "owner": "Matthew  Walter",
+   "scores_by_week": [
+    136.0,
+    55.66,
+    82.28,
+    121.48,
+    142.54,
+    122.24,
+    119.08,
+    84.42
+   ],
+   "ranking_points_by_week": [
+    12.0,
+    1.0,
+    2.0,
+    10.0,
+    10.0,
+    11.0,
+    10.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    12.0,
+    13.0,
+    15.0,
+    25.0,
+    35.0,
+    46.0,
+    56.0,
+    60.0
+   ],
+   "normalized_by_week": [
+    5.0,
+    1.0,
+    -4.0,
+    -2.0,
+    1.0,
+    6.0,
+    9.0,
     7.0
    ],
    "rank": 3,
@@ -271,7 +271,7 @@
     111.04,
     97.2,
     66.52,
-    88.46
+    93.58
    ],
    "ranking_points_by_week": [
     10.0,
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    84.4
+    85.5
    ],
    "ranking_points_by_week": [
     11.0,
@@ -428,7 +428,7 @@
     8.0,
     9.0,
     5.0,
-    4.0
+    5.0
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -438,7 +438,7 @@
     27.0,
     36.0,
     41.0,
-    45.0
+    46.0
    ],
    "normalized_by_week": [
     4.0,
@@ -448,10 +448,10 @@
     -7.0,
     -4.0,
     -6.0,
-    -8.0
+    -7.0
    ],
    "rank": 9,
-   "total_ranking_points": 45.0
+   "total_ranking_points": 46.0
   },
   {
    "team_id": 11,
@@ -6921,6 +6921,14 @@
      "score": 14.0
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Mahomesless Without Refs",
+     "position": "QB",
+     "slot": "QB",
+     "score": 13.38
+    },
+    {
      "name": "Christian Watson",
      "pro_team": "GB",
      "fantasy_team": "Bijan These Nuts",
@@ -6999,14 +7007,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 11.3
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Mahomesless Without Refs",
-     "position": "QB",
-     "slot": "QB",
-     "score": 11.26
     },
     {
      "name": "Cameron Dicker",
@@ -7097,6 +7097,14 @@
      "score": 9.1
     },
     {
+     "name": "Commanders D/ST",
+     "pro_team": "WSH",
+     "fantasy_team": "Mahomesless Without Refs",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 9.0
+    },
+    {
      "name": "Chris Boswell",
      "pro_team": "PIT",
      "fantasy_team": "Team Made of Glass",
@@ -7161,14 +7169,6 @@
      "score": 7.6
     },
     {
-     "name": "Eagles D/ST",
-     "pro_team": "PHI",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 7.0
-    },
-    {
      "name": "Jake Bates",
      "pro_team": "DET",
      "fantasy_team": "JSN Derulo ",
@@ -7217,14 +7217,6 @@
      "score": 6.2
     },
     {
-     "name": "Commanders D/ST",
-     "pro_team": "WSH",
-     "fantasy_team": "Mahomesless Without Refs",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 6.0
-    },
-    {
      "name": "Cam Little",
      "pro_team": "JAX",
      "fantasy_team": "The Lizard Kings",
@@ -7249,11 +7241,27 @@
      "score": 5.8
     },
     {
+     "name": "Eagles D/ST",
+     "pro_team": "PHI",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 5.0
+    },
+    {
      "name": "Bengals D/ST",
      "pro_team": "CIN",
      "fantasy_team": "Walt's Warriors",
      "position": "D/ST",
      "slot": "D/ST",
+     "score": 5.0
+    },
+    {
+     "name": "Dallas Goedert",
+     "pro_team": "PHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "slot": "TE",
      "score": 5.0
     },
     {
@@ -7295,14 +7303,6 @@
      "position": "K",
      "slot": "K",
      "score": 4.0
-    },
-    {
-     "name": "Dallas Goedert",
-     "pro_team": "PHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "TE",
-     "slot": "TE",
-     "score": 3.9
     },
     {
      "name": "Tyler Warren",
@@ -8325,7 +8325,7 @@
     "FLEX": 20.8,
     "TE": 14.3,
     "QB": 8.28,
-    "D/ST": 7.0,
+    "D/ST": 5.0,
     "K": 4.0
    },
    "WALT": {
@@ -8351,9 +8351,9 @@
     "FLEX": 3.7,
     "WR": 14.2,
     "TE": 3.8,
-    "QB": 11.26,
+    "QB": 13.38,
     "K": 16.0,
-    "D/ST": 6.0
+    "D/ST": 9.0
    },
    "SW": {
     "WR": 9.3,
@@ -8376,7 +8376,7 @@
    "TMOG": {
     "RB": 24.0,
     "WR": 37.4,
-    "TE": 3.9,
+    "TE": 5.0,
     "FLEX": 3.1,
     "QB": 0.0,
     "K": 9.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-02T03:30:19+00:00",
+  "updated_at": "2026-11-02T03:40:17+00:00",
   "teams": {
    "SACK": {
-    "score": 116.08,
-    "projected": 115.68,
+    "score": 114.08,
+    "projected": 114.3,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8520,7 +8520,7 @@
       "slot": "D/ST",
       "pro_team": "PHI",
       "opponent": "WSH",
-      "points": 7.0,
+      "points": 5.0,
       "projected": 5.8,
       "status": "live",
       "kickoff": 1793582400000
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 84.42,
-    "projected": 97.38,
+    "projected": 97.02,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8749,8 +8749,8 @@
     ]
    },
    "PORK": {
-    "score": 88.46,
-    "projected": 99.16,
+    "score": 93.58,
+    "projected": 101.68,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8802,7 +8802,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 11.26,
+      "points": 13.38,
       "projected": 22.8,
       "status": "live",
       "kickoff": 1793582400000
@@ -8835,7 +8835,7 @@
       "slot": "D/ST",
       "pro_team": "WSH",
       "opponent": "PHI",
-      "points": 6.0,
+      "points": 9.0,
       "projected": 7.9,
       "status": "live",
       "kickoff": 1793582400000
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 84.4,
-    "projected": 106.33,
+    "score": 85.5,
+    "projected": 106.36,
     "starters": [
      {
       "name": "James Cook III",
@@ -9106,7 +9106,7 @@
       "slot": "TE",
       "pro_team": "PHI",
       "opponent": "WSH",
-      "points": 3.9,
+      "points": 5.0,
       "projected": 8.33,
       "status": "live",
       "kickoff": 1793582400000
@@ -9170,7 +9170,7 @@
    },
    "Naug": {
     "score": 132.18,
-    "projected": 136.41,
+    "projected": 135.71,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10895,6 +10895,23 @@
      "SW": 60.2,
      "MBJG": 143.32,
      "TMOG": 84.4,
+     "Naug": 132.18,
+     "RA": 33.86,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-02T03:40:17+00:00",
+    "scores": {
+     "SACK": 114.08,
+     "WALT": 84.42,
+     "BW": 39.44,
+     "PORK": 93.58,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 85.5,
      "Naug": 132.18,
      "RA": 33.86,
      "CJ": 108.26,
