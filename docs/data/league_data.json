@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-02 00:00:21 UTC",
-  "last_updated": "2026-11-02T00:00:21.718773+00:00"
+  "updated_at": "2026-11-02 00:10:19 UTC",
+  "last_updated": "2026-11-02T00:10:19.682010+00:00"
  },
  "teams": [
   {
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    76.1
+    76.3
    ],
    "ranking_points_by_week": [
     11.0,
@@ -467,7 +467,7 @@
     103.76,
     90.76,
     82.82,
-    32.16
+    32.36
    ],
    "ranking_points_by_week": [
     3.0,
@@ -7185,20 +7185,20 @@
      "score": 5.9
     },
     {
+     "name": "Ollie Gordon II",
+     "pro_team": "MIA",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "RB",
+     "score": 5.8
+    },
+    {
      "name": "George Pickens",
      "pro_team": "DAL",
      "fantasy_team": "Kaiser Soze",
      "position": "WR",
      "slot": "WR",
      "score": 5.8
-    },
-    {
-     "name": "Ollie Gordon II",
-     "pro_team": "MIA",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "RB",
-     "score": 5.6
     },
     {
      "name": "Travis Kelce",
@@ -7305,20 +7305,20 @@
      "score": 2.8
     },
     {
+     "name": "Corey Kiner",
+     "pro_team": "NE",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 2.3
+    },
+    {
      "name": "Jeremiyah Love",
      "pro_team": "ARI",
      "fantasy_team": "Remeber Bendel",
      "position": "RB",
      "slot": "RB",
      "score": 2.3
-    },
-    {
-     "name": "Corey Kiner",
-     "pro_team": "NE",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 2.1
     },
     {
      "name": "Jordan Mason",
@@ -8374,7 +8374,7 @@
     "QB": 21.52
    },
    "TMOG": {
-    "RB": 22.7,
+    "RB": 22.9,
     "WR": 37.4,
     "TE": 0.0,
     "FLEX": 0.0,
@@ -8397,7 +8397,7 @@
     "D/ST": 0.0,
     "K": 0.0,
     "QB": 10.36,
-    "RB": 2.1,
+    "RB": 2.3,
     "TE": 7.8
    },
    "CJ": {
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-02T00:00:21+00:00",
+  "updated_at": "2026-11-02T00:10:19+00:00",
   "teams": {
    "SACK": {
     "score": 103.88,
-    "projected": 113.73,
+    "projected": 112.41,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8645,7 +8645,7 @@
    },
    "BW": {
     "score": 37.44,
-    "projected": 67.99,
+    "projected": 66.05,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8855,7 +8855,7 @@
    },
    "SW": {
     "score": 58.7,
-    "projected": 61.18,
+    "projected": 60.1,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 76.1,
-    "projected": 113.42,
+    "score": 76.3,
+    "projected": 112.6,
     "starters": [
      {
       "name": "James Cook III",
@@ -9117,7 +9117,7 @@
       "slot": "RB",
       "pro_team": "MIA",
       "opponent": "NE",
-      "points": 5.6,
+      "points": 5.8,
       "projected": 13.36,
       "status": "live",
       "kickoff": 1793568300000
@@ -9170,7 +9170,7 @@
    },
    "Naug": {
     "score": 119.88,
-    "projected": 133.66,
+    "projected": 133.41,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -9274,8 +9274,8 @@
     ]
    },
    "RA": {
-    "score": 32.16,
-    "projected": 64.99,
+    "score": 32.36,
+    "projected": 64.08,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9360,7 +9360,7 @@
       "slot": "RB",
       "pro_team": "NE",
       "opponent": "MIA",
-      "points": 2.1,
+      "points": 2.3,
       "projected": 8.45,
       "status": "live",
       "kickoff": 1793568300000
@@ -9380,7 +9380,7 @@
    },
    "CJ": {
     "score": 108.48,
-    "projected": 112.35,
+    "projected": 110.67,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10625,6 +10625,23 @@
      "TMOG": 76.1,
      "Naug": 119.88,
      "RA": 32.16,
+     "CJ": 108.48,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-02T00:10:19+00:00",
+    "scores": {
+     "SACK": 103.88,
+     "WALT": 82.22,
+     "BW": 37.44,
+     "PORK": 68.3,
+     "SW": 58.7,
+     "MBJG": 143.32,
+     "TMOG": 76.3,
+     "Naug": 119.88,
+     "RA": 32.36,
      "CJ": 108.48,
      "SWSH": 118.56,
      "BEND": 100.28
