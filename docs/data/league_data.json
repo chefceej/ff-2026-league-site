@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-02 04:20:23 UTC",
-  "last_updated": "2026-11-02T04:20:23.300556+00:00"
+  "updated_at": "2026-11-02 04:30:19 UTC",
+  "last_updated": "2026-11-02T04:30:19.549028+00:00"
  },
  "teams": [
   {
@@ -271,7 +271,7 @@
     111.04,
     97.2,
     66.52,
-    98.18
+    99.18
    ],
    "ranking_points_by_week": [
     10.0,
@@ -6945,6 +6945,14 @@
      "score": 13.3
     },
     {
+     "name": "Commanders D/ST",
+     "pro_team": "WSH",
+     "fantasy_team": "Mahomesless Without Refs",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 13.0
+    },
+    {
      "name": "Derrick Henry",
      "pro_team": "BAL",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -6983,14 +6991,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 12.1
-    },
-    {
-     "name": "Commanders D/ST",
-     "pro_team": "WSH",
-     "fantasy_team": "Mahomesless Without Refs",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 12.0
     },
     {
      "name": "Saquon Barkley",
@@ -8353,7 +8353,7 @@
     "TE": 3.8,
     "QB": 14.98,
     "K": 16.0,
-    "D/ST": 12.0
+    "D/ST": 13.0
    },
    "SW": {
     "WR": 9.3,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-02T04:20:23+00:00",
+  "updated_at": "2026-11-02T04:30:19+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
-    "projected": 113.14,
+    "projected": 113.08,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 84.42,
-    "projected": 95.42,
+    "projected": 95.21,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8749,8 +8749,8 @@
     ]
    },
    "PORK": {
-    "score": 98.18,
-    "projected": 99.0,
+    "score": 99.18,
+    "projected": 99.18,
     "starters": [
      {
       "name": "Chase Brown",
@@ -8835,7 +8835,7 @@
       "slot": "D/ST",
       "pro_team": "WSH",
       "opponent": "PHI",
-      "points": 12.0,
+      "points": 13.0,
       "projected": 7.9,
       "status": "live",
       "kickoff": 1793582400000
@@ -9065,7 +9065,7 @@
    },
    "TMOG": {
     "score": 95.6,
-    "projected": 111.69,
+    "projected": 111.08,
     "starters": [
      {
       "name": "James Cook III",
@@ -9170,7 +9170,7 @@
    },
    "Naug": {
     "score": 132.48,
-    "projected": 132.88,
+    "projected": 132.48,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10977,6 +10977,23 @@
      "WALT": 84.42,
      "BW": 39.44,
      "PORK": 98.18,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 95.6,
+     "Naug": 132.48,
+     "RA": 33.86,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-02T04:30:19+00:00",
+    "scores": {
+     "SACK": 113.08,
+     "WALT": 84.42,
+     "BW": 39.44,
+     "PORK": 99.18,
      "SW": 60.2,
      "MBJG": 143.32,
      "TMOG": 95.6,
