@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-02 00:30:19 UTC",
-  "last_updated": "2026-11-02T00:30:19.532998+00:00"
+  "updated_at": "2026-11-02 00:40:19 UTC",
+  "last_updated": "2026-11-02T00:40:19.011579+00:00"
  },
  "teams": [
   {
@@ -26,7 +26,7 @@
     175.42,
     103.38,
     103.6,
-    106.88
+    109.08
    ],
    "ranking_points_by_week": [
     2.0,
@@ -36,7 +36,7 @@
     11.0,
     8.0,
     6.0,
-    8.0
+    9.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -46,7 +46,7 @@
     42.0,
     50.0,
     56.0,
-    64.0
+    65.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -56,10 +56,10 @@
     8.0,
     10.0,
     9.0,
-    12.0
+    13.0
    ],
    "rank": 1,
-   "total_ranking_points": 64.0
+   "total_ranking_points": 65.0
   },
   {
    "team_id": 9,
@@ -173,7 +173,7 @@
     88.24,
     128.08,
     126.22,
-    38.44
+    39.44
    ],
    "ranking_points_by_week": [
     4.0,
@@ -320,7 +320,7 @@
     177.16,
     83.2,
     118.54,
-    108.46
+    108.26
    ],
    "ranking_points_by_week": [
     8.0,
@@ -330,7 +330,7 @@
     12.0,
     3.0,
     9.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -340,7 +340,7 @@
     31.0,
     34.0,
     43.0,
-    52.0
+    51.0
    ],
    "normalized_by_week": [
     1.0,
@@ -350,10 +350,10 @@
     -3.0,
     -6.0,
     -4.0,
-    0.0
+    -1.0
    ],
    "rank": 7,
-   "total_ranking_points": 52.0
+   "total_ranking_points": 51.0
   },
   {
    "team_id": 8,
@@ -6766,7 +6766,7 @@
      "fantasy_team": "Kaiser Soze",
      "position": "QB",
      "slot": "QB",
-     "score": 22.66
+     "score": 22.46
     },
     {
      "name": "Braelon Allen",
@@ -7017,6 +7017,14 @@
      "score": 10.5
     },
     {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "slot": "RB",
+     "score": 10.4
+    },
+    {
      "name": "Panthers TQB",
      "pro_team": "CAR",
      "fantasy_team": "The Sun Gods ",
@@ -7111,14 +7119,6 @@
      "position": "QB",
      "slot": "QB",
      "score": 8.28
-    },
-    {
-     "name": "Kenneth Walker III",
-     "pro_team": "KC",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "slot": "RB",
-     "score": 8.2
     },
     {
      "name": "Patriots D/ST",
@@ -7321,6 +7321,14 @@
      "score": 2.3
     },
     {
+     "name": "Broncos D/ST",
+     "pro_team": "DEN",
+     "fantasy_team": "JSN Derulo ",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 2.0
+    },
+    {
      "name": "Jordan Mason",
      "pro_team": "MIN",
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
@@ -7350,14 +7358,6 @@
      "fantasy_team": "Walt's Warriors",
      "position": "K",
      "slot": "K",
-     "score": 1.0
-    },
-    {
-     "name": "Broncos D/ST",
-     "pro_team": "DEN",
-     "fantasy_team": "JSN Derulo ",
-     "position": "D/ST",
-     "slot": "D/ST",
      "score": 1.0
     },
     {
@@ -8321,7 +8321,7 @@
   {
    "SACK": {
     "WR": 38.9,
-    "RB": 20.6,
+    "RB": 22.8,
     "FLEX": 20.8,
     "TE": 14.3,
     "QB": 8.28,
@@ -8342,7 +8342,7 @@
     "RB": 17.8,
     "TE": 0.0,
     "QB": -2.06,
-    "D/ST": 1.0,
+    "D/ST": 2.0,
     "FLEX": 4.5,
     "K": 7.0
    },
@@ -8403,7 +8403,7 @@
    "CJ": {
     "RB": 28.6,
     "WR": 8.9,
-    "QB": 22.66,
+    "QB": 22.46,
     "TE": 5.0,
     "FLEX": 13.3,
     "K": 10.0,
@@ -8431,11 +8431,11 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-02T00:30:19+00:00",
+  "updated_at": "2026-11-02T00:40:19+00:00",
   "teams": {
    "SACK": {
-    "score": 106.88,
-    "projected": 113.15,
+    "score": 109.08,
+    "projected": 114.88,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -8454,7 +8454,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "DEN",
-      "points": 8.2,
+      "points": 10.4,
       "projected": 18.38,
       "status": "live",
       "kickoff": 1793568300000
@@ -8467,7 +8467,7 @@
       "opponent": "LAC",
       "points": 12.4,
       "projected": 16.27,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793567100000
      },
      {
@@ -8511,7 +8511,7 @@
       "opponent": "None",
       "points": 8.28,
       "projected": 16.95,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793567100000
      },
      {
@@ -8550,7 +8550,7 @@
       "opponent": "LAC",
       "points": 19.5,
       "projected": 19.04,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793567100000
      },
      {
@@ -8644,8 +8644,8 @@
     ]
    },
    "BW": {
-    "score": 38.44,
-    "projected": 66.21,
+    "score": 39.44,
+    "projected": 67.07,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8708,7 +8708,7 @@
       "slot": "D/ST",
       "pro_team": "DEN",
       "opponent": "KC",
-      "points": 1.0,
+      "points": 2.0,
       "projected": 6.62,
       "status": "live",
       "kickoff": 1793568300000
@@ -8771,7 +8771,7 @@
       "opponent": "LAR",
       "points": 3.7,
       "projected": 7.47,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793567100000
      },
      {
@@ -8855,7 +8855,7 @@
    },
    "SW": {
     "score": 60.2,
-    "projected": 60.57,
+    "projected": 60.2,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9065,7 +9065,7 @@
    },
    "TMOG": {
     "score": 77.4,
-    "projected": 112.73,
+    "projected": 112.38,
     "starters": [
      {
       "name": "James Cook III",
@@ -9170,7 +9170,7 @@
    },
    "Naug": {
     "score": 120.58,
-    "projected": 133.54,
+    "projected": 133.37,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -9235,7 +9235,7 @@
       "opponent": "LAR",
       "points": 10.6,
       "projected": 8.28,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793567100000
      },
      {
@@ -9275,7 +9275,7 @@
    },
    "RA": {
     "score": 33.86,
-    "projected": 64.16,
+    "projected": 63.77,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9379,8 +9379,8 @@
     ]
    },
    "CJ": {
-    "score": 108.46,
-    "projected": 109.04,
+    "score": 108.26,
+    "projected": 108.26,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -9421,7 +9421,7 @@
       "slot": "QB",
       "pro_team": "NE",
       "opponent": "None",
-      "points": 22.66,
+      "points": 22.46,
       "projected": 22.07,
       "status": "live",
       "kickoff": 1793568300000
@@ -9456,7 +9456,7 @@
       "opponent": "LAC",
       "points": 13.3,
       "projected": 10.79,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793567100000
      },
      {
@@ -9644,7 +9644,7 @@
       "opponent": "LAR",
       "points": 11.0,
       "projected": 7.6,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793567100000
      },
      {
@@ -9688,7 +9688,7 @@
       "opponent": "LAC",
       "points": 10.0,
       "projected": 8.83,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793567100000
      }
     ]
@@ -10677,6 +10677,23 @@
      "Naug": 120.58,
      "RA": 33.86,
      "CJ": 108.46,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-02T00:40:19+00:00",
+    "scores": {
+     "SACK": 109.08,
+     "WALT": 82.22,
+     "BW": 39.44,
+     "PORK": 68.3,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 77.4,
+     "Naug": 120.58,
+     "RA": 33.86,
+     "CJ": 108.26,
      "SWSH": 118.56,
      "BEND": 100.28
     }
