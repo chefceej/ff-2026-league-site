@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-02 00:50:21 UTC",
-  "last_updated": "2026-11-02T00:50:21.021557+00:00"
+  "updated_at": "2026-11-02 01:00:20 UTC",
+  "last_updated": "2026-11-02T01:00:20.298248+00:00"
  },
  "teams": [
   {
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-02T00:50:21+00:00",
+  "updated_at": "2026-11-02T01:00:20+00:00",
   "teams": {
    "SACK": {
     "score": 109.08,
@@ -8456,7 +8456,7 @@
       "opponent": "DEN",
       "points": 10.4,
       "projected": 18.38,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
@@ -8710,7 +8710,7 @@
       "opponent": "KC",
       "points": 2.0,
       "projected": 6.62,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
@@ -8732,7 +8732,7 @@
       "opponent": "MIA",
       "points": 4.5,
       "projected": 8.35,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
@@ -8898,7 +8898,7 @@
       "opponent": "MIA",
       "points": 10.5,
       "projected": 14.14,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
@@ -9119,7 +9119,7 @@
       "opponent": "NE",
       "points": 6.9,
       "projected": 13.36,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
@@ -9246,7 +9246,7 @@
       "opponent": "DEN",
       "points": 9.2,
       "projected": 7.44,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
@@ -9268,7 +9268,7 @@
       "opponent": "MIA",
       "points": 8.0,
       "projected": 7.32,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      }
     ]
@@ -9296,7 +9296,7 @@
       "opponent": "DEN",
       "points": 2.8,
       "projected": 6.5,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
@@ -9362,7 +9362,7 @@
       "opponent": "MIA",
       "points": 3.8,
       "projected": 8.45,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
@@ -9423,7 +9423,7 @@
       "opponent": "None",
       "points": 22.46,
       "projected": 22.07,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793568300000
      },
      {
