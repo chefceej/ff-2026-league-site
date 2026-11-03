@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-03 04:10:18 UTC",
-  "last_updated": "2026-11-03T04:10:18.143014+00:00"
+  "updated_at": "2026-11-03 04:20:22 UTC",
+  "last_updated": "2026-11-03T04:20:22.781286+00:00"
  },
  "teams": [
   {
@@ -173,7 +173,7 @@
     88.24,
     128.08,
     126.22,
-    64.64
+    68.24
    ],
    "ranking_points_by_week": [
     4.0,
@@ -467,7 +467,7 @@
     103.76,
     90.76,
     82.82,
-    64.56
+    64.96
    ],
    "ranking_points_by_week": [
     3.0,
@@ -6734,7 +6734,7 @@
      "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "slot": "RB",
-     "score": 25.7
+     "score": 26.1
     },
     {
      "name": "Ja'Marr Chase",
@@ -6817,6 +6817,14 @@
      "score": 20.8
     },
     {
+     "name": "Jaxon Smith-Njigba",
+     "pro_team": "SEA",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 20.8
+    },
+    {
      "name": "Josh Jacobs",
      "pro_team": "GB",
      "fantasy_team": "Swishington Football Team",
@@ -6879,14 +6887,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 17.4
-    },
-    {
-     "name": "Jaxon Smith-Njigba",
-     "pro_team": "SEA",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 17.2
     },
     {
      "name": "James Cook III",
@@ -8338,7 +8338,7 @@
     "D/ST": 5.0
    },
    "BW": {
-    "WR": 27.4,
+    "WR": 31.0,
     "RB": 17.8,
     "TE": 8.0,
     "QB": -2.06,
@@ -8397,7 +8397,7 @@
     "D/ST": 2.0,
     "K": 3.0,
     "QB": 10.36,
-    "RB": 29.5,
+    "RB": 29.9,
     "TE": 7.8
    },
    "CJ": {
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-03T04:10:18+00:00",
+  "updated_at": "2026-11-03T04:20:22+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 99.52,
-    "projected": 100.36,
+    "projected": 99.88,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8644,8 +8644,8 @@
     ]
    },
    "BW": {
-    "score": 64.64,
-    "projected": 66.8,
+    "score": 68.24,
+    "projected": 69.16,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8653,7 +8653,7 @@
       "slot": "WR",
       "pro_team": "SEA",
       "opponent": "CHI",
-      "points": 17.2,
+      "points": 20.8,
       "projected": 18.22,
       "status": "live",
       "kickoff": 1793668500000
@@ -9065,7 +9065,7 @@
    },
    "TMOG": {
     "score": 109.68,
-    "projected": 110.89,
+    "projected": 110.2,
     "starters": [
      {
       "name": "James Cook III",
@@ -9274,8 +9274,8 @@
     ]
    },
    "RA": {
-    "score": 64.56,
-    "projected": 66.74,
+    "score": 64.96,
+    "projected": 65.89,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9338,7 +9338,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "SEA",
-      "points": 25.7,
+      "points": 26.1,
       "projected": 13.12,
       "status": "live",
       "kickoff": 1793668500000
@@ -11271,6 +11271,23 @@
      "TMOG": 109.68,
      "Naug": 132.48,
      "RA": 64.56,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-03T04:20:22+00:00",
+    "scores": {
+     "SACK": 113.08,
+     "WALT": 99.52,
+     "BW": 68.24,
+     "PORK": 99.18,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 109.68,
+     "Naug": 132.48,
+     "RA": 64.96,
      "CJ": 108.26,
      "SWSH": 118.56,
      "BEND": 100.28
