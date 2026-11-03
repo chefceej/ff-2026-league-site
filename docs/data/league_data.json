@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-03 02:10:18 UTC",
-  "last_updated": "2026-11-03T02:10:18.451889+00:00"
+  "updated_at": "2026-11-03 02:20:16 UTC",
+  "last_updated": "2026-11-03T02:20:16.207500+00:00"
  },
  "teams": [
   {
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    103.28
+    104.08
    ],
    "ranking_points_by_week": [
     11.0,
@@ -7153,6 +7153,14 @@
      "score": 8.6
     },
     {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 8.48
+    },
+    {
      "name": "Rams TQB",
      "pro_team": "LAR",
      "fantasy_team": "Bijan These Nuts",
@@ -7175,14 +7183,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 7.8
-    },
-    {
-     "name": "Bears TQB",
-     "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "slot": "QB",
-     "score": 7.68
     },
     {
      "name": "Bijan Robinson",
@@ -8378,7 +8378,7 @@
     "WR": 37.4,
     "TE": 5.2,
     "FLEX": 13.0,
-    "QB": 7.68,
+    "QB": 8.48,
     "K": 9.0,
     "D/ST": 7.0
    },
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-03T02:10:18+00:00",
+  "updated_at": "2026-11-03T02:20:16+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 98.72,
-    "projected": 105.72,
+    "projected": 104.98,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8645,7 +8645,7 @@
    },
    "BW": {
     "score": 49.24,
-    "projected": 67.15,
+    "projected": 65.27,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 103.28,
-    "projected": 113.31,
+    "score": 104.08,
+    "projected": 113.06,
     "starters": [
      {
       "name": "James Cook III",
@@ -9139,7 +9139,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 7.68,
+      "points": 8.48,
       "projected": 15.48,
       "status": "live",
       "kickoff": 1793668500000
@@ -9275,7 +9275,7 @@
    },
    "RA": {
     "score": 43.66,
-    "projected": 60.45,
+    "projected": 58.69,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11099,6 +11099,23 @@
      "SW": 60.2,
      "MBJG": 143.32,
      "TMOG": 103.28,
+     "Naug": 132.48,
+     "RA": 43.66,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-03T02:20:16+00:00",
+    "scores": {
+     "SACK": 113.08,
+     "WALT": 98.72,
+     "BW": 49.24,
+     "PORK": 99.18,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 104.08,
      "Naug": 132.48,
      "RA": 43.66,
      "CJ": 108.26,
