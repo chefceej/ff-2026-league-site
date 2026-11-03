@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-03 04:40:18 UTC",
-  "last_updated": "2026-11-03T04:40:18.398206+00:00"
+  "updated_at": "2026-11-03 04:50:16 UTC",
+  "last_updated": "2026-11-03T04:50:16.756576+00:00"
  },
  "teams": [
   {
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-03T04:40:18+00:00",
+  "updated_at": "2026-11-03T04:50:16+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
@@ -8583,7 +8583,7 @@
       "opponent": "SEA",
       "points": 15.1,
       "projected": 10.79,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793668500000
      },
      {
@@ -8655,7 +8655,7 @@
       "opponent": "CHI",
       "points": 20.8,
       "projected": 18.22,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793668500000
      },
      {
@@ -8677,7 +8677,7 @@
       "opponent": "SEA",
       "points": 8.0,
       "projected": 9.41,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793668500000
      },
      {
@@ -9141,7 +9141,7 @@
       "opponent": "None",
       "points": 13.98,
       "projected": 15.48,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793668500000
      },
      {
@@ -9307,7 +9307,7 @@
       "opponent": "CHI",
       "points": 2.0,
       "projected": 6.98,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793668500000
      },
      {
@@ -9318,7 +9318,7 @@
       "opponent": "CHI",
       "points": 3.0,
       "projected": 9.81,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793668500000
      },
      {
@@ -9340,7 +9340,7 @@
       "opponent": "SEA",
       "points": 26.9,
       "projected": 13.12,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793668500000
      },
      {
