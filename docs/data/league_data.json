@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-03 03:10:18 UTC",
-  "last_updated": "2026-11-03T03:10:18.670704+00:00"
+  "updated_at": "2026-11-03 03:20:16 UTC",
+  "last_updated": "2026-11-03T03:20:16.497498+00:00"
  },
  "teams": [
   {
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    108.52
+    108.88
    ],
    "ranking_points_by_week": [
     11.0,
@@ -467,7 +467,7 @@
     103.76,
     90.76,
     82.82,
-    45.86
+    49.76
    ],
    "ranking_points_by_week": [
     3.0,
@@ -6961,6 +6961,14 @@
      "score": 13.3
     },
     {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 13.28
+    },
+    {
      "name": "Commanders D/ST",
      "pro_team": "WSH",
      "fantasy_team": "Mahomesless Without Refs",
@@ -6993,14 +7001,6 @@
      "score": 13.0
     },
     {
-     "name": "Bears TQB",
-     "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "slot": "QB",
-     "score": 12.92
-    },
-    {
      "name": "Kyren Williams",
      "pro_team": "LAR",
      "fantasy_team": "Bijan These Nuts",
@@ -7020,6 +7020,14 @@
      "name": "Saquon Barkley",
      "pro_team": "PHI",
      "fantasy_team": "The Garbage Dump",
+     "position": "RB",
+     "slot": "RB",
+     "score": 11.9
+    },
+    {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "slot": "RB",
      "score": 11.9
@@ -7297,14 +7305,6 @@
      "score": 5.0
     },
     {
-     "name": "D'Andre Swift",
-     "pro_team": "CHI",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 5.0
-    },
-    {
      "name": "Sam LaPorta",
      "pro_team": "DET",
      "fantasy_team": "Kaiser Soze",
@@ -7350,14 +7350,6 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "K",
      "slot": "K",
-     "score": 4.0
-    },
-    {
-     "name": "Seahawks D/ST",
-     "pro_team": "SEA",
-     "fantasy_team": "The Sun Gods ",
-     "position": "D/ST",
-     "slot": "D/ST",
      "score": 4.0
     },
     {
@@ -7486,6 +7478,14 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "K",
      "slot": "K",
+     "score": 1.0
+    },
+    {
+     "name": "Seahawks D/ST",
+     "pro_team": "SEA",
+     "fantasy_team": "The Sun Gods ",
+     "position": "D/ST",
+     "slot": "D/ST",
      "score": 1.0
     },
     {
@@ -8378,7 +8378,7 @@
     "WR": 37.4,
     "TE": 5.2,
     "FLEX": 13.0,
-    "QB": 12.92,
+    "QB": 13.28,
     "K": 9.0,
     "D/ST": 7.0
    },
@@ -8394,10 +8394,10 @@
    "RA": {
     "WR": 9.1,
     "FLEX": 2.8,
-    "D/ST": 4.0,
+    "D/ST": 1.0,
     "K": 3.0,
     "QB": 10.36,
-    "RB": 8.8,
+    "RB": 15.7,
     "TE": 7.8
    },
    "CJ": {
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-03T03:10:18+00:00",
+  "updated_at": "2026-11-03T03:20:16+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 99.52,
-    "projected": 103.98,
+    "projected": 102.97,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8645,7 +8645,7 @@
    },
    "BW": {
     "score": 63.64,
-    "projected": 75.05,
+    "projected": 72.48,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 108.52,
-    "projected": 114.91,
+    "score": 108.88,
+    "projected": 113.83,
     "starters": [
      {
       "name": "James Cook III",
@@ -9139,7 +9139,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 12.92,
+      "points": 13.28,
       "projected": 15.48,
       "status": "live",
       "kickoff": 1793668500000
@@ -9274,8 +9274,8 @@
     ]
    },
    "RA": {
-    "score": 45.86,
-    "projected": 56.56,
+    "score": 49.76,
+    "projected": 59.01,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9305,7 +9305,7 @@
       "slot": "D/ST",
       "pro_team": "SEA",
       "opponent": "CHI",
-      "points": 4.0,
+      "points": 1.0,
       "projected": 6.98,
       "status": "live",
       "kickoff": 1793668500000
@@ -9338,7 +9338,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "SEA",
-      "points": 5.0,
+      "points": 11.9,
       "projected": 13.12,
       "status": "live",
       "kickoff": 1793668500000
@@ -11186,6 +11186,23 @@
      "TMOG": 108.52,
      "Naug": 132.48,
      "RA": 45.86,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-03T03:20:16+00:00",
+    "scores": {
+     "SACK": 113.08,
+     "WALT": 99.52,
+     "BW": 63.64,
+     "PORK": 99.18,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 108.88,
+     "Naug": 132.48,
+     "RA": 49.76,
      "CJ": 108.26,
      "SWSH": 118.56,
      "BEND": 100.28
