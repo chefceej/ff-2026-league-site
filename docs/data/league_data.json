@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-03 01:40:15 UTC",
-  "last_updated": "2026-11-03T01:40:15.888155+00:00"
+  "updated_at": "2026-11-03 01:50:18 UTC",
+  "last_updated": "2026-11-03T01:50:18.963465+00:00"
  },
  "teams": [
   {
@@ -173,7 +173,7 @@
     88.24,
     128.08,
     126.22,
-    43.64
+    48.34
    ],
    "ranking_points_by_week": [
     4.0,
@@ -467,7 +467,7 @@
     103.76,
     90.76,
     82.82,
-    39.86
+    40.66
    ],
    "ranking_points_by_week": [
     3.0,
@@ -7297,6 +7297,14 @@
      "score": 5.0
     },
     {
+     "name": "Jaxon Smith-Njigba",
+     "pro_team": "SEA",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 4.7
+    },
+    {
      "name": "Jonathan Taylor",
      "pro_team": "IND",
      "fantasy_team": "The Lizard Kings",
@@ -7401,6 +7409,14 @@
      "score": 2.8
     },
     {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 2.8
+    },
+    {
      "name": "Jeremiyah Love",
      "pro_team": "ARI",
      "fantasy_team": "Remeber Bendel",
@@ -7430,14 +7446,6 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "RB",
      "slot": "FLEX",
-     "score": 2.0
-    },
-    {
-     "name": "D'Andre Swift",
-     "pro_team": "CHI",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
      "score": 2.0
     },
     {
@@ -7487,14 +7495,6 @@
      "position": "WR",
      "slot": "FLEX",
      "score": 0.5
-    },
-    {
-     "name": "Jaxon Smith-Njigba",
-     "pro_team": "SEA",
-     "fantasy_team": "JSN Derulo ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.0
     },
     {
      "name": "Zay Flowers",
@@ -8338,7 +8338,7 @@
     "D/ST": 5.0
    },
    "BW": {
-    "WR": 10.2,
+    "WR": 14.9,
     "RB": 17.8,
     "TE": 4.2,
     "QB": -2.06,
@@ -8397,7 +8397,7 @@
     "D/ST": 4.0,
     "K": 0.0,
     "QB": 10.36,
-    "RB": 5.8,
+    "RB": 6.6,
     "TE": 7.8
    },
    "CJ": {
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-03T01:40:15+00:00",
+  "updated_at": "2026-11-03T01:50:18+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 94.72,
-    "projected": 103.41,
+    "projected": 102.82,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8644,8 +8644,8 @@
     ]
    },
    "BW": {
-    "score": 43.64,
-    "projected": 65.88,
+    "score": 48.34,
+    "projected": 69.06,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8653,7 +8653,7 @@
       "slot": "WR",
       "pro_team": "SEA",
       "opponent": "CHI",
-      "points": 0.0,
+      "points": 4.7,
       "projected": 18.22,
       "status": "live",
       "kickoff": 1793668500000
@@ -9065,7 +9065,7 @@
    },
    "TMOG": {
     "score": 101.92,
-    "projected": 114.38,
+    "projected": 113.53,
     "starters": [
      {
       "name": "James Cook III",
@@ -9274,8 +9274,8 @@
     ]
    },
    "RA": {
-    "score": 39.86,
-    "projected": 60.71,
+    "score": 40.66,
+    "projected": 60.09,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9338,7 +9338,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "SEA",
-      "points": 2.0,
+      "points": 2.8,
       "projected": 13.12,
       "status": "live",
       "kickoff": 1793668500000
@@ -11050,6 +11050,23 @@
      "TMOG": 101.92,
      "Naug": 132.48,
      "RA": 39.86,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-03T01:50:18+00:00",
+    "scores": {
+     "SACK": 113.08,
+     "WALT": 94.72,
+     "BW": 48.34,
+     "PORK": 99.18,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 101.92,
+     "Naug": 132.48,
+     "RA": 40.66,
      "CJ": 108.26,
      "SWSH": 118.56,
      "BEND": 100.28
