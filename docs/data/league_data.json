@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-03 01:20:25 UTC",
-  "last_updated": "2026-11-03T01:20:25.045907+00:00"
+  "updated_at": "2026-11-03 01:30:19 UTC",
+  "last_updated": "2026-11-03T01:30:19.800187+00:00"
  },
  "teams": [
   {
@@ -124,7 +124,7 @@
     142.54,
     122.24,
     119.08,
-    84.42
+    88.12
    ],
    "ranking_points_by_week": [
     12.0,
@@ -222,7 +222,7 @@
     88.24,
     128.08,
     126.22,
-    39.44
+    43.64
    ],
    "ranking_points_by_week": [
     4.0,
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    95.6
+    97.88
    ],
    "ranking_points_by_week": [
     11.0,
@@ -467,7 +467,7 @@
     103.76,
     90.76,
     82.82,
-    43.86
+    45.86
    ],
    "ranking_points_by_week": [
     3.0,
@@ -7305,6 +7305,14 @@
      "score": 4.5
     },
     {
+     "name": "Colston Loveland",
+     "pro_team": "CHI",
+     "fantasy_team": "JSN Derulo ",
+     "position": "TE",
+     "slot": "TE",
+     "score": 4.2
+    },
+    {
      "name": "Eagles D/ST",
      "pro_team": "PHI",
      "fantasy_team": "Bijan These Nuts",
@@ -7335,6 +7343,14 @@
      "position": "RB",
      "slot": "RB",
      "score": 3.8
+    },
+    {
+     "name": "Luther Burden III",
+     "pro_team": "CHI",
+     "fantasy_team": "Walt's Warriors",
+     "position": "WR",
+     "slot": "WR",
+     "score": 3.7
     },
     {
      "name": "Omarion Hampton",
@@ -7385,6 +7401,14 @@
      "score": 2.3
     },
     {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 2.28
+    },
+    {
      "name": "Chig Okonkwo",
      "pro_team": "WSH",
      "fantasy_team": "Walt's Warriors",
@@ -7406,6 +7430,14 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "RB",
      "slot": "FLEX",
+     "score": 2.0
+    },
+    {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "slot": "RB",
      "score": 2.0
     },
     {
@@ -7457,27 +7489,11 @@
      "score": 0.5
     },
     {
-     "name": "Luther Burden III",
-     "pro_team": "CHI",
-     "fantasy_team": "Walt's Warriors",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Jaxon Smith-Njigba",
      "pro_team": "SEA",
      "fantasy_team": "JSN Derulo ",
      "position": "WR",
      "slot": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Colston Loveland",
-     "pro_team": "CHI",
-     "fantasy_team": "JSN Derulo ",
-     "position": "TE",
-     "slot": "TE",
      "score": 0.0
     },
     {
@@ -7489,27 +7505,11 @@
      "score": 0.0
     },
     {
-     "name": "Bears TQB",
-     "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "slot": "QB",
-     "score": 0.0
-    },
-    {
      "name": "Jason Myers",
      "pro_team": "SEA",
      "fantasy_team": "The Sun Gods ",
      "position": "K",
      "slot": "K",
-     "score": 0.0
-    },
-    {
-     "name": "D'Andre Swift",
-     "pro_team": "CHI",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
      "score": 0.0
     },
     {
@@ -8329,7 +8329,7 @@
     "K": 4.0
    },
    "WALT": {
-    "WR": 19.5,
+    "WR": 23.2,
     "RB": 31.1,
     "FLEX": 5.9,
     "QB": 19.72,
@@ -8340,7 +8340,7 @@
    "BW": {
     "WR": 10.2,
     "RB": 17.8,
-    "TE": 0.0,
+    "TE": 4.2,
     "QB": -2.06,
     "D/ST": 2.0,
     "FLEX": 4.5,
@@ -8378,7 +8378,7 @@
     "WR": 37.4,
     "TE": 5.2,
     "FLEX": 13.0,
-    "QB": 0.0,
+    "QB": 2.28,
     "K": 9.0,
     "D/ST": 7.0
    },
@@ -8397,7 +8397,7 @@
     "D/ST": 10.0,
     "K": 0.0,
     "QB": 10.36,
-    "RB": 3.8,
+    "RB": 5.8,
     "TE": 7.8
    },
    "CJ": {
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-03T01:20:25+00:00",
+  "updated_at": "2026-11-03T01:30:19+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
@@ -8539,8 +8539,8 @@
     ]
    },
    "WALT": {
-    "score": 84.42,
-    "projected": 95.03,
+    "score": 88.12,
+    "projected": 97.25,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8581,7 +8581,7 @@
       "slot": "WR",
       "pro_team": "CHI",
       "opponent": "SEA",
-      "points": 0.0,
+      "points": 3.7,
       "projected": 10.79,
       "status": "live",
       "kickoff": 1793668500000
@@ -8644,8 +8644,8 @@
     ]
    },
    "BW": {
-    "score": 39.44,
-    "projected": 66.59,
+    "score": 43.64,
+    "projected": 67.02,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8675,7 +8675,7 @@
       "slot": "TE",
       "pro_team": "CHI",
       "opponent": "SEA",
-      "points": 0.0,
+      "points": 4.2,
       "projected": 9.41,
       "status": "live",
       "kickoff": 1793668500000
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 95.6,
-    "projected": 110.81,
+    "score": 97.88,
+    "projected": 110.98,
     "starters": [
      {
       "name": "James Cook III",
@@ -9139,7 +9139,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 0.0,
+      "points": 2.28,
       "projected": 15.48,
       "status": "live",
       "kickoff": 1793668500000
@@ -9274,8 +9274,8 @@
     ]
    },
    "RA": {
-    "score": 43.86,
-    "projected": 63.42,
+    "score": 45.86,
+    "projected": 62.71,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9338,7 +9338,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "SEA",
-      "points": 0.0,
+      "points": 2.0,
       "projected": 13.12,
       "status": "live",
       "kickoff": 1793668500000
@@ -11016,6 +11016,23 @@
      "TMOG": 95.6,
      "Naug": 132.48,
      "RA": 43.86,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-03T01:30:19+00:00",
+    "scores": {
+     "SACK": 113.08,
+     "WALT": 88.12,
+     "BW": 43.64,
+     "PORK": 99.18,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 97.88,
+     "Naug": 132.48,
+     "RA": 45.86,
      "CJ": 108.26,
      "SWSH": 118.56,
      "BEND": 100.28
