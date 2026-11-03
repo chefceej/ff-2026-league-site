@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-03 01:50:18 UTC",
-  "last_updated": "2026-11-03T01:50:18.963465+00:00"
+  "updated_at": "2026-11-03 02:00:20 UTC",
+  "last_updated": "2026-11-03T02:00:20.202788+00:00"
  },
  "teams": [
   {
@@ -173,7 +173,7 @@
     88.24,
     128.08,
     126.22,
-    48.34
+    49.24
    ],
    "ranking_points_by_week": [
     4.0,
@@ -418,7 +418,7 @@
     125.36,
     113.5,
     102.92,
-    101.92
+    102.08
    ],
    "ranking_points_by_week": [
     11.0,
@@ -467,7 +467,7 @@
     103.76,
     90.76,
     82.82,
-    40.66
+    43.66
    ],
    "ranking_points_by_week": [
     3.0,
@@ -7230,7 +7230,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "QB",
      "slot": "QB",
-     "score": 6.32
+     "score": 6.48
     },
     {
      "name": "Javonte Williams",
@@ -7271,6 +7271,14 @@
      "position": "TE",
      "slot": "TE",
      "score": 5.2
+    },
+    {
+     "name": "Colston Loveland",
+     "pro_team": "CHI",
+     "fantasy_team": "JSN Derulo ",
+     "position": "TE",
+     "slot": "TE",
+     "score": 5.1
     },
     {
      "name": "Bengals D/ST",
@@ -7319,14 +7327,6 @@
      "position": "TE",
      "slot": "FLEX",
      "score": 4.5
-    },
-    {
-     "name": "Colston Loveland",
-     "pro_team": "CHI",
-     "fantasy_team": "JSN Derulo ",
-     "position": "TE",
-     "slot": "TE",
-     "score": 4.2
     },
     {
      "name": "Eagles D/ST",
@@ -7390,6 +7390,14 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "D/ST",
      "slot": "D/ST",
+     "score": 3.0
+    },
+    {
+     "name": "Jason Myers",
+     "pro_team": "SEA",
+     "fantasy_team": "The Sun Gods ",
+     "position": "K",
+     "slot": "K",
      "score": 3.0
     },
     {
@@ -7502,14 +7510,6 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "WR",
      "slot": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Jason Myers",
-     "pro_team": "SEA",
-     "fantasy_team": "The Sun Gods ",
-     "position": "K",
-     "slot": "K",
      "score": 0.0
     },
     {
@@ -8340,7 +8340,7 @@
    "BW": {
     "WR": 14.9,
     "RB": 17.8,
-    "TE": 4.2,
+    "TE": 5.1,
     "QB": -2.06,
     "D/ST": 2.0,
     "FLEX": 4.5,
@@ -8378,7 +8378,7 @@
     "WR": 37.4,
     "TE": 5.2,
     "FLEX": 13.0,
-    "QB": 6.32,
+    "QB": 6.48,
     "K": 9.0,
     "D/ST": 7.0
    },
@@ -8395,7 +8395,7 @@
     "WR": 9.1,
     "FLEX": 2.8,
     "D/ST": 4.0,
-    "K": 0.0,
+    "K": 3.0,
     "QB": 10.36,
     "RB": 6.6,
     "TE": 7.8
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-03T01:50:18+00:00",
+  "updated_at": "2026-11-03T02:00:20+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 94.72,
-    "projected": 102.82,
+    "projected": 102.28,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8644,8 +8644,8 @@
     ]
    },
    "BW": {
-    "score": 48.34,
-    "projected": 69.06,
+    "score": 49.24,
+    "projected": 68.6,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -8675,7 +8675,7 @@
       "slot": "TE",
       "pro_team": "CHI",
       "opponent": "SEA",
-      "points": 4.2,
+      "points": 5.1,
       "projected": 9.41,
       "status": "live",
       "kickoff": 1793668500000
@@ -9064,8 +9064,8 @@
     ]
    },
    "TMOG": {
-    "score": 101.92,
-    "projected": 113.53,
+    "score": 102.08,
+    "projected": 112.92,
     "starters": [
      {
       "name": "James Cook III",
@@ -9139,7 +9139,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 6.32,
+      "points": 6.48,
       "projected": 15.48,
       "status": "live",
       "kickoff": 1793668500000
@@ -9274,8 +9274,8 @@
     ]
    },
    "RA": {
-    "score": 40.66,
-    "projected": 60.09,
+    "score": 43.66,
+    "projected": 61.81,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9316,7 +9316,7 @@
       "slot": "K",
       "pro_team": "SEA",
       "opponent": "CHI",
-      "points": 0.0,
+      "points": 3.0,
       "projected": 9.81,
       "status": "live",
       "kickoff": 1793668500000
@@ -11067,6 +11067,23 @@
      "TMOG": 101.92,
      "Naug": 132.48,
      "RA": 40.66,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-03T02:00:20+00:00",
+    "scores": {
+     "SACK": 113.08,
+     "WALT": 94.72,
+     "BW": 49.24,
+     "PORK": 99.18,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 102.08,
+     "Naug": 132.48,
+     "RA": 43.66,
      "CJ": 108.26,
      "SWSH": 118.56,
      "BEND": 100.28
