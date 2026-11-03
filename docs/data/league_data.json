@@ -8,8 +8,8 @@
   "current_matchup_week": 8,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-03 04:00:20 UTC",
-  "last_updated": "2026-11-03T04:00:20.439847+00:00"
+  "updated_at": "2026-11-03 04:10:18 UTC",
+  "last_updated": "2026-11-03T04:10:18.143014+00:00"
  },
  "teams": [
   {
@@ -258,55 +258,6 @@
    "total_ranking_points": 57.0
   },
   {
-   "team_id": 1,
-   "team_name": "Sophi* C0mminhand B*th Wa1er",
-   "team_abbrev": "SW",
-   "abbrev": "SW",
-   "owner": "Ben Fagin",
-   "scores_by_week": [
-    125.4,
-    132.56,
-    92.24,
-    131.3,
-    75.94,
-    66.52,
-    125.78,
-    60.2
-   ],
-   "ranking_points_by_week": [
-    9.0,
-    11.0,
-    4.0,
-    12.0,
-    1.0,
-    1.0,
-    11.0,
-    2.0
-   ],
-   "cumulative_points_by_week": [
-    9.0,
-    20.0,
-    24.0,
-    36.0,
-    37.0,
-    38.0,
-    49.0,
-    51.0
-   ],
-   "normalized_by_week": [
-    2.0,
-    8.0,
-    5.0,
-    9.0,
-    3.0,
-    -2.0,
-    2.0,
-    0.0
-   ],
-   "rank": 6,
-   "total_ranking_points": 51.0
-  },
-  {
    "team_id": 8,
    "team_name": "Mahomesless Without Refs",
    "team_abbrev": "PORK",
@@ -352,8 +303,57 @@
     0.0,
     0.0
    ],
-   "rank": 7,
+   "rank": 6,
    "total_ranking_points": 51.0
+  },
+  {
+   "team_id": 1,
+   "team_name": "Sophi* C0mminhand B*th Wa1er",
+   "team_abbrev": "SW",
+   "abbrev": "SW",
+   "owner": "Ben Fagin",
+   "scores_by_week": [
+    125.4,
+    132.56,
+    92.24,
+    131.3,
+    75.94,
+    66.52,
+    125.78,
+    60.2
+   ],
+   "ranking_points_by_week": [
+    9.0,
+    11.0,
+    4.0,
+    12.0,
+    1.0,
+    1.0,
+    11.0,
+    1.0
+   ],
+   "cumulative_points_by_week": [
+    9.0,
+    20.0,
+    24.0,
+    36.0,
+    37.0,
+    38.0,
+    49.0,
+    50.0
+   ],
+   "normalized_by_week": [
+    2.0,
+    8.0,
+    5.0,
+    9.0,
+    3.0,
+    -2.0,
+    2.0,
+    -1.0
+   ],
+   "rank": 7,
+   "total_ranking_points": 50.0
   },
   {
    "team_id": 2,
@@ -467,7 +467,7 @@
     103.76,
     90.76,
     82.82,
-    58.76
+    64.56
    ],
    "ranking_points_by_week": [
     3.0,
@@ -477,7 +477,7 @@
     5.0,
     5.0,
     3.0,
-    1.0
+    2.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -487,7 +487,7 @@
     36.0,
     41.0,
     44.0,
-    45.0
+    46.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -497,10 +497,10 @@
     2.0,
     1.0,
     -3.0,
-    -6.0
+    -5.0
    ],
    "rank": 10,
-   "total_ranking_points": 45.0
+   "total_ranking_points": 46.0
   },
   {
    "team_id": 12,
@@ -6729,6 +6729,14 @@
      "score": 26.36
     },
     {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 25.7
+    },
+    {
      "name": "Ja'Marr Chase",
      "pro_team": "CIN",
      "fantasy_team": "Bijan These Nuts",
@@ -6847,14 +6855,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 19.5
-    },
-    {
-     "name": "D'Andre Swift",
-     "pro_team": "CHI",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 18.9
     },
     {
      "name": "Harold Fannin Jr.",
@@ -7393,14 +7393,6 @@
      "score": 3.0
     },
     {
-     "name": "Seahawks D/ST",
-     "pro_team": "SEA",
-     "fantasy_team": "The Sun Gods ",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 3.0
-    },
-    {
      "name": "Jason Myers",
      "pro_team": "SEA",
      "fantasy_team": "The Sun Gods ",
@@ -7454,6 +7446,14 @@
      "fantasy_team": "Sophi* C0mminhand B*th Wa1er",
      "position": "RB",
      "slot": "FLEX",
+     "score": 2.0
+    },
+    {
+     "name": "Seahawks D/ST",
+     "pro_team": "SEA",
+     "fantasy_team": "The Sun Gods ",
+     "position": "D/ST",
+     "slot": "D/ST",
      "score": 2.0
     },
     {
@@ -8394,10 +8394,10 @@
    "RA": {
     "WR": 9.1,
     "FLEX": 2.8,
-    "D/ST": 3.0,
+    "D/ST": 2.0,
     "K": 3.0,
     "QB": 10.36,
-    "RB": 22.7,
+    "RB": 29.5,
     "TE": 7.8
    },
    "CJ": {
@@ -8431,7 +8431,7 @@
  ],
  "live": {
   "week": 8,
-  "updated_at": "2026-11-03T04:00:20+00:00",
+  "updated_at": "2026-11-03T04:10:18+00:00",
   "teams": {
    "SACK": {
     "score": 113.08,
@@ -8540,7 +8540,7 @@
    },
    "WALT": {
     "score": 99.52,
-    "projected": 100.7,
+    "projected": 100.36,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -8645,7 +8645,7 @@
    },
    "BW": {
     "score": 64.64,
-    "projected": 67.66,
+    "projected": 66.8,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -9065,7 +9065,7 @@
    },
    "TMOG": {
     "score": 109.68,
-    "projected": 111.37,
+    "projected": 110.89,
     "starters": [
      {
       "name": "James Cook III",
@@ -9274,8 +9274,8 @@
     ]
    },
    "RA": {
-    "score": 58.76,
-    "projected": 61.7,
+    "score": 64.56,
+    "projected": 66.74,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -9305,7 +9305,7 @@
       "slot": "D/ST",
       "pro_team": "SEA",
       "opponent": "CHI",
-      "points": 3.0,
+      "points": 2.0,
       "projected": 6.98,
       "status": "live",
       "kickoff": 1793668500000
@@ -9338,7 +9338,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "SEA",
-      "points": 18.9,
+      "points": 25.7,
       "projected": 13.12,
       "status": "live",
       "kickoff": 1793668500000
@@ -11254,6 +11254,23 @@
      "TMOG": 109.68,
      "Naug": 132.48,
      "RA": 58.76,
+     "CJ": 108.26,
+     "SWSH": 118.56,
+     "BEND": 100.28
+    }
+   },
+   {
+    "t": "2026-11-03T04:10:18+00:00",
+    "scores": {
+     "SACK": 113.08,
+     "WALT": 99.52,
+     "BW": 64.64,
+     "PORK": 99.18,
+     "SW": 60.2,
+     "MBJG": 143.32,
+     "TMOG": 109.68,
+     "Naug": 132.48,
+     "RA": 64.56,
      "CJ": 108.26,
      "SWSH": 118.56,
      "BEND": 100.28
