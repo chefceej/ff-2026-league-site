@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "final",
- "fetched_at": "2026-11-03T14:53:13.022963Z",
+ "fetched_at": "2026-11-04T15:13:26.971248Z",
  "matchups": [
   {
    "home": {
@@ -184,7 +184,7 @@
       "pro_team": "BAL",
       "position": "K",
       "slot": "K",
-      "injury": "Q",
+      "injury": "IR",
       "opponent": "BUF",
       "kickoff": "2026-11-01T18:00:00Z",
       "on_bye": false,
@@ -3222,7 +3222,7 @@
       "pro_team": "ARI",
       "position": "RB",
       "slot": "RB",
-      "injury": "Q",
+      "injury": "IR",
       "opponent": "DAL",
       "kickoff": "2026-11-01T18:00:00Z",
       "on_bye": false,
