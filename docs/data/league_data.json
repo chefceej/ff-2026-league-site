@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-06 02:40:23 UTC",
-  "last_updated": "2026-11-06T02:40:23.750203+00:00"
+  "updated_at": "2026-11-06 02:50:22 UTC",
+  "last_updated": "2026-11-06T02:50:22.396570+00:00"
  },
  "teams": [
   {
@@ -345,7 +345,7 @@
     66.52,
     125.78,
     60.2,
-    7.78
+    7.88
    ],
    "ranking_points_by_week": [
     9.0,
@@ -7629,20 +7629,20 @@
      "score": 7.0
     },
     {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 5.08
+    },
+    {
      "name": "Cam Little",
      "pro_team": "JAX",
      "fantasy_team": "The Lizard Kings",
      "position": "K",
      "slot": "K",
      "score": 5.0
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 4.98
     },
     {
      "name": "Zay Flowers",
@@ -9374,7 +9374,7 @@
    },
    "SW": {
     "WR": 2.8,
-    "RB": 4.98,
+    "RB": 5.08,
     "TE": 0.0,
     "QB": 0.0,
     "FLEX": 0.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-06T02:40:23+00:00",
+  "updated_at": "2026-11-06T02:50:22+00:00",
   "teams": {
    "BW": {
     "score": 0.0,
@@ -9671,7 +9671,7 @@
    },
    "WALT": {
     "score": 11.78,
-    "projected": 117.11,
+    "projected": 116.73,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9775,8 +9775,8 @@
     ]
    },
    "SW": {
-    "score": 7.78,
-    "projected": 106.48,
+    "score": 7.88,
+    "projected": 106.14,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9795,7 +9795,7 @@
       "slot": "RB",
       "pro_team": "BAL",
       "opponent": "JAX",
-      "points": 4.98,
+      "points": 5.08,
       "projected": 13.31,
       "status": "live",
       "kickoff": 1793927700000
@@ -10091,7 +10091,7 @@
    },
    "MBJG": {
     "score": 13.2,
-    "projected": 115.26,
+    "projected": 114.84,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10511,7 +10511,7 @@
    },
    "CJ": {
     "score": 20.1,
-    "projected": 119.91,
+    "projected": 119.66,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10864,6 +10864,23 @@
      "SACK": 0.0,
      "WALT": 11.78,
      "SW": 7.78,
+     "BING": 0.0,
+     "TMOG": 0.0,
+     "MBJG": 13.2,
+     "RA": 0.0,
+     "Naug": 0.0,
+     "SWSH": 0.0,
+     "CJ": 20.1,
+     "BEND": 0.0
+    }
+   },
+   {
+    "t": "2026-11-06T02:50:22+00:00",
+    "scores": {
+     "BW": 0.0,
+     "SACK": 0.0,
+     "WALT": 11.78,
+     "SW": 7.88,
      "BING": 0.0,
      "TMOG": 0.0,
      "MBJG": 13.2,
