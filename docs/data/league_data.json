@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-06 04:40:17 UTC",
-  "last_updated": "2026-11-06T04:40:17.844423+00:00"
+  "updated_at": "2026-11-06 04:50:18 UTC",
+  "last_updated": "2026-11-06T04:50:18.918764+00:00"
  },
  "teams": [
   {
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-06T04:40:17+00:00",
+  "updated_at": "2026-11-06T04:50:18+00:00",
   "teams": {
    "BW": {
     "score": 0.0,
@@ -9736,7 +9736,7 @@
       "opponent": "None",
       "points": 13.58,
       "projected": 20.34,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793927700000
      },
      {
@@ -9797,7 +9797,7 @@
       "opponent": "JAX",
       "points": 5.58,
       "projected": 13.31,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793927700000
      },
      {
@@ -9808,7 +9808,7 @@
       "opponent": "JAX",
       "points": 3.8,
       "projected": 10.44,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793927700000
      },
      {
@@ -10134,7 +10134,7 @@
       "opponent": "BAL",
       "points": 8.9,
       "projected": 14.21,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793927700000
      },
      {
@@ -10156,7 +10156,7 @@
       "opponent": "BAL",
       "points": 17.0,
       "projected": 8.42,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793927700000
      },
      {
@@ -10565,7 +10565,7 @@
       "opponent": "BAL",
       "points": 13.1,
       "projected": 11.06,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793927700000
      },
      {
@@ -10609,7 +10609,7 @@
       "opponent": "BAL",
       "points": 11.0,
       "projected": 9.31,
-      "status": "live",
+      "status": "final",
       "kickoff": 1793927700000
      }
     ]
