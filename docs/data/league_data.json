@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-06 05:50:17 UTC",
-  "last_updated": "2026-11-06T05:50:17.455380+00:00"
+  "updated_at": "2026-11-06 14:10:19 UTC",
+  "last_updated": "2026-11-06T14:10:19.210811+00:00"
  },
  "teams": [
   {
@@ -8085,14 +8085,6 @@
      "score": 0.0
     },
     {
-     "name": "Jalen Coker",
-     "pro_team": "CAR",
-     "fantasy_team": "The Lizard Kings",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Vikings D/ST",
      "pro_team": "MIN",
      "fantasy_team": "The Lizard Kings",
@@ -8105,7 +8097,7 @@
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
      "position": "WR",
-     "slot": "FLEX",
+     "slot": "WR",
      "score": 0.0
     },
     {
@@ -8114,6 +8106,14 @@
      "fantasy_team": "The Lizard Kings",
      "position": "QB",
      "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Jonah Coleman",
+     "pro_team": "DEN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "slot": "FLEX",
      "score": 0.0
     },
     {
@@ -9405,8 +9405,8 @@
     "WR": 0.0,
     "K": 17.0,
     "D/ST": 0.0,
-    "FLEX": 0.0,
-    "QB": 0.0
+    "QB": 0.0,
+    "FLEX": 0.0
    },
    "RA": {
     "WR": 0.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-06T05:50:17+00:00",
+  "updated_at": "2026-11-06T14:10:19+00:00",
   "teams": {
    "BW": {
     "score": 0.0,
@@ -10091,7 +10091,7 @@
    },
    "MBJG": {
     "score": 25.9,
-    "projected": 116.65,
+    "projected": 119.85,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10138,17 +10138,6 @@
       "kickoff": 1793927700000
      },
      {
-      "name": "Jalen Coker",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "CAR",
-      "opponent": "DEN",
-      "points": 0.0,
-      "projected": 9.87,
-      "status": "pre",
-      "kickoff": 1794160800000
-     },
-     {
       "name": "Cam Little",
       "position": "K",
       "slot": "K",
@@ -10173,7 +10162,7 @@
      {
       "name": "Matthew Golden",
       "position": "WR",
-      "slot": "FLEX",
+      "slot": "WR",
       "pro_team": "GB",
       "opponent": "NE",
       "points": 0.0,
@@ -10191,6 +10180,17 @@
       "projected": 17.02,
       "status": "pre",
       "kickoff": 1794173100000
+     },
+     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "DEN",
+      "opponent": "CAR",
+      "points": 0.0,
+      "projected": 13.06,
+      "status": "pre",
+      "kickoff": 1794160800000
      }
     ]
    },
