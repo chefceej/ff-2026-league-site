@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-06 03:00:22 UTC",
-  "last_updated": "2026-11-06T03:00:22.804490+00:00"
+  "updated_at": "2026-11-06 03:10:25 UTC",
+  "last_updated": "2026-11-06T03:10:25.104042+00:00"
  },
  "teams": [
   {
@@ -27,7 +27,7 @@
     121.14,
     118.16,
     143.32,
-    17.1
+    17.4
    ],
    "ranking_points_by_week": [
     5.0,
@@ -80,7 +80,7 @@
     122.24,
     119.08,
     99.52,
-    11.78
+    12.06
    ],
    "ranking_points_by_week": [
     12.0,
@@ -345,7 +345,7 @@
     66.52,
     125.78,
     60.2,
-    7.88
+    8.78
    ],
    "ranking_points_by_week": [
     9.0,
@@ -7610,7 +7610,7 @@
      "fantasy_team": "Walt's Warriors",
      "position": "QB",
      "slot": "QB",
-     "score": 11.78
+     "score": 12.06
     },
     {
      "name": "Cam Little",
@@ -7634,7 +7634,7 @@
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "slot": "RB",
-     "score": 8.1
+     "score": 8.4
     },
     {
      "name": "Derrick Henry",
@@ -7650,7 +7650,7 @@
      "fantasy_team": "3 Inches of Disappointment ",
      "position": "WR",
      "slot": "WR",
-     "score": 2.8
+     "score": 3.7
     },
     {
      "name": "Jaxon Smith-Njigba",
@@ -9367,13 +9367,13 @@
     "WR": 0.0,
     "RB": 0.0,
     "FLEX": 0.0,
-    "QB": 11.78,
+    "QB": 12.06,
     "TE": 0.0,
     "K": 0.0,
     "D/ST": 0.0
    },
    "SW": {
-    "WR": 2.8,
+    "WR": 3.7,
     "RB": 5.08,
     "TE": 0.0,
     "QB": 0.0,
@@ -9400,7 +9400,7 @@
     "K": 0.0
    },
    "MBJG": {
-    "RB": 8.1,
+    "RB": 8.4,
     "TE": 0.0,
     "WR": 0.0,
     "K": 9.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-06T03:00:22+00:00",
+  "updated_at": "2026-11-06T03:10:25+00:00",
   "teams": {
    "BW": {
     "score": 0.0,
@@ -9670,8 +9670,8 @@
     ]
    },
    "WALT": {
-    "score": 11.78,
-    "projected": 115.98,
+    "score": 12.06,
+    "projected": 114.85,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9734,7 +9734,7 @@
       "slot": "QB",
       "pro_team": "JAX",
       "opponent": "None",
-      "points": 11.78,
+      "points": 12.06,
       "projected": 20.34,
       "status": "live",
       "kickoff": 1793927700000
@@ -9775,8 +9775,8 @@
     ]
    },
    "SW": {
-    "score": 7.88,
-    "projected": 105.26,
+    "score": 8.78,
+    "projected": 104.51,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9806,7 +9806,7 @@
       "slot": "WR",
       "pro_team": "BAL",
       "opponent": "JAX",
-      "points": 2.8,
+      "points": 3.7,
       "projected": 10.44,
       "status": "live",
       "kickoff": 1793927700000
@@ -10090,8 +10090,8 @@
     ]
    },
    "MBJG": {
-    "score": 17.1,
-    "projected": 117.9,
+    "score": 17.4,
+    "projected": 116.64,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10132,7 +10132,7 @@
       "slot": "RB",
       "pro_team": "JAX",
       "opponent": "BAL",
-      "points": 8.1,
+      "points": 8.4,
       "projected": 14.21,
       "status": "live",
       "kickoff": 1793927700000
@@ -10511,7 +10511,7 @@
    },
    "CJ": {
     "score": 22.1,
-    "projected": 120.27,
+    "projected": 119.49,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10901,6 +10901,23 @@
      "BING": 0.0,
      "TMOG": 0.0,
      "MBJG": 17.1,
+     "RA": 0.0,
+     "Naug": 0.0,
+     "SWSH": 0.0,
+     "CJ": 22.1,
+     "BEND": 0.0
+    }
+   },
+   {
+    "t": "2026-11-06T03:10:25+00:00",
+    "scores": {
+     "BW": 0.0,
+     "SACK": 0.0,
+     "WALT": 12.06,
+     "SW": 8.78,
+     "BING": 0.0,
+     "TMOG": 0.0,
+     "MBJG": 17.4,
      "RA": 0.0,
      "Naug": 0.0,
      "SWSH": 0.0,
