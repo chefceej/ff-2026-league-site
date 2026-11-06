@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-06 01:30:20 UTC",
-  "last_updated": "2026-11-06T01:30:20.808311+00:00"
+  "updated_at": "2026-11-06 01:40:18 UTC",
+  "last_updated": "2026-11-06T01:40:18.107145+00:00"
  },
  "teams": [
   {
@@ -27,7 +27,7 @@
     121.14,
     118.16,
     143.32,
-    7.5
+    8.1
    ],
    "ranking_points_by_week": [
     5.0,
@@ -38,7 +38,7 @@
     10.0,
     8.0,
     12.0,
-    11.0
+    12.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -49,7 +49,7 @@
     40.0,
     48.0,
     60.0,
-    71.0
+    72.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -60,10 +60,10 @@
     0.0,
     1.0,
     9.0,
-    9.5
+    11.0
    ],
    "rank": 1,
-   "total_ranking_points": 71.0
+   "total_ranking_points": 72.0
   },
   {
    "team_id": 9,
@@ -80,7 +80,7 @@
     122.24,
     119.08,
     99.52,
-    2.88
+    3.56
    ],
    "ranking_points_by_week": [
     12.0,
@@ -113,7 +113,7 @@
     6.0,
     9.0,
     10.0,
-    9.5
+    10.0
    ],
    "rank": 2,
    "total_ranking_points": 71.0
@@ -166,7 +166,7 @@
     10.0,
     9.0,
     14.0,
-    8.0
+    8.5
    ],
    "rank": 3,
    "total_ranking_points": 69.5
@@ -219,63 +219,10 @@
     3.0,
     8.0,
     7.0,
-    1.0
+    1.5
    ],
    "rank": 4,
    "total_ranking_points": 62.5
-  },
-  {
-   "team_id": 2,
-   "team_name": "Kaiser Soze",
-   "team_abbrev": "CJ",
-   "abbrev": "CJ",
-   "owner": "Connor Kraus",
-   "scores_by_week": [
-    123.86,
-    76.48,
-    102.6,
-    78.54,
-    177.16,
-    83.2,
-    118.54,
-    108.26,
-    10.0
-   ],
-   "ranking_points_by_week": [
-    8.0,
-    4.0,
-    6.0,
-    1.0,
-    12.0,
-    3.0,
-    9.0,
-    7.0,
-    12.0
-   ],
-   "cumulative_points_by_week": [
-    8.0,
-    12.0,
-    18.0,
-    19.0,
-    31.0,
-    34.0,
-    43.0,
-    50.0,
-    62.0
-   ],
-   "normalized_by_week": [
-    1.0,
-    0.0,
-    -1.0,
-    -8.0,
-    -3.0,
-    -6.0,
-    -4.0,
-    -1.0,
-    0.5
-   ],
-   "rank": 5,
-   "total_ranking_points": 62.0
   },
   {
    "team_id": 4,
@@ -325,10 +272,63 @@
     0.0,
     0.0,
     6.0,
+    0.5
+   ],
+   "rank": 5,
+   "total_ranking_points": 61.5
+  },
+  {
+   "team_id": 2,
+   "team_name": "Kaiser Soze",
+   "team_abbrev": "CJ",
+   "abbrev": "CJ",
+   "owner": "Connor Kraus",
+   "scores_by_week": [
+    123.86,
+    76.48,
+    102.6,
+    78.54,
+    177.16,
+    83.2,
+    118.54,
+    108.26,
+    6.0
+   ],
+   "ranking_points_by_week": [
+    8.0,
+    4.0,
+    6.0,
+    1.0,
+    12.0,
+    3.0,
+    9.0,
+    7.0,
+    11.0
+   ],
+   "cumulative_points_by_week": [
+    8.0,
+    12.0,
+    18.0,
+    19.0,
+    31.0,
+    34.0,
+    43.0,
+    50.0,
+    61.0
+   ],
+   "normalized_by_week": [
+    1.0,
+    0.0,
+    -1.0,
+    -8.0,
+    -3.0,
+    -6.0,
+    -4.0,
+    -1.0,
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 61.5
+   "total_ranking_points": 61.0
   },
   {
    "team_id": 1,
@@ -345,7 +345,7 @@
     66.52,
     125.78,
     60.2,
-    2.6
+    3.18
    ],
    "ranking_points_by_week": [
     9.0,
@@ -378,7 +378,7 @@
     -2.0,
     2.0,
     -1.0,
-    -2.5
+    -2.0
    ],
    "rank": 7,
    "total_ranking_points": 59.0
@@ -431,7 +431,7 @@
     6.0,
     0.0,
     0.0,
-    -6.0
+    -5.5
    ],
    "rank": 8,
    "total_ranking_points": 55.5
@@ -484,7 +484,7 @@
     -4.0,
     -6.0,
     -2.0,
-    -8.0
+    -7.5
    ],
    "rank": 9,
    "total_ranking_points": 53.5
@@ -537,7 +537,7 @@
     1.0,
     -3.0,
     -5.0,
-    -11.0
+    -10.5
    ],
    "rank": 10,
    "total_ranking_points": 50.5
@@ -590,7 +590,7 @@
     -7.0,
     -12.0,
     -10.0,
-    -16.0
+    -15.5
    ],
    "rank": 11,
    "total_ranking_points": 45.5
@@ -643,7 +643,7 @@
     -19.0,
     -22.0,
     -15.0,
-    -21.0
+    -20.5
    ],
    "rank": 12,
    "total_ranking_points": 40.5
@@ -7597,20 +7597,20 @@
   {
    "all": [
     {
-     "name": "Jaguars D/ST",
-     "pro_team": "JAX",
-     "fantasy_team": "Kaiser Soze",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 10.0
-    },
-    {
      "name": "Bhayshul Tuten",
      "pro_team": "JAX",
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "slot": "RB",
-     "score": 6.5
+     "score": 7.1
+    },
+    {
+     "name": "Jaguars D/ST",
+     "pro_team": "JAX",
+     "fantasy_team": "Kaiser Soze",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 6.0
     },
     {
      "name": "Jaguars TQB",
@@ -7618,7 +7618,7 @@
      "fantasy_team": "Walt's Warriors",
      "position": "QB",
      "slot": "QB",
-     "score": 2.88
+     "score": 3.56
     },
     {
      "name": "Derrick Henry",
@@ -7626,7 +7626,15 @@
      "fantasy_team": "3 Inches of Disappointment ",
      "position": "RB",
      "slot": "RB",
-     "score": 1.7
+     "score": 2.08
+    },
+    {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 1.1
     },
     {
      "name": "Cam Little",
@@ -7635,14 +7643,6 @@
      "position": "K",
      "slot": "K",
      "score": 1.0
-    },
-    {
-     "name": "Zay Flowers",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.9
     },
     {
      "name": "Jaxon Smith-Njigba",
@@ -9367,14 +9367,14 @@
     "WR": 0.0,
     "RB": 0.0,
     "FLEX": 0.0,
-    "QB": 2.88,
+    "QB": 3.56,
     "TE": 0.0,
     "K": 0.0,
     "D/ST": 0.0
    },
    "SW": {
-    "WR": 0.9,
-    "RB": 1.7,
+    "WR": 1.1,
+    "RB": 2.08,
     "TE": 0.0,
     "QB": 0.0,
     "FLEX": 0.0,
@@ -9400,7 +9400,7 @@
     "K": 0.0
    },
    "MBJG": {
-    "RB": 6.5,
+    "RB": 7.1,
     "TE": 0.0,
     "WR": 0.0,
     "K": 1.0,
@@ -9442,7 +9442,7 @@
     "WR": 0.0,
     "TE": 0.0,
     "K": 0.0,
-    "D/ST": 10.0
+    "D/ST": 6.0
    },
    "BEND": {
     "RB": 0.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-06T01:30:20+00:00",
+  "updated_at": "2026-11-06T01:40:18+00:00",
   "teams": {
    "BW": {
     "score": 0.0,
@@ -9670,8 +9670,8 @@
     ]
    },
    "WALT": {
-    "score": 2.88,
-    "projected": 116.38,
+    "score": 3.56,
+    "projected": 115.5,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9734,7 +9734,7 @@
       "slot": "QB",
       "pro_team": "JAX",
       "opponent": "None",
-      "points": 2.88,
+      "points": 3.56,
       "projected": 20.34,
       "status": "live",
       "kickoff": 1793927700000
@@ -9775,8 +9775,8 @@
     ]
    },
    "SW": {
-    "score": 2.6,
-    "projected": 110.85,
+    "score": 3.18,
+    "projected": 109.6,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9795,7 +9795,7 @@
       "slot": "RB",
       "pro_team": "BAL",
       "opponent": "JAX",
-      "points": 1.7,
+      "points": 2.08,
       "projected": 13.31,
       "status": "live",
       "kickoff": 1793927700000
@@ -9806,7 +9806,7 @@
       "slot": "WR",
       "pro_team": "BAL",
       "opponent": "JAX",
-      "points": 0.9,
+      "points": 1.1,
       "projected": 10.44,
       "status": "live",
       "kickoff": 1793927700000
@@ -10090,8 +10090,8 @@
     ]
    },
    "MBJG": {
-    "score": 7.5,
-    "projected": 118.65,
+    "score": 8.1,
+    "projected": 117.52,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10132,7 +10132,7 @@
       "slot": "RB",
       "pro_team": "JAX",
       "opponent": "BAL",
-      "points": 6.5,
+      "points": 7.1,
       "projected": 14.21,
       "status": "live",
       "kickoff": 1793927700000
@@ -10510,8 +10510,8 @@
     ]
    },
    "CJ": {
-    "score": 10.0,
-    "projected": 112.47,
+    "score": 6.0,
+    "projected": 110.98,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10607,7 +10607,7 @@
       "slot": "D/ST",
       "pro_team": "JAX",
       "opponent": "BAL",
-      "points": 10.0,
+      "points": 6.0,
       "projected": 9.31,
       "status": "live",
       "kickoff": 1793927700000
@@ -10752,6 +10752,23 @@
      "Naug": 0.0,
      "SWSH": 0.0,
      "CJ": 10.0,
+     "BEND": 0.0
+    }
+   },
+   {
+    "t": "2026-11-06T01:40:18+00:00",
+    "scores": {
+     "BW": 0.0,
+     "SACK": 0.0,
+     "WALT": 3.56,
+     "SW": 3.18,
+     "BING": 0.0,
+     "TMOG": 0.0,
+     "MBJG": 8.1,
+     "RA": 0.0,
+     "Naug": 0.0,
+     "SWSH": 0.0,
+     "CJ": 6.0,
      "BEND": 0.0
     }
    }
