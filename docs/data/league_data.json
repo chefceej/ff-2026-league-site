@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-06 02:10:27 UTC",
-  "last_updated": "2026-11-06T02:10:27.194762+00:00"
+  "updated_at": "2026-11-06 02:20:18 UTC",
+  "last_updated": "2026-11-06T02:20:18.292122+00:00"
  },
  "teams": [
   {
@@ -345,7 +345,7 @@
     66.52,
     125.78,
     60.2,
-    5.38
+    6.78
    ],
    "ranking_points_by_week": [
     9.0,
@@ -7613,20 +7613,20 @@
      "score": 7.0
     },
     {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 4.98
+    },
+    {
      "name": "Jaguars TQB",
      "pro_team": "JAX",
      "fantasy_team": "Walt's Warriors",
      "position": "QB",
      "slot": "QB",
      "score": 4.56
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 4.28
     },
     {
      "name": "Cam Little",
@@ -7637,20 +7637,20 @@
      "score": 4.0
     },
     {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 1.8
+    },
+    {
      "name": "Parker Washington",
      "pro_team": "JAX",
      "fantasy_team": "Kaiser Soze",
      "position": "WR",
      "slot": "WR",
      "score": 1.6
-    },
-    {
-     "name": "Zay Flowers",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 1.1
     },
     {
      "name": "Jaxon Smith-Njigba",
@@ -9373,8 +9373,8 @@
     "D/ST": 0.0
    },
    "SW": {
-    "WR": 1.1,
-    "RB": 4.28,
+    "WR": 1.8,
+    "RB": 4.98,
     "TE": 0.0,
     "QB": 0.0,
     "FLEX": 0.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-06T02:10:27+00:00",
+  "updated_at": "2026-11-06T02:20:18+00:00",
   "teams": {
    "BW": {
     "score": 0.0,
@@ -9671,7 +9671,7 @@
    },
    "WALT": {
     "score": 4.56,
-    "projected": 112.1,
+    "projected": 110.59,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9775,8 +9775,8 @@
     ]
    },
    "SW": {
-    "score": 5.38,
-    "projected": 106.67,
+    "score": 6.78,
+    "projected": 106.3,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9795,7 +9795,7 @@
       "slot": "RB",
       "pro_team": "BAL",
       "opponent": "JAX",
-      "points": 4.28,
+      "points": 4.98,
       "projected": 13.31,
       "status": "live",
       "kickoff": 1793927700000
@@ -9806,7 +9806,7 @@
       "slot": "WR",
       "pro_team": "BAL",
       "opponent": "JAX",
-      "points": 1.1,
+      "points": 1.8,
       "projected": 10.44,
       "status": "live",
       "kickoff": 1793927700000
@@ -10091,7 +10091,7 @@
    },
    "MBJG": {
     "score": 12.2,
-    "projected": 116.72,
+    "projected": 115.04,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10511,7 +10511,7 @@
    },
    "CJ": {
     "score": 8.6,
-    "projected": 109.86,
+    "projected": 108.87,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10813,6 +10813,23 @@
      "SACK": 0.0,
      "WALT": 4.56,
      "SW": 5.38,
+     "BING": 0.0,
+     "TMOG": 0.0,
+     "MBJG": 12.2,
+     "RA": 0.0,
+     "Naug": 0.0,
+     "SWSH": 0.0,
+     "CJ": 8.6,
+     "BEND": 0.0
+    }
+   },
+   {
+    "t": "2026-11-06T02:20:18+00:00",
+    "scores": {
+     "BW": 0.0,
+     "SACK": 0.0,
+     "WALT": 4.56,
+     "SW": 6.78,
      "BING": 0.0,
      "TMOG": 0.0,
      "MBJG": 12.2,
