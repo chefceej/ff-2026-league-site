@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-09 03:20:19 UTC",
-  "last_updated": "2026-11-09T03:20:19.368623+00:00"
+  "updated_at": "2026-11-09 03:30:20 UTC",
+  "last_updated": "2026-11-09T03:30:20.833735+00:00"
  },
  "teams": [
   {
@@ -451,7 +451,7 @@
     84.02,
     71.1,
     100.28,
-    119.94
+    120.14
    ],
    "ranking_points_by_week": [
     7.0,
@@ -557,7 +557,7 @@
     90.76,
     82.82,
     65.76,
-    77.18
+    77.48
    ],
    "ranking_points_by_week": [
     3.0,
@@ -610,7 +610,7 @@
     82.12,
     97.38,
     132.48,
-    83.94
+    84.94
    ],
    "ranking_points_by_week": [
     6.0,
@@ -8117,6 +8117,14 @@
      "score": 7.0
     },
     {
+     "name": "Bears D/ST",
+     "pro_team": "CHI",
+     "fantasy_team": "The Garbage Dump",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 7.0
+    },
+    {
      "name": "Chase McLaughlin",
      "pro_team": "TB",
      "fantasy_team": "Swishington Football Team",
@@ -8197,12 +8205,12 @@
      "score": 6.0
     },
     {
-     "name": "Bears D/ST",
-     "pro_team": "CHI",
-     "fantasy_team": "The Garbage Dump",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 6.0
+     "name": "Kenny Gainwell",
+     "pro_team": "TB",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 5.7
     },
     {
      "name": "Tyler Allgeier",
@@ -8219,14 +8227,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 5.58
-    },
-    {
-     "name": "Kenny Gainwell",
-     "pro_team": "TB",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
-     "score": 5.5
     },
     {
      "name": "Emeka Egbuka",
@@ -8341,6 +8341,14 @@
      "score": 3.0
     },
     {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 2.7
+    },
+    {
      "name": "Devaughn Vele",
      "pro_team": "NO",
      "fantasy_team": "The Sun Gods ",
@@ -8355,14 +8363,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 2.7
-    },
-    {
-     "name": "D'Andre Swift",
-     "pro_team": "CHI",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 2.4
     },
     {
      "name": "Colston Loveland",
@@ -9414,7 +9414,7 @@
     "QB": 24.98,
     "D/ST": 9.0,
     "K": 6.0,
-    "RB": 8.8,
+    "RB": 9.1,
     "FLEX": 2.7
    },
    "Naug": {
@@ -9424,7 +9424,7 @@
     "K": 10.0,
     "FLEX": 0.0,
     "TE": 15.3,
-    "D/ST": 6.0
+    "D/ST": 7.0
    },
    "SWSH": {
     "RB": 13.9,
@@ -9445,7 +9445,7 @@
     "D/ST": 11.0
    },
    "BEND": {
-    "RB": 27.2,
+    "RB": 27.4,
     "WR": 27.1,
     "TE": 11.2,
     "D/ST": 12.0,
@@ -9457,11 +9457,11 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-09T03:20:19+00:00",
+  "updated_at": "2026-11-09T03:30:20+00:00",
   "teams": {
    "BW": {
     "score": 79.1,
-    "projected": 83.3,
+    "projected": 82.86,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -9671,7 +9671,7 @@
    },
    "WALT": {
     "score": 105.68,
-    "projected": 110.56,
+    "projected": 110.04,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9986,7 +9986,7 @@
    },
    "TMOG": {
     "score": 43.3,
-    "projected": 90.64,
+    "projected": 89.44,
     "starters": [
      {
       "name": "James Cook III",
@@ -10195,8 +10195,8 @@
     ]
    },
    "RA": {
-    "score": 77.18,
-    "projected": 88.59,
+    "score": 77.48,
+    "projected": 87.69,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -10281,7 +10281,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "TB",
-      "points": 2.4,
+      "points": 2.7,
       "projected": 17.2,
       "status": "live",
       "kickoff": 1794187200000
@@ -10300,8 +10300,8 @@
     ]
    },
    "Naug": {
-    "score": 83.94,
-    "projected": 99.99,
+    "score": 84.94,
+    "projected": 100.51,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10397,7 +10397,7 @@
       "slot": "D/ST",
       "pro_team": "CHI",
       "opponent": "TB",
-      "points": 6.0,
+      "points": 7.0,
       "projected": 8.21,
       "status": "live",
       "kickoff": 1794187200000
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 72.4,
-    "projected": 96.21,
+    "projected": 95.8,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10511,7 +10511,7 @@
    },
    "CJ": {
     "score": 108.7,
-    "projected": 114.84,
+    "projected": 114.2,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10615,8 +10615,8 @@
     ]
    },
    "BEND": {
-    "score": 119.94,
-    "projected": 123.08,
+    "score": 120.14,
+    "projected": 122.94,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -10712,7 +10712,7 @@
       "slot": "RB",
       "pro_team": "TB",
       "opponent": "CHI",
-      "points": 5.5,
+      "points": 5.7,
       "projected": 7.31,
       "status": "live",
       "kickoff": 1794187200000
@@ -11909,6 +11909,23 @@
      "SWSH": 72.4,
      "CJ": 108.7,
      "BEND": 119.94
+    }
+   },
+   {
+    "t": "2026-11-09T03:30:20+00:00",
+    "scores": {
+     "BW": 79.1,
+     "SACK": 140.42,
+     "WALT": 105.68,
+     "SW": 94.48,
+     "BING": 78.86,
+     "TMOG": 43.3,
+     "MBJG": 117.98,
+     "RA": 77.48,
+     "Naug": 84.94,
+     "SWSH": 72.4,
+     "CJ": 108.7,
+     "BEND": 120.14
     }
    }
   ]
