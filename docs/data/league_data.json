@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-09 00:30:22 UTC",
-  "last_updated": "2026-11-09T00:30:22.945268+00:00"
+  "updated_at": "2026-11-09 00:40:20 UTC",
+  "last_updated": "2026-11-09T00:40:20.070572+00:00"
  },
  "teams": [
   {
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-09T00:30:22+00:00",
+  "updated_at": "2026-11-09T00:40:20+00:00",
   "teams": {
    "BW": {
     "score": 77.1,
@@ -9537,7 +9537,7 @@
       "opponent": "LAC",
       "points": 3.0,
       "projected": 6.33,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794171900000
      },
      {
@@ -9566,7 +9566,7 @@
    },
    "SACK": {
     "score": 140.42,
-    "projected": 141.8,
+    "projected": 141.13,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -9902,7 +9902,7 @@
       "opponent": "HOU",
       "points": 6.0,
       "projected": 8.01,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794171900000
      },
      {
@@ -9986,7 +9986,7 @@
    },
    "TMOG": {
     "score": 27.2,
-    "projected": 90.15,
+    "projected": 89.9,
     "starters": [
      {
       "name": "James Cook III",
@@ -10091,7 +10091,7 @@
    },
    "MBJG": {
     "score": 117.98,
-    "projected": 125.47,
+    "projected": 125.01,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10355,7 +10355,7 @@
       "opponent": "HOU",
       "points": 0.0,
       "projected": 8.83,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794171900000
      },
      {
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 65.4,
-    "projected": 95.82,
+    "projected": 95.11,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10471,7 +10471,7 @@
       "opponent": "LAC",
       "points": 7.9,
       "projected": 13.51,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794171900000
      },
      {
@@ -10511,7 +10511,7 @@
    },
    "CJ": {
     "score": 96.3,
-    "projected": 111.98,
+    "projected": 111.32,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10637,7 +10637,7 @@
       "opponent": "LAC",
       "points": 13.5,
       "projected": 11.46,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794171900000
      },
      {
@@ -10670,7 +10670,7 @@
       "opponent": "LAC",
       "points": 12.0,
       "projected": 8.85,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794171900000
      },
      {
@@ -10692,7 +10692,7 @@
       "opponent": "LAC",
       "points": 17.0,
       "projected": 10.1,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794171900000
      },
      {
