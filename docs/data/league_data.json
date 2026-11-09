@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-09 03:50:17 UTC",
-  "last_updated": "2026-11-09T03:50:17.121446+00:00"
+  "updated_at": "2026-11-09 04:00:21 UTC",
+  "last_updated": "2026-11-09T04:00:21.603661+00:00"
  },
  "teams": [
   {
@@ -239,7 +239,7 @@
     83.2,
     118.54,
     108.26,
-    110.0
+    113.9
    ],
    "ranking_points_by_week": [
     8.0,
@@ -451,7 +451,7 @@
     84.02,
     71.1,
     100.28,
-    120.14
+    122.04
    ],
    "ranking_points_by_week": [
     7.0,
@@ -7725,6 +7725,14 @@
      "score": 17.7
     },
     {
+     "name": "Bucky Irving",
+     "pro_team": "TB",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "slot": "RB",
+     "score": 17.6
+    },
+    {
      "name": "Dominic Zvada",
      "pro_team": "NYG",
      "fantasy_team": "Bijan These Nuts",
@@ -7811,14 +7819,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 13.8
-    },
-    {
-     "name": "Bucky Irving",
-     "pro_team": "TB",
-     "fantasy_team": "Kaiser Soze",
-     "position": "RB",
-     "slot": "RB",
-     "score": 13.7
     },
     {
      "name": "Tetairoa McMillan",
@@ -8109,6 +8109,14 @@
      "score": 7.6
     },
     {
+     "name": "Kenny Gainwell",
+     "pro_team": "TB",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 7.6
+    },
+    {
      "name": "Rashee Rice",
      "pro_team": "KC",
      "fantasy_team": "Kaiser Soze",
@@ -8211,14 +8219,6 @@
      "position": "K",
      "slot": "K",
      "score": 6.0
-    },
-    {
-     "name": "Kenny Gainwell",
-     "pro_team": "TB",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
-     "score": 5.7
     },
     {
      "name": "Tyler Allgeier",
@@ -9436,7 +9436,7 @@
     "K": 7.0
    },
    "CJ": {
-    "RB": 37.4,
+    "RB": 41.3,
     "FLEX": 9.8,
     "QB": 19.1,
     "WR": 20.5,
@@ -9445,7 +9445,7 @@
     "D/ST": 11.0
    },
    "BEND": {
-    "RB": 27.4,
+    "RB": 29.3,
     "WR": 27.1,
     "TE": 11.2,
     "D/ST": 12.0,
@@ -9457,11 +9457,11 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-09T03:50:17+00:00",
+  "updated_at": "2026-11-09T04:00:21+00:00",
   "teams": {
    "BW": {
     "score": 79.1,
-    "projected": 81.74,
+    "projected": 81.11,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -9671,7 +9671,7 @@
    },
    "WALT": {
     "score": 106.88,
-    "projected": 109.94,
+    "projected": 109.21,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9986,7 +9986,7 @@
    },
    "TMOG": {
     "score": 43.48,
-    "projected": 86.59,
+    "projected": 84.9,
     "starters": [
      {
       "name": "James Cook III",
@@ -10196,7 +10196,7 @@
    },
    "RA": {
     "score": 77.28,
-    "projected": 84.44,
+    "projected": 82.74,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 92.94,
-    "projected": 106.21,
+    "projected": 106.65,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 72.4,
-    "projected": 94.77,
+    "projected": 94.19,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10510,8 +10510,8 @@
     ]
    },
    "CJ": {
-    "score": 110.0,
-    "projected": 113.86,
+    "score": 113.9,
+    "projected": 116.84,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10530,7 +10530,7 @@
       "slot": "RB",
       "pro_team": "TB",
       "opponent": "CHI",
-      "points": 13.7,
+      "points": 17.6,
       "projected": 14.33,
       "status": "live",
       "kickoff": 1794187200000
@@ -10615,8 +10615,8 @@
     ]
    },
    "BEND": {
-    "score": 120.14,
-    "projected": 122.11,
+    "score": 122.04,
+    "projected": 123.54,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -10712,7 +10712,7 @@
       "slot": "RB",
       "pro_team": "TB",
       "opponent": "CHI",
-      "points": 5.7,
+      "points": 7.6,
       "projected": 7.31,
       "status": "live",
       "kickoff": 1794187200000
@@ -11960,6 +11960,23 @@
      "SWSH": 72.4,
      "CJ": 110.0,
      "BEND": 120.14
+    }
+   },
+   {
+    "t": "2026-11-09T04:00:21+00:00",
+    "scores": {
+     "BW": 79.1,
+     "SACK": 140.42,
+     "WALT": 106.88,
+     "SW": 94.48,
+     "BING": 78.86,
+     "TMOG": 43.48,
+     "MBJG": 117.98,
+     "RA": 77.28,
+     "Naug": 92.94,
+     "SWSH": 72.4,
+     "CJ": 113.9,
+     "BEND": 122.04
     }
    }
   ]
