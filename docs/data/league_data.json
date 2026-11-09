@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-09 03:30:20 UTC",
-  "last_updated": "2026-11-09T03:30:20.833735+00:00"
+  "updated_at": "2026-11-09 03:40:17 UTC",
+  "last_updated": "2026-11-09T03:40:17.954250+00:00"
  },
  "teams": [
   {
@@ -133,7 +133,7 @@
     122.24,
     119.08,
     99.52,
-    105.68
+    106.88
    ],
    "ranking_points_by_week": [
     12.0,
@@ -504,7 +504,7 @@
     113.5,
     102.92,
     109.58,
-    43.3
+    43.58
    ],
    "ranking_points_by_week": [
     11.0,
@@ -7709,6 +7709,14 @@
      "score": 18.8
     },
     {
+     "name": "Luther Burden III",
+     "pro_team": "CHI",
+     "fantasy_team": "Walt's Warriors",
+     "position": "WR",
+     "slot": "WR",
+     "score": 18.0
+    },
+    {
      "name": "Tee Higgins",
      "pro_team": "CIN",
      "fantasy_team": "The Lizard Kings",
@@ -7739,14 +7747,6 @@
      "position": "K",
      "slot": "K",
      "score": 17.0
-    },
-    {
-     "name": "Luther Burden III",
-     "pro_team": "CHI",
-     "fantasy_team": "Walt's Warriors",
-     "position": "WR",
-     "slot": "WR",
-     "score": 16.8
     },
     {
      "name": "Jonah Coleman",
@@ -7933,6 +7933,14 @@
      "score": 11.6
     },
     {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 11.38
+    },
+    {
      "name": "Rams TQB",
      "pro_team": "LAR",
      "fantasy_team": "Bijan These Nuts",
@@ -7947,14 +7955,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 11.2
-    },
-    {
-     "name": "Bears TQB",
-     "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "slot": "QB",
-     "score": 11.1
     },
     {
      "name": "Mack Hollins",
@@ -9364,7 +9364,7 @@
     "K": 17.0
    },
    "WALT": {
-    "WR": 44.8,
+    "WR": 46.0,
     "RB": 9.5,
     "QB": 13.58,
     "TE": 13.8,
@@ -9393,7 +9393,7 @@
    "TMOG": {
     "RB": 6.9,
     "WR": 9.0,
-    "QB": 11.1,
+    "QB": 11.38,
     "FLEX": 6.3,
     "D/ST": 0.0,
     "K": 5.0,
@@ -9457,11 +9457,11 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-09T03:30:20+00:00",
+  "updated_at": "2026-11-09T03:40:17+00:00",
   "teams": {
    "BW": {
     "score": 79.1,
-    "projected": 82.86,
+    "projected": 82.41,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -9670,8 +9670,8 @@
     ]
    },
    "WALT": {
-    "score": 105.68,
-    "projected": 110.04,
+    "score": 106.88,
+    "projected": 110.72,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9712,7 +9712,7 @@
       "slot": "WR",
       "pro_team": "CHI",
       "opponent": "TB",
-      "points": 16.8,
+      "points": 18.0,
       "projected": 11.37,
       "status": "live",
       "kickoff": 1794187200000
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 43.3,
-    "projected": 89.44,
+    "score": 43.58,
+    "projected": 88.51,
     "starters": [
      {
       "name": "James Cook III",
@@ -10038,7 +10038,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 11.1,
+      "points": 11.38,
       "projected": 16.78,
       "status": "live",
       "kickoff": 1794187200000
@@ -10196,7 +10196,7 @@
    },
    "RA": {
     "score": 77.48,
-    "projected": 87.69,
+    "projected": 86.47,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 84.94,
-    "projected": 100.51,
+    "projected": 100.45,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 72.4,
-    "projected": 95.8,
+    "projected": 95.38,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10511,7 +10511,7 @@
    },
    "CJ": {
     "score": 108.7,
-    "projected": 114.2,
+    "projected": 113.54,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10616,7 +10616,7 @@
    },
    "BEND": {
     "score": 120.14,
-    "projected": 122.94,
+    "projected": 122.61,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -11920,6 +11920,23 @@
      "SW": 94.48,
      "BING": 78.86,
      "TMOG": 43.3,
+     "MBJG": 117.98,
+     "RA": 77.48,
+     "Naug": 84.94,
+     "SWSH": 72.4,
+     "CJ": 108.7,
+     "BEND": 120.14
+    }
+   },
+   {
+    "t": "2026-11-09T03:40:17+00:00",
+    "scores": {
+     "BW": 79.1,
+     "SACK": 140.42,
+     "WALT": 106.88,
+     "SW": 94.48,
+     "BING": 78.86,
+     "TMOG": 43.58,
      "MBJG": 117.98,
      "RA": 77.48,
      "Naug": 84.94,
