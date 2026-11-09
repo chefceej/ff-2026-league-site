@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-09 01:10:18 UTC",
-  "last_updated": "2026-11-09T01:10:18.878708+00:00"
+  "updated_at": "2026-11-09 01:20:15 UTC",
+  "last_updated": "2026-11-09T01:20:15.193343+00:00"
  },
  "teams": [
   {
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-09T01:10:18+00:00",
+  "updated_at": "2026-11-09T01:20:15+00:00",
   "teams": {
    "BW": {
     "score": 77.1,
@@ -9493,7 +9493,7 @@
       "opponent": "TB",
       "points": 0.0,
       "projected": 9.8,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      },
      {
@@ -9714,7 +9714,7 @@
       "opponent": "TB",
       "points": 0.0,
       "projected": 11.37,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      },
      {
@@ -10040,7 +10040,7 @@
       "opponent": "None",
       "points": 0.0,
       "projected": 16.78,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      },
      {
@@ -10073,7 +10073,7 @@
       "opponent": "TB",
       "points": 0.0,
       "projected": 9.68,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      },
      {
@@ -10272,7 +10272,7 @@
       "opponent": "CHI",
       "points": 0.0,
       "projected": 9.41,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      },
      {
@@ -10283,7 +10283,7 @@
       "opponent": "TB",
       "points": 0.0,
       "projected": 17.2,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      },
      {
@@ -10399,7 +10399,7 @@
       "opponent": "TB",
       "points": 0.0,
       "projected": 8.21,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      }
     ]
@@ -10493,7 +10493,7 @@
       "opponent": "CHI",
       "points": 0.0,
       "projected": 9.02,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      },
      {
@@ -10532,7 +10532,7 @@
       "opponent": "CHI",
       "points": 0.0,
       "projected": 14.33,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      },
      {
@@ -10714,7 +10714,7 @@
       "opponent": "CHI",
       "points": 0.0,
       "projected": 7.31,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794187200000
      }
     ]
