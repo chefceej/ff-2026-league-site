@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-09 03:40:17 UTC",
-  "last_updated": "2026-11-09T03:40:17.954250+00:00"
+  "updated_at": "2026-11-09 03:50:17 UTC",
+  "last_updated": "2026-11-09T03:50:17.121446+00:00"
  },
  "teams": [
   {
@@ -239,7 +239,7 @@
     83.2,
     118.54,
     108.26,
-    108.7
+    110.0
    ],
    "ranking_points_by_week": [
     8.0,
@@ -504,7 +504,7 @@
     113.5,
     102.92,
     109.58,
-    43.58
+    43.48
    ],
    "ranking_points_by_week": [
     11.0,
@@ -557,7 +557,7 @@
     90.76,
     82.82,
     65.76,
-    77.48
+    77.28
    ],
    "ranking_points_by_week": [
     3.0,
@@ -610,7 +610,7 @@
     82.12,
     97.38,
     132.48,
-    84.94
+    92.94
    ],
    "ranking_points_by_week": [
     6.0,
@@ -7781,6 +7781,14 @@
      "score": 15.0
     },
     {
+     "name": "Bears D/ST",
+     "pro_team": "CHI",
+     "fantasy_team": "The Garbage Dump",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 15.0
+    },
+    {
      "name": "Commanders TQB",
      "pro_team": "WSH",
      "fantasy_team": "Bada Bing",
@@ -7803,6 +7811,14 @@
      "position": "TE",
      "slot": "TE",
      "score": 13.8
+    },
+    {
+     "name": "Bucky Irving",
+     "pro_team": "TB",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "slot": "RB",
+     "score": 13.7
     },
     {
      "name": "Tetairoa McMillan",
@@ -7909,14 +7925,6 @@
      "score": 12.6
     },
     {
-     "name": "Bucky Irving",
-     "pro_team": "TB",
-     "fantasy_team": "Kaiser Soze",
-     "position": "RB",
-     "slot": "RB",
-     "score": 12.4
-    },
-    {
      "name": "Texans D/ST",
      "pro_team": "HOU",
      "fantasy_team": "Remeber Bendel",
@@ -7931,14 +7939,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 11.6
-    },
-    {
-     "name": "Bears TQB",
-     "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "slot": "QB",
-     "score": 11.38
     },
     {
      "name": "Rams TQB",
@@ -7979,6 +7979,14 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 11.0
+    },
+    {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 10.28
     },
     {
      "name": "Brandon Aubrey",
@@ -8117,14 +8125,6 @@
      "score": 7.0
     },
     {
-     "name": "Bears D/ST",
-     "pro_team": "CHI",
-     "fantasy_team": "The Garbage Dump",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 7.0
-    },
-    {
      "name": "Chase McLaughlin",
      "pro_team": "TB",
      "fantasy_team": "Swishington Football Team",
@@ -8197,6 +8197,14 @@
      "score": 6.0
     },
     {
+     "name": "Cairo Santos",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "K",
+     "slot": "K",
+     "score": 6.0
+    },
+    {
      "name": "Jason Myers",
      "pro_team": "SEA",
      "fantasy_team": "The Sun Gods ",
@@ -8234,7 +8242,7 @@
      "fantasy_team": "The Sun Gods ",
      "position": "WR",
      "slot": "WR",
-     "score": 5.3
+     "score": 5.4
     },
     {
      "name": "Sam LaPorta",
@@ -8258,14 +8266,6 @@
      "fantasy_team": "Bada Bing",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 5.0
-    },
-    {
-     "name": "Cairo Santos",
-     "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "K",
-     "slot": "K",
      "score": 5.0
     },
     {
@@ -8341,14 +8341,6 @@
      "score": 3.0
     },
     {
-     "name": "D'Andre Swift",
-     "pro_team": "CHI",
-     "fantasy_team": "The Sun Gods ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 2.7
-    },
-    {
      "name": "Devaughn Vele",
      "pro_team": "NO",
      "fantasy_team": "The Sun Gods ",
@@ -8363,6 +8355,14 @@
      "position": "WR",
      "slot": "WR",
      "score": 2.7
+    },
+    {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "The Sun Gods ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 2.4
     },
     {
      "name": "Colston Loveland",
@@ -9393,10 +9393,10 @@
    "TMOG": {
     "RB": 6.9,
     "WR": 9.0,
-    "QB": 11.38,
+    "QB": 10.28,
     "FLEX": 6.3,
     "D/ST": 0.0,
-    "K": 5.0,
+    "K": 6.0,
     "TE": 5.0
    },
    "MBJG": {
@@ -9409,12 +9409,12 @@
     "FLEX": 16.8
    },
    "RA": {
-    "WR": 17.9,
+    "WR": 18.0,
     "TE": 7.8,
     "QB": 24.98,
     "D/ST": 9.0,
     "K": 6.0,
-    "RB": 9.1,
+    "RB": 8.8,
     "FLEX": 2.7
    },
    "Naug": {
@@ -9424,7 +9424,7 @@
     "K": 10.0,
     "FLEX": 0.0,
     "TE": 15.3,
-    "D/ST": 7.0
+    "D/ST": 15.0
    },
    "SWSH": {
     "RB": 13.9,
@@ -9436,7 +9436,7 @@
     "K": 7.0
    },
    "CJ": {
-    "RB": 36.1,
+    "RB": 37.4,
     "FLEX": 9.8,
     "QB": 19.1,
     "WR": 20.5,
@@ -9457,11 +9457,11 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-09T03:40:17+00:00",
+  "updated_at": "2026-11-09T03:50:17+00:00",
   "teams": {
    "BW": {
     "score": 79.1,
-    "projected": 82.41,
+    "projected": 81.74,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -9671,7 +9671,7 @@
    },
    "WALT": {
     "score": 106.88,
-    "projected": 110.72,
+    "projected": 109.94,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 43.58,
-    "projected": 88.51,
+    "score": 43.48,
+    "projected": 86.59,
     "starters": [
      {
       "name": "James Cook III",
@@ -10038,7 +10038,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 11.38,
+      "points": 10.28,
       "projected": 16.78,
       "status": "live",
       "kickoff": 1794187200000
@@ -10071,7 +10071,7 @@
       "slot": "K",
       "pro_team": "CHI",
       "opponent": "TB",
-      "points": 5.0,
+      "points": 6.0,
       "projected": 9.68,
       "status": "live",
       "kickoff": 1794187200000
@@ -10195,8 +10195,8 @@
     ]
    },
    "RA": {
-    "score": 77.48,
-    "projected": 86.47,
+    "score": 77.28,
+    "projected": 84.44,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -10270,7 +10270,7 @@
       "slot": "WR",
       "pro_team": "TB",
       "opponent": "CHI",
-      "points": 5.3,
+      "points": 5.4,
       "projected": 9.41,
       "status": "live",
       "kickoff": 1794187200000
@@ -10281,7 +10281,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "TB",
-      "points": 2.7,
+      "points": 2.4,
       "projected": 17.2,
       "status": "live",
       "kickoff": 1794187200000
@@ -10300,8 +10300,8 @@
     ]
    },
    "Naug": {
-    "score": 84.94,
-    "projected": 100.45,
+    "score": 92.94,
+    "projected": 106.21,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10397,7 +10397,7 @@
       "slot": "D/ST",
       "pro_team": "CHI",
       "opponent": "TB",
-      "points": 7.0,
+      "points": 15.0,
       "projected": 8.21,
       "status": "live",
       "kickoff": 1794187200000
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 72.4,
-    "projected": 95.38,
+    "projected": 94.77,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10510,8 +10510,8 @@
     ]
    },
    "CJ": {
-    "score": 108.7,
-    "projected": 113.54,
+    "score": 110.0,
+    "projected": 113.86,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10530,7 +10530,7 @@
       "slot": "RB",
       "pro_team": "TB",
       "opponent": "CHI",
-      "points": 12.4,
+      "points": 13.7,
       "projected": 14.33,
       "status": "live",
       "kickoff": 1794187200000
@@ -10616,7 +10616,7 @@
    },
    "BEND": {
     "score": 120.14,
-    "projected": 122.61,
+    "projected": 122.11,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -11942,6 +11942,23 @@
      "Naug": 84.94,
      "SWSH": 72.4,
      "CJ": 108.7,
+     "BEND": 120.14
+    }
+   },
+   {
+    "t": "2026-11-09T03:50:17+00:00",
+    "scores": {
+     "BW": 79.1,
+     "SACK": 140.42,
+     "WALT": 106.88,
+     "SW": 94.48,
+     "BING": 78.86,
+     "TMOG": 43.48,
+     "MBJG": 117.98,
+     "RA": 77.28,
+     "Naug": 92.94,
+     "SWSH": 72.4,
+     "CJ": 110.0,
      "BEND": 120.14
     }
    }
