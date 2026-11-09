@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-09 00:50:19 UTC",
-  "last_updated": "2026-11-09T00:50:19.360539+00:00"
+  "updated_at": "2026-11-09 01:00:22 UTC",
+  "last_updated": "2026-11-09T01:00:22.582866+00:00"
  },
  "teams": [
   {
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-09T00:50:19+00:00",
+  "updated_at": "2026-11-09T01:00:22+00:00",
   "teams": {
    "BW": {
     "score": 77.1,
@@ -9471,7 +9471,7 @@
       "opponent": "ARI",
       "points": 8.6,
       "projected": 18.91,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -9548,7 +9548,7 @@
       "opponent": "None",
       "points": 12.6,
       "projected": 16.89,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -9609,7 +9609,7 @@
       "opponent": "NE",
       "points": 26.6,
       "projected": 12.85,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -9620,7 +9620,7 @@
       "opponent": "NE",
       "points": 1.4,
       "projected": 8.37,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -9692,7 +9692,7 @@
       "opponent": "SF",
       "points": 4.5,
       "projected": 12.5,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -9819,7 +9819,7 @@
       "opponent": "GB",
       "points": 13.3,
       "projected": 13.12,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -9852,7 +9852,7 @@
       "opponent": "LV",
       "points": 7.0,
       "projected": 10.23,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10018,7 +10018,7 @@
       "opponent": "SEA",
       "points": 9.0,
       "projected": 10.67,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10084,7 +10084,7 @@
       "opponent": "GB",
       "points": 5.0,
       "projected": 7.65,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      }
     ]
@@ -10112,7 +10112,7 @@
       "opponent": "SEA",
       "points": 8.9,
       "projected": 10.78,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10178,7 +10178,7 @@
       "opponent": "NE",
       "points": 27.4,
       "projected": 14.47,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10217,7 +10217,7 @@
       "opponent": "LV",
       "points": 7.8,
       "projected": 13.54,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10228,7 +10228,7 @@
       "opponent": "None",
       "points": 24.98,
       "projected": 22.19,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10239,7 +10239,7 @@
       "opponent": "ARI",
       "points": 9.0,
       "projected": 8.55,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10250,7 +10250,7 @@
       "opponent": "ARI",
       "points": 6.0,
       "projected": 10.44,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10388,7 +10388,7 @@
       "opponent": "SEA",
       "points": 5.6,
       "projected": 11.68,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10427,7 +10427,7 @@
       "opponent": "SF",
       "points": 18.8,
       "projected": 14.66,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10460,7 +10460,7 @@
       "opponent": "NE",
       "points": 0.5,
       "projected": 14.64,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10504,7 +10504,7 @@
       "opponent": "GB",
       "points": 11.1,
       "projected": 7.74,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      }
     ]
@@ -10543,7 +10543,7 @@
       "opponent": "ARI",
       "points": 9.8,
       "projected": 10.15,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10554,7 +10554,7 @@
       "opponent": "None",
       "points": 19.1,
       "projected": 20.86,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10587,7 +10587,7 @@
       "opponent": "SF",
       "points": 7.0,
       "projected": 9.75,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10626,7 +10626,7 @@
       "opponent": "LV",
       "points": 21.7,
       "projected": 19.61,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
@@ -10703,7 +10703,7 @@
       "opponent": "None",
       "points": 12.64,
       "projected": 14.86,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794173100000
      },
      {
