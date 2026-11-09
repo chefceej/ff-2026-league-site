@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-09 02:10:22 UTC",
-  "last_updated": "2026-11-09T02:10:22.984741+00:00"
+  "updated_at": "2026-11-09 02:20:17 UTC",
+  "last_updated": "2026-11-09T02:20:17.261648+00:00"
  },
  "teams": [
   {
@@ -504,7 +504,7 @@
     113.5,
     102.92,
     109.58,
-    44.3
+    40.3
    ],
    "ranking_points_by_week": [
     11.0,
@@ -557,7 +557,7 @@
     90.76,
     82.82,
     65.76,
-    72.68
+    72.88
    ],
    "ranking_points_by_week": [
     3.0,
@@ -7765,14 +7765,6 @@
      "score": 15.3
     },
     {
-     "name": "Bears TQB",
-     "pro_team": "CHI",
-     "fantasy_team": "Team Made of Glass",
-     "position": "QB",
-     "slot": "QB",
-     "score": 15.1
-    },
-    {
      "name": "Jake Bates",
      "pro_team": "DET",
      "fantasy_team": "JSN Derulo ",
@@ -7947,6 +7939,14 @@
      "position": "TE",
      "slot": "TE",
      "score": 11.2
+    },
+    {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 11.1
     },
     {
      "name": "Mack Hollins",
@@ -8346,7 +8346,7 @@
      "fantasy_team": "The Sun Gods ",
      "position": "RB",
      "slot": "RB",
-     "score": 2.2
+     "score": 2.4
     },
     {
      "name": "Cairo Santos",
@@ -9393,7 +9393,7 @@
    "TMOG": {
     "RB": 6.9,
     "WR": 9.0,
-    "QB": 15.1,
+    "QB": 11.1,
     "FLEX": 6.3,
     "D/ST": 0.0,
     "K": 2.0,
@@ -9414,7 +9414,7 @@
     "QB": 24.98,
     "D/ST": 9.0,
     "K": 6.0,
-    "RB": 8.6,
+    "RB": 8.8,
     "FLEX": 2.7
    },
    "Naug": {
@@ -9457,11 +9457,11 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-09T02:10:22+00:00",
+  "updated_at": "2026-11-09T02:20:17+00:00",
   "teams": {
    "BW": {
     "score": 78.2,
-    "projected": 84.61,
+    "projected": 84.25,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -9671,7 +9671,7 @@
    },
    "WALT": {
     "score": 101.38,
-    "projected": 108.81,
+    "projected": 108.39,
     "starters": [
      {
       "name": "Puka Nacua",
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 44.3,
-    "projected": 97.59,
+    "score": 40.3,
+    "projected": 92.61,
     "starters": [
      {
       "name": "James Cook III",
@@ -10038,7 +10038,7 @@
       "slot": "QB",
       "pro_team": "CHI",
       "opponent": "None",
-      "points": 15.1,
+      "points": 11.1,
       "projected": 16.78,
       "status": "live",
       "kickoff": 1794187200000
@@ -10195,8 +10195,8 @@
     ]
    },
    "RA": {
-    "score": 72.68,
-    "projected": 90.08,
+    "score": 72.88,
+    "projected": 89.29,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -10281,7 +10281,7 @@
       "slot": "RB",
       "pro_team": "CHI",
       "opponent": "TB",
-      "points": 2.2,
+      "points": 2.4,
       "projected": 17.2,
       "status": "live",
       "kickoff": 1794187200000
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 83.94,
-    "projected": 100.48,
+    "projected": 100.4,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 68.4,
-    "projected": 94.24,
+    "projected": 93.9,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10511,7 +10511,7 @@
    },
    "CJ": {
     "score": 98.9,
-    "projected": 108.27,
+    "projected": 107.74,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -10616,7 +10616,7 @@
    },
    "BEND": {
     "score": 119.94,
-    "projected": 124.72,
+    "projected": 124.45,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -11786,6 +11786,23 @@
      "TMOG": 44.3,
      "MBJG": 117.98,
      "RA": 72.68,
+     "Naug": 83.94,
+     "SWSH": 68.4,
+     "CJ": 98.9,
+     "BEND": 119.94
+    }
+   },
+   {
+    "t": "2026-11-09T02:20:17+00:00",
+    "scores": {
+     "BW": 78.2,
+     "SACK": 140.42,
+     "WALT": 101.38,
+     "SW": 94.48,
+     "BING": 78.86,
+     "TMOG": 40.3,
+     "MBJG": 117.98,
+     "RA": 72.88,
      "Naug": 83.94,
      "SWSH": 68.4,
      "CJ": 98.9,
