@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 01:10:20 UTC",
-  "last_updated": "2026-11-10T01:10:20.836495+00:00"
+  "updated_at": "2026-11-10 01:20:19 UTC",
+  "last_updated": "2026-11-10T01:20:19.910858+00:00"
  },
  "teams": [
   {
@@ -80,7 +80,7 @@
     121.14,
     118.16,
     143.32,
-    117.98
+    128.98
    ],
    "ranking_points_by_week": [
     5.0,
@@ -91,7 +91,7 @@
     10.0,
     8.0,
     12.0,
-    9.0
+    11.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -102,7 +102,7 @@
     40.0,
     48.0,
     60.0,
-    69.0
+    71.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -113,10 +113,10 @@
     0.0,
     1.0,
     9.0,
-    10.0
+    12.0
    ],
    "rank": 2,
-   "total_ranking_points": 69.0
+   "total_ranking_points": 71.0
   },
   {
    "team_id": 9,
@@ -250,7 +250,7 @@
     3.0,
     9.0,
     7.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -261,7 +261,7 @@
     34.0,
     43.0,
     50.0,
-    60.0
+    59.0
    ],
    "normalized_by_week": [
     1.0,
@@ -272,10 +272,10 @@
     -6.0,
     -4.0,
     -1.0,
-    1.0
+    0.0
    ],
    "rank": 5,
-   "total_ranking_points": 60.0
+   "total_ranking_points": 59.0
   },
   {
    "team_id": 4,
@@ -462,7 +462,7 @@
     4.0,
     2.0,
     6.0,
-    11.0
+    10.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -473,7 +473,7 @@
     33.0,
     35.0,
     41.0,
-    52.0
+    51.0
    ],
    "normalized_by_week": [
     0.0,
@@ -484,10 +484,10 @@
     -7.0,
     -12.0,
     -10.0,
-    -7.0
+    -8.0
    ],
    "rank": 9,
-   "total_ranking_points": 52.0
+   "total_ranking_points": 51.0
   },
   {
    "team_id": 7,
@@ -504,7 +504,7 @@
     113.5,
     102.92,
     109.58,
-    48.96
+    59.06
    ],
    "ranking_points_by_week": [
     11.0,
@@ -7973,6 +7973,14 @@
      "score": 11.1
     },
     {
+     "name": "Vikings D/ST",
+     "pro_team": "MIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 11.0
+    },
+    {
      "name": "Chiefs D/ST",
      "pro_team": "KC",
      "fantasy_team": "Swishington Football Team",
@@ -7987,6 +7995,14 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 11.0
+    },
+    {
+     "name": "Bills D/ST",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 10.0
     },
     {
      "name": "Brandon Aubrey",
@@ -8389,6 +8405,14 @@
      "score": 0.5
     },
     {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.1
+    },
+    {
      "name": "Will Reichard",
      "pro_team": "MIN",
      "fantasy_team": "3 Inches of Disappointment ",
@@ -8405,35 +8429,11 @@
      "score": 0.0
     },
     {
-     "name": "James Cook III",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "RB",
-     "score": 0.0
-    },
-    {
      "name": "DJ Moore",
      "pro_team": "BUF",
      "fantasy_team": "Team Made of Glass",
      "position": "WR",
      "slot": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Bills D/ST",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 0.0
-    },
-    {
-     "name": "Vikings D/ST",
-     "pro_team": "MIN",
-     "fantasy_team": "The Lizard Kings",
-     "position": "D/ST",
-     "slot": "D/ST",
      "score": 0.0
     },
     {
@@ -9391,11 +9391,11 @@
     "D/ST": 5.0
    },
    "TMOG": {
-    "RB": 6.9,
+    "RB": 7.0,
     "WR": 9.0,
     "QB": 12.76,
     "FLEX": 6.3,
-    "D/ST": 0.0,
+    "D/ST": 10.0,
     "K": 9.0,
     "TE": 5.0
    },
@@ -9404,7 +9404,7 @@
     "TE": 8.9,
     "WR": 45.1,
     "K": 17.0,
-    "D/ST": 0.0,
+    "D/ST": 11.0,
     "QB": 14.38,
     "FLEX": 16.8
    },
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T01:10:20+00:00",
+  "updated_at": "2026-11-10T01:20:19+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9776,7 +9776,7 @@
    },
    "SW": {
     "score": 94.48,
-    "projected": 105.52,
+    "projected": 105.3,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9863,7 +9863,7 @@
       "opponent": "BUF",
       "points": 0.0,
       "projected": 11.04,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794273300000
      },
      {
@@ -9881,7 +9881,7 @@
    },
    "BING": {
     "score": 78.86,
-    "projected": 89.72,
+    "projected": 89.51,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9957,7 +9957,7 @@
       "opponent": "MIN",
       "points": 0.0,
       "projected": 10.86,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794273300000
      },
      {
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 48.96,
-    "projected": 84.95,
+    "score": 59.06,
+    "projected": 84.55,
     "starters": [
      {
       "name": "James Cook III",
@@ -9994,9 +9994,9 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 0.0,
+      "points": 0.1,
       "projected": 17.53,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794273300000
      },
      {
@@ -10007,7 +10007,7 @@
       "opponent": "MIN",
       "points": 0.0,
       "projected": 10.52,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794273300000
      },
      {
@@ -10060,9 +10060,9 @@
       "slot": "D/ST",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 0.0,
+      "points": 10.0,
       "projected": 7.94,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794273300000
      },
      {
@@ -10090,8 +10090,8 @@
     ]
    },
    "MBJG": {
-    "score": 117.98,
-    "projected": 124.53,
+    "score": 128.98,
+    "projected": 124.61,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10154,9 +10154,9 @@
       "slot": "D/ST",
       "pro_team": "MIN",
       "opponent": "BUF",
-      "points": 0.0,
+      "points": 11.0,
       "projected": 6.55,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794273300000
      },
      {
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 91.94,
-    "projected": 107.04,
+    "projected": 106.75,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10311,7 +10311,7 @@
       "opponent": "BUF",
       "points": 0.0,
       "projected": 15.1,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794273300000
      },
      {
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 75.4,
-    "projected": 95.34,
+    "projected": 94.96,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10438,7 +10438,7 @@
       "opponent": "None",
       "points": 0.0,
       "projected": 19.94,
-      "status": "pre",
+      "status": "live",
       "kickoff": 1794273300000
      },
      {
@@ -12040,6 +12040,23 @@
      "BING": 78.86,
      "TMOG": 48.96,
      "MBJG": 117.98,
+     "RA": 77.98,
+     "Naug": 91.94,
+     "SWSH": 75.4,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T01:20:19+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 94.48,
+     "BING": 78.86,
+     "TMOG": 59.06,
+     "MBJG": 128.98,
      "RA": 77.98,
      "Naug": 91.94,
      "SWSH": 75.4,
