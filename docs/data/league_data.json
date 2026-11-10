@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 02:00:23 UTC",
-  "last_updated": "2026-11-10T02:00:23.987003+00:00"
+  "updated_at": "2026-11-10 02:10:20 UTC",
+  "last_updated": "2026-11-10T02:10:20.122610+00:00"
  },
  "teams": [
   {
@@ -504,7 +504,7 @@
     113.5,
     102.92,
     109.58,
-    64.66
+    64.76
    ],
    "ranking_points_by_week": [
     11.0,
@@ -8410,7 +8410,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "RB",
-     "score": 1.7
+     "score": 1.8
     },
     {
      "name": "Tucker Kraft",
@@ -9391,7 +9391,7 @@
     "D/ST": 5.0
    },
    "TMOG": {
-    "RB": 8.6,
+    "RB": 8.7,
     "WR": 11.0,
     "QB": 12.76,
     "FLEX": 6.3,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T02:00:23+00:00",
+  "updated_at": "2026-11-10T02:10:20+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9776,7 +9776,7 @@
    },
    "SW": {
     "score": 94.48,
-    "projected": 102.76,
+    "projected": 102.19,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9881,7 +9881,7 @@
    },
    "BING": {
     "score": 81.86,
-    "projected": 90.0,
+    "projected": 89.45,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 64.66,
-    "projected": 82.65,
+    "score": 64.76,
+    "projected": 81.52,
     "starters": [
      {
       "name": "James Cook III",
@@ -9994,7 +9994,7 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 1.7,
+      "points": 1.8,
       "projected": 17.53,
       "status": "live",
       "kickoff": 1794273300000
@@ -10091,7 +10091,7 @@
    },
    "MBJG": {
     "score": 126.98,
-    "projected": 125.14,
+    "projected": 125.27,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 91.94,
-    "projected": 103.27,
+    "projected": 102.49,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 75.82,
-    "projected": 90.77,
+    "projected": 89.75,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12124,6 +12124,23 @@
      "SW": 94.48,
      "BING": 81.86,
      "TMOG": 64.66,
+     "MBJG": 126.98,
+     "RA": 77.98,
+     "Naug": 91.94,
+     "SWSH": 75.82,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T02:10:20+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 94.48,
+     "BING": 81.86,
+     "TMOG": 64.76,
      "MBJG": 126.98,
      "RA": 77.98,
      "Naug": 91.94,
