@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 01:20:19 UTC",
-  "last_updated": "2026-11-10T01:20:19.910858+00:00"
+  "updated_at": "2026-11-10 01:30:19 UTC",
+  "last_updated": "2026-11-10T01:30:19.847095+00:00"
  },
  "teams": [
   {
@@ -292,7 +292,7 @@
     91.2,
     108.38,
     118.56,
-    75.4
+    76.36
    ],
    "ranking_points_by_week": [
     1.0,
@@ -504,7 +504,7 @@
     113.5,
     102.92,
     109.58,
-    59.06
+    61.76
    ],
    "ranking_points_by_week": [
     11.0,
@@ -8389,6 +8389,14 @@
      "score": 2.7
     },
     {
+     "name": "DJ Moore",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "WR",
+     "slot": "WR",
+     "score": 2.0
+    },
+    {
      "name": "Tucker Kraft",
      "pro_team": "GB",
      "fantasy_team": "Bijan These Nuts",
@@ -8397,12 +8405,12 @@
      "score": 1.4
     },
     {
-     "name": "Josh Jacobs",
-     "pro_team": "GB",
+     "name": "Bills TQB",
+     "pro_team": "BUF",
      "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "slot": "RB",
-     "score": 0.5
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.96
     },
     {
      "name": "James Cook III",
@@ -8410,7 +8418,15 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "RB",
-     "score": 0.1
+     "score": 0.8
+    },
+    {
+     "name": "Josh Jacobs",
+     "pro_team": "GB",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.5
     },
     {
      "name": "Will Reichard",
@@ -8429,14 +8445,6 @@
      "score": 0.0
     },
     {
-     "name": "DJ Moore",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Justin Jefferson",
      "pro_team": "MIN",
      "fantasy_team": "The Garbage Dump",
@@ -8450,14 +8458,6 @@
      "fantasy_team": "The Garbage Dump",
      "position": "WR",
      "slot": "FLEX",
-     "score": 0.0
-    },
-    {
-     "name": "Bills TQB",
-     "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
-     "position": "QB",
-     "slot": "QB",
      "score": 0.0
     }
    ]
@@ -9391,8 +9391,8 @@
     "D/ST": 5.0
    },
    "TMOG": {
-    "RB": 7.0,
-    "WR": 9.0,
+    "RB": 7.7,
+    "WR": 11.0,
     "QB": 12.76,
     "FLEX": 6.3,
     "D/ST": 10.0,
@@ -9429,7 +9429,7 @@
    "SWSH": {
     "RB": 13.9,
     "TE": 18.8,
-    "QB": 0.0,
+    "QB": 0.96,
     "WR": 13.8,
     "FLEX": 7.9,
     "D/ST": 11.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T01:20:19+00:00",
+  "updated_at": "2026-11-10T01:30:19+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9776,7 +9776,7 @@
    },
    "SW": {
     "score": 94.48,
-    "projected": 105.3,
+    "projected": 104.39,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9881,7 +9881,7 @@
    },
    "BING": {
     "score": 78.86,
-    "projected": 89.51,
+    "projected": 88.61,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 59.06,
-    "projected": 84.55,
+    "score": 61.76,
+    "projected": 85.1,
     "starters": [
      {
       "name": "James Cook III",
@@ -9994,7 +9994,7 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 0.1,
+      "points": 0.8,
       "projected": 17.53,
       "status": "live",
       "kickoff": 1794273300000
@@ -10005,7 +10005,7 @@
       "slot": "WR",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 0.0,
+      "points": 2.0,
       "projected": 10.52,
       "status": "live",
       "kickoff": 1794273300000
@@ -10091,7 +10091,7 @@
    },
    "MBJG": {
     "score": 128.98,
-    "projected": 124.61,
+    "projected": 124.98,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 91.94,
-    "projected": 106.75,
+    "projected": 105.5,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10405,8 +10405,8 @@
     ]
    },
    "SWSH": {
-    "score": 75.4,
-    "projected": 94.96,
+    "score": 76.36,
+    "projected": 94.26,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10436,7 +10436,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 0.0,
+      "points": 0.96,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1794273300000
@@ -12060,6 +12060,23 @@
      "RA": 77.98,
      "Naug": 91.94,
      "SWSH": 75.4,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T01:30:19+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 94.48,
+     "BING": 78.86,
+     "TMOG": 61.76,
+     "MBJG": 128.98,
+     "RA": 77.98,
+     "Naug": 91.94,
+     "SWSH": 76.36,
      "CJ": 122.8,
      "BEND": 123.54
     }
