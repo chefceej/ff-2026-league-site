@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 01:40:18 UTC",
-  "last_updated": "2026-11-10T01:40:18.203267+00:00"
+  "updated_at": "2026-11-10 01:50:19 UTC",
+  "last_updated": "2026-11-10T01:50:19.094279+00:00"
  },
  "teams": [
   {
@@ -80,7 +80,7 @@
     121.14,
     118.16,
     143.32,
-    130.98
+    126.98
    ],
    "ranking_points_by_week": [
     5.0,
@@ -292,7 +292,7 @@
     91.2,
     108.38,
     118.56,
-    75.06
+    75.82
    ],
    "ranking_points_by_week": [
     1.0,
@@ -398,7 +398,7 @@
     97.2,
     66.52,
     99.18,
-    78.86
+    81.86
    ],
    "ranking_points_by_week": [
     10.0,
@@ -504,7 +504,7 @@
     113.5,
     102.92,
     109.58,
-    64.36
+    64.76
    ],
    "ranking_points_by_week": [
     11.0,
@@ -7893,14 +7893,6 @@
      "score": 13.0
     },
     {
-     "name": "Vikings D/ST",
-     "pro_team": "MIN",
-     "fantasy_team": "The Lizard Kings",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 13.0
-    },
-    {
      "name": "Denzel Boston",
      "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
@@ -8074,6 +8066,14 @@
      "fantasy_team": "Team Made of Glass",
      "position": "K",
      "slot": "K",
+     "score": 9.0
+    },
+    {
+     "name": "Vikings D/ST",
+     "pro_team": "MIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "D/ST",
+     "slot": "D/ST",
      "score": 9.0
     },
     {
@@ -8373,6 +8373,14 @@
      "score": 3.0
     },
     {
+     "name": "Tyler Bass",
+     "pro_team": "BUF",
+     "fantasy_team": "Bada Bing",
+     "position": "K",
+     "slot": "K",
+     "score": 3.0
+    },
+    {
      "name": "Devaughn Vele",
      "pro_team": "NO",
      "fantasy_team": "The Sun Gods ",
@@ -8397,19 +8405,19 @@
      "score": 2.0
     },
     {
-     "name": "Tucker Kraft",
-     "pro_team": "GB",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "TE",
-     "slot": "TE",
-     "score": 1.4
-    },
-    {
      "name": "James Cook III",
      "pro_team": "BUF",
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "RB",
+     "score": 1.8
+    },
+    {
+     "name": "Tucker Kraft",
+     "pro_team": "GB",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "TE",
+     "slot": "TE",
      "score": 1.4
     },
     {
@@ -8421,17 +8429,17 @@
      "score": 0.5
     },
     {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.42
+    },
+    {
      "name": "Will Reichard",
      "pro_team": "MIN",
      "fantasy_team": "3 Inches of Disappointment ",
-     "position": "K",
-     "slot": "K",
-     "score": 0.0
-    },
-    {
-     "name": "Tyler Bass",
-     "pro_team": "BUF",
-     "fantasy_team": "Bada Bing",
      "position": "K",
      "slot": "K",
      "score": 0.0
@@ -8451,14 +8459,6 @@
      "position": "WR",
      "slot": "FLEX",
      "score": 0.0
-    },
-    {
-     "name": "Bills TQB",
-     "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
-     "position": "QB",
-     "slot": "QB",
-     "score": -0.34
     }
    ]
   }
@@ -9387,11 +9387,11 @@
     "WR": 26.3,
     "TE": 6.4,
     "QB": 14.56,
-    "K": 0.0,
+    "K": 3.0,
     "D/ST": 5.0
    },
    "TMOG": {
-    "RB": 8.3,
+    "RB": 8.7,
     "WR": 11.0,
     "QB": 12.76,
     "FLEX": 6.3,
@@ -9404,7 +9404,7 @@
     "TE": 8.9,
     "WR": 45.1,
     "K": 17.0,
-    "D/ST": 13.0,
+    "D/ST": 9.0,
     "QB": 14.38,
     "FLEX": 16.8
    },
@@ -9429,7 +9429,7 @@
    "SWSH": {
     "RB": 13.9,
     "TE": 18.8,
-    "QB": -0.34,
+    "QB": 0.42,
     "WR": 13.8,
     "FLEX": 7.9,
     "D/ST": 11.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T01:40:18+00:00",
+  "updated_at": "2026-11-10T01:50:19+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9776,7 +9776,7 @@
    },
    "SW": {
     "score": 94.48,
-    "projected": 103.77,
+    "projected": 103.09,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9880,8 +9880,8 @@
     ]
    },
    "BING": {
-    "score": 78.86,
-    "projected": 88.0,
+    "score": 81.86,
+    "projected": 90.33,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9955,7 +9955,7 @@
       "slot": "K",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 0.0,
+      "points": 3.0,
       "projected": 10.86,
       "status": "live",
       "kickoff": 1794273300000
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 64.36,
-    "projected": 84.55,
+    "score": 64.76,
+    "projected": 83.47,
     "starters": [
      {
       "name": "James Cook III",
@@ -9994,7 +9994,7 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 1.4,
+      "points": 1.8,
       "projected": 17.53,
       "status": "live",
       "kickoff": 1794273300000
@@ -10090,8 +10090,8 @@
     ]
    },
    "MBJG": {
-    "score": 130.98,
-    "projected": 125.55,
+    "score": 126.98,
+    "projected": 125.07,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10154,7 +10154,7 @@
       "slot": "D/ST",
       "pro_team": "MIN",
       "opponent": "BUF",
-      "points": 13.0,
+      "points": 9.0,
       "projected": 6.55,
       "status": "live",
       "kickoff": 1794273300000
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 91.94,
-    "projected": 104.65,
+    "projected": 103.72,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10405,8 +10405,8 @@
     ]
    },
    "SWSH": {
-    "score": 75.06,
-    "projected": 91.84,
+    "score": 75.82,
+    "projected": 91.37,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10436,7 +10436,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": -0.34,
+      "points": 0.42,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1794273300000
@@ -12094,6 +12094,23 @@
      "RA": 77.98,
      "Naug": 91.94,
      "SWSH": 75.06,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T01:50:19+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 94.48,
+     "BING": 81.86,
+     "TMOG": 64.76,
+     "MBJG": 126.98,
+     "RA": 77.98,
+     "Naug": 91.94,
+     "SWSH": 75.82,
      "CJ": 122.8,
      "BEND": 123.54
     }
