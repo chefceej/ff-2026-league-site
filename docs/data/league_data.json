@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 04:40:16 UTC",
-  "last_updated": "2026-11-10T04:40:16.789952+00:00"
+  "updated_at": "2026-11-10 04:50:17 UTC",
+  "last_updated": "2026-11-10T04:50:17.205285+00:00"
  },
  "teams": [
   {
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T04:40:16+00:00",
+  "updated_at": "2026-11-10T04:50:17+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9863,7 +9863,7 @@
       "opponent": "BUF",
       "points": 9.0,
       "projected": 11.04,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794273300000
      },
      {
@@ -9957,7 +9957,7 @@
       "opponent": "MIN",
       "points": 13.0,
       "projected": 10.86,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794273300000
      },
      {
@@ -9996,7 +9996,7 @@
       "opponent": "MIN",
       "points": 16.7,
       "projected": 17.53,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794273300000
      },
      {
@@ -10007,7 +10007,7 @@
       "opponent": "MIN",
       "points": 5.1,
       "projected": 10.52,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794273300000
      },
      {
@@ -10062,7 +10062,7 @@
       "opponent": "MIN",
       "points": 14.0,
       "projected": 7.94,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794273300000
      },
      {
@@ -10156,7 +10156,7 @@
       "opponent": "BUF",
       "points": 6.0,
       "projected": 6.55,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794273300000
      },
      {
@@ -10311,7 +10311,7 @@
       "opponent": "BUF",
       "points": 7.3,
       "projected": 15.1,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794273300000
      },
      {
@@ -10438,7 +10438,7 @@
       "opponent": "None",
       "points": 12.66,
       "projected": 19.94,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794273300000
      },
      {
