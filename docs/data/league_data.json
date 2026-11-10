@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 04:10:21 UTC",
-  "last_updated": "2026-11-10T04:10:21.383323+00:00"
+  "updated_at": "2026-11-10 04:20:20 UTC",
+  "last_updated": "2026-11-10T04:20:20.751437+00:00"
  },
  "teams": [
   {
@@ -80,7 +80,7 @@
     121.14,
     118.16,
     143.32,
-    124.98
+    123.98
    ],
    "ranking_points_by_week": [
     5.0,
@@ -172,59 +172,6 @@
    "total_ranking_points": 69.0
   },
   {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SWSH",
-   "abbrev": "SWSH",
-   "owner": "Matt Stern",
-   "scores_by_week": [
-    84.76,
-    106.42,
-    119.86,
-    90.12,
-    133.0,
-    91.2,
-    108.38,
-    118.56,
-    88.26
-   ],
-   "ranking_points_by_week": [
-    1.0,
-    8.0,
-    12.0,
-    4.0,
-    9.0,
-    6.0,
-    7.0,
-    10.0,
-    5.0
-   ],
-   "cumulative_points_by_week": [
-    1.0,
-    9.0,
-    21.0,
-    25.0,
-    34.0,
-    40.0,
-    47.0,
-    57.0,
-    62.0
-   ],
-   "normalized_by_week": [
-    -6.0,
-    -3.0,
-    2.0,
-    -2.0,
-    0.0,
-    0.0,
-    0.0,
-    6.0,
-    3.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 62.0
-  },
-  {
    "team_id": 3,
    "team_name": "JSN Derulo ",
    "team_abbrev": "BW",
@@ -272,6 +219,59 @@
     3.0,
     8.0,
     7.0,
+    2.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 61.0
+  },
+  {
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SWSH",
+   "abbrev": "SWSH",
+   "owner": "Matt Stern",
+   "scores_by_week": [
+    84.76,
+    106.42,
+    119.86,
+    90.12,
+    133.0,
+    91.2,
+    108.38,
+    118.56,
+    88.26
+   ],
+   "ranking_points_by_week": [
+    1.0,
+    8.0,
+    12.0,
+    4.0,
+    9.0,
+    6.0,
+    7.0,
+    10.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    1.0,
+    9.0,
+    21.0,
+    25.0,
+    34.0,
+    40.0,
+    47.0,
+    57.0,
+    61.0
+   ],
+   "normalized_by_week": [
+    -6.0,
+    -3.0,
+    2.0,
+    -2.0,
+    0.0,
+    0.0,
+    0.0,
+    6.0,
     2.0
    ],
    "rank": 5,
@@ -398,7 +398,7 @@
     97.2,
     66.52,
     99.18,
-    86.86
+    91.86
    ],
    "ranking_points_by_week": [
     10.0,
@@ -409,7 +409,7 @@
     7.0,
     1.0,
     4.0,
-    4.0
+    5.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -420,7 +420,7 @@
     46.0,
     47.0,
     51.0,
-    55.0
+    56.0
    ],
    "normalized_by_week": [
     3.0,
@@ -431,10 +431,10 @@
     6.0,
     0.0,
     0.0,
-    -4.0
+    -3.0
    ],
    "rank": 8,
-   "total_ranking_points": 55.0
+   "total_ranking_points": 56.0
   },
   {
    "team_id": 7,
@@ -451,7 +451,7 @@
     113.5,
     102.92,
     109.58,
-    83.26
+    83.76
    ],
    "ranking_points_by_week": [
     11.0,
@@ -610,7 +610,7 @@
     82.12,
     97.38,
     132.48,
-    96.84
+    99.24
    ],
    "ranking_points_by_week": [
     6.0,
@@ -7770,7 +7770,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "RB",
-     "score": 16.2
+     "score": 16.7
     },
     {
      "name": "Spencer Shrader",
@@ -7890,6 +7890,14 @@
      "fantasy_team": "3 Inches of Disappointment ",
      "position": "D/ST",
      "slot": "D/ST",
+     "score": 13.0
+    },
+    {
+     "name": "Tyler Bass",
+     "pro_team": "BUF",
+     "fantasy_team": "Bada Bing",
+     "position": "K",
+     "slot": "K",
      "score": 13.0
     },
     {
@@ -8141,14 +8149,6 @@
      "score": 8.0
     },
     {
-     "name": "Tyler Bass",
-     "pro_team": "BUF",
-     "fantasy_team": "Bada Bing",
-     "position": "K",
-     "slot": "K",
-     "score": 8.0
-    },
-    {
      "name": "Woody Marks",
      "pro_team": "HOU",
      "fantasy_team": "Swishington Football Team",
@@ -8189,19 +8189,19 @@
      "score": 7.4
     },
     {
+     "name": "Justin Jefferson",
+     "pro_team": "MIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "slot": "WR",
+     "score": 7.3
+    },
+    {
      "name": "Kaelon Black",
      "pro_team": "SF",
      "fantasy_team": "3 Inches of Disappointment ",
      "position": "RB",
      "slot": "FLEX",
-     "score": 7.0
-    },
-    {
-     "name": "Vikings D/ST",
-     "pro_team": "MIN",
-     "fantasy_team": "The Lizard Kings",
-     "position": "D/ST",
-     "slot": "D/ST",
      "score": 7.0
     },
     {
@@ -8266,6 +8266,14 @@
      "fantasy_team": "Bada Bing",
      "position": "RB",
      "slot": "FLEX",
+     "score": 6.0
+    },
+    {
+     "name": "Vikings D/ST",
+     "pro_team": "MIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "D/ST",
+     "slot": "D/ST",
      "score": 6.0
     },
     {
@@ -8346,14 +8354,6 @@
      "fantasy_team": "JSN Derulo ",
      "position": "RB",
      "slot": "RB",
-     "score": 4.9
-    },
-    {
-     "name": "Justin Jefferson",
-     "pro_team": "MIN",
-     "fantasy_team": "The Garbage Dump",
-     "position": "WR",
-     "slot": "WR",
      "score": 4.9
     },
     {
@@ -9387,11 +9387,11 @@
     "WR": 26.3,
     "TE": 6.4,
     "QB": 14.56,
-    "K": 8.0,
+    "K": 13.0,
     "D/ST": 5.0
    },
    "TMOG": {
-    "RB": 23.1,
+    "RB": 23.6,
     "WR": 14.1,
     "QB": 12.76,
     "FLEX": 6.3,
@@ -9404,7 +9404,7 @@
     "TE": 8.9,
     "WR": 45.1,
     "K": 17.0,
-    "D/ST": 7.0,
+    "D/ST": 6.0,
     "QB": 14.38,
     "FLEX": 16.8
    },
@@ -9418,7 +9418,7 @@
     "FLEX": 2.7
    },
    "Naug": {
-    "WR": 14.2,
+    "WR": 16.6,
     "RB": 13.8,
     "QB": 29.54,
     "K": 10.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T04:10:21+00:00",
+  "updated_at": "2026-11-10T04:20:20+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9776,7 +9776,7 @@
    },
    "SW": {
     "score": 103.48,
-    "projected": 104.56,
+    "projected": 104.01,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9880,8 +9880,8 @@
     ]
    },
    "BING": {
-    "score": 86.86,
-    "projected": 87.92,
+    "score": 91.86,
+    "projected": 92.39,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9955,7 +9955,7 @@
       "slot": "K",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 8.0,
+      "points": 13.0,
       "projected": 10.86,
       "status": "live",
       "kickoff": 1794273300000
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 83.26,
-    "projected": 85.5,
+    "score": 83.76,
+    "projected": 84.87,
     "starters": [
      {
       "name": "James Cook III",
@@ -9994,7 +9994,7 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 16.2,
+      "points": 16.7,
       "projected": 17.53,
       "status": "live",
       "kickoff": 1794273300000
@@ -10090,8 +10090,8 @@
     ]
    },
    "MBJG": {
-    "score": 124.98,
-    "projected": 124.94,
+    "score": 123.98,
+    "projected": 124.01,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10154,7 +10154,7 @@
       "slot": "D/ST",
       "pro_team": "MIN",
       "opponent": "BUF",
-      "points": 7.0,
+      "points": 6.0,
       "projected": 6.55,
       "status": "live",
       "kickoff": 1794273300000
@@ -10300,8 +10300,8 @@
     ]
    },
    "Naug": {
-    "score": 96.84,
-    "projected": 98.31,
+    "score": 99.24,
+    "projected": 99.97,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10309,7 +10309,7 @@
       "slot": "WR",
       "pro_team": "MIN",
       "opponent": "BUF",
-      "points": 4.9,
+      "points": 7.3,
       "projected": 15.1,
       "status": "live",
       "kickoff": 1794273300000
@@ -10406,7 +10406,7 @@
    },
    "SWSH": {
     "score": 88.26,
-    "projected": 90.2,
+    "projected": 89.22,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12331,6 +12331,23 @@
      "MBJG": 124.98,
      "RA": 77.98,
      "Naug": 96.84,
+     "SWSH": 88.26,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T04:20:20+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 103.48,
+     "BING": 91.86,
+     "TMOG": 83.76,
+     "MBJG": 123.98,
+     "RA": 77.98,
+     "Naug": 99.24,
      "SWSH": 88.26,
      "CJ": 122.8,
      "BEND": 123.54
