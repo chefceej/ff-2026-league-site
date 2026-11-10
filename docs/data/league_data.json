@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 04:00:23 UTC",
-  "last_updated": "2026-11-10T04:00:23.028567+00:00"
+  "updated_at": "2026-11-10 04:10:21 UTC",
+  "last_updated": "2026-11-10T04:10:21.383323+00:00"
  },
  "teams": [
   {
@@ -80,7 +80,7 @@
     121.14,
     118.16,
     143.32,
-    127.98
+    124.98
    ],
    "ranking_points_by_week": [
     5.0,
@@ -186,7 +186,7 @@
     91.2,
     108.38,
     118.56,
-    87.7
+    88.26
    ],
    "ranking_points_by_week": [
     1.0,
@@ -398,7 +398,7 @@
     97.2,
     66.52,
     99.18,
-    85.86
+    86.86
    ],
    "ranking_points_by_week": [
     10.0,
@@ -435,6 +435,59 @@
    ],
    "rank": 8,
    "total_ranking_points": 55.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    113.5,
+    102.92,
+    109.58,
+    83.26
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    9.0,
+    5.0,
+    8.0,
+    2.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    36.0,
+    41.0,
+    49.0,
+    51.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -4.0,
+    -6.0,
+    -2.0,
+    -8.0
+   ],
+   "rank": 9,
+   "total_ranking_points": 51.0
   },
   {
    "team_id": 12,
@@ -486,61 +539,8 @@
     -10.0,
     -8.0
    ],
-   "rank": 9,
-   "total_ranking_points": 51.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    113.5,
-    102.92,
-    109.58,
-    74.96
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0,
-    5.0,
-    8.0,
-    1.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0,
-    41.0,
-    49.0,
-    50.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0,
-    -6.0,
-    -2.0,
-    -9.0
-   ],
    "rank": 10,
-   "total_ranking_points": 50.0
+   "total_ranking_points": 51.0
   },
   {
    "team_id": 11,
@@ -568,7 +568,7 @@
     5.0,
     3.0,
     2.0,
-    2.0
+    1.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -579,7 +579,7 @@
     41.0,
     44.0,
     46.0,
-    48.0
+    47.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -590,10 +590,10 @@
     1.0,
     -3.0,
     -5.0,
-    -11.0
+    -12.0
    ],
    "rank": 11,
-   "total_ranking_points": 48.0
+   "total_ranking_points": 47.0
   },
   {
    "team_id": 6,
@@ -7765,6 +7765,14 @@
      "score": 16.8
     },
     {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "RB",
+     "score": 16.2
+    },
+    {
      "name": "Spencer Shrader",
      "pro_team": "IND",
      "fantasy_team": "Walt's Warriors",
@@ -7901,6 +7909,14 @@
      "score": 13.0
     },
     {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "slot": "QB",
+     "score": 12.86
+    },
+    {
      "name": "Denzel Boston",
      "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
@@ -7939,14 +7955,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 12.6
-    },
-    {
-     "name": "Bills TQB",
-     "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
-     "position": "QB",
-     "slot": "QB",
-     "score": 12.3
     },
     {
      "name": "Texans D/ST",
@@ -8003,14 +8011,6 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 11.0
-    },
-    {
-     "name": "Vikings D/ST",
-     "pro_team": "MIN",
-     "fantasy_team": "The Lizard Kings",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 10.0
     },
     {
      "name": "Brandon Aubrey",
@@ -8141,12 +8141,12 @@
      "score": 8.0
     },
     {
-     "name": "James Cook III",
+     "name": "Tyler Bass",
      "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "RB",
-     "score": 7.9
+     "fantasy_team": "Bada Bing",
+     "position": "K",
+     "slot": "K",
+     "score": 8.0
     },
     {
      "name": "Woody Marks",
@@ -8197,11 +8197,11 @@
      "score": 7.0
     },
     {
-     "name": "Tyler Bass",
-     "pro_team": "BUF",
-     "fantasy_team": "Bada Bing",
-     "position": "K",
-     "slot": "K",
+     "name": "Vikings D/ST",
+     "pro_team": "MIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "D/ST",
+     "slot": "D/ST",
      "score": 7.0
     },
     {
@@ -9387,11 +9387,11 @@
     "WR": 26.3,
     "TE": 6.4,
     "QB": 14.56,
-    "K": 7.0,
+    "K": 8.0,
     "D/ST": 5.0
    },
    "TMOG": {
-    "RB": 14.8,
+    "RB": 23.1,
     "WR": 14.1,
     "QB": 12.76,
     "FLEX": 6.3,
@@ -9404,7 +9404,7 @@
     "TE": 8.9,
     "WR": 45.1,
     "K": 17.0,
-    "D/ST": 10.0,
+    "D/ST": 7.0,
     "QB": 14.38,
     "FLEX": 16.8
    },
@@ -9429,7 +9429,7 @@
    "SWSH": {
     "RB": 13.9,
     "TE": 18.8,
-    "QB": 12.3,
+    "QB": 12.86,
     "WR": 13.8,
     "FLEX": 7.9,
     "D/ST": 11.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T04:00:23+00:00",
+  "updated_at": "2026-11-10T04:10:21+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9776,7 +9776,7 @@
    },
    "SW": {
     "score": 103.48,
-    "projected": 105.37,
+    "projected": 104.56,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9880,8 +9880,8 @@
     ]
    },
    "BING": {
-    "score": 85.86,
-    "projected": 87.72,
+    "score": 86.86,
+    "projected": 87.92,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9955,7 +9955,7 @@
       "slot": "K",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 7.0,
+      "points": 8.0,
       "projected": 10.86,
       "status": "live",
       "kickoff": 1794273300000
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 74.96,
-    "projected": 78.89,
+    "score": 83.26,
+    "projected": 85.5,
     "starters": [
      {
       "name": "James Cook III",
@@ -9994,7 +9994,7 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 7.9,
+      "points": 16.2,
       "projected": 17.53,
       "status": "live",
       "kickoff": 1794273300000
@@ -10090,8 +10090,8 @@
     ]
    },
    "MBJG": {
-    "score": 127.98,
-    "projected": 127.39,
+    "score": 124.98,
+    "projected": 124.94,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10154,7 +10154,7 @@
       "slot": "D/ST",
       "pro_team": "MIN",
       "opponent": "BUF",
-      "points": 10.0,
+      "points": 7.0,
       "projected": 6.55,
       "status": "live",
       "kickoff": 1794273300000
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 96.84,
-    "projected": 99.42,
+    "projected": 98.31,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10405,8 +10405,8 @@
     ]
    },
    "SWSH": {
-    "score": 87.7,
-    "projected": 91.11,
+    "score": 88.26,
+    "projected": 90.2,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10436,7 +10436,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 12.3,
+      "points": 12.86,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1794273300000
@@ -12315,6 +12315,23 @@
      "RA": 77.98,
      "Naug": 96.84,
      "SWSH": 87.7,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T04:10:21+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 103.48,
+     "BING": 86.86,
+     "TMOG": 83.26,
+     "MBJG": 124.98,
+     "RA": 77.98,
+     "Naug": 96.84,
+     "SWSH": 88.26,
      "CJ": 122.8,
      "BEND": 123.54
     }
