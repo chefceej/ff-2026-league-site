@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 02:50:17 UTC",
-  "last_updated": "2026-11-10T02:50:17.176481+00:00"
+  "updated_at": "2026-11-10 03:00:22 UTC",
+  "last_updated": "2026-11-10T03:00:22.209619+00:00"
  },
  "teams": [
   {
@@ -239,7 +239,7 @@
     91.2,
     108.38,
     118.56,
-    82.98
+    82.88
    ],
    "ranking_points_by_week": [
     1.0,
@@ -345,7 +345,7 @@
     66.52,
     125.78,
     60.2,
-    98.48
+    103.48
    ],
    "ranking_points_by_week": [
     9.0,
@@ -8037,6 +8037,14 @@
      "score": 9.0
     },
     {
+     "name": "Will Reichard",
+     "pro_team": "MIN",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "K",
+     "slot": "K",
+     "score": 9.0
+    },
+    {
      "name": "Chase Brown",
      "pro_team": "CIN",
      "fantasy_team": "Bada Bing",
@@ -8154,7 +8162,7 @@
      "fantasy_team": "Swishington Football Team",
      "position": "QB",
      "slot": "QB",
-     "score": 7.58
+     "score": 7.48
     },
     {
      "name": "Colston Loveland",
@@ -8354,14 +8362,6 @@
      "fantasy_team": "Walt's Warriors",
      "position": "WR",
      "slot": "FLEX",
-     "score": 4.0
-    },
-    {
-     "name": "Will Reichard",
-     "pro_team": "MIN",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "K",
-     "slot": "K",
      "score": 4.0
     },
     {
@@ -9378,7 +9378,7 @@
     "TE": 3.8,
     "QB": 19.5,
     "FLEX": 7.0,
-    "K": 4.0,
+    "K": 9.0,
     "D/ST": 13.0
    },
    "BING": {
@@ -9429,7 +9429,7 @@
    "SWSH": {
     "RB": 13.9,
     "TE": 18.8,
-    "QB": 7.58,
+    "QB": 7.48,
     "WR": 13.8,
     "FLEX": 7.9,
     "D/ST": 11.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T02:50:17+00:00",
+  "updated_at": "2026-11-10T03:00:22+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9775,8 +9775,8 @@
     ]
    },
    "SW": {
-    "score": 98.48,
-    "projected": 104.04,
+    "score": 103.48,
+    "projected": 109.0,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9861,7 +9861,7 @@
       "slot": "K",
       "pro_team": "MIN",
       "opponent": "BUF",
-      "points": 4.0,
+      "points": 9.0,
       "projected": 11.04,
       "status": "live",
       "kickoff": 1794273300000
@@ -9881,7 +9881,7 @@
    },
    "BING": {
     "score": 82.86,
-    "projected": 88.33,
+    "projected": 88.29,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9986,7 +9986,7 @@
    },
    "TMOG": {
     "score": 65.26,
-    "projected": 78.85,
+    "projected": 78.76,
     "starters": [
      {
       "name": "James Cook III",
@@ -10091,7 +10091,7 @@
    },
    "MBJG": {
     "score": 126.98,
-    "projected": 125.74,
+    "projected": 125.75,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 96.84,
-    "projected": 104.45,
+    "projected": 104.39,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10405,8 +10405,8 @@
     ]
    },
    "SWSH": {
-    "score": 82.98,
-    "projected": 93.02,
+    "score": 82.88,
+    "projected": 92.85,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10436,7 +10436,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 7.58,
+      "points": 7.48,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1794273300000
@@ -12213,6 +12213,23 @@
      "RA": 77.98,
      "Naug": 96.84,
      "SWSH": 82.98,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T03:00:22+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 103.48,
+     "BING": 82.86,
+     "TMOG": 65.26,
+     "MBJG": 126.98,
+     "RA": 77.98,
+     "Naug": 96.84,
+     "SWSH": 82.88,
      "CJ": 122.8,
      "BEND": 123.54
     }
