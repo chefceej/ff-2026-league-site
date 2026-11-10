@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 03:30:22 UTC",
-  "last_updated": "2026-11-10T03:30:22.920881+00:00"
+  "updated_at": "2026-11-10 03:40:20 UTC",
+  "last_updated": "2026-11-10T03:40:20.675219+00:00"
  },
  "teams": [
   {
@@ -80,7 +80,7 @@
     121.14,
     118.16,
     143.32,
-    126.98
+    127.98
    ],
    "ranking_points_by_week": [
     5.0,
@@ -172,6 +172,59 @@
    "total_ranking_points": 69.0
   },
   {
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SWSH",
+   "abbrev": "SWSH",
+   "owner": "Matt Stern",
+   "scores_by_week": [
+    84.76,
+    106.42,
+    119.86,
+    90.12,
+    133.0,
+    91.2,
+    108.38,
+    118.56,
+    87.16
+   ],
+   "ranking_points_by_week": [
+    1.0,
+    8.0,
+    12.0,
+    4.0,
+    9.0,
+    6.0,
+    7.0,
+    10.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    1.0,
+    9.0,
+    21.0,
+    25.0,
+    34.0,
+    40.0,
+    47.0,
+    57.0,
+    62.0
+   ],
+   "normalized_by_week": [
+    -6.0,
+    -3.0,
+    2.0,
+    -2.0,
+    0.0,
+    0.0,
+    0.0,
+    6.0,
+    3.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 62.0
+  },
+  {
    "team_id": 3,
    "team_name": "JSN Derulo ",
    "team_abbrev": "BW",
@@ -219,59 +272,6 @@
     3.0,
     8.0,
     7.0,
-    2.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 61.0
-  },
-  {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SWSH",
-   "abbrev": "SWSH",
-   "owner": "Matt Stern",
-   "scores_by_week": [
-    84.76,
-    106.42,
-    119.86,
-    90.12,
-    133.0,
-    91.2,
-    108.38,
-    118.56,
-    85.6
-   ],
-   "ranking_points_by_week": [
-    1.0,
-    8.0,
-    12.0,
-    4.0,
-    9.0,
-    6.0,
-    7.0,
-    10.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    1.0,
-    9.0,
-    21.0,
-    25.0,
-    34.0,
-    40.0,
-    47.0,
-    57.0,
-    61.0
-   ],
-   "normalized_by_week": [
-    -6.0,
-    -3.0,
-    2.0,
-    -2.0,
-    0.0,
-    0.0,
-    0.0,
-    6.0,
     2.0
    ],
    "rank": 5,
@@ -409,7 +409,7 @@
     7.0,
     1.0,
     4.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -420,7 +420,7 @@
     46.0,
     47.0,
     51.0,
-    56.0
+    55.0
    ],
    "normalized_by_week": [
     3.0,
@@ -431,10 +431,10 @@
     6.0,
     0.0,
     0.0,
-    -3.0
+    -4.0
    ],
    "rank": 8,
-   "total_ranking_points": 56.0
+   "total_ranking_points": 55.0
   },
   {
    "team_id": 12,
@@ -504,7 +504,7 @@
     113.5,
     102.92,
     109.58,
-    69.46
+    71.46
    ],
    "ranking_points_by_week": [
     11.0,
@@ -7893,6 +7893,14 @@
      "score": 13.0
     },
     {
+     "name": "Bills D/ST",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 13.0
+    },
+    {
      "name": "Denzel Boston",
      "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
@@ -7941,6 +7949,14 @@
      "score": 12.0
     },
     {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "slot": "QB",
+     "score": 11.76
+    },
+    {
      "name": "Chuba Hubbard",
      "pro_team": "CAR",
      "fantasy_team": "Bada Bing",
@@ -7973,14 +7989,6 @@
      "score": 11.1
     },
     {
-     "name": "Bills D/ST",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 11.0
-    },
-    {
      "name": "Chiefs D/ST",
      "pro_team": "KC",
      "fantasy_team": "Swishington Football Team",
@@ -7997,12 +8005,12 @@
      "score": 11.0
     },
     {
-     "name": "Bills TQB",
-     "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
-     "position": "QB",
-     "slot": "QB",
-     "score": 10.2
+     "name": "Vikings D/ST",
+     "pro_team": "MIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 10.0
     },
     {
      "name": "Brandon Aubrey",
@@ -8082,14 +8090,6 @@
      "fantasy_team": "Team Made of Glass",
      "position": "K",
      "slot": "K",
-     "score": 9.0
-    },
-    {
-     "name": "Vikings D/ST",
-     "pro_team": "MIN",
-     "fantasy_team": "The Lizard Kings",
-     "position": "D/ST",
-     "slot": "D/ST",
      "score": 9.0
     },
     {
@@ -9395,7 +9395,7 @@
     "WR": 13.0,
     "QB": 12.76,
     "FLEX": 6.3,
-    "D/ST": 11.0,
+    "D/ST": 13.0,
     "K": 9.0,
     "TE": 5.0
    },
@@ -9404,7 +9404,7 @@
     "TE": 8.9,
     "WR": 45.1,
     "K": 17.0,
-    "D/ST": 9.0,
+    "D/ST": 10.0,
     "QB": 14.38,
     "FLEX": 16.8
    },
@@ -9429,7 +9429,7 @@
    "SWSH": {
     "RB": 13.9,
     "TE": 18.8,
-    "QB": 10.2,
+    "QB": 11.76,
     "WR": 13.8,
     "FLEX": 7.9,
     "D/ST": 11.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T03:30:22+00:00",
+  "updated_at": "2026-11-10T03:40:20+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9776,7 +9776,7 @@
    },
    "SW": {
     "score": 103.48,
-    "projected": 107.35,
+    "projected": 106.58,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9881,7 +9881,7 @@
    },
    "BING": {
     "score": 85.86,
-    "projected": 89.67,
+    "projected": 88.91,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 69.46,
-    "projected": 78.23,
+    "score": 71.46,
+    "projected": 77.91,
     "starters": [
      {
       "name": "James Cook III",
@@ -10060,7 +10060,7 @@
       "slot": "D/ST",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 11.0,
+      "points": 13.0,
       "projected": 7.94,
       "status": "live",
       "kickoff": 1794273300000
@@ -10090,8 +10090,8 @@
     ]
    },
    "MBJG": {
-    "score": 126.98,
-    "projected": 126.12,
+    "score": 127.98,
+    "projected": 127.01,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10154,7 +10154,7 @@
       "slot": "D/ST",
       "pro_team": "MIN",
       "opponent": "BUF",
-      "points": 9.0,
+      "points": 10.0,
       "projected": 6.55,
       "status": "live",
       "kickoff": 1794273300000
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 96.84,
-    "projected": 102.14,
+    "projected": 101.08,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10405,8 +10405,8 @@
     ]
    },
    "SWSH": {
-    "score": 85.6,
-    "projected": 92.6,
+    "score": 87.16,
+    "projected": 92.75,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10436,7 +10436,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 10.2,
+      "points": 11.76,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1794273300000
@@ -12264,6 +12264,23 @@
      "RA": 77.98,
      "Naug": 96.84,
      "SWSH": 85.6,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T03:40:20+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 103.48,
+     "BING": 85.86,
+     "TMOG": 71.46,
+     "MBJG": 127.98,
+     "RA": 77.98,
+     "Naug": 96.84,
+     "SWSH": 87.16,
      "CJ": 122.8,
      "BEND": 123.54
     }
