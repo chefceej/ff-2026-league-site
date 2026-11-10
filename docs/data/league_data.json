@@ -8,8 +8,8 @@
   "current_matchup_week": 9,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-10 04:20:20 UTC",
-  "last_updated": "2026-11-10T04:20:20.751437+00:00"
+  "updated_at": "2026-11-10 04:30:21 UTC",
+  "last_updated": "2026-11-10T04:30:21.684131+00:00"
  },
  "teams": [
   {
@@ -172,59 +172,6 @@
    "total_ranking_points": 69.0
   },
   {
-   "team_id": 3,
-   "team_name": "JSN Derulo ",
-   "team_abbrev": "BW",
-   "abbrev": "BW",
-   "owner": "Brian Wilson",
-   "scores_by_week": [
-    98.86,
-    99.9,
-    107.1,
-    118.0,
-    88.24,
-    128.08,
-    126.22,
-    68.24,
-    84.5
-   ],
-   "ranking_points_by_week": [
-    4.0,
-    7.0,
-    8.0,
-    9.0,
-    3.0,
-    12.0,
-    12.0,
-    3.0,
-    3.0
-   ],
-   "cumulative_points_by_week": [
-    4.0,
-    11.0,
-    19.0,
-    28.0,
-    31.0,
-    43.0,
-    55.0,
-    58.0,
-    61.0
-   ],
-   "normalized_by_week": [
-    -3.0,
-    -1.0,
-    0.0,
-    1.0,
-    -3.0,
-    3.0,
-    8.0,
-    7.0,
-    2.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 61.0
-  },
-  {
    "team_id": 4,
    "team_name": "Swishington Football Team",
    "team_abbrev": "SWSH",
@@ -239,7 +186,7 @@
     91.2,
     108.38,
     118.56,
-    88.26
+    88.06
    ],
    "ranking_points_by_week": [
     1.0,
@@ -274,8 +221,61 @@
     6.0,
     2.0
    ],
-   "rank": 5,
+   "rank": 4,
    "total_ranking_points": 61.0
+  },
+  {
+   "team_id": 3,
+   "team_name": "JSN Derulo ",
+   "team_abbrev": "BW",
+   "abbrev": "BW",
+   "owner": "Brian Wilson",
+   "scores_by_week": [
+    98.86,
+    99.9,
+    107.1,
+    118.0,
+    88.24,
+    128.08,
+    126.22,
+    68.24,
+    84.5
+   ],
+   "ranking_points_by_week": [
+    4.0,
+    7.0,
+    8.0,
+    9.0,
+    3.0,
+    12.0,
+    12.0,
+    3.0,
+    2.0
+   ],
+   "cumulative_points_by_week": [
+    4.0,
+    11.0,
+    19.0,
+    28.0,
+    31.0,
+    43.0,
+    55.0,
+    58.0,
+    60.0
+   ],
+   "normalized_by_week": [
+    -3.0,
+    -1.0,
+    0.0,
+    1.0,
+    -3.0,
+    3.0,
+    8.0,
+    7.0,
+    1.0
+   ],
+   "rank": 5,
+   "total_ranking_points": 60.0
   },
   {
    "team_id": 2,
@@ -451,7 +451,7 @@
     113.5,
     102.92,
     109.58,
-    83.76
+    84.76
    ],
    "ranking_points_by_week": [
     11.0,
@@ -462,7 +462,7 @@
     9.0,
     5.0,
     8.0,
-    2.0
+    3.0
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -473,7 +473,7 @@
     36.0,
     41.0,
     49.0,
-    51.0
+    52.0
    ],
    "normalized_by_week": [
     4.0,
@@ -484,10 +484,10 @@
     -4.0,
     -6.0,
     -2.0,
-    -8.0
+    -7.0
    ],
    "rank": 9,
-   "total_ranking_points": 51.0
+   "total_ranking_points": 52.0
   },
   {
    "team_id": 12,
@@ -7813,6 +7813,14 @@
      "score": 14.38
     },
     {
+     "name": "Bills D/ST",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 14.0
+    },
+    {
      "name": "Bears D/ST",
      "pro_team": "CHI",
      "fantasy_team": "The Garbage Dump",
@@ -7909,22 +7917,6 @@
      "score": 13.0
     },
     {
-     "name": "Bills D/ST",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 13.0
-    },
-    {
-     "name": "Bills TQB",
-     "pro_team": "BUF",
-     "fantasy_team": "Swishington Football Team",
-     "position": "QB",
-     "slot": "QB",
-     "score": 12.86
-    },
-    {
      "name": "Denzel Boston",
      "pro_team": "CLE",
      "fantasy_team": "Remeber Bendel",
@@ -7939,6 +7931,14 @@
      "position": "QB",
      "slot": "QB",
      "score": 12.76
+    },
+    {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "slot": "QB",
+     "score": 12.66
     },
     {
      "name": "Raiders TQB",
@@ -9395,7 +9395,7 @@
     "WR": 14.1,
     "QB": 12.76,
     "FLEX": 6.3,
-    "D/ST": 13.0,
+    "D/ST": 14.0,
     "K": 9.0,
     "TE": 5.0
    },
@@ -9429,7 +9429,7 @@
    "SWSH": {
     "RB": 13.9,
     "TE": 18.8,
-    "QB": 12.86,
+    "QB": 12.66,
     "WR": 13.8,
     "FLEX": 7.9,
     "D/ST": 11.0,
@@ -9457,7 +9457,7 @@
  ],
  "live": {
   "week": 9,
-  "updated_at": "2026-11-10T04:20:20+00:00",
+  "updated_at": "2026-11-10T04:30:21+00:00",
   "teams": {
    "BW": {
     "score": 84.5,
@@ -9776,7 +9776,7 @@
    },
    "SW": {
     "score": 103.48,
-    "projected": 104.01,
+    "projected": 103.48,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -9881,7 +9881,7 @@
    },
    "BING": {
     "score": 91.86,
-    "projected": 92.39,
+    "projected": 91.86,
     "starters": [
      {
       "name": "Chase Brown",
@@ -9985,8 +9985,8 @@
     ]
    },
    "TMOG": {
-    "score": 83.76,
-    "projected": 84.87,
+    "score": 84.76,
+    "projected": 84.76,
     "starters": [
      {
       "name": "James Cook III",
@@ -10060,7 +10060,7 @@
       "slot": "D/ST",
       "pro_team": "BUF",
       "opponent": "MIN",
-      "points": 13.0,
+      "points": 14.0,
       "projected": 7.94,
       "status": "live",
       "kickoff": 1794273300000
@@ -10091,7 +10091,7 @@
    },
    "MBJG": {
     "score": 123.98,
-    "projected": 124.01,
+    "projected": 123.98,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -10301,7 +10301,7 @@
    },
    "Naug": {
     "score": 99.24,
-    "projected": 99.97,
+    "projected": 99.24,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -10405,8 +10405,8 @@
     ]
    },
    "SWSH": {
-    "score": 88.26,
-    "projected": 89.22,
+    "score": 88.06,
+    "projected": 88.06,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -10436,7 +10436,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 12.86,
+      "points": 12.66,
       "projected": 19.94,
       "status": "live",
       "kickoff": 1794273300000
@@ -12349,6 +12349,23 @@
      "RA": 77.98,
      "Naug": 99.24,
      "SWSH": 88.26,
+     "CJ": 122.8,
+     "BEND": 123.54
+    }
+   },
+   {
+    "t": "2026-11-10T04:30:21+00:00",
+    "scores": {
+     "BW": 84.5,
+     "SACK": 140.42,
+     "WALT": 106.08,
+     "SW": 103.48,
+     "BING": 91.86,
+     "TMOG": 84.76,
+     "MBJG": 123.98,
+     "RA": 77.98,
+     "Naug": 99.24,
+     "SWSH": 88.06,
      "CJ": 122.8,
      "BEND": 123.54
     }
