@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 02:40:18 UTC",
-  "last_updated": "2026-11-13T02:40:18.572792+00:00"
+  "updated_at": "2026-11-13 02:50:18 UTC",
+  "last_updated": "2026-11-13T02:50:18.025304+00:00"
  },
  "teams": [
   {
@@ -484,7 +484,7 @@
     102.92,
     109.58,
     84.76,
-    2.0
+    1.9
    ],
    "ranking_points_by_week": [
     11.0,
@@ -8566,7 +8566,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "FLEX",
-     "score": 2.0
+     "score": 1.9
     },
     {
      "name": "Dominic Zvada",
@@ -10392,7 +10392,7 @@
    "TMOG": {
     "RB": 0.0,
     "WR": 0.0,
-    "FLEX": 2.0,
+    "FLEX": 1.9,
     "D/ST": 0.0,
     "TE": 0.0,
     "K": 0.0,
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T02:40:18+00:00",
+  "updated_at": "2026-11-13T02:50:18+00:00",
   "teams": {
    "SACK": {
     "score": 3.3,
@@ -10696,8 +10696,8 @@
     ]
    },
    "TMOG": {
-    "score": 2.0,
-    "projected": 103.42,
+    "score": 1.9,
+    "projected": 103.32,
     "starters": [
      {
       "name": "James Cook III",
@@ -10738,7 +10738,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 2.0,
+      "points": 1.9,
       "projected": 9.71,
       "status": "live",
       "kickoff": 1794532500000
@@ -11889,6 +11889,23 @@
      "SACK": 3.3,
      "SW": 0.0,
      "TMOG": 2.0,
+     "BW": 19.2,
+     "GAY": 3.4,
+     "WALT": 6.4,
+     "SWSH": 0.0,
+     "BING": 8.78,
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-13T02:50:18+00:00",
+    "scores": {
+     "SACK": 3.3,
+     "SW": 0.0,
+     "TMOG": 1.9,
      "BW": 19.2,
      "GAY": 3.4,
      "WALT": 6.4,
