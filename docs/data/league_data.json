@@ -4,12 +4,12 @@
   "season": 2026,
   "num_teams": 12,
   "regular_season_weeks": 14,
-  "completed_weeks": 9,
-  "current_matchup_week": 9,
+  "completed_weeks": 10,
+  "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 01:10:21 UTC",
-  "last_updated": "2026-11-13T01:10:21.457204+00:00"
+  "updated_at": "2026-11-13 01:20:17 UTC",
+  "last_updated": "2026-11-13T01:20:17.310099+00:00"
  },
  "teams": [
   {
@@ -27,7 +27,8 @@
     103.38,
     103.6,
     113.08,
-    140.42
+    140.42,
+    0.0
    ],
    "ranking_points_by_week": [
     2.0,
@@ -38,7 +39,8 @@
     8.0,
     6.0,
     9.0,
-    12.0
+    12.0,
+    5.5
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -49,7 +51,8 @@
     50.0,
     56.0,
     65.0,
-    77.0
+    77.0,
+    82.5
    ],
    "normalized_by_week": [
     -5.0,
@@ -60,63 +63,11 @@
     10.0,
     9.0,
     14.0,
+    18.0,
     18.0
    ],
    "rank": 1,
-   "total_ranking_points": 77.0
-  },
-  {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "team_abbrev": "MBJG",
-   "abbrev": "MBJG",
-   "owner": "Matthew Bernstein",
-   "scores_by_week": [
-    103.16,
-    97.58,
-    101.04,
-    115.3,
-    115.18,
-    121.14,
-    118.16,
-    143.32,
-    123.98
-   ],
-   "ranking_points_by_week": [
-    5.0,
-    6.0,
-    5.0,
-    7.0,
-    7.0,
-    10.0,
-    8.0,
-    12.0,
-    11.0
-   ],
-   "cumulative_points_by_week": [
-    5.0,
-    11.0,
-    16.0,
-    23.0,
-    30.0,
-    40.0,
-    48.0,
-    60.0,
-    71.0
-   ],
-   "normalized_by_week": [
-    -2.0,
-    -1.0,
-    -3.0,
-    -4.0,
-    -4.0,
-    0.0,
-    1.0,
-    9.0,
-    12.0
-   ],
-   "rank": 2,
-   "total_ranking_points": 71.0
+   "total_ranking_points": 82.5
   },
   {
    "team_id": 9,
@@ -133,7 +84,8 @@
     122.24,
     119.08,
     99.52,
-    106.08
+    106.08,
+    1.4
    ],
    "ranking_points_by_week": [
     12.0,
@@ -144,7 +96,8 @@
     11.0,
     10.0,
     5.0,
-    8.0
+    8.0,
+    11.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -155,7 +108,8 @@
     46.0,
     56.0,
     61.0,
-    69.0
+    69.0,
+    80.0
    ],
    "normalized_by_week": [
     5.0,
@@ -166,63 +120,68 @@
     6.0,
     9.0,
     10.0,
-    10.0
+    10.0,
+    15.5
    ],
-   "rank": 3,
-   "total_ranking_points": 69.0
+   "rank": 2,
+   "total_ranking_points": 80.0
   },
   {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SWSH",
-   "abbrev": "SWSH",
-   "owner": "Matt Stern",
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "team_abbrev": "MBJG",
+   "abbrev": "MBJG",
+   "owner": "Matthew Bernstein",
    "scores_by_week": [
-    84.76,
-    106.42,
-    119.86,
-    90.12,
-    133.0,
-    91.2,
-    108.38,
-    118.56,
-    88.06
+    103.16,
+    97.58,
+    101.04,
+    115.3,
+    115.18,
+    121.14,
+    118.16,
+    143.32,
+    123.98,
+    0.0
    ],
    "ranking_points_by_week": [
-    1.0,
-    8.0,
-    12.0,
-    4.0,
-    9.0,
+    5.0,
     6.0,
+    5.0,
+    7.0,
     7.0,
     10.0,
-    4.0
+    8.0,
+    12.0,
+    11.0,
+    5.5
    ],
    "cumulative_points_by_week": [
-    1.0,
-    9.0,
-    21.0,
-    25.0,
-    34.0,
+    5.0,
+    11.0,
+    16.0,
+    23.0,
+    30.0,
     40.0,
-    47.0,
-    57.0,
-    61.0
+    48.0,
+    60.0,
+    71.0,
+    76.5
    ],
    "normalized_by_week": [
-    -6.0,
-    -3.0,
-    2.0,
     -2.0,
+    -1.0,
+    -3.0,
+    -4.0,
+    -4.0,
     0.0,
-    0.0,
-    0.0,
-    6.0,
-    2.0
+    1.0,
+    9.0,
+    12.0,
+    12.0
    ],
-   "rank": 4,
-   "total_ranking_points": 61.0
+   "rank": 3,
+   "total_ranking_points": 76.5
   },
   {
    "team_id": 3,
@@ -239,7 +198,8 @@
     128.08,
     126.22,
     68.24,
-    84.5
+    84.5,
+    13.1
    ],
    "ranking_points_by_week": [
     4.0,
@@ -250,7 +210,8 @@
     12.0,
     12.0,
     3.0,
-    2.0
+    2.0,
+    12.0
    ],
    "cumulative_points_by_week": [
     4.0,
@@ -261,7 +222,8 @@
     43.0,
     55.0,
     58.0,
-    60.0
+    60.0,
+    72.0
    ],
    "normalized_by_week": [
     -3.0,
@@ -272,10 +234,68 @@
     3.0,
     8.0,
     7.0,
-    1.0
+    1.0,
+    7.5
+   ],
+   "rank": 4,
+   "total_ranking_points": 72.0
+  },
+  {
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SWSH",
+   "abbrev": "SWSH",
+   "owner": "Matt Stern",
+   "scores_by_week": [
+    84.76,
+    106.42,
+    119.86,
+    90.12,
+    133.0,
+    91.2,
+    108.38,
+    118.56,
+    88.06,
+    0.0
+   ],
+   "ranking_points_by_week": [
+    1.0,
+    8.0,
+    12.0,
+    4.0,
+    9.0,
+    6.0,
+    7.0,
+    10.0,
+    4.0,
+    5.5
+   ],
+   "cumulative_points_by_week": [
+    1.0,
+    9.0,
+    21.0,
+    25.0,
+    34.0,
+    40.0,
+    47.0,
+    57.0,
+    61.0,
+    66.5
+   ],
+   "normalized_by_week": [
+    -6.0,
+    -3.0,
+    2.0,
+    -2.0,
+    0.0,
+    0.0,
+    0.0,
+    6.0,
+    2.0,
+    2.0
    ],
    "rank": 5,
-   "total_ranking_points": 60.0
+   "total_ranking_points": 66.5
   },
   {
    "team_id": 2,
@@ -292,7 +312,8 @@
     83.2,
     118.54,
     108.26,
-    122.8
+    122.8,
+    0.0
    ],
    "ranking_points_by_week": [
     8.0,
@@ -303,7 +324,8 @@
     3.0,
     9.0,
     7.0,
-    9.0
+    9.0,
+    5.5
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -314,7 +336,8 @@
     34.0,
     43.0,
     50.0,
-    59.0
+    59.0,
+    64.5
    ],
    "normalized_by_week": [
     1.0,
@@ -325,10 +348,11 @@
     -6.0,
     -4.0,
     -1.0,
+    0.0,
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 59.0
+   "total_ranking_points": 64.5
   },
   {
    "team_id": 1,
@@ -345,7 +369,8 @@
     66.52,
     125.78,
     60.2,
-    103.48
+    103.48,
+    0.0
    ],
    "ranking_points_by_week": [
     9.0,
@@ -356,7 +381,8 @@
     1.0,
     11.0,
     1.0,
-    7.0
+    7.0,
+    5.5
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -367,7 +393,8 @@
     38.0,
     49.0,
     50.0,
-    57.0
+    57.0,
+    62.5
    ],
    "normalized_by_week": [
     2.0,
@@ -378,10 +405,11 @@
     -2.0,
     2.0,
     -1.0,
+    -2.0,
     -2.0
    ],
    "rank": 7,
-   "total_ranking_points": 57.0
+   "total_ranking_points": 62.5
   },
   {
    "team_id": 8,
@@ -398,7 +426,8 @@
     97.2,
     66.52,
     99.18,
-    91.86
+    91.86,
+    0.0
    ],
    "ranking_points_by_week": [
     10.0,
@@ -409,7 +438,8 @@
     7.0,
     1.0,
     4.0,
-    5.0
+    5.0,
+    5.5
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -420,7 +450,8 @@
     46.0,
     47.0,
     51.0,
-    56.0
+    56.0,
+    61.5
    ],
    "normalized_by_week": [
     3.0,
@@ -431,10 +462,11 @@
     6.0,
     0.0,
     0.0,
+    -3.0,
     -3.0
    ],
    "rank": 8,
-   "total_ranking_points": 56.0
+   "total_ranking_points": 61.5
   },
   {
    "team_id": 7,
@@ -451,7 +483,8 @@
     113.5,
     102.92,
     109.58,
-    84.76
+    84.76,
+    0.0
    ],
    "ranking_points_by_week": [
     11.0,
@@ -462,7 +495,8 @@
     9.0,
     5.0,
     8.0,
-    3.0
+    3.0,
+    5.5
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -473,7 +507,8 @@
     36.0,
     41.0,
     49.0,
-    52.0
+    52.0,
+    57.5
    ],
    "normalized_by_week": [
     4.0,
@@ -484,10 +519,11 @@
     -4.0,
     -6.0,
     -2.0,
+    -7.0,
     -7.0
    ],
    "rank": 9,
-   "total_ranking_points": 52.0
+   "total_ranking_points": 57.5
   },
   {
    "team_id": 12,
@@ -504,7 +540,8 @@
     84.02,
     71.1,
     100.28,
-    123.54
+    123.54,
+    0.0
    ],
    "ranking_points_by_week": [
     7.0,
@@ -515,7 +552,8 @@
     4.0,
     2.0,
     6.0,
-    10.0
+    10.0,
+    5.5
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -526,7 +564,8 @@
     33.0,
     35.0,
     41.0,
-    51.0
+    51.0,
+    56.5
    ],
    "normalized_by_week": [
     0.0,
@@ -537,10 +576,11 @@
     -7.0,
     -12.0,
     -10.0,
+    -8.0,
     -8.0
    ],
    "rank": 10,
-   "total_ranking_points": 51.0
+   "total_ranking_points": 56.5
   },
   {
    "team_id": 11,
@@ -557,7 +597,8 @@
     90.76,
     82.82,
     65.76,
-    77.98
+    77.98,
+    0.0
    ],
    "ranking_points_by_week": [
     3.0,
@@ -568,7 +609,8 @@
     5.0,
     3.0,
     2.0,
-    1.0
+    1.0,
+    5.5
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -579,7 +621,8 @@
     41.0,
     44.0,
     46.0,
-    47.0
+    47.0,
+    52.5
    ],
    "normalized_by_week": [
     -4.0,
@@ -590,10 +633,11 @@
     1.0,
     -3.0,
     -5.0,
+    -12.0,
     -12.0
    ],
    "rank": 11,
-   "total_ranking_points": 47.0
+   "total_ranking_points": 52.5
   },
   {
    "team_id": 6,
@@ -610,7 +654,8 @@
     82.12,
     97.38,
     132.48,
-    99.24
+    99.24,
+    0.0
    ],
    "ranking_points_by_week": [
     6.0,
@@ -621,7 +666,8 @@
     2.0,
     4.0,
     11.0,
-    6.0
+    6.0,
+    5.5
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -632,7 +678,8 @@
     21.0,
     25.0,
     36.0,
-    42.0
+    42.0,
+    47.5
    ],
    "normalized_by_week": [
     -1.0,
@@ -643,10 +690,11 @@
     -19.0,
     -22.0,
     -15.0,
+    -17.0,
     -17.0
    ],
    "rank": 12,
-   "total_ranking_points": 42.0
+   "total_ranking_points": 47.5
   }
  ],
  "top_players_by_week": [
@@ -8461,6 +8509,874 @@
      "score": 0.0
     }
    ]
+  },
+  {
+   "all": [
+    {
+     "name": "Commanders D/ST",
+     "pro_team": "WSH",
+     "fantasy_team": "JSN Derulo ",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 10.0
+    },
+    {
+     "name": "Cam Skattebo",
+     "pro_team": "NYG",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 3.1
+    },
+    {
+     "name": "Isaiah Likely",
+     "pro_team": "NYG",
+     "fantasy_team": "Walt's Warriors",
+     "position": "TE",
+     "slot": "TE",
+     "score": 1.4
+    },
+    {
+     "name": "Ja'Marr Chase",
+     "pro_team": "CIN",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Kenneth Walker III",
+     "pro_team": "KC",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Kyren Williams",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Christian Watson",
+     "pro_team": "GB",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Tucker Kraft",
+     "pro_team": "GB",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Rams TQB",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Malik Nabers",
+     "pro_team": "NYG",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Dominic Zvada",
+     "pro_team": "NYG",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Dolphins D/ST",
+     "pro_team": "MIA",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "CeeDee Lamb",
+     "pro_team": "DAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Rhamondre Stevenson",
+     "pro_team": "NE",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Kyle Pitts Sr.",
+     "pro_team": "ATL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Will Reichard",
+     "pro_team": "MIN",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "DeMario Douglas",
+     "pro_team": "NE",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Bengals D/ST",
+     "pro_team": "CIN",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "DJ Moore",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Ollie Gordon II",
+     "pro_team": "MIA",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Rachaad White",
+     "pro_team": "WSH",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Omar Cooper Jr.",
+     "pro_team": "NYJ",
+     "fantasy_team": "Team Made of Glass",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Bills D/ST",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Hunter Henry",
+     "pro_team": "NE",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Chris Boswell",
+     "pro_team": "PIT",
+     "fantasy_team": "Team Made of Glass",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Seahawks TQB",
+     "pro_team": "SEA",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Jaxon Smith-Njigba",
+     "pro_team": "SEA",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Javonte Williams",
+     "pro_team": "DAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Rico Dowdle",
+     "pro_team": "PIT",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Keenan Allen",
+     "pro_team": "SF",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Texans TQB",
+     "pro_team": "HOU",
+     "fantasy_team": "JSN Derulo ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Jake Bates",
+     "pro_team": "DET",
+     "fantasy_team": "JSN Derulo ",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Darren Waller",
+     "pro_team": "CAR",
+     "fantasy_team": "JSN Derulo ",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Amon-Ra St. Brown",
+     "pro_team": "DET",
+     "fantasy_team": "I am gay ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "George Kittle",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Xavier Worthy",
+     "pro_team": "KC",
+     "fantasy_team": "I am gay ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Seahawks D/ST",
+     "pro_team": "SEA",
+     "fantasy_team": "I am gay ",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Jason Myers",
+     "pro_team": "SEA",
+     "fantasy_team": "I am gay ",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Alvin Kamara",
+     "pro_team": "NO",
+     "fantasy_team": "I am gay ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Devaughn Vele",
+     "pro_team": "NO",
+     "fantasy_team": "I am gay ",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Austin Ekeler",
+     "pro_team": "WSH",
+     "fantasy_team": "I am gay ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Ashton Jeanty",
+     "pro_team": "LV",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Breece Hall",
+     "pro_team": "NYJ",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Quinshon Judkins",
+     "pro_team": "CLE",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jaguars TQB",
+     "pro_team": "JAX",
+     "fantasy_team": "Walt's Warriors",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Spencer Shrader",
+     "pro_team": "IND",
+     "fantasy_team": "Walt's Warriors",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Germie Bernard",
+     "pro_team": "PIT",
+     "fantasy_team": "Walt's Warriors",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Tank Dell",
+     "pro_team": "HOU",
+     "fantasy_team": "Walt's Warriors",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Ravens D/ST",
+     "pro_team": "BAL",
+     "fantasy_team": "Walt's Warriors",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Brock Bowers",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Woody Marks",
+     "pro_team": "HOU",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Tre Tucker",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Chiefs D/ST",
+     "pro_team": "KC",
+     "fantasy_team": "Swishington Football Team",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Mack Hollins",
+     "pro_team": "NE",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Audric Estime",
+     "pro_team": "NO",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Evan McPherson",
+     "pro_team": "CIN",
+     "fantasy_team": "Swishington Football Team",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Chase Brown",
+     "pro_team": "CIN",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Omarion Hampton",
+     "pro_team": "LAC",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Chris Olave",
+     "pro_team": "NO",
+     "fantasy_team": "Bada Bing",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Garrett Wilson",
+     "pro_team": "NYJ",
+     "fantasy_team": "Bada Bing",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Tyler Warren",
+     "pro_team": "IND",
+     "fantasy_team": "Bada Bing",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Tyler Bass",
+     "pro_team": "BUF",
+     "fantasy_team": "Bada Bing",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Colts D/ST",
+     "pro_team": "IND",
+     "fantasy_team": "Bada Bing",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Nico Collins",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Harold Fannin Jr.",
+     "pro_team": "CLE",
+     "fantasy_team": "Remeber Bendel",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Denzel Boston",
+     "pro_team": "CLE",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Ka'imi Fairbairn",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Raiders TQB",
+     "pro_team": "LV",
+     "fantasy_team": "Remeber Bendel",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Rams D/ST",
+     "pro_team": "LAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Dylan Sampson",
+     "pro_team": "CLE",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jonathan Taylor",
+     "pro_team": "IND",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Trey McBride",
+     "pro_team": "ARI",
+     "fantasy_team": "The Lizard Kings",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Tee Higgins",
+     "pro_team": "CIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Bhayshul Tuten",
+     "pro_team": "JAX",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jalen Coker",
+     "pro_team": "CAR",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Cam Little",
+     "pro_team": "JAX",
+     "fantasy_team": "The Lizard Kings",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Vikings D/ST",
+     "pro_team": "MIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Chiefs TQB",
+     "pro_team": "KC",
+     "fantasy_team": "The Lizard Kings",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Matthew Golden",
+     "pro_team": "GB",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Bijan Robinson",
+     "pro_team": "ATL",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Jadarian Price",
+     "pro_team": "SEA",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Patriots TQB",
+     "pro_team": "NE",
+     "fantasy_team": "Kaiser Soze",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Parker Washington",
+     "pro_team": "JAX",
+     "fantasy_team": "Kaiser Soze",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Sam LaPorta",
+     "pro_team": "DET",
+     "fantasy_team": "Kaiser Soze",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Blake Corum",
+     "pro_team": "LAR",
+     "fantasy_team": "Kaiser Soze",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Rashee Rice",
+     "pro_team": "KC",
+     "fantasy_team": "Kaiser Soze",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Jaguars D/ST",
+     "pro_team": "JAX",
+     "fantasy_team": "Kaiser Soze",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Jason Sanders",
+     "pro_team": "NYJ",
+     "fantasy_team": "Kaiser Soze",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Justin Jefferson",
+     "pro_team": "MIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Tony Pollard",
+     "pro_team": "TEN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "QB",
+     "slot": "QB",
+     "score": 0.0
+    },
+    {
+     "name": "Brandon Aubrey",
+     "pro_team": "DAL",
+     "fantasy_team": "The Garbage Dump",
+     "position": "K",
+     "slot": "K",
+     "score": 0.0
+    },
+    {
+     "name": "Jordan Addison",
+     "pro_team": "MIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 0.0
+    },
+    {
+     "name": "Travis Kelce",
+     "pro_team": "KC",
+     "fantasy_team": "The Garbage Dump",
+     "position": "TE",
+     "slot": "TE",
+     "score": 0.0
+    },
+    {
+     "name": "Drake London",
+     "pro_team": "ATL",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "slot": "WR",
+     "score": 0.0
+    },
+    {
+     "name": "Tyler Allgeier",
+     "pro_team": "ARI",
+     "fantasy_team": "The Garbage Dump",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.0
+    },
+    {
+     "name": "Packers D/ST",
+     "pro_team": "GB",
+     "fantasy_team": "The Garbage Dump",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 0.0
+    }
+   ]
   }
  ],
  "position_scores_by_week": [
@@ -9453,175 +10369,180 @@
     "K": 17.0,
     "QB": 12.64
    }
+  },
+  {
+   "SACK": {
+    "WR": 0.0,
+    "RB": 0.0,
+    "FLEX": 0.0,
+    "TE": 0.0,
+    "QB": 0.0,
+    "K": 0.0,
+    "D/ST": 0.0
+   },
+   "SW": {
+    "WR": 0.0,
+    "RB": 0.0,
+    "TE": 0.0,
+    "QB": 0.0,
+    "K": 0.0,
+    "FLEX": 0.0,
+    "D/ST": 0.0
+   },
+   "TMOG": {
+    "RB": 0.0,
+    "WR": 0.0,
+    "FLEX": 0.0,
+    "D/ST": 0.0,
+    "TE": 0.0,
+    "K": 0.0,
+    "QB": 0.0
+   },
+   "BW": {
+    "WR": 0.0,
+    "RB": 3.1,
+    "FLEX": 0.0,
+    "QB": 0.0,
+    "K": 0.0,
+    "TE": 0.0,
+    "D/ST": 10.0
+   },
+   "GAY": {
+    "WR": 0.0,
+    "TE": 0.0,
+    "QB": 0.0,
+    "D/ST": 0.0,
+    "K": 0.0,
+    "RB": 0.0,
+    "FLEX": 0.0
+   },
+   "WALT": {
+    "FLEX": 0.0,
+    "RB": 0.0,
+    "QB": 0.0,
+    "TE": 1.4,
+    "K": 0.0,
+    "WR": 0.0,
+    "D/ST": 0.0
+   },
+   "SWSH": {
+    "RB": 0.0,
+    "TE": 0.0,
+    "QB": 0.0,
+    "WR": 0.0,
+    "D/ST": 0.0,
+    "FLEX": 0.0,
+    "K": 0.0
+   },
+   "BING": {
+    "RB": 0.0,
+    "FLEX": 0.0,
+    "WR": 0.0,
+    "TE": 0.0,
+    "QB": 0.0,
+    "K": 0.0,
+    "D/ST": 0.0
+   },
+   "BEND": {
+    "RB": 0.0,
+    "WR": 0.0,
+    "TE": 0.0,
+    "FLEX": 0.0,
+    "K": 0.0,
+    "QB": 0.0,
+    "D/ST": 0.0
+   },
+   "MBJG": {
+    "RB": 0.0,
+    "TE": 0.0,
+    "FLEX": 0.0,
+    "WR": 0.0,
+    "K": 0.0,
+    "D/ST": 0.0,
+    "QB": 0.0
+   },
+   "CJ": {
+    "RB": 0.0,
+    "FLEX": 0.0,
+    "QB": 0.0,
+    "WR": 0.0,
+    "TE": 0.0,
+    "D/ST": 0.0,
+    "K": 0.0
+   },
+   "Naug": {
+    "WR": 0.0,
+    "RB": 0.0,
+    "QB": 0.0,
+    "K": 0.0,
+    "FLEX": 0.0,
+    "TE": 0.0,
+    "D/ST": 0.0
+   }
   }
  ],
  "live": {
-  "week": 9,
-  "updated_at": "2026-11-13T01:10:21+00:00",
+  "week": 10,
+  "updated_at": "2026-11-13T01:20:17+00:00",
   "teams": {
-   "BW": {
-    "score": 84.5,
-    "projected": 106.12,
-    "starters": [
-     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "SEA",
-      "opponent": "ARI",
-      "points": 8.6,
-      "projected": 18.91,
-      "status": "final",
-      "kickoff": 1794173100000
-     },
-     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "DAL",
-      "opponent": "IND",
-      "points": 20.4,
-      "projected": 16.51,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "slot": "TE",
-      "pro_team": "CHI",
-      "opponent": "TB",
-      "points": 7.4,
-      "projected": 9.8,
-      "status": "final",
-      "kickoff": 1794187200000
-     },
-     {
-      "name": "Broncos D/ST",
-      "position": "D/ST",
-      "slot": "D/ST",
-      "pro_team": "DEN",
-      "opponent": "CAR",
-      "points": 8.0,
-      "projected": 7.66,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Keenan Allen",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "IND",
-      "opponent": "DAL",
-      "points": 4.6,
-      "projected": 7.86,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Jake Bates",
-      "position": "K",
-      "slot": "K",
-      "pro_team": "DET",
-      "opponent": "MIA",
-      "points": 15.0,
-      "projected": 9.93,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Marvin Harrison Jr.",
-      "position": "WR",
-      "slot": "FLEX",
-      "pro_team": "HOU",
-      "opponent": "LAC",
-      "points": 3.0,
-      "projected": 6.33,
-      "status": "final",
-      "kickoff": 1794171900000
-     },
-     {
-      "name": "Seahawks TQB",
-      "position": "QB",
-      "slot": "QB",
-      "pro_team": "SEA",
-      "opponent": "None",
-      "points": 12.6,
-      "projected": 16.89,
-      "status": "final",
-      "kickoff": 1794173100000
-     },
-     {
-      "name": "Devin Singletary",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "NYG",
-      "opponent": "PHI",
-      "points": 4.9,
-      "projected": 12.23,
-      "status": "final",
-      "kickoff": 1794160800000
-     }
-    ]
-   },
    "SACK": {
-    "score": 140.42,
-    "projected": 125.33,
+    "score": 0.0,
+    "projected": 124.48,
     "starters": [
      {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "slot": "WR",
       "pro_team": "CIN",
-      "opponent": "ATL",
-      "points": 26.5,
-      "projected": 18.52,
-      "status": "final",
-      "kickoff": 1794148200000
+      "opponent": "PIT",
+      "points": 0.0,
+      "projected": 18.62,
+      "status": "pre",
+      "kickoff": 1794792000000
      },
      {
       "name": "Kenneth Walker III",
       "position": "RB",
       "slot": "RB",
       "pro_team": "KC",
-      "opponent": "NYJ",
-      "points": 34.3,
-      "projected": 21.5,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "ATL",
+      "points": 0.0,
+      "projected": 24.38,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Kyren Williams",
       "position": "RB",
       "slot": "RB",
       "pro_team": "LAR",
-      "opponent": "WSH",
-      "points": 7.6,
-      "projected": 15.3,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "ARI",
+      "points": 0.0,
+      "projected": 16.97,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
       "name": "Christian Watson",
       "position": "WR",
       "slot": "FLEX",
       "pro_team": "GB",
-      "opponent": "NE",
-      "points": 26.6,
+      "opponent": "MIN",
+      "points": 0.0,
       "projected": 12.85,
-      "status": "final",
-      "kickoff": 1794173100000
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Tucker Kraft",
       "position": "TE",
       "slot": "TE",
       "pro_team": "GB",
-      "opponent": "NE",
-      "points": 1.4,
-      "projected": 8.37,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "MIN",
+      "points": 0.0,
+      "projected": 7.4,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Rams TQB",
@@ -9629,209 +10550,104 @@
       "slot": "QB",
       "pro_team": "LAR",
       "opponent": "None",
-      "points": 11.22,
-      "projected": 16.91,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Eagles D/ST",
-      "position": "D/ST",
-      "slot": "D/ST",
-      "pro_team": "PHI",
-      "opponent": "NYG",
-      "points": 9.0,
-      "projected": 6.69,
-      "status": "final",
-      "kickoff": 1794160800000
+      "points": 0.0,
+      "projected": 16.98,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
       "name": "Malik Nabers",
       "position": "WR",
       "slot": "WR",
       "pro_team": "NYG",
-      "opponent": "PHI",
-      "points": 6.8,
-      "projected": 14.24,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "WSH",
+      "points": 0.0,
+      "projected": 13.07,
+      "status": "live",
+      "kickoff": 1794532500000
      },
      {
       "name": "Dominic Zvada",
       "position": "K",
       "slot": "K",
       "pro_team": "NYG",
-      "opponent": "PHI",
-      "points": 17.0,
-      "projected": 10.95,
-      "status": "final",
-      "kickoff": 1794160800000
-     }
-    ]
-   },
-   "WALT": {
-    "score": 106.08,
-    "projected": 114.02,
-    "starters": [
-     {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "LAR",
       "opponent": "WSH",
-      "points": 28.0,
-      "projected": 19.98,
-      "status": "final",
-      "kickoff": 1794160800000
+      "points": 0.0,
+      "projected": 8.53,
+      "status": "live",
+      "kickoff": 1794532500000
      },
      {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "LV",
-      "opponent": "SF",
-      "points": 4.5,
-      "projected": 12.5,
-      "status": "final",
-      "kickoff": 1794173100000
-     },
-     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "CLE",
-      "opponent": "NO",
-      "points": 5.0,
-      "projected": 13.24,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Luther Burden III",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "CHI",
-      "opponent": "TB",
-      "points": 17.2,
-      "projected": 11.37,
-      "status": "final",
-      "kickoff": 1794187200000
-     },
-     {
-      "name": "Jaguars TQB",
-      "position": "QB",
-      "slot": "QB",
-      "pro_team": "JAX",
-      "opponent": "None",
-      "points": 13.58,
-      "projected": 20.06,
-      "status": "final",
-      "kickoff": 1793927700000
-     },
-     {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "slot": "TE",
-      "pro_team": "NYG",
-      "opponent": "PHI",
-      "points": 13.8,
-      "projected": 10.45,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "slot": "K",
-      "pro_team": "IND",
-      "opponent": "DAL",
-      "points": 16.0,
-      "projected": 11.23,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Bengals D/ST",
+      "name": "Dolphins D/ST",
       "position": "D/ST",
       "slot": "D/ST",
-      "pro_team": "CIN",
-      "opponent": "ATL",
-      "points": 4.0,
-      "projected": 7.08,
-      "status": "final",
-      "kickoff": 1794148200000
-     },
-     {
-      "name": "Antonio Williams",
-      "position": "WR",
-      "slot": "FLEX",
-      "pro_team": "WSH",
-      "opponent": "LAR",
-      "points": 4.0,
-      "projected": 8.11,
-      "status": "final",
-      "kickoff": 1794160800000
+      "pro_team": "MIA",
+      "opponent": "IND",
+      "points": 0.0,
+      "projected": 6.89,
+      "status": "pre",
+      "kickoff": 1794765600000
      }
     ]
    },
    "SW": {
-    "score": 103.48,
-    "projected": 111.53,
+    "score": 0.0,
+    "projected": 107.1,
     "starters": [
      {
       "name": "CeeDee Lamb",
       "position": "WR",
       "slot": "WR",
       "pro_team": "DAL",
-      "opponent": "IND",
-      "points": 28.5,
-      "projected": 17.68,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "SF",
+      "points": 0.0,
+      "projected": 17.08,
+      "status": "pre",
+      "kickoff": 1794777900000
      },
      {
       "name": "Derrick Henry",
       "position": "RB",
       "slot": "RB",
       "pro_team": "BAL",
-      "opponent": "JAX",
-      "points": 5.58,
-      "projected": 13.21,
-      "status": "final",
-      "kickoff": 1793927700000
+      "opponent": "LAC",
+      "points": 0.0,
+      "projected": 17.56,
+      "status": "pre",
+      "kickoff": 1794878100000
      },
      {
       "name": "Zay Flowers",
       "position": "WR",
       "slot": "WR",
       "pro_team": "BAL",
-      "opponent": "JAX",
-      "points": 3.8,
-      "projected": 10.48,
-      "status": "final",
-      "kickoff": 1793927700000
+      "opponent": "LAC",
+      "points": 0.0,
+      "projected": 11.87,
+      "status": "pre",
+      "kickoff": 1794878100000
      },
      {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "slot": "RB",
       "pro_team": "NE",
-      "opponent": "GB",
-      "points": 13.3,
-      "projected": 13.12,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "DET",
+      "points": 0.0,
+      "projected": 11.39,
+      "status": "pre",
+      "kickoff": 1794753000000
      },
      {
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "slot": "TE",
       "pro_team": "ATL",
-      "opponent": "CIN",
-      "points": 3.8,
-      "projected": 8.2,
-      "status": "final",
-      "kickoff": 1794148200000
+      "opponent": "KC",
+      "points": 0.0,
+      "projected": 7.3,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Cowboys TQB",
@@ -9839,386 +10655,281 @@
       "slot": "QB",
       "pro_team": "DAL",
       "opponent": "None",
-      "points": 19.5,
-      "projected": 19.1,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Kaelon Black",
-      "position": "RB",
-      "slot": "FLEX",
-      "pro_team": "SF",
-      "opponent": "LV",
-      "points": 7.0,
-      "projected": 10.23,
-      "status": "final",
-      "kickoff": 1794173100000
+      "points": 0.0,
+      "projected": 16.55,
+      "status": "pre",
+      "kickoff": 1794777900000
      },
      {
       "name": "Will Reichard",
       "position": "K",
       "slot": "K",
       "pro_team": "MIN",
-      "opponent": "BUF",
-      "points": 9.0,
-      "projected": 11.04,
-      "status": "final",
-      "kickoff": 1794273300000
+      "opponent": "GB",
+      "points": 0.0,
+      "projected": 9.67,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
-      "name": "Giants D/ST",
-      "position": "D/ST",
-      "slot": "D/ST",
-      "pro_team": "NYG",
-      "opponent": "PHI",
-      "points": 13.0,
-      "projected": 8.47,
-      "status": "final",
-      "kickoff": 1794160800000
-     }
-    ]
-   },
-   "BING": {
-    "score": 91.86,
-    "projected": 104.99,
-    "starters": [
-     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "CIN",
-      "opponent": "ATL",
-      "points": 9.0,
-      "projected": 14.39,
-      "status": "final",
-      "kickoff": 1794148200000
-     },
-     {
-      "name": "Omarion Hampton",
-      "position": "RB",
+      "name": "DeMario Douglas",
+      "position": "WR",
       "slot": "FLEX",
-      "pro_team": "LAC",
-      "opponent": "HOU",
-      "points": 6.0,
-      "projected": 8.01,
-      "status": "final",
-      "kickoff": 1794171900000
+      "pro_team": "NE",
+      "opponent": "DET",
+      "points": 0.0,
+      "projected": 8.43,
+      "status": "pre",
+      "kickoff": 1794753000000
      },
      {
-      "name": "Chris Olave",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "NO",
-      "opponent": "CLE",
-      "points": 13.3,
-      "projected": 11.21,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "slot": "TE",
-      "pro_team": "IND",
-      "opponent": "DAL",
-      "points": 6.4,
-      "projected": 9.36,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Commanders TQB",
-      "position": "QB",
-      "slot": "QB",
-      "pro_team": "WSH",
-      "opponent": "None",
-      "points": 14.56,
-      "projected": 19.81,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "CAR",
-      "opponent": "DEN",
-      "points": 11.6,
-      "projected": 16.3,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Tyler Bass",
-      "position": "K",
-      "slot": "K",
-      "pro_team": "BUF",
-      "opponent": "MIN",
-      "points": 13.0,
-      "projected": 10.86,
-      "status": "final",
-      "kickoff": 1794273300000
-     },
-     {
-      "name": "Saints D/ST",
+      "name": "Bengals D/ST",
       "position": "D/ST",
       "slot": "D/ST",
-      "pro_team": "NO",
-      "opponent": "CLE",
-      "points": 5.0,
-      "projected": 7.42,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Courtland Sutton",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "DEN",
-      "opponent": "CAR",
-      "points": 13.0,
-      "projected": 7.63,
-      "status": "final",
-      "kickoff": 1794160800000
+      "pro_team": "CIN",
+      "opponent": "PIT",
+      "points": 0.0,
+      "projected": 7.25,
+      "status": "pre",
+      "kickoff": 1794792000000
      }
     ]
    },
    "TMOG": {
-    "score": 84.76,
-    "projected": 106.65,
+    "score": 0.0,
+    "projected": 105.72,
     "starters": [
      {
       "name": "James Cook III",
       "position": "RB",
       "slot": "RB",
       "pro_team": "BUF",
-      "opponent": "MIN",
-      "points": 16.7,
-      "projected": 17.53,
-      "status": "final",
-      "kickoff": 1794273300000
+      "opponent": "NYJ",
+      "points": 0.0,
+      "projected": 19.71,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "DJ Moore",
       "position": "WR",
       "slot": "WR",
       "pro_team": "BUF",
-      "opponent": "MIN",
-      "points": 5.1,
-      "projected": 10.52,
-      "status": "final",
-      "kickoff": 1794273300000
-     },
-     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "ARI",
-      "opponent": "SEA",
-      "points": 9.0,
-      "projected": 10.67,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "NYJ",
+      "points": 0.0,
+      "projected": 11.45,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Ollie Gordon II",
       "position": "RB",
       "slot": "RB",
       "pro_team": "MIA",
-      "opponent": "DET",
-      "points": 6.9,
-      "projected": 15.69,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Bears TQB",
-      "position": "QB",
-      "slot": "QB",
-      "pro_team": "CHI",
-      "opponent": "None",
-      "points": 12.76,
-      "projected": 16.78,
-      "status": "final",
-      "kickoff": 1794187200000
-     },
-     {
-      "name": "Ryan Flournoy",
-      "position": "WR",
-      "slot": "FLEX",
-      "pro_team": "DAL",
       "opponent": "IND",
-      "points": 6.3,
-      "projected": 10.19,
-      "status": "final",
-      "kickoff": 1794160800000
+      "points": 0.0,
+      "projected": 15.02,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Rachaad White",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "WSH",
+      "opponent": "NYG",
+      "points": 0.0,
+      "projected": 9.71,
+      "status": "live",
+      "kickoff": 1794532500000
+     },
+     {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "NYJ",
+      "opponent": "BUF",
+      "points": 0.0,
+      "projected": 7.6,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Bills D/ST",
       "position": "D/ST",
       "slot": "D/ST",
       "pro_team": "BUF",
-      "opponent": "MIN",
-      "points": 14.0,
-      "projected": 7.94,
-      "status": "final",
-      "kickoff": 1794273300000
-     },
-     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "slot": "K",
-      "pro_team": "CHI",
-      "opponent": "TB",
-      "points": 9.0,
-      "projected": 9.68,
-      "status": "final",
-      "kickoff": 1794187200000
+      "opponent": "NYJ",
+      "points": 0.0,
+      "projected": 7.3,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Hunter Henry",
       "position": "TE",
       "slot": "TE",
       "pro_team": "NE",
-      "opponent": "GB",
-      "points": 5.0,
-      "projected": 7.65,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "DET",
+      "points": 0.0,
+      "projected": 7.04,
+      "status": "pre",
+      "kickoff": 1794753000000
+     },
+     {
+      "name": "Chris Boswell",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "PIT",
+      "opponent": "CIN",
+      "points": 0.0,
+      "projected": 10.86,
+      "status": "pre",
+      "kickoff": 1794792000000
+     },
+     {
+      "name": "Seahawks TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "SEA",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 17.59,
+      "status": "pre",
+      "kickoff": 1794776700000
      }
     ]
    },
-   "MBJG": {
-    "score": 123.98,
-    "projected": 117.81,
+   "BW": {
+    "score": 13.1,
+    "projected": 104.23,
     "starters": [
      {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "IND",
-      "opponent": "DAL",
-      "points": 6.9,
-      "projected": 18.25,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "slot": "TE",
-      "pro_team": "ARI",
-      "opponent": "SEA",
-      "points": 8.9,
-      "projected": 10.78,
-      "status": "final",
-      "kickoff": 1794173100000
-     },
-     {
-      "name": "Tee Higgins",
+      "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "slot": "WR",
-      "pro_team": "CIN",
-      "opponent": "ATL",
-      "points": 17.7,
-      "projected": 13.58,
-      "status": "final",
-      "kickoff": 1794148200000
+      "pro_team": "SEA",
+      "opponent": "LV",
+      "points": 0.0,
+      "projected": 18.54,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
-      "name": "Bhayshul Tuten",
+      "name": "Javonte Williams",
       "position": "RB",
       "slot": "RB",
-      "pro_team": "JAX",
-      "opponent": "BAL",
-      "points": 8.9,
-      "projected": 14.37,
-      "status": "final",
-      "kickoff": 1793927700000
+      "pro_team": "DAL",
+      "opponent": "SF",
+      "points": 0.0,
+      "projected": 13.62,
+      "status": "pre",
+      "kickoff": 1794777900000
      },
      {
-      "name": "Cam Little",
-      "position": "K",
-      "slot": "K",
-      "pro_team": "JAX",
-      "opponent": "BAL",
-      "points": 17.0,
-      "projected": 8.57,
-      "status": "final",
-      "kickoff": 1793927700000
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "NYG",
+      "opponent": "WSH",
+      "points": 3.1,
+      "projected": 10.93,
+      "status": "live",
+      "kickoff": 1794532500000
      },
      {
-      "name": "Vikings D/ST",
-      "position": "D/ST",
-      "slot": "D/ST",
-      "pro_team": "MIN",
-      "opponent": "BUF",
-      "points": 6.0,
-      "projected": 6.55,
-      "status": "final",
-      "kickoff": 1794273300000
-     },
-     {
-      "name": "Chiefs TQB",
-      "position": "QB",
-      "slot": "QB",
-      "pro_team": "KC",
-      "opponent": "None",
-      "points": 14.38,
-      "projected": 18.17,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "GB",
-      "opponent": "NE",
-      "points": 27.4,
-      "projected": 14.47,
-      "status": "final",
-      "kickoff": 1794173100000
-     },
-     {
-      "name": "Jonah Coleman",
+      "name": "Rico Dowdle",
       "position": "RB",
       "slot": "FLEX",
-      "pro_team": "DEN",
-      "opponent": "CAR",
-      "points": 16.8,
-      "projected": 13.07,
-      "status": "final",
-      "kickoff": 1794160800000
+      "pro_team": "PIT",
+      "opponent": "CIN",
+      "points": 0.0,
+      "projected": 8.56,
+      "status": "pre",
+      "kickoff": 1794792000000
+     },
+     {
+      "name": "Keenan Allen",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "SF",
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 7.11,
+      "status": "pre",
+      "kickoff": 1794777900000
+     },
+     {
+      "name": "Texans TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "HOU",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 18.28,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Jake Bates",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "DET",
+      "opponent": "NE",
+      "points": 0.0,
+      "projected": 9.61,
+      "status": "pre",
+      "kickoff": 1794753000000
+     },
+     {
+      "name": "Darren Waller",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "CAR",
+      "opponent": "NO",
+      "points": 0.0,
+      "projected": 7.02,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Commanders D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "WSH",
+      "opponent": "NYG",
+      "points": 10.0,
+      "projected": 7.96,
+      "status": "live",
+      "kickoff": 1794532500000
      }
     ]
    },
    "GAY": {
-    "score": 77.98,
-    "projected": 115.55,
+    "score": 0.0,
+    "projected": 95.21,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "slot": "WR",
       "pro_team": "DET",
-      "opponent": "MIA",
-      "points": 12.6,
-      "projected": 16.81,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "NE",
+      "points": 0.0,
+      "projected": 16.37,
+      "status": "pre",
+      "kickoff": 1794753000000
      },
      {
       "name": "George Kittle",
       "position": "TE",
       "slot": "TE",
       "pro_team": "SF",
-      "opponent": "LV",
-      "points": 7.8,
-      "projected": 13.54,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 12.78,
+      "status": "pre",
+      "kickoff": 1794777900000
      },
      {
       "name": "49ers TQB",
@@ -10226,209 +10937,209 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 24.98,
-      "projected": 22.19,
-      "status": "final",
-      "kickoff": 1794173100000
+      "points": 0.0,
+      "projected": 20.73,
+      "status": "pre",
+      "kickoff": 1794777900000
+     },
+     {
+      "name": "Xavier Worthy",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "KC",
+      "opponent": "ATL",
+      "points": 0.0,
+      "projected": 6.76,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Seahawks D/ST",
       "position": "D/ST",
       "slot": "D/ST",
       "pro_team": "SEA",
-      "opponent": "ARI",
-      "points": 9.0,
-      "projected": 8.55,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "LV",
+      "points": 0.0,
+      "projected": 7.76,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
       "name": "Jason Myers",
       "position": "K",
       "slot": "K",
       "pro_team": "SEA",
-      "opponent": "ARI",
-      "points": 6.0,
-      "projected": 10.44,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "LV",
+      "points": 0.0,
+      "projected": 9.29,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
       "name": "Alvin Kamara",
       "position": "RB",
       "slot": "RB",
       "pro_team": "NO",
-      "opponent": "CLE",
-      "points": 6.4,
-      "projected": 10.48,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "TB",
-      "opponent": "CHI",
-      "points": 5.4,
-      "projected": 9.41,
-      "status": "final",
-      "kickoff": 1794187200000
-     },
-     {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "CHI",
-      "opponent": "TB",
-      "points": 3.1,
-      "projected": 17.2,
-      "status": "final",
-      "kickoff": 1794187200000
+      "opponent": "CAR",
+      "points": 0.0,
+      "projected": 8.48,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Devaughn Vele",
       "position": "WR",
       "slot": "FLEX",
       "pro_team": "NO",
-      "opponent": "CLE",
-      "points": 2.7,
-      "projected": 6.93,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "CAR",
+      "points": 0.0,
+      "projected": 5.88,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "WSH",
+      "opponent": "NYG",
+      "points": 0.0,
+      "projected": 7.6,
+      "status": "live",
+      "kickoff": 1794532500000
      }
     ]
    },
-   "Naug": {
-    "score": 99.24,
-    "projected": 110.07,
+   "WALT": {
+    "score": 1.4,
+    "projected": 100.95,
     "starters": [
      {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "MIN",
-      "opponent": "BUF",
-      "points": 7.3,
-      "projected": 15.1,
-      "status": "final",
-      "kickoff": 1794273300000
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "LV",
+      "opponent": "SEA",
+      "points": 0.0,
+      "projected": 11.49,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
-      "name": "Saquon Barkley",
+      "name": "Breece Hall",
       "position": "RB",
       "slot": "RB",
-      "pro_team": "PHI",
-      "opponent": "NYG",
-      "points": 8.2,
-      "projected": 11.81,
-      "status": "final",
-      "kickoff": 1794160800000
+      "pro_team": "NYJ",
+      "opponent": "BUF",
+      "points": 0.0,
+      "projected": 11.0,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
-      "name": "Bengals TQB",
-      "position": "QB",
-      "slot": "QB",
-      "pro_team": "CIN",
-      "opponent": "None",
-      "points": 29.54,
-      "projected": 21.23,
-      "status": "final",
-      "kickoff": 1794148200000
-     },
-     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "slot": "K",
-      "pro_team": "DAL",
-      "opponent": "IND",
-      "points": 10.0,
-      "projected": 10.87,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "slot": "FLEX",
-      "pro_team": "LAC",
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "CLE",
       "opponent": "HOU",
       "points": 0.0,
-      "projected": 8.83,
-      "status": "final",
-      "kickoff": 1794171900000
+      "projected": 11.04,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
-      "name": "Travis Kelce",
+      "name": "Jaguars TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "JAX",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 21.46,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Isaiah Likely",
       "position": "TE",
       "slot": "TE",
-      "pro_team": "KC",
-      "opponent": "NYJ",
-      "points": 15.3,
-      "projected": 8.65,
-      "status": "final",
-      "kickoff": 1794160800000
+      "pro_team": "NYG",
+      "opponent": "WSH",
+      "points": 1.4,
+      "projected": 9.78,
+      "status": "live",
+      "kickoff": 1794532500000
      },
      {
-      "name": "Drake London",
+      "name": "Spencer Shrader",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "IND",
+      "opponent": "MIA",
+      "points": 0.0,
+      "projected": 10.93,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Germie Bernard",
       "position": "WR",
       "slot": "WR",
-      "pro_team": "ATL",
+      "pro_team": "PIT",
       "opponent": "CIN",
-      "points": 9.3,
-      "projected": 13.69,
-      "status": "final",
-      "kickoff": 1794148200000
+      "points": 0.0,
+      "projected": 8.43,
+      "status": "pre",
+      "kickoff": 1794792000000
      },
      {
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "ARI",
-      "opponent": "SEA",
-      "points": 5.6,
-      "projected": 11.68,
-      "status": "final",
-      "kickoff": 1794173100000
+      "name": "Tank Dell",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "HOU",
+      "opponent": "CLE",
+      "points": 0.0,
+      "projected": 7.12,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
-      "name": "Bears D/ST",
+      "name": "Ravens D/ST",
       "position": "D/ST",
       "slot": "D/ST",
-      "pro_team": "CHI",
-      "opponent": "TB",
-      "points": 14.0,
-      "projected": 8.21,
-      "status": "final",
-      "kickoff": 1794187200000
+      "pro_team": "BAL",
+      "opponent": "LAC",
+      "points": 0.0,
+      "projected": 8.85,
+      "status": "pre",
+      "kickoff": 1794878100000
      }
     ]
    },
    "SWSH": {
-    "score": 88.06,
-    "projected": 120.14,
+    "score": 0.0,
+    "projected": 110.53,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "slot": "RB",
       "pro_team": "DET",
-      "opponent": "MIA",
-      "points": 13.4,
-      "projected": 24.16,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "NE",
+      "points": 0.0,
+      "projected": 21.63,
+      "status": "pre",
+      "kickoff": 1794753000000
      },
      {
       "name": "Brock Bowers",
       "position": "TE",
       "slot": "TE",
       "pro_team": "LV",
-      "opponent": "SF",
-      "points": 18.8,
-      "projected": 14.66,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "SEA",
+      "points": 0.0,
+      "projected": 12.43,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
       "name": "Bills TQB",
@@ -10436,264 +11147,253 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 12.66,
-      "projected": 19.94,
-      "status": "final",
-      "kickoff": 1794273300000
-     },
-     {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "DEN",
-      "opponent": "CAR",
-      "points": 2.7,
-      "projected": 9.21,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "GB",
-      "opponent": "NE",
-      "points": 0.5,
-      "projected": 14.64,
-      "status": "final",
-      "kickoff": 1794173100000
+      "points": 0.0,
+      "projected": 24.31,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Woody Marks",
       "position": "RB",
-      "slot": "FLEX",
+      "slot": "RB",
       "pro_team": "HOU",
-      "opponent": "LAC",
-      "points": 7.9,
-      "projected": 13.51,
-      "status": "final",
-      "kickoff": 1794171900000
+      "opponent": "CLE",
+      "points": 0.0,
+      "projected": 13.03,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Tre Tucker",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "LV",
+      "opponent": "SEA",
+      "points": 0.0,
+      "projected": 6.87,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
       "name": "Chiefs D/ST",
       "position": "D/ST",
       "slot": "D/ST",
       "pro_team": "KC",
-      "opponent": "NYJ",
-      "points": 11.0,
-      "projected": 7.26,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Chase McLaughlin",
-      "position": "K",
-      "slot": "K",
-      "pro_team": "TB",
-      "opponent": "CHI",
-      "points": 10.0,
-      "projected": 9.02,
-      "status": "final",
-      "kickoff": 1794187200000
+      "opponent": "ATL",
+      "points": 0.0,
+      "projected": 6.61,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Mack Hollins",
       "position": "WR",
       "slot": "WR",
       "pro_team": "NE",
-      "opponent": "GB",
-      "points": 11.1,
-      "projected": 7.74,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "DET",
+      "points": 0.0,
+      "projected": 7.86,
+      "status": "pre",
+      "kickoff": 1794753000000
+     },
+     {
+      "name": "Audric Estime",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "NO",
+      "opponent": "CAR",
+      "points": 0.0,
+      "projected": 9.81,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Evan McPherson",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "CIN",
+      "opponent": "PIT",
+      "points": 0.0,
+      "projected": 8.0,
+      "status": "pre",
+      "kickoff": 1794792000000
      }
     ]
    },
-   "CJ": {
-    "score": 122.8,
-    "projected": 114.24,
+   "BING": {
+    "score": 0.0,
+    "projected": 103.83,
     "starters": [
      {
-      "name": "Bijan Robinson",
+      "name": "Chase Brown",
       "position": "RB",
       "slot": "RB",
-      "pro_team": "ATL",
-      "opponent": "CIN",
-      "points": 23.7,
-      "projected": 17.94,
-      "status": "final",
-      "kickoff": 1794148200000
+      "pro_team": "CIN",
+      "opponent": "PIT",
+      "points": 0.0,
+      "projected": 11.12,
+      "status": "pre",
+      "kickoff": 1794792000000
      },
      {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "slot": "RB",
-      "pro_team": "TB",
-      "opponent": "CHI",
-      "points": 26.5,
-      "projected": 14.33,
-      "status": "final",
-      "kickoff": 1794187200000
-     },
-     {
-      "name": "Jadarian Price",
+      "name": "Omarion Hampton",
       "position": "RB",
       "slot": "FLEX",
-      "pro_team": "SEA",
-      "opponent": "ARI",
-      "points": 9.8,
-      "projected": 10.15,
-      "status": "final",
-      "kickoff": 1794173100000
+      "pro_team": "LAC",
+      "opponent": "BAL",
+      "points": 0.0,
+      "projected": 7.23,
+      "status": "pre",
+      "kickoff": 1794878100000
      },
      {
-      "name": "Patriots TQB",
-      "position": "QB",
-      "slot": "QB",
-      "pro_team": "NE",
-      "opponent": "None",
-      "points": 19.1,
-      "projected": 20.86,
-      "status": "final",
-      "kickoff": 1794173100000
-     },
-     {
-      "name": "Parker Washington",
+      "name": "Chris Olave",
       "position": "WR",
       "slot": "WR",
-      "pro_team": "JAX",
-      "opponent": "BAL",
-      "points": 13.1,
-      "projected": 10.94,
-      "status": "final",
-      "kickoff": 1793927700000
+      "pro_team": "NO",
+      "opponent": "CAR",
+      "points": 0.0,
+      "projected": 12.76,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
-      "name": "Sam LaPorta",
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "NYJ",
+      "opponent": "BUF",
+      "points": 0.0,
+      "projected": 10.24,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Tyler Warren",
       "position": "TE",
       "slot": "TE",
-      "pro_team": "DET",
+      "pro_team": "IND",
       "opponent": "MIA",
-      "points": 5.2,
-      "projected": 9.87,
-      "status": "final",
-      "kickoff": 1794160800000
+      "points": 0.0,
+      "projected": 8.15,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
-      "name": "Matt Gay",
+      "name": "Commanders TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "WSH",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 17.67,
+      "status": "live",
+      "kickoff": 1794532500000
+     },
+     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "CAR",
+      "opponent": "NO",
+      "points": 0.0,
+      "projected": 18.24,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Tyler Bass",
       "position": "K",
       "slot": "K",
-      "pro_team": "LV",
-      "opponent": "SF",
-      "points": 7.0,
-      "projected": 9.75,
-      "status": "final",
-      "kickoff": 1794173100000
-     },
-     {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "KC",
+      "pro_team": "BUF",
       "opponent": "NYJ",
-      "points": 7.4,
-      "projected": 11.18,
-      "status": "final",
-      "kickoff": 1794160800000
+      "points": 0.0,
+      "projected": 11.53,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
-      "name": "Jaguars D/ST",
+      "name": "Colts D/ST",
       "position": "D/ST",
       "slot": "D/ST",
-      "pro_team": "JAX",
-      "opponent": "BAL",
-      "points": 11.0,
-      "projected": 9.22,
-      "status": "final",
-      "kickoff": 1793927700000
+      "pro_team": "IND",
+      "opponent": "MIA",
+      "points": 0.0,
+      "projected": 7.9,
+      "status": "pre",
+      "kickoff": 1794765600000
      }
     ]
    },
    "BEND": {
-    "score": 123.54,
-    "projected": 103.26,
+    "score": 0.0,
+    "projected": 102.93,
     "starters": [
      {
       "name": "Christian McCaffrey",
       "position": "RB",
       "slot": "RB",
       "pro_team": "SF",
-      "opponent": "LV",
-      "points": 21.7,
-      "projected": 19.61,
-      "status": "final",
-      "kickoff": 1794173100000
+      "opponent": "DAL",
+      "points": 0.0,
+      "projected": 19.44,
+      "status": "pre",
+      "kickoff": 1794777900000
      },
      {
       "name": "Nico Collins",
       "position": "WR",
       "slot": "WR",
       "pro_team": "HOU",
-      "opponent": "LAC",
-      "points": 13.5,
-      "projected": 11.46,
-      "status": "final",
-      "kickoff": 1794171900000
+      "opponent": "CLE",
+      "points": 0.0,
+      "projected": 10.98,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "slot": "WR",
       "pro_team": "CAR",
-      "opponent": "DEN",
-      "points": 13.6,
-      "projected": 11.18,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "NO",
+      "points": 0.0,
+      "projected": 13.48,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "slot": "TE",
       "pro_team": "CLE",
-      "opponent": "NO",
-      "points": 11.2,
-      "projected": 9.18,
-      "status": "final",
-      "kickoff": 1794160800000
-     },
-     {
-      "name": "Texans D/ST",
-      "position": "D/ST",
-      "slot": "D/ST",
-      "pro_team": "HOU",
-      "opponent": "LAC",
-      "points": 12.0,
-      "projected": 8.85,
-      "status": "final",
-      "kickoff": 1794171900000
+      "opponent": "HOU",
+      "points": 0.0,
+      "projected": 8.0,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Denzel Boston",
       "position": "WR",
       "slot": "FLEX",
       "pro_team": "CLE",
-      "opponent": "NO",
-      "points": 12.8,
-      "projected": 10.71,
-      "status": "final",
-      "kickoff": 1794160800000
+      "opponent": "HOU",
+      "points": 0.0,
+      "projected": 10.79,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "slot": "K",
       "pro_team": "HOU",
-      "opponent": "LAC",
-      "points": 17.0,
-      "projected": 10.1,
-      "status": "final",
-      "kickoff": 1794171900000
+      "opponent": "CLE",
+      "points": 0.0,
+      "projected": 10.27,
+      "status": "pre",
+      "kickoff": 1794765600000
      },
      {
       "name": "Raiders TQB",
@@ -10701,1690 +11401,367 @@
       "slot": "QB",
       "pro_team": "LV",
       "opponent": "None",
-      "points": 12.64,
-      "projected": 14.86,
-      "status": "final",
-      "kickoff": 1794173100000
+      "points": 0.0,
+      "projected": 13.52,
+      "status": "pre",
+      "kickoff": 1794776700000
      },
      {
-      "name": "Kenny Gainwell",
+      "name": "Rams D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "LAR",
+      "opponent": "ARI",
+      "points": 0.0,
+      "projected": 9.19,
+      "status": "pre",
+      "kickoff": 1794776700000
+     },
+     {
+      "name": "Dylan Sampson",
       "position": "RB",
       "slot": "RB",
-      "pro_team": "TB",
-      "opponent": "CHI",
-      "points": 9.1,
-      "projected": 7.31,
-      "status": "final",
-      "kickoff": 1794187200000
+      "pro_team": "CLE",
+      "opponent": "HOU",
+      "points": 0.0,
+      "projected": 7.26,
+      "status": "pre",
+      "kickoff": 1794765600000
+     }
+    ]
+   },
+   "MBJG": {
+    "score": 0.0,
+    "projected": 114.42,
+    "starters": [
+     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "IND",
+      "opponent": "MIA",
+      "points": 0.0,
+      "projected": 16.35,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "ARI",
+      "opponent": "LAR",
+      "points": 0.0,
+      "projected": 10.47,
+      "status": "pre",
+      "kickoff": 1794776700000
+     },
+     {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "slot": "FLEX",
+      "pro_team": "CIN",
+      "opponent": "PIT",
+      "points": 0.0,
+      "projected": 13.07,
+      "status": "pre",
+      "kickoff": 1794792000000
+     },
+     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "JAX",
+      "opponent": "TEN",
+      "points": 0.0,
+      "projected": 16.23,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Jalen Coker",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "CAR",
+      "opponent": "NO",
+      "points": 0.0,
+      "projected": 9.39,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Cam Little",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "JAX",
+      "opponent": "TEN",
+      "points": 0.0,
+      "projected": 10.06,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Vikings D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "MIN",
+      "opponent": "GB",
+      "points": 0.0,
+      "projected": 6.93,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Chiefs TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "KC",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 17.52,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "GB",
+      "opponent": "MIN",
+      "points": 0.0,
+      "projected": 14.41,
+      "status": "pre",
+      "kickoff": 1794765600000
+     }
+    ]
+   },
+   "CJ": {
+    "score": 0.0,
+    "projected": 110.04,
+    "starters": [
+     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "ATL",
+      "opponent": "KC",
+      "points": 0.0,
+      "projected": 16.77,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Jadarian Price",
+      "position": "RB",
+      "slot": "FLEX",
+      "pro_team": "SEA",
+      "opponent": "LV",
+      "points": 0.0,
+      "projected": 10.87,
+      "status": "pre",
+      "kickoff": 1794776700000
+     },
+     {
+      "name": "Patriots TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "NE",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 21.95,
+      "status": "pre",
+      "kickoff": 1794753000000
+     },
+     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "JAX",
+      "opponent": "TEN",
+      "points": 0.0,
+      "projected": 12.61,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "DET",
+      "opponent": "NE",
+      "points": 0.0,
+      "projected": 9.22,
+      "status": "pre",
+      "kickoff": 1794753000000
+     },
+     {
+      "name": "Blake Corum",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "LAR",
+      "opponent": "ARI",
+      "points": 0.0,
+      "projected": 10.89,
+      "status": "pre",
+      "kickoff": 1794776700000
+     },
+     {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "KC",
+      "opponent": "ATL",
+      "points": 0.0,
+      "projected": 10.1,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Jaguars D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "JAX",
+      "opponent": "TEN",
+      "points": 0.0,
+      "projected": 7.4,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Jason Sanders",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "NYJ",
+      "opponent": "BUF",
+      "points": 0.0,
+      "projected": 10.24,
+      "status": "pre",
+      "kickoff": 1794765600000
+     }
+    ]
+   },
+   "Naug": {
+    "score": 0.0,
+    "projected": 101.19,
+    "starters": [
+     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "MIN",
+      "opponent": "GB",
+      "points": 0.0,
+      "projected": 14.23,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "TEN",
+      "opponent": "JAX",
+      "points": 0.0,
+      "projected": 12.46,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Bengals TQB",
+      "position": "QB",
+      "slot": "QB",
+      "pro_team": "CIN",
+      "opponent": "None",
+      "points": 0.0,
+      "projected": 19.03,
+      "status": "pre",
+      "kickoff": 1794792000000
+     },
+     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "slot": "K",
+      "pro_team": "DAL",
+      "opponent": "SF",
+      "points": 0.0,
+      "projected": 10.81,
+      "status": "pre",
+      "kickoff": 1794777900000
+     },
+     {
+      "name": "Jordan Addison",
+      "position": "WR",
+      "slot": "FLEX",
+      "pro_team": "MIN",
+      "opponent": "GB",
+      "points": 0.0,
+      "projected": 8.82,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "slot": "TE",
+      "pro_team": "KC",
+      "opponent": "ATL",
+      "points": 0.0,
+      "projected": 9.04,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Drake London",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "ATL",
+      "opponent": "KC",
+      "points": 0.0,
+      "projected": 12.08,
+      "status": "pre",
+      "kickoff": 1794765600000
+     },
+     {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "slot": "RB",
+      "pro_team": "ARI",
+      "opponent": "LAR",
+      "points": 0.0,
+      "projected": 7.68,
+      "status": "pre",
+      "kickoff": 1794776700000
+     },
+     {
+      "name": "Packers D/ST",
+      "position": "D/ST",
+      "slot": "D/ST",
+      "pro_team": "GB",
+      "opponent": "MIN",
+      "points": 0.0,
+      "projected": 7.05,
+      "status": "pre",
+      "kickoff": 1794765600000
      }
     ]
    }
   },
   "history": [
    {
-    "t": "2026-11-06T01:20:19+00:00",
+    "t": "2026-11-13T01:20:17+00:00",
     "scores": {
-     "BW": 0.0,
      "SACK": 0.0,
-     "WALT": 2.88,
      "SW": 0.0,
+     "TMOG": 0.0,
+     "BW": 13.1,
+     "GAY": 0.0,
+     "WALT": 1.4,
+     "SWSH": 0.0,
      "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 0.4,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 10.0,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T01:30:20+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 2.88,
-     "SW": 2.6,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 7.5,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 10.0,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T01:40:18+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 3.56,
-     "SW": 3.18,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 8.1,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 6.0,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T01:50:19+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 4.0,
-     "SW": 3.68,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 11.6,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 7.6,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T02:00:24+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 4.0,
-     "SW": 5.38,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 11.6,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 7.6,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T02:10:27+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 4.56,
-     "SW": 5.38,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 12.2,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 8.6,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T02:20:18+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 4.56,
-     "SW": 6.78,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 12.2,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 8.6,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T02:30:25+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 11.88,
-     "SW": 6.78,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 13.2,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 20.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T02:40:23+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 11.78,
-     "SW": 7.78,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 13.2,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 20.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T02:50:22+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 11.78,
-     "SW": 7.88,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 13.2,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 20.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T03:00:22+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 11.78,
-     "SW": 7.88,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 17.1,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 22.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T03:10:25+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 12.06,
-     "SW": 8.78,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 17.4,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 22.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T03:20:15+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 12.38,
-     "SW": 9.18,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 17.4,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 22.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T03:30:21+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 13.02,
-     "SW": 9.18,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 21.9,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 22.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T03:40:18+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 13.26,
-     "SW": 9.18,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 24.9,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 24.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T03:50:16+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 13.58,
-     "SW": 9.18,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 24.9,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 26.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T04:00:25+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 13.58,
-     "SW": 9.18,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 25.9,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 24.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-06T04:10:19+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 0.0,
-     "WALT": 13.58,
-     "SW": 9.38,
-     "BING": 0.0,
-     "TMOG": 0.0,
-     "MBJG": 25.9,
-     "RA": 0.0,
-     "Naug": 0.0,
-     "SWSH": 0.0,
-     "CJ": 24.1,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-08T18:00:22+00:00",
-    "scores": {
-     "BW": 0.0,
-     "SACK": 26.5,
-     "WALT": 17.58,
-     "SW": 13.18,
-     "BING": 9.0,
-     "TMOG": 0.0,
-     "MBJG": 43.6,
-     "RA": 0.0,
-     "Naug": 38.84,
-     "SWSH": 0.0,
-     "CJ": 47.8,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-08T18:10:17+00:00",
-    "scores": {
-     "BW": 11.5,
-     "SACK": 36.5,
-     "WALT": 20.78,
-     "SW": 24.34,
-     "BING": 20.36,
-     "TMOG": 0.0,
-     "MBJG": 45.1,
-     "RA": 3.0,
-     "Naug": 42.84,
-     "SWSH": 12.5,
-     "CJ": 47.8,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-08T18:20:18+00:00",
-    "scores": {
-     "BW": 14.7,
-     "SACK": 40.46,
-     "WALT": 22.58,
-     "SW": 22.34,
-     "BING": 22.22,
-     "TMOG": 0.0,
-     "MBJG": 47.24,
-     "RA": 3.7,
-     "Naug": 43.14,
-     "SWSH": 8.5,
-     "CJ": 47.8,
-     "BEND": 0.0
-    }
-   },
-   {
-    "t": "2026-11-08T18:30:21+00:00",
-    "scores": {
-     "BW": 16.4,
-     "SACK": 51.36,
-     "WALT": 27.38,
-     "SW": 22.62,
-     "BING": 23.82,
-     "TMOG": 1.4,
-     "MBJG": 46.04,
-     "RA": 3.7,
-     "Naug": 43.14,
-     "SWSH": 12.2,
-     "CJ": 47.8,
-     "BEND": 1.2
-    }
-   },
-   {
-    "t": "2026-11-08T18:40:18+00:00",
-    "scores": {
-     "BW": 17.5,
-     "SACK": 52.66,
-     "WALT": 30.18,
-     "SW": 20.42,
-     "BING": 37.76,
-     "TMOG": 2.6,
-     "MBJG": 48.52,
-     "RA": 3.7,
-     "Naug": 51.64,
-     "SWSH": 12.1,
-     "CJ": 51.4,
-     "BEND": 1.2
-    }
-   },
-   {
-    "t": "2026-11-08T18:50:16+00:00",
-    "scores": {
-     "BW": 17.6,
-     "SACK": 59.86,
-     "WALT": 31.48,
-     "SW": 25.18,
-     "BING": 36.06,
-     "TMOG": 3.4,
-     "MBJG": 53.7,
-     "RA": 5.3,
-     "Naug": 53.14,
-     "SWSH": 12.1,
-     "CJ": 51.4,
-     "BEND": 2.9
-    }
-   },
-   {
-    "t": "2026-11-08T19:00:18+00:00",
-    "scores": {
-     "BW": 18.2,
-     "SACK": 62.52,
-     "WALT": 32.48,
-     "SW": 28.22,
-     "BING": 36.06,
-     "TMOG": 3.3,
-     "MBJG": 55.62,
-     "RA": 7.2,
-     "Naug": 53.44,
-     "SWSH": 10.4,
-     "CJ": 53.1,
-     "BEND": 3.8
-    }
-   },
-   {
-    "t": "2026-11-08T19:10:20+00:00",
-    "scores": {
-     "BW": 22.8,
-     "SACK": 74.06,
-     "WALT": 37.98,
-     "SW": 29.22,
-     "BING": 37.3,
-     "TMOG": 4.6,
-     "MBJG": 60.62,
-     "RA": 7.2,
-     "Naug": 53.54,
-     "SWSH": 12.4,
-     "CJ": 53.1,
-     "BEND": 6.3
-    }
-   },
-   {
-    "t": "2026-11-08T19:20:17+00:00",
-    "scores": {
-     "BW": 18.4,
-     "SACK": 76.78,
-     "WALT": 41.98,
-     "SW": 30.7,
-     "BING": 43.8,
-     "TMOG": 5.8,
-     "MBJG": 61.32,
-     "RA": 7.2,
-     "Naug": 53.54,
-     "SWSH": 12.5,
-     "CJ": 53.0,
-     "BEND": 6.3
-    }
-   },
-   {
-    "t": "2026-11-08T19:30:17+00:00",
-    "scores": {
-     "BW": 22.1,
-     "SACK": 79.26,
-     "WALT": 41.98,
-     "SW": 30.7,
-     "BING": 46.7,
-     "TMOG": 5.8,
-     "MBJG": 62.5,
-     "RA": 7.2,
-     "Naug": 55.54,
-     "SWSH": 13.5,
-     "CJ": 53.0,
-     "BEND": 6.3
-    }
-   },
-   {
-    "t": "2026-11-08T19:40:16+00:00",
-    "scores": {
-     "BW": 23.0,
-     "SACK": 79.86,
-     "WALT": 43.98,
-     "SW": 50.94,
-     "BING": 46.7,
-     "TMOG": 6.0,
-     "MBJG": 62.5,
-     "RA": 7.2,
-     "Naug": 56.94,
-     "SWSH": 14.3,
-     "CJ": 53.0,
-     "BEND": 6.3
-    }
-   },
-   {
-    "t": "2026-11-08T19:50:19+00:00",
-    "scores": {
-     "BW": 26.0,
-     "SACK": 84.88,
-     "WALT": 46.18,
-     "SW": 50.94,
-     "BING": 48.5,
-     "TMOG": 6.0,
-     "MBJG": 63.54,
-     "RA": 8.2,
-     "Naug": 56.94,
-     "SWSH": 14.3,
-     "CJ": 53.0,
-     "BEND": 12.8
-    }
-   },
-   {
-    "t": "2026-11-08T20:00:20+00:00",
-    "scores": {
-     "BW": 25.6,
-     "SACK": 86.82,
-     "WALT": 47.48,
-     "SW": 51.94,
-     "BING": 51.6,
-     "TMOG": 7.4,
-     "MBJG": 64.64,
-     "RA": 9.3,
-     "Naug": 63.04,
-     "SWSH": 15.3,
-     "CJ": 53.0,
-     "BEND": 12.8
-    }
-   },
-   {
-    "t": "2026-11-08T20:10:17+00:00",
-    "scores": {
-     "BW": 27.9,
-     "SACK": 86.92,
-     "WALT": 48.98,
-     "SW": 51.94,
-     "BING": 58.48,
-     "TMOG": 7.3,
-     "MBJG": 65.6,
-     "RA": 11.5,
-     "Naug": 63.04,
-     "SWSH": 22.5,
-     "CJ": 54.4,
-     "BEND": 12.8
-    }
-   },
-   {
-    "t": "2026-11-08T20:20:17+00:00",
-    "scores": {
-     "BW": 31.0,
-     "SACK": 92.48,
-     "WALT": 60.18,
-     "SW": 55.52,
-     "BING": 58.84,
-     "TMOG": 8.0,
-     "MBJG": 68.26,
-     "RA": 11.7,
-     "Naug": 67.34,
-     "SWSH": 23.5,
-     "CJ": 54.4,
-     "BEND": 12.8
-    }
-   },
-   {
-    "t": "2026-11-08T20:30:18+00:00",
-    "scores": {
-     "BW": 34.1,
-     "SACK": 104.72,
-     "WALT": 69.78,
-     "SW": 56.48,
-     "BING": 60.54,
-     "TMOG": 8.1,
-     "MBJG": 78.64,
-     "RA": 14.7,
-     "Naug": 70.04,
-     "SWSH": 23.8,
-     "CJ": 55.8,
-     "BEND": 12.8
-    }
-   },
-   {
-    "t": "2026-11-08T20:40:19+00:00",
-    "scores": {
-     "BW": 39.1,
-     "SACK": 109.52,
-     "WALT": 71.68,
-     "SW": 57.12,
-     "BING": 59.66,
-     "TMOG": 8.1,
-     "MBJG": 79.24,
-     "RA": 14.7,
-     "Naug": 70.04,
-     "SWSH": 24.8,
-     "CJ": 57.5,
-     "BEND": 12.8
-    }
-   },
-   {
-    "t": "2026-11-08T20:50:17+00:00",
-    "scores": {
-     "BW": 39.1,
-     "SACK": 109.52,
-     "WALT": 73.88,
-     "SW": 63.34,
-     "BING": 63.68,
-     "TMOG": 8.1,
-     "MBJG": 80.44,
-     "RA": 14.9,
-     "Naug": 70.34,
-     "SWSH": 27.1,
-     "CJ": 58.7,
-     "BEND": 12.8
-    }
-   },
-   {
-    "t": "2026-11-08T21:00:22+00:00",
-    "scores": {
-     "BW": 41.2,
-     "SACK": 112.42,
-     "WALT": 73.88,
-     "SW": 65.6,
-     "BING": 69.56,
-     "TMOG": 8.1,
-     "MBJG": 79.58,
-     "RA": 16.2,
-     "Naug": 71.34,
-     "SWSH": 27.1,
-     "CJ": 60.4,
-     "BEND": 19.7
-    }
-   },
-   {
-    "t": "2026-11-08T21:10:21+00:00",
-    "scores": {
-     "BW": 46.0,
-     "SACK": 112.42,
-     "WALT": 79.38,
-     "SW": 70.44,
-     "BING": 71.52,
-     "TMOG": 8.1,
-     "MBJG": 80.28,
-     "RA": 16.2,
-     "Naug": 71.34,
-     "SWSH": 27.7,
-     "CJ": 60.4,
-     "BEND": 35.5
-    }
-   },
-   {
-    "t": "2026-11-08T21:20:16+00:00",
-    "scores": {
-     "BW": 46.0,
-     "SACK": 112.42,
-     "WALT": 79.38,
-     "SW": 72.44,
-     "BING": 75.06,
-     "TMOG": 8.1,
-     "MBJG": 81.68,
-     "RA": 21.7,
-     "Naug": 71.34,
-     "SWSH": 28.0,
-     "CJ": 60.4,
-     "BEND": 36.5
-    }
-   },
-   {
-    "t": "2026-11-08T21:30:16+00:00",
-    "scores": {
-     "BW": 54.1,
-     "SACK": 112.42,
-     "WALT": 84.38,
-     "SW": 74.38,
-     "BING": 73.16,
-     "TMOG": 13.2,
-     "MBJG": 81.68,
-     "RA": 33.16,
-     "Naug": 72.94,
-     "SWSH": 28.0,
-     "CJ": 58.4,
-     "BEND": 48.9
-    }
-   },
-   {
-    "t": "2026-11-08T21:40:21+00:00",
-    "scores": {
-     "BW": 54.1,
-     "SACK": 112.42,
-     "WALT": 85.08,
-     "SW": 75.78,
-     "BING": 73.66,
-     "TMOG": 15.4,
-     "MBJG": 90.18,
-     "RA": 29.72,
-     "Naug": 75.54,
-     "SWSH": 28.9,
-     "CJ": 58.4,
-     "BEND": 61.0
-    }
-   },
-   {
-    "t": "2026-11-08T21:50:17+00:00",
-    "scores": {
-     "BW": 57.9,
-     "SACK": 112.42,
-     "WALT": 85.08,
-     "SW": 75.48,
-     "BING": 73.66,
-     "TMOG": 16.8,
-     "MBJG": 97.18,
-     "RA": 37.6,
-     "Naug": 75.74,
-     "SWSH": 30.0,
-     "CJ": 59.36,
-     "BEND": 64.3
-    }
-   },
-   {
-    "t": "2026-11-08T22:00:19+00:00",
-    "scores": {
-     "BW": 58.86,
-     "SACK": 113.92,
-     "WALT": 85.08,
-     "SW": 75.58,
-     "BING": 73.76,
-     "TMOG": 16.8,
-     "MBJG": 104.28,
-     "RA": 44.8,
-     "Naug": 75.74,
-     "SWSH": 32.5,
-     "CJ": 62.26,
-     "BEND": 65.96
-    }
-   },
-   {
-    "t": "2026-11-08T22:10:20+00:00",
-    "scores": {
-     "BW": 59.86,
-     "SACK": 113.92,
-     "WALT": 85.28,
-     "SW": 76.78,
-     "BING": 73.76,
-     "TMOG": 16.8,
-     "MBJG": 104.28,
-     "RA": 45.8,
-     "Naug": 75.74,
-     "SWSH": 32.5,
-     "CJ": 61.26,
-     "BEND": 72.62
-    }
-   },
-   {
-    "t": "2026-11-08T22:20:21+00:00",
-    "scores": {
-     "BW": 60.74,
-     "SACK": 113.92,
-     "WALT": 85.28,
-     "SW": 77.48,
-     "BING": 73.76,
-     "TMOG": 16.8,
-     "MBJG": 104.28,
-     "RA": 52.66,
-     "Naug": 76.64,
-     "SWSH": 32.5,
-     "CJ": 63.8,
-     "BEND": 83.96
-    }
-   },
-   {
-    "t": "2026-11-08T22:30:18+00:00",
-    "scores": {
-     "BW": 60.74,
-     "SACK": 115.32,
-     "WALT": 86.78,
-     "SW": 86.98,
-     "BING": 73.76,
-     "TMOG": 19.6,
-     "MBJG": 104.28,
-     "RA": 53.72,
-     "Naug": 77.54,
-     "SWSH": 34.8,
-     "CJ": 74.0,
-     "BEND": 83.92
-    }
-   },
-   {
-    "t": "2026-11-08T22:40:19+00:00",
-    "scores": {
-     "BW": 63.42,
-     "SACK": 120.12,
-     "WALT": 86.78,
-     "SW": 87.28,
-     "BING": 73.76,
-     "TMOG": 20.0,
-     "MBJG": 107.88,
-     "RA": 53.72,
-     "Naug": 77.54,
-     "SWSH": 34.8,
-     "CJ": 75.92,
-     "BEND": 85.92
-    }
-   },
-   {
-    "t": "2026-11-08T22:50:13+00:00",
-    "scores": {
-     "BW": 74.3,
-     "SACK": 120.12,
-     "WALT": 86.78,
-     "SW": 89.18,
-     "BING": 73.76,
-     "TMOG": 20.0,
-     "MBJG": 107.88,
-     "RA": 53.72,
-     "Naug": 77.54,
-     "SWSH": 36.2,
-     "CJ": 81.72,
-     "BEND": 86.92
-    }
-   },
-   {
-    "t": "2026-11-08T23:00:20+00:00",
-    "scores": {
-     "BW": 74.3,
-     "SACK": 120.92,
-     "WALT": 88.38,
-     "SW": 89.18,
-     "BING": 73.76,
-     "TMOG": 20.0,
-     "MBJG": 107.88,
-     "RA": 55.72,
-     "Naug": 77.54,
-     "SWSH": 38.7,
-     "CJ": 82.04,
-     "BEND": 86.68
-    }
-   },
-   {
-    "t": "2026-11-08T23:10:18+00:00",
-    "scores": {
-     "BW": 74.3,
-     "SACK": 120.92,
-     "WALT": 88.38,
-     "SW": 89.18,
-     "BING": 74.26,
-     "TMOG": 20.0,
-     "MBJG": 108.88,
-     "RA": 54.2,
-     "Naug": 78.04,
-     "SWSH": 48.7,
-     "CJ": 83.34,
-     "BEND": 94.72
-    }
-   },
-   {
-    "t": "2026-11-08T23:20:16+00:00",
-    "scores": {
-     "BW": 74.94,
-     "SACK": 120.92,
-     "WALT": 88.38,
-     "SW": 89.18,
-     "BING": 74.26,
-     "TMOG": 21.3,
-     "MBJG": 108.88,
-     "RA": 55.64,
-     "Naug": 78.04,
-     "SWSH": 48.4,
-     "CJ": 85.94,
-     "BEND": 104.24
-    }
-   },
-   {
-    "t": "2026-11-08T23:30:21+00:00",
-    "scores": {
-     "BW": 75.74,
-     "SACK": 125.62,
-     "WALT": 88.38,
-     "SW": 89.88,
-     "BING": 75.06,
-     "TMOG": 21.3,
-     "MBJG": 110.28,
-     "RA": 68.06,
-     "Naug": 78.04,
-     "SWSH": 48.4,
-     "CJ": 86.34,
-     "BEND": 106.7
-    }
-   },
-   {
-    "t": "2026-11-08T23:40:18+00:00",
-    "scores": {
-     "BW": 75.74,
-     "SACK": 130.02,
-     "WALT": 88.68,
-     "SW": 90.48,
-     "BING": 75.06,
-     "TMOG": 22.3,
-     "MBJG": 111.38,
-     "RA": 68.06,
-     "Naug": 77.94,
-     "SWSH": 55.5,
-     "CJ": 86.76,
-     "BEND": 109.38
-    }
-   },
-   {
-    "t": "2026-11-08T23:50:19+00:00",
-    "scores": {
-     "BW": 76.9,
-     "SACK": 140.42,
-     "WALT": 88.68,
-     "SW": 91.58,
-     "BING": 75.06,
-     "TMOG": 22.3,
-     "MBJG": 111.38,
-     "RA": 69.64,
-     "Naug": 77.94,
-     "SWSH": 55.5,
-     "CJ": 87.22,
-     "BEND": 110.78
-    }
-   },
-   {
-    "t": "2026-11-09T00:00:20+00:00",
-    "scores": {
-     "BW": 76.9,
-     "SACK": 140.42,
-     "WALT": 88.48,
-     "SW": 94.48,
-     "BING": 75.06,
-     "TMOG": 27.2,
-     "MBJG": 116.48,
-     "RA": 69.78,
-     "Naug": 77.94,
-     "SWSH": 65.4,
-     "CJ": 94.3,
-     "BEND": 114.48
-    }
-   },
-   {
-    "t": "2026-11-09T00:10:17+00:00",
-    "scores": {
-     "BW": 77.3,
-     "SACK": 140.42,
-     "WALT": 88.88,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 27.2,
-     "MBJG": 117.98,
-     "RA": 69.78,
-     "Naug": 77.94,
-     "SWSH": 65.4,
-     "CJ": 94.3,
-     "BEND": 112.44
-    }
-   },
-   {
-    "t": "2026-11-09T00:20:16+00:00",
-    "scores": {
-     "BW": 77.2,
-     "SACK": 140.42,
-     "WALT": 88.88,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 27.2,
-     "MBJG": 117.98,
-     "RA": 69.48,
-     "Naug": 77.94,
-     "SWSH": 65.4,
-     "CJ": 95.46,
-     "BEND": 114.44
-    }
-   },
-   {
-    "t": "2026-11-09T00:30:22+00:00",
-    "scores": {
-     "BW": 77.1,
-     "SACK": 140.42,
-     "WALT": 88.88,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 27.2,
-     "MBJG": 117.98,
-     "RA": 69.48,
-     "Naug": 77.94,
-     "SWSH": 65.4,
-     "CJ": 96.3,
-     "BEND": 114.44
-    }
-   },
-   {
-    "t": "2026-11-09T01:30:18+00:00",
-    "scores": {
-     "BW": 77.1,
-     "SACK": 140.42,
-     "WALT": 89.28,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 28.98,
-     "MBJG": 117.98,
-     "RA": 69.88,
-     "Naug": 87.94,
-     "SWSH": 65.4,
-     "CJ": 96.3,
-     "BEND": 114.44
-    }
-   },
-   {
-    "t": "2026-11-09T01:40:16+00:00",
-    "scores": {
-     "BW": 77.1,
-     "SACK": 140.42,
-     "WALT": 89.28,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 34.34,
-     "MBJG": 117.98,
-     "RA": 70.28,
-     "Naug": 87.94,
-     "SWSH": 65.4,
-     "CJ": 97.4,
-     "BEND": 114.44
-    }
-   },
-   {
-    "t": "2026-11-09T01:50:17+00:00",
-    "scores": {
-     "BW": 77.1,
-     "SACK": 140.42,
-     "WALT": 101.38,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 42.5,
-     "MBJG": 117.98,
-     "RA": 70.48,
-     "Naug": 87.94,
-     "SWSH": 65.4,
-     "CJ": 98.6,
-     "BEND": 114.44
-    }
-   },
-   {
-    "t": "2026-11-09T02:00:21+00:00",
-    "scores": {
-     "BW": 77.1,
-     "SACK": 140.42,
-     "WALT": 101.38,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 42.5,
-     "MBJG": 117.98,
-     "RA": 71.48,
-     "Naug": 83.94,
-     "SWSH": 68.4,
-     "CJ": 98.9,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T02:10:22+00:00",
-    "scores": {
-     "BW": 78.2,
-     "SACK": 140.42,
-     "WALT": 101.38,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 44.3,
-     "MBJG": 117.98,
-     "RA": 72.68,
-     "Naug": 83.94,
-     "SWSH": 68.4,
-     "CJ": 98.9,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T02:20:17+00:00",
-    "scores": {
-     "BW": 78.2,
-     "SACK": 140.42,
-     "WALT": 101.38,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 40.3,
-     "MBJG": 117.98,
-     "RA": 72.88,
-     "Naug": 83.94,
-     "SWSH": 68.4,
-     "CJ": 98.9,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T02:30:22+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 104.48,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 42.02,
-     "MBJG": 117.98,
-     "RA": 72.88,
-     "Naug": 83.94,
-     "SWSH": 68.4,
-     "CJ": 99.4,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T02:40:18+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 104.48,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 45.02,
-     "MBJG": 117.98,
-     "RA": 74.58,
-     "Naug": 83.94,
-     "SWSH": 68.4,
-     "CJ": 99.9,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T02:50:18+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 104.48,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 43.02,
-     "MBJG": 117.98,
-     "RA": 77.18,
-     "Naug": 85.94,
-     "SWSH": 68.4,
-     "CJ": 100.3,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T03:00:21+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 104.48,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 43.02,
-     "MBJG": 117.98,
-     "RA": 77.18,
-     "Naug": 85.94,
-     "SWSH": 71.4,
-     "CJ": 101.8,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T03:10:19+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 104.48,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 43.02,
-     "MBJG": 117.98,
-     "RA": 77.18,
-     "Naug": 85.94,
-     "SWSH": 71.4,
-     "CJ": 102.5,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T03:20:19+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 105.68,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 43.3,
-     "MBJG": 117.98,
-     "RA": 77.18,
-     "Naug": 83.94,
-     "SWSH": 72.4,
-     "CJ": 108.7,
-     "BEND": 119.94
-    }
-   },
-   {
-    "t": "2026-11-09T03:30:20+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 105.68,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 43.3,
-     "MBJG": 117.98,
-     "RA": 77.48,
-     "Naug": 84.94,
-     "SWSH": 72.4,
-     "CJ": 108.7,
-     "BEND": 120.14
-    }
-   },
-   {
-    "t": "2026-11-09T03:40:17+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 106.88,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 43.58,
-     "MBJG": 117.98,
-     "RA": 77.48,
-     "Naug": 84.94,
-     "SWSH": 72.4,
-     "CJ": 108.7,
-     "BEND": 120.14
-    }
-   },
-   {
-    "t": "2026-11-09T03:50:17+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 106.88,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 43.48,
-     "MBJG": 117.98,
-     "RA": 77.28,
-     "Naug": 92.94,
-     "SWSH": 72.4,
-     "CJ": 110.0,
-     "BEND": 120.14
-    }
-   },
-   {
-    "t": "2026-11-09T04:00:21+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 106.88,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 43.48,
-     "MBJG": 117.98,
-     "RA": 77.28,
-     "Naug": 92.94,
-     "SWSH": 72.4,
-     "CJ": 113.9,
-     "BEND": 122.04
-    }
-   },
-   {
-    "t": "2026-11-09T04:10:18+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 106.88,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 44.2,
-     "MBJG": 117.98,
-     "RA": 77.58,
-     "Naug": 91.94,
-     "SWSH": 75.4,
-     "CJ": 113.9,
-     "BEND": 122.04
-    }
-   },
-   {
-    "t": "2026-11-09T04:20:18+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 107.18,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 44.12,
-     "MBJG": 117.98,
-     "RA": 77.58,
-     "Naug": 93.94,
-     "SWSH": 75.4,
-     "CJ": 115.1,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-09T04:30:20+00:00",
-    "scores": {
-     "BW": 79.1,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 44.28,
-     "MBJG": 117.98,
-     "RA": 77.88,
-     "Naug": 91.94,
-     "SWSH": 75.4,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-09T04:40:17+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 48.96,
-     "MBJG": 117.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 75.4,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T01:20:19+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 59.06,
-     "MBJG": 128.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 75.4,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T01:30:19+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 61.76,
-     "MBJG": 128.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 76.36,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T01:40:18+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 78.86,
-     "TMOG": 64.36,
-     "MBJG": 130.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 75.06,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T01:50:19+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 81.86,
-     "TMOG": 64.76,
-     "MBJG": 126.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 75.82,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T02:00:23+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 81.86,
-     "TMOG": 64.66,
-     "MBJG": 126.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 75.82,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T02:10:20+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 81.86,
-     "TMOG": 64.76,
-     "MBJG": 126.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 75.82,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T02:20:19+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 81.86,
-     "TMOG": 65.76,
-     "MBJG": 126.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 75.82,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T02:30:22+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 94.48,
-     "BING": 81.86,
-     "TMOG": 66.76,
-     "MBJG": 128.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 76.18,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T02:40:18+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 98.48,
-     "BING": 81.86,
-     "TMOG": 65.26,
-     "MBJG": 128.98,
-     "RA": 77.98,
-     "Naug": 91.94,
-     "SWSH": 77.5,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T02:50:17+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 98.48,
-     "BING": 82.86,
-     "TMOG": 65.26,
-     "MBJG": 126.98,
-     "RA": 77.98,
-     "Naug": 96.84,
-     "SWSH": 82.98,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T03:00:22+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 82.86,
-     "TMOG": 65.26,
-     "MBJG": 126.98,
-     "RA": 77.98,
-     "Naug": 96.84,
-     "SWSH": 82.88,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T03:20:17+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 82.86,
-     "TMOG": 68.66,
-     "MBJG": 126.98,
-     "RA": 77.98,
-     "Naug": 96.84,
-     "SWSH": 84.32,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T03:30:22+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 85.86,
-     "TMOG": 69.46,
-     "MBJG": 126.98,
-     "RA": 77.98,
-     "Naug": 96.84,
-     "SWSH": 85.6,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T03:40:20+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 85.86,
-     "TMOG": 71.46,
-     "MBJG": 127.98,
-     "RA": 77.98,
-     "Naug": 96.84,
-     "SWSH": 87.16,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T03:50:20+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 85.86,
-     "TMOG": 71.66,
-     "MBJG": 127.98,
-     "RA": 77.98,
-     "Naug": 96.84,
-     "SWSH": 87.16,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T04:00:23+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 85.86,
-     "TMOG": 74.96,
-     "MBJG": 127.98,
-     "RA": 77.98,
-     "Naug": 96.84,
-     "SWSH": 87.7,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T04:10:21+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 86.86,
-     "TMOG": 83.26,
-     "MBJG": 124.98,
-     "RA": 77.98,
-     "Naug": 96.84,
-     "SWSH": 88.26,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T04:20:20+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 91.86,
-     "TMOG": 83.76,
-     "MBJG": 123.98,
-     "RA": 77.98,
-     "Naug": 99.24,
-     "SWSH": 88.26,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-10T04:30:21+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 91.86,
-     "TMOG": 84.76,
-     "MBJG": 123.98,
-     "RA": 77.98,
-     "Naug": 99.24,
-     "SWSH": 88.06,
-     "CJ": 122.8,
-     "BEND": 123.54
-    }
-   },
-   {
-    "t": "2026-11-11T14:08:18+00:00",
-    "scores": {
-     "BW": 84.5,
-     "SACK": 140.42,
-     "WALT": 106.08,
-     "SW": 103.48,
-     "BING": 91.86,
-     "TMOG": 84.76,
-     "MBJG": 123.98,
-     "GAY": 77.98,
-     "Naug": 99.24,
-     "SWSH": 88.06,
-     "CJ": 122.8,
-     "BEND": 123.54
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
     }
    }
   ]
