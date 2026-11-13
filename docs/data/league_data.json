@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 01:40:20 UTC",
-  "last_updated": "2026-11-13T01:40:20.092306+00:00"
+  "updated_at": "2026-11-13 01:50:19 UTC",
+  "last_updated": "2026-11-13T01:50:19.834286+00:00"
  },
  "teams": [
   {
@@ -40,7 +40,7 @@
     6.0,
     9.0,
     12.0,
-    10.0
+    8.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -52,7 +52,7 @@
     56.0,
     65.0,
     77.0,
-    87.0
+    85.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -64,10 +64,10 @@
     9.0,
     14.0,
     18.0,
-    23.0
+    20.5
    ],
    "rank": 1,
-   "total_ranking_points": 87.0
+   "total_ranking_points": 85.0
   },
   {
    "team_id": 9,
@@ -97,7 +97,7 @@
     10.0,
     5.0,
     8.0,
-    11.0
+    10.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -109,7 +109,7 @@
     56.0,
     61.0,
     69.0,
-    80.0
+    79.0
    ],
    "normalized_by_week": [
     5.0,
@@ -121,10 +121,10 @@
     9.0,
     10.0,
     10.0,
-    16.0
+    14.5
    ],
    "rank": 2,
-   "total_ranking_points": 80.0
+   "total_ranking_points": 79.0
   },
   {
    "team_id": 5,
@@ -154,7 +154,7 @@
     8.0,
     12.0,
     11.0,
-    4.0
+    3.5
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -166,7 +166,7 @@
     48.0,
     60.0,
     71.0,
-    75.0
+    74.5
    ],
    "normalized_by_week": [
     -2.0,
@@ -178,10 +178,10 @@
     1.0,
     9.0,
     12.0,
-    11.0
+    10.0
    ],
    "rank": 3,
-   "total_ranking_points": 75.0
+   "total_ranking_points": 74.5
   },
   {
    "team_id": 3,
@@ -235,10 +235,67 @@
     8.0,
     7.0,
     1.0,
-    8.0
+    7.5
    ],
    "rank": 4,
    "total_ranking_points": 72.0
+  },
+  {
+   "team_id": 8,
+   "team_name": "Bada Bing",
+   "team_abbrev": "BING",
+   "abbrev": "BING",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    97.2,
+    66.52,
+    99.18,
+    91.86,
+    2.54
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    7.0,
+    1.0,
+    4.0,
+    5.0,
+    11.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    46.0,
+    47.0,
+    51.0,
+    56.0,
+    67.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    6.0,
+    0.0,
+    0.0,
+    -3.0,
+    2.5
+   ],
+   "rank": 5,
+   "total_ranking_points": 67.0
   },
   {
    "team_id": 4,
@@ -268,7 +325,7 @@
     7.0,
     10.0,
     4.0,
-    4.0
+    3.5
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -280,7 +337,7 @@
     47.0,
     57.0,
     61.0,
-    65.0
+    64.5
    ],
    "normalized_by_week": [
     -6.0,
@@ -292,67 +349,10 @@
     0.0,
     6.0,
     2.0,
-    1.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 65.0
-  },
-  {
-   "team_id": 8,
-   "team_name": "Bada Bing",
-   "team_abbrev": "BING",
-   "abbrev": "BING",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    97.2,
-    66.52,
-    99.18,
-    91.86,
-    0.44
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    7.0,
-    1.0,
-    4.0,
-    5.0,
-    8.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    46.0,
-    47.0,
-    51.0,
-    56.0,
-    64.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    6.0,
-    0.0,
-    0.0,
-    -3.0,
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 64.0
+   "total_ranking_points": 64.5
   },
   {
    "team_id": 2,
@@ -382,7 +382,7 @@
     9.0,
     7.0,
     9.0,
-    4.0
+    3.5
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -394,7 +394,7 @@
     43.0,
     50.0,
     59.0,
-    63.0
+    62.5
    ],
    "normalized_by_week": [
     1.0,
@@ -406,10 +406,10 @@
     -4.0,
     -1.0,
     0.0,
-    -1.0
+    -2.0
    ],
    "rank": 7,
-   "total_ranking_points": 63.0
+   "total_ranking_points": 62.5
   },
   {
    "team_id": 1,
@@ -439,7 +439,7 @@
     11.0,
     1.0,
     7.0,
-    4.0
+    3.5
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -451,7 +451,7 @@
     49.0,
     50.0,
     57.0,
-    61.0
+    60.5
    ],
    "normalized_by_week": [
     2.0,
@@ -463,10 +463,10 @@
     2.0,
     -1.0,
     -2.0,
-    -3.0
+    -4.0
    ],
    "rank": 8,
-   "total_ranking_points": 61.0
+   "total_ranking_points": 60.5
   },
   {
    "team_id": 7,
@@ -496,7 +496,7 @@
     5.0,
     8.0,
     3.0,
-    9.0
+    7.0
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -508,7 +508,7 @@
     41.0,
     49.0,
     52.0,
-    61.0
+    59.0
    ],
    "normalized_by_week": [
     4.0,
@@ -520,10 +520,67 @@
     -6.0,
     -2.0,
     -7.0,
-    -3.0
+    -5.5
    ],
    "rank": 9,
-   "total_ranking_points": 61.0
+   "total_ranking_points": 59.0
+  },
+  {
+   "team_id": 11,
+   "team_name": "I am gay ",
+   "team_abbrev": "GAY",
+   "abbrev": "GAY",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92,
+    103.76,
+    90.76,
+    82.82,
+    65.76,
+    77.98,
+    1.9
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0,
+    5.0,
+    5.0,
+    3.0,
+    2.0,
+    1.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0,
+    36.0,
+    41.0,
+    44.0,
+    46.0,
+    47.0,
+    56.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0,
+    2.0,
+    1.0,
+    -3.0,
+    -5.0,
+    -12.0,
+    -8.5
+   ],
+   "rank": 10,
+   "total_ranking_points": 56.0
   },
   {
    "team_id": 12,
@@ -553,7 +610,7 @@
     2.0,
     6.0,
     10.0,
-    4.0
+    3.5
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -565,7 +622,7 @@
     35.0,
     41.0,
     51.0,
-    55.0
+    54.5
    ],
    "normalized_by_week": [
     0.0,
@@ -577,67 +634,10 @@
     -12.0,
     -10.0,
     -8.0,
-    -9.0
-   ],
-   "rank": 10,
-   "total_ranking_points": 55.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "I am gay ",
-   "team_abbrev": "GAY",
-   "abbrev": "GAY",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    105.92,
-    103.76,
-    90.76,
-    82.82,
-    65.76,
-    77.98,
-    0.0
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    5.0,
-    5.0,
-    5.0,
-    3.0,
-    2.0,
-    1.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    31.0,
-    36.0,
-    41.0,
-    44.0,
-    46.0,
-    47.0,
-    51.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
-    4.0,
-    2.0,
-    1.0,
-    -3.0,
-    -5.0,
-    -12.0,
-    -13.0
+    -10.0
    ],
    "rank": 11,
-   "total_ranking_points": 51.0
+   "total_ranking_points": 54.5
   },
   {
    "team_id": 6,
@@ -667,7 +667,7 @@
     4.0,
     11.0,
     6.0,
-    4.0
+    3.5
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -679,7 +679,7 @@
     25.0,
     36.0,
     42.0,
-    46.0
+    45.5
    ],
    "normalized_by_week": [
     -1.0,
@@ -691,10 +691,10 @@
     -22.0,
     -15.0,
     -17.0,
-    -18.0
+    -19.0
    ],
    "rank": 12,
-   "total_ranking_points": 46.0
+   "total_ranking_points": 45.5
   }
  ],
  "top_players_by_week": [
@@ -8529,12 +8529,28 @@
      "score": 7.0
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "slot": "QB",
+     "score": 2.54
+    },
+    {
      "name": "Isaiah Likely",
      "pro_team": "NYG",
      "fantasy_team": "Walt's Warriors",
      "position": "TE",
      "slot": "TE",
      "score": 2.5
+    },
+    {
+     "name": "Austin Ekeler",
+     "pro_team": "WSH",
+     "fantasy_team": "I am gay ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 1.9
     },
     {
      "name": "Malik Nabers",
@@ -8551,14 +8567,6 @@
      "position": "RB",
      "slot": "FLEX",
      "score": 0.6
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Bada Bing",
-     "position": "QB",
-     "slot": "QB",
-     "score": 0.44
     },
     {
      "name": "Ja'Marr Chase",
@@ -8878,14 +8886,6 @@
      "fantasy_team": "I am gay ",
      "position": "WR",
      "slot": "FLEX",
-     "score": 0.0
-    },
-    {
-     "name": "Austin Ekeler",
-     "pro_team": "WSH",
-     "fantasy_team": "I am gay ",
-     "position": "RB",
-     "slot": "RB",
      "score": 0.0
     },
     {
@@ -10413,7 +10413,7 @@
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
-    "RB": 0.0,
+    "RB": 1.9,
     "FLEX": 0.0
    },
    "WALT": {
@@ -10439,7 +10439,7 @@
     "FLEX": 0.0,
     "WR": 0.0,
     "TE": 0.0,
-    "QB": 0.44,
+    "QB": 2.54,
     "K": 0.0,
     "D/ST": 0.0
    },
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T01:40:20+00:00",
+  "updated_at": "2026-11-13T01:50:19+00:00",
   "teams": {
    "SACK": {
     "score": 1.3,
-    "projected": 123.06,
+    "projected": 121.34,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 0.6,
-    "projected": 105.1,
+    "projected": 104.33,
     "starters": [
      {
       "name": "James Cook III",
@@ -10802,7 +10802,7 @@
    },
    "BW": {
     "score": 17.0,
-    "projected": 107.01,
+    "projected": 106.3,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10906,8 +10906,8 @@
     ]
    },
    "GAY": {
-    "score": 0.0,
-    "projected": 94.25,
+    "score": 1.9,
+    "projected": 95.55,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11003,7 +11003,7 @@
       "slot": "RB",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 0.0,
+      "points": 1.9,
       "projected": 7.6,
       "status": "live",
       "kickoff": 1794532500000
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 2.5,
-    "projected": 100.81,
+    "projected": 100.04,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 0.44,
-    "projected": 102.04,
+    "score": 2.54,
+    "projected": 102.74,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11285,7 +11285,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 0.44,
+      "points": 2.54,
       "projected": 17.67,
       "status": "live",
       "kickoff": 1794532500000
@@ -11792,6 +11792,23 @@
      "WALT": 2.5,
      "SWSH": 0.0,
      "BING": 0.44,
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-13T01:50:19+00:00",
+    "scores": {
+     "SACK": 1.3,
+     "SW": 0.0,
+     "TMOG": 0.6,
+     "BW": 17.0,
+     "GAY": 1.9,
+     "WALT": 2.5,
+     "SWSH": 0.0,
+     "BING": 2.54,
      "BEND": 0.0,
      "MBJG": 0.0,
      "CJ": 0.0,
