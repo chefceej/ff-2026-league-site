@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 03:50:18 UTC",
-  "last_updated": "2026-11-13T03:50:18.699790+00:00"
+  "updated_at": "2026-11-13 04:00:23 UTC",
+  "last_updated": "2026-11-13T04:00:23.959401+00:00"
  },
  "teams": [
   {
@@ -199,7 +199,7 @@
     126.22,
     68.24,
     84.5,
-    28.1
+    29.0
    ],
    "ranking_points_by_week": [
     4.0,
@@ -256,7 +256,7 @@
     66.52,
     99.18,
     91.86,
-    18.42
+    17.02
    ],
    "ranking_points_by_week": [
     10.0,
@@ -8518,7 +8518,7 @@
      "fantasy_team": "JSN Derulo ",
      "position": "RB",
      "slot": "RB",
-     "score": 24.1
+     "score": 25.0
     },
     {
      "name": "Isaiah Likely",
@@ -8534,7 +8534,7 @@
      "fantasy_team": "Bada Bing",
      "position": "QB",
      "slot": "QB",
-     "score": 18.42
+     "score": 17.02
     },
     {
      "name": "Austin Ekeler",
@@ -10400,7 +10400,7 @@
    },
    "BW": {
     "WR": 0.0,
-    "RB": 24.1,
+    "RB": 25.0,
     "FLEX": 0.0,
     "QB": 0.0,
     "K": 0.0,
@@ -10439,7 +10439,7 @@
     "FLEX": 0.0,
     "WR": 0.0,
     "TE": 0.0,
-    "QB": 18.42,
+    "QB": 17.02,
     "K": 0.0,
     "D/ST": 0.0
    },
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T03:50:18+00:00",
+  "updated_at": "2026-11-13T04:00:23+00:00",
   "teams": {
    "SACK": {
     "score": 7.9,
-    "projected": 114.21,
+    "projected": 113.4,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 5.8,
-    "projected": 103.36,
+    "projected": 102.99,
     "starters": [
      {
       "name": "James Cook III",
@@ -10801,8 +10801,8 @@
     ]
    },
    "BW": {
-    "score": 28.1,
-    "projected": 112.37,
+    "score": 29.0,
+    "projected": 112.71,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10832,7 +10832,7 @@
       "slot": "RB",
       "pro_team": "NYG",
       "opponent": "WSH",
-      "points": 24.1,
+      "points": 25.0,
       "projected": 10.93,
       "status": "live",
       "kickoff": 1794532500000
@@ -10907,7 +10907,7 @@
    },
    "GAY": {
     "score": 6.2,
-    "projected": 95.02,
+    "projected": 94.73,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 23.2,
-    "projected": 114.52,
+    "projected": 114.15,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 18.42,
-    "projected": 107.39,
+    "score": 17.02,
+    "projected": 105.32,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11285,7 +11285,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 18.42,
+      "points": 17.02,
       "projected": 17.67,
       "status": "live",
       "kickoff": 1794532500000
@@ -12013,6 +12013,23 @@
      "WALT": 23.2,
      "SWSH": 0.0,
      "BING": 18.42,
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-13T04:00:23+00:00",
+    "scores": {
+     "SACK": 7.9,
+     "SW": 0.0,
+     "TMOG": 5.8,
+     "BW": 29.0,
+     "GAY": 6.2,
+     "WALT": 23.2,
+     "SWSH": 0.0,
+     "BING": 17.02,
      "BEND": 0.0,
      "MBJG": 0.0,
      "CJ": 0.0,
