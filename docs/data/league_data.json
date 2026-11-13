@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 04:10:18 UTC",
-  "last_updated": "2026-11-13T04:10:18.175386+00:00"
+  "updated_at": "2026-11-13 04:20:17 UTC",
+  "last_updated": "2026-11-13T04:20:17.456284+00:00"
  },
  "teams": [
   {
@@ -199,7 +199,7 @@
     126.22,
     68.24,
     84.5,
-    29.7
+    31.7
    ],
    "ranking_points_by_week": [
     4.0,
@@ -256,7 +256,7 @@
     66.52,
     99.18,
     91.86,
-    15.38
+    20.76
    ],
    "ranking_points_by_week": [
     10.0,
@@ -541,7 +541,7 @@
     82.82,
     65.76,
     77.98,
-    6.2
+    7.2
    ],
    "ranking_points_by_week": [
     3.0,
@@ -8534,7 +8534,7 @@
      "fantasy_team": "Bada Bing",
      "position": "QB",
      "slot": "QB",
-     "score": 15.38
+     "score": 20.76
     },
     {
      "name": "Austin Ekeler",
@@ -8542,7 +8542,15 @@
      "fantasy_team": "I am gay ",
      "position": "RB",
      "slot": "RB",
-     "score": 6.2
+     "score": 7.2
+    },
+    {
+     "name": "Commanders D/ST",
+     "pro_team": "WSH",
+     "fantasy_team": "JSN Derulo ",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 6.0
     },
     {
      "name": "Rachaad White",
@@ -8559,14 +8567,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 4.9
-    },
-    {
-     "name": "Commanders D/ST",
-     "pro_team": "WSH",
-     "fantasy_team": "JSN Derulo ",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 4.0
     },
     {
      "name": "Dominic Zvada",
@@ -10405,7 +10405,7 @@
     "QB": 0.0,
     "K": 0.0,
     "TE": 0.0,
-    "D/ST": 4.0
+    "D/ST": 6.0
    },
    "GAY": {
     "WR": 0.0,
@@ -10413,7 +10413,7 @@
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
-    "RB": 6.2,
+    "RB": 7.2,
     "FLEX": 0.0
    },
    "WALT": {
@@ -10439,7 +10439,7 @@
     "FLEX": 0.0,
     "WR": 0.0,
     "TE": 0.0,
-    "QB": 15.38,
+    "QB": 20.76,
     "K": 0.0,
     "D/ST": 0.0
    },
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T04:10:18+00:00",
+  "updated_at": "2026-11-13T04:20:17+00:00",
   "teams": {
    "SACK": {
     "score": 7.9,
-    "projected": 112.59,
+    "projected": 111.99,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 5.7,
-    "projected": 102.53,
+    "projected": 102.26,
     "starters": [
      {
       "name": "James Cook III",
@@ -10801,8 +10801,8 @@
     ]
    },
    "BW": {
-    "score": 29.7,
-    "projected": 112.85,
+    "score": 31.7,
+    "projected": 114.44,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10898,7 +10898,7 @@
       "slot": "D/ST",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 4.0,
+      "points": 6.0,
       "projected": 7.96,
       "status": "live",
       "kickoff": 1794532500000
@@ -10906,8 +10906,8 @@
     ]
    },
    "GAY": {
-    "score": 6.2,
-    "projected": 94.45,
+    "score": 7.2,
+    "projected": 95.24,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11003,7 +11003,7 @@
       "slot": "RB",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 6.2,
+      "points": 7.2,
       "projected": 7.6,
       "status": "live",
       "kickoff": 1794532500000
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 23.2,
-    "projected": 113.79,
+    "projected": 113.52,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 15.38,
-    "projected": 103.02,
+    "score": 20.76,
+    "projected": 107.91,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11285,7 +11285,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 15.38,
+      "points": 20.76,
       "projected": 17.67,
       "status": "live",
       "kickoff": 1794532500000
@@ -12047,6 +12047,23 @@
      "WALT": 23.2,
      "SWSH": 0.0,
      "BING": 15.38,
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-13T04:20:17+00:00",
+    "scores": {
+     "SACK": 7.9,
+     "SW": 0.0,
+     "TMOG": 5.7,
+     "BW": 31.7,
+     "GAY": 7.2,
+     "WALT": 23.2,
+     "SWSH": 0.0,
+     "BING": 20.76,
      "BEND": 0.0,
      "MBJG": 0.0,
      "CJ": 0.0,
