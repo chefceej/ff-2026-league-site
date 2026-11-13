@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 04:40:20 UTC",
-  "last_updated": "2026-11-13T04:40:20.985115+00:00"
+  "updated_at": "2026-11-13 04:50:17 UTC",
+  "last_updated": "2026-11-13T04:50:17.687554+00:00"
  },
  "teams": [
   {
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T04:40:20+00:00",
+  "updated_at": "2026-11-13T04:50:17+00:00",
   "teams": {
    "SACK": {
     "score": 7.9,
@@ -10563,7 +10563,7 @@
       "opponent": "WSH",
       "points": 4.9,
       "projected": 13.07,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794532500000
      },
      {
@@ -10574,7 +10574,7 @@
       "opponent": "WSH",
       "points": 3.0,
       "projected": 8.53,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794532500000
      },
      {
@@ -10740,7 +10740,7 @@
       "opponent": "NYG",
       "points": 5.7,
       "projected": 9.71,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794532500000
      },
      {
@@ -10834,7 +10834,7 @@
       "opponent": "WSH",
       "points": 25.7,
       "projected": 10.93,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794532500000
      },
      {
@@ -10900,7 +10900,7 @@
       "opponent": "NYG",
       "points": 6.0,
       "projected": 7.96,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794532500000
      }
     ]
@@ -11005,7 +11005,7 @@
       "opponent": "NYG",
       "points": 7.2,
       "projected": 7.6,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794532500000
      }
     ]
@@ -11066,7 +11066,7 @@
       "opponent": "WSH",
       "points": 23.2,
       "projected": 9.78,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794532500000
      },
      {
@@ -11287,7 +11287,7 @@
       "opponent": "None",
       "points": 20.76,
       "projected": 17.67,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794532500000
      },
      {
