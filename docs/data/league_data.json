@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 03:40:18 UTC",
-  "last_updated": "2026-11-13T03:40:18.016828+00:00"
+  "updated_at": "2026-11-13 03:50:18 UTC",
+  "last_updated": "2026-11-13T03:50:18.699790+00:00"
  },
  "teams": [
   {
@@ -28,7 +28,7 @@
     103.6,
     113.08,
     140.42,
-    6.9
+    7.9
    ],
    "ranking_points_by_week": [
     2.0,
@@ -85,7 +85,7 @@
     119.08,
     99.52,
     106.08,
-    10.1
+    23.2
    ],
    "ranking_points_by_week": [
     12.0,
@@ -97,7 +97,7 @@
     10.0,
     5.0,
     8.0,
-    10.0
+    11.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -109,7 +109,7 @@
     56.0,
     61.0,
     69.0,
-    79.0
+    80.0
    ],
    "normalized_by_week": [
     5.0,
@@ -121,10 +121,10 @@
     9.0,
     10.0,
     10.0,
-    14.5
+    15.5
    ],
    "rank": 2,
-   "total_ranking_points": 79.0
+   "total_ranking_points": 80.0
   },
   {
    "team_id": 5,
@@ -199,7 +199,7 @@
     126.22,
     68.24,
     84.5,
-    29.1
+    28.1
    ],
    "ranking_points_by_week": [
     4.0,
@@ -256,7 +256,7 @@
     66.52,
     99.18,
     91.86,
-    17.58
+    18.42
    ],
    "ranking_points_by_week": [
     10.0,
@@ -268,7 +268,7 @@
     1.0,
     4.0,
     5.0,
-    11.0
+    10.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -280,7 +280,7 @@
     47.0,
     51.0,
     56.0,
-    67.0
+    66.0
    ],
    "normalized_by_week": [
     3.0,
@@ -292,10 +292,10 @@
     0.0,
     0.0,
     -3.0,
-    2.5
+    1.5
    ],
    "rank": 5,
-   "total_ranking_points": 67.0
+   "total_ranking_points": 66.0
   },
   {
    "team_id": 4,
@@ -484,7 +484,7 @@
     102.92,
     109.58,
     84.76,
-    4.3
+    5.8
    ],
    "ranking_points_by_week": [
     11.0,
@@ -541,7 +541,7 @@
     82.82,
     65.76,
     77.98,
-    5.8
+    6.2
    ],
    "ranking_points_by_week": [
     3.0,
@@ -8521,20 +8521,20 @@
      "score": 24.1
     },
     {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Bada Bing",
-     "position": "QB",
-     "slot": "QB",
-     "score": 17.58
-    },
-    {
      "name": "Isaiah Likely",
      "pro_team": "NYG",
      "fantasy_team": "Walt's Warriors",
      "position": "TE",
      "slot": "TE",
-     "score": 10.1
+     "score": 23.2
+    },
+    {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "slot": "QB",
+     "score": 18.42
     },
     {
      "name": "Austin Ekeler",
@@ -8542,15 +8542,15 @@
      "fantasy_team": "I am gay ",
      "position": "RB",
      "slot": "RB",
-     "score": 5.8
+     "score": 6.2
     },
     {
-     "name": "Commanders D/ST",
+     "name": "Rachaad White",
      "pro_team": "WSH",
-     "fantasy_team": "JSN Derulo ",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 5.0
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 5.8
     },
     {
      "name": "Malik Nabers",
@@ -8561,12 +8561,12 @@
      "score": 4.9
     },
     {
-     "name": "Rachaad White",
+     "name": "Commanders D/ST",
      "pro_team": "WSH",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 4.3
+     "fantasy_team": "JSN Derulo ",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 4.0
     },
     {
      "name": "Dominic Zvada",
@@ -8574,7 +8574,7 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "K",
      "slot": "K",
-     "score": 2.0
+     "score": 3.0
     },
     {
      "name": "Ja'Marr Chase",
@@ -10377,7 +10377,7 @@
     "FLEX": 0.0,
     "TE": 0.0,
     "QB": 0.0,
-    "K": 2.0,
+    "K": 3.0,
     "D/ST": 0.0
    },
    "SW": {
@@ -10392,7 +10392,7 @@
    "TMOG": {
     "RB": 0.0,
     "WR": 0.0,
-    "FLEX": 4.3,
+    "FLEX": 5.8,
     "D/ST": 0.0,
     "TE": 0.0,
     "K": 0.0,
@@ -10405,7 +10405,7 @@
     "QB": 0.0,
     "K": 0.0,
     "TE": 0.0,
-    "D/ST": 5.0
+    "D/ST": 4.0
    },
    "GAY": {
     "WR": 0.0,
@@ -10413,14 +10413,14 @@
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
-    "RB": 5.8,
+    "RB": 6.2,
     "FLEX": 0.0
    },
    "WALT": {
     "FLEX": 0.0,
     "RB": 0.0,
     "QB": 0.0,
-    "TE": 10.1,
+    "TE": 23.2,
     "K": 0.0,
     "WR": 0.0,
     "D/ST": 0.0
@@ -10439,7 +10439,7 @@
     "FLEX": 0.0,
     "WR": 0.0,
     "TE": 0.0,
-    "QB": 17.58,
+    "QB": 18.42,
     "K": 0.0,
     "D/ST": 0.0
    },
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T03:40:18+00:00",
+  "updated_at": "2026-11-13T03:50:18+00:00",
   "teams": {
    "SACK": {
-    "score": 6.9,
-    "projected": 114.04,
+    "score": 7.9,
+    "projected": 114.21,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10572,7 +10572,7 @@
       "slot": "K",
       "pro_team": "NYG",
       "opponent": "WSH",
-      "points": 2.0,
+      "points": 3.0,
       "projected": 8.53,
       "status": "live",
       "kickoff": 1794532500000
@@ -10696,8 +10696,8 @@
     ]
    },
    "TMOG": {
-    "score": 4.3,
-    "projected": 102.23,
+    "score": 5.8,
+    "projected": 103.36,
     "starters": [
      {
       "name": "James Cook III",
@@ -10738,7 +10738,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 4.3,
+      "points": 5.8,
       "projected": 9.71,
       "status": "live",
       "kickoff": 1794532500000
@@ -10801,8 +10801,8 @@
     ]
    },
    "BW": {
-    "score": 29.1,
-    "projected": 113.8,
+    "score": 28.1,
+    "projected": 112.37,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10898,7 +10898,7 @@
       "slot": "D/ST",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 5.0,
+      "points": 4.0,
       "projected": 7.96,
       "status": "live",
       "kickoff": 1794532500000
@@ -10906,8 +10906,8 @@
     ]
    },
    "GAY": {
-    "score": 5.8,
-    "projected": 94.91,
+    "score": 6.2,
+    "projected": 95.02,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11003,7 +11003,7 @@
       "slot": "RB",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 5.8,
+      "points": 6.2,
       "projected": 7.6,
       "status": "live",
       "kickoff": 1794532500000
@@ -11011,8 +11011,8 @@
     ]
    },
    "WALT": {
-    "score": 10.1,
-    "projected": 101.8,
+    "score": 23.2,
+    "projected": 114.52,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11064,7 +11064,7 @@
       "slot": "TE",
       "pro_team": "NYG",
       "opponent": "WSH",
-      "points": 10.1,
+      "points": 23.2,
       "projected": 9.78,
       "status": "live",
       "kickoff": 1794532500000
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 17.58,
-    "projected": 107.23,
+    "score": 18.42,
+    "projected": 107.39,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11285,7 +11285,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 17.58,
+      "points": 18.42,
       "projected": 17.67,
       "status": "live",
       "kickoff": 1794532500000
@@ -11996,6 +11996,23 @@
      "WALT": 10.1,
      "SWSH": 0.0,
      "BING": 17.58,
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-13T03:50:18+00:00",
+    "scores": {
+     "SACK": 7.9,
+     "SW": 0.0,
+     "TMOG": 5.8,
+     "BW": 28.1,
+     "GAY": 6.2,
+     "WALT": 23.2,
+     "SWSH": 0.0,
+     "BING": 18.42,
      "BEND": 0.0,
      "MBJG": 0.0,
      "CJ": 0.0,
