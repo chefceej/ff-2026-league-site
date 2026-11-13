@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 03:00:22 UTC",
-  "last_updated": "2026-11-13T03:00:22.562307+00:00"
+  "updated_at": "2026-11-13 03:10:21 UTC",
+  "last_updated": "2026-11-13T03:10:21.339473+00:00"
  },
  "teams": [
   {
@@ -40,7 +40,7 @@
     6.0,
     9.0,
     12.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -52,7 +52,7 @@
     56.0,
     65.0,
     77.0,
-    86.0
+    85.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -64,10 +64,10 @@
     9.0,
     14.0,
     18.0,
-    21.5
+    20.5
    ],
    "rank": 1,
-   "total_ranking_points": 86.0
+   "total_ranking_points": 85.0
   },
   {
    "team_id": 9,
@@ -256,7 +256,7 @@
     66.52,
     99.18,
     91.86,
-    8.78
+    16.18
    ],
    "ranking_points_by_week": [
     10.0,
@@ -541,7 +541,7 @@
     82.82,
     65.76,
     77.98,
-    3.7
+    4.7
    ],
    "ranking_points_by_week": [
     3.0,
@@ -553,7 +553,7 @@
     3.0,
     2.0,
     1.0,
-    8.0
+    9.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -565,7 +565,7 @@
     44.0,
     46.0,
     47.0,
-    55.0
+    56.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -577,10 +577,10 @@
     -3.0,
     -5.0,
     -12.0,
-    -9.5
+    -8.5
    ],
    "rank": 10,
-   "total_ranking_points": 55.0
+   "total_ranking_points": 56.0
   },
   {
    "team_id": 12,
@@ -8526,7 +8526,7 @@
      "fantasy_team": "Bada Bing",
      "position": "QB",
      "slot": "QB",
-     "score": 8.78
+     "score": 16.18
     },
     {
      "name": "Isaiah Likely",
@@ -8542,7 +8542,7 @@
      "fantasy_team": "I am gay ",
      "position": "RB",
      "slot": "RB",
-     "score": 3.7
+     "score": 4.7
     },
     {
      "name": "Commanders D/ST",
@@ -10413,7 +10413,7 @@
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
-    "RB": 3.7,
+    "RB": 4.7,
     "FLEX": 0.0
    },
    "WALT": {
@@ -10439,7 +10439,7 @@
     "FLEX": 0.0,
     "WR": 0.0,
     "TE": 0.0,
-    "QB": 8.78,
+    "QB": 16.18,
     "K": 0.0,
     "D/ST": 0.0
    },
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T03:00:22+00:00",
+  "updated_at": "2026-11-13T03:10:21+00:00",
   "teams": {
    "SACK": {
     "score": 4.3,
-    "projected": 117.52,
+    "projected": 116.29,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 1.9,
-    "projected": 102.57,
+    "projected": 102.01,
     "starters": [
      {
       "name": "James Cook III",
@@ -10802,7 +10802,7 @@
    },
    "BW": {
     "score": 25.2,
-    "projected": 114.66,
+    "projected": 113.75,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10906,8 +10906,8 @@
     ]
    },
    "GAY": {
-    "score": 3.7,
-    "projected": 94.95,
+    "score": 4.7,
+    "projected": 95.52,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11003,7 +11003,7 @@
       "slot": "RB",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 3.7,
+      "points": 4.7,
       "projected": 7.6,
       "status": "live",
       "kickoff": 1794532500000
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 7.9,
-    "projected": 102.35,
+    "projected": 101.79,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 8.78,
-    "projected": 103.4,
+    "score": 16.18,
+    "projected": 109.79,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11285,7 +11285,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 8.78,
+      "points": 16.18,
       "projected": 17.67,
       "status": "live",
       "kickoff": 1794532500000
@@ -11928,6 +11928,23 @@
      "WALT": 7.9,
      "SWSH": 0.0,
      "BING": 8.78,
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-13T03:10:21+00:00",
+    "scores": {
+     "SACK": 4.3,
+     "SW": 0.0,
+     "TMOG": 1.9,
+     "BW": 25.2,
+     "GAY": 4.7,
+     "WALT": 7.9,
+     "SWSH": 0.0,
+     "BING": 16.18,
      "BEND": 0.0,
      "MBJG": 0.0,
      "CJ": 0.0,
