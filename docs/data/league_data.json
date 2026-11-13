@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 01:30:24 UTC",
-  "last_updated": "2026-11-13T01:30:24.255965+00:00"
+  "updated_at": "2026-11-13 01:40:20 UTC",
+  "last_updated": "2026-11-13T01:40:20.092306+00:00"
  },
  "teams": [
   {
@@ -28,7 +28,7 @@
     103.6,
     113.08,
     140.42,
-    0.0
+    1.3
    ],
    "ranking_points_by_week": [
     2.0,
@@ -40,7 +40,7 @@
     6.0,
     9.0,
     12.0,
-    4.5
+    10.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -52,7 +52,7 @@
     56.0,
     65.0,
     77.0,
-    81.5
+    87.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -64,10 +64,10 @@
     9.0,
     14.0,
     18.0,
-    16.5
+    23.0
    ],
    "rank": 1,
-   "total_ranking_points": 81.5
+   "total_ranking_points": 87.0
   },
   {
    "team_id": 9,
@@ -85,7 +85,7 @@
     119.08,
     99.52,
     106.08,
-    1.4
+    2.5
    ],
    "ranking_points_by_week": [
     12.0,
@@ -121,7 +121,7 @@
     9.0,
     10.0,
     10.0,
-    15.0
+    16.0
    ],
    "rank": 2,
    "total_ranking_points": 80.0
@@ -154,7 +154,7 @@
     8.0,
     12.0,
     11.0,
-    4.5
+    4.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -166,7 +166,7 @@
     48.0,
     60.0,
     71.0,
-    75.5
+    75.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -178,10 +178,10 @@
     1.0,
     9.0,
     12.0,
-    10.5
+    11.0
    ],
    "rank": 3,
-   "total_ranking_points": 75.5
+   "total_ranking_points": 75.0
   },
   {
    "team_id": 3,
@@ -199,7 +199,7 @@
     126.22,
     68.24,
     84.5,
-    13.1
+    17.0
    ],
    "ranking_points_by_week": [
     4.0,
@@ -235,7 +235,7 @@
     8.0,
     7.0,
     1.0,
-    7.0
+    8.0
    ],
    "rank": 4,
    "total_ranking_points": 72.0
@@ -268,7 +268,7 @@
     7.0,
     10.0,
     4.0,
-    4.5
+    4.0
    ],
    "cumulative_points_by_week": [
     1.0,
@@ -280,7 +280,7 @@
     47.0,
     57.0,
     61.0,
-    65.5
+    65.0
    ],
    "normalized_by_week": [
     -6.0,
@@ -292,10 +292,10 @@
     0.0,
     6.0,
     2.0,
-    0.5
+    1.0
    ],
    "rank": 5,
-   "total_ranking_points": 65.5
+   "total_ranking_points": 65.0
   },
   {
    "team_id": 8,
@@ -325,7 +325,7 @@
     1.0,
     4.0,
     5.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -337,7 +337,7 @@
     47.0,
     51.0,
     56.0,
-    65.0
+    64.0
    ],
    "normalized_by_week": [
     3.0,
@@ -352,7 +352,7 @@
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 65.0
+   "total_ranking_points": 64.0
   },
   {
    "team_id": 2,
@@ -382,7 +382,7 @@
     9.0,
     7.0,
     9.0,
-    4.5
+    4.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -394,7 +394,7 @@
     43.0,
     50.0,
     59.0,
-    63.5
+    63.0
    ],
    "normalized_by_week": [
     1.0,
@@ -406,67 +406,10 @@
     -4.0,
     -1.0,
     0.0,
-    -1.5
+    -1.0
    ],
    "rank": 7,
-   "total_ranking_points": 63.5
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    113.5,
-    102.92,
-    109.58,
-    84.76,
-    0.6
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0,
-    5.0,
-    8.0,
-    3.0,
-    10.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0,
-    41.0,
-    49.0,
-    52.0,
-    62.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0,
-    -6.0,
-    -2.0,
-    -7.0,
-    -3.0
-   ],
-   "rank": 8,
-   "total_ranking_points": 62.0
+   "total_ranking_points": 63.0
   },
   {
    "team_id": 1,
@@ -496,7 +439,7 @@
     11.0,
     1.0,
     7.0,
-    4.5
+    4.0
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -508,7 +451,7 @@
     49.0,
     50.0,
     57.0,
-    61.5
+    61.0
    ],
    "normalized_by_week": [
     2.0,
@@ -520,10 +463,67 @@
     2.0,
     -1.0,
     -2.0,
-    -3.5
+    -3.0
+   ],
+   "rank": 8,
+   "total_ranking_points": 61.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    113.5,
+    102.92,
+    109.58,
+    84.76,
+    0.6
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    9.0,
+    5.0,
+    8.0,
+    3.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    36.0,
+    41.0,
+    49.0,
+    52.0,
+    61.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -4.0,
+    -6.0,
+    -2.0,
+    -7.0,
+    -3.0
    ],
    "rank": 9,
-   "total_ranking_points": 61.5
+   "total_ranking_points": 61.0
   },
   {
    "team_id": 12,
@@ -553,7 +553,7 @@
     2.0,
     6.0,
     10.0,
-    4.5
+    4.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -565,7 +565,7 @@
     35.0,
     41.0,
     51.0,
-    55.5
+    55.0
    ],
    "normalized_by_week": [
     0.0,
@@ -577,10 +577,10 @@
     -12.0,
     -10.0,
     -8.0,
-    -9.5
+    -9.0
    ],
    "rank": 10,
-   "total_ranking_points": 55.5
+   "total_ranking_points": 55.0
   },
   {
    "team_id": 11,
@@ -610,7 +610,7 @@
     3.0,
     2.0,
     1.0,
-    4.5
+    4.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -622,7 +622,7 @@
     44.0,
     46.0,
     47.0,
-    51.5
+    51.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -634,10 +634,10 @@
     -3.0,
     -5.0,
     -12.0,
-    -13.5
+    -13.0
    ],
    "rank": 11,
-   "total_ranking_points": 51.5
+   "total_ranking_points": 51.0
   },
   {
    "team_id": 6,
@@ -667,7 +667,7 @@
     4.0,
     11.0,
     6.0,
-    4.5
+    4.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -679,7 +679,7 @@
     25.0,
     36.0,
     42.0,
-    46.5
+    46.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -691,10 +691,10 @@
     -22.0,
     -15.0,
     -17.0,
-    -18.5
+    -18.0
    ],
    "rank": 12,
-   "total_ranking_points": 46.5
+   "total_ranking_points": 46.0
   }
  ],
  "top_players_by_week": [
@@ -8526,7 +8526,7 @@
      "fantasy_team": "JSN Derulo ",
      "position": "RB",
      "slot": "RB",
-     "score": 3.1
+     "score": 7.0
     },
     {
      "name": "Isaiah Likely",
@@ -8534,7 +8534,15 @@
      "fantasy_team": "Walt's Warriors",
      "position": "TE",
      "slot": "TE",
-     "score": 1.4
+     "score": 2.5
+    },
+    {
+     "name": "Malik Nabers",
+     "pro_team": "NYG",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "slot": "WR",
+     "score": 1.3
     },
     {
      "name": "Rachaad White",
@@ -8598,14 +8606,6 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "QB",
      "slot": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "Malik Nabers",
-     "pro_team": "NYG",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "slot": "WR",
      "score": 0.0
     },
     {
@@ -10372,7 +10372,7 @@
   },
   {
    "SACK": {
-    "WR": 0.0,
+    "WR": 1.3,
     "RB": 0.0,
     "FLEX": 0.0,
     "TE": 0.0,
@@ -10400,7 +10400,7 @@
    },
    "BW": {
     "WR": 0.0,
-    "RB": 3.1,
+    "RB": 7.0,
     "FLEX": 0.0,
     "QB": 0.0,
     "K": 0.0,
@@ -10420,7 +10420,7 @@
     "FLEX": 0.0,
     "RB": 0.0,
     "QB": 0.0,
-    "TE": 1.4,
+    "TE": 2.5,
     "K": 0.0,
     "WR": 0.0,
     "D/ST": 0.0
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T01:30:24+00:00",
+  "updated_at": "2026-11-13T01:40:20+00:00",
   "teams": {
    "SACK": {
-    "score": 0.0,
-    "projected": 123.01,
+    "score": 1.3,
+    "projected": 123.06,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10561,7 +10561,7 @@
       "slot": "WR",
       "pro_team": "NYG",
       "opponent": "WSH",
-      "points": 0.0,
+      "points": 1.3,
       "projected": 13.07,
       "status": "live",
       "kickoff": 1794532500000
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 0.6,
-    "projected": 105.66,
+    "projected": 105.1,
     "starters": [
      {
       "name": "James Cook III",
@@ -10801,8 +10801,8 @@
     ]
    },
    "BW": {
-    "score": 13.1,
-    "projected": 103.63,
+    "score": 17.0,
+    "projected": 107.01,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10832,7 +10832,7 @@
       "slot": "RB",
       "pro_team": "NYG",
       "opponent": "WSH",
-      "points": 3.1,
+      "points": 7.0,
       "projected": 10.93,
       "status": "live",
       "kickoff": 1794532500000
@@ -10907,7 +10907,7 @@
    },
    "GAY": {
     "score": 0.0,
-    "projected": 94.69,
+    "projected": 94.25,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11011,8 +11011,8 @@
     ]
    },
    "WALT": {
-    "score": 1.4,
-    "projected": 100.28,
+    "score": 2.5,
+    "projected": 100.81,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11064,7 +11064,7 @@
       "slot": "TE",
       "pro_team": "NYG",
       "opponent": "WSH",
-      "points": 1.4,
+      "points": 2.5,
       "projected": 9.78,
       "status": "live",
       "kickoff": 1794532500000
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 0.44,
-    "projected": 103.07,
+    "projected": 102.04,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11773,6 +11773,23 @@
      "BW": 13.1,
      "GAY": 0.0,
      "WALT": 1.4,
+     "SWSH": 0.0,
+     "BING": 0.44,
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-13T01:40:20+00:00",
+    "scores": {
+     "SACK": 1.3,
+     "SW": 0.0,
+     "TMOG": 0.6,
+     "BW": 17.0,
+     "GAY": 0.0,
+     "WALT": 2.5,
      "SWSH": 0.0,
      "BING": 0.44,
      "BEND": 0.0,
