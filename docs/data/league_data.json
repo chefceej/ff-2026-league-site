@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-13 04:00:23 UTC",
-  "last_updated": "2026-11-13T04:00:23.959401+00:00"
+  "updated_at": "2026-11-13 04:10:18 UTC",
+  "last_updated": "2026-11-13T04:10:18.175386+00:00"
  },
  "teams": [
   {
@@ -199,7 +199,7 @@
     126.22,
     68.24,
     84.5,
-    29.0
+    29.7
    ],
    "ranking_points_by_week": [
     4.0,
@@ -256,7 +256,7 @@
     66.52,
     99.18,
     91.86,
-    17.02
+    15.38
    ],
    "ranking_points_by_week": [
     10.0,
@@ -484,7 +484,7 @@
     102.92,
     109.58,
     84.76,
-    5.8
+    5.7
    ],
    "ranking_points_by_week": [
     11.0,
@@ -8518,7 +8518,7 @@
      "fantasy_team": "JSN Derulo ",
      "position": "RB",
      "slot": "RB",
-     "score": 25.0
+     "score": 25.7
     },
     {
      "name": "Isaiah Likely",
@@ -8534,7 +8534,7 @@
      "fantasy_team": "Bada Bing",
      "position": "QB",
      "slot": "QB",
-     "score": 17.02
+     "score": 15.38
     },
     {
      "name": "Austin Ekeler",
@@ -8550,7 +8550,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "FLEX",
-     "score": 5.8
+     "score": 5.7
     },
     {
      "name": "Malik Nabers",
@@ -10392,7 +10392,7 @@
    "TMOG": {
     "RB": 0.0,
     "WR": 0.0,
-    "FLEX": 5.8,
+    "FLEX": 5.7,
     "D/ST": 0.0,
     "TE": 0.0,
     "K": 0.0,
@@ -10400,7 +10400,7 @@
    },
    "BW": {
     "WR": 0.0,
-    "RB": 25.0,
+    "RB": 25.7,
     "FLEX": 0.0,
     "QB": 0.0,
     "K": 0.0,
@@ -10439,7 +10439,7 @@
     "FLEX": 0.0,
     "WR": 0.0,
     "TE": 0.0,
-    "QB": 17.02,
+    "QB": 15.38,
     "K": 0.0,
     "D/ST": 0.0
    },
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-13T04:00:23+00:00",
+  "updated_at": "2026-11-13T04:10:18+00:00",
   "teams": {
    "SACK": {
     "score": 7.9,
-    "projected": 113.4,
+    "projected": 112.59,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10696,8 +10696,8 @@
     ]
    },
    "TMOG": {
-    "score": 5.8,
-    "projected": 102.99,
+    "score": 5.7,
+    "projected": 102.53,
     "starters": [
      {
       "name": "James Cook III",
@@ -10738,7 +10738,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "NYG",
-      "points": 5.8,
+      "points": 5.7,
       "projected": 9.71,
       "status": "live",
       "kickoff": 1794532500000
@@ -10801,8 +10801,8 @@
     ]
    },
    "BW": {
-    "score": 29.0,
-    "projected": 112.71,
+    "score": 29.7,
+    "projected": 112.85,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10832,7 +10832,7 @@
       "slot": "RB",
       "pro_team": "NYG",
       "opponent": "WSH",
-      "points": 25.0,
+      "points": 25.7,
       "projected": 10.93,
       "status": "live",
       "kickoff": 1794532500000
@@ -10907,7 +10907,7 @@
    },
    "GAY": {
     "score": 6.2,
-    "projected": 94.73,
+    "projected": 94.45,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 23.2,
-    "projected": 114.15,
+    "projected": 113.79,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 17.02,
-    "projected": 105.32,
+    "score": 15.38,
+    "projected": 103.02,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11285,7 +11285,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 17.02,
+      "points": 15.38,
       "projected": 17.67,
       "status": "live",
       "kickoff": 1794532500000
@@ -12030,6 +12030,23 @@
      "WALT": 23.2,
      "SWSH": 0.0,
      "BING": 17.02,
+     "BEND": 0.0,
+     "MBJG": 0.0,
+     "CJ": 0.0,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-13T04:10:18+00:00",
+    "scores": {
+     "SACK": 7.9,
+     "SW": 0.0,
+     "TMOG": 5.7,
+     "BW": 29.7,
+     "GAY": 6.2,
+     "WALT": 23.2,
+     "SWSH": 0.0,
+     "BING": 15.38,
      "BEND": 0.0,
      "MBJG": 0.0,
      "CJ": 0.0,
