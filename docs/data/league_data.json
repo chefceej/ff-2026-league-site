@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-15 22:20:17 UTC",
-  "last_updated": "2026-11-15T22:20:17.123945+00:00"
+  "updated_at": "2026-11-15 22:30:21 UTC",
+  "last_updated": "2026-11-15T22:30:21.693418+00:00"
  },
  "teams": [
   {
@@ -28,7 +28,7 @@
     118.16,
     143.32,
     123.98,
-    120.22
+    122.02
    ],
    "ranking_points_by_week": [
     5.0,
@@ -85,7 +85,7 @@
     103.6,
     113.08,
     140.42,
-    33.86
+    43.34
    ],
    "ranking_points_by_week": [
     2.0,
@@ -256,7 +256,7 @@
     118.54,
     108.26,
     122.8,
-    119.96
+    120.46
    ],
    "ranking_points_by_week": [
     8.0,
@@ -313,7 +313,7 @@
     126.22,
     68.24,
     84.5,
-    72.74
+    73.14
    ],
    "ranking_points_by_week": [
     4.0,
@@ -412,63 +412,6 @@
    "total_ranking_points": 64.0
   },
   {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    113.5,
-    102.92,
-    109.58,
-    84.76,
-    77.98
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0,
-    5.0,
-    8.0,
-    3.0,
-    7.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0,
-    41.0,
-    49.0,
-    52.0,
-    59.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0,
-    -6.0,
-    -2.0,
-    -7.0,
-    -6.0
-   ],
-   "rank": 8,
-   "total_ranking_points": 59.0
-  },
-  {
    "team_id": 1,
    "team_name": "3 Inches of Disappointment ",
    "team_abbrev": "SW",
@@ -484,7 +427,7 @@
     125.78,
     60.2,
     103.48,
-    31.74
+    37.86
    ],
    "ranking_points_by_week": [
     9.0,
@@ -522,6 +465,63 @@
     -2.0,
     -7.0
    ],
+   "rank": 8,
+   "total_ranking_points": 58.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    113.5,
+    102.92,
+    109.58,
+    84.76,
+    77.98
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    9.0,
+    5.0,
+    8.0,
+    3.0,
+    6.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    36.0,
+    41.0,
+    49.0,
+    52.0,
+    58.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -4.0,
+    -6.0,
+    -2.0,
+    -7.0,
+    -7.0
+   ],
    "rank": 9,
    "total_ranking_points": 58.0
   },
@@ -541,7 +541,7 @@
     71.1,
     100.28,
     123.54,
-    76.3
+    78.3
    ],
    "ranking_points_by_week": [
     7.0,
@@ -553,7 +553,7 @@
     2.0,
     6.0,
     10.0,
-    6.0
+    7.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -565,7 +565,7 @@
     35.0,
     41.0,
     51.0,
-    57.0
+    58.0
    ],
    "normalized_by_week": [
     0.0,
@@ -577,10 +577,10 @@
     -12.0,
     -10.0,
     -8.0,
-    -8.0
+    -7.0
    ],
    "rank": 10,
-   "total_ranking_points": 57.0
+   "total_ranking_points": 58.0
   },
   {
    "team_id": 11,
@@ -8721,6 +8721,14 @@
      "score": 13.5
     },
     {
+     "name": "Rams TQB",
+     "pro_team": "LAR",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "QB",
+     "slot": "QB",
+     "score": 13.04
+    },
+    {
      "name": "Colts D/ST",
      "pro_team": "IND",
      "fantasy_team": "Bada Bing",
@@ -8743,6 +8751,14 @@
      "position": "TE",
      "slot": "TE",
      "score": 12.6
+    },
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 12.36
     },
     {
      "name": "Garrett Wilson",
@@ -8817,6 +8833,14 @@
      "score": 11.0
     },
     {
+     "name": "Rams D/ST",
+     "pro_team": "LAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 11.0
+    },
+    {
      "name": "Rashee Rice",
      "pro_team": "KC",
      "fantasy_team": "Keyser Soze",
@@ -8839,14 +8863,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 9.5
-    },
-    {
-     "name": "Rams D/ST",
-     "pro_team": "LAR",
-     "fantasy_team": "Remeber Bendel",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 9.0
     },
     {
      "name": "49ers TQB",
@@ -8878,7 +8894,7 @@
      "fantasy_team": "Keyser Soze",
      "position": "RB",
      "slot": "FLEX",
-     "score": 7.5
+     "score": 8.0
     },
     {
      "name": "Keenan Allen",
@@ -8927,14 +8943,6 @@
      "position": "K",
      "slot": "K",
      "score": 7.0
-    },
-    {
-     "name": "Cowboys TQB",
-     "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 6.24
     },
     {
      "name": "Commanders D/ST",
@@ -9041,6 +9049,14 @@
      "score": 4.48
     },
     {
+     "name": "Trey McBride",
+     "pro_team": "ARI",
+     "fantasy_team": "The Lizard Kings",
+     "position": "TE",
+     "slot": "TE",
+     "score": 4.1
+    },
+    {
      "name": "Travis Kelce",
      "pro_team": "KC",
      "fantasy_team": "The Garbage Dump",
@@ -9065,6 +9081,14 @@
      "score": 3.9
     },
     {
+     "name": "Javonte Williams",
+     "pro_team": "DAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 3.7
+    },
+    {
      "name": "Ashton Jeanty",
      "pro_team": "LV",
      "fantasy_team": "Walt's Warriors",
@@ -9073,28 +9097,12 @@
      "score": 3.7
     },
     {
-     "name": "Rams TQB",
-     "pro_team": "LAR",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "QB",
-     "slot": "QB",
-     "score": 3.56
-    },
-    {
      "name": "Darren Waller",
      "pro_team": "CAR",
      "fantasy_team": "JSN Derulo ",
      "position": "TE",
      "slot": "TE",
      "score": 3.4
-    },
-    {
-     "name": "Javonte Williams",
-     "pro_team": "DAL",
-     "fantasy_team": "JSN Derulo ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 3.3
     },
     {
      "name": "Christian McCaffrey",
@@ -9167,14 +9175,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 2.4
-    },
-    {
-     "name": "Trey McBride",
-     "pro_team": "ARI",
-     "fantasy_team": "The Lizard Kings",
-     "position": "TE",
-     "slot": "TE",
-     "score": 2.3
     },
     {
      "name": "Denzel Boston",
@@ -10376,14 +10376,14 @@
     "RB": 2.8,
     "FLEX": 5.2,
     "TE": 2.4,
-    "QB": 3.56,
+    "QB": 13.04,
     "K": 3.0,
     "D/ST": 12.0
    },
    "SW": {
     "WR": 0.0,
     "RB": 1.0,
-    "QB": 6.24,
+    "QB": 12.36,
     "K": 12.0,
     "FLEX": 0.9,
     "TE": 0.6,
@@ -10400,7 +10400,7 @@
    },
    "BW": {
     "WR": 8.9,
-    "RB": 29.0,
+    "RB": 29.4,
     "FLEX": 0.0,
     "QB": 20.44,
     "K": 5.0,
@@ -10450,11 +10450,11 @@
     "FLEX": 2.1,
     "K": 7.0,
     "QB": 11.7,
-    "D/ST": 9.0
+    "D/ST": 11.0
    },
    "MBJG": {
     "RB": 30.1,
-    "TE": 2.3,
+    "TE": 4.1,
     "WR": 9.5,
     "K": 19.0,
     "D/ST": 20.0,
@@ -10466,7 +10466,7 @@
     "QB": 10.16,
     "WR": 35.4,
     "TE": 2.1,
-    "FLEX": 7.5,
+    "FLEX": 8.0,
     "D/ST": 3.0,
     "K": 14.0
    },
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-15T22:20:17+00:00",
+  "updated_at": "2026-11-15T22:30:21+00:00",
   "teams": {
    "SACK": {
-    "score": 33.86,
-    "projected": 84.37,
+    "score": 43.34,
+    "projected": 93.24,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10550,7 +10550,7 @@
       "slot": "QB",
       "pro_team": "LAR",
       "opponent": "None",
-      "points": 3.56,
+      "points": 13.04,
       "projected": 16.98,
       "status": "live",
       "kickoff": 1794776700000
@@ -10591,8 +10591,8 @@
     ]
    },
    "SW": {
-    "score": 31.74,
-    "projected": 85.67,
+    "score": 37.86,
+    "projected": 89.71,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -10644,7 +10644,7 @@
       "slot": "QB",
       "pro_team": "DAL",
       "opponent": "None",
-      "points": 6.24,
+      "points": 12.36,
       "projected": 16.55,
       "status": "live",
       "kickoff": 1794777900000
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 77.98,
-    "projected": 97.75,
+    "projected": 97.64,
     "starters": [
      {
       "name": "James Cook III",
@@ -10801,8 +10801,8 @@
     ]
    },
    "BW": {
-    "score": 72.74,
-    "projected": 103.66,
+    "score": 73.14,
+    "projected": 102.74,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10821,7 +10821,7 @@
       "slot": "RB",
       "pro_team": "DAL",
       "opponent": "SF",
-      "points": 3.3,
+      "points": 3.7,
       "projected": 13.59,
       "status": "live",
       "kickoff": 1794777900000
@@ -10907,7 +10907,7 @@
    },
    "GAY": {
     "score": 68.82,
-    "projected": 95.4,
+    "projected": 93.38,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 91.58,
-    "projected": 114.71,
+    "projected": 114.63,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11117,7 +11117,7 @@
    },
    "SWSH": {
     "score": 110.14,
-    "projected": 124.44,
+    "projected": 124.36,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -11326,8 +11326,8 @@
     ]
    },
    "BEND": {
-    "score": 76.3,
-    "projected": 95.45,
+    "score": 78.3,
+    "projected": 95.21,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -11412,7 +11412,7 @@
       "slot": "D/ST",
       "pro_team": "LAR",
       "opponent": "ARI",
-      "points": 9.0,
+      "points": 11.0,
       "projected": 9.2,
       "status": "live",
       "kickoff": 1794776700000
@@ -11431,8 +11431,8 @@
     ]
    },
    "MBJG": {
-    "score": 120.22,
-    "projected": 145.65,
+    "score": 122.02,
+    "projected": 147.18,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -11451,7 +11451,7 @@
       "slot": "TE",
       "pro_team": "ARI",
       "opponent": "LAR",
-      "points": 2.3,
+      "points": 4.1,
       "projected": 10.5,
       "status": "live",
       "kickoff": 1794776700000
@@ -11536,8 +11536,8 @@
     ]
    },
    "CJ": {
-    "score": 119.96,
-    "projected": 125.64,
+    "score": 120.46,
+    "projected": 125.95,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -11589,7 +11589,7 @@
       "slot": "FLEX",
       "pro_team": "LAR",
       "opponent": "ARI",
-      "points": 7.5,
+      "points": 8.0,
       "projected": 10.89,
       "status": "live",
       "kickoff": 1794776700000
@@ -11642,7 +11642,7 @@
    },
    "Naug": {
     "score": 69.0,
-    "projected": 105.11,
+    "projected": 103.76,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12526,6 +12526,23 @@
      "BEND": 76.3,
      "MBJG": 120.22,
      "CJ": 119.96,
+     "Naug": 69.0
+    }
+   },
+   {
+    "t": "2026-11-15T22:30:21+00:00",
+    "scores": {
+     "SACK": 43.34,
+     "SW": 37.86,
+     "TMOG": 77.98,
+     "BW": 73.14,
+     "GAY": 68.82,
+     "WALT": 91.58,
+     "SWSH": 110.14,
+     "BING": 90.46,
+     "BEND": 78.3,
+     "MBJG": 122.02,
+     "CJ": 120.46,
      "Naug": 69.0
     }
    }
