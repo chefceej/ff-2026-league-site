@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-16 04:40:17 UTC",
-  "last_updated": "2026-11-16T04:40:17.323609+00:00"
+  "updated_at": "2026-11-16 04:50:28 UTC",
+  "last_updated": "2026-11-16T04:50:28.339958+00:00"
  },
  "teams": [
   {
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-16T04:40:17+00:00",
+  "updated_at": "2026-11-16T04:50:28+00:00",
   "teams": {
    "SACK": {
     "score": 86.66,
@@ -10497,7 +10497,7 @@
       "opponent": "PIT",
       "points": 28.6,
       "projected": 18.61,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
@@ -10530,7 +10530,7 @@
       "opponent": "CIN",
       "points": 6.6,
       "projected": 14.19,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
@@ -10784,7 +10784,7 @@
       "opponent": "CIN",
       "points": 5.0,
       "projected": 10.86,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
@@ -10845,7 +10845,7 @@
       "opponent": "CIN",
       "points": 4.4,
       "projected": 8.55,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
@@ -11088,7 +11088,7 @@
       "opponent": "CIN",
       "points": 1.0,
       "projected": 8.41,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
@@ -11204,7 +11204,7 @@
       "opponent": "PIT",
       "points": 8.0,
       "projected": 8.0,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
@@ -11232,7 +11232,7 @@
       "opponent": "PIT",
       "points": 24.3,
       "projected": 11.11,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
@@ -11464,7 +11464,7 @@
       "opponent": "PIT",
       "points": 9.1,
       "projected": 13.06,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
@@ -11674,7 +11674,7 @@
       "opponent": "None",
       "points": 33.16,
       "projected": 19.03,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794792000000
      },
      {
