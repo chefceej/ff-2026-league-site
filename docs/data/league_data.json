@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-16 02:10:22 UTC",
-  "last_updated": "2026-11-16T02:10:22.289450+00:00"
+  "updated_at": "2026-11-16 02:20:18 UTC",
+  "last_updated": "2026-11-16T02:20:18.004174+00:00"
  },
  "teams": [
   {
@@ -142,7 +142,7 @@
     119.08,
     99.52,
     106.08,
-    96.28
+    97.28
    ],
    "ranking_points_by_week": [
     12.0,
@@ -313,7 +313,7 @@
     126.22,
     68.24,
     84.5,
-    103.44
+    103.54
    ],
    "ranking_points_by_week": [
     4.0,
@@ -9289,6 +9289,14 @@
      "score": 1.0
     },
     {
+     "name": "Germie Bernard",
+     "pro_team": "PIT",
+     "fantasy_team": "Walt's Warriors",
+     "position": "WR",
+     "slot": "WR",
+     "score": 1.0
+    },
+    {
      "name": "DeMario Douglas",
      "pro_team": "NE",
      "fantasy_team": "3 Inches of Disappointment ",
@@ -9303,6 +9311,14 @@
      "position": "RB",
      "slot": "RB",
      "score": 0.3
+    },
+    {
+     "name": "Rico Dowdle",
+     "pro_team": "PIT",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 0.1
     },
     {
      "name": "Derrick Henry",
@@ -9337,25 +9353,9 @@
      "score": 0.0
     },
     {
-     "name": "Rico Dowdle",
-     "pro_team": "PIT",
-     "fantasy_team": "JSN Derulo ",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 0.0
-    },
-    {
      "name": "Xavier Worthy",
      "pro_team": "KC",
      "fantasy_team": "I am gay ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.0
-    },
-    {
-     "name": "Germie Bernard",
-     "pro_team": "PIT",
-     "fantasy_team": "Walt's Warriors",
      "position": "WR",
      "slot": "WR",
      "score": 0.0
@@ -10401,7 +10401,7 @@
    "BW": {
     "WR": 35.7,
     "RB": 32.9,
-    "FLEX": 0.0,
+    "FLEX": 0.1,
     "QB": 20.44,
     "K": 5.0,
     "TE": 3.4,
@@ -10422,7 +10422,7 @@
     "QB": 26.78,
     "TE": 23.2,
     "K": 8.0,
-    "WR": 2.5,
+    "WR": 3.5,
     "D/ST": 0.0
    },
    "SWSH": {
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-16T02:10:22+00:00",
+  "updated_at": "2026-11-16T02:20:18+00:00",
   "teams": {
    "SACK": {
     "score": 62.46,
-    "projected": 85.24,
+    "projected": 83.47,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 89.1,
-    "projected": 96.64,
+    "projected": 96.06,
     "starters": [
      {
       "name": "James Cook III",
@@ -10801,8 +10801,8 @@
     ]
    },
    "BW": {
-    "score": 103.44,
-    "projected": 109.38,
+    "score": 103.54,
+    "projected": 109.02,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10843,7 +10843,7 @@
       "slot": "FLEX",
       "pro_team": "PIT",
       "opponent": "CIN",
-      "points": 0.0,
+      "points": 0.1,
       "projected": 8.55,
       "status": "live",
       "kickoff": 1794792000000
@@ -11011,8 +11011,8 @@
     ]
    },
    "WALT": {
-    "score": 96.28,
-    "projected": 111.02,
+    "score": 97.28,
+    "projected": 111.57,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11086,7 +11086,7 @@
       "slot": "WR",
       "pro_team": "PIT",
       "opponent": "CIN",
-      "points": 0.0,
+      "points": 1.0,
       "projected": 8.41,
       "status": "live",
       "kickoff": 1794792000000
@@ -11117,7 +11117,7 @@
    },
    "SWSH": {
     "score": 114.14,
-    "projected": 119.7,
+    "projected": 119.26,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 96.26,
-    "projected": 111.24,
+    "projected": 110.64,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11432,7 +11432,7 @@
    },
    "MBJG": {
     "score": 133.32,
-    "projected": 142.39,
+    "projected": 141.69,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -11642,7 +11642,7 @@
    },
    "Naug": {
     "score": 103.38,
-    "projected": 116.59,
+    "projected": 115.57,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12861,6 +12861,23 @@
      "BW": 103.44,
      "GAY": 105.86,
      "WALT": 96.28,
+     "SWSH": 114.14,
+     "BING": 96.26,
+     "BEND": 125.52,
+     "MBJG": 133.32,
+     "CJ": 131.86,
+     "Naug": 103.38
+    }
+   },
+   {
+    "t": "2026-11-16T02:20:18+00:00",
+    "scores": {
+     "SACK": 62.46,
+     "SW": 78.12,
+     "TMOG": 89.1,
+     "BW": 103.54,
+     "GAY": 105.86,
+     "WALT": 97.28,
      "SWSH": 114.14,
      "BING": 96.26,
      "BEND": 125.52,
