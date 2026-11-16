@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-16 00:20:27 UTC",
-  "last_updated": "2026-11-16T00:20:27.929224+00:00"
+  "updated_at": "2026-11-16 00:30:21 UTC",
+  "last_updated": "2026-11-16T00:30:21.550033+00:00"
  },
  "teams": [
   {
@@ -64,7 +64,7 @@
     1.0,
     9.0,
     12.0,
-    14.0
+    15.0
    ],
    "rank": 1,
    "total_ranking_points": 82.0
@@ -121,7 +121,7 @@
     9.0,
     14.0,
     18.0,
-    10.0
+    11.0
    ],
    "rank": 2,
    "total_ranking_points": 78.0
@@ -178,7 +178,7 @@
     9.0,
     10.0,
     10.0,
-    7.0
+    8.0
    ],
    "rank": 3,
    "total_ranking_points": 75.0
@@ -235,7 +235,7 @@
     -4.0,
     -1.0,
     0.0,
-    3.0
+    4.0
    ],
    "rank": 4,
    "total_ranking_points": 71.0
@@ -292,7 +292,7 @@
     0.0,
     6.0,
     2.0,
-    2.0
+    3.0
    ],
    "rank": 5,
    "total_ranking_points": 70.0
@@ -325,7 +325,7 @@
     12.0,
     3.0,
     2.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     4.0,
@@ -337,7 +337,7 @@
     55.0,
     58.0,
     60.0,
-    68.0
+    67.0
    ],
    "normalized_by_week": [
     -3.0,
@@ -352,7 +352,7 @@
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 68.0
+   "total_ranking_points": 67.0
   },
   {
    "team_id": 12,
@@ -370,7 +370,7 @@
     71.1,
     100.28,
     123.54,
-    110.22
+    125.32
    ],
    "ranking_points_by_week": [
     7.0,
@@ -406,7 +406,7 @@
     -12.0,
     -10.0,
     -8.0,
-    -7.0
+    -6.0
    ],
    "rank": 7,
    "total_ranking_points": 61.0
@@ -463,7 +463,7 @@
     0.0,
     0.0,
     -3.0,
-    -8.0
+    -7.0
    ],
    "rank": 8,
    "total_ranking_points": 60.0
@@ -484,7 +484,7 @@
     125.78,
     60.2,
     103.48,
-    62.06
+    63.84
    ],
    "ranking_points_by_week": [
     9.0,
@@ -520,7 +520,7 @@
     2.0,
     -1.0,
     -2.0,
-    -9.0
+    -8.0
    ],
    "rank": 9,
    "total_ranking_points": 59.0
@@ -577,7 +577,7 @@
     -6.0,
     -2.0,
     -7.0,
-    -13.0
+    -12.0
    ],
    "rank": 10,
    "total_ranking_points": 55.0
@@ -598,7 +598,7 @@
     82.82,
     65.76,
     77.98,
-    97.22
+    105.86
    ],
    "ranking_points_by_week": [
     3.0,
@@ -610,7 +610,7 @@
     3.0,
     2.0,
     1.0,
-    7.0
+    8.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -622,7 +622,7 @@
     44.0,
     46.0,
     47.0,
-    54.0
+    55.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -634,10 +634,10 @@
     -3.0,
     -5.0,
     -12.0,
-    -14.0
+    -12.0
    ],
    "rank": 11,
-   "total_ranking_points": 54.0
+   "total_ranking_points": 55.0
   },
   {
    "team_id": 6,
@@ -691,7 +691,7 @@
     -22.0,
     -15.0,
     -17.0,
-    -21.0
+    -20.0
    ],
    "rank": 12,
    "total_ranking_points": 47.0
@@ -8513,6 +8513,14 @@
   {
    "all": [
     {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 44.1
+    },
+    {
      "name": "Jahmyr Gibbs",
      "pro_team": "DET",
      "fantasy_team": "Swishington Football Team",
@@ -8545,12 +8553,12 @@
      "score": 31.7
     },
     {
-     "name": "Christian McCaffrey",
+     "name": "49ers TQB",
      "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
-     "score": 29.0
+     "fantasy_team": "I am gay ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 31.66
     },
     {
      "name": "Jaxon Smith-Njigba",
@@ -8569,20 +8577,20 @@
      "score": 26.78
     },
     {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 26.74
+    },
+    {
      "name": "Cam Skattebo",
      "pro_team": "NYG",
      "fantasy_team": "JSN Derulo ",
      "position": "RB",
      "slot": "RB",
      "score": 25.7
-    },
-    {
-     "name": "Cowboys TQB",
-     "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 24.96
     },
     {
      "name": "Parker Washington",
@@ -8615,14 +8623,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 23.2
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "I am gay ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 23.02
     },
     {
      "name": "Bills TQB",
@@ -10383,7 +10383,7 @@
    "SW": {
     "WR": 10.1,
     "RB": 1.0,
-    "QB": 24.96,
+    "QB": 26.74,
     "K": 12.0,
     "FLEX": 0.9,
     "TE": 2.1,
@@ -10411,7 +10411,7 @@
     "WR": 23.8,
     "RB": 12.1,
     "TE": 10.4,
-    "QB": 23.02,
+    "QB": 31.66,
     "D/ST": 10.0,
     "K": 3.0,
     "FLEX": 14.9
@@ -10444,7 +10444,7 @@
     "D/ST": 13.0
    },
    "BEND": {
-    "RB": 34.7,
+    "RB": 49.8,
     "WR": 24.9,
     "TE": 12.6,
     "FLEX": 2.1,
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-16T00:20:27+00:00",
+  "updated_at": "2026-11-16T00:30:21+00:00",
   "teams": {
    "SACK": {
     "score": 51.46,
@@ -10591,8 +10591,8 @@
     ]
    },
    "SW": {
-    "score": 62.06,
-    "projected": 93.46,
+    "score": 63.84,
+    "projected": 94.35,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -10644,7 +10644,7 @@
       "slot": "QB",
       "pro_team": "DAL",
       "opponent": "None",
-      "points": 24.96,
+      "points": 26.74,
       "projected": 16.55,
       "status": "live",
       "kickoff": 1794777900000
@@ -10802,7 +10802,7 @@
    },
    "BW": {
     "score": 102.54,
-    "projected": 112.31,
+    "projected": 111.76,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10906,8 +10906,8 @@
     ]
    },
    "GAY": {
-    "score": 97.22,
-    "projected": 99.19,
+    "score": 105.86,
+    "projected": 106.94,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -10948,7 +10948,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 23.02,
+      "points": 31.66,
       "projected": 20.72,
       "status": "live",
       "kickoff": 1794777900000
@@ -11326,8 +11326,8 @@
     ]
    },
    "BEND": {
-    "score": 110.22,
-    "projected": 111.37,
+    "score": 125.32,
+    "projected": 125.95,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -11335,7 +11335,7 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "DAL",
-      "points": 29.0,
+      "points": 44.1,
       "projected": 19.45,
       "status": "live",
       "kickoff": 1794777900000
@@ -11642,7 +11642,7 @@
    },
    "Naug": {
     "score": 91.5,
-    "projected": 111.75,
+    "projected": 111.2,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12728,6 +12728,23 @@
      "SWSH": 110.14,
      "BING": 90.46,
      "BEND": 110.22,
+     "MBJG": 129.62,
+     "CJ": 131.86,
+     "Naug": 91.5
+    }
+   },
+   {
+    "t": "2026-11-16T00:30:21+00:00",
+    "scores": {
+     "SACK": 51.46,
+     "SW": 63.84,
+     "TMOG": 89.1,
+     "BW": 102.54,
+     "GAY": 105.86,
+     "WALT": 96.28,
+     "SWSH": 110.14,
+     "BING": 90.46,
+     "BEND": 125.32,
      "MBJG": 129.62,
      "CJ": 131.86,
      "Naug": 91.5
