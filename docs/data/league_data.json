@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-16 02:00:22 UTC",
-  "last_updated": "2026-11-16T02:00:22.142550+00:00"
+  "updated_at": "2026-11-16 02:10:22 UTC",
+  "last_updated": "2026-11-16T02:10:22.289450+00:00"
  },
  "teams": [
   {
@@ -85,7 +85,7 @@
     103.6,
     113.08,
     140.42,
-    58.46
+    62.46
    ],
    "ranking_points_by_week": [
     2.0,
@@ -427,7 +427,7 @@
     66.52,
     99.18,
     91.86,
-    94.46
+    96.26
    ],
    "ranking_points_by_week": [
     10.0,
@@ -655,7 +655,7 @@
     97.38,
     132.48,
     99.24,
-    101.3
+    103.38
    ],
    "ranking_points_by_week": [
     6.0,
@@ -8881,6 +8881,14 @@
      "score": 11.9
     },
     {
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "QB",
+     "slot": "QB",
+     "score": 11.88
+    },
+    {
      "name": "Jonathan Taylor",
      "pro_team": "IND",
      "fantasy_team": "The Lizard Kings",
@@ -8903,6 +8911,14 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 11.0
+    },
+    {
+     "name": "Ja'Marr Chase",
+     "pro_team": "CIN",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "WR",
+     "slot": "WR",
+     "score": 10.7
     },
     {
      "name": "Rashee Rice",
@@ -8935,14 +8951,6 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 10.0
-    },
-    {
-     "name": "Bengals TQB",
-     "pro_team": "CIN",
-     "fantasy_team": "The Garbage Dump",
-     "position": "QB",
-     "slot": "QB",
-     "score": 9.8
     },
     {
      "name": "Matthew Golden",
@@ -9033,14 +9041,6 @@
      "score": 7.0
     },
     {
-     "name": "Ja'Marr Chase",
-     "pro_team": "CIN",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "slot": "WR",
-     "score": 6.7
-    },
-    {
      "name": "Trey McBride",
      "pro_team": "ARI",
      "fantasy_team": "The Lizard Kings",
@@ -9055,6 +9055,14 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 6.0
+    },
+    {
+     "name": "Chase Brown",
+     "pro_team": "CIN",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "slot": "RB",
+     "score": 5.8
     },
     {
      "name": "Rachaad White",
@@ -9142,14 +9150,6 @@
      "fantasy_team": "Swishington Football Team",
      "position": "K",
      "slot": "K",
-     "score": 4.0
-    },
-    {
-     "name": "Chase Brown",
-     "pro_team": "CIN",
-     "fantasy_team": "Bada Bing",
-     "position": "RB",
-     "slot": "RB",
      "score": 4.0
     },
     {
@@ -10372,7 +10372,7 @@
   },
   {
    "SACK": {
-    "WR": 11.6,
+    "WR": 15.6,
     "RB": 4.5,
     "FLEX": 5.2,
     "TE": 2.4,
@@ -10435,7 +10435,7 @@
     "K": 4.0
    },
    "BING": {
-    "RB": 35.7,
+    "RB": 37.5,
     "FLEX": 0.0,
     "WR": 16.6,
     "TE": 1.4,
@@ -10473,7 +10473,7 @@
    "Naug": {
     "WR": 25.8,
     "RB": 21.3,
-    "QB": 9.8,
+    "QB": 11.88,
     "K": 12.0,
     "FLEX": 24.4,
     "TE": 4.0,
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-16T02:00:22+00:00",
+  "updated_at": "2026-11-16T02:10:22+00:00",
   "teams": {
    "SACK": {
-    "score": 58.46,
-    "projected": 82.95,
+    "score": 62.46,
+    "projected": 85.24,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10495,7 +10495,7 @@
       "slot": "WR",
       "pro_team": "CIN",
       "opponent": "PIT",
-      "points": 6.7,
+      "points": 10.7,
       "projected": 18.61,
       "status": "live",
       "kickoff": 1794792000000
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 89.1,
-    "projected": 97.21,
+    "projected": 96.64,
     "starters": [
      {
       "name": "James Cook III",
@@ -10802,7 +10802,7 @@
    },
    "BW": {
     "score": 103.44,
-    "projected": 109.82,
+    "projected": 109.38,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 96.28,
-    "projected": 111.46,
+    "projected": 111.02,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11117,7 +11117,7 @@
    },
    "SWSH": {
     "score": 114.14,
-    "projected": 120.11,
+    "projected": 119.7,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 94.46,
-    "projected": 110.02,
+    "score": 96.26,
+    "projected": 111.24,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11230,7 +11230,7 @@
       "slot": "RB",
       "pro_team": "CIN",
       "opponent": "PIT",
-      "points": 4.0,
+      "points": 5.8,
       "projected": 11.11,
       "status": "live",
       "kickoff": 1794792000000
@@ -11432,7 +11432,7 @@
    },
    "MBJG": {
     "score": 133.32,
-    "projected": 143.07,
+    "projected": 142.39,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -11641,8 +11641,8 @@
     ]
    },
    "Naug": {
-    "score": 101.3,
-    "projected": 115.5,
+    "score": 103.38,
+    "projected": 116.59,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -11672,7 +11672,7 @@
       "slot": "QB",
       "pro_team": "CIN",
       "opponent": "None",
-      "points": 9.8,
+      "points": 11.88,
       "projected": 19.03,
       "status": "live",
       "kickoff": 1794792000000
@@ -12850,6 +12850,23 @@
      "MBJG": 133.32,
      "CJ": 131.86,
      "Naug": 101.3
+    }
+   },
+   {
+    "t": "2026-11-16T02:10:22+00:00",
+    "scores": {
+     "SACK": 62.46,
+     "SW": 78.12,
+     "TMOG": 89.1,
+     "BW": 103.44,
+     "GAY": 105.86,
+     "WALT": 96.28,
+     "SWSH": 114.14,
+     "BING": 96.26,
+     "BEND": 125.52,
+     "MBJG": 133.32,
+     "CJ": 131.86,
+     "Naug": 103.38
     }
    }
   ]
