@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-16 03:00:22 UTC",
-  "last_updated": "2026-11-16T03:00:22.850981+00:00"
+  "updated_at": "2026-11-16 03:10:17 UTC",
+  "last_updated": "2026-11-16T03:10:17.193978+00:00"
  },
  "teams": [
   {
@@ -85,7 +85,7 @@
     103.6,
     113.08,
     140.42,
-    72.56
+    73.36
    ],
    "ranking_points_by_week": [
     2.0,
@@ -9185,6 +9185,14 @@
      "score": 4.0
     },
     {
+     "name": "Jaylen Warren",
+     "pro_team": "PIT",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "slot": "RB",
+     "score": 3.8
+    },
+    {
      "name": "Darren Waller",
      "pro_team": "CAR",
      "fantasy_team": "JSN Derulo ",
@@ -9199,14 +9207,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 3.2
-    },
-    {
-     "name": "Jaylen Warren",
-     "pro_team": "PIT",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "slot": "RB",
-     "score": 3.0
     },
     {
      "name": "Dominic Zvada",
@@ -10373,7 +10373,7 @@
   {
    "SACK": {
     "WR": 23.0,
-    "RB": 7.2,
+    "RB": 8.0,
     "FLEX": 5.2,
     "TE": 2.4,
     "QB": 19.76,
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-16T03:00:22+00:00",
+  "updated_at": "2026-11-16T03:10:17+00:00",
   "teams": {
    "SACK": {
-    "score": 72.56,
-    "projected": 88.96,
+    "score": 73.36,
+    "projected": 89.0,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10528,7 +10528,7 @@
       "slot": "RB",
       "pro_team": "PIT",
       "opponent": "CIN",
-      "points": 3.0,
+      "points": 3.8,
       "projected": 14.19,
       "status": "live",
       "kickoff": 1794792000000
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 93.1,
-    "projected": 98.53,
+    "projected": 98.28,
     "starters": [
      {
       "name": "James Cook III",
@@ -10802,7 +10802,7 @@
    },
    "BW": {
     "score": 104.94,
-    "projected": 109.22,
+    "projected": 109.02,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 97.28,
-    "projected": 110.39,
+    "projected": 110.19,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11117,7 +11117,7 @@
    },
    "SWSH": {
     "score": 116.14,
-    "projected": 120.14,
+    "projected": 119.95,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 104.06,
-    "projected": 116.88,
+    "projected": 116.62,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11432,7 +11432,7 @@
    },
    "MBJG": {
     "score": 138.72,
-    "projected": 145.25,
+    "projected": 144.95,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -11642,7 +11642,7 @@
    },
    "Naug": {
     "score": 116.38,
-    "projected": 125.89,
+    "projected": 125.45,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12941,6 +12941,23 @@
     "t": "2026-11-16T03:00:22+00:00",
     "scores": {
      "SACK": 72.56,
+     "SW": 78.12,
+     "TMOG": 93.1,
+     "BW": 104.94,
+     "GAY": 105.86,
+     "WALT": 97.28,
+     "SWSH": 116.14,
+     "BING": 104.06,
+     "BEND": 125.52,
+     "MBJG": 138.72,
+     "CJ": 131.86,
+     "Naug": 116.38
+    }
+   },
+   {
+    "t": "2026-11-16T03:10:17+00:00",
+    "scores": {
+     "SACK": 73.36,
      "SW": 78.12,
      "TMOG": 93.1,
      "BW": 104.94,
