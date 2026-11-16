@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-16 00:50:23 UTC",
-  "last_updated": "2026-11-16T00:50:23.297804+00:00"
+  "updated_at": "2026-11-16 01:00:22 UTC",
+  "last_updated": "2026-11-16T01:00:22.770643+00:00"
  },
  "teams": [
   {
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-16T00:50:23+00:00",
+  "updated_at": "2026-11-16T01:00:22+00:00",
   "teams": {
    "SACK": {
     "score": 51.46,
@@ -10602,7 +10602,7 @@
       "opponent": "SF",
       "points": 16.7,
       "projected": 17.0,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
@@ -10646,7 +10646,7 @@
       "opponent": "None",
       "points": 34.42,
       "projected": 16.55,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
@@ -10823,7 +10823,7 @@
       "opponent": "SF",
       "points": 7.2,
       "projected": 13.59,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
@@ -10856,7 +10856,7 @@
       "opponent": "DAL",
       "points": 8.6,
       "projected": 7.11,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
@@ -10939,7 +10939,7 @@
       "opponent": "DAL",
       "points": 10.4,
       "projected": 12.78,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
@@ -10950,7 +10950,7 @@
       "opponent": "None",
       "points": 31.66,
       "projected": 20.72,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
@@ -11337,7 +11337,7 @@
       "opponent": "DAL",
       "points": 44.3,
       "projected": 19.45,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
@@ -11685,7 +11685,7 @@
       "opponent": "SF",
       "points": 12.0,
       "projected": 10.81,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
@@ -11696,7 +11696,7 @@
       "opponent": "DAL",
       "points": 24.4,
       "projected": 10.04,
-      "status": "live",
+      "status": "final",
       "kickoff": 1794777900000
      },
      {
