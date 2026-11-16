@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-16 01:30:21 UTC",
-  "last_updated": "2026-11-16T01:30:21.063819+00:00"
+  "updated_at": "2026-11-16 01:40:26 UTC",
+  "last_updated": "2026-11-16T01:40:26.613607+00:00"
  },
  "teams": [
   {
@@ -85,7 +85,7 @@
     103.6,
     113.08,
     140.42,
-    55.66
+    55.96
    ],
    "ranking_points_by_week": [
     2.0,
@@ -256,7 +256,7 @@
     108.38,
     118.56,
     88.06,
-    110.14
+    113.14
    ],
    "ranking_points_by_week": [
     1.0,
@@ -9177,6 +9177,14 @@
      "score": 3.0
     },
     {
+     "name": "Evan McPherson",
+     "pro_team": "CIN",
+     "fantasy_team": "Swishington Football Team",
+     "position": "K",
+     "slot": "K",
+     "score": 3.0
+    },
+    {
      "name": "Chase Brown",
      "pro_team": "CIN",
      "fantasy_team": "Bada Bing",
@@ -9286,7 +9294,7 @@
      "fantasy_team": "Bijan These Nuts",
      "position": "RB",
      "slot": "RB",
-     "score": 0.0
+     "score": 0.3
     },
     {
      "name": "Derrick Henry",
@@ -9350,14 +9358,6 @@
      "fantasy_team": "Walt's Warriors",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 0.0
-    },
-    {
-     "name": "Evan McPherson",
-     "pro_team": "CIN",
-     "fantasy_team": "Swishington Football Team",
-     "position": "K",
-     "slot": "K",
      "score": 0.0
     },
     {
@@ -10373,7 +10373,7 @@
   {
    "SACK": {
     "WR": 9.1,
-    "RB": 4.2,
+    "RB": 4.5,
     "FLEX": 5.2,
     "TE": 2.4,
     "QB": 19.76,
@@ -10432,7 +10432,7 @@
     "FLEX": 5.4,
     "D/ST": 11.0,
     "WR": 21.1,
-    "K": 0.0
+    "K": 3.0
    },
    "BING": {
     "RB": 34.7,
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-16T01:30:21+00:00",
+  "updated_at": "2026-11-16T01:40:26+00:00",
   "teams": {
    "SACK": {
-    "score": 55.66,
-    "projected": 85.31,
+    "score": 55.96,
+    "projected": 84.9,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10528,7 +10528,7 @@
       "slot": "RB",
       "pro_team": "PIT",
       "opponent": "CIN",
-      "points": 0.0,
+      "points": 0.3,
       "projected": 14.19,
       "status": "live",
       "kickoff": 1794792000000
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 89.1,
-    "projected": 98.92,
+    "projected": 98.68,
     "starters": [
      {
       "name": "James Cook III",
@@ -10802,7 +10802,7 @@
    },
    "BW": {
     "score": 103.44,
-    "projected": 111.17,
+    "projected": 110.99,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 96.28,
-    "projected": 112.78,
+    "projected": 112.6,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11116,8 +11116,8 @@
     ]
    },
    "SWSH": {
-    "score": 110.14,
-    "projected": 117.37,
+    "score": 113.14,
+    "projected": 120.2,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -11202,7 +11202,7 @@
       "slot": "K",
       "pro_team": "CIN",
       "opponent": "PIT",
-      "points": 0.0,
+      "points": 3.0,
       "projected": 8.0,
       "status": "live",
       "kickoff": 1794792000000
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 93.46,
-    "projected": 110.77,
+    "projected": 110.53,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11432,7 +11432,7 @@
    },
    "MBJG": {
     "score": 129.62,
-    "projected": 141.43,
+    "projected": 141.15,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -11642,7 +11642,7 @@
    },
    "Naug": {
     "score": 94.3,
-    "projected": 111.5,
+    "projected": 111.09,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12794,6 +12794,23 @@
      "GAY": 105.86,
      "WALT": 96.28,
      "SWSH": 110.14,
+     "BING": 93.46,
+     "BEND": 125.52,
+     "MBJG": 129.62,
+     "CJ": 131.86,
+     "Naug": 94.3
+    }
+   },
+   {
+    "t": "2026-11-16T01:40:26+00:00",
+    "scores": {
+     "SACK": 55.96,
+     "SW": 78.12,
+     "TMOG": 89.1,
+     "BW": 103.44,
+     "GAY": 105.86,
+     "WALT": 96.28,
+     "SWSH": 113.14,
      "BING": 93.46,
      "BEND": 125.52,
      "MBJG": 129.62,
