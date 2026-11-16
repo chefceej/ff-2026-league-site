@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-16 02:30:24 UTC",
-  "last_updated": "2026-11-16T02:30:24.387098+00:00"
+  "updated_at": "2026-11-16 02:40:18 UTC",
+  "last_updated": "2026-11-16T02:40:18.556100+00:00"
  },
  "teams": [
   {
@@ -64,7 +64,7 @@
     1.0,
     9.0,
     12.0,
-    18.0
+    17.0
    ],
    "rank": 1,
    "total_ranking_points": 83.0
@@ -85,7 +85,7 @@
     103.6,
     113.08,
     140.42,
-    68.26
+    70.96
    ],
    "ranking_points_by_week": [
     2.0,
@@ -121,7 +121,7 @@
     9.0,
     14.0,
     18.0,
-    13.0
+    12.0
    ],
    "rank": 2,
    "total_ranking_points": 78.0
@@ -178,7 +178,7 @@
     9.0,
     10.0,
     10.0,
-    8.0
+    7.0
    ],
    "rank": 3,
    "total_ranking_points": 73.0
@@ -235,7 +235,7 @@
     -4.0,
     -1.0,
     0.0,
-    5.0
+    4.0
    ],
    "rank": 4,
    "total_ranking_points": 70.0
@@ -292,7 +292,7 @@
     0.0,
     6.0,
     2.0,
-    5.0
+    4.0
    ],
    "rank": 5,
    "total_ranking_points": 70.0
@@ -313,7 +313,7 @@
     126.22,
     68.24,
     84.5,
-    103.54
+    104.94
    ],
    "ranking_points_by_week": [
     4.0,
@@ -325,7 +325,7 @@
     12.0,
     3.0,
     2.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     4.0,
@@ -337,7 +337,7 @@
     55.0,
     58.0,
     60.0,
-    65.0
+    66.0
    ],
    "normalized_by_week": [
     -3.0,
@@ -352,7 +352,7 @@
     0.0
    ],
    "rank": 6,
-   "total_ranking_points": 65.0
+   "total_ranking_points": 66.0
   },
   {
    "team_id": 8,
@@ -382,7 +382,7 @@
     1.0,
     4.0,
     5.0,
-    6.0
+    5.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -394,7 +394,7 @@
     47.0,
     51.0,
     56.0,
-    62.0
+    61.0
    ],
    "normalized_by_week": [
     3.0,
@@ -406,10 +406,10 @@
     0.0,
     0.0,
     -3.0,
-    -3.0
+    -5.0
    ],
    "rank": 7,
-   "total_ranking_points": 62.0
+   "total_ranking_points": 61.0
   },
   {
    "team_id": 12,
@@ -463,7 +463,7 @@
     -12.0,
     -10.0,
     -8.0,
-    -4.0
+    -5.0
    ],
    "rank": 8,
    "total_ranking_points": 61.0
@@ -520,7 +520,7 @@
     2.0,
     -1.0,
     -2.0,
-    -6.0
+    -7.0
    ],
    "rank": 9,
    "total_ranking_points": 59.0
@@ -577,7 +577,7 @@
     -6.0,
     -2.0,
     -7.0,
-    -10.0
+    -11.0
    ],
    "rank": 10,
    "total_ranking_points": 55.0
@@ -634,7 +634,7 @@
     -3.0,
     -5.0,
     -12.0,
-    -11.0
+    -12.0
    ],
    "rank": 11,
    "total_ranking_points": 54.0
@@ -691,7 +691,7 @@
     -22.0,
     -15.0,
     -17.0,
-    -15.0
+    -16.0
    ],
    "rank": 12,
    "total_ranking_points": 50.0
@@ -9193,6 +9193,14 @@
      "score": 3.2
     },
     {
+     "name": "Jaylen Warren",
+     "pro_team": "PIT",
+     "fantasy_team": "Bijan These Nuts",
+     "position": "RB",
+     "slot": "RB",
+     "score": 3.0
+    },
+    {
      "name": "Dominic Zvada",
      "pro_team": "NYG",
      "fantasy_team": "Bijan These Nuts",
@@ -9265,6 +9273,14 @@
      "score": 2.1
     },
     {
+     "name": "Rico Dowdle",
+     "pro_team": "PIT",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 1.5
+    },
+    {
      "name": "Tyler Warren",
      "pro_team": "IND",
      "fantasy_team": "Bada Bing",
@@ -9303,22 +9319,6 @@
      "position": "WR",
      "slot": "FLEX",
      "score": 0.9
-    },
-    {
-     "name": "Jaylen Warren",
-     "pro_team": "PIT",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "slot": "RB",
-     "score": 0.3
-    },
-    {
-     "name": "Rico Dowdle",
-     "pro_team": "PIT",
-     "fantasy_team": "JSN Derulo ",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 0.1
     },
     {
      "name": "Derrick Henry",
@@ -10373,7 +10373,7 @@
   {
    "SACK": {
     "WR": 21.4,
-    "RB": 4.5,
+    "RB": 7.2,
     "FLEX": 5.2,
     "TE": 2.4,
     "QB": 19.76,
@@ -10401,7 +10401,7 @@
    "BW": {
     "WR": 35.7,
     "RB": 32.9,
-    "FLEX": 0.1,
+    "FLEX": 1.5,
     "QB": 20.44,
     "K": 5.0,
     "TE": 3.4,
@@ -10483,11 +10483,11 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-16T02:30:24+00:00",
+  "updated_at": "2026-11-16T02:40:18+00:00",
   "teams": {
    "SACK": {
-    "score": 68.26,
-    "projected": 87.65,
+    "score": 70.96,
+    "projected": 88.27,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -10528,7 +10528,7 @@
       "slot": "RB",
       "pro_team": "PIT",
       "opponent": "CIN",
-      "points": 0.3,
+      "points": 3.0,
       "projected": 14.19,
       "status": "live",
       "kickoff": 1794792000000
@@ -10697,7 +10697,7 @@
    },
    "TMOG": {
     "score": 89.1,
-    "projected": 95.52,
+    "projected": 94.83,
     "starters": [
      {
       "name": "James Cook III",
@@ -10801,8 +10801,8 @@
     ]
    },
    "BW": {
-    "score": 103.54,
-    "projected": 108.6,
+    "score": 104.94,
+    "projected": 109.45,
     "starters": [
      {
       "name": "Jaxon Smith-Njigba",
@@ -10843,7 +10843,7 @@
       "slot": "FLEX",
       "pro_team": "PIT",
       "opponent": "CIN",
-      "points": 0.1,
+      "points": 1.5,
       "projected": 8.55,
       "status": "live",
       "kickoff": 1794792000000
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 97.28,
-    "projected": 111.15,
+    "projected": 110.62,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11117,7 +11117,7 @@
    },
    "SWSH": {
     "score": 115.14,
-    "projected": 119.87,
+    "projected": 119.36,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 104.06,
-    "projected": 117.89,
+    "projected": 117.19,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11432,7 +11432,7 @@
    },
    "MBJG": {
     "score": 135.12,
-    "projected": 142.84,
+    "projected": 142.01,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -11642,7 +11642,7 @@
    },
    "Naug": {
     "score": 110.1,
-    "projected": 121.35,
+    "projected": 120.14,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12893,6 +12893,23 @@
      "SW": 78.12,
      "TMOG": 89.1,
      "BW": 103.54,
+     "GAY": 105.86,
+     "WALT": 97.28,
+     "SWSH": 115.14,
+     "BING": 104.06,
+     "BEND": 125.52,
+     "MBJG": 135.12,
+     "CJ": 131.86,
+     "Naug": 110.1
+    }
+   },
+   {
+    "t": "2026-11-16T02:40:18+00:00",
+    "scores": {
+     "SACK": 70.96,
+     "SW": 78.12,
+     "TMOG": 89.1,
+     "BW": 104.94,
      "GAY": 105.86,
      "WALT": 97.28,
      "SWSH": 115.14,
