@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-17 03:40:20 UTC",
-  "last_updated": "2026-11-17T03:40:20.522560+00:00"
+  "updated_at": "2026-11-17 03:50:17 UTC",
+  "last_updated": "2026-11-17T03:50:17.358456+00:00"
  },
  "teams": [
   {
@@ -154,7 +154,7 @@
     10.0,
     5.0,
     8.0,
-    4.0
+    3.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -166,7 +166,7 @@
     56.0,
     61.0,
     69.0,
-    73.0
+    72.0
    ],
    "normalized_by_week": [
     5.0,
@@ -178,10 +178,10 @@
     9.0,
     10.0,
     10.0,
-    7.0
+    6.0
    ],
    "rank": 3,
-   "total_ranking_points": 73.0
+   "total_ranking_points": 72.0
   },
   {
    "team_id": 2,
@@ -412,6 +412,63 @@
    "total_ranking_points": 66.0
   },
   {
+   "team_id": 1,
+   "team_name": "3 Inches of Disappointment ",
+   "team_abbrev": "SW",
+   "abbrev": "SW",
+   "owner": "Ben Fagin",
+   "scores_by_week": [
+    125.4,
+    132.56,
+    92.24,
+    131.3,
+    75.94,
+    66.52,
+    125.78,
+    60.2,
+    103.48,
+    101.22
+   ],
+   "ranking_points_by_week": [
+    9.0,
+    11.0,
+    4.0,
+    12.0,
+    1.0,
+    1.0,
+    11.0,
+    1.0,
+    7.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    9.0,
+    20.0,
+    24.0,
+    36.0,
+    37.0,
+    38.0,
+    49.0,
+    50.0,
+    57.0,
+    61.0
+   ],
+   "normalized_by_week": [
+    2.0,
+    8.0,
+    5.0,
+    9.0,
+    3.0,
+    -2.0,
+    2.0,
+    -1.0,
+    -2.0,
+    -5.0
+   ],
+   "rank": 8,
+   "total_ranking_points": 61.0
+  },
+  {
    "team_id": 12,
    "team_name": "Remeber Bendel",
    "team_abbrev": "BEND",
@@ -465,65 +522,8 @@
     -8.0,
     -6.0
    ],
-   "rank": 8,
-   "total_ranking_points": 60.0
-  },
-  {
-   "team_id": 1,
-   "team_name": "3 Inches of Disappointment ",
-   "team_abbrev": "SW",
-   "abbrev": "SW",
-   "owner": "Ben Fagin",
-   "scores_by_week": [
-    125.4,
-    132.56,
-    92.24,
-    131.3,
-    75.94,
-    66.52,
-    125.78,
-    60.2,
-    103.48,
-    91.32
-   ],
-   "ranking_points_by_week": [
-    9.0,
-    11.0,
-    4.0,
-    12.0,
-    1.0,
-    1.0,
-    11.0,
-    1.0,
-    7.0,
-    2.0
-   ],
-   "cumulative_points_by_week": [
-    9.0,
-    20.0,
-    24.0,
-    36.0,
-    37.0,
-    38.0,
-    49.0,
-    50.0,
-    57.0,
-    59.0
-   ],
-   "normalized_by_week": [
-    2.0,
-    8.0,
-    5.0,
-    9.0,
-    3.0,
-    -2.0,
-    2.0,
-    -1.0,
-    -2.0,
-    -7.0
-   ],
    "rank": 9,
-   "total_ranking_points": 59.0
+   "total_ranking_points": 60.0
   },
   {
    "team_id": 7,
@@ -553,7 +553,7 @@
     5.0,
     8.0,
     3.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -565,7 +565,7 @@
     41.0,
     49.0,
     52.0,
-    55.0
+    54.0
    ],
    "normalized_by_week": [
     4.0,
@@ -577,10 +577,10 @@
     -6.0,
     -2.0,
     -7.0,
-    -11.0
+    -12.0
    ],
    "rank": 10,
-   "total_ranking_points": 55.0
+   "total_ranking_points": 54.0
   },
   {
    "team_id": 11,
@@ -8793,6 +8793,14 @@
      "score": 14.9
     },
     {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 14.7
+    },
+    {
      "name": "Quinshon Judkins",
      "pro_team": "CLE",
      "fantasy_team": "Walt's Warriors",
@@ -9001,20 +9009,20 @@
      "score": 8.6
     },
     {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 8.4
+    },
+    {
      "name": "Ashton Jeanty",
      "pro_team": "LV",
      "fantasy_team": "Walt's Warriors",
      "position": "RB",
      "slot": "FLEX",
      "score": 8.4
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 8.3
     },
     {
      "name": "Spencer Shrader",
@@ -9164,14 +9172,6 @@
      "name": "Malik Nabers",
      "pro_team": "NYG",
      "fantasy_team": "Bijan These Nuts",
-     "position": "WR",
-     "slot": "WR",
-     "score": 4.9
-    },
-    {
-     "name": "Zay Flowers",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
      "position": "WR",
      "slot": "WR",
      "score": 4.9
@@ -10381,8 +10381,8 @@
     "D/ST": 12.0
    },
    "SW": {
-    "WR": 21.6,
-    "RB": 9.3,
+    "WR": 25.1,
+    "RB": 15.7,
     "QB": 34.42,
     "K": 12.0,
     "FLEX": 0.9,
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-17T03:40:20+00:00",
+  "updated_at": "2026-11-17T03:50:17+00:00",
   "teams": {
    "SACK": {
     "score": 86.66,
@@ -10591,8 +10591,8 @@
     ]
    },
    "SW": {
-    "score": 91.32,
-    "projected": 98.6,
+    "score": 101.22,
+    "projected": 106.31,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -10611,7 +10611,7 @@
       "slot": "RB",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": 8.3,
+      "points": 14.7,
       "projected": 17.56,
       "status": "live",
       "kickoff": 1794878100000
@@ -10622,7 +10622,7 @@
       "slot": "WR",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": 4.9,
+      "points": 8.4,
       "projected": 11.87,
       "status": "live",
       "kickoff": 1794878100000
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 98.28,
-    "projected": 100.24,
+    "projected": 99.65,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 130.26,
-    "projected": 132.06,
+    "projected": 131.52,
     "starters": [
      {
       "name": "Chase Brown",
@@ -13248,6 +13248,23 @@
     "scores": {
      "SACK": 86.66,
      "SW": 91.32,
+     "TMOG": 94.1,
+     "BW": 107.84,
+     "GAY": 105.86,
+     "WALT": 98.28,
+     "SWSH": 118.14,
+     "BING": 130.26,
+     "BEND": 125.52,
+     "MBJG": 138.72,
+     "CJ": 131.86,
+     "Naug": 124.66
+    }
+   },
+   {
+    "t": "2026-11-17T03:50:17+00:00",
+    "scores": {
+     "SACK": 86.66,
+     "SW": 101.22,
      "TMOG": 94.1,
      "BW": 107.84,
      "GAY": 105.86,
