@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-17 02:30:21 UTC",
-  "last_updated": "2026-11-17T02:30:21.177200+00:00"
+  "updated_at": "2026-11-17 02:40:29 UTC",
+  "last_updated": "2026-11-17T02:40:29.197388+00:00"
  },
  "teams": [
   {
@@ -142,7 +142,7 @@
     119.08,
     99.52,
     106.08,
-    102.28
+    100.28
    ],
    "ranking_points_by_week": [
     12.0,
@@ -9153,14 +9153,6 @@
      "score": 5.0
     },
     {
-     "name": "Ravens D/ST",
-     "pro_team": "BAL",
-     "fantasy_team": "Walt's Warriors",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 5.0
-    },
-    {
      "name": "Tetairoa McMillan",
      "pro_team": "CAR",
      "fantasy_team": "Remeber Bendel",
@@ -9254,6 +9246,14 @@
      "fantasy_team": "I am gay ",
      "position": "K",
      "slot": "K",
+     "score": 3.0
+    },
+    {
+     "name": "Ravens D/ST",
+     "pro_team": "BAL",
+     "fantasy_team": "Walt's Warriors",
+     "position": "D/ST",
+     "slot": "D/ST",
      "score": 3.0
     },
     {
@@ -10423,7 +10423,7 @@
     "TE": 23.2,
     "K": 8.0,
     "WR": 3.5,
-    "D/ST": 5.0
+    "D/ST": 3.0
    },
    "SWSH": {
     "RB": 47.7,
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-17T02:30:21+00:00",
+  "updated_at": "2026-11-17T02:40:29+00:00",
   "teams": {
    "SACK": {
     "score": 86.66,
@@ -10592,7 +10592,7 @@
    },
    "SW": {
     "score": 86.92,
-    "projected": 102.62,
+    "projected": 101.95,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11011,8 +11011,8 @@
     ]
    },
    "WALT": {
-    "score": 102.28,
-    "projected": 104.36,
+    "score": 100.28,
+    "projected": 103.29,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11097,7 +11097,7 @@
       "slot": "D/ST",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": 5.0,
+      "points": 3.0,
       "projected": 8.9,
       "status": "live",
       "kickoff": 1794878100000
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 124.36,
-    "projected": 128.23,
+    "projected": 128.07,
     "starters": [
      {
       "name": "Chase Brown",
@@ -13167,6 +13167,23 @@
      "BW": 107.84,
      "GAY": 105.86,
      "WALT": 102.28,
+     "SWSH": 118.14,
+     "BING": 124.36,
+     "BEND": 125.52,
+     "MBJG": 138.72,
+     "CJ": 131.86,
+     "Naug": 124.66
+    }
+   },
+   {
+    "t": "2026-11-17T02:40:29+00:00",
+    "scores": {
+     "SACK": 86.66,
+     "SW": 86.92,
+     "TMOG": 94.1,
+     "BW": 107.84,
+     "GAY": 105.86,
+     "WALT": 100.28,
      "SWSH": 118.14,
      "BING": 124.36,
      "BEND": 125.52,
