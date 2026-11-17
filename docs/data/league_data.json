@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-17 03:20:26 UTC",
-  "last_updated": "2026-11-17T03:20:26.708460+00:00"
+  "updated_at": "2026-11-17 03:30:18 UTC",
+  "last_updated": "2026-11-17T03:30:18.250989+00:00"
  },
  "teams": [
   {
@@ -484,7 +484,7 @@
     125.78,
     60.2,
     103.48,
-    88.62
+    89.32
    ],
    "ranking_points_by_week": [
     9.0,
@@ -9257,6 +9257,14 @@
      "score": 3.0
     },
     {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "WR",
+     "slot": "WR",
+     "score": 2.9
+    },
+    {
      "name": "Brock Bowers",
      "pro_team": "LV",
      "fantasy_team": "Swishington Football Team",
@@ -9279,14 +9287,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 2.4
-    },
-    {
-     "name": "Zay Flowers",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "WR",
-     "slot": "WR",
-     "score": 2.2
     },
     {
      "name": "Colby Parkinson",
@@ -10381,7 +10381,7 @@
     "D/ST": 12.0
    },
    "SW": {
-    "WR": 18.9,
+    "WR": 19.6,
     "RB": 9.3,
     "QB": 34.42,
     "K": 12.0,
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-17T03:20:26+00:00",
+  "updated_at": "2026-11-17T03:30:18+00:00",
   "teams": {
    "SACK": {
     "score": 86.66,
@@ -10591,8 +10591,8 @@
     ]
    },
    "SW": {
-    "score": 88.62,
-    "projected": 98.83,
+    "score": 89.32,
+    "projected": 98.44,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -10622,7 +10622,7 @@
       "slot": "WR",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": 2.2,
+      "points": 2.9,
       "projected": 11.87,
       "status": "live",
       "kickoff": 1794878100000
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 99.28,
-    "projected": 101.68,
+    "projected": 101.42,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 126.96,
-    "projected": 129.48,
+    "projected": 129.21,
     "starters": [
      {
       "name": "Chase Brown",
@@ -13214,6 +13214,23 @@
     "scores": {
      "SACK": 86.66,
      "SW": 88.62,
+     "TMOG": 94.1,
+     "BW": 107.84,
+     "GAY": 105.86,
+     "WALT": 99.28,
+     "SWSH": 118.14,
+     "BING": 126.96,
+     "BEND": 125.52,
+     "MBJG": 138.72,
+     "CJ": 131.86,
+     "Naug": 124.66
+    }
+   },
+   {
+    "t": "2026-11-17T03:30:18+00:00",
+    "scores": {
+     "SACK": 86.66,
+     "SW": 89.32,
      "TMOG": 94.1,
      "BW": 107.84,
      "GAY": 105.86,
