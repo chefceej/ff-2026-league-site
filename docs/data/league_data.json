@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-17 03:10:16 UTC",
-  "last_updated": "2026-11-17T03:10:16.265090+00:00"
+  "updated_at": "2026-11-17 03:20:26 UTC",
+  "last_updated": "2026-11-17T03:20:26.708460+00:00"
  },
  "teams": [
   {
@@ -142,7 +142,7 @@
     119.08,
     99.52,
     106.08,
-    100.28
+    99.28
    ],
    "ranking_points_by_week": [
     12.0,
@@ -484,7 +484,7 @@
     125.78,
     60.2,
     103.48,
-    87.02
+    88.62
    ],
    "ranking_points_by_week": [
     9.0,
@@ -9009,6 +9009,14 @@
      "score": 8.4
     },
     {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 8.3
+    },
+    {
      "name": "Spencer Shrader",
      "pro_team": "IND",
      "fantasy_team": "Walt's Warriors",
@@ -9071,14 +9079,6 @@
      "position": "K",
      "slot": "K",
      "score": 7.0
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 6.7
     },
     {
      "name": "Jaylen Warren",
@@ -9249,14 +9249,6 @@
      "score": 3.0
     },
     {
-     "name": "Ravens D/ST",
-     "pro_team": "BAL",
-     "fantasy_team": "Walt's Warriors",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 3.0
-    },
-    {
      "name": "Jaguars D/ST",
      "pro_team": "JAX",
      "fantasy_team": "Keyser Soze",
@@ -9319,6 +9311,14 @@
      "position": "TE",
      "slot": "TE",
      "score": 2.1
+    },
+    {
+     "name": "Ravens D/ST",
+     "pro_team": "BAL",
+     "fantasy_team": "Walt's Warriors",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 2.0
     },
     {
      "name": "Tyler Warren",
@@ -10382,7 +10382,7 @@
    },
    "SW": {
     "WR": 18.9,
-    "RB": 7.7,
+    "RB": 9.3,
     "QB": 34.42,
     "K": 12.0,
     "FLEX": 0.9,
@@ -10423,7 +10423,7 @@
     "TE": 23.2,
     "K": 8.0,
     "WR": 3.5,
-    "D/ST": 3.0
+    "D/ST": 2.0
    },
    "SWSH": {
     "RB": 47.7,
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-17T03:10:16+00:00",
+  "updated_at": "2026-11-17T03:20:26+00:00",
   "teams": {
    "SACK": {
     "score": 86.66,
@@ -10591,8 +10591,8 @@
     ]
    },
    "SW": {
-    "score": 87.02,
-    "projected": 99.68,
+    "score": 88.62,
+    "projected": 98.83,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -10611,7 +10611,7 @@
       "slot": "RB",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": 6.7,
+      "points": 8.3,
       "projected": 17.56,
       "status": "live",
       "kickoff": 1794878100000
@@ -11011,8 +11011,8 @@
     ]
    },
    "WALT": {
-    "score": 100.28,
-    "projected": 102.82,
+    "score": 99.28,
+    "projected": 101.68,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11097,7 +11097,7 @@
       "slot": "D/ST",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": 3.0,
+      "points": 2.0,
       "projected": 8.9,
       "status": "live",
       "kickoff": 1794878100000
@@ -11222,7 +11222,7 @@
    },
    "BING": {
     "score": 126.96,
-    "projected": 130.08,
+    "projected": 129.48,
     "starters": [
      {
       "name": "Chase Brown",
@@ -13201,6 +13201,23 @@
      "BW": 107.84,
      "GAY": 105.86,
      "WALT": 100.28,
+     "SWSH": 118.14,
+     "BING": 126.96,
+     "BEND": 125.52,
+     "MBJG": 138.72,
+     "CJ": 131.86,
+     "Naug": 124.66
+    }
+   },
+   {
+    "t": "2026-11-17T03:20:26+00:00",
+    "scores": {
+     "SACK": 86.66,
+     "SW": 88.62,
+     "TMOG": 94.1,
+     "BW": 107.84,
+     "GAY": 105.86,
+     "WALT": 99.28,
      "SWSH": 118.14,
      "BING": 126.96,
      "BEND": 125.52,
