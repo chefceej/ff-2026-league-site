@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-17 01:20:18 UTC",
-  "last_updated": "2026-11-17T01:20:18.468473+00:00"
+  "updated_at": "2026-11-17 01:30:24 UTC",
+  "last_updated": "2026-11-17T01:30:24.284749+00:00"
  },
  "teams": [
   {
@@ -142,7 +142,7 @@
     119.08,
     99.52,
     106.08,
-    107.28
+    101.28
    ],
    "ranking_points_by_week": [
     12.0,
@@ -154,7 +154,7 @@
     10.0,
     5.0,
     8.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -166,7 +166,7 @@
     56.0,
     61.0,
     69.0,
-    74.0
+    73.0
    ],
    "normalized_by_week": [
     5.0,
@@ -178,10 +178,10 @@
     9.0,
     10.0,
     10.0,
-    8.0
+    7.0
    ],
    "rank": 3,
-   "total_ranking_points": 74.0
+   "total_ranking_points": 73.0
   },
   {
    "team_id": 2,
@@ -370,7 +370,7 @@
     66.52,
     99.18,
     91.86,
-    115.86
+    116.66
    ],
    "ranking_points_by_week": [
     10.0,
@@ -484,7 +484,7 @@
     125.78,
     60.2,
     103.48,
-    77.92
+    78.82
    ],
    "ranking_points_by_week": [
     9.0,
@@ -583,6 +583,63 @@
    "total_ranking_points": 55.0
   },
   {
+   "team_id": 11,
+   "team_name": "I am gay ",
+   "team_abbrev": "GAY",
+   "abbrev": "GAY",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92,
+    103.76,
+    90.76,
+    82.82,
+    65.76,
+    77.98,
+    105.86
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0,
+    5.0,
+    5.0,
+    3.0,
+    2.0,
+    1.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0,
+    36.0,
+    41.0,
+    44.0,
+    46.0,
+    47.0,
+    52.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0,
+    2.0,
+    1.0,
+    -3.0,
+    -5.0,
+    -12.0,
+    -14.0
+   ],
+   "rank": 11,
+   "total_ranking_points": 52.0
+  },
+  {
    "team_id": 6,
    "team_name": "The Garbage Dump",
    "team_abbrev": "Naug",
@@ -634,63 +691,6 @@
     -22.0,
     -15.0,
     -17.0,
-    -15.0
-   ],
-   "rank": 11,
-   "total_ranking_points": 51.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "I am gay ",
-   "team_abbrev": "GAY",
-   "abbrev": "GAY",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    105.92,
-    103.76,
-    90.76,
-    82.82,
-    65.76,
-    77.98,
-    105.86
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    5.0,
-    5.0,
-    5.0,
-    3.0,
-    2.0,
-    1.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    31.0,
-    36.0,
-    41.0,
-    44.0,
-    46.0,
-    47.0,
-    51.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
-    4.0,
-    2.0,
-    1.0,
-    -3.0,
-    -5.0,
-    -12.0,
     -15.0
    ],
    "rank": 12,
@@ -8961,14 +8961,6 @@
      "score": 10.0
     },
     {
-     "name": "Ravens D/ST",
-     "pro_team": "BAL",
-     "fantasy_team": "Walt's Warriors",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 10.0
-    },
-    {
      "name": "Matthew Golden",
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
@@ -9193,6 +9185,14 @@
      "score": 4.2
     },
     {
+     "name": "Ravens D/ST",
+     "pro_team": "BAL",
+     "fantasy_team": "Walt's Warriors",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 4.0
+    },
+    {
      "name": "Travis Kelce",
      "pro_team": "KC",
      "fantasy_team": "The Garbage Dump",
@@ -9297,6 +9297,14 @@
      "score": 2.1
     },
     {
+     "name": "Omarion Hampton",
+     "pro_team": "LAC",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 1.9
+    },
+    {
      "name": "Tyler Warren",
      "pro_team": "IND",
      "fantasy_team": "Bada Bing",
@@ -9311,14 +9319,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 1.4
-    },
-    {
-     "name": "Omarion Hampton",
-     "pro_team": "LAC",
-     "fantasy_team": "Bada Bing",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 1.1
     },
     {
      "name": "Rhamondre Stevenson",
@@ -9345,6 +9345,14 @@
      "score": 0.9
     },
     {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.7
+    },
+    {
      "name": "Zay Flowers",
      "pro_team": "BAL",
      "fantasy_team": "3 Inches of Disappointment ",
@@ -9367,14 +9375,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 0.0
-    },
-    {
-     "name": "Derrick Henry",
-     "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "RB",
-     "slot": "RB",
-     "score": -0.2
     }
    ]
   }
@@ -10382,7 +10382,7 @@
    },
    "SW": {
     "WR": 16.7,
-    "RB": 0.8,
+    "RB": 1.7,
     "QB": 34.42,
     "K": 12.0,
     "FLEX": 0.9,
@@ -10423,7 +10423,7 @@
     "TE": 23.2,
     "K": 8.0,
     "WR": 3.5,
-    "D/ST": 10.0
+    "D/ST": 4.0
    },
    "SWSH": {
     "RB": 47.7,
@@ -10436,7 +10436,7 @@
    },
    "BING": {
     "RB": 56.0,
-    "FLEX": 1.1,
+    "FLEX": 1.9,
     "WR": 16.6,
     "TE": 1.4,
     "QB": 20.76,
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-17T01:20:18+00:00",
+  "updated_at": "2026-11-17T01:30:24+00:00",
   "teams": {
    "SACK": {
     "score": 86.66,
@@ -10591,8 +10591,8 @@
     ]
    },
    "SW": {
-    "score": 77.92,
-    "projected": 106.6,
+    "score": 78.82,
+    "projected": 105.43,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -10611,7 +10611,7 @@
       "slot": "RB",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": -0.2,
+      "points": 0.7,
       "projected": 17.56,
       "status": "live",
       "kickoff": 1794878100000
@@ -11011,8 +11011,8 @@
     ]
    },
    "WALT": {
-    "score": 107.28,
-    "projected": 106.21,
+    "score": 101.28,
+    "projected": 105.71,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11097,7 +11097,7 @@
       "slot": "D/ST",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": 10.0,
+      "points": 4.0,
       "projected": 8.9,
       "status": "live",
       "kickoff": 1794878100000
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 115.86,
-    "projected": 122.94,
+    "score": 116.66,
+    "projected": 123.23,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11241,7 +11241,7 @@
       "slot": "FLEX",
       "pro_team": "LAC",
       "opponent": "BAL",
-      "points": 1.1,
+      "points": 1.9,
       "projected": 7.26,
       "status": "live",
       "kickoff": 1794878100000
@@ -13084,6 +13084,23 @@
      "WALT": 107.28,
      "SWSH": 118.14,
      "BING": 115.86,
+     "BEND": 125.52,
+     "MBJG": 138.72,
+     "CJ": 131.86,
+     "Naug": 124.66
+    }
+   },
+   {
+    "t": "2026-11-17T01:30:24+00:00",
+    "scores": {
+     "SACK": 86.66,
+     "SW": 78.82,
+     "TMOG": 94.1,
+     "BW": 107.84,
+     "GAY": 105.86,
+     "WALT": 101.28,
+     "SWSH": 118.14,
+     "BING": 116.66,
      "BEND": 125.52,
      "MBJG": 138.72,
      "CJ": 131.86,
