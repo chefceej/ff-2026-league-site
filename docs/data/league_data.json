@@ -8,8 +8,8 @@
   "current_matchup_week": 10,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-17 03:00:21 UTC",
-  "last_updated": "2026-11-17T03:00:21.393619+00:00"
+  "updated_at": "2026-11-17 03:10:16 UTC",
+  "last_updated": "2026-11-17T03:10:16.265090+00:00"
  },
  "teams": [
   {
@@ -370,7 +370,7 @@
     66.52,
     99.18,
     91.86,
-    124.36
+    126.96
    ],
    "ranking_points_by_week": [
     10.0,
@@ -382,7 +382,7 @@
     1.0,
     4.0,
     5.0,
-    8.0
+    10.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -394,7 +394,7 @@
     47.0,
     51.0,
     56.0,
-    64.0
+    66.0
    ],
    "normalized_by_week": [
     3.0,
@@ -406,10 +406,10 @@
     0.0,
     0.0,
     -3.0,
-    -2.0
+    0.0
    ],
    "rank": 7,
-   "total_ranking_points": 64.0
+   "total_ranking_points": 66.0
   },
   {
    "team_id": 12,
@@ -439,7 +439,7 @@
     2.0,
     6.0,
     10.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -451,7 +451,7 @@
     35.0,
     41.0,
     51.0,
-    61.0
+    60.0
    ],
    "normalized_by_week": [
     0.0,
@@ -463,10 +463,10 @@
     -12.0,
     -10.0,
     -8.0,
-    -5.0
+    -6.0
    ],
    "rank": 8,
-   "total_ranking_points": 61.0
+   "total_ranking_points": 60.0
   },
   {
    "team_id": 1,
@@ -484,7 +484,7 @@
     125.78,
     60.2,
     103.48,
-    86.92
+    87.02
    ],
    "ranking_points_by_week": [
     9.0,
@@ -667,7 +667,7 @@
     4.0,
     11.0,
     6.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -679,7 +679,7 @@
     25.0,
     36.0,
     42.0,
-    51.0
+    50.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -691,10 +691,10 @@
     -22.0,
     -15.0,
     -17.0,
-    -15.0
+    -16.0
    ],
    "rank": 12,
-   "total_ranking_points": 51.0
+   "total_ranking_points": 50.0
   }
  ],
  "top_players_by_week": [
@@ -8857,6 +8857,14 @@
      "score": 12.6
     },
     {
+     "name": "Omarion Hampton",
+     "pro_team": "LAC",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 12.2
+    },
+    {
      "name": "Garrett Wilson",
      "pro_team": "NYJ",
      "fantasy_team": "Bada Bing",
@@ -8959,14 +8967,6 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 10.0
-    },
-    {
-     "name": "Omarion Hampton",
-     "pro_team": "LAC",
-     "fantasy_team": "Bada Bing",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 9.6
     },
     {
      "name": "Matthew Golden",
@@ -9073,17 +9073,17 @@
      "score": 7.0
     },
     {
-     "name": "Jaylen Warren",
-     "pro_team": "PIT",
-     "fantasy_team": "Bijan These Nuts",
-     "position": "RB",
-     "slot": "RB",
-     "score": 6.6
-    },
-    {
      "name": "Derrick Henry",
      "pro_team": "BAL",
      "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 6.7
+    },
+    {
+     "name": "Jaylen Warren",
+     "pro_team": "PIT",
+     "fantasy_team": "Bijan These Nuts",
      "position": "RB",
      "slot": "RB",
      "score": 6.6
@@ -10382,7 +10382,7 @@
    },
    "SW": {
     "WR": 18.9,
-    "RB": 7.6,
+    "RB": 7.7,
     "QB": 34.42,
     "K": 12.0,
     "FLEX": 0.9,
@@ -10436,7 +10436,7 @@
    },
    "BING": {
     "RB": 56.0,
-    "FLEX": 9.6,
+    "FLEX": 12.2,
     "WR": 16.6,
     "TE": 1.4,
     "QB": 20.76,
@@ -10483,7 +10483,7 @@
  ],
  "live": {
   "week": 10,
-  "updated_at": "2026-11-17T03:00:21+00:00",
+  "updated_at": "2026-11-17T03:10:16+00:00",
   "teams": {
    "SACK": {
     "score": 86.66,
@@ -10591,8 +10591,8 @@
     ]
    },
    "SW": {
-    "score": 86.92,
-    "projected": 101.59,
+    "score": 87.02,
+    "projected": 99.68,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -10611,7 +10611,7 @@
       "slot": "RB",
       "pro_team": "BAL",
       "opponent": "LAC",
-      "points": 6.6,
+      "points": 6.7,
       "projected": 17.56,
       "status": "live",
       "kickoff": 1794878100000
@@ -11012,7 +11012,7 @@
    },
    "WALT": {
     "score": 100.28,
-    "projected": 103.22,
+    "projected": 102.82,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -11221,8 +11221,8 @@
     ]
    },
    "BING": {
-    "score": 124.36,
-    "projected": 127.98,
+    "score": 126.96,
+    "projected": 130.08,
     "starters": [
      {
       "name": "Chase Brown",
@@ -11241,7 +11241,7 @@
       "slot": "FLEX",
       "pro_team": "LAC",
       "opponent": "BAL",
-      "points": 9.6,
+      "points": 12.2,
       "projected": 7.26,
       "status": "live",
       "kickoff": 1794878100000
@@ -13186,6 +13186,23 @@
      "WALT": 100.28,
      "SWSH": 118.14,
      "BING": 124.36,
+     "BEND": 125.52,
+     "MBJG": 138.72,
+     "CJ": 131.86,
+     "Naug": 124.66
+    }
+   },
+   {
+    "t": "2026-11-17T03:10:16+00:00",
+    "scores": {
+     "SACK": 86.66,
+     "SW": 87.02,
+     "TMOG": 94.1,
+     "BW": 107.84,
+     "GAY": 105.86,
+     "WALT": 100.28,
+     "SWSH": 118.14,
+     "BING": 126.96,
      "BEND": 125.52,
      "MBJG": 138.72,
      "CJ": 131.86,
