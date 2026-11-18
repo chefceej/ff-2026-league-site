@@ -3,7 +3,7 @@
  "season": 2026,
  "is_playoff": false,
  "status": "final",
- "fetched_at": "2026-11-17T16:44:51.152486Z",
+ "fetched_at": "2026-11-18T16:15:55.144007Z",
  "matchups": [
   {
    "home": {
@@ -3194,7 +3194,7 @@
       "pro_team": "CHI",
       "position": "WR",
       "slot": "WR",
-      "injury": "Q",
+      "injury": "",
       "opponent": "MIN",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
@@ -3308,7 +3308,7 @@
       "pro_team": "TEN",
       "position": "WR",
       "slot": "BE",
-      "injury": "Q",
+      "injury": "IR",
       "opponent": "PHI",
       "kickoff": "2026-09-20T17:00:00Z",
       "on_bye": false,
