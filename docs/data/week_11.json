@@ -2,8 +2,8 @@
  "week": 11,
  "season": 2026,
  "is_playoff": false,
- "status": "upcoming",
- "fetched_at": "2026-11-19T16:24:02.295605Z",
+ "status": "in-progress",
+ "fetched_at": "2026-11-20T15:56:53.486459Z",
  "matchups": [
   {
    "home": {
@@ -17,10 +17,10 @@
      "losses": 6,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 108.26,
-    "played": 0,
-    "to_play": 9,
+    "score": 13.9,
+    "projected_total": 109.35,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": 4379399,
@@ -51,18 +51,18 @@
       "actual": 0.0
      },
      {
-      "player_id": 4711533,
-      "name": "Ollie Gordon II",
-      "pro_team": "MIA",
+      "player_id": 4035538,
+      "name": "David Montgomery",
+      "pro_team": "HOU",
       "position": "RB",
-      "slot": "RB",
+      "slot": "RB/WR/TE",
       "injury": "",
-      "opponent": "BUF",
-      "kickoff": "2026-11-22T18:00:00Z",
+      "opponent": "IND",
+      "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
-      "projected": 12.85,
-      "actual": 0.0
+      "played": true,
+      "projected": 12.81,
+      "actual": 13.9
      }
     ],
     "lineup": [
@@ -118,9 +118,9 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 12.81,
-      "actual": 0.0
+      "actual": 13.9
      },
      {
       "player_id": -15003,
@@ -256,7 +256,7 @@
       "pro_team": "NYJ",
       "position": "WR",
       "slot": "BE",
-      "injury": "Q",
+      "injury": "O",
       "opponent": "LAC",
       "kickoff": "2026-11-22T21:05:00Z",
       "on_bye": false,
@@ -292,9 +292,9 @@
      "ties": 0
     },
     "score": 0.0,
-    "projected_total": 62.87,
-    "played": 4,
-    "to_play": 5,
+    "projected_total": 93.01,
+    "played": 0,
+    "to_play": 9,
     "leaders": [
      {
       "player_id": 4362628,
@@ -311,6 +311,20 @@
       "actual": 0.0
      },
      {
+      "player_id": -15024,
+      "name": "Chargers TQB",
+      "pro_team": "LAC",
+      "position": "QB",
+      "slot": "TQB",
+      "injury": "",
+      "opponent": "",
+      "kickoff": "2026-11-22T21:05:00Z",
+      "on_bye": false,
+      "played": false,
+      "projected": 14.66,
+      "actual": 0.0
+     },
+     {
       "player_id": 4569987,
       "name": "Jaylen Warren",
       "pro_team": "PIT",
@@ -322,20 +336,6 @@
       "on_bye": false,
       "played": false,
       "projected": 14.39,
-      "actual": 0.0
-     },
-     {
-      "player_id": 4595348,
-      "name": "Malik Nabers",
-      "pro_team": "NYG",
-      "position": "WR",
-      "slot": "WR",
-      "injury": "",
-      "opponent": "JAX",
-      "kickoff": "2026-11-22T21:25:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 12.74,
       "actual": 0.0
      }
     ],
@@ -355,31 +355,31 @@
       "actual": 0.0
      },
      {
-      "player_id": 4430737,
-      "name": "Kyren Williams",
-      "pro_team": "LAR",
+      "player_id": 4567048,
+      "name": "Kenneth Walker III",
+      "pro_team": "KC",
       "position": "RB",
       "slot": "RB",
-      "injury": "",
-      "opponent": "",
-      "kickoff": null,
-      "on_bye": true,
-      "played": true,
+      "injury": "Q",
+      "opponent": "ARI",
+      "kickoff": "2026-11-22T18:00:00Z",
+      "on_bye": false,
+      "played": false,
       "projected": 0.0,
       "actual": 0.0
      },
      {
-      "player_id": 4248528,
-      "name": "Christian Watson",
-      "pro_team": "GB",
+      "player_id": 4426388,
+      "name": "Jameson Williams",
+      "pro_team": "DET",
       "position": "WR",
       "slot": "RB/WR/TE",
       "injury": "",
-      "opponent": "",
-      "kickoff": null,
-      "on_bye": true,
-      "played": true,
-      "projected": 0.0,
+      "opponent": "TB",
+      "kickoff": "2026-11-22T18:00:00Z",
+      "on_bye": false,
+      "played": false,
+      "projected": 9.36,
       "actual": 0.0
      },
      {
@@ -394,34 +394,6 @@
       "on_bye": false,
       "played": false,
       "projected": 14.39,
-      "actual": 0.0
-     },
-     {
-      "player_id": 4572680,
-      "name": "Tucker Kraft",
-      "pro_team": "GB",
-      "position": "TE",
-      "slot": "TE",
-      "injury": "",
-      "opponent": "",
-      "kickoff": null,
-      "on_bye": true,
-      "played": true,
-      "projected": 0.0,
-      "actual": 0.0
-     },
-     {
-      "player_id": -15014,
-      "name": "Rams TQB",
-      "pro_team": "LAR",
-      "position": "QB",
-      "slot": "TQB",
-      "injury": "",
-      "opponent": "",
-      "kickoff": null,
-      "on_bye": true,
-      "played": true,
-      "projected": 0.0,
       "actual": 0.0
      },
      {
@@ -465,35 +437,49 @@
       "played": false,
       "projected": 5.28,
       "actual": 0.0
+     },
+     {
+      "player_id": 3116164,
+      "name": "Mike Gesicki",
+      "pro_team": "CIN",
+      "position": "TE",
+      "slot": "TE",
+      "injury": "",
+      "opponent": "WSH",
+      "kickoff": "2026-11-24T01:15:00Z",
+      "on_bye": false,
+      "played": false,
+      "projected": 6.12,
+      "actual": 0.0
+     },
+     {
+      "player_id": -15024,
+      "name": "Chargers TQB",
+      "pro_team": "LAC",
+      "position": "QB",
+      "slot": "TQB",
+      "injury": "",
+      "opponent": "",
+      "kickoff": "2026-11-22T21:05:00Z",
+      "on_bye": false,
+      "played": false,
+      "projected": 14.66,
+      "actual": 0.0
      }
     ],
     "bench": [
      {
-      "player_id": 4567048,
-      "name": "Kenneth Walker III",
-      "pro_team": "KC",
+      "player_id": 4430737,
+      "name": "Kyren Williams",
+      "pro_team": "LAR",
       "position": "RB",
       "slot": "BE",
-      "injury": "Q",
-      "opponent": "ARI",
-      "kickoff": "2026-11-22T18:00:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 0.0,
-      "actual": 0.0
-     },
-     {
-      "player_id": 4426388,
-      "name": "Jameson Williams",
-      "pro_team": "DET",
-      "position": "WR",
-      "slot": "BE",
       "injury": "",
-      "opponent": "TB",
-      "kickoff": "2026-11-22T18:00:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 9.36,
+      "opponent": "",
+      "kickoff": null,
+      "on_bye": true,
+      "played": true,
+      "projected": 0.0,
       "actual": 0.0
      },
      {
@@ -511,6 +497,48 @@
       "actual": 0.0
      },
      {
+      "player_id": 4248528,
+      "name": "Christian Watson",
+      "pro_team": "GB",
+      "position": "WR",
+      "slot": "BE",
+      "injury": "",
+      "opponent": "",
+      "kickoff": null,
+      "on_bye": true,
+      "played": true,
+      "projected": 0.0,
+      "actual": 0.0
+     },
+     {
+      "player_id": 4572680,
+      "name": "Tucker Kraft",
+      "pro_team": "GB",
+      "position": "TE",
+      "slot": "BE",
+      "injury": "",
+      "opponent": "",
+      "kickoff": null,
+      "on_bye": true,
+      "played": true,
+      "projected": 0.0,
+      "actual": 0.0
+     },
+     {
+      "player_id": -15014,
+      "name": "Rams TQB",
+      "pro_team": "LAR",
+      "position": "QB",
+      "slot": "BE",
+      "injury": "",
+      "opponent": "",
+      "kickoff": null,
+      "on_bye": true,
+      "played": true,
+      "projected": 0.0,
+      "actual": 0.0
+     },
+     {
       "player_id": 4870653,
       "name": "KC Concepcion",
       "pro_team": "CLE",
@@ -525,20 +553,6 @@
       "actual": 0.0
      },
      {
-      "player_id": 4428557,
-      "name": "Tyjae Spears",
-      "pro_team": "TEN",
-      "position": "RB",
-      "slot": "BE",
-      "injury": "Q",
-      "opponent": "DAL",
-      "kickoff": "2026-11-22T18:00:00Z",
-      "on_bye": false,
-      "played": false,
-      "projected": 6.85,
-      "actual": 0.0
-     },
-     {
       "player_id": 4678008,
       "name": "Jonathon Brooks",
       "pro_team": "CAR",
@@ -550,20 +564,6 @@
       "on_bye": false,
       "played": false,
       "projected": 3.84,
-      "actual": 0.0
-     },
-     {
-      "player_id": 4360797,
-      "name": "Tutu Atwell",
-      "pro_team": "LAR",
-      "position": "WR",
-      "slot": "BE",
-      "injury": "",
-      "opponent": "",
-      "kickoff": null,
-      "on_bye": true,
-      "played": true,
-      "projected": 0.0,
       "actual": 0.0
      }
     ]
@@ -678,7 +678,7 @@
       "pro_team": "PHI",
       "position": "WR",
       "slot": "RB/WR/TE",
-      "injury": "Q",
+      "injury": "",
       "opponent": "PIT",
       "kickoff": "2026-11-22T18:00:00Z",
       "on_bye": false,
@@ -1099,7 +1099,7 @@
       "kickoff": "2026-11-22T18:00:00Z",
       "on_bye": false,
       "played": false,
-      "projected": 17.36,
+      "projected": 17.39,
       "actual": 0.0
      },
      {
@@ -1145,10 +1145,10 @@
      "losses": 5,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 106.91,
-    "played": 0,
-    "to_play": 9,
+    "score": 20.46,
+    "projected_total": 105.53,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": -15034,
@@ -1160,9 +1160,9 @@
       "opponent": "",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 21.84,
-      "actual": 0.0
+      "actual": 20.46
      },
      {
       "player_id": 4361579,
@@ -1302,9 +1302,9 @@
       "opponent": "",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 21.84,
-      "actual": 0.0
+      "actual": 20.46
      },
      {
       "player_id": 4689936,
@@ -1388,7 +1388,7 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 0.0,
       "actual": 0.0
      },
@@ -1433,10 +1433,10 @@
      "losses": 6,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 106.36,
-    "played": 0,
-    "to_play": 9,
+    "score": 2.3,
+    "projected_total": 99.27,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": -15002,
@@ -1590,9 +1590,9 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 9.39,
-      "actual": 0.0
+      "actual": 2.3
      },
      {
       "player_id": 4600981,
@@ -1634,7 +1634,7 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 0.0,
       "actual": 0.0
      },
@@ -1690,9 +1690,9 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 7.57,
-      "actual": 0.0
+      "actual": 3.9
      },
      {
       "player_id": 3116389,
@@ -1723,10 +1723,10 @@
      "losses": 4,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 100.33,
-    "played": 0,
-    "to_play": 9,
+    "score": 7.2,
+    "projected_total": 88.89,
+    "played": 2,
+    "to_play": 7,
     "leaders": [
      {
       "player_id": -15030,
@@ -1866,9 +1866,9 @@
       "opponent": "HOU",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 9.64,
-      "actual": 0.0
+      "actual": 3.0
      },
      {
       "player_id": 5081432,
@@ -1894,9 +1894,9 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 9.0,
-      "actual": 0.0
+      "actual": 4.2
      }
     ],
     "bench": [
@@ -2011,10 +2011,10 @@
      "losses": 7,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 99.81,
-    "played": 0,
-    "to_play": 9,
+    "score": 33.3,
+    "projected_total": 100.91,
+    "played": 3,
+    "to_play": 6,
     "leaders": [
      {
       "player_id": 3117251,
@@ -2045,18 +2045,18 @@
       "actual": 0.0
      },
      {
-      "player_id": 4258173,
-      "name": "Nico Collins",
+      "player_id": -16034,
+      "name": "Texans D/ST",
       "pro_team": "HOU",
-      "position": "WR",
-      "slot": "WR",
+      "position": "D/ST",
+      "slot": "D/ST",
       "injury": "",
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
-      "projected": 13.44,
-      "actual": 0.0
+      "played": true,
+      "projected": 7.87,
+      "actual": 14.0
      }
     ],
     "lineup": [
@@ -2084,9 +2084,9 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 13.44,
-      "actual": 0.0
+      "actual": 13.3
      },
      {
       "player_id": 4685472,
@@ -2126,9 +2126,9 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 7.87,
-      "actual": 0.0
+      "actual": 14.0
      },
      {
       "player_id": 2971573,
@@ -2140,9 +2140,9 @@
       "opponent": "IND",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 10.89,
-      "actual": 0.0
+      "actual": 6.0
      },
      {
       "player_id": -15013,
@@ -2488,9 +2488,9 @@
       "opponent": "HOU",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 6.62,
-      "actual": 0.0
+      "actual": 2.7
      },
      {
       "player_id": 16737,
@@ -2879,10 +2879,10 @@
      "losses": 4,
      "ties": 0
     },
-    "score": 0.0,
-    "projected_total": 122.14,
-    "played": 0,
-    "to_play": 9,
+    "score": 4.7,
+    "projected_total": 111.66,
+    "played": 1,
+    "to_play": 8,
     "leaders": [
      {
       "player_id": -15012,
@@ -2903,7 +2903,7 @@
       "name": "Jonah Coleman",
       "pro_team": "DEN",
       "position": "RB",
-      "slot": "RB/WR/TE",
+      "slot": "RB",
       "injury": "",
       "opponent": "LV",
       "kickoff": "2026-11-22T21:25:00Z",
@@ -2917,7 +2917,7 @@
       "name": "Bhayshul Tuten",
       "pro_team": "JAX",
       "position": "RB",
-      "slot": "RB",
+      "slot": "RB/WR/TE",
       "injury": "Q",
       "opponent": "NYG",
       "kickoff": "2026-11-22T21:25:00Z",
@@ -2938,9 +2938,9 @@
       "opponent": "HOU",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 15.18,
-      "actual": 0.0
+      "actual": 4.7
      },
      {
       "player_id": 4361307,
@@ -2975,7 +2975,7 @@
       "name": "Bhayshul Tuten",
       "pro_team": "JAX",
       "position": "RB",
-      "slot": "RB",
+      "slot": "RB/WR/TE",
       "injury": "Q",
       "opponent": "NYG",
       "kickoff": "2026-11-22T21:25:00Z",
@@ -3045,7 +3045,7 @@
       "name": "Jonah Coleman",
       "pro_team": "DEN",
       "position": "RB",
-      "slot": "RB/WR/TE",
+      "slot": "RB",
       "injury": "",
       "opponent": "LV",
       "kickoff": "2026-11-22T21:25:00Z",
@@ -3146,13 +3146,13 @@
       "pro_team": "IND",
       "position": "RB",
       "slot": "BE",
-      "injury": "",
+      "injury": "Q",
       "opponent": "HOU",
       "kickoff": "2026-11-20T01:15:00Z",
       "on_bye": false,
-      "played": false,
+      "played": true,
       "projected": 5.11,
-      "actual": 0.0
+      "actual": 1.3
      }
     ]
    },
@@ -3448,35 +3448,24 @@
  ],
  "projected_standings": [
   {
-   "team_id": 5,
-   "team_name": "The Lizard Kings",
-   "abbrev": "MBJG",
-   "projected_total": 122.14,
-   "projected_ranking_points": 12.0,
-   "projected_cumulative": 95.0,
-   "projected_normalized": 21.0,
-   "current_rank": 1,
-   "projected_rank": 1
-  },
-  {
    "team_id": 6,
    "team_name": "The Garbage Dump",
    "abbrev": "Naug",
    "projected_total": 114.23,
-   "projected_ranking_points": 11.0,
-   "projected_cumulative": 61.0,
-   "projected_normalized": -13.0,
+   "projected_ranking_points": 12.0,
+   "projected_cumulative": 62.0,
+   "projected_normalized": -11.0,
    "current_rank": 12,
-   "projected_rank": 11
+   "projected_rank": 10
   },
   {
    "team_id": 8,
    "team_name": "Bada Bing",
    "abbrev": "BING",
    "projected_total": 113.72,
-   "projected_ranking_points": 10.0,
-   "projected_cumulative": 76.0,
-   "projected_normalized": 2.0,
+   "projected_ranking_points": 11.0,
+   "projected_cumulative": 77.0,
+   "projected_normalized": 4.0,
    "current_rank": 6,
    "projected_rank": 4
   },
@@ -3485,53 +3474,53 @@
    "team_name": "Keyser Soze",
    "abbrev": "CJ",
    "projected_total": 112.52,
-   "projected_ranking_points": 9.0,
-   "projected_cumulative": 79.0,
-   "projected_normalized": 5.0,
+   "projected_ranking_points": 10.0,
+   "projected_cumulative": 80.0,
+   "projected_normalized": 7.0,
    "current_rank": 4,
    "projected_rank": 2
+  },
+  {
+   "team_id": 5,
+   "team_name": "The Lizard Kings",
+   "abbrev": "MBJG",
+   "projected_total": 111.66,
+   "projected_ranking_points": 9.0,
+   "projected_cumulative": 92.0,
+   "projected_normalized": 19.0,
+   "current_rank": 1,
+   "projected_rank": 1
   },
   {
    "team_id": 7,
    "team_name": "Team Made of Glass",
    "abbrev": "TMOG",
-   "projected_total": 108.26,
+   "projected_total": 109.35,
    "projected_ranking_points": 8.0,
    "projected_cumulative": 62.0,
-   "projected_normalized": -12.0,
+   "projected_normalized": -11.0,
    "current_rank": 10,
-   "projected_rank": 9
+   "projected_rank": 11
   },
   {
    "team_id": 3,
    "team_name": "JSN Derulo ",
    "abbrev": "BW",
-   "projected_total": 106.91,
+   "projected_total": 105.53,
    "projected_ranking_points": 7.0,
    "projected_cumulative": 73.0,
-   "projected_normalized": -1.0,
-   "current_rank": 7,
-   "projected_rank": 7
-  },
-  {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "abbrev": "SWSH",
-   "projected_total": 106.36,
-   "projected_ranking_points": 6.0,
-   "projected_cumulative": 74.0,
    "projected_normalized": 0.0,
-   "current_rank": 5,
-   "projected_rank": 6
+   "current_rank": 7,
+   "projected_rank": 5
   },
   {
    "team_id": 1,
    "team_name": "3 Inches of Disappointment ",
    "abbrev": "SW",
    "projected_total": 104.97,
-   "projected_ranking_points": 5.0,
-   "projected_cumulative": 66.0,
-   "projected_normalized": -8.0,
+   "projected_ranking_points": 6.0,
+   "projected_cumulative": 67.0,
+   "projected_normalized": -6.0,
    "current_rank": 8,
    "projected_rank": 8
   },
@@ -3540,44 +3529,55 @@
    "team_name": "I am gay ",
    "abbrev": "GAY",
    "projected_total": 103.93,
-   "projected_ranking_points": 4.0,
-   "projected_cumulative": 56.0,
-   "projected_normalized": -18.0,
+   "projected_ranking_points": 5.0,
+   "projected_cumulative": 57.0,
+   "projected_normalized": -16.0,
    "current_rank": 11,
    "projected_rank": 12
-  },
-  {
-   "team_id": 9,
-   "team_name": "Walt's Warriors",
-   "abbrev": "WALT",
-   "projected_total": 100.33,
-   "projected_ranking_points": 3.0,
-   "projected_cumulative": 75.0,
-   "projected_normalized": 1.0,
-   "current_rank": 3,
-   "projected_rank": 5
   },
   {
    "team_id": 12,
    "team_name": "Remeber Bendel",
    "abbrev": "BEND",
-   "projected_total": 99.81,
-   "projected_ranking_points": 2.0,
-   "projected_cumulative": 62.0,
-   "projected_normalized": -12.0,
+   "projected_total": 100.91,
+   "projected_ranking_points": 4.0,
+   "projected_cumulative": 64.0,
+   "projected_normalized": -9.0,
    "current_rank": 9,
-   "projected_rank": 10
+   "projected_rank": 9
+  },
+  {
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "abbrev": "SWSH",
+   "projected_total": 99.27,
+   "projected_ranking_points": 3.0,
+   "projected_cumulative": 71.0,
+   "projected_normalized": -2.0,
+   "current_rank": 5,
+   "projected_rank": 7
   },
   {
    "team_id": 10,
    "team_name": "R-R-Radio",
    "abbrev": "SACK",
-   "projected_total": 62.87,
-   "projected_ranking_points": 1.0,
-   "projected_cumulative": 79.0,
-   "projected_normalized": 5.0,
+   "projected_total": 93.01,
+   "projected_ranking_points": 2.0,
+   "projected_cumulative": 80.0,
+   "projected_normalized": 7.0,
    "current_rank": 2,
    "projected_rank": 3
+  },
+  {
+   "team_id": 9,
+   "team_name": "Walt's Warriors",
+   "abbrev": "WALT",
+   "projected_total": 88.89,
+   "projected_ranking_points": 1.0,
+   "projected_cumulative": 73.0,
+   "projected_normalized": 0.0,
+   "current_rank": 3,
+   "projected_rank": 6
   }
  ]
 }
