@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-20 02:00:34 UTC",
-  "last_updated": "2026-11-20T02:00:34.994442+00:00"
+  "updated_at": "2026-11-20 02:10:21 UTC",
+  "last_updated": "2026-11-20T02:10:21.240042+00:00"
  },
  "teams": [
   {
@@ -42,7 +42,7 @@
     12.0,
     11.0,
     12.0,
-    9.0
+    7.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -55,7 +55,7 @@
     60.0,
     71.0,
     83.0,
-    92.0
+    90.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -68,71 +68,10 @@
     9.0,
     12.0,
     17.0,
-    18.5
+    16.5
    ],
    "rank": 1,
-   "total_ranking_points": 92.0
-  },
-  {
-   "team_id": 9,
-   "team_name": "Walt's Warriors",
-   "team_abbrev": "WALT",
-   "abbrev": "WALT",
-   "owner": "Matthew  Walter",
-   "scores_by_week": [
-    136.0,
-    55.66,
-    82.28,
-    121.48,
-    142.54,
-    122.24,
-    119.08,
-    99.52,
-    106.08,
-    99.28,
-    3.0
-   ],
-   "ranking_points_by_week": [
-    12.0,
-    1.0,
-    2.0,
-    10.0,
-    10.0,
-    11.0,
-    10.0,
-    5.0,
-    8.0,
-    3.0,
-    10.0
-   ],
-   "cumulative_points_by_week": [
-    12.0,
-    13.0,
-    15.0,
-    25.0,
-    35.0,
-    46.0,
-    56.0,
-    61.0,
-    69.0,
-    72.0,
-    82.0
-   ],
-   "normalized_by_week": [
-    5.0,
-    1.0,
-    -4.0,
-    -2.0,
-    1.0,
-    6.0,
-    9.0,
-    10.0,
-    10.0,
-    6.0,
-    8.5
-   ],
-   "rank": 2,
-   "total_ranking_points": 82.0
+   "total_ranking_points": 90.0
   },
   {
    "team_id": 10,
@@ -192,8 +131,69 @@
     12.0,
     8.0
    ],
-   "rank": 3,
+   "rank": 2,
    "total_ranking_points": 81.5
+  },
+  {
+   "team_id": 9,
+   "team_name": "Walt's Warriors",
+   "team_abbrev": "WALT",
+   "abbrev": "WALT",
+   "owner": "Matthew  Walter",
+   "scores_by_week": [
+    136.0,
+    55.66,
+    82.28,
+    121.48,
+    142.54,
+    122.24,
+    119.08,
+    99.52,
+    106.08,
+    99.28,
+    3.0
+   ],
+   "ranking_points_by_week": [
+    12.0,
+    1.0,
+    2.0,
+    10.0,
+    10.0,
+    11.0,
+    10.0,
+    5.0,
+    8.0,
+    3.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    12.0,
+    13.0,
+    15.0,
+    25.0,
+    35.0,
+    46.0,
+    56.0,
+    61.0,
+    69.0,
+    72.0,
+    81.0
+   ],
+   "normalized_by_week": [
+    5.0,
+    1.0,
+    -4.0,
+    -2.0,
+    1.0,
+    6.0,
+    9.0,
+    10.0,
+    10.0,
+    6.0,
+    7.5
+   ],
+   "rank": 3,
+   "total_ranking_points": 81.0
   },
   {
    "team_id": 3,
@@ -212,7 +212,7 @@
     68.24,
     84.5,
     107.84,
-    4.72
+    11.12
    ],
    "ranking_points_by_week": [
     4.0,
@@ -273,7 +273,7 @@
     118.56,
     88.06,
     118.14,
-    0.7
+    2.3
    ],
    "ranking_points_by_week": [
     1.0,
@@ -395,7 +395,7 @@
     100.28,
     123.54,
     125.52,
-    17.7
+    20.8
    ],
    "ranking_points_by_week": [
     7.0,
@@ -578,7 +578,7 @@
     109.58,
     84.76,
     94.1,
-    0.6
+    3.1
    ],
    "ranking_points_by_week": [
     11.0,
@@ -591,7 +591,7 @@
     8.0,
     3.0,
     2.0,
-    7.0
+    10.0
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -604,7 +604,7 @@
     49.0,
     52.0,
     54.0,
-    61.0
+    64.0
    ],
    "normalized_by_week": [
     4.0,
@@ -617,10 +617,10 @@
     -2.0,
     -7.0,
     -12.0,
-    -12.5
+    -9.5
    ],
    "rank": 10,
-   "total_ranking_points": 61.0
+   "total_ranking_points": 64.0
   },
   {
    "team_id": 11,
@@ -9434,15 +9434,7 @@
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "slot": "WR",
-     "score": 10.7
-    },
-    {
-     "name": "Texans D/ST",
-     "pro_team": "HOU",
-     "fantasy_team": "Remeber Bendel",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 6.0
+     "score": 11.8
     },
     {
      "name": "Texans TQB",
@@ -9450,7 +9442,23 @@
      "fantasy_team": "JSN Derulo ",
      "position": "QB",
      "slot": "QB",
-     "score": 4.72
+     "score": 11.12
+    },
+    {
+     "name": "Texans D/ST",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 8.0
+    },
+    {
+     "name": "David Montgomery",
+     "pro_team": "HOU",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 3.1
     },
     {
      "name": "Spencer Shrader",
@@ -9459,6 +9467,14 @@
      "position": "K",
      "slot": "K",
      "score": 3.0
+    },
+    {
+     "name": "Xavier Hutchinson",
+     "pro_team": "HOU",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "slot": "WR",
+     "score": 2.3
     },
     {
      "name": "Jonathan Taylor",
@@ -9475,22 +9491,6 @@
      "position": "K",
      "slot": "K",
      "score": 1.0
-    },
-    {
-     "name": "Xavier Hutchinson",
-     "pro_team": "HOU",
-     "fantasy_team": "Swishington Football Team",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.7
-    },
-    {
-     "name": "David Montgomery",
-     "pro_team": "HOU",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 0.6
     },
     {
      "name": "James Cook III",
@@ -11400,7 +11400,7 @@
    "TMOG": {
     "RB": 0.0,
     "WR": 0.0,
-    "FLEX": 0.6,
+    "FLEX": 3.1,
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
@@ -11439,14 +11439,14 @@
     "WR": 0.0,
     "FLEX": 0.0,
     "D/ST": 0.0,
-    "QB": 4.72,
+    "QB": 11.12,
     "K": 0.0
    },
    "SWSH": {
     "RB": 0.0,
     "TE": 0.0,
     "QB": 0.0,
-    "WR": 0.7,
+    "WR": 2.3,
     "D/ST": 0.0,
     "K": 0.0,
     "FLEX": 0.0
@@ -11462,9 +11462,9 @@
    },
    "BEND": {
     "RB": 0.0,
-    "WR": 10.7,
+    "WR": 11.8,
     "FLEX": 0.0,
-    "D/ST": 6.0,
+    "D/ST": 8.0,
     "K": 1.0,
     "QB": 0.0,
     "TE": 0.0
@@ -11509,11 +11509,11 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-20T02:00:34+00:00",
+  "updated_at": "2026-11-20T02:10:21+00:00",
   "teams": {
    "TMOG": {
-    "score": 0.6,
-    "projected": 105.67,
+    "score": 3.1,
+    "projected": 106.6,
     "starters": [
      {
       "name": "James Cook III",
@@ -11554,7 +11554,7 @@
       "slot": "FLEX",
       "pro_team": "HOU",
       "opponent": "IND",
-      "points": 0.6,
+      "points": 3.1,
       "projected": 12.81,
       "status": "live",
       "kickoff": 1795137300000
@@ -11932,8 +11932,8 @@
     ]
    },
    "BW": {
-    "score": 4.72,
-    "projected": 106.18,
+    "score": 11.12,
+    "projected": 109.9,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12018,7 +12018,7 @@
       "slot": "QB",
       "pro_team": "HOU",
       "opponent": "None",
-      "points": 4.72,
+      "points": 11.12,
       "projected": 21.84,
       "status": "live",
       "kickoff": 1795137300000
@@ -12037,8 +12037,8 @@
     ]
    },
    "SWSH": {
-    "score": 0.7,
-    "projected": 104.69,
+    "score": 2.3,
+    "projected": 105.14,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12123,7 +12123,7 @@
       "slot": "WR",
       "pro_team": "HOU",
       "opponent": "IND",
-      "points": 0.7,
+      "points": 2.3,
       "projected": 9.39,
       "status": "live",
       "kickoff": 1795137300000
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 3.0,
-    "projected": 98.67,
+    "projected": 96.38,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12247,8 +12247,8 @@
     ]
    },
    "BEND": {
-    "score": 17.7,
-    "projected": 104.96,
+    "score": 20.8,
+    "projected": 103.59,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12267,7 +12267,7 @@
       "slot": "WR",
       "pro_team": "HOU",
       "opponent": "IND",
-      "points": 10.7,
+      "points": 11.8,
       "projected": 13.44,
       "status": "live",
       "kickoff": 1795137300000
@@ -12300,7 +12300,7 @@
       "slot": "D/ST",
       "pro_team": "HOU",
       "opponent": "IND",
-      "points": 6.0,
+      "points": 8.0,
       "projected": 7.87,
       "status": "live",
       "kickoff": 1795137300000
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 1.9,
-    "projected": 120.23,
+    "projected": 118.37,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12852,6 +12852,23 @@
      "SWSH": 0.7,
      "WALT": 3.0,
      "BEND": 17.7,
+     "BING": 0.0,
+     "CJ": 0.0,
+     "MBJG": 1.9,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-20T02:10:21+00:00",
+    "scores": {
+     "TMOG": 3.1,
+     "SACK": 0.0,
+     "SW": 0.0,
+     "GAY": 0.0,
+     "BW": 11.12,
+     "SWSH": 2.3,
+     "WALT": 3.0,
+     "BEND": 20.8,
      "BING": 0.0,
      "CJ": 0.0,
      "MBJG": 1.9,
