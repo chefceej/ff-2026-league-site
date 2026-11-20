@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-20 04:40:25 UTC",
-  "last_updated": "2026-11-20T04:40:25.931158+00:00"
+  "updated_at": "2026-11-20 04:50:25 UTC",
+  "last_updated": "2026-11-20T04:50:25.650534+00:00"
  },
  "teams": [
   {
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-20T04:40:25+00:00",
+  "updated_at": "2026-11-20T04:50:25+00:00",
   "teams": {
    "TMOG": {
     "score": 13.9,
@@ -11556,7 +11556,7 @@
       "opponent": "IND",
       "points": 13.9,
       "projected": 12.81,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      },
      {
@@ -12020,7 +12020,7 @@
       "opponent": "None",
       "points": 20.46,
       "projected": 21.84,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      },
      {
@@ -12125,7 +12125,7 @@
       "opponent": "IND",
       "points": 2.3,
       "projected": 9.39,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      },
      {
@@ -12219,7 +12219,7 @@
       "opponent": "HOU",
       "points": 3.0,
       "projected": 9.64,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      },
      {
@@ -12241,7 +12241,7 @@
       "opponent": "IND",
       "points": 4.2,
       "projected": 9.0,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      }
     ]
@@ -12269,7 +12269,7 @@
       "opponent": "IND",
       "points": 13.3,
       "projected": 13.44,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      },
      {
@@ -12302,7 +12302,7 @@
       "opponent": "IND",
       "points": 14.0,
       "projected": 7.87,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      },
      {
@@ -12313,7 +12313,7 @@
       "opponent": "IND",
       "points": 6.0,
       "projected": 10.89,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      },
      {
@@ -12573,7 +12573,7 @@
       "opponent": "HOU",
       "points": 4.7,
       "projected": 15.18,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795137300000
      },
      {
