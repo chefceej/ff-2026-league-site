@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-20 03:30:25 UTC",
-  "last_updated": "2026-11-20T03:30:25.063095+00:00"
+  "updated_at": "2026-11-20 03:40:27 UTC",
+  "last_updated": "2026-11-20T03:40:27.500235+00:00"
  },
  "teams": [
   {
@@ -29,7 +29,7 @@
     143.32,
     123.98,
     138.72,
-    3.8
+    3.9
    ],
    "ranking_points_by_week": [
     5.0,
@@ -212,7 +212,7 @@
     68.24,
     84.5,
     107.84,
-    17.66
+    17.5
    ],
    "ranking_points_by_week": [
     4.0,
@@ -9434,7 +9434,7 @@
      "fantasy_team": "JSN Derulo ",
      "position": "QB",
      "slot": "QB",
-     "score": 17.66
+     "score": 17.5
     },
     {
      "name": "Texans D/ST",
@@ -9482,7 +9482,7 @@
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "slot": "RB",
-     "score": 3.8
+     "score": 3.9
     },
     {
      "name": "Spencer Shrader",
@@ -11439,7 +11439,7 @@
     "WR": 0.0,
     "FLEX": 0.0,
     "D/ST": 0.0,
-    "QB": 17.66,
+    "QB": 17.5,
     "K": 0.0
    },
    "SWSH": {
@@ -11488,7 +11488,7 @@
     "K": 0.0
    },
    "MBJG": {
-    "RB": 3.8,
+    "RB": 3.9,
     "TE": 0.0,
     "WR": 0.0,
     "FLEX": 0.0,
@@ -11509,11 +11509,11 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-20T03:30:25+00:00",
+  "updated_at": "2026-11-20T03:40:27+00:00",
   "teams": {
    "TMOG": {
     "score": 9.1,
-    "projected": 108.5,
+    "projected": 107.77,
     "starters": [
      {
       "name": "James Cook III",
@@ -11932,8 +11932,8 @@
     ]
    },
    "BW": {
-    "score": 17.66,
-    "projected": 109.45,
+    "score": 17.5,
+    "projected": 108.03,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12018,7 +12018,7 @@
       "slot": "QB",
       "pro_team": "HOU",
       "opponent": "None",
-      "points": 17.66,
+      "points": 17.5,
       "projected": 21.84,
       "status": "live",
       "kickoff": 1795137300000
@@ -12038,7 +12038,7 @@
    },
    "SWSH": {
     "score": 2.3,
-    "projected": 102.13,
+    "projected": 101.59,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 7.2,
-    "projected": 94.62,
+    "projected": 93.55,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12248,7 +12248,7 @@
    },
    "BEND": {
     "score": 31.8,
-    "projected": 105.0,
+    "projected": 103.96,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12562,8 +12562,8 @@
     ]
    },
    "MBJG": {
-    "score": 3.8,
-    "projected": 115.41,
+    "score": 3.9,
+    "projected": 114.64,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12571,7 +12571,7 @@
       "slot": "RB",
       "pro_team": "IND",
       "opponent": "HOU",
-      "points": 3.8,
+      "points": 3.9,
       "projected": 15.18,
       "status": "live",
       "kickoff": 1795137300000
@@ -12991,6 +12991,23 @@
      "BING": 0.0,
      "CJ": 0.0,
      "MBJG": 3.8,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-20T03:40:27+00:00",
+    "scores": {
+     "TMOG": 9.1,
+     "SACK": 0.0,
+     "SW": 0.0,
+     "GAY": 0.0,
+     "BW": 17.5,
+     "SWSH": 2.3,
+     "WALT": 7.2,
+     "BEND": 31.8,
+     "BING": 0.0,
+     "CJ": 0.0,
+     "MBJG": 3.9,
      "Naug": 0.0
     }
    }
