@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-20 03:00:24 UTC",
-  "last_updated": "2026-11-20T03:00:24.414300+00:00"
+  "updated_at": "2026-11-20 03:10:17 UTC",
+  "last_updated": "2026-11-20T03:10:17.290113+00:00"
  },
  "teams": [
   {
@@ -212,7 +212,7 @@
     68.24,
     84.5,
     107.84,
-    11.76
+    12.06
    ],
    "ranking_points_by_week": [
     4.0,
@@ -578,7 +578,7 @@
     109.58,
     84.76,
     94.1,
-    6.2
+    8.6
    ],
    "ranking_points_by_week": [
     11.0,
@@ -9429,20 +9429,20 @@
   {
    "all": [
     {
+     "name": "Texans TQB",
+     "pro_team": "HOU",
+     "fantasy_team": "JSN Derulo ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 12.06
+    },
+    {
      "name": "Nico Collins",
      "pro_team": "HOU",
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "slot": "WR",
      "score": 11.8
-    },
-    {
-     "name": "Texans TQB",
-     "pro_team": "HOU",
-     "fantasy_team": "JSN Derulo ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 11.76
     },
     {
      "name": "Texans D/ST",
@@ -9458,7 +9458,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "FLEX",
-     "score": 6.2
+     "score": 8.6
     },
     {
      "name": "Ka'imi Fairbairn",
@@ -11400,7 +11400,7 @@
    "TMOG": {
     "RB": 0.0,
     "WR": 0.0,
-    "FLEX": 6.2,
+    "FLEX": 8.6,
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
@@ -11439,7 +11439,7 @@
     "WR": 0.0,
     "FLEX": 0.0,
     "D/ST": 0.0,
-    "QB": 11.76,
+    "QB": 12.06,
     "K": 0.0
    },
    "SWSH": {
@@ -11509,11 +11509,11 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-20T03:00:24+00:00",
+  "updated_at": "2026-11-20T03:10:17+00:00",
   "teams": {
    "TMOG": {
-    "score": 6.2,
-    "projected": 108.07,
+    "score": 8.6,
+    "projected": 109.79,
     "starters": [
      {
       "name": "James Cook III",
@@ -11554,7 +11554,7 @@
       "slot": "FLEX",
       "pro_team": "HOU",
       "opponent": "IND",
-      "points": 6.2,
+      "points": 8.6,
       "projected": 12.81,
       "status": "live",
       "kickoff": 1795137300000
@@ -11932,8 +11932,8 @@
     ]
    },
    "BW": {
-    "score": 11.76,
-    "projected": 107.76,
+    "score": 12.06,
+    "projected": 106.89,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12018,7 +12018,7 @@
       "slot": "QB",
       "pro_team": "HOU",
       "opponent": "None",
-      "points": 11.76,
+      "points": 12.06,
       "projected": 21.84,
       "status": "live",
       "kickoff": 1795137300000
@@ -12038,7 +12038,7 @@
    },
    "SWSH": {
     "score": 2.3,
-    "projected": 103.94,
+    "projected": 103.44,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 3.0,
-    "projected": 94.01,
+    "projected": 93.02,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12248,7 +12248,7 @@
    },
    "BEND": {
     "score": 27.8,
-    "projected": 106.01,
+    "projected": 104.88,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 2.1,
-    "projected": 116.64,
+    "projected": 115.83,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12934,6 +12934,23 @@
      "SW": 0.0,
      "GAY": 0.0,
      "BW": 11.76,
+     "SWSH": 2.3,
+     "WALT": 3.0,
+     "BEND": 27.8,
+     "BING": 0.0,
+     "CJ": 0.0,
+     "MBJG": 2.1,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-20T03:10:17+00:00",
+    "scores": {
+     "TMOG": 8.6,
+     "SACK": 0.0,
+     "SW": 0.0,
+     "GAY": 0.0,
+     "BW": 12.06,
      "SWSH": 2.3,
      "WALT": 3.0,
      "BEND": 27.8,
