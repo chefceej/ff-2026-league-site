@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-20 04:00:26 UTC",
-  "last_updated": "2026-11-20T04:00:26.673804+00:00"
+  "updated_at": "2026-11-20 04:10:19 UTC",
+  "last_updated": "2026-11-20T04:10:19.688846+00:00"
  },
  "teams": [
   {
@@ -212,7 +212,7 @@
     68.24,
     84.5,
     107.84,
-    17.56
+    20.46
    ],
    "ranking_points_by_week": [
     4.0,
@@ -395,7 +395,7 @@
     100.28,
     123.54,
     125.52,
-    31.8
+    33.3
    ],
    "ranking_points_by_week": [
     7.0,
@@ -578,7 +578,7 @@
     109.58,
     84.76,
     94.1,
-    11.9
+    13.9
    ],
    "ranking_points_by_week": [
     11.0,
@@ -9434,7 +9434,7 @@
      "fantasy_team": "JSN Derulo ",
      "position": "QB",
      "slot": "QB",
-     "score": 17.56
+     "score": 20.46
     },
     {
      "name": "Texans D/ST",
@@ -9450,7 +9450,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "FLEX",
-     "score": 11.9
+     "score": 13.9
     },
     {
      "name": "Nico Collins",
@@ -9458,7 +9458,7 @@
      "fantasy_team": "Remeber Bendel",
      "position": "WR",
      "slot": "WR",
-     "score": 11.8
+     "score": 13.3
     },
     {
      "name": "Ka'imi Fairbairn",
@@ -11400,7 +11400,7 @@
    "TMOG": {
     "RB": 0.0,
     "WR": 0.0,
-    "FLEX": 11.9,
+    "FLEX": 13.9,
     "QB": 0.0,
     "D/ST": 0.0,
     "K": 0.0,
@@ -11439,7 +11439,7 @@
     "WR": 0.0,
     "FLEX": 0.0,
     "D/ST": 0.0,
-    "QB": 17.56,
+    "QB": 20.46,
     "K": 0.0
    },
    "SWSH": {
@@ -11462,7 +11462,7 @@
    },
    "BEND": {
     "RB": 0.0,
-    "WR": 11.8,
+    "WR": 13.3,
     "FLEX": 0.0,
     "D/ST": 14.0,
     "K": 6.0,
@@ -11509,11 +11509,11 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-20T04:00:26+00:00",
+  "updated_at": "2026-11-20T04:10:19+00:00",
   "teams": {
    "TMOG": {
-    "score": 11.9,
-    "projected": 108.54,
+    "score": 13.9,
+    "projected": 109.37,
     "starters": [
      {
       "name": "James Cook III",
@@ -11554,7 +11554,7 @@
       "slot": "FLEX",
       "pro_team": "HOU",
       "opponent": "IND",
-      "points": 11.9,
+      "points": 13.9,
       "projected": 12.81,
       "status": "live",
       "kickoff": 1795137300000
@@ -11932,8 +11932,8 @@
     ]
    },
    "BW": {
-    "score": 17.56,
-    "projected": 104.63,
+    "score": 20.46,
+    "projected": 105.53,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12018,7 +12018,7 @@
       "slot": "QB",
       "pro_team": "HOU",
       "opponent": "None",
-      "points": 17.56,
+      "points": 20.46,
       "projected": 21.84,
       "status": "live",
       "kickoff": 1795137300000
@@ -12038,7 +12038,7 @@
    },
    "SWSH": {
     "score": 2.3,
-    "projected": 100.1,
+    "projected": 99.25,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 7.2,
-    "projected": 90.59,
+    "projected": 88.89,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12247,8 +12247,8 @@
     ]
    },
    "BEND": {
-    "score": 31.8,
-    "projected": 101.07,
+    "score": 33.3,
+    "projected": 100.91,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12267,7 +12267,7 @@
       "slot": "WR",
       "pro_team": "HOU",
       "opponent": "IND",
-      "points": 11.8,
+      "points": 13.3,
       "projected": 13.44,
       "status": "live",
       "kickoff": 1795137300000
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 4.7,
-    "projected": 113.03,
+    "projected": 111.65,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -13039,6 +13039,23 @@
      "SWSH": 2.3,
      "WALT": 7.2,
      "BEND": 31.8,
+     "BING": 0.0,
+     "CJ": 0.0,
+     "MBJG": 4.7,
+     "Naug": 0.0
+    }
+   },
+   {
+    "t": "2026-11-20T04:10:19+00:00",
+    "scores": {
+     "TMOG": 13.9,
+     "SACK": 0.0,
+     "SW": 0.0,
+     "GAY": 0.0,
+     "BW": 20.46,
+     "SWSH": 2.3,
+     "WALT": 7.2,
+     "BEND": 33.3,
      "BING": 0.0,
      "CJ": 0.0,
      "MBJG": 4.7,
