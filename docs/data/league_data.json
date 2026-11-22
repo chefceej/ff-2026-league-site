@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-22 21:10:23 UTC",
-  "last_updated": "2026-11-22T21:10:23.983350+00:00"
+  "updated_at": "2026-11-22 21:20:21 UTC",
+  "last_updated": "2026-11-22T21:20:21.860166+00:00"
  },
  "teams": [
   {
@@ -90,7 +90,7 @@
     108.26,
     122.8,
     131.86,
-    90.38
+    95.38
    ],
    "ranking_points_by_week": [
     8.0,
@@ -151,7 +151,7 @@
     113.08,
     140.42,
     86.66,
-    28.2
+    29.48
    ],
    "ranking_points_by_week": [
     2.0,
@@ -273,7 +273,7 @@
     118.56,
     88.06,
     118.14,
-    61.76
+    62.76
    ],
    "ranking_points_by_week": [
     1.0,
@@ -395,7 +395,7 @@
     99.18,
     91.86,
     131.76,
-    68.7
+    65.9
    ],
    "ranking_points_by_week": [
     10.0,
@@ -578,7 +578,7 @@
     109.58,
     84.76,
     94.1,
-    84.84
+    86.24
    ],
    "ranking_points_by_week": [
     11.0,
@@ -9573,20 +9573,20 @@
      "score": 16.0
     },
     {
+     "name": "Justice Hill",
+     "pro_team": "BAL",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "slot": "RB",
+     "score": 15.6
+    },
+    {
      "name": "Chris Olave",
      "pro_team": "NO",
      "fantasy_team": "Bada Bing",
      "position": "WR",
      "slot": "WR",
      "score": 14.7
-    },
-    {
-     "name": "Justice Hill",
-     "pro_team": "BAL",
-     "fantasy_team": "Swishington Football Team",
-     "position": "RB",
-     "slot": "RB",
-     "score": 14.6
     },
     {
      "name": "Bears TQB",
@@ -9709,14 +9709,6 @@
      "score": 10.0
     },
     {
-     "name": "Chargers D/ST",
-     "pro_team": "LAC",
-     "fantasy_team": "Bada Bing",
-     "position": "D/ST",
-     "slot": "D/ST",
-     "score": 10.0
-    },
-    {
      "name": "Brandon Aubrey",
      "pro_team": "DAL",
      "fantasy_team": "The Garbage Dump",
@@ -9821,6 +9813,14 @@
      "score": 6.0
     },
     {
+     "name": "Chargers D/ST",
+     "pro_team": "LAC",
+     "fantasy_team": "Bada Bing",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 6.0
+    },
+    {
      "name": "Rico Dowdle",
      "pro_team": "PIT",
      "fantasy_team": "JSN Derulo ",
@@ -9834,6 +9834,14 @@
      "fantasy_team": "3 Inches of Disappointment ",
      "position": "D/ST",
      "slot": "D/ST",
+     "score": 5.0
+    },
+    {
+     "name": "Jason Sanders",
+     "pro_team": "NYJ",
+     "fantasy_team": "Keyser Soze",
+     "position": "K",
+     "slot": "K",
      "score": 5.0
     },
     {
@@ -9901,6 +9909,14 @@
      "score": 2.8
     },
     {
+     "name": "Mark Andrews",
+     "pro_team": "BAL",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "slot": "TE",
+     "score": 2.4
+    },
+    {
      "name": "Xavier Hutchinson",
      "pro_team": "HOU",
      "fantasy_team": "Swishington Football Team",
@@ -9933,20 +9949,28 @@
      "score": 1.6
     },
     {
+     "name": "Chargers TQB",
+     "pro_team": "LAC",
+     "fantasy_team": "R-R-Radio",
+     "position": "QB",
+     "slot": "QB",
+     "score": 1.28
+    },
+    {
+     "name": "Omarion Hampton",
+     "pro_team": "LAC",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "slot": "FLEX",
+     "score": 1.2
+    },
+    {
      "name": "Breece Hall",
      "pro_team": "NYJ",
      "fantasy_team": "Walt's Warriors",
      "position": "RB",
      "slot": "RB",
      "score": 1.1
-    },
-    {
-     "name": "Mark Andrews",
-     "pro_team": "BAL",
-     "fantasy_team": "Team Made of Glass",
-     "position": "TE",
-     "slot": "TE",
-     "score": 1.0
     },
     {
      "name": "DK Metcalf",
@@ -9986,14 +10010,6 @@
      "fantasy_team": "R-R-Radio",
      "position": "TE",
      "slot": "TE",
-     "score": 0.0
-    },
-    {
-     "name": "Chargers TQB",
-     "pro_team": "LAC",
-     "fantasy_team": "R-R-Radio",
-     "position": "QB",
-     "slot": "QB",
      "score": 0.0
     },
     {
@@ -10165,14 +10181,6 @@
      "score": 0.0
     },
     {
-     "name": "Omarion Hampton",
-     "pro_team": "LAC",
-     "fantasy_team": "Bada Bing",
-     "position": "RB",
-     "slot": "FLEX",
-     "score": 0.0
-    },
-    {
      "name": "Garrett Wilson",
      "pro_team": "NYJ",
      "fantasy_team": "Bada Bing",
@@ -10210,14 +10218,6 @@
      "fantasy_team": "Keyser Soze",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 0.0
-    },
-    {
-     "name": "Jason Sanders",
-     "pro_team": "NYJ",
-     "fantasy_team": "Keyser Soze",
-     "position": "K",
-     "slot": "K",
      "score": 0.0
     },
     {
@@ -11404,7 +11404,7 @@
     "QB": 14.34,
     "D/ST": 8.0,
     "K": 3.0,
-    "TE": 1.0
+    "TE": 2.4
    },
    "SACK": {
     "WR": 0.0,
@@ -11413,7 +11413,7 @@
     "K": 0.0,
     "D/ST": 7.0,
     "TE": 0.0,
-    "QB": 0.0
+    "QB": 1.28
    },
    "SW": {
     "WR": 37.1,
@@ -11443,7 +11443,7 @@
     "K": 9.0
    },
    "SWSH": {
-    "RB": 40.4,
+    "RB": 41.4,
     "QB": 12.06,
     "WR": 2.3,
     "D/ST": 7.0,
@@ -11471,12 +11471,12 @@
    },
    "BING": {
     "RB": 26.0,
-    "FLEX": 0.0,
+    "FLEX": 1.2,
     "WR": 14.7,
     "QB": 0.0,
     "TE": 0.0,
     "K": 18.0,
-    "D/ST": 10.0
+    "D/ST": 6.0
    },
    "CJ": {
     "WR": 20.3,
@@ -11485,7 +11485,7 @@
     "QB": 14.28,
     "FLEX": 8.3,
     "D/ST": 0.0,
-    "K": 0.0
+    "K": 5.0
    },
    "MBJG": {
     "RB": 4.7,
@@ -11509,11 +11509,11 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-22T21:10:23+00:00",
+  "updated_at": "2026-11-22T21:20:21+00:00",
   "teams": {
    "TMOG": {
-    "score": 84.84,
-    "projected": 85.0,
+    "score": 86.24,
+    "projected": 86.24,
     "starters": [
      {
       "name": "James Cook III",
@@ -11609,7 +11609,7 @@
       "slot": "TE",
       "pro_team": "BAL",
       "opponent": "CAR",
-      "points": 1.0,
+      "points": 2.4,
       "projected": 5.69,
       "status": "live",
       "kickoff": 1795370400000
@@ -11617,8 +11617,8 @@
     ]
    },
    "SACK": {
-    "score": 28.2,
-    "projected": 97.51,
+    "score": 29.48,
+    "projected": 97.66,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -11703,7 +11703,7 @@
       "slot": "QB",
       "pro_team": "LAC",
       "opponent": "None",
-      "points": 0.0,
+      "points": 1.28,
       "projected": 14.65,
       "status": "live",
       "kickoff": 1795381500000
@@ -11723,7 +11723,7 @@
    },
    "SW": {
     "score": 105.8,
-    "projected": 122.92,
+    "projected": 122.14,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11828,7 +11828,7 @@
    },
    "GAY": {
     "score": 45.3,
-    "projected": 81.99,
+    "projected": 82.12,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 80.66,
-    "projected": 107.74,
+    "projected": 107.68,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12037,8 +12037,8 @@
     ]
    },
    "SWSH": {
-    "score": 61.76,
-    "projected": 94.08,
+    "score": 62.76,
+    "projected": 94.48,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12101,7 +12101,7 @@
       "slot": "RB",
       "pro_team": "BAL",
       "opponent": "CAR",
-      "points": 14.6,
+      "points": 15.6,
       "projected": 6.86,
       "status": "live",
       "kickoff": 1795370400000
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 16.6,
-    "projected": 76.84,
+    "projected": 76.01,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12248,7 +12248,7 @@
    },
    "BEND": {
     "score": 56.6,
-    "projected": 97.17,
+    "projected": 96.71,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12352,8 +12352,8 @@
     ]
    },
    "BING": {
-    "score": 68.7,
-    "projected": 130.69,
+    "score": 65.9,
+    "projected": 129.35,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12372,7 +12372,7 @@
       "slot": "FLEX",
       "pro_team": "LAC",
       "opponent": "NYJ",
-      "points": 0.0,
+      "points": 1.2,
       "projected": 12.66,
       "status": "live",
       "kickoff": 1795381500000
@@ -12449,7 +12449,7 @@
       "slot": "D/ST",
       "pro_team": "LAC",
       "opponent": "NYJ",
-      "points": 10.0,
+      "points": 6.0,
       "projected": 7.04,
       "status": "live",
       "kickoff": 1795381500000
@@ -12457,8 +12457,8 @@
     ]
    },
    "CJ": {
-    "score": 90.38,
-    "projected": 121.29,
+    "score": 95.38,
+    "projected": 125.6,
     "starters": [
      {
       "name": "George Pickens",
@@ -12554,7 +12554,7 @@
       "slot": "K",
       "pro_team": "NYJ",
       "opponent": "LAC",
-      "points": 0.0,
+      "points": 5.0,
       "projected": 9.8,
       "status": "live",
       "kickoff": 1795381500000
@@ -12668,7 +12668,7 @@
    },
    "Naug": {
     "score": 76.9,
-    "projected": 125.0,
+    "projected": 124.92,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13381,6 +13381,23 @@
      "BEND": 56.6,
      "BING": 68.7,
      "CJ": 90.38,
+     "MBJG": 39.76,
+     "Naug": 76.9
+    }
+   },
+   {
+    "t": "2026-11-22T21:20:21+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 29.48,
+     "SW": 105.8,
+     "GAY": 45.3,
+     "BW": 80.66,
+     "SWSH": 62.76,
+     "WALT": 16.6,
+     "BEND": 56.6,
+     "BING": 65.9,
+     "CJ": 95.38,
      "MBJG": 39.76,
      "Naug": 76.9
     }
