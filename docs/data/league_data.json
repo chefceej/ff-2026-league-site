@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 01:30:21 UTC",
-  "last_updated": "2026-11-23T01:30:21.733246+00:00"
+  "updated_at": "2026-11-23 01:40:24 UTC",
+  "last_updated": "2026-11-23T01:40:24.300653+00:00"
  },
  "teams": [
   {
@@ -286,7 +286,7 @@
     5.0,
     8.0,
     3.0,
-    3.0
+    2.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -299,7 +299,7 @@
     61.0,
     69.0,
     72.0,
-    75.0
+    74.0
    ],
    "normalized_by_week": [
     5.0,
@@ -312,10 +312,10 @@
     10.0,
     10.0,
     6.0,
-    3.0
+    2.0
    ],
    "rank": 5,
-   "total_ranking_points": 75.0
+   "total_ranking_points": 74.0
   },
   {
    "team_id": 1,
@@ -456,7 +456,7 @@
     99.18,
     91.86,
     131.76,
-    74.9
+    77.4
    ],
    "ranking_points_by_week": [
     10.0,
@@ -469,7 +469,7 @@
     4.0,
     5.0,
     10.0,
-    2.0
+    3.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -482,7 +482,7 @@
     51.0,
     56.0,
     66.0,
-    68.0
+    69.0
    ],
    "normalized_by_week": [
     3.0,
@@ -495,10 +495,10 @@
     0.0,
     -3.0,
     0.0,
-    -4.0
+    -3.0
    ],
    "rank": 8,
-   "total_ranking_points": 68.0
+   "total_ranking_points": 69.0
   },
   {
    "team_id": 12,
@@ -10109,6 +10109,14 @@
      "score": 2.8
     },
     {
+     "name": "T.J. Hockenson",
+     "pro_team": "MIN",
+     "fantasy_team": "Bada Bing",
+     "position": "TE",
+     "slot": "TE",
+     "score": 2.5
+    },
+    {
      "name": "Mark Andrews",
      "pro_team": "BAL",
      "fantasy_team": "Team Made of Glass",
@@ -10250,14 +10258,6 @@
      "fantasy_team": "Bada Bing",
      "position": "QB",
      "slot": "QB",
-     "score": 0.0
-    },
-    {
-     "name": "T.J. Hockenson",
-     "pro_team": "MIN",
-     "fantasy_team": "Bada Bing",
-     "position": "TE",
-     "slot": "TE",
      "score": 0.0
     },
     {
@@ -11474,7 +11474,7 @@
     "FLEX": 9.8,
     "WR": 20.1,
     "QB": 0.0,
-    "TE": 0.0,
+    "TE": 2.5,
     "K": 18.0,
     "D/ST": 1.0
    },
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T01:30:21+00:00",
+  "updated_at": "2026-11-23T01:40:24+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11723,7 +11723,7 @@
    },
    "SW": {
     "score": 105.8,
-    "projected": 121.12,
+    "projected": 120.11,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11828,7 +11828,7 @@
    },
    "GAY": {
     "score": 63.7,
-    "projected": 90.19,
+    "projected": 88.44,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 97.96,
-    "projected": 103.71,
+    "projected": 103.33,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12248,7 +12248,7 @@
    },
    "BEND": {
     "score": 80.48,
-    "projected": 97.01,
+    "projected": 95.92,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12352,8 +12352,8 @@
     ]
    },
    "BING": {
-    "score": 74.9,
-    "projected": 116.06,
+    "score": 77.4,
+    "projected": 118.0,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12427,7 +12427,7 @@
       "slot": "TE",
       "pro_team": "MIN",
       "opponent": "SF",
-      "points": 0.0,
+      "points": 2.5,
       "projected": 9.0,
       "status": "live",
       "kickoff": 1795396800000
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 96.46,
-    "projected": 123.2,
+    "projected": 123.04,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12668,7 +12668,7 @@
    },
    "Naug": {
     "score": 79.9,
-    "projected": 126.36,
+    "projected": 124.8,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13771,6 +13771,23 @@
      "WALT": 75.14,
      "BEND": 80.48,
      "BING": 74.9,
+     "CJ": 118.68,
+     "MBJG": 96.46,
+     "Naug": 79.9
+    }
+   },
+   {
+    "t": "2026-11-23T01:40:24+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 85.84,
+     "SW": 105.8,
+     "GAY": 63.7,
+     "BW": 97.96,
+     "SWSH": 79.86,
+     "WALT": 75.14,
+     "BEND": 80.48,
+     "BING": 77.4,
      "CJ": 118.68,
      "MBJG": 96.46,
      "Naug": 79.9
