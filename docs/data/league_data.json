@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 00:50:29 UTC",
-  "last_updated": "2026-11-23T00:50:29.535166+00:00"
+  "updated_at": "2026-11-23 01:01:08 UTC",
+  "last_updated": "2026-11-23T01:01:08.043446+00:00"
  },
  "teams": [
   {
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T00:50:29+00:00",
+  "updated_at": "2026-11-23T01:01:08+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11618,7 +11618,7 @@
    },
    "SACK": {
     "score": 85.84,
-    "projected": 113.73,
+    "projected": 112.99,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -11661,7 +11661,7 @@
       "opponent": "JAX",
       "points": 15.0,
       "projected": 12.74,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -11672,7 +11672,7 @@
       "opponent": "JAX",
       "points": 16.0,
       "projected": 9.41,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -11716,7 +11716,7 @@
       "opponent": "DEN",
       "points": 4.2,
       "projected": 6.17,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      }
     ]
@@ -11926,14 +11926,14 @@
       "opponent": "LV",
       "points": 8.0,
       "projected": 10.25,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      }
     ]
    },
    "BW": {
     "score": 97.96,
-    "projected": 104.53,
+    "projected": 104.09,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -11965,7 +11965,7 @@
       "opponent": "JAX",
       "points": 4.3,
       "projected": 13.13,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -11998,7 +11998,7 @@
       "opponent": "LV",
       "points": 13.0,
       "projected": 7.76,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12070,7 +12070,7 @@
       "opponent": "LV",
       "points": 7.6,
       "projected": 10.34,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12136,14 +12136,14 @@
       "opponent": "DEN",
       "points": 6.0,
       "projected": 7.95,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      }
     ]
    },
    "WALT": {
     "score": 75.14,
-    "projected": 83.92,
+    "projected": 82.93,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12153,7 +12153,7 @@
       "opponent": "DEN",
       "points": 25.4,
       "projected": 11.93,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12186,7 +12186,7 @@
       "opponent": "None",
       "points": 12.74,
       "projected": 19.49,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12197,7 +12197,7 @@
       "opponent": "JAX",
       "points": 4.0,
       "projected": 10.13,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12324,7 +12324,7 @@
       "opponent": "None",
       "points": 22.88,
       "projected": 14.46,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12335,7 +12335,7 @@
       "opponent": "LV",
       "points": 0.0,
       "projected": 8.03,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12458,7 +12458,7 @@
    },
    "CJ": {
     "score": 118.68,
-    "projected": 119.31,
+    "projected": 118.68,
     "starters": [
      {
       "name": "George Pickens",
@@ -12490,7 +12490,7 @@
       "opponent": "NYG",
       "points": 14.3,
       "projected": 13.34,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12545,7 +12545,7 @@
       "opponent": "NYG",
       "points": 3.0,
       "projected": 8.38,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 92.46,
-    "projected": 124.27,
+    "projected": 123.37,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12606,7 +12606,7 @@
       "opponent": "NYG",
       "points": 6.8,
       "projected": 15.89,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12628,7 +12628,7 @@
       "opponent": "NYG",
       "points": 13.0,
       "projected": 11.12,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      },
      {
@@ -12661,7 +12661,7 @@
       "opponent": "LV",
       "points": 32.9,
       "projected": 17.81,
-      "status": "live",
+      "status": "final",
       "kickoff": 1795382700000
      }
     ]
