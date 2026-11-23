@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 01:40:24 UTC",
-  "last_updated": "2026-11-23T01:40:24.300653+00:00"
+  "updated_at": "2026-11-23 01:50:16 UTC",
+  "last_updated": "2026-11-23T01:50:16.962517+00:00"
  },
  "teams": [
   {
@@ -29,7 +29,7 @@
     143.32,
     123.98,
     138.72,
-    96.46
+    97.46
    ],
    "ranking_points_by_week": [
     5.0,
@@ -517,7 +517,7 @@
     100.28,
     123.54,
     125.52,
-    80.48
+    80.28
    ],
    "ranking_points_by_week": [
     7.0,
@@ -9989,6 +9989,14 @@
      "score": 5.0
     },
     {
+     "name": "Vikings D/ST",
+     "pro_team": "MIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "D/ST",
+     "slot": "D/ST",
+     "score": 5.0
+    },
+    {
      "name": "Jonathan Taylor",
      "pro_team": "IND",
      "fantasy_team": "The Lizard Kings",
@@ -10034,14 +10042,6 @@
      "fantasy_team": "Walt's Warriors",
      "position": "TE",
      "slot": "TE",
-     "score": 4.0
-    },
-    {
-     "name": "Vikings D/ST",
-     "pro_team": "MIN",
-     "fantasy_team": "The Lizard Kings",
-     "position": "D/ST",
-     "slot": "D/ST",
      "score": 4.0
     },
     {
@@ -10157,20 +10157,20 @@
      "score": 1.6
     },
     {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
-     "score": 1.0
-    },
-    {
      "name": "Chargers D/ST",
      "pro_team": "LAC",
      "fantasy_team": "Bada Bing",
      "position": "D/ST",
      "slot": "D/ST",
      "score": 1.0
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 0.8
     },
     {
      "name": "DK Metcalf",
@@ -11461,7 +11461,7 @@
     "FLEX": 0.0
    },
    "BEND": {
-    "RB": 1.0,
+    "RB": 0.8,
     "WR": 29.4,
     "FLEX": 0.7,
     "D/ST": 14.0,
@@ -11493,7 +11493,7 @@
     "WR": 0.0,
     "FLEX": 6.8,
     "K": 13.0,
-    "D/ST": 4.0,
+    "D/ST": 5.0,
     "QB": 24.76
    },
    "Naug": {
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T01:40:24+00:00",
+  "updated_at": "2026-11-23T01:50:16+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11723,7 +11723,7 @@
    },
    "SW": {
     "score": 105.8,
-    "projected": 120.11,
+    "projected": 119.4,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11828,7 +11828,7 @@
    },
    "GAY": {
     "score": 63.7,
-    "projected": 88.44,
+    "projected": 87.21,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 97.96,
-    "projected": 103.33,
+    "projected": 103.07,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12247,8 +12247,8 @@
     ]
    },
    "BEND": {
-    "score": 80.48,
-    "projected": 95.92,
+    "score": 80.28,
+    "projected": 94.95,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12256,7 +12256,7 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "MIN",
-      "points": 1.0,
+      "points": 0.8,
       "projected": 17.63,
       "status": "live",
       "kickoff": 1795396800000
@@ -12353,7 +12353,7 @@
    },
    "BING": {
     "score": 77.4,
-    "projected": 118.0,
+    "projected": 117.61,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12562,8 +12562,8 @@
     ]
    },
    "MBJG": {
-    "score": 96.46,
-    "projected": 123.04,
+    "score": 97.46,
+    "projected": 123.1,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12637,7 +12637,7 @@
       "slot": "D/ST",
       "pro_team": "MIN",
       "opponent": "SF",
-      "points": 4.0,
+      "points": 5.0,
       "projected": 6.63,
       "status": "live",
       "kickoff": 1795396800000
@@ -12668,7 +12668,7 @@
    },
    "Naug": {
     "score": 79.9,
-    "projected": 124.8,
+    "projected": 123.7,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13790,6 +13790,23 @@
      "BING": 77.4,
      "CJ": 118.68,
      "MBJG": 96.46,
+     "Naug": 79.9
+    }
+   },
+   {
+    "t": "2026-11-23T01:50:16+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 85.84,
+     "SW": 105.8,
+     "GAY": 63.7,
+     "BW": 97.96,
+     "SWSH": 79.86,
+     "WALT": 75.14,
+     "BEND": 80.28,
+     "BING": 77.4,
+     "CJ": 118.68,
+     "MBJG": 97.46,
      "Naug": 79.9
     }
    }
