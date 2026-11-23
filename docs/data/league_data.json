@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 03:10:25 UTC",
-  "last_updated": "2026-11-23T03:10:25.083632+00:00"
+  "updated_at": "2026-11-23 03:20:21 UTC",
+  "last_updated": "2026-11-23T03:20:21.871415+00:00"
  },
  "teams": [
   {
@@ -456,7 +456,7 @@
     99.18,
     91.86,
     131.76,
-    80.9
+    82.2
    ],
    "ranking_points_by_week": [
     10.0,
@@ -639,7 +639,7 @@
     132.48,
     99.24,
     124.66,
-    84.6
+    85.6
    ],
    "ranking_points_by_week": [
     6.0,
@@ -9893,6 +9893,14 @@
      "score": 7.6
     },
     {
+     "name": "T.J. Hockenson",
+     "pro_team": "MIN",
+     "fantasy_team": "Bada Bing",
+     "position": "TE",
+     "slot": "TE",
+     "score": 7.3
+    },
+    {
      "name": "Dolphins D/ST",
      "pro_team": "MIA",
      "fantasy_team": "R-R-Radio",
@@ -9965,12 +9973,12 @@
      "score": 6.0
     },
     {
-     "name": "T.J. Hockenson",
+     "name": "Justin Jefferson",
      "pro_team": "MIN",
-     "fantasy_team": "Bada Bing",
-     "position": "TE",
-     "slot": "TE",
-     "score": 6.0
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "slot": "WR",
+     "score": 5.7
     },
     {
      "name": "Rico Dowdle",
@@ -10010,14 +10018,6 @@
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "slot": "RB",
-     "score": 4.7
-    },
-    {
-     "name": "Justin Jefferson",
-     "pro_team": "MIN",
-     "fantasy_team": "The Garbage Dump",
-     "position": "WR",
-     "slot": "WR",
      "score": 4.7
     },
     {
@@ -11474,7 +11474,7 @@
     "FLEX": 9.8,
     "WR": 20.1,
     "QB": 0.0,
-    "TE": 6.0,
+    "TE": 7.3,
     "K": 18.0,
     "D/ST": 1.0
    },
@@ -11497,7 +11497,7 @@
     "QB": 24.76
    },
    "Naug": {
-    "WR": 7.7,
+    "WR": 8.7,
     "RB": 24.5,
     "QB": 0.0,
     "K": 10.0,
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T03:10:25+00:00",
+  "updated_at": "2026-11-23T03:20:21+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11723,7 +11723,7 @@
    },
    "SW": {
     "score": 111.2,
-    "projected": 119.37,
+    "projected": 118.73,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11828,7 +11828,7 @@
    },
    "GAY": {
     "score": 83.84,
-    "projected": 97.96,
+    "projected": 96.86,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 100.16,
-    "projected": 103.23,
+    "projected": 102.99,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12248,7 +12248,7 @@
    },
    "BEND": {
     "score": 83.98,
-    "projected": 92.79,
+    "projected": 92.11,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12352,8 +12352,8 @@
     ]
    },
    "BING": {
-    "score": 80.9,
-    "projected": 118.12,
+    "score": 82.2,
+    "projected": 119.07,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12427,7 +12427,7 @@
       "slot": "TE",
       "pro_team": "MIN",
       "opponent": "SF",
-      "points": 6.0,
+      "points": 7.3,
       "projected": 9.0,
       "status": "live",
       "kickoff": 1795396800000
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 93.46,
-    "projected": 120.55,
+    "projected": 120.33,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12667,8 +12667,8 @@
     ]
    },
    "Naug": {
-    "score": 84.6,
-    "projected": 120.04,
+    "score": 85.6,
+    "projected": 120.06,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12676,7 +12676,7 @@
       "slot": "WR",
       "pro_team": "MIN",
       "opponent": "SF",
-      "points": 4.7,
+      "points": 5.7,
       "projected": 16.38,
       "status": "live",
       "kickoff": 1795396800000
@@ -13927,6 +13927,23 @@
      "CJ": 118.68,
      "MBJG": 93.46,
      "Naug": 84.6
+    }
+   },
+   {
+    "t": "2026-11-23T03:20:21+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 85.84,
+     "SW": 111.2,
+     "GAY": 83.84,
+     "BW": 100.16,
+     "SWSH": 79.86,
+     "WALT": 75.14,
+     "BEND": 83.98,
+     "BING": 82.2,
+     "CJ": 118.68,
+     "MBJG": 93.46,
+     "Naug": 85.6
     }
    }
   ]
