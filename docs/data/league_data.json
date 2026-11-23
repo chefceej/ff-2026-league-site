@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 00:00:28 UTC",
-  "last_updated": "2026-11-23T00:00:28.205637+00:00"
+  "updated_at": "2026-11-23 00:10:16 UTC",
+  "last_updated": "2026-11-23T00:10:16.863376+00:00"
  },
  "teams": [
   {
@@ -29,7 +29,7 @@
     143.32,
     123.98,
     138.72,
-    75.26
+    87.56
    ],
    "ranking_points_by_week": [
     5.0,
@@ -42,7 +42,7 @@
     12.0,
     11.0,
     12.0,
-    6.0
+    9.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -55,7 +55,7 @@
     60.0,
     71.0,
     83.0,
-    89.0
+    92.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -68,10 +68,10 @@
     9.0,
     12.0,
     17.0,
-    17.0
+    19.0
    ],
    "rank": 1,
-   "total_ranking_points": 89.0
+   "total_ranking_points": 92.0
   },
   {
    "team_id": 10,
@@ -103,7 +103,7 @@
     9.0,
     12.0,
     1.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -116,7 +116,7 @@
     65.0,
     77.0,
     78.0,
-    86.0
+    85.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -129,10 +129,10 @@
     14.0,
     18.0,
     12.0,
-    14.0
+    12.0
    ],
    "rank": 2,
-   "total_ranking_points": 86.0
+   "total_ranking_points": 85.0
   },
   {
    "team_id": 2,
@@ -190,7 +190,7 @@
     -1.0,
     0.0,
     4.0,
-    10.0
+    9.0
    ],
    "rank": 3,
    "total_ranking_points": 82.0
@@ -251,7 +251,7 @@
     7.0,
     1.0,
     0.0,
-    4.0
+    3.0
    ],
    "rank": 4,
    "total_ranking_points": 76.0
@@ -312,10 +312,71 @@
     10.0,
     10.0,
     6.0,
-    2.0
+    1.0
    ],
    "rank": 5,
    "total_ranking_points": 74.0
+  },
+  {
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SWSH",
+   "abbrev": "SWSH",
+   "owner": "Matt Stern",
+   "scores_by_week": [
+    84.76,
+    106.42,
+    119.86,
+    90.12,
+    133.0,
+    91.2,
+    108.38,
+    118.56,
+    88.06,
+    118.14,
+    75.46
+   ],
+   "ranking_points_by_week": [
+    1.0,
+    8.0,
+    12.0,
+    4.0,
+    9.0,
+    6.0,
+    7.0,
+    10.0,
+    4.0,
+    7.0,
+    5.0
+   ],
+   "cumulative_points_by_week": [
+    1.0,
+    9.0,
+    21.0,
+    25.0,
+    34.0,
+    40.0,
+    47.0,
+    57.0,
+    61.0,
+    68.0,
+    73.0
+   ],
+   "normalized_by_week": [
+    -6.0,
+    -3.0,
+    2.0,
+    -2.0,
+    0.0,
+    0.0,
+    0.0,
+    6.0,
+    2.0,
+    2.0,
+    0.0
+   ],
+   "rank": 6,
+   "total_ranking_points": 73.0
   },
   {
    "team_id": 1,
@@ -373,68 +434,7 @@
     -1.0,
     -2.0,
     -5.0,
-    0.0
-   ],
-   "rank": 6,
-   "total_ranking_points": 72.0
-  },
-  {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SWSH",
-   "abbrev": "SWSH",
-   "owner": "Matt Stern",
-   "scores_by_week": [
-    84.76,
-    106.42,
-    119.86,
-    90.12,
-    133.0,
-    91.2,
-    108.38,
-    118.56,
-    88.06,
-    118.14,
-    73.86
-   ],
-   "ranking_points_by_week": [
-    1.0,
-    8.0,
-    12.0,
-    4.0,
-    9.0,
-    6.0,
-    7.0,
-    10.0,
-    4.0,
-    7.0,
-    4.0
-   ],
-   "cumulative_points_by_week": [
-    1.0,
-    9.0,
-    21.0,
-    25.0,
-    34.0,
-    40.0,
-    47.0,
-    57.0,
-    61.0,
-    68.0,
-    72.0
-   ],
-   "normalized_by_week": [
-    -6.0,
-    -3.0,
-    2.0,
-    -2.0,
-    0.0,
-    0.0,
-    0.0,
-    6.0,
-    2.0,
-    2.0,
-    0.0
+    -1.0
    ],
    "rank": 7,
    "total_ranking_points": 72.0
@@ -469,7 +469,7 @@
     4.0,
     5.0,
     10.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -482,7 +482,7 @@
     51.0,
     56.0,
     66.0,
-    71.0
+    70.0
    ],
    "normalized_by_week": [
     3.0,
@@ -495,71 +495,10 @@
     0.0,
     -3.0,
     0.0,
-    -1.0
+    -3.0
    ],
    "rank": 8,
-   "total_ranking_points": 71.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    113.5,
-    102.92,
-    109.58,
-    84.76,
-    94.1,
-    86.24
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0,
-    5.0,
-    8.0,
-    3.0,
-    2.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0,
-    41.0,
-    49.0,
-    52.0,
-    54.0,
-    63.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0,
-    -6.0,
-    -2.0,
-    -7.0,
-    -12.0,
-    -9.0
-   ],
-   "rank": 9,
-   "total_ranking_points": 63.0
+   "total_ranking_points": 70.0
   },
   {
    "team_id": 12,
@@ -578,7 +517,7 @@
     100.28,
     123.54,
     125.52,
-    71.6
+    72.04
    ],
    "ranking_points_by_week": [
     7.0,
@@ -617,10 +556,71 @@
     -10.0,
     -8.0,
     -6.0,
-    -9.0
+    -10.0
+   ],
+   "rank": 9,
+   "total_ranking_points": 63.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    113.5,
+    102.92,
+    109.58,
+    84.76,
+    94.1,
+    86.24
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    9.0,
+    5.0,
+    8.0,
+    3.0,
+    2.0,
+    8.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    36.0,
+    41.0,
+    49.0,
+    52.0,
+    54.0,
+    62.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -4.0,
+    -6.0,
+    -2.0,
+    -7.0,
+    -12.0,
+    -11.0
    ],
    "rank": 10,
-   "total_ranking_points": 63.0
+   "total_ranking_points": 62.0
   },
   {
    "team_id": 6,
@@ -652,7 +652,7 @@
     11.0,
     6.0,
     8.0,
-    7.0
+    6.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -665,7 +665,7 @@
     36.0,
     42.0,
     50.0,
-    57.0
+    56.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -678,10 +678,10 @@
     -15.0,
     -17.0,
     -16.0,
-    -15.0
+    -17.0
    ],
    "rank": 11,
-   "total_ranking_points": 57.0
+   "total_ranking_points": 56.0
   },
   {
    "team_id": 11,
@@ -700,7 +700,7 @@
     65.76,
     77.98,
     105.86,
-    47.3
+    48.3
    ],
    "ranking_points_by_week": [
     3.0,
@@ -739,7 +739,7 @@
     -5.0,
     -12.0,
     -14.0,
-    -19.0
+    -20.0
    ],
    "rank": 12,
    "total_ranking_points": 53.0
@@ -9437,6 +9437,14 @@
      "score": 35.9
     },
     {
+     "name": "Jonah Coleman",
+     "pro_team": "DEN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "slot": "RB",
+     "score": 31.8
+    },
+    {
      "name": "Chuba Hubbard",
      "pro_team": "CAR",
      "fantasy_team": "Bada Bing",
@@ -9483,14 +9491,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 22.6
-    },
-    {
-     "name": "Jonah Coleman",
-     "pro_team": "DEN",
-     "fantasy_team": "The Lizard Kings",
-     "position": "RB",
-     "slot": "RB",
-     "score": 22.5
     },
     {
      "name": "Chargers TQB",
@@ -9618,7 +9618,7 @@
      "fantasy_team": "Remeber Bendel",
      "position": "QB",
      "slot": "QB",
-     "score": 15.0
+     "score": 15.44
     },
     {
      "name": "Chris Olave",
@@ -9765,6 +9765,14 @@
      "score": 10.3
     },
     {
+     "name": "Cam Little",
+     "pro_team": "JAX",
+     "fantasy_team": "The Lizard Kings",
+     "position": "K",
+     "slot": "K",
+     "score": 10.0
+    },
+    {
      "name": "Brandon Aubrey",
      "pro_team": "DAL",
      "fantasy_team": "The Garbage Dump",
@@ -9853,19 +9861,19 @@
      "score": 7.0
     },
     {
+     "name": "Wil Lutz",
+     "pro_team": "DEN",
+     "fantasy_team": "I am gay ",
+     "position": "K",
+     "slot": "K",
+     "score": 7.0
+    },
+    {
      "name": "Chiefs D/ST",
      "pro_team": "KC",
      "fantasy_team": "Swishington Football Team",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 7.0
-    },
-    {
-     "name": "Cam Little",
-     "pro_team": "JAX",
-     "fantasy_team": "The Lizard Kings",
-     "position": "K",
-     "slot": "K",
      "score": 7.0
     },
     {
@@ -9890,14 +9898,6 @@
      "fantasy_team": "I am gay ",
      "position": "D/ST",
      "slot": "D/ST",
-     "score": 6.0
-    },
-    {
-     "name": "Wil Lutz",
-     "pro_team": "DEN",
-     "fantasy_team": "I am gay ",
-     "position": "K",
-     "slot": "K",
      "score": 6.0
     },
     {
@@ -10109,6 +10109,14 @@
      "score": 1.6
     },
     {
+     "name": "Tre Tucker",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "slot": "FLEX",
+     "score": 1.6
+    },
+    {
      "name": "Chargers D/ST",
      "pro_team": "LAC",
      "fantasy_team": "Bada Bing",
@@ -10186,14 +10194,6 @@
      "fantasy_team": "Swishington Football Team",
      "position": "K",
      "slot": "K",
-     "score": 0.0
-    },
-    {
-     "name": "Tre Tucker",
-     "pro_team": "LV",
-     "fantasy_team": "Swishington Football Team",
-     "position": "WR",
-     "slot": "FLEX",
      "score": 0.0
     },
     {
@@ -11431,7 +11431,7 @@
     "QB": 0.0,
     "FLEX": 1.8,
     "D/ST": 6.0,
-    "K": 6.0
+    "K": 7.0
    },
    "BW": {
     "RB": 25.3,
@@ -11449,7 +11449,7 @@
     "D/ST": 7.0,
     "K": 0.0,
     "TE": 3.5,
-    "FLEX": 0.0
+    "FLEX": 1.6
    },
    "WALT": {
     "RB": 40.7,
@@ -11466,7 +11466,7 @@
     "FLEX": 0.7,
     "D/ST": 14.0,
     "K": 6.0,
-    "QB": 15.0,
+    "QB": 15.44,
     "TE": 6.5
    },
    "BING": {
@@ -11488,11 +11488,11 @@
     "K": 11.0
    },
    "MBJG": {
-    "RB": 27.2,
+    "RB": 36.5,
     "TE": 10.3,
     "WR": 0.0,
     "FLEX": 6.0,
-    "K": 7.0,
+    "K": 10.0,
     "D/ST": 0.0,
     "QB": 24.76
    },
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T00:00:28+00:00",
+  "updated_at": "2026-11-23T00:10:16+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11618,7 +11618,7 @@
    },
    "SACK": {
     "score": 80.54,
-    "projected": 113.7,
+    "projected": 113.03,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -11827,8 +11827,8 @@
     ]
    },
    "GAY": {
-    "score": 47.3,
-    "projected": 77.63,
+    "score": 48.3,
+    "projected": 77.98,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11924,7 +11924,7 @@
       "slot": "K",
       "pro_team": "DEN",
       "opponent": "LV",
-      "points": 6.0,
+      "points": 7.0,
       "projected": 10.25,
       "status": "live",
       "kickoff": 1795382700000
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 88.36,
-    "projected": 97.88,
+    "projected": 97.54,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12037,8 +12037,8 @@
     ]
    },
    "SWSH": {
-    "score": 73.86,
-    "projected": 86.09,
+    "score": 75.46,
+    "projected": 86.53,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12134,7 +12134,7 @@
       "slot": "FLEX",
       "pro_team": "LV",
       "opponent": "DEN",
-      "points": 0.0,
+      "points": 1.6,
       "projected": 7.95,
       "status": "live",
       "kickoff": 1795382700000
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 65.06,
-    "projected": 81.64,
+    "projected": 80.51,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12247,8 +12247,8 @@
     ]
    },
    "BEND": {
-    "score": 71.6,
-    "projected": 93.8,
+    "score": 72.04,
+    "projected": 92.82,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12322,7 +12322,7 @@
       "slot": "QB",
       "pro_team": "LV",
       "opponent": "None",
-      "points": 15.0,
+      "points": 15.44,
       "projected": 14.46,
       "status": "live",
       "kickoff": 1795382700000
@@ -12458,7 +12458,7 @@
    },
    "CJ": {
     "score": 114.98,
-    "projected": 118.79,
+    "projected": 118.56,
     "starters": [
      {
       "name": "George Pickens",
@@ -12562,8 +12562,8 @@
     ]
    },
    "MBJG": {
-    "score": 75.26,
-    "projected": 115.59,
+    "score": 87.56,
+    "projected": 126.42,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12626,7 +12626,7 @@
       "slot": "K",
       "pro_team": "JAX",
       "opponent": "NYG",
-      "points": 7.0,
+      "points": 10.0,
       "projected": 11.12,
       "status": "live",
       "kickoff": 1795382700000
@@ -12659,7 +12659,7 @@
       "slot": "RB",
       "pro_team": "DEN",
       "opponent": "LV",
-      "points": 22.5,
+      "points": 31.8,
       "projected": 17.81,
       "status": "live",
       "kickoff": 1795382700000
@@ -13671,6 +13671,23 @@
      "BING": 74.9,
      "CJ": 114.98,
      "MBJG": 75.26,
+     "Naug": 76.9
+    }
+   },
+   {
+    "t": "2026-11-23T00:10:16+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 80.54,
+     "SW": 105.8,
+     "GAY": 48.3,
+     "BW": 88.36,
+     "SWSH": 75.46,
+     "WALT": 65.06,
+     "BEND": 72.04,
+     "BING": 74.9,
+     "CJ": 114.98,
+     "MBJG": 87.56,
      "Naug": 76.9
     }
    }
