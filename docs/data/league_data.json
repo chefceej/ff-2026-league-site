@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 03:30:21 UTC",
-  "last_updated": "2026-11-23T03:30:21.342809+00:00"
+  "updated_at": "2026-11-23 03:40:16 UTC",
+  "last_updated": "2026-11-23T03:40:16.811471+00:00"
  },
  "teams": [
   {
@@ -517,7 +517,7 @@
     100.28,
     123.54,
     125.52,
-    83.98
+    84.28
    ],
    "ranking_points_by_week": [
     7.0,
@@ -700,7 +700,7 @@
     65.76,
     77.98,
     105.86,
-    84.12
+    84.84
    ],
    "ranking_points_by_week": [
     3.0,
@@ -9546,7 +9546,7 @@
      "fantasy_team": "I am gay ",
      "position": "QB",
      "slot": "QB",
-     "score": 19.32
+     "score": 20.04
     },
     {
      "name": "DJ Moore",
@@ -10013,20 +10013,20 @@
      "score": 5.0
     },
     {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 4.8
+    },
+    {
      "name": "Jonathan Taylor",
      "pro_team": "IND",
      "fantasy_team": "The Lizard Kings",
      "position": "RB",
      "slot": "RB",
      "score": 4.7
-    },
-    {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
-     "score": 4.5
     },
     {
      "name": "Cam Skattebo",
@@ -11428,7 +11428,7 @@
     "WR": 15.0,
     "RB": 18.5,
     "TE": 15.5,
-    "QB": 19.32,
+    "QB": 20.04,
     "FLEX": 1.8,
     "D/ST": 6.0,
     "K": 8.0
@@ -11461,7 +11461,7 @@
     "FLEX": 0.0
    },
    "BEND": {
-    "RB": 4.5,
+    "RB": 4.8,
     "WR": 29.4,
     "FLEX": 0.7,
     "D/ST": 14.0,
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T03:30:21+00:00",
+  "updated_at": "2026-11-23T03:40:16+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11723,7 +11723,7 @@
    },
    "SW": {
     "score": 111.2,
-    "projected": 117.67,
+    "projected": 116.64,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11827,8 +11827,8 @@
     ]
    },
    "GAY": {
-    "score": 84.12,
-    "projected": 95.31,
+    "score": 84.84,
+    "projected": 94.24,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11869,7 +11869,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 19.32,
+      "points": 20.04,
       "projected": 17.58,
       "status": "live",
       "kickoff": 1795396800000
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 100.16,
-    "projected": 102.59,
+    "projected": 102.2,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12247,8 +12247,8 @@
     ]
    },
    "BEND": {
-    "score": 83.98,
-    "projected": 90.96,
+    "score": 84.28,
+    "projected": 90.15,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12256,7 +12256,7 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "MIN",
-      "points": 4.5,
+      "points": 4.8,
       "projected": 17.63,
       "status": "live",
       "kickoff": 1795396800000
@@ -12353,7 +12353,7 @@
    },
    "BING": {
     "score": 82.2,
-    "projected": 118.48,
+    "projected": 117.91,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 93.46,
-    "projected": 119.97,
+    "projected": 119.61,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12668,7 +12668,7 @@
    },
    "Naug": {
     "score": 87.7,
-    "projected": 120.53,
+    "projected": 118.93,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13957,6 +13957,23 @@
      "SWSH": 79.86,
      "WALT": 75.14,
      "BEND": 83.98,
+     "BING": 82.2,
+     "CJ": 118.68,
+     "MBJG": 93.46,
+     "Naug": 87.7
+    }
+   },
+   {
+    "t": "2026-11-23T03:40:16+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 85.84,
+     "SW": 111.2,
+     "GAY": 84.84,
+     "BW": 100.16,
+     "SWSH": 79.86,
+     "WALT": 75.14,
+     "BEND": 84.28,
      "BING": 82.2,
      "CJ": 118.68,
      "MBJG": 93.46,
