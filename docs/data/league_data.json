@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 02:40:27 UTC",
-  "last_updated": "2026-11-23T02:40:27.194797+00:00"
+  "updated_at": "2026-11-23 02:50:21 UTC",
+  "last_updated": "2026-11-23T02:50:21.372481+00:00"
  },
  "teams": [
   {
@@ -456,7 +456,7 @@
     99.18,
     91.86,
     131.76,
-    80.3
+    80.9
    ],
    "ranking_points_by_week": [
     10.0,
@@ -517,7 +517,7 @@
     100.28,
     123.54,
     125.52,
-    82.48
+    82.78
    ],
    "ranking_points_by_week": [
     7.0,
@@ -639,7 +639,7 @@
     65.76,
     77.98,
     105.86,
-    83.44
+    83.84
    ],
    "ranking_points_by_week": [
     3.0,
@@ -9554,7 +9554,7 @@
      "fantasy_team": "I am gay ",
      "position": "QB",
      "slot": "QB",
-     "score": 18.64
+     "score": 19.04
     },
     {
      "name": "Tyler Bass",
@@ -9965,6 +9965,14 @@
      "score": 6.0
     },
     {
+     "name": "T.J. Hockenson",
+     "pro_team": "MIN",
+     "fantasy_team": "Bada Bing",
+     "position": "TE",
+     "slot": "TE",
+     "score": 6.0
+    },
+    {
      "name": "Rico Dowdle",
      "pro_team": "PIT",
      "fantasy_team": "JSN Derulo ",
@@ -9978,14 +9986,6 @@
      "fantasy_team": "Bada Bing",
      "position": "WR",
      "slot": "WR",
-     "score": 5.4
-    },
-    {
-     "name": "T.J. Hockenson",
-     "pro_team": "MIN",
-     "fantasy_team": "Bada Bing",
-     "position": "TE",
-     "slot": "TE",
      "score": 5.4
     },
     {
@@ -10085,6 +10085,14 @@
      "score": 3.5
     },
     {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "slot": "RB",
+     "score": 3.3
+    },
+    {
      "name": "Chase McLaughlin",
      "pro_team": "TB",
      "fantasy_team": "Team Made of Glass",
@@ -10098,14 +10106,6 @@
      "fantasy_team": "Walt's Warriors",
      "position": "K",
      "slot": "K",
-     "score": 3.0
-    },
-    {
-     "name": "Christian McCaffrey",
-     "pro_team": "SF",
-     "fantasy_team": "Remeber Bendel",
-     "position": "RB",
-     "slot": "RB",
      "score": 3.0
     },
     {
@@ -11428,7 +11428,7 @@
     "WR": 15.0,
     "RB": 18.5,
     "TE": 15.5,
-    "QB": 18.64,
+    "QB": 19.04,
     "FLEX": 1.8,
     "D/ST": 6.0,
     "K": 8.0
@@ -11461,7 +11461,7 @@
     "FLEX": 0.0
    },
    "BEND": {
-    "RB": 3.0,
+    "RB": 3.3,
     "WR": 29.4,
     "FLEX": 0.7,
     "D/ST": 14.0,
@@ -11474,7 +11474,7 @@
     "FLEX": 9.8,
     "WR": 20.1,
     "QB": 0.0,
-    "TE": 5.4,
+    "TE": 6.0,
     "K": 18.0,
     "D/ST": 1.0
    },
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T02:40:27+00:00",
+  "updated_at": "2026-11-23T02:50:21+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11723,7 +11723,7 @@
    },
    "SW": {
     "score": 111.2,
-    "projected": 119.89,
+    "projected": 119.53,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11827,8 +11827,8 @@
     ]
    },
    "GAY": {
-    "score": 83.44,
-    "projected": 98.46,
+    "score": 83.84,
+    "projected": 98.24,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11869,7 +11869,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 18.64,
+      "points": 19.04,
       "projected": 17.58,
       "status": "live",
       "kickoff": 1795396800000
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 100.16,
-    "projected": 103.42,
+    "projected": 103.29,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12247,8 +12247,8 @@
     ]
    },
    "BEND": {
-    "score": 82.48,
-    "projected": 91.85,
+    "score": 82.78,
+    "projected": 91.77,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12256,7 +12256,7 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "MIN",
-      "points": 3.0,
+      "points": 3.3,
       "projected": 17.63,
       "status": "live",
       "kickoff": 1795396800000
@@ -12352,8 +12352,8 @@
     ]
    },
    "BING": {
-    "score": 80.3,
-    "projected": 117.8,
+    "score": 80.9,
+    "projected": 118.21,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12427,7 +12427,7 @@
       "slot": "TE",
       "pro_team": "MIN",
       "opponent": "SF",
-      "points": 5.4,
+      "points": 6.0,
       "projected": 9.0,
       "status": "live",
       "kickoff": 1795396800000
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 93.46,
-    "projected": 120.73,
+    "projected": 120.61,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12668,7 +12668,7 @@
    },
    "Naug": {
     "score": 84.6,
-    "projected": 120.84,
+    "projected": 120.29,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13890,6 +13890,23 @@
      "WALT": 75.14,
      "BEND": 82.48,
      "BING": 80.3,
+     "CJ": 118.68,
+     "MBJG": 93.46,
+     "Naug": 84.6
+    }
+   },
+   {
+    "t": "2026-11-23T02:50:21+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 85.84,
+     "SW": 111.2,
+     "GAY": 83.84,
+     "BW": 100.16,
+     "SWSH": 79.86,
+     "WALT": 75.14,
+     "BEND": 82.78,
+     "BING": 80.9,
      "CJ": 118.68,
      "MBJG": 93.46,
      "Naug": 84.6
