@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 04:20:25 UTC",
-  "last_updated": "2026-11-23T04:20:25.613728+00:00"
+  "updated_at": "2026-11-23 04:30:24 UTC",
+  "last_updated": "2026-11-23T04:30:24.878296+00:00"
  },
  "teams": [
   {
@@ -700,7 +700,7 @@
     65.76,
     77.98,
     105.86,
-    88.6
+    88.5
    ],
    "ranking_points_by_week": [
     3.0,
@@ -9509,20 +9509,20 @@
      "score": 22.44
     },
     {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "I am gay ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 22.4
-    },
-    {
      "name": "Travis Kelce",
      "pro_team": "KC",
      "fantasy_team": "The Garbage Dump",
      "position": "TE",
      "slot": "TE",
      "score": 22.4
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 22.3
     },
     {
      "name": "Emmett Johnson",
@@ -11428,7 +11428,7 @@
     "WR": 15.0,
     "RB": 18.5,
     "TE": 16.9,
-    "QB": 22.4,
+    "QB": 22.3,
     "FLEX": 1.8,
     "D/ST": 6.0,
     "K": 8.0
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T04:20:25+00:00",
+  "updated_at": "2026-11-23T04:30:24+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11723,7 +11723,7 @@
    },
    "SW": {
     "score": 112.8,
-    "projected": 113.35,
+    "projected": 112.8,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11827,8 +11827,8 @@
     ]
    },
    "GAY": {
-    "score": 88.6,
-    "projected": 89.54,
+    "score": 88.5,
+    "projected": 88.5,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11869,7 +11869,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 22.4,
+      "points": 22.3,
       "projected": 17.58,
       "status": "live",
       "kickoff": 1795396800000
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 103.26,
-    "projected": 103.46,
+    "projected": 103.26,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12248,7 +12248,7 @@
    },
    "BEND": {
     "score": 92.68,
-    "projected": 93.27,
+    "projected": 92.68,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12353,7 +12353,7 @@
    },
    "BING": {
     "score": 83.4,
-    "projected": 116.42,
+    "projected": 116.12,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 92.46,
-    "projected": 116.96,
+    "projected": 116.74,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12668,7 +12668,7 @@
    },
    "Naug": {
     "score": 93.3,
-    "projected": 117.0,
+    "projected": 116.16,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -14038,6 +14038,23 @@
      "SACK": 85.84,
      "SW": 112.8,
      "GAY": 88.6,
+     "BW": 103.26,
+     "SWSH": 79.86,
+     "WALT": 75.14,
+     "BEND": 92.68,
+     "BING": 83.4,
+     "CJ": 118.68,
+     "MBJG": 92.46,
+     "Naug": 93.3
+    }
+   },
+   {
+    "t": "2026-11-23T04:30:24+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 85.84,
+     "SW": 112.8,
+     "GAY": 88.5,
      "BW": 103.26,
      "SWSH": 79.86,
      "WALT": 75.14,
