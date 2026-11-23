@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 03:20:21 UTC",
-  "last_updated": "2026-11-23T03:20:21.871415+00:00"
+  "updated_at": "2026-11-23 03:30:21 UTC",
+  "last_updated": "2026-11-23T03:30:21.342809+00:00"
  },
  "teams": [
   {
@@ -103,7 +103,7 @@
     9.0,
     12.0,
     1.0,
-    7.0
+    6.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -116,7 +116,7 @@
     65.0,
     77.0,
     78.0,
-    85.0
+    84.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -129,10 +129,10 @@
     14.0,
     18.0,
     12.0,
-    13.0
+    12.0
    ],
    "rank": 2,
-   "total_ranking_points": 85.0
+   "total_ranking_points": 84.0
   },
   {
    "team_id": 2,
@@ -530,7 +530,7 @@
     6.0,
     10.0,
     9.0,
-    5.0
+    4.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -543,7 +543,7 @@
     41.0,
     51.0,
     60.0,
-    65.0
+    64.0
    ],
    "normalized_by_week": [
     0.0,
@@ -556,10 +556,10 @@
     -10.0,
     -8.0,
     -6.0,
-    -7.0
+    -8.0
    ],
    "rank": 9,
-   "total_ranking_points": 65.0
+   "total_ranking_points": 64.0
   },
   {
    "team_id": 7,
@@ -591,7 +591,7 @@
     8.0,
     3.0,
     2.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     11.0,
@@ -604,7 +604,7 @@
     49.0,
     52.0,
     54.0,
-    62.0
+    61.0
    ],
    "normalized_by_week": [
     4.0,
@@ -617,10 +617,10 @@
     -2.0,
     -7.0,
     -12.0,
-    -10.0
+    -11.0
    ],
    "rank": 10,
-   "total_ranking_points": 62.0
+   "total_ranking_points": 61.0
   },
   {
    "team_id": 6,
@@ -639,7 +639,7 @@
     132.48,
     99.24,
     124.66,
-    85.6
+    87.7
    ],
    "ranking_points_by_week": [
     6.0,
@@ -652,7 +652,7 @@
     11.0,
     6.0,
     8.0,
-    6.0
+    8.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -665,7 +665,7 @@
     36.0,
     42.0,
     50.0,
-    56.0
+    58.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -678,10 +678,10 @@
     -15.0,
     -17.0,
     -16.0,
-    -16.0
+    -14.0
    ],
    "rank": 11,
-   "total_ranking_points": 56.0
+   "total_ranking_points": 58.0
   },
   {
    "team_id": 11,
@@ -700,7 +700,7 @@
     65.76,
     77.98,
     105.86,
-    83.84
+    84.12
    ],
    "ranking_points_by_week": [
     3.0,
@@ -713,7 +713,7 @@
     2.0,
     1.0,
     5.0,
-    4.0
+    5.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -726,7 +726,7 @@
     46.0,
     47.0,
     52.0,
-    56.0
+    57.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -739,10 +739,10 @@
     -5.0,
     -12.0,
     -14.0,
-    -16.0
+    -15.0
    ],
    "rank": 12,
-   "total_ranking_points": 56.0
+   "total_ranking_points": 57.0
   }
  ],
  "top_players_by_week": [
@@ -9541,20 +9541,20 @@
      "score": 20.3
     },
     {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 19.32
+    },
+    {
      "name": "DJ Moore",
      "pro_team": "BUF",
      "fantasy_team": "Team Made of Glass",
      "position": "WR",
      "slot": "WR",
      "score": 19.1
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "I am gay ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 19.04
     },
     {
      "name": "Tyler Bass",
@@ -9861,6 +9861,14 @@
      "score": 8.0
     },
     {
+     "name": "Justin Jefferson",
+     "pro_team": "MIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "slot": "WR",
+     "score": 7.8
+    },
+    {
      "name": "Ollie Gordon II",
      "pro_team": "MIA",
      "fantasy_team": "Team Made of Glass",
@@ -9971,14 +9979,6 @@
      "position": "K",
      "slot": "K",
      "score": 6.0
-    },
-    {
-     "name": "Justin Jefferson",
-     "pro_team": "MIN",
-     "fantasy_team": "The Garbage Dump",
-     "position": "WR",
-     "slot": "WR",
-     "score": 5.7
     },
     {
      "name": "Rico Dowdle",
@@ -11428,7 +11428,7 @@
     "WR": 15.0,
     "RB": 18.5,
     "TE": 15.5,
-    "QB": 19.04,
+    "QB": 19.32,
     "FLEX": 1.8,
     "D/ST": 6.0,
     "K": 8.0
@@ -11497,7 +11497,7 @@
     "QB": 24.76
    },
    "Naug": {
-    "WR": 8.7,
+    "WR": 10.8,
     "RB": 24.5,
     "QB": 0.0,
     "K": 10.0,
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T03:20:21+00:00",
+  "updated_at": "2026-11-23T03:30:21+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11723,7 +11723,7 @@
    },
    "SW": {
     "score": 111.2,
-    "projected": 118.73,
+    "projected": 117.67,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11827,8 +11827,8 @@
     ]
    },
    "GAY": {
-    "score": 83.84,
-    "projected": 96.86,
+    "score": 84.12,
+    "projected": 95.31,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11869,7 +11869,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 19.04,
+      "points": 19.32,
       "projected": 17.58,
       "status": "live",
       "kickoff": 1795396800000
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 100.16,
-    "projected": 102.99,
+    "projected": 102.59,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12248,7 +12248,7 @@
    },
    "BEND": {
     "score": 83.98,
-    "projected": 92.11,
+    "projected": 90.96,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12353,7 +12353,7 @@
    },
    "BING": {
     "score": 82.2,
-    "projected": 119.07,
+    "projected": 118.48,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 93.46,
-    "projected": 120.33,
+    "projected": 119.97,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12667,8 +12667,8 @@
     ]
    },
    "Naug": {
-    "score": 85.6,
-    "projected": 120.06,
+    "score": 87.7,
+    "projected": 120.53,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12676,7 +12676,7 @@
       "slot": "WR",
       "pro_team": "MIN",
       "opponent": "SF",
-      "points": 5.7,
+      "points": 7.8,
       "projected": 16.38,
       "status": "live",
       "kickoff": 1795396800000
@@ -13944,6 +13944,23 @@
      "CJ": 118.68,
      "MBJG": 93.46,
      "Naug": 85.6
+    }
+   },
+   {
+    "t": "2026-11-23T03:30:21+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 85.84,
+     "SW": 111.2,
+     "GAY": 84.12,
+     "BW": 100.16,
+     "SWSH": 79.86,
+     "WALT": 75.14,
+     "BEND": 83.98,
+     "BING": 82.2,
+     "CJ": 118.68,
+     "MBJG": 93.46,
+     "Naug": 87.7
     }
    }
   ]
