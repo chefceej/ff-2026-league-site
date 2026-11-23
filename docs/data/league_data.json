@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-23 04:10:16 UTC",
-  "last_updated": "2026-11-23T04:10:16.019782+00:00"
+  "updated_at": "2026-11-23 04:20:25 UTC",
+  "last_updated": "2026-11-23T04:20:25.613728+00:00"
  },
  "teams": [
   {
@@ -42,7 +42,7 @@
     12.0,
     11.0,
     12.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -55,7 +55,7 @@
     60.0,
     71.0,
     83.0,
-    91.0
+    90.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -68,10 +68,10 @@
     9.0,
     12.0,
     17.0,
-    19.0
+    18.0
    ],
    "rank": 1,
-   "total_ranking_points": 91.0
+   "total_ranking_points": 90.0
   },
   {
    "team_id": 2,
@@ -334,7 +334,7 @@
     60.2,
     103.48,
     103.02,
-    111.6
+    112.8
    ],
    "ranking_points_by_week": [
     9.0,
@@ -530,7 +530,7 @@
     6.0,
     10.0,
     9.0,
-    9.0
+    8.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -543,7 +543,7 @@
     41.0,
     51.0,
     60.0,
-    69.0
+    68.0
    ],
    "normalized_by_week": [
     0.0,
@@ -556,10 +556,71 @@
     -10.0,
     -8.0,
     -6.0,
-    -3.0
+    -4.0
    ],
    "rank": 9,
-   "total_ranking_points": 69.0
+   "total_ranking_points": 68.0
+  },
+  {
+   "team_id": 6,
+   "team_name": "The Garbage Dump",
+   "team_abbrev": "Naug",
+   "abbrev": "Naug",
+   "owner": "John Naughton",
+   "scores_by_week": [
+    104.66,
+    80.28,
+    81.58,
+    89.62,
+    92.0,
+    82.12,
+    97.38,
+    132.48,
+    99.24,
+    124.66,
+    93.3
+   ],
+   "ranking_points_by_week": [
+    6.0,
+    5.0,
+    1.0,
+    3.0,
+    4.0,
+    2.0,
+    4.0,
+    11.0,
+    6.0,
+    8.0,
+    9.0
+   ],
+   "cumulative_points_by_week": [
+    6.0,
+    11.0,
+    12.0,
+    15.0,
+    19.0,
+    21.0,
+    25.0,
+    36.0,
+    42.0,
+    50.0,
+    59.0
+   ],
+   "normalized_by_week": [
+    -1.0,
+    -1.0,
+    -7.0,
+    -12.0,
+    -15.0,
+    -19.0,
+    -22.0,
+    -15.0,
+    -17.0,
+    -16.0,
+    -13.0
+   ],
+   "rank": 10,
+   "total_ranking_points": 59.0
   },
   {
    "team_id": 7,
@@ -619,7 +680,7 @@
     -12.0,
     -13.0
    ],
-   "rank": 10,
+   "rank": 11,
    "total_ranking_points": 59.0
   },
   {
@@ -639,7 +700,7 @@
     65.76,
     77.98,
     105.86,
-    88.12
+    88.6
    ],
    "ranking_points_by_week": [
     3.0,
@@ -680,69 +741,8 @@
     -14.0,
     -14.0
    ],
-   "rank": 11,
-   "total_ranking_points": 58.0
-  },
-  {
-   "team_id": 6,
-   "team_name": "The Garbage Dump",
-   "team_abbrev": "Naug",
-   "abbrev": "Naug",
-   "owner": "John Naughton",
-   "scores_by_week": [
-    104.66,
-    80.28,
-    81.58,
-    89.62,
-    92.0,
-    82.12,
-    97.38,
-    132.48,
-    99.24,
-    124.66,
-    92.3
-   ],
-   "ranking_points_by_week": [
-    6.0,
-    5.0,
-    1.0,
-    3.0,
-    4.0,
-    2.0,
-    4.0,
-    11.0,
-    6.0,
-    8.0,
-    7.0
-   ],
-   "cumulative_points_by_week": [
-    6.0,
-    11.0,
-    12.0,
-    15.0,
-    19.0,
-    21.0,
-    25.0,
-    36.0,
-    42.0,
-    50.0,
-    57.0
-   ],
-   "normalized_by_week": [
-    -1.0,
-    -1.0,
-    -7.0,
-    -12.0,
-    -15.0,
-    -19.0,
-    -22.0,
-    -15.0,
-    -17.0,
-    -16.0,
-    -15.0
-   ],
    "rank": 12,
-   "total_ranking_points": 57.0
+   "total_ranking_points": 58.0
   }
  ],
  "top_players_by_week": [
@@ -9509,6 +9509,14 @@
      "score": 22.44
     },
     {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "QB",
+     "slot": "QB",
+     "score": 22.4
+    },
+    {
      "name": "Travis Kelce",
      "pro_team": "KC",
      "fantasy_team": "The Garbage Dump",
@@ -9523,14 +9531,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 22.3
-    },
-    {
-     "name": "49ers TQB",
-     "pro_team": "SF",
-     "fantasy_team": "I am gay ",
-     "position": "QB",
-     "slot": "QB",
-     "score": 21.92
     },
     {
      "name": "Texans TQB",
@@ -9957,6 +9957,14 @@
      "score": 6.5
     },
     {
+     "name": "Deebo Samuel Sr.",
+     "pro_team": "SF",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "slot": "WR",
+     "score": 6.2
+    },
+    {
      "name": "Jets D/ST",
      "pro_team": "NYJ",
      "fantasy_team": "I am gay ",
@@ -10011,14 +10019,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 5.3
-    },
-    {
-     "name": "Deebo Samuel Sr.",
-     "pro_team": "SF",
-     "fantasy_team": "The Garbage Dump",
-     "position": "WR",
-     "slot": "WR",
-     "score": 5.2
     },
     {
      "name": "Will Reichard",
@@ -10165,6 +10165,14 @@
      "score": 2.3
     },
     {
+     "name": "Kaelon Black",
+     "pro_team": "SF",
+     "fantasy_team": "3 Inches of Disappointment ",
+     "position": "RB",
+     "slot": "RB",
+     "score": 2.0
+    },
+    {
      "name": "Kyle Monangai",
      "pro_team": "CHI",
      "fantasy_team": "I am gay ",
@@ -10187,14 +10195,6 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 1.0
-    },
-    {
-     "name": "Kaelon Black",
-     "pro_team": "SF",
-     "fantasy_team": "3 Inches of Disappointment ",
-     "position": "RB",
-     "slot": "RB",
-     "score": 0.8
     },
     {
      "name": "DK Metcalf",
@@ -11417,7 +11417,7 @@
    },
    "SW": {
     "WR": 37.1,
-    "RB": 17.9,
+    "RB": 19.1,
     "FLEX": 6.6,
     "QB": 35.9,
     "K": 5.0,
@@ -11428,7 +11428,7 @@
     "WR": 15.0,
     "RB": 18.5,
     "TE": 16.9,
-    "QB": 21.92,
+    "QB": 22.4,
     "FLEX": 1.8,
     "D/ST": 6.0,
     "K": 8.0
@@ -11497,7 +11497,7 @@
     "QB": 24.76
    },
    "Naug": {
-    "WR": 15.4,
+    "WR": 16.4,
     "RB": 24.5,
     "QB": 0.0,
     "K": 10.0,
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-23T04:10:16+00:00",
+  "updated_at": "2026-11-23T04:20:25+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11722,8 +11722,8 @@
     ]
    },
    "SW": {
-    "score": 111.6,
-    "projected": 113.65,
+    "score": 112.8,
+    "projected": 113.35,
     "starters": [
      {
       "name": "CeeDee Lamb",
@@ -11786,7 +11786,7 @@
       "slot": "RB",
       "pro_team": "SF",
       "opponent": "MIN",
-      "points": 0.8,
+      "points": 2.0,
       "projected": 6.0,
       "status": "live",
       "kickoff": 1795396800000
@@ -11827,8 +11827,8 @@
     ]
    },
    "GAY": {
-    "score": 88.12,
-    "projected": 91.66,
+    "score": 88.6,
+    "projected": 89.54,
     "starters": [
      {
       "name": "Amon-Ra St. Brown",
@@ -11869,7 +11869,7 @@
       "slot": "QB",
       "pro_team": "SF",
       "opponent": "None",
-      "points": 21.92,
+      "points": 22.4,
       "projected": 17.58,
       "status": "live",
       "kickoff": 1795396800000
@@ -11933,7 +11933,7 @@
    },
    "BW": {
     "score": 103.26,
-    "projected": 104.03,
+    "projected": 103.46,
     "starters": [
      {
       "name": "Javonte Williams",
@@ -12248,7 +12248,7 @@
    },
    "BEND": {
     "score": 92.68,
-    "projected": 94.89,
+    "projected": 93.27,
     "starters": [
      {
       "name": "Christian McCaffrey",
@@ -12353,7 +12353,7 @@
    },
    "BING": {
     "score": 83.4,
-    "projected": 117.25,
+    "projected": 116.42,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 92.46,
-    "projected": 117.57,
+    "projected": 116.96,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12667,8 +12667,8 @@
     ]
    },
    "Naug": {
-    "score": 92.3,
-    "projected": 118.31,
+    "score": 93.3,
+    "projected": 117.0,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12731,7 +12731,7 @@
       "slot": "WR",
       "pro_team": "SF",
       "opponent": "MIN",
-      "points": 5.2,
+      "points": 6.2,
       "projected": 8.79,
       "status": "live",
       "kickoff": 1795396800000
@@ -14029,6 +14029,23 @@
      "CJ": 118.68,
      "MBJG": 92.46,
      "Naug": 92.3
+    }
+   },
+   {
+    "t": "2026-11-23T04:20:25+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 85.84,
+     "SW": 112.8,
+     "GAY": 88.6,
+     "BW": 103.26,
+     "SWSH": 79.86,
+     "WALT": 75.14,
+     "BEND": 92.68,
+     "BING": 83.4,
+     "CJ": 118.68,
+     "MBJG": 92.46,
+     "Naug": 93.3
     }
    }
   ]
