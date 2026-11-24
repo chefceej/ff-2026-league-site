@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-24 03:20:18 UTC",
-  "last_updated": "2026-11-24T03:20:18.493972+00:00"
+  "updated_at": "2026-11-24 03:30:22 UTC",
+  "last_updated": "2026-11-24T03:30:22.036574+00:00"
  },
  "teams": [
   {
@@ -273,7 +273,7 @@
     99.18,
     91.86,
     131.76,
-    99.02
+    99.78
    ],
    "ranking_points_by_week": [
     10.0,
@@ -334,7 +334,7 @@
     99.52,
     106.08,
     99.28,
-    78.84
+    79.94
    ],
    "ranking_points_by_week": [
     12.0,
@@ -9829,6 +9829,14 @@
      "score": 10.3
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "slot": "QB",
+     "score": 10.28
+    },
+    {
      "name": "Justin Jefferson",
      "pro_team": "MIN",
      "fantasy_team": "The Garbage Dump",
@@ -9859,14 +9867,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 9.6
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Bada Bing",
-     "position": "QB",
-     "slot": "QB",
-     "score": 9.52
     },
     {
      "name": "Jake Bates",
@@ -10085,6 +10085,14 @@
      "score": 5.0
     },
     {
+     "name": "Chig Okonkwo",
+     "pro_team": "WSH",
+     "fantasy_team": "Walt's Warriors",
+     "position": "TE",
+     "slot": "FLEX",
+     "score": 4.8
+    },
+    {
      "name": "Jonathan Taylor",
      "pro_team": "IND",
      "fantasy_team": "The Lizard Kings",
@@ -10147,14 +10155,6 @@
      "position": "RB",
      "slot": "RB",
      "score": 3.9
-    },
-    {
-     "name": "Chig Okonkwo",
-     "pro_team": "WSH",
-     "fantasy_team": "Walt's Warriors",
-     "position": "TE",
-     "slot": "FLEX",
-     "score": 3.7
     },
     {
      "name": "Ja'Marr Chase",
@@ -11458,7 +11458,7 @@
     "TE": 4.0,
     "D/ST": 6.0,
     "K": 3.0,
-    "FLEX": 3.7
+    "FLEX": 4.8
    },
    "BEND": {
     "RB": 13.2,
@@ -11473,7 +11473,7 @@
     "RB": 32.1,
     "FLEX": 9.8,
     "WR": 20.1,
-    "QB": 9.52,
+    "QB": 10.28,
     "TE": 8.5,
     "K": 18.0,
     "D/ST": 1.0
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-24T03:20:18+00:00",
+  "updated_at": "2026-11-24T03:30:22+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11618,7 +11618,7 @@
    },
    "SACK": {
     "score": 95.84,
-    "projected": 105.77,
+    "projected": 103.44,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -12038,7 +12038,7 @@
    },
    "SWSH": {
     "score": 84.86,
-    "projected": 87.97,
+    "projected": 87.24,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12142,8 +12142,8 @@
     ]
    },
    "WALT": {
-    "score": 78.84,
-    "projected": 81.69,
+    "score": 79.94,
+    "projected": 82.12,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12228,7 +12228,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "CIN",
-      "points": 3.7,
+      "points": 4.8,
       "projected": 7.79,
       "status": "live",
       "kickoff": 1795482900000
@@ -12352,8 +12352,8 @@
     ]
    },
    "BING": {
-    "score": 99.02,
-    "projected": 110.99,
+    "score": 99.78,
+    "projected": 108.93,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12405,7 +12405,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 9.52,
+      "points": 10.28,
       "projected": 19.56,
       "status": "live",
       "kickoff": 1795482900000
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 103.56,
-    "projected": 112.44,
+    "projected": 110.35,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12668,7 +12668,7 @@
    },
    "Naug": {
     "score": 110.52,
-    "projected": 118.88,
+    "projected": 116.92,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -14281,6 +14281,23 @@
      "WALT": 78.84,
      "BEND": 92.68,
      "BING": 99.02,
+     "CJ": 118.68,
+     "MBJG": 103.56,
+     "Naug": 110.52
+    }
+   },
+   {
+    "t": "2026-11-24T03:30:22+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 95.84,
+     "SW": 112.8,
+     "GAY": 88.5,
+     "BW": 103.26,
+     "SWSH": 84.86,
+     "WALT": 79.94,
+     "BEND": 92.68,
+     "BING": 99.78,
      "CJ": 118.68,
      "MBJG": 103.56,
      "Naug": 110.52
