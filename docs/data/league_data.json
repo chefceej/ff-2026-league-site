@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-24 03:50:18 UTC",
-  "last_updated": "2026-11-24T03:50:18.495237+00:00"
+  "updated_at": "2026-11-24 04:00:20 UTC",
+  "last_updated": "2026-11-24T04:00:20.787895+00:00"
  },
  "teams": [
   {
@@ -29,7 +29,7 @@
     143.32,
     123.98,
     138.72,
-    104.36
+    107.76
    ],
    "ranking_points_by_week": [
     5.0,
@@ -90,7 +90,7 @@
     113.08,
     140.42,
     86.66,
-    97.14
+    97.94
    ],
    "ranking_points_by_week": [
     2.0,
@@ -196,6 +196,67 @@
    "total_ranking_points": 82.0
   },
   {
+   "team_id": 8,
+   "team_name": "Bada Bing",
+   "team_abbrev": "BING",
+   "abbrev": "BING",
+   "owner": "Kyle  Disch",
+   "scores_by_week": [
+    127.36,
+    131.28,
+    106.96,
+    108.18,
+    111.04,
+    97.2,
+    66.52,
+    99.18,
+    91.86,
+    131.76,
+    103.68
+   ],
+   "ranking_points_by_week": [
+    10.0,
+    10.0,
+    7.0,
+    6.0,
+    6.0,
+    7.0,
+    1.0,
+    4.0,
+    5.0,
+    10.0,
+    8.0
+   ],
+   "cumulative_points_by_week": [
+    10.0,
+    20.0,
+    27.0,
+    33.0,
+    39.0,
+    46.0,
+    47.0,
+    51.0,
+    56.0,
+    66.0,
+    74.0
+   ],
+   "normalized_by_week": [
+    3.0,
+    8.0,
+    8.0,
+    6.0,
+    5.0,
+    6.0,
+    0.0,
+    0.0,
+    -3.0,
+    0.0,
+    1.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 74.0
+  },
+  {
    "team_id": 3,
    "team_name": "JSN Derulo ",
    "team_abbrev": "BW",
@@ -225,7 +286,7 @@
     3.0,
     2.0,
     6.0,
-    8.0
+    7.0
    ],
    "cumulative_points_by_week": [
     4.0,
@@ -238,7 +299,7 @@
     58.0,
     60.0,
     66.0,
-    74.0
+    73.0
    ],
    "normalized_by_week": [
     -3.0,
@@ -250,67 +311,6 @@
     8.0,
     7.0,
     1.0,
-    0.0,
-    1.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 74.0
-  },
-  {
-   "team_id": 8,
-   "team_name": "Bada Bing",
-   "team_abbrev": "BING",
-   "abbrev": "BING",
-   "owner": "Kyle  Disch",
-   "scores_by_week": [
-    127.36,
-    131.28,
-    106.96,
-    108.18,
-    111.04,
-    97.2,
-    66.52,
-    99.18,
-    91.86,
-    131.76,
-    101.96
-   ],
-   "ranking_points_by_week": [
-    10.0,
-    10.0,
-    7.0,
-    6.0,
-    6.0,
-    7.0,
-    1.0,
-    4.0,
-    5.0,
-    10.0,
-    7.0
-   ],
-   "cumulative_points_by_week": [
-    10.0,
-    20.0,
-    27.0,
-    33.0,
-    39.0,
-    46.0,
-    47.0,
-    51.0,
-    56.0,
-    66.0,
-    73.0
-   ],
-   "normalized_by_week": [
-    3.0,
-    8.0,
-    8.0,
-    6.0,
-    5.0,
-    6.0,
-    0.0,
-    0.0,
-    -3.0,
     0.0,
     0.0
    ],
@@ -334,7 +334,7 @@
     99.52,
     106.08,
     99.28,
-    81.94
+    83.74
    ],
    "ranking_points_by_week": [
     12.0,
@@ -578,7 +578,7 @@
     132.48,
     99.24,
     124.66,
-    111.32
+    111.44
    ],
    "ranking_points_by_week": [
     6.0,
@@ -9562,7 +9562,7 @@
      "fantasy_team": "The Garbage Dump",
      "position": "QB",
      "slot": "QB",
-     "score": 18.02
+     "score": 18.14
     },
     {
      "name": "Tyler Bass",
@@ -9693,6 +9693,14 @@
      "score": 14.28
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "slot": "QB",
+     "score": 14.18
+    },
+    {
      "name": "Texans D/ST",
      "pro_team": "HOU",
      "fantasy_team": "Remeber Bendel",
@@ -9763,14 +9771,6 @@
      "position": "QB",
      "slot": "QB",
      "score": 12.74
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Bada Bing",
-     "position": "QB",
-     "slot": "QB",
-     "score": 12.46
     },
     {
      "name": "Zay Flowers",
@@ -9877,6 +9877,14 @@
      "score": 9.0
     },
     {
+     "name": "Chig Okonkwo",
+     "pro_team": "WSH",
+     "fantasy_team": "Walt's Warriors",
+     "position": "TE",
+     "slot": "FLEX",
+     "score": 8.6
+    },
+    {
      "name": "T.J. Hockenson",
      "pro_team": "MIN",
      "fantasy_team": "Bada Bing",
@@ -9955,14 +9963,6 @@
      "position": "D/ST",
      "slot": "D/ST",
      "score": 7.0
-    },
-    {
-     "name": "Chig Okonkwo",
-     "pro_team": "WSH",
-     "fantasy_team": "Walt's Warriors",
-     "position": "TE",
-     "slot": "FLEX",
-     "score": 6.8
     },
     {
      "name": "Bhayshul Tuten",
@@ -10045,6 +10045,22 @@
      "score": 6.0
     },
     {
+     "name": "Stefon Diggs",
+     "pro_team": "WSH",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "WR",
+     "score": 5.7
+    },
+    {
+     "name": "Ja'Marr Chase",
+     "pro_team": "CIN",
+     "fantasy_team": "R-R-Radio",
+     "position": "WR",
+     "slot": "WR",
+     "score": 5.6
+    },
+    {
      "name": "Rico Dowdle",
      "pro_team": "PIT",
      "fantasy_team": "JSN Derulo ",
@@ -10091,14 +10107,6 @@
      "position": "K",
      "slot": "K",
      "score": 5.0
-    },
-    {
-     "name": "Ja'Marr Chase",
-     "pro_team": "CIN",
-     "fantasy_team": "R-R-Radio",
-     "position": "WR",
-     "slot": "WR",
-     "score": 4.8
     },
     {
      "name": "Jonathan Taylor",
@@ -10224,14 +10232,6 @@
      "name": "Luther Burden III",
      "pro_team": "CHI",
      "fantasy_team": "Walt's Warriors",
-     "position": "WR",
-     "slot": "WR",
-     "score": 2.3
-    },
-    {
-     "name": "Stefon Diggs",
-     "pro_team": "WSH",
-     "fantasy_team": "The Lizard Kings",
      "position": "WR",
      "slot": "WR",
      "score": 2.3
@@ -11407,7 +11407,7 @@
     "TE": 2.4
    },
    "SACK": {
-    "WR": 19.8,
+    "WR": 20.6,
     "FLEX": 17.3,
     "RB": 8.1,
     "K": 16.0,
@@ -11458,7 +11458,7 @@
     "TE": 4.0,
     "D/ST": 6.0,
     "K": 3.0,
-    "FLEX": 6.8
+    "FLEX": 8.6
    },
    "BEND": {
     "RB": 13.2,
@@ -11473,7 +11473,7 @@
     "RB": 32.1,
     "FLEX": 9.8,
     "WR": 20.1,
-    "QB": 12.46,
+    "QB": 14.18,
     "TE": 8.5,
     "K": 18.0,
     "D/ST": 1.0
@@ -11490,7 +11490,7 @@
    "MBJG": {
     "RB": 37.6,
     "TE": 10.3,
-    "WR": 11.9,
+    "WR": 15.3,
     "FLEX": 6.8,
     "K": 13.0,
     "D/ST": 0.0,
@@ -11499,7 +11499,7 @@
    "Naug": {
     "WR": 16.4,
     "RB": 24.5,
-    "QB": 18.02,
+    "QB": 18.14,
     "K": 10.0,
     "TE": 22.4,
     "FLEX": 4.0,
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-24T03:50:18+00:00",
+  "updated_at": "2026-11-24T04:00:20+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11617,8 +11617,8 @@
     ]
    },
    "SACK": {
-    "score": 97.14,
-    "projected": 101.3,
+    "score": 97.94,
+    "projected": 99.8,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -11626,7 +11626,7 @@
       "slot": "WR",
       "pro_team": "CIN",
       "opponent": "WSH",
-      "points": 4.8,
+      "points": 5.6,
       "projected": 21.02,
       "status": "live",
       "kickoff": 1795482900000
@@ -12038,7 +12038,7 @@
    },
    "SWSH": {
     "score": 84.86,
-    "projected": 86.16,
+    "projected": 85.44,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12142,8 +12142,8 @@
     ]
    },
    "WALT": {
-    "score": 81.94,
-    "projected": 83.14,
+    "score": 83.74,
+    "projected": 84.27,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12228,7 +12228,7 @@
       "slot": "FLEX",
       "pro_team": "WSH",
       "opponent": "CIN",
-      "points": 6.8,
+      "points": 8.6,
       "projected": 7.79,
       "status": "live",
       "kickoff": 1795482900000
@@ -12352,8 +12352,8 @@
     ]
    },
    "BING": {
-    "score": 101.96,
-    "projected": 106.98,
+    "score": 103.68,
+    "projected": 105.92,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12405,7 +12405,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 12.46,
+      "points": 14.18,
       "projected": 19.56,
       "status": "live",
       "kickoff": 1795482900000
@@ -12562,8 +12562,8 @@
     ]
    },
    "MBJG": {
-    "score": 104.36,
-    "projected": 108.08,
+    "score": 107.76,
+    "projected": 109.42,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12615,7 +12615,7 @@
       "slot": "WR",
       "pro_team": "WSH",
       "opponent": "CIN",
-      "points": 2.3,
+      "points": 5.7,
       "projected": 10.53,
       "status": "live",
       "kickoff": 1795482900000
@@ -12667,8 +12667,8 @@
     ]
    },
    "Naug": {
-    "score": 111.32,
-    "projected": 114.83,
+    "score": 111.44,
+    "projected": 113.0,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12709,7 +12709,7 @@
       "slot": "QB",
       "pro_team": "CIN",
       "opponent": "None",
-      "points": 18.02,
+      "points": 18.14,
       "projected": 22.86,
       "status": "live",
       "kickoff": 1795482900000
@@ -14335,6 +14335,23 @@
      "CJ": 118.68,
      "MBJG": 104.36,
      "Naug": 111.32
+    }
+   },
+   {
+    "t": "2026-11-24T04:00:20+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 97.94,
+     "SW": 112.8,
+     "GAY": 88.5,
+     "BW": 103.26,
+     "SWSH": 84.86,
+     "WALT": 83.74,
+     "BEND": 92.68,
+     "BING": 103.68,
+     "CJ": 118.68,
+     "MBJG": 107.76,
+     "Naug": 111.44
     }
    }
   ]
