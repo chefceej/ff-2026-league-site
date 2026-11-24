@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-24 04:00:20 UTC",
-  "last_updated": "2026-11-24T04:00:20.787895+00:00"
+  "updated_at": "2026-11-24 04:10:29 UTC",
+  "last_updated": "2026-11-24T04:10:29.519209+00:00"
  },
  "teams": [
   {
@@ -29,7 +29,7 @@
     143.32,
     123.98,
     138.72,
-    107.76
+    110.26
    ],
    "ranking_points_by_week": [
     5.0,
@@ -90,7 +90,7 @@
     113.08,
     140.42,
     86.66,
-    97.94
+    101.64
    ],
    "ranking_points_by_week": [
     2.0,
@@ -212,7 +212,7 @@
     99.18,
     91.86,
     131.76,
-    103.68
+    104.0
    ],
    "ranking_points_by_week": [
     10.0,
@@ -408,7 +408,7 @@
     1.0,
     7.0,
     4.0,
-    11.0
+    10.0
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -421,7 +421,7 @@
     50.0,
     57.0,
     61.0,
-    72.0
+    71.0
    ],
    "normalized_by_week": [
     2.0,
@@ -434,10 +434,10 @@
     -1.0,
     -2.0,
     -5.0,
-    -1.0
+    -2.0
    ],
    "rank": 7,
-   "total_ranking_points": 72.0
+   "total_ranking_points": 71.0
   },
   {
    "team_id": 4,
@@ -578,7 +578,7 @@
     132.48,
     99.24,
     124.66,
-    111.44
+    113.2
    ],
    "ranking_points_by_week": [
     6.0,
@@ -591,7 +591,7 @@
     11.0,
     6.0,
     8.0,
-    10.0
+    11.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -604,7 +604,7 @@
     36.0,
     42.0,
     50.0,
-    60.0
+    61.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -617,10 +617,10 @@
     -15.0,
     -17.0,
     -16.0,
-    -13.0
+    -12.0
    ],
    "rank": 10,
-   "total_ranking_points": 60.0
+   "total_ranking_points": 61.0
   },
   {
    "team_id": 7,
@@ -9549,20 +9549,20 @@
      "score": 20.3
     },
     {
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "QB",
+     "slot": "QB",
+     "score": 19.9
+    },
+    {
      "name": "DJ Moore",
      "pro_team": "BUF",
      "fantasy_team": "Team Made of Glass",
      "position": "WR",
      "slot": "WR",
      "score": 19.1
-    },
-    {
-     "name": "Bengals TQB",
-     "pro_team": "CIN",
-     "fantasy_team": "The Garbage Dump",
-     "position": "QB",
-     "slot": "QB",
-     "score": 18.14
     },
     {
      "name": "Tyler Bass",
@@ -9669,6 +9669,14 @@
      "score": 14.7
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "slot": "QB",
+     "score": 14.5
+    },
+    {
      "name": "Bears TQB",
      "pro_team": "CHI",
      "fantasy_team": "Team Made of Glass",
@@ -9691,14 +9699,6 @@
      "position": "QB",
      "slot": "QB",
      "score": 14.28
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Bada Bing",
-     "position": "QB",
-     "slot": "QB",
-     "score": 14.18
     },
     {
      "name": "Texans D/ST",
@@ -9797,6 +9797,14 @@
      "score": 12.06
     },
     {
+     "name": "Tee Higgins",
+     "pro_team": "CIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "WR",
+     "score": 11.3
+    },
+    {
      "name": "Jason Sanders",
      "pro_team": "NYJ",
      "fantasy_team": "Keyser Soze",
@@ -9837,6 +9845,14 @@
      "score": 10.3
     },
     {
+     "name": "Mike Gesicki",
+     "pro_team": "CIN",
+     "fantasy_team": "R-R-Radio",
+     "position": "TE",
+     "slot": "TE",
+     "score": 10.2
+    },
+    {
      "name": "Justin Jefferson",
      "pro_team": "MIN",
      "fantasy_team": "The Garbage Dump",
@@ -9859,14 +9875,6 @@
      "position": "RB",
      "slot": "FLEX",
      "score": 9.8
-    },
-    {
-     "name": "Tee Higgins",
-     "pro_team": "CIN",
-     "fantasy_team": "The Lizard Kings",
-     "position": "WR",
-     "slot": "WR",
-     "score": 9.6
     },
     {
      "name": "Jake Bates",
@@ -9981,19 +9989,19 @@
      "score": 6.6
     },
     {
-     "name": "Mike Gesicki",
-     "pro_team": "CIN",
-     "fantasy_team": "R-R-Radio",
-     "position": "TE",
-     "slot": "TE",
-     "score": 6.5
-    },
-    {
      "name": "Pat Freiermuth",
      "pro_team": "PIT",
      "fantasy_team": "Remeber Bendel",
      "position": "TE",
      "slot": "TE",
+     "score": 6.5
+    },
+    {
+     "name": "Stefon Diggs",
+     "pro_team": "WSH",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "slot": "WR",
      "score": 6.5
     },
     {
@@ -10043,14 +10051,6 @@
      "position": "K",
      "slot": "K",
      "score": 6.0
-    },
-    {
-     "name": "Stefon Diggs",
-     "pro_team": "WSH",
-     "fantasy_team": "The Lizard Kings",
-     "position": "WR",
-     "slot": "WR",
-     "score": 5.7
     },
     {
      "name": "Ja'Marr Chase",
@@ -11412,7 +11412,7 @@
     "RB": 8.1,
     "K": 16.0,
     "D/ST": 7.0,
-    "TE": 6.5,
+    "TE": 10.2,
     "QB": 22.44
    },
    "SW": {
@@ -11473,7 +11473,7 @@
     "RB": 32.1,
     "FLEX": 9.8,
     "WR": 20.1,
-    "QB": 14.18,
+    "QB": 14.5,
     "TE": 8.5,
     "K": 18.0,
     "D/ST": 1.0
@@ -11490,7 +11490,7 @@
    "MBJG": {
     "RB": 37.6,
     "TE": 10.3,
-    "WR": 15.3,
+    "WR": 17.8,
     "FLEX": 6.8,
     "K": 13.0,
     "D/ST": 0.0,
@@ -11499,7 +11499,7 @@
    "Naug": {
     "WR": 16.4,
     "RB": 24.5,
-    "QB": 18.14,
+    "QB": 19.9,
     "K": 10.0,
     "TE": 22.4,
     "FLEX": 4.0,
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-24T04:00:20+00:00",
+  "updated_at": "2026-11-24T04:10:29+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11617,8 +11617,8 @@
     ]
    },
    "SACK": {
-    "score": 97.94,
-    "projected": 99.8,
+    "score": 101.64,
+    "projected": 102.39,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -11692,7 +11692,7 @@
       "slot": "TE",
       "pro_team": "CIN",
       "opponent": "WSH",
-      "points": 6.5,
+      "points": 10.2,
       "projected": 6.12,
       "status": "live",
       "kickoff": 1795482900000
@@ -12038,7 +12038,7 @@
    },
    "SWSH": {
     "score": 84.86,
-    "projected": 85.44,
+    "projected": 85.09,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 83.74,
-    "projected": 84.27,
+    "projected": 83.95,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12352,8 +12352,8 @@
     ]
    },
    "BING": {
-    "score": 103.68,
-    "projected": 105.92,
+    "score": 104.0,
+    "projected": 104.9,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12405,7 +12405,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 14.18,
+      "points": 14.5,
       "projected": 19.56,
       "status": "live",
       "kickoff": 1795482900000
@@ -12562,8 +12562,8 @@
     ]
    },
    "MBJG": {
-    "score": 107.76,
-    "projected": 109.42,
+    "score": 110.26,
+    "projected": 110.93,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12593,7 +12593,7 @@
       "slot": "WR",
       "pro_team": "CIN",
       "opponent": "WSH",
-      "points": 9.6,
+      "points": 11.3,
       "projected": 13.75,
       "status": "live",
       "kickoff": 1795482900000
@@ -12615,7 +12615,7 @@
       "slot": "WR",
       "pro_team": "WSH",
       "opponent": "CIN",
-      "points": 5.7,
+      "points": 6.5,
       "projected": 10.53,
       "status": "live",
       "kickoff": 1795482900000
@@ -12667,8 +12667,8 @@
     ]
    },
    "Naug": {
-    "score": 111.44,
-    "projected": 113.0,
+    "score": 113.2,
+    "projected": 113.83,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12709,7 +12709,7 @@
       "slot": "QB",
       "pro_team": "CIN",
       "opponent": "None",
-      "points": 18.14,
+      "points": 19.9,
       "projected": 22.86,
       "status": "live",
       "kickoff": 1795482900000
@@ -14352,6 +14352,23 @@
      "CJ": 118.68,
      "MBJG": 107.76,
      "Naug": 111.44
+    }
+   },
+   {
+    "t": "2026-11-24T04:10:29+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 101.64,
+     "SW": 112.8,
+     "GAY": 88.5,
+     "BW": 103.26,
+     "SWSH": 84.86,
+     "WALT": 83.74,
+     "BEND": 92.68,
+     "BING": 104.0,
+     "CJ": 118.68,
+     "MBJG": 110.26,
+     "Naug": 113.2
     }
    }
   ]
