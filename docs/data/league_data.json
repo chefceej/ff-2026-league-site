@@ -4,8 +4,8 @@
   "season": 2026,
   "num_teams": 12,
   "regular_season_weeks": 14,
-  "completed_weeks": 10,
-  "current_matchup_week": 10,
+  "completed_weeks": 11,
+  "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
   "week_files": [
@@ -19,11 +19,12 @@
    8,
    9,
    10,
-   11
+   11,
+   12
   ],
-  "current_week": 11,
-  "updated_at": "2026-11-23 19:01:43 UTC",
-  "last_updated": "2026-11-23T19:01:43.469681+00:00"
+  "current_week": 12,
+  "updated_at": "2026-11-24 18:41:54 UTC",
+  "last_updated": "2026-11-24T18:41:54.129352+00:00"
  },
  "teams": [
   {
@@ -42,7 +43,8 @@
     118.16,
     143.32,
     123.98,
-    138.72
+    138.72,
+    110.26
    ],
    "ranking_points_by_week": [
     5.0,
@@ -54,7 +56,8 @@
     8.0,
     12.0,
     11.0,
-    12.0
+    12.0,
+    9.0
    ],
    "cumulative_points_by_week": [
     5.0,
@@ -66,7 +69,8 @@
     48.0,
     60.0,
     71.0,
-    83.0
+    83.0,
+    92.0
    ],
    "normalized_by_week": [
     -2.0,
@@ -78,10 +82,11 @@
     1.0,
     9.0,
     12.0,
-    17.0
+    17.0,
+    19.0
    ],
    "rank": 1,
-   "total_ranking_points": 83.0
+   "total_ranking_points": 92.0
   },
   {
    "team_id": 10,
@@ -99,7 +104,8 @@
     103.6,
     113.08,
     140.42,
-    86.66
+    86.66,
+    101.64
    ],
    "ranking_points_by_week": [
     2.0,
@@ -111,7 +117,8 @@
     6.0,
     9.0,
     12.0,
-    1.0
+    1.0,
+    6.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -123,7 +130,8 @@
     56.0,
     65.0,
     77.0,
-    78.0
+    78.0,
+    84.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -135,67 +143,11 @@
     9.0,
     14.0,
     18.0,
-    12.0
+    12.0,
+    11.0
    ],
    "rank": 2,
-   "total_ranking_points": 78.0
-  },
-  {
-   "team_id": 9,
-   "team_name": "Walt's Warriors",
-   "team_abbrev": "WALT",
-   "abbrev": "WALT",
-   "owner": "Matthew  Walter",
-   "scores_by_week": [
-    136.0,
-    55.66,
-    82.28,
-    121.48,
-    142.54,
-    122.24,
-    119.08,
-    99.52,
-    106.08,
-    99.28
-   ],
-   "ranking_points_by_week": [
-    12.0,
-    1.0,
-    2.0,
-    10.0,
-    10.0,
-    11.0,
-    10.0,
-    5.0,
-    8.0,
-    3.0
-   ],
-   "cumulative_points_by_week": [
-    12.0,
-    13.0,
-    15.0,
-    25.0,
-    35.0,
-    46.0,
-    56.0,
-    61.0,
-    69.0,
-    72.0
-   ],
-   "normalized_by_week": [
-    5.0,
-    1.0,
-    -4.0,
-    -2.0,
-    1.0,
-    6.0,
-    9.0,
-    10.0,
-    10.0,
-    6.0
-   ],
-   "rank": 3,
-   "total_ranking_points": 72.0
+   "total_ranking_points": 84.0
   },
   {
    "team_id": 2,
@@ -213,7 +165,8 @@
     118.54,
     108.26,
     122.8,
-    131.86
+    131.86,
+    118.68
    ],
    "ranking_points_by_week": [
     8.0,
@@ -225,7 +178,8 @@
     9.0,
     7.0,
     9.0,
-    11.0
+    11.0,
+    12.0
    ],
    "cumulative_points_by_week": [
     8.0,
@@ -237,7 +191,8 @@
     43.0,
     50.0,
     59.0,
-    70.0
+    70.0,
+    82.0
    ],
    "normalized_by_week": [
     1.0,
@@ -249,124 +204,11 @@
     -4.0,
     -1.0,
     0.0,
-    4.0
-   ],
-   "rank": 4,
-   "total_ranking_points": 70.0
-  },
-  {
-   "team_id": 4,
-   "team_name": "Swishington Football Team",
-   "team_abbrev": "SWSH",
-   "abbrev": "SWSH",
-   "owner": "Matt Stern",
-   "scores_by_week": [
-    84.76,
-    106.42,
-    119.86,
-    90.12,
-    133.0,
-    91.2,
-    108.38,
-    118.56,
-    88.06,
-    118.14
-   ],
-   "ranking_points_by_week": [
-    1.0,
-    8.0,
-    12.0,
     4.0,
-    9.0,
-    6.0,
-    7.0,
-    10.0,
-    4.0,
-    7.0
+    9.0
    ],
-   "cumulative_points_by_week": [
-    1.0,
-    9.0,
-    21.0,
-    25.0,
-    34.0,
-    40.0,
-    47.0,
-    57.0,
-    61.0,
-    68.0
-   ],
-   "normalized_by_week": [
-    -6.0,
-    -3.0,
-    2.0,
-    -2.0,
-    0.0,
-    0.0,
-    0.0,
-    6.0,
-    2.0,
-    2.0
-   ],
-   "rank": 5,
-   "total_ranking_points": 68.0
-  },
-  {
-   "team_id": 3,
-   "team_name": "JSN Derulo ",
-   "team_abbrev": "BW",
-   "abbrev": "BW",
-   "owner": "Brian Wilson",
-   "scores_by_week": [
-    98.86,
-    99.9,
-    107.1,
-    118.0,
-    88.24,
-    128.08,
-    126.22,
-    68.24,
-    84.5,
-    107.84
-   ],
-   "ranking_points_by_week": [
-    4.0,
-    7.0,
-    8.0,
-    9.0,
-    3.0,
-    12.0,
-    12.0,
-    3.0,
-    2.0,
-    6.0
-   ],
-   "cumulative_points_by_week": [
-    4.0,
-    11.0,
-    19.0,
-    28.0,
-    31.0,
-    43.0,
-    55.0,
-    58.0,
-    60.0,
-    66.0
-   ],
-   "normalized_by_week": [
-    -3.0,
-    -1.0,
-    0.0,
-    1.0,
-    -3.0,
-    3.0,
-    8.0,
-    7.0,
-    1.0,
-    0.0
-   ],
-   "rank": 6,
-   "total_ranking_points": 66.0
+   "rank": 3,
+   "total_ranking_points": 82.0
   },
   {
    "team_id": 8,
@@ -384,7 +226,8 @@
     66.52,
     99.18,
     91.86,
-    131.76
+    131.76,
+    106.56
    ],
    "ranking_points_by_week": [
     10.0,
@@ -396,7 +239,8 @@
     1.0,
     4.0,
     5.0,
-    10.0
+    10.0,
+    8.0
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -408,7 +252,8 @@
     47.0,
     51.0,
     56.0,
-    66.0
+    66.0,
+    74.0
    ],
    "normalized_by_week": [
     3.0,
@@ -420,14 +265,198 @@
     0.0,
     0.0,
     -3.0,
+    0.0,
+    1.0
+   ],
+   "rank": 4,
+   "total_ranking_points": 74.0
+  },
+  {
+   "team_id": 3,
+   "team_name": "JSN Derulo ",
+   "team_abbrev": "BW",
+   "abbrev": "BW",
+   "owner": "Brian Wilson",
+   "scores_by_week": [
+    98.86,
+    99.9,
+    107.1,
+    118.0,
+    88.24,
+    128.08,
+    126.22,
+    68.24,
+    84.5,
+    107.84,
+    103.26
+   ],
+   "ranking_points_by_week": [
+    4.0,
+    7.0,
+    8.0,
+    9.0,
+    3.0,
+    12.0,
+    12.0,
+    3.0,
+    2.0,
+    6.0,
+    7.0
+   ],
+   "cumulative_points_by_week": [
+    4.0,
+    11.0,
+    19.0,
+    28.0,
+    31.0,
+    43.0,
+    55.0,
+    58.0,
+    60.0,
+    66.0,
+    73.0
+   ],
+   "normalized_by_week": [
+    -3.0,
+    -1.0,
+    0.0,
+    1.0,
+    -3.0,
+    3.0,
+    8.0,
+    7.0,
+    1.0,
+    0.0,
     0.0
    ],
+   "rank": 5,
+   "total_ranking_points": 73.0
+  },
+  {
+   "team_id": 9,
+   "team_name": "Walt's Warriors",
+   "team_abbrev": "WALT",
+   "abbrev": "WALT",
+   "owner": "Matthew  Walter",
+   "scores_by_week": [
+    136.0,
+    55.66,
+    82.28,
+    121.48,
+    142.54,
+    122.24,
+    119.08,
+    99.52,
+    106.08,
+    99.28,
+    83.74
+   ],
+   "ranking_points_by_week": [
+    12.0,
+    1.0,
+    2.0,
+    10.0,
+    10.0,
+    11.0,
+    10.0,
+    5.0,
+    8.0,
+    3.0,
+    1.0
+   ],
+   "cumulative_points_by_week": [
+    12.0,
+    13.0,
+    15.0,
+    25.0,
+    35.0,
+    46.0,
+    56.0,
+    61.0,
+    69.0,
+    72.0,
+    73.0
+   ],
+   "normalized_by_week": [
+    5.0,
+    1.0,
+    -4.0,
+    -2.0,
+    1.0,
+    6.0,
+    9.0,
+    10.0,
+    10.0,
+    6.0,
+    0.0
+   ],
+   "rank": 6,
+   "total_ranking_points": 73.0
+  },
+  {
+   "team_id": 4,
+   "team_name": "Swishington Football Team",
+   "team_abbrev": "SWSH",
+   "abbrev": "SWSH",
+   "owner": "Matt Stern",
+   "scores_by_week": [
+    84.76,
+    106.42,
+    119.86,
+    90.12,
+    133.0,
+    91.2,
+    108.38,
+    118.56,
+    88.06,
+    118.14,
+    89.86
+   ],
+   "ranking_points_by_week": [
+    1.0,
+    8.0,
+    12.0,
+    4.0,
+    9.0,
+    6.0,
+    7.0,
+    10.0,
+    4.0,
+    7.0,
+    4.0
+   ],
+   "cumulative_points_by_week": [
+    1.0,
+    9.0,
+    21.0,
+    25.0,
+    34.0,
+    40.0,
+    47.0,
+    57.0,
+    61.0,
+    68.0,
+    72.0
+   ],
+   "normalized_by_week": [
+    -6.0,
+    -3.0,
+    2.0,
+    -2.0,
+    0.0,
+    0.0,
+    0.0,
+    6.0,
+    2.0,
+    2.0,
+    -1.0
+   ],
    "rank": 7,
-   "total_ranking_points": 66.0
+   "total_ranking_points": 72.0
   },
   {
    "team_id": 1,
-   "team_name": "3 Inches of Disappointment ",
+   "team_name": "Rock Hard Rhinos ",
    "team_abbrev": "SW",
    "abbrev": "SW",
    "owner": "Ben Fagin",
@@ -441,7 +470,8 @@
     125.78,
     60.2,
     103.48,
-    103.02
+    103.02,
+    112.8
    ],
    "ranking_points_by_week": [
     9.0,
@@ -453,7 +483,8 @@
     11.0,
     1.0,
     7.0,
-    4.0
+    4.0,
+    10.0
    ],
    "cumulative_points_by_week": [
     9.0,
@@ -465,7 +496,8 @@
     49.0,
     50.0,
     57.0,
-    61.0
+    61.0,
+    71.0
    ],
    "normalized_by_week": [
     2.0,
@@ -477,10 +509,11 @@
     2.0,
     -1.0,
     -2.0,
-    -5.0
+    -5.0,
+    -2.0
    ],
    "rank": 8,
-   "total_ranking_points": 61.0
+   "total_ranking_points": 71.0
   },
   {
    "team_id": 12,
@@ -498,7 +531,8 @@
     71.1,
     100.28,
     123.54,
-    125.52
+    125.52,
+    92.68
    ],
    "ranking_points_by_week": [
     7.0,
@@ -510,7 +544,8 @@
     2.0,
     6.0,
     10.0,
-    9.0
+    9.0,
+    5.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -522,7 +557,8 @@
     35.0,
     41.0,
     51.0,
-    60.0
+    60.0,
+    65.0
    ],
    "normalized_by_week": [
     0.0,
@@ -534,124 +570,11 @@
     -12.0,
     -10.0,
     -8.0,
-    -6.0
+    -6.0,
+    -8.0
    ],
    "rank": 9,
-   "total_ranking_points": 60.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    113.5,
-    102.92,
-    109.58,
-    84.76,
-    94.1
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0,
-    5.0,
-    8.0,
-    3.0,
-    2.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0,
-    41.0,
-    49.0,
-    52.0,
-    54.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0,
-    -6.0,
-    -2.0,
-    -7.0,
-    -12.0
-   ],
-   "rank": 10,
-   "total_ranking_points": 54.0
-  },
-  {
-   "team_id": 11,
-   "team_name": "I am gay ",
-   "team_abbrev": "GAY",
-   "abbrev": "GAY",
-   "owner": "Maxx Millstein",
-   "scores_by_week": [
-    93.34,
-    156.68,
-    117.58,
-    105.92,
-    103.76,
-    90.76,
-    82.82,
-    65.76,
-    77.98,
-    105.86
-   ],
-   "ranking_points_by_week": [
-    3.0,
-    12.0,
-    11.0,
-    5.0,
-    5.0,
-    5.0,
-    3.0,
-    2.0,
-    1.0,
-    5.0
-   ],
-   "cumulative_points_by_week": [
-    3.0,
-    15.0,
-    26.0,
-    31.0,
-    36.0,
-    41.0,
-    44.0,
-    46.0,
-    47.0,
-    52.0
-   ],
-   "normalized_by_week": [
-    -4.0,
-    3.0,
-    7.0,
-    4.0,
-    2.0,
-    1.0,
-    -3.0,
-    -5.0,
-    -12.0,
-    -14.0
-   ],
-   "rank": 11,
-   "total_ranking_points": 52.0
+   "total_ranking_points": 65.0
   },
   {
    "team_id": 6,
@@ -669,7 +592,8 @@
     97.38,
     132.48,
     99.24,
-    124.66
+    124.66,
+    113.2
    ],
    "ranking_points_by_week": [
     6.0,
@@ -681,7 +605,8 @@
     4.0,
     11.0,
     6.0,
-    8.0
+    8.0,
+    11.0
    ],
    "cumulative_points_by_week": [
     6.0,
@@ -693,7 +618,8 @@
     25.0,
     36.0,
     42.0,
-    50.0
+    50.0,
+    61.0
    ],
    "normalized_by_week": [
     -1.0,
@@ -705,10 +631,133 @@
     -22.0,
     -15.0,
     -17.0,
-    -16.0
+    -16.0,
+    -12.0
+   ],
+   "rank": 10,
+   "total_ranking_points": 61.0
+  },
+  {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    113.5,
+    102.92,
+    109.58,
+    84.76,
+    94.1,
+    86.24
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    9.0,
+    5.0,
+    8.0,
+    3.0,
+    2.0,
+    2.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    36.0,
+    41.0,
+    49.0,
+    52.0,
+    54.0,
+    56.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -4.0,
+    -6.0,
+    -2.0,
+    -7.0,
+    -12.0,
+    -17.0
+   ],
+   "rank": 11,
+   "total_ranking_points": 56.0
+  },
+  {
+   "team_id": 11,
+   "team_name": "I am gay ",
+   "team_abbrev": "GAY",
+   "abbrev": "GAY",
+   "owner": "Maxx Millstein",
+   "scores_by_week": [
+    93.34,
+    156.68,
+    117.58,
+    105.92,
+    103.76,
+    90.76,
+    82.82,
+    65.76,
+    77.98,
+    105.86,
+    88.5
+   ],
+   "ranking_points_by_week": [
+    3.0,
+    12.0,
+    11.0,
+    5.0,
+    5.0,
+    5.0,
+    3.0,
+    2.0,
+    1.0,
+    5.0,
+    3.0
+   ],
+   "cumulative_points_by_week": [
+    3.0,
+    15.0,
+    26.0,
+    31.0,
+    36.0,
+    41.0,
+    44.0,
+    46.0,
+    47.0,
+    52.0,
+    55.0
+   ],
+   "normalized_by_week": [
+    -4.0,
+    3.0,
+    7.0,
+    4.0,
+    2.0,
+    1.0,
+    -3.0,
+    -5.0,
+    -12.0,
+    -14.0,
+    -18.0
    ],
    "rank": 12,
-   "total_ranking_points": 50.0
+   "total_ranking_points": 55.0
   }
  ],
  "top_players_by_week": [
@@ -731,7 +780,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 34.8
     },
@@ -836,7 +885,7 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 23.5
     },
@@ -950,7 +999,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 14.4
     },
@@ -980,7 +1029,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 34.8
     },
@@ -1085,7 +1134,7 @@
     {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 12.0
     },
@@ -1171,7 +1220,7 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 23.5
     },
@@ -1213,7 +1262,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 12.9
     },
@@ -1276,7 +1325,7 @@
     {
      "name": "DeVonta Smith",
      "pro_team": "PHI",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 6.8
     },
@@ -1404,7 +1453,7 @@
     {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 0.0
     },
@@ -1443,7 +1492,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 31.3
     },
@@ -1457,7 +1506,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 29.76
     },
@@ -1499,7 +1548,7 @@
     {
      "name": "DeVonta Smith",
      "pro_team": "PHI",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 22.7
     },
@@ -1541,7 +1590,7 @@
     {
      "name": "Patriots D/ST",
      "pro_team": "NE",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "D/ST",
      "score": 20.0
     },
@@ -1576,7 +1625,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 16.2
     },
@@ -1606,7 +1655,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 29.76
     },
@@ -1727,7 +1776,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 16.2
     },
@@ -1876,7 +1925,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 31.3
     },
@@ -1897,7 +1946,7 @@
     {
      "name": "DeVonta Smith",
      "pro_team": "PHI",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 22.7
     },
@@ -2095,7 +2144,7 @@
     {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 2.0
     },
@@ -2190,7 +2239,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 21.4
     },
@@ -2267,7 +2316,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 18.94
     },
@@ -2353,7 +2402,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 18.94
     },
@@ -2404,7 +2453,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 21.4
     },
@@ -2488,7 +2537,7 @@
     {
      "name": "Rachaad White",
      "pro_team": "WSH",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 10.6
     },
@@ -2616,7 +2665,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 16.7
     },
@@ -2679,7 +2728,7 @@
     {
      "name": "DeVonta Smith",
      "pro_team": "PHI",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 9.5
     },
@@ -2793,7 +2842,7 @@
     {
      "name": "Dalton Schultz",
      "pro_team": "HOU",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 4.5
     },
@@ -2839,7 +2888,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 32.8
     },
@@ -2909,7 +2958,7 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 21.8
     },
@@ -2979,7 +3028,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 18.1
     },
@@ -3044,7 +3093,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 18.1
     },
@@ -3151,7 +3200,7 @@
     {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 16.9
     },
@@ -3179,7 +3228,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 14.9
     },
@@ -3279,7 +3328,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 32.8
     },
@@ -3293,7 +3342,7 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 21.8
     },
@@ -3335,7 +3384,7 @@
     {
      "name": "Roman Wilson",
      "pro_team": "PIT",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 14.9
     },
@@ -3519,7 +3568,7 @@
     {
      "name": "Dalton Schultz",
      "pro_team": "HOU",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 1.9
     },
@@ -3691,7 +3740,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 20.5
     },
@@ -3791,7 +3840,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 12.64
     }
@@ -3828,7 +3877,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 20.5
     },
@@ -3856,7 +3905,7 @@
     {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 16.0
     },
@@ -4068,7 +4117,7 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 10.6
     },
@@ -4231,7 +4280,7 @@
     {
      "name": "Michael Mayer",
      "pro_team": "LV",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 0.7
     }
@@ -4396,7 +4445,7 @@
     {
      "name": "DeVonta Smith",
      "pro_team": "PHI",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 17.0
     },
@@ -4496,7 +4545,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 11.02
     }
@@ -4673,7 +4722,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 4.5
     }
@@ -4710,7 +4759,7 @@
     {
      "name": "DeVonta Smith",
      "pro_team": "PHI",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 17.0
     },
@@ -4773,7 +4822,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 11.5
     },
@@ -4808,7 +4857,7 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 9.7
     },
@@ -4929,7 +4978,7 @@
     {
      "name": "Tyler Higbee",
      "pro_team": "LAR",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 2.2
     },
@@ -4989,7 +5038,7 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 23.7
     },
@@ -5010,7 +5059,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 23.28
     },
@@ -5031,7 +5080,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 21.9
     },
@@ -5052,7 +5101,7 @@
     {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 20.0
     },
@@ -5159,7 +5208,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 23.28
     },
@@ -5231,7 +5280,7 @@
     {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 20.0
     },
@@ -5385,7 +5434,7 @@
     {
      "name": "Jordan Mason",
      "pro_team": "MIN",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 6.8
     }
@@ -5408,14 +5457,14 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 23.7
     },
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 21.9
     },
@@ -5606,7 +5655,7 @@
     {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 10.7
     },
@@ -5806,7 +5855,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 19.8
     },
@@ -5878,7 +5927,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 19.8
     },
@@ -6013,7 +6062,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 13.0
     },
@@ -6055,7 +6104,7 @@
     {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 10.5
     },
@@ -6197,7 +6246,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 9.3
     },
@@ -6367,7 +6416,7 @@
     {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 1.6
     }
@@ -6392,7 +6441,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 28.5
     },
@@ -6462,7 +6511,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 19.5
     },
@@ -6569,7 +6618,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 19.5
     },
@@ -6697,7 +6746,7 @@
     {
      "name": "Rhamondre Stevenson",
      "pro_team": "NE",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 13.3
     },
@@ -6760,7 +6809,7 @@
     {
      "name": "Kaelon Black",
      "pro_team": "SF",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 7.0
     },
@@ -6802,7 +6851,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 5.58
     },
@@ -6818,7 +6867,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 28.5
     },
@@ -7065,7 +7114,7 @@
     {
      "name": "Kyle Pitts Sr.",
      "pro_team": "ATL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 3.8
     },
@@ -7104,7 +7153,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 34.42
     },
@@ -7267,7 +7316,7 @@
     {
      "name": "Cowboys TQB",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "QB",
      "score": 34.42
     },
@@ -7423,7 +7472,7 @@
     {
      "name": "Derrick Henry",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "RB",
      "score": 16.5
     },
@@ -7572,7 +7621,7 @@
     {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 16.7
     },
@@ -7635,7 +7684,7 @@
     {
      "name": "Zay Flowers",
      "pro_team": "BAL",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "score": 8.4
     },
@@ -7763,7 +7812,7 @@
     {
      "name": "Colby Parkinson",
      "pro_team": "LAR",
-     "fantasy_team": "3 Inches of Disappointment ",
+     "fantasy_team": "Rock Hard Rhinos ",
      "position": "TE",
      "score": 2.1
     },
@@ -7780,6 +7829,718 @@
      "fantasy_team": "Bada Bing",
      "position": "TE",
      "score": 1.4
+    }
+   ]
+  },
+  {
+   "all": [
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "QB",
+     "score": 35.9
+    },
+    {
+     "name": "Jonah Coleman",
+     "pro_team": "DEN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 32.9
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "score": 26.0
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 25.8
+    },
+    {
+     "name": "Ashton Jeanty",
+     "pro_team": "LV",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "score": 25.4
+    },
+    {
+     "name": "Chiefs TQB",
+     "pro_team": "KC",
+     "fantasy_team": "The Lizard Kings",
+     "position": "QB",
+     "score": 24.76
+    },
+    {
+     "name": "CeeDee Lamb",
+     "pro_team": "DAL",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "WR",
+     "score": 24.7
+    },
+    {
+     "name": "Raiders TQB",
+     "pro_team": "LV",
+     "fantasy_team": "Remeber Bendel",
+     "position": "QB",
+     "score": 22.88
+    },
+    {
+     "name": "Javonte Williams",
+     "pro_team": "DAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "score": 22.6
+    },
+    {
+     "name": "Chargers TQB",
+     "pro_team": "LAC",
+     "fantasy_team": "R-R-Radio",
+     "position": "QB",
+     "score": 22.44
+    },
+    {
+     "name": "Travis Kelce",
+     "pro_team": "KC",
+     "fantasy_team": "The Garbage Dump",
+     "position": "TE",
+     "score": 22.4
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "QB",
+     "score": 22.3
+    },
+    {
+     "name": "Emmett Johnson",
+     "pro_team": "KC",
+     "fantasy_team": "Keyser Soze",
+     "position": "RB",
+     "score": 22.3
+    },
+    {
+     "name": "Texans TQB",
+     "pro_team": "HOU",
+     "fantasy_team": "JSN Derulo ",
+     "position": "QB",
+     "score": 20.46
+    },
+    {
+     "name": "George Pickens",
+     "pro_team": "DAL",
+     "fantasy_team": "Keyser Soze",
+     "position": "WR",
+     "score": 20.3
+    },
+    {
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "QB",
+     "score": 19.9
+    },
+    {
+     "name": "DJ Moore",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "WR",
+     "score": 19.1
+    },
+    {
+     "name": "Tyler Bass",
+     "pro_team": "BUF",
+     "fantasy_team": "Bada Bing",
+     "position": "K",
+     "score": 18.0
+    },
+    {
+     "name": "Breece Hall",
+     "pro_team": "NYJ",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "score": 17.5
+    },
+    {
+     "name": "Bucky Irving",
+     "pro_team": "TB",
+     "fantasy_team": "Keyser Soze",
+     "position": "RB",
+     "score": 17.5
+    },
+    {
+     "name": "Jameson Williams",
+     "pro_team": "DET",
+     "fantasy_team": "R-R-Radio",
+     "position": "WR",
+     "score": 17.3
+    },
+    {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "RB",
+     "score": 17.1
+    },
+    {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "score": 17.06
+    },
+    {
+     "name": "George Kittle",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "TE",
+     "score": 16.9
+    },
+    {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "score": 16.2
+    }
+   ],
+   "QB": [
+    {
+     "name": "Cowboys TQB",
+     "pro_team": "DAL",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "QB",
+     "score": 35.9
+    },
+    {
+     "name": "Chiefs TQB",
+     "pro_team": "KC",
+     "fantasy_team": "The Lizard Kings",
+     "position": "QB",
+     "score": 24.76
+    },
+    {
+     "name": "Raiders TQB",
+     "pro_team": "LV",
+     "fantasy_team": "Remeber Bendel",
+     "position": "QB",
+     "score": 22.88
+    },
+    {
+     "name": "Chargers TQB",
+     "pro_team": "LAC",
+     "fantasy_team": "R-R-Radio",
+     "position": "QB",
+     "score": 22.44
+    },
+    {
+     "name": "49ers TQB",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "QB",
+     "score": 22.3
+    },
+    {
+     "name": "Texans TQB",
+     "pro_team": "HOU",
+     "fantasy_team": "JSN Derulo ",
+     "position": "QB",
+     "score": 20.46
+    },
+    {
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "QB",
+     "score": 19.9
+    },
+    {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "score": 17.06
+    },
+    {
+     "name": "Bears TQB",
+     "pro_team": "CHI",
+     "fantasy_team": "Team Made of Glass",
+     "position": "QB",
+     "score": 14.34
+    },
+    {
+     "name": "Saints TQB",
+     "pro_team": "NO",
+     "fantasy_team": "Keyser Soze",
+     "position": "QB",
+     "score": 14.28
+    },
+    {
+     "name": "Jaguars TQB",
+     "pro_team": "JAX",
+     "fantasy_team": "Walt's Warriors",
+     "position": "QB",
+     "score": 12.74
+    },
+    {
+     "name": "Bills TQB",
+     "pro_team": "BUF",
+     "fantasy_team": "Swishington Football Team",
+     "position": "QB",
+     "score": 12.06
+    }
+   ],
+   "RB": [
+    {
+     "name": "Jonah Coleman",
+     "pro_team": "DEN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 32.9
+    },
+    {
+     "name": "Chuba Hubbard",
+     "pro_team": "CAR",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "score": 26.0
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pro_team": "DET",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 25.8
+    },
+    {
+     "name": "Ashton Jeanty",
+     "pro_team": "LV",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "score": 25.4
+    },
+    {
+     "name": "Javonte Williams",
+     "pro_team": "DAL",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "score": 22.6
+    },
+    {
+     "name": "Emmett Johnson",
+     "pro_team": "KC",
+     "fantasy_team": "Keyser Soze",
+     "position": "RB",
+     "score": 22.3
+    },
+    {
+     "name": "Breece Hall",
+     "pro_team": "NYJ",
+     "fantasy_team": "Walt's Warriors",
+     "position": "RB",
+     "score": 17.5
+    },
+    {
+     "name": "Bucky Irving",
+     "pro_team": "TB",
+     "fantasy_team": "Keyser Soze",
+     "position": "RB",
+     "score": 17.5
+    },
+    {
+     "name": "Derrick Henry",
+     "pro_team": "BAL",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "RB",
+     "score": 17.1
+    },
+    {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "score": 16.2
+    },
+    {
+     "name": "Justice Hill",
+     "pro_team": "BAL",
+     "fantasy_team": "Swishington Football Team",
+     "position": "RB",
+     "score": 15.6
+    },
+    {
+     "name": "David Montgomery",
+     "pro_team": "HOU",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "score": 13.9
+    },
+    {
+     "name": "Saquon Barkley",
+     "pro_team": "PHI",
+     "fantasy_team": "The Garbage Dump",
+     "position": "RB",
+     "score": 13.5
+    },
+    {
+     "name": "Christian McCaffrey",
+     "pro_team": "SF",
+     "fantasy_team": "Remeber Bendel",
+     "position": "RB",
+     "score": 13.2
+    },
+    {
+     "name": "Tony Pollard",
+     "pro_team": "TEN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "RB",
+     "score": 11.0
+    },
+    {
+     "name": "D'Andre Swift",
+     "pro_team": "CHI",
+     "fantasy_team": "I am gay ",
+     "position": "RB",
+     "score": 10.9
+    },
+    {
+     "name": "Omarion Hampton",
+     "pro_team": "LAC",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "score": 9.8
+    },
+    {
+     "name": "Ollie Gordon II",
+     "pro_team": "MIA",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "score": 7.7
+    },
+    {
+     "name": "Travis Etienne Jr.",
+     "pro_team": "NO",
+     "fantasy_team": "I am gay ",
+     "position": "RB",
+     "score": 7.6
+    },
+    {
+     "name": "Bhayshul Tuten",
+     "pro_team": "JAX",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 6.8
+    },
+    {
+     "name": "Chase Brown",
+     "pro_team": "CIN",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "score": 6.1
+    },
+    {
+     "name": "Rico Dowdle",
+     "pro_team": "PIT",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "score": 5.4
+    },
+    {
+     "name": "Jonathan Taylor",
+     "pro_team": "IND",
+     "fantasy_team": "The Lizard Kings",
+     "position": "RB",
+     "score": 4.7
+    },
+    {
+     "name": "Cam Skattebo",
+     "pro_team": "NYG",
+     "fantasy_team": "JSN Derulo ",
+     "position": "RB",
+     "score": 4.3
+    },
+    {
+     "name": "Mike Washington Jr.",
+     "pro_team": "LV",
+     "fantasy_team": "R-R-Radio",
+     "position": "RB",
+     "score": 4.2
+    }
+   ],
+   "WR": [
+    {
+     "name": "CeeDee Lamb",
+     "pro_team": "DAL",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "WR",
+     "score": 24.7
+    },
+    {
+     "name": "George Pickens",
+     "pro_team": "DAL",
+     "fantasy_team": "Keyser Soze",
+     "position": "WR",
+     "score": 20.3
+    },
+    {
+     "name": "DJ Moore",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "WR",
+     "score": 19.1
+    },
+    {
+     "name": "Jameson Williams",
+     "pro_team": "DET",
+     "fantasy_team": "R-R-Radio",
+     "position": "WR",
+     "score": 17.3
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "pro_team": "CAR",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 16.1
+    },
+    {
+     "name": "Malik Nabers",
+     "pro_team": "NYG",
+     "fantasy_team": "R-R-Radio",
+     "position": "WR",
+     "score": 15.0
+    },
+    {
+     "name": "Chris Olave",
+     "pro_team": "NO",
+     "fantasy_team": "Bada Bing",
+     "position": "WR",
+     "score": 14.7
+    },
+    {
+     "name": "Parker Washington",
+     "pro_team": "JAX",
+     "fantasy_team": "Keyser Soze",
+     "position": "WR",
+     "score": 14.3
+    },
+    {
+     "name": "Nico Collins",
+     "pro_team": "HOU",
+     "fantasy_team": "Remeber Bendel",
+     "position": "WR",
+     "score": 13.3
+    },
+    {
+     "name": "Carnell Tate",
+     "pro_team": "TEN",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "score": 12.8
+    },
+    {
+     "name": "Zay Flowers",
+     "pro_team": "BAL",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "WR",
+     "score": 12.4
+    },
+    {
+     "name": "Amon-Ra St. Brown",
+     "pro_team": "DET",
+     "fantasy_team": "I am gay ",
+     "position": "WR",
+     "score": 12.2
+    },
+    {
+     "name": "Tee Higgins",
+     "pro_team": "CIN",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "score": 11.3
+    },
+    {
+     "name": "Justin Jefferson",
+     "pro_team": "MIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "score": 10.2
+    },
+    {
+     "name": "Rashee Rice",
+     "pro_team": "KC",
+     "fantasy_team": "Keyser Soze",
+     "position": "WR",
+     "score": 8.3
+    },
+    {
+     "name": "Jaylen Waddle",
+     "pro_team": "DEN",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "score": 7.6
+    },
+    {
+     "name": "DeVonta Smith",
+     "pro_team": "PHI",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "WR",
+     "score": 6.6
+    },
+    {
+     "name": "Stefon Diggs",
+     "pro_team": "WSH",
+     "fantasy_team": "The Lizard Kings",
+     "position": "WR",
+     "score": 6.5
+    },
+    {
+     "name": "Deebo Samuel Sr.",
+     "pro_team": "SF",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "score": 6.2
+    },
+    {
+     "name": "Tre Tucker",
+     "pro_team": "LV",
+     "fantasy_team": "Swishington Football Team",
+     "position": "WR",
+     "score": 6.0
+    },
+    {
+     "name": "Ja'Marr Chase",
+     "pro_team": "CIN",
+     "fantasy_team": "R-R-Radio",
+     "position": "WR",
+     "score": 5.6
+    },
+    {
+     "name": "Garrett Wilson",
+     "pro_team": "NYJ",
+     "fantasy_team": "Bada Bing",
+     "position": "WR",
+     "score": 5.4
+    },
+    {
+     "name": "Keenan Allen",
+     "pro_team": "SF",
+     "fantasy_team": "JSN Derulo ",
+     "position": "WR",
+     "score": 5.3
+    },
+    {
+     "name": "Tank Dell",
+     "pro_team": "HOU",
+     "fantasy_team": "Walt's Warriors",
+     "position": "WR",
+     "score": 4.2
+    },
+    {
+     "name": "Caleb Douglas",
+     "pro_team": "MIA",
+     "fantasy_team": "The Garbage Dump",
+     "position": "WR",
+     "score": 4.0
+    }
+   ],
+   "TE": [
+    {
+     "name": "Travis Kelce",
+     "pro_team": "KC",
+     "fantasy_team": "The Garbage Dump",
+     "position": "TE",
+     "score": 22.4
+    },
+    {
+     "name": "George Kittle",
+     "pro_team": "SF",
+     "fantasy_team": "I am gay ",
+     "position": "TE",
+     "score": 16.9
+    },
+    {
+     "name": "Colston Loveland",
+     "pro_team": "CHI",
+     "fantasy_team": "JSN Derulo ",
+     "position": "TE",
+     "score": 10.4
+    },
+    {
+     "name": "Trey McBride",
+     "pro_team": "ARI",
+     "fantasy_team": "The Lizard Kings",
+     "position": "TE",
+     "score": 10.3
+    },
+    {
+     "name": "Mike Gesicki",
+     "pro_team": "CIN",
+     "fantasy_team": "R-R-Radio",
+     "position": "TE",
+     "score": 10.2
+    },
+    {
+     "name": "Chig Okonkwo",
+     "pro_team": "WSH",
+     "fantasy_team": "Walt's Warriors",
+     "position": "TE",
+     "score": 8.6
+    },
+    {
+     "name": "T.J. Hockenson",
+     "pro_team": "MIN",
+     "fantasy_team": "Bada Bing",
+     "position": "TE",
+     "score": 8.5
+    },
+    {
+     "name": "Sam LaPorta",
+     "pro_team": "DET",
+     "fantasy_team": "Keyser Soze",
+     "position": "TE",
+     "score": 7.7
+    },
+    {
+     "name": "Pat Freiermuth",
+     "pro_team": "PIT",
+     "fantasy_team": "Remeber Bendel",
+     "position": "TE",
+     "score": 6.5
+    },
+    {
+     "name": "Dawson Knox",
+     "pro_team": "BUF",
+     "fantasy_team": "Rock Hard Rhinos ",
+     "position": "TE",
+     "score": 4.1
+    },
+    {
+     "name": "Isaiah Likely",
+     "pro_team": "NYG",
+     "fantasy_team": "Walt's Warriors",
+     "position": "TE",
+     "score": 4.0
+    },
+    {
+     "name": "Mason Taylor",
+     "pro_team": "NYJ",
+     "fantasy_team": "Swishington Football Team",
+     "position": "TE",
+     "score": 3.5
+    },
+    {
+     "name": "Mark Andrews",
+     "pro_team": "BAL",
+     "fantasy_team": "Team Made of Glass",
+     "position": "TE",
+     "score": 2.4
     }
    ]
   }
@@ -8883,6 +9644,116 @@
     "FLEX": 24.4,
     "TE": 4.0,
     "D/ST": 4.0
+   }
+  },
+  {
+   "TMOG": {
+    "RB": 23.9,
+    "WR": 20.7,
+    "FLEX": 13.9,
+    "QB": 14.34,
+    "D/ST": 8.0,
+    "K": 3.0,
+    "TE": 2.4
+   },
+   "SACK": {
+    "WR": 20.6,
+    "FLEX": 17.3,
+    "RB": 8.1,
+    "K": 16.0,
+    "D/ST": 7.0,
+    "TE": 10.2,
+    "QB": 22.44
+   },
+   "SW": {
+    "WR": 37.1,
+    "RB": 19.1,
+    "FLEX": 6.6,
+    "QB": 35.9,
+    "K": 5.0,
+    "D/ST": 5.0,
+    "TE": 4.1
+   },
+   "GAY": {
+    "WR": 15.0,
+    "RB": 18.5,
+    "TE": 16.9,
+    "QB": 22.3,
+    "FLEX": 1.8,
+    "D/ST": 6.0,
+    "K": 8.0
+   },
+   "BW": {
+    "RB": 26.9,
+    "TE": 10.4,
+    "WR": 18.1,
+    "FLEX": 5.4,
+    "D/ST": 13.0,
+    "QB": 20.46,
+    "K": 9.0
+   },
+   "SWSH": {
+    "RB": 41.4,
+    "QB": 12.06,
+    "WR": 9.9,
+    "D/ST": 7.0,
+    "K": 10.0,
+    "TE": 3.5,
+    "FLEX": 6.0
+   },
+   "WALT": {
+    "RB": 42.9,
+    "WR": 6.5,
+    "QB": 12.74,
+    "TE": 4.0,
+    "D/ST": 6.0,
+    "K": 3.0,
+    "FLEX": 8.6
+   },
+   "BEND": {
+    "RB": 13.2,
+    "WR": 29.4,
+    "FLEX": 0.7,
+    "D/ST": 14.0,
+    "K": 6.0,
+    "QB": 22.88,
+    "TE": 6.5
+   },
+   "BING": {
+    "RB": 32.1,
+    "FLEX": 9.8,
+    "WR": 20.1,
+    "QB": 17.06,
+    "TE": 8.5,
+    "K": 18.0,
+    "D/ST": 1.0
+   },
+   "CJ": {
+    "WR": 34.6,
+    "RB": 39.8,
+    "TE": 7.7,
+    "QB": 14.28,
+    "FLEX": 8.3,
+    "D/ST": 3.0,
+    "K": 11.0
+   },
+   "MBJG": {
+    "RB": 37.6,
+    "TE": 10.3,
+    "WR": 17.8,
+    "FLEX": 6.8,
+    "K": 13.0,
+    "D/ST": 0.0,
+    "QB": 24.76
+   },
+   "Naug": {
+    "WR": 16.4,
+    "RB": 24.5,
+    "QB": 19.9,
+    "K": 10.0,
+    "TE": 22.4,
+    "FLEX": 4.0,
+    "D/ST": 16.0
    }
   }
  ]
