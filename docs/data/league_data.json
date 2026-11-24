@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-24 02:40:18 UTC",
-  "last_updated": "2026-11-24T02:40:18.657505+00:00"
+  "updated_at": "2026-11-24 02:50:17 UTC",
+  "last_updated": "2026-11-24T02:50:17.766424+00:00"
  },
  "teams": [
   {
@@ -578,7 +578,7 @@
     132.48,
     99.24,
     124.66,
-    104.46
+    104.36
    ],
    "ranking_points_by_week": [
     6.0,
@@ -9786,7 +9786,7 @@
      "fantasy_team": "The Garbage Dump",
      "position": "QB",
      "slot": "QB",
-     "score": 11.16
+     "score": 11.06
     },
     {
      "name": "Jason Sanders",
@@ -11499,7 +11499,7 @@
    "Naug": {
     "WR": 16.4,
     "RB": 24.5,
-    "QB": 11.16,
+    "QB": 11.06,
     "K": 10.0,
     "TE": 22.4,
     "FLEX": 4.0,
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-24T02:40:18+00:00",
+  "updated_at": "2026-11-24T02:50:17+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11618,7 +11618,7 @@
    },
    "SACK": {
     "score": 92.04,
-    "projected": 105.71,
+    "projected": 105.61,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -12038,7 +12038,7 @@
    },
    "SWSH": {
     "score": 83.86,
-    "projected": 88.14,
+    "projected": 88.11,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 78.84,
-    "projected": 82.76,
+    "projected": 82.74,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12353,7 +12353,7 @@
    },
    "BING": {
     "score": 91.0,
-    "projected": 107.47,
+    "projected": 107.36,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 103.56,
-    "projected": 115.78,
+    "projected": 115.7,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12667,8 +12667,8 @@
     ]
    },
    "Naug": {
-    "score": 104.46,
-    "projected": 115.97,
+    "score": 104.36,
+    "projected": 115.79,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12709,7 +12709,7 @@
       "slot": "QB",
       "pro_team": "CIN",
       "opponent": "None",
-      "points": 11.16,
+      "points": 11.06,
       "projected": 22.86,
       "status": "live",
       "kickoff": 1795482900000
@@ -14216,6 +14216,23 @@
      "CJ": 118.68,
      "MBJG": 103.56,
      "Naug": 104.46
+    }
+   },
+   {
+    "t": "2026-11-24T02:50:17+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 92.04,
+     "SW": 112.8,
+     "GAY": 88.5,
+     "BW": 103.26,
+     "SWSH": 83.86,
+     "WALT": 78.84,
+     "BEND": 92.68,
+     "BING": 91.0,
+     "CJ": 118.68,
+     "MBJG": 103.56,
+     "Naug": 104.36
     }
    }
   ]
