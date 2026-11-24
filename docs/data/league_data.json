@@ -8,8 +8,8 @@
   "current_matchup_week": 11,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-24 03:10:17 UTC",
-  "last_updated": "2026-11-24T03:10:17.260530+00:00"
+  "updated_at": "2026-11-24 03:20:18 UTC",
+  "last_updated": "2026-11-24T03:20:18.493972+00:00"
  },
  "teams": [
   {
@@ -90,7 +90,7 @@
     113.08,
     140.42,
     86.66,
-    92.04
+    95.84
    ],
    "ranking_points_by_week": [
     2.0,
@@ -103,7 +103,7 @@
     9.0,
     12.0,
     1.0,
-    5.0
+    6.0
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -116,7 +116,7 @@
     65.0,
     77.0,
     78.0,
-    83.0
+    84.0
    ],
    "normalized_by_week": [
     -5.0,
@@ -129,10 +129,10 @@
     14.0,
     18.0,
     12.0,
-    10.0
+    11.0
    ],
    "rank": 2,
-   "total_ranking_points": 83.0
+   "total_ranking_points": 84.0
   },
   {
    "team_id": 2,
@@ -273,7 +273,7 @@
     99.18,
     91.86,
     131.76,
-    95.7
+    99.02
    ],
    "ranking_points_by_week": [
     10.0,
@@ -456,7 +456,7 @@
     118.56,
     88.06,
     118.14,
-    83.86
+    84.86
    ],
    "ranking_points_by_week": [
     1.0,
@@ -530,7 +530,7 @@
     6.0,
     10.0,
     9.0,
-    6.0
+    5.0
    ],
    "cumulative_points_by_week": [
     7.0,
@@ -543,7 +543,7 @@
     41.0,
     51.0,
     60.0,
-    66.0
+    65.0
    ],
    "normalized_by_week": [
     0.0,
@@ -556,10 +556,10 @@
     -10.0,
     -8.0,
     -6.0,
-    -7.0
+    -8.0
    ],
    "rank": 9,
-   "total_ranking_points": 66.0
+   "total_ranking_points": 65.0
   },
   {
    "team_id": 6,
@@ -578,7 +578,7 @@
     132.48,
     99.24,
     124.66,
-    104.44
+    110.52
    ],
    "ranking_points_by_week": [
     6.0,
@@ -9589,6 +9589,14 @@
      "score": 17.3
     },
     {
+     "name": "Bengals TQB",
+     "pro_team": "CIN",
+     "fantasy_team": "The Garbage Dump",
+     "position": "QB",
+     "slot": "QB",
+     "score": 17.22
+    },
+    {
      "name": "Derrick Henry",
      "pro_team": "BAL",
      "fantasy_team": "3 Inches of Disappointment ",
@@ -9781,14 +9789,6 @@
      "score": 12.06
     },
     {
-     "name": "Bengals TQB",
-     "pro_team": "CIN",
-     "fantasy_team": "The Garbage Dump",
-     "position": "QB",
-     "slot": "QB",
-     "score": 11.14
-    },
-    {
      "name": "Jason Sanders",
      "pro_team": "NYJ",
      "fantasy_team": "Keyser Soze",
@@ -9861,20 +9861,20 @@
      "score": 9.6
     },
     {
+     "name": "Commanders TQB",
+     "pro_team": "WSH",
+     "fantasy_team": "Bada Bing",
+     "position": "QB",
+     "slot": "QB",
+     "score": 9.52
+    },
+    {
      "name": "Jake Bates",
      "pro_team": "DET",
      "fantasy_team": "JSN Derulo ",
      "position": "K",
      "slot": "K",
      "score": 9.0
-    },
-    {
-     "name": "Commanders TQB",
-     "pro_team": "WSH",
-     "fantasy_team": "Bada Bing",
-     "position": "QB",
-     "slot": "QB",
-     "score": 8.8
     },
     {
      "name": "T.J. Hockenson",
@@ -9973,6 +9973,14 @@
      "score": 6.6
     },
     {
+     "name": "Mike Gesicki",
+     "pro_team": "CIN",
+     "fantasy_team": "R-R-Radio",
+     "position": "TE",
+     "slot": "TE",
+     "score": 6.5
+    },
+    {
      "name": "Pat Freiermuth",
      "pro_team": "PIT",
      "fantasy_team": "Remeber Bendel",
@@ -9987,6 +9995,14 @@
      "position": "WR",
      "slot": "WR",
      "score": 6.2
+    },
+    {
+     "name": "Chase Brown",
+     "pro_team": "CIN",
+     "fantasy_team": "Bada Bing",
+     "position": "RB",
+     "slot": "RB",
+     "score": 6.1
     },
     {
      "name": "Jets D/ST",
@@ -10061,6 +10077,14 @@
      "score": 5.0
     },
     {
+     "name": "Evan McPherson",
+     "pro_team": "CIN",
+     "fantasy_team": "Swishington Football Team",
+     "position": "K",
+     "slot": "K",
+     "score": 5.0
+    },
+    {
      "name": "Jonathan Taylor",
      "pro_team": "IND",
      "fantasy_team": "The Lizard Kings",
@@ -10099,14 +10123,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 4.1
-    },
-    {
-     "name": "Evan McPherson",
-     "pro_team": "CIN",
-     "fantasy_team": "Swishington Football Team",
-     "position": "K",
-     "slot": "K",
-     "score": 4.0
     },
     {
      "name": "Isaiah Likely",
@@ -10157,14 +10173,6 @@
      "score": 3.5
     },
     {
-     "name": "Chase Brown",
-     "pro_team": "CIN",
-     "fantasy_team": "Bada Bing",
-     "position": "RB",
-     "slot": "RB",
-     "score": 3.5
-    },
-    {
      "name": "Chase McLaughlin",
      "pro_team": "TB",
      "fantasy_team": "Team Made of Glass",
@@ -10195,14 +10203,6 @@
      "position": "WR",
      "slot": "WR",
      "score": 2.8
-    },
-    {
-     "name": "Mike Gesicki",
-     "pro_team": "CIN",
-     "fantasy_team": "R-R-Radio",
-     "position": "TE",
-     "slot": "TE",
-     "score": 2.7
     },
     {
      "name": "Mark Andrews",
@@ -11412,7 +11412,7 @@
     "RB": 8.1,
     "K": 16.0,
     "D/ST": 7.0,
-    "TE": 2.7,
+    "TE": 6.5,
     "QB": 22.44
    },
    "SW": {
@@ -11447,7 +11447,7 @@
     "QB": 12.06,
     "WR": 9.9,
     "D/ST": 7.0,
-    "K": 4.0,
+    "K": 5.0,
     "TE": 3.5,
     "FLEX": 6.0
    },
@@ -11470,10 +11470,10 @@
     "TE": 6.5
    },
    "BING": {
-    "RB": 29.5,
+    "RB": 32.1,
     "FLEX": 9.8,
     "WR": 20.1,
-    "QB": 8.8,
+    "QB": 9.52,
     "TE": 8.5,
     "K": 18.0,
     "D/ST": 1.0
@@ -11499,7 +11499,7 @@
    "Naug": {
     "WR": 16.4,
     "RB": 24.5,
-    "QB": 11.14,
+    "QB": 17.22,
     "K": 10.0,
     "TE": 22.4,
     "FLEX": 4.0,
@@ -11509,7 +11509,7 @@
  ],
  "live": {
   "week": 11,
-  "updated_at": "2026-11-24T03:10:17+00:00",
+  "updated_at": "2026-11-24T03:20:18+00:00",
   "teams": {
    "TMOG": {
     "score": 86.24,
@@ -11617,8 +11617,8 @@
     ]
    },
    "SACK": {
-    "score": 92.04,
-    "projected": 104.1,
+    "score": 95.84,
+    "projected": 105.77,
     "starters": [
      {
       "name": "Ja'Marr Chase",
@@ -11692,7 +11692,7 @@
       "slot": "TE",
       "pro_team": "CIN",
       "opponent": "WSH",
-      "points": 2.7,
+      "points": 6.5,
       "projected": 6.12,
       "status": "live",
       "kickoff": 1795482900000
@@ -12037,8 +12037,8 @@
     ]
    },
    "SWSH": {
-    "score": 83.86,
-    "projected": 87.64,
+    "score": 84.86,
+    "projected": 87.97,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12090,7 +12090,7 @@
       "slot": "K",
       "pro_team": "CIN",
       "opponent": "WSH",
-      "points": 4.0,
+      "points": 5.0,
       "projected": 8.51,
       "status": "live",
       "kickoff": 1795482900000
@@ -12143,7 +12143,7 @@
    },
    "WALT": {
     "score": 78.84,
-    "projected": 82.3,
+    "projected": 81.69,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -12352,8 +12352,8 @@
     ]
    },
    "BING": {
-    "score": 95.7,
-    "projected": 110.23,
+    "score": 99.02,
+    "projected": 110.99,
     "starters": [
      {
       "name": "Chase Brown",
@@ -12361,7 +12361,7 @@
       "slot": "RB",
       "pro_team": "CIN",
       "opponent": "WSH",
-      "points": 3.5,
+      "points": 6.1,
       "projected": 13.16,
       "status": "live",
       "kickoff": 1795482900000
@@ -12405,7 +12405,7 @@
       "slot": "QB",
       "pro_team": "WSH",
       "opponent": "None",
-      "points": 8.8,
+      "points": 9.52,
       "projected": 19.56,
       "status": "live",
       "kickoff": 1795482900000
@@ -12563,7 +12563,7 @@
    },
    "MBJG": {
     "score": 103.56,
-    "projected": 114.35,
+    "projected": 112.44,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -12667,8 +12667,8 @@
     ]
    },
    "Naug": {
-    "score": 104.44,
-    "projected": 114.59,
+    "score": 110.52,
+    "projected": 118.88,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -12709,7 +12709,7 @@
       "slot": "QB",
       "pro_team": "CIN",
       "opponent": "None",
-      "points": 11.14,
+      "points": 17.22,
       "projected": 22.86,
       "status": "live",
       "kickoff": 1795482900000
@@ -14267,6 +14267,23 @@
      "CJ": 118.68,
      "MBJG": 103.56,
      "Naug": 104.44
+    }
+   },
+   {
+    "t": "2026-11-24T03:20:18+00:00",
+    "scores": {
+     "TMOG": 86.24,
+     "SACK": 95.84,
+     "SW": 112.8,
+     "GAY": 88.5,
+     "BW": 103.26,
+     "SWSH": 84.86,
+     "WALT": 78.84,
+     "BEND": 92.68,
+     "BING": 99.02,
+     "CJ": 118.68,
+     "MBJG": 103.56,
+     "Naug": 110.52
     }
    }
   ]
