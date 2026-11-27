@@ -8,8 +8,8 @@
   "current_matchup_week": 12,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-27 02:10:20 UTC",
-  "last_updated": "2026-11-27T02:10:20.714611+00:00"
+  "updated_at": "2026-11-27 02:20:21 UTC",
+  "last_updated": "2026-11-27T02:20:21.226999+00:00"
  },
  "teams": [
   {
@@ -95,7 +95,7 @@
     122.8,
     131.86,
     118.68,
-    22.7
+    23.5
    ],
    "ranking_points_by_week": [
     8.0,
@@ -290,7 +290,7 @@
     88.06,
     118.14,
     89.86,
-    47.9
+    48.18
    ],
    "ranking_points_by_week": [
     1.0,
@@ -745,7 +745,7 @@
     84.76,
     94.1,
     86.24,
-    38.7
+    40.6
    ],
    "ranking_points_by_week": [
     11.0,
@@ -10409,20 +10409,20 @@
      "score": 16.9
     },
     {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "RB",
+     "score": 13.4
+    },
+    {
      "name": "Sam LaPorta",
      "pro_team": "DET",
      "fantasy_team": "Keyser Soze",
      "position": "TE",
      "slot": "TE",
      "score": 12.4
-    },
-    {
-     "name": "James Cook III",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "RB",
-     "score": 11.5
     },
     {
      "name": "Jameson Williams",
@@ -10486,7 +10486,7 @@
      "fantasy_team": "Swishington Football Team",
      "position": "QB",
      "slot": "QB",
-     "score": 2.2
+     "score": 2.48
     },
     {
      "name": "Travis Kelce",
@@ -10510,7 +10510,7 @@
      "fantasy_team": "Keyser Soze",
      "position": "RB",
      "slot": "RB",
-     "score": 1.1
+     "score": 1.9
     },
     {
      "name": "Tyler Bass",
@@ -12444,14 +12444,14 @@
    "SWSH": {
     "RB": 45.7,
     "TE": 0.0,
-    "QB": 2.2,
+    "QB": 2.48,
     "WR": 0.0,
     "FLEX": 0.0,
     "K": 0.0,
     "D/ST": 0.0
    },
    "TMOG": {
-    "RB": 11.5,
+    "RB": 13.4,
     "WR": 0.0,
     "FLEX": 0.0,
     "QB": 25.3,
@@ -12480,7 +12480,7 @@
    "CJ": {
     "FLEX": 0.0,
     "WR": 9.2,
-    "RB": 1.1,
+    "RB": 1.9,
     "TE": 12.4,
     "K": 0.0,
     "QB": 0.0,
@@ -12535,7 +12535,7 @@
  ],
  "live": {
   "week": 12,
-  "updated_at": "2026-11-27T02:10:20+00:00",
+  "updated_at": "2026-11-27T02:20:21+00:00",
   "teams": {
    "SACK": {
     "score": 11.0,
@@ -12748,8 +12748,8 @@
     ]
    },
    "SWSH": {
-    "score": 47.9,
-    "projected": 120.32,
+    "score": 48.18,
+    "projected": 118.91,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12779,7 +12779,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 2.2,
+      "points": 2.48,
       "projected": 18.06,
       "status": "live",
       "kickoff": 1795742400000
@@ -12853,8 +12853,8 @@
     ]
    },
    "TMOG": {
-    "score": 38.7,
-    "projected": 97.2,
+    "score": 40.6,
+    "projected": 96.86,
     "starters": [
      {
       "name": "James Cook III",
@@ -12862,7 +12862,7 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "KC",
-      "points": 11.5,
+      "points": 13.4,
       "projected": 13.55,
       "status": "live",
       "kickoff": 1795742400000
@@ -13168,8 +13168,8 @@
     ]
    },
    "CJ": {
-    "score": 22.7,
-    "projected": 124.57,
+    "score": 23.5,
+    "projected": 123.85,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -13232,7 +13232,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "BUF",
-      "points": 1.1,
+      "points": 1.9,
       "projected": 16.24,
       "status": "live",
       "kickoff": 1795742400000
@@ -13379,7 +13379,7 @@
    },
    "Naug": {
     "score": 12.8,
-    "projected": 103.38,
+    "projected": 102.5,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13694,7 +13694,7 @@
    },
    "BING": {
     "score": 1.0,
-    "projected": 113.82,
+    "projected": 112.83,
     "starters": [
      {
       "name": "Chase Brown",
@@ -13945,6 +13945,23 @@
      "BEND": 0.0,
      "SW": 79.94,
      "CJ": 22.7,
+     "BW": 40.8,
+     "Naug": 12.8,
+     "WALT": 6.0,
+     "MBJG": 13.02,
+     "BING": 1.0
+    }
+   },
+   {
+    "t": "2026-11-27T02:20:21+00:00",
+    "scores": {
+     "SACK": 11.0,
+     "GAY": 43.8,
+     "SWSH": 48.18,
+     "TMOG": 40.6,
+     "BEND": 0.0,
+     "SW": 79.94,
+     "CJ": 23.5,
      "BW": 40.8,
      "Naug": 12.8,
      "WALT": 6.0,
