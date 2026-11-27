@@ -8,8 +8,8 @@
   "current_matchup_week": 12,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-27 03:50:18 UTC",
-  "last_updated": "2026-11-27T03:50:18.840605+00:00"
+  "updated_at": "2026-11-27 04:00:23 UTC",
+  "last_updated": "2026-11-27T04:00:23.660409+00:00"
  },
  "teams": [
   {
@@ -95,7 +95,7 @@
     122.8,
     131.86,
     118.68,
-    37.1
+    38.7
    ],
    "ranking_points_by_week": [
     8.0,
@@ -10409,20 +10409,20 @@
      "score": 17.7
     },
     {
+     "name": "Emmett Johnson",
+     "pro_team": "KC",
+     "fantasy_team": "Keyser Soze",
+     "position": "RB",
+     "slot": "RB",
+     "score": 17.1
+    },
+    {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
      "fantasy_team": "Rock Hard Rhinos ",
      "position": "WR",
      "slot": "WR",
      "score": 16.9
-    },
-    {
-     "name": "Emmett Johnson",
-     "pro_team": "KC",
-     "fantasy_team": "Keyser Soze",
-     "position": "RB",
-     "slot": "RB",
-     "score": 15.5
     },
     {
      "name": "Sam LaPorta",
@@ -12480,7 +12480,7 @@
    "CJ": {
     "FLEX": 0.0,
     "WR": 9.2,
-    "RB": 15.5,
+    "RB": 17.1,
     "TE": 12.4,
     "K": 0.0,
     "QB": 0.0,
@@ -12535,7 +12535,7 @@
  ],
  "live": {
   "week": 12,
-  "updated_at": "2026-11-27T03:50:18+00:00",
+  "updated_at": "2026-11-27T04:00:23+00:00",
   "teams": {
    "SACK": {
     "score": 11.0,
@@ -12749,7 +12749,7 @@
    },
    "SWSH": {
     "score": 48.6,
-    "projected": 111.15,
+    "projected": 109.39,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12854,7 +12854,7 @@
    },
    "TMOG": {
     "score": 45.8,
-    "projected": 91.26,
+    "projected": 88.93,
     "starters": [
      {
       "name": "James Cook III",
@@ -13168,8 +13168,8 @@
     ]
    },
    "CJ": {
-    "score": 37.1,
-    "projected": 130.1,
+    "score": 38.7,
+    "projected": 130.12,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -13232,7 +13232,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "BUF",
-      "points": 15.5,
+      "points": 17.1,
       "projected": 16.24,
       "status": "live",
       "kickoff": 1795742400000
@@ -13379,7 +13379,7 @@
    },
    "Naug": {
     "score": 19.8,
-    "projected": 105.25,
+    "projected": 104.34,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13694,7 +13694,7 @@
    },
    "BING": {
     "score": 6.0,
-    "projected": 113.05,
+    "projected": 112.02,
     "starters": [
      {
       "name": "Chase Brown",
@@ -14098,6 +14098,23 @@
      "BEND": 0.0,
      "SW": 79.94,
      "CJ": 37.1,
+     "BW": 40.8,
+     "Naug": 19.8,
+     "WALT": 6.0,
+     "MBJG": 13.02,
+     "BING": 6.0
+    }
+   },
+   {
+    "t": "2026-11-27T04:00:23+00:00",
+    "scores": {
+     "SACK": 11.0,
+     "GAY": 43.8,
+     "SWSH": 48.6,
+     "TMOG": 45.8,
+     "BEND": 0.0,
+     "SW": 79.94,
+     "CJ": 38.7,
      "BW": 40.8,
      "Naug": 19.8,
      "WALT": 6.0,
