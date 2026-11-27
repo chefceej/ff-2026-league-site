@@ -8,8 +8,8 @@
   "current_matchup_week": 12,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-27 03:40:28 UTC",
-  "last_updated": "2026-11-27T03:40:28.660672+00:00"
+  "updated_at": "2026-11-27 03:50:18 UTC",
+  "last_updated": "2026-11-27T03:50:18.840605+00:00"
  },
  "teams": [
   {
@@ -95,7 +95,7 @@
     122.8,
     131.86,
     118.68,
-    35.4
+    37.1
    ],
    "ranking_points_by_week": [
     8.0,
@@ -290,7 +290,7 @@
     88.06,
     118.14,
     89.86,
-    48.32
+    48.6
    ],
    "ranking_points_by_week": [
     1.0,
@@ -420,7 +420,7 @@
     91.86,
     131.76,
     106.56,
-    1.0
+    6.0
    ],
    "ranking_points_by_week": [
     10.0,
@@ -434,7 +434,7 @@
     5.0,
     10.0,
     8.0,
-    2.0
+    2.5
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -448,7 +448,7 @@
     56.0,
     66.0,
     74.0,
-    76.0
+    76.5
    ],
    "normalized_by_week": [
     3.0,
@@ -462,10 +462,10 @@
     -3.0,
     0.0,
     1.0,
-    -5.0
+    -4.5
    ],
    "rank": 7,
-   "total_ranking_points": 76.0
+   "total_ranking_points": 76.5
   },
   {
    "team_id": 9,
@@ -499,7 +499,7 @@
     8.0,
     3.0,
     1.0,
-    3.0
+    2.5
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -513,7 +513,7 @@
     69.0,
     72.0,
     73.0,
-    76.0
+    75.5
    ],
    "normalized_by_week": [
     5.0,
@@ -527,10 +527,10 @@
     10.0,
     6.0,
     0.0,
-    -5.0
+    -5.5
    ],
    "rank": 8,
-   "total_ranking_points": 76.0
+   "total_ranking_points": 75.5
   },
   {
    "team_id": 6,
@@ -615,7 +615,7 @@
     84.76,
     94.1,
     86.24,
-    44.6
+    45.8
    ],
    "ranking_points_by_week": [
     11.0,
@@ -10401,6 +10401,14 @@
      "score": 18.1
     },
     {
+     "name": "James Cook III",
+     "pro_team": "BUF",
+     "fantasy_team": "Team Made of Glass",
+     "position": "RB",
+     "slot": "RB",
+     "score": 17.7
+    },
+    {
      "name": "CeeDee Lamb",
      "pro_team": "DAL",
      "fantasy_team": "Rock Hard Rhinos ",
@@ -10409,20 +10417,12 @@
      "score": 16.9
     },
     {
-     "name": "James Cook III",
-     "pro_team": "BUF",
-     "fantasy_team": "Team Made of Glass",
-     "position": "RB",
-     "slot": "RB",
-     "score": 16.5
-    },
-    {
      "name": "Emmett Johnson",
      "pro_team": "KC",
      "fantasy_team": "Keyser Soze",
      "position": "RB",
      "slot": "RB",
-     "score": 13.8
+     "score": 15.5
     },
     {
      "name": "Sam LaPorta",
@@ -10489,6 +10489,14 @@
      "score": 6.0
     },
     {
+     "name": "Tyler Bass",
+     "pro_team": "BUF",
+     "fantasy_team": "Bada Bing",
+     "position": "K",
+     "slot": "K",
+     "score": 6.0
+    },
+    {
      "name": "Matthew Golden",
      "pro_team": "GB",
      "fantasy_team": "The Lizard Kings",
@@ -10502,7 +10510,7 @@
      "fantasy_team": "Swishington Football Team",
      "position": "QB",
      "slot": "QB",
-     "score": 2.62
+     "score": 2.9
     },
     {
      "name": "Tyler Higbee",
@@ -10511,14 +10519,6 @@
      "position": "TE",
      "slot": "TE",
      "score": 1.9
-    },
-    {
-     "name": "Tyler Bass",
-     "pro_team": "BUF",
-     "fantasy_team": "Bada Bing",
-     "position": "K",
-     "slot": "K",
-     "score": 1.0
     },
     {
      "name": "DJ Moore",
@@ -12444,14 +12444,14 @@
    "SWSH": {
     "RB": 45.7,
     "TE": 0.0,
-    "QB": 2.62,
+    "QB": 2.9,
     "WR": 0.0,
     "FLEX": 0.0,
     "K": 0.0,
     "D/ST": 0.0
    },
    "TMOG": {
-    "RB": 16.5,
+    "RB": 17.7,
     "WR": 0.9,
     "FLEX": 0.0,
     "QB": 25.3,
@@ -12480,7 +12480,7 @@
    "CJ": {
     "FLEX": 0.0,
     "WR": 9.2,
-    "RB": 13.8,
+    "RB": 15.5,
     "TE": 12.4,
     "K": 0.0,
     "QB": 0.0,
@@ -12528,14 +12528,14 @@
     "WR": 0.0,
     "QB": 0.0,
     "TE": 0.0,
-    "K": 1.0,
+    "K": 6.0,
     "D/ST": 0.0
    }
   }
  ],
  "live": {
   "week": 12,
-  "updated_at": "2026-11-27T03:40:28+00:00",
+  "updated_at": "2026-11-27T03:50:18+00:00",
   "teams": {
    "SACK": {
     "score": 11.0,
@@ -12748,8 +12748,8 @@
     ]
    },
    "SWSH": {
-    "score": 48.32,
-    "projected": 111.84,
+    "score": 48.6,
+    "projected": 111.15,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12779,7 +12779,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 2.62,
+      "points": 2.9,
       "projected": 18.06,
       "status": "live",
       "kickoff": 1795742400000
@@ -12853,8 +12853,8 @@
     ]
    },
    "TMOG": {
-    "score": 44.6,
-    "projected": 91.34,
+    "score": 45.8,
+    "projected": 91.26,
     "starters": [
      {
       "name": "James Cook III",
@@ -12862,7 +12862,7 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "KC",
-      "points": 16.5,
+      "points": 17.7,
       "projected": 13.55,
       "status": "live",
       "kickoff": 1795742400000
@@ -13168,8 +13168,8 @@
     ]
    },
    "CJ": {
-    "score": 35.4,
-    "projected": 129.28,
+    "score": 37.1,
+    "projected": 130.1,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -13232,7 +13232,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "BUF",
-      "points": 13.8,
+      "points": 15.5,
       "projected": 16.24,
       "status": "live",
       "kickoff": 1795742400000
@@ -13379,7 +13379,7 @@
    },
    "Naug": {
     "score": 19.8,
-    "projected": 105.76,
+    "projected": 105.25,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13693,8 +13693,8 @@
     ]
    },
    "BING": {
-    "score": 1.0,
-    "projected": 108.62,
+    "score": 6.0,
+    "projected": 113.05,
     "starters": [
      {
       "name": "Chase Brown",
@@ -13779,7 +13779,7 @@
       "slot": "K",
       "pro_team": "BUF",
       "opponent": "KC",
-      "points": 1.0,
+      "points": 6.0,
       "projected": 10.56,
       "status": "live",
       "kickoff": 1795742400000
@@ -14086,6 +14086,23 @@
      "WALT": 6.0,
      "MBJG": 13.02,
      "BING": 1.0
+    }
+   },
+   {
+    "t": "2026-11-27T03:50:18+00:00",
+    "scores": {
+     "SACK": 11.0,
+     "GAY": 43.8,
+     "SWSH": 48.6,
+     "TMOG": 45.8,
+     "BEND": 0.0,
+     "SW": 79.94,
+     "CJ": 37.1,
+     "BW": 40.8,
+     "Naug": 19.8,
+     "WALT": 6.0,
+     "MBJG": 13.02,
+     "BING": 6.0
     }
    }
   ]
