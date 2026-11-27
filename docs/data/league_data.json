@@ -8,8 +8,8 @@
   "current_matchup_week": 12,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-27 05:50:20 UTC",
-  "last_updated": "2026-11-27T05:50:20.089636+00:00"
+  "updated_at": "2026-11-27 16:32:33 UTC",
+  "last_updated": "2026-11-27T16:32:33.892919+00:00"
  },
  "teams": [
   {
@@ -10889,14 +10889,6 @@
      "score": 0.0
     },
     {
-     "name": "Parker Washington",
-     "pro_team": "JAX",
-     "fantasy_team": "Keyser Soze",
-     "position": "WR",
-     "slot": "WR",
-     "score": 0.0
-    },
-    {
      "name": "Jason Sanders",
      "pro_team": "NYJ",
      "fantasy_team": "Keyser Soze",
@@ -10918,6 +10910,14 @@
      "fantasy_team": "Keyser Soze",
      "position": "D/ST",
      "slot": "D/ST",
+     "score": 0.0
+    },
+    {
+     "name": "Josh Cameron",
+     "pro_team": "JAX",
+     "fantasy_team": "Keyser Soze",
+     "position": "WR",
+     "slot": "WR",
      "score": 0.0
     },
     {
@@ -12535,7 +12535,7 @@
  ],
  "live": {
   "week": 12,
-  "updated_at": "2026-11-27T05:50:20+00:00",
+  "updated_at": "2026-11-27T16:32:33+00:00",
   "teams": {
    "SACK": {
     "score": 11.0,
@@ -12907,7 +12907,7 @@
       "pro_team": "CHI",
       "opponent": "None",
       "points": 25.3,
-      "projected": 15.98,
+      "projected": 16.0,
       "status": "final",
       "kickoff": 1795716000000
      },
@@ -13073,7 +13073,7 @@
       "pro_team": "DAL",
       "opponent": "PHI",
       "points": 16.9,
-      "projected": 16.97,
+      "projected": 16.96,
       "status": "final",
       "kickoff": 1795728600000
      },
@@ -13169,7 +13169,7 @@
    },
    "CJ": {
     "score": 39.2,
-    "projected": 129.02,
+    "projected": 118.64,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -13203,17 +13203,6 @@
       "projected": 19.52,
       "status": "pre",
       "kickoff": 1796087700000
-     },
-     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "slot": "WR",
-      "pro_team": "JAX",
-      "opponent": "TEN",
-      "points": 0.0,
-      "projected": 15.54,
-      "status": "pre",
-      "kickoff": 1795975200000
      },
      {
       "name": "Sam LaPorta",
@@ -13269,6 +13258,17 @@
       "projected": 8.29,
       "status": "pre",
       "kickoff": 1795987500000
+     },
+     {
+      "name": "Josh Cameron",
+      "position": "WR",
+      "slot": "WR",
+      "pro_team": "JAX",
+      "opponent": "TEN",
+      "points": 0.0,
+      "projected": 5.16,
+      "status": "pre",
+      "kickoff": 1795975200000
      }
     ]
    },
@@ -13305,7 +13305,7 @@
       "pro_team": "CHI",
       "opponent": "DET",
       "points": -1.0,
-      "projected": 8.3,
+      "projected": 8.32,
       "status": "final",
       "kickoff": 1795716000000
      },
@@ -13484,7 +13484,7 @@
    },
    "WALT": {
     "score": 6.0,
-    "projected": 108.07,
+    "projected": 107.31,
     "starters": [
      {
       "name": "Ashton Jeanty",
@@ -13526,7 +13526,7 @@
       "pro_team": "CHI",
       "opponent": "DET",
       "points": 6.0,
-      "projected": 10.45,
+      "projected": 10.47,
       "status": "final",
       "kickoff": 1795716000000
      },
@@ -13581,7 +13581,7 @@
       "pro_team": "WSH",
       "opponent": "ARI",
       "points": 0.0,
-      "projected": 9.42,
+      "projected": 8.67,
       "status": "pre",
       "kickoff": 1795987500000
      }
@@ -13589,7 +13589,7 @@
    },
    "MBJG": {
     "score": 13.02,
-    "projected": 103.93,
+    "projected": 103.78,
     "starters": [
      {
       "name": "Jonathan Taylor",
@@ -13609,7 +13609,7 @@
       "pro_team": "ARI",
       "opponent": "WSH",
       "points": 0.0,
-      "projected": 11.24,
+      "projected": 11.09,
       "status": "pre",
       "kickoff": 1795987500000
      },
