@@ -8,8 +8,8 @@
   "current_matchup_week": 12,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-27 04:20:18 UTC",
-  "last_updated": "2026-11-27T04:20:18.917386+00:00"
+  "updated_at": "2026-11-27 04:30:23 UTC",
+  "last_updated": "2026-11-27T04:30:23.343678+00:00"
  },
  "teams": [
   {
@@ -95,7 +95,7 @@
     122.8,
     131.86,
     118.68,
-    38.7
+    39.2
    ],
    "ranking_points_by_week": [
     8.0,
@@ -174,7 +174,7 @@
     12.0,
     1.0,
     6.0,
-    4.0
+    3.5
    ],
    "cumulative_points_by_week": [
     2.0,
@@ -188,7 +188,7 @@
     77.0,
     78.0,
     84.0,
-    88.0
+    87.5
    ],
    "normalized_by_week": [
     -5.0,
@@ -202,10 +202,10 @@
     18.0,
     12.0,
     11.0,
-    7.0
+    6.5
    ],
    "rank": 3,
-   "total_ranking_points": 88.0
+   "total_ranking_points": 87.5
   },
   {
    "team_id": 1,
@@ -420,7 +420,7 @@
     91.86,
     131.76,
     106.56,
-    6.0
+    11.0
    ],
    "ranking_points_by_week": [
     10.0,
@@ -434,7 +434,7 @@
     5.0,
     10.0,
     8.0,
-    2.5
+    3.5
    ],
    "cumulative_points_by_week": [
     10.0,
@@ -448,7 +448,7 @@
     56.0,
     66.0,
     74.0,
-    76.5
+    77.5
    ],
    "normalized_by_week": [
     3.0,
@@ -462,10 +462,10 @@
     -3.0,
     0.0,
     1.0,
-    -4.5
+    -3.5
    ],
    "rank": 7,
-   "total_ranking_points": 76.5
+   "total_ranking_points": 77.5
   },
   {
    "team_id": 9,
@@ -499,7 +499,7 @@
     8.0,
     3.0,
     1.0,
-    2.5
+    2.0
    ],
    "cumulative_points_by_week": [
     12.0,
@@ -513,7 +513,7 @@
     69.0,
     72.0,
     73.0,
-    75.5
+    75.0
    ],
    "normalized_by_week": [
     5.0,
@@ -527,10 +527,10 @@
     10.0,
     6.0,
     0.0,
-    -5.5
+    -6.0
    ],
    "rank": 8,
-   "total_ranking_points": 75.5
+   "total_ranking_points": 75.0
   },
   {
    "team_id": 6,
@@ -10414,7 +10414,7 @@
      "fantasy_team": "Keyser Soze",
      "position": "RB",
      "slot": "RB",
-     "score": 17.1
+     "score": 17.6
     },
     {
      "name": "CeeDee Lamb",
@@ -10438,6 +10438,14 @@
      "fantasy_team": "R-R-Radio",
      "position": "WR",
      "slot": "FLEX",
+     "score": 11.0
+    },
+    {
+     "name": "Tyler Bass",
+     "pro_team": "BUF",
+     "fantasy_team": "Bada Bing",
+     "position": "K",
+     "slot": "K",
      "score": 11.0
     },
     {
@@ -10486,14 +10494,6 @@
      "fantasy_team": "Walt's Warriors",
      "position": "WR",
      "slot": "WR",
-     "score": 6.0
-    },
-    {
-     "name": "Tyler Bass",
-     "pro_team": "BUF",
-     "fantasy_team": "Bada Bing",
-     "position": "K",
-     "slot": "K",
      "score": 6.0
     },
     {
@@ -12480,7 +12480,7 @@
    "CJ": {
     "FLEX": 0.0,
     "WR": 9.2,
-    "RB": 17.1,
+    "RB": 17.6,
     "TE": 12.4,
     "K": 0.0,
     "QB": 0.0,
@@ -12528,14 +12528,14 @@
     "WR": 0.0,
     "QB": 0.0,
     "TE": 0.0,
-    "K": 6.0,
+    "K": 11.0,
     "D/ST": 0.0
    }
   }
  ],
  "live": {
   "week": 12,
-  "updated_at": "2026-11-27T04:20:18+00:00",
+  "updated_at": "2026-11-27T04:30:23+00:00",
   "teams": {
    "SACK": {
     "score": 11.0,
@@ -12749,7 +12749,7 @@
    },
    "SWSH": {
     "score": 49.24,
-    "projected": 108.68,
+    "projected": 108.25,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12854,7 +12854,7 @@
    },
    "TMOG": {
     "score": 48.7,
-    "projected": 90.04,
+    "projected": 89.47,
     "starters": [
      {
       "name": "James Cook III",
@@ -13168,8 +13168,8 @@
     ]
    },
    "CJ": {
-    "score": 38.7,
-    "projected": 128.9,
+    "score": 39.2,
+    "projected": 129.02,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -13232,7 +13232,7 @@
       "slot": "RB",
       "pro_team": "KC",
       "opponent": "BUF",
-      "points": 17.1,
+      "points": 17.6,
       "projected": 16.24,
       "status": "live",
       "kickoff": 1795742400000
@@ -13379,7 +13379,7 @@
    },
    "Naug": {
     "score": 19.8,
-    "projected": 103.64,
+    "projected": 103.41,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13693,8 +13693,8 @@
     ]
    },
    "BING": {
-    "score": 6.0,
-    "projected": 111.23,
+    "score": 11.0,
+    "projected": 115.98,
     "starters": [
      {
       "name": "Chase Brown",
@@ -13779,7 +13779,7 @@
       "slot": "K",
       "pro_team": "BUF",
       "opponent": "KC",
-      "points": 6.0,
+      "points": 11.0,
       "projected": 10.56,
       "status": "live",
       "kickoff": 1795742400000
@@ -14154,6 +14154,23 @@
      "WALT": 6.0,
      "MBJG": 13.02,
      "BING": 6.0
+    }
+   },
+   {
+    "t": "2026-11-27T04:30:23+00:00",
+    "scores": {
+     "SACK": 11.0,
+     "GAY": 43.8,
+     "SWSH": 49.24,
+     "TMOG": 48.7,
+     "BEND": 0.0,
+     "SW": 79.94,
+     "CJ": 39.2,
+     "BW": 40.8,
+     "Naug": 19.8,
+     "WALT": 6.0,
+     "MBJG": 13.02,
+     "BING": 11.0
     }
    }
   ]
