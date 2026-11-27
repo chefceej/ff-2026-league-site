@@ -8,8 +8,8 @@
   "current_matchup_week": 12,
   "total_matchup_weeks": 14,
   "playoff_cutoff": 6,
-  "updated_at": "2026-11-27 03:30:22 UTC",
-  "last_updated": "2026-11-27T03:30:22.653742+00:00"
+  "updated_at": "2026-11-27 03:40:28 UTC",
+  "last_updated": "2026-11-27T03:40:28.660672+00:00"
  },
  "teams": [
   {
@@ -290,7 +290,7 @@
     88.06,
     118.14,
     89.86,
-    47.78
+    48.32
    ],
    "ranking_points_by_week": [
     1.0,
@@ -598,6 +598,71 @@
    "total_ranking_points": 67.0
   },
   {
+   "team_id": 7,
+   "team_name": "Team Made of Glass",
+   "team_abbrev": "TMOG",
+   "abbrev": "TMOG",
+   "owner": "Brantley Lohkamp",
+   "scores_by_week": [
+    134.52,
+    71.46,
+    82.92,
+    81.62,
+    125.36,
+    113.5,
+    102.92,
+    109.58,
+    84.76,
+    94.1,
+    86.24,
+    44.6
+   ],
+   "ranking_points_by_week": [
+    11.0,
+    3.0,
+    3.0,
+    2.0,
+    8.0,
+    9.0,
+    5.0,
+    8.0,
+    3.0,
+    2.0,
+    2.0,
+    10.0
+   ],
+   "cumulative_points_by_week": [
+    11.0,
+    14.0,
+    17.0,
+    19.0,
+    27.0,
+    36.0,
+    41.0,
+    49.0,
+    52.0,
+    54.0,
+    56.0,
+    66.0
+   ],
+   "normalized_by_week": [
+    4.0,
+    2.0,
+    -2.0,
+    -8.0,
+    -7.0,
+    -4.0,
+    -6.0,
+    -2.0,
+    -7.0,
+    -12.0,
+    -17.0,
+    -15.0
+   ],
+   "rank": 10,
+   "total_ranking_points": 66.0
+  },
+  {
    "team_id": 12,
    "team_name": "Remeber Bendel",
    "team_abbrev": "BEND",
@@ -659,73 +724,8 @@
     -8.0,
     -15.0
    ],
-   "rank": 10,
-   "total_ranking_points": 66.0
-  },
-  {
-   "team_id": 7,
-   "team_name": "Team Made of Glass",
-   "team_abbrev": "TMOG",
-   "abbrev": "TMOG",
-   "owner": "Brantley Lohkamp",
-   "scores_by_week": [
-    134.52,
-    71.46,
-    82.92,
-    81.62,
-    125.36,
-    113.5,
-    102.92,
-    109.58,
-    84.76,
-    94.1,
-    86.24,
-    43.3
-   ],
-   "ranking_points_by_week": [
-    11.0,
-    3.0,
-    3.0,
-    2.0,
-    8.0,
-    9.0,
-    5.0,
-    8.0,
-    3.0,
-    2.0,
-    2.0,
-    9.0
-   ],
-   "cumulative_points_by_week": [
-    11.0,
-    14.0,
-    17.0,
-    19.0,
-    27.0,
-    36.0,
-    41.0,
-    49.0,
-    52.0,
-    54.0,
-    56.0,
-    65.0
-   ],
-   "normalized_by_week": [
-    4.0,
-    2.0,
-    -2.0,
-    -8.0,
-    -7.0,
-    -4.0,
-    -6.0,
-    -2.0,
-    -7.0,
-    -12.0,
-    -17.0,
-    -16.0
-   ],
    "rank": 11,
-   "total_ranking_points": 65.0
+   "total_ranking_points": 66.0
   },
   {
    "team_id": 11,
@@ -759,7 +759,7 @@
     1.0,
     5.0,
     3.0,
-    10.0
+    9.0
    ],
    "cumulative_points_by_week": [
     3.0,
@@ -773,7 +773,7 @@
     47.0,
     52.0,
     55.0,
-    65.0
+    64.0
    ],
    "normalized_by_week": [
     -4.0,
@@ -787,10 +787,10 @@
     -12.0,
     -14.0,
     -18.0,
-    -16.0
+    -17.0
    ],
    "rank": 12,
-   "total_ranking_points": 65.0
+   "total_ranking_points": 64.0
   }
  ],
  "top_players_by_week": [
@@ -10414,7 +10414,7 @@
      "fantasy_team": "Team Made of Glass",
      "position": "RB",
      "slot": "RB",
-     "score": 15.2
+     "score": 16.5
     },
     {
      "name": "Emmett Johnson",
@@ -10502,7 +10502,7 @@
      "fantasy_team": "Swishington Football Team",
      "position": "QB",
      "slot": "QB",
-     "score": 2.08
+     "score": 2.62
     },
     {
      "name": "Tyler Higbee",
@@ -12444,14 +12444,14 @@
    "SWSH": {
     "RB": 45.7,
     "TE": 0.0,
-    "QB": 2.08,
+    "QB": 2.62,
     "WR": 0.0,
     "FLEX": 0.0,
     "K": 0.0,
     "D/ST": 0.0
    },
    "TMOG": {
-    "RB": 15.2,
+    "RB": 16.5,
     "WR": 0.9,
     "FLEX": 0.0,
     "QB": 25.3,
@@ -12535,7 +12535,7 @@
  ],
  "live": {
   "week": 12,
-  "updated_at": "2026-11-27T03:30:22+00:00",
+  "updated_at": "2026-11-27T03:40:28+00:00",
   "teams": {
    "SACK": {
     "score": 11.0,
@@ -12748,8 +12748,8 @@
     ]
    },
    "SWSH": {
-    "score": 47.78,
-    "projected": 112.45,
+    "score": 48.32,
+    "projected": 111.84,
     "starters": [
      {
       "name": "Jahmyr Gibbs",
@@ -12779,7 +12779,7 @@
       "slot": "QB",
       "pro_team": "BUF",
       "opponent": "None",
-      "points": 2.08,
+      "points": 2.62,
       "projected": 18.06,
       "status": "live",
       "kickoff": 1795742400000
@@ -12853,8 +12853,8 @@
     ]
    },
    "TMOG": {
-    "score": 43.3,
-    "projected": 91.55,
+    "score": 44.6,
+    "projected": 91.34,
     "starters": [
      {
       "name": "James Cook III",
@@ -12862,7 +12862,7 @@
       "slot": "RB",
       "pro_team": "BUF",
       "opponent": "KC",
-      "points": 15.2,
+      "points": 16.5,
       "projected": 13.55,
       "status": "live",
       "kickoff": 1795742400000
@@ -13169,7 +13169,7 @@
    },
    "CJ": {
     "score": 35.4,
-    "projected": 130.31,
+    "projected": 129.28,
     "starters": [
      {
       "name": "Bijan Robinson",
@@ -13379,7 +13379,7 @@
    },
    "Naug": {
     "score": 19.8,
-    "projected": 106.35,
+    "projected": 105.76,
     "starters": [
      {
       "name": "Justin Jefferson",
@@ -13694,7 +13694,7 @@
    },
    "BING": {
     "score": 1.0,
-    "projected": 109.29,
+    "projected": 108.62,
     "starters": [
      {
       "name": "Chase Brown",
@@ -14061,6 +14061,23 @@
      "GAY": 43.8,
      "SWSH": 47.78,
      "TMOG": 43.3,
+     "BEND": 0.0,
+     "SW": 79.94,
+     "CJ": 35.4,
+     "BW": 40.8,
+     "Naug": 19.8,
+     "WALT": 6.0,
+     "MBJG": 13.02,
+     "BING": 1.0
+    }
+   },
+   {
+    "t": "2026-11-27T03:40:28+00:00",
+    "scores": {
+     "SACK": 11.0,
+     "GAY": 43.8,
+     "SWSH": 48.32,
+     "TMOG": 44.6,
      "BEND": 0.0,
      "SW": 79.94,
      "CJ": 35.4,
